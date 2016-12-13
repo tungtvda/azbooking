@@ -1,14 +1,16 @@
 <?php
 class khachsan
 {
-    public $id,$danhmuc_id,$name,$name_url,$start,$room_type,$img,$content,$title,$keyword,$description;
+    public $id,$danhmuc_id,$highlights,$name,$name_url,$start,$price,$room_type,$img,$content,$title,$keyword,$description;
     public function khachsan($data=array())
     {
     $this->id=isset($data['id'])?$data['id']:'';
     $this->danhmuc_id=isset($data['danhmuc_id'])?$data['danhmuc_id']:'';
+    $this->highlights=isset($data['highlights'])?$data['highlights']:'';
     $this->name=isset($data['name'])?$data['name']:'';
     $this->name_url=isset($data['name_url'])?$data['name_url']:'';
     $this->start=isset($data['start'])?$data['start']:'';
+    $this->price=isset($data['price'])?$data['price']:'';
     $this->room_type=isset($data['room_type'])?$data['room_type']:'';
     $this->img=isset($data['img'])?$data['img']:'';
     $this->content=isset($data['content'])?$data['content']:'';
@@ -21,9 +23,11 @@ class khachsan
         {
             $this->id=addslashes($this->id);
             $this->danhmuc_id=addslashes($this->danhmuc_id);
+            $this->highlights=addslashes($this->highlights);
             $this->name=addslashes($this->name);
             $this->name_url=addslashes($this->name_url);
             $this->start=addslashes($this->start);
+            $this->price=addslashes($this->price);
             $this->room_type=addslashes($this->room_type);
             $this->img=addslashes($this->img);
             $this->content=addslashes($this->content);
@@ -35,9 +39,11 @@ class khachsan
         {
             $this->id=stripslashes($this->id);
             $this->danhmuc_id=stripslashes($this->danhmuc_id);
+            $this->highlights=stripslashes($this->highlights);
             $this->name=stripslashes($this->name);
             $this->name_url=stripslashes($this->name_url);
             $this->start=stripslashes($this->start);
+            $this->price=stripslashes($this->price);
             $this->room_type=stripslashes($this->room_type);
             $this->img=stripslashes($this->img);
             $this->content=stripslashes($this->content);
