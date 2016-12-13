@@ -14,7 +14,7 @@ require_once DIR.'/controller/default/public.php';
 $data['menu']=menu_getByTop('','','');
 $data['config']=config_getByTop(1,'','');
 ////
-//$data['tour_PROMOTIONS']=tour_getByTop(6,'promotion=1 ','id desc');
+$data['tour_PROMOTIONS']=tour_getByTop(6,'promotion=1 ','id desc');
 //
 $data['khachsan_index']=khachsan_getByTop(9,'highlights=1 ','id desc');
 //
