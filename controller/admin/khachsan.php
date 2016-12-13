@@ -57,13 +57,15 @@ if(isset($_SESSION["Admin"]))
             header('Location: '.SITE_NAME.'/controller/admin/khachsan.php');
         }
     }
-    if(isset($_POST["danhmuc_id"])&&isset($_POST["name"])&&isset($_POST["name_url"])&&isset($_POST["start"])&&isset($_POST["room_type"])&&isset($_POST["img"])&&isset($_POST["content"])&&isset($_POST["title"])&&isset($_POST["keyword"])&&isset($_POST["description"]))
+    if(isset($_POST["danhmuc_id"])&&isset($_POST["name"])&&isset($_POST["name_url"])&&isset($_POST["start"])&&isset($_POST["price"])&&isset($_POST["room_type"])&&isset($_POST["img"])&&isset($_POST["content"])&&isset($_POST["title"])&&isset($_POST["keyword"])&&isset($_POST["description"]))
     {
        $array=$_POST;
        if(!isset($array['id']))
        $array['id']='0';
        if(!isset($array['danhmuc_id']))
        $array['danhmuc_id']='0';
+       if(!isset($array['highlights']))
+       $array['highlights']='0';
        if(!isset($array['name']))
        $array['name']='0';
        if(!isset($array['name_url']))
@@ -71,6 +73,8 @@ if(isset($_SESSION["Admin"]))
         $array['name_url']=LocDau($array['name']);
        if(!isset($array['start']))
        $array['start']='0';
+       if(!isset($array['price']))
+       $array['price']='0';
        if(!isset($array['room_type']))
        $array['room_type']='0';
        if(!isset($array['img']))
