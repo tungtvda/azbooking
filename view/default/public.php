@@ -81,7 +81,25 @@ function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberfor
             }
             if(get_class($item)=='tour')
             {
-                $ft->assign('price_format',number_format($item->price,0,",","."));
+                $show_code='hidden';
+                if($item->code!=''){
+                    $show_code='';
+                }
+                $ft->assign('show_code',$show_code);
+                $price_sales='';
+                $show_sales='hidden';
+                if($item->price_sales!=0||$item->price_sales!=''){
+                    $show_sales='';
+                    $price_sales=number_format((int)$item->price_sales,0,",",".").' vnđ';
+                }
+                $ft->assign('show_sales',$show_sales);
+                $ft->assign('price_sales',$price_sales);
+                if($item->price==0||$item->price==''){
+                    $ft->assign('price_format','Liên hệ');
+                }
+                else{
+                    $ft->assign('price_format',number_format((int)$item->price,0,",",".").' vnđ');
+                }
                 $content=$item->summary;
                 if (strlen($content) > 200) {
                     $ten1=strip_tags($content);
@@ -92,7 +110,11 @@ function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberfor
                 } else {
                     $ft->assign('content',strip_tags($content));
                 }
-                $data_dm=danhmuc_tour_getById($item->danhmuc_id);
+                $data_dm=danhmuc_1_getById($item->DanhMuc1Id);
+                if(count($data_dm)==0){
+                    redict(SITE_NAME);
+                }
+                $data_dm=danhmuc_1_getById($item->DanhMuc1Id);
                 if(count($data_dm)==0){
                     redict(SITE_NAME);
                 }
@@ -121,6 +143,7 @@ function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberfor
             }
             if(get_class($item)=='news')
             {
+                $ft->assign('created',_returnDateFormatConvert($item->created));
                 $content=$item->content;
                 if (strlen($content) > 210) {
                     $ten1=strip_tags($content);
@@ -131,10 +154,11 @@ function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberfor
                 } else {
                     $ft->assign('content',strip_tags($content));
                 }
-                $data_dm=danhmuc_tour_getById($item->danhmuc_id);
+                $data_dm=danhmuc_tintuc_getById($item->danhmuc_id);
                 if(count($data_dm)==0){
                     redict(SITE_NAME);
                 }
+
                 $ft->assign('link',link_newsdetail($item,$data_dm[0]->name_url));
             }
             if(get_class($item)=='dichvu')
@@ -161,7 +185,14 @@ function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberfor
             }
             if(get_class($item)=='khachsan')
             {
-                $ft->assign('price_format',number_format((int)$item->price,0,",","."));
+                if($item->price==0||$item->price==''){
+                    $ft->assign('price_format','Liên hệ');
+                }
+                else{
+                    $ft->assign('price_format',number_format((int)$item->price,0,",",".").' vnđ');
+                }
+
+
                 $content=$item->content;
                 if (strlen($content) > 210) {
                     $ten1=strip_tags($content);

@@ -56,3 +56,13 @@ function returnPriceTour(){
     }
     return $string;
 }
+
+function _returnDateFormatConvert($date)
+{
+    if ($date == '') {
+        $DatesRemainder = '';
+    } else {
+        $DatesRemainder = date("d-m-Y H:i:s", strtotime($date));
+    }
+    return $DatesRemainder;
+}

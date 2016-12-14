@@ -1,7 +1,7 @@
 <?php
 class tour
 {
-    public $id,$DanhMuc1Id,$DanhMuc2Id,$promotion,$packages,$name,$name_url,$code,$img,$price,$price_2,$price_3,$price_4,$price_5,$price_6,$durations,$departure,$destination,$vehicle,$hotel,$summary,$highlights,$schedule,$price_list,$content,$list_img,$title,$keyword,$description,$inclusion,$exclusion;
+    public $id,$DanhMuc1Id,$DanhMuc2Id,$promotion,$packages,$name,$name_url,$code,$img,$price_sales,$price,$price_2,$price_3,$price_4,$price_5,$price_6,$durations,$departure,$destination,$vehicle,$hotel,$summary,$highlights,$schedule,$price_list,$content,$list_img,$title,$keyword,$description,$inclusion,$exclusion;
     public function tour($data=array())
     {
     $this->id=isset($data['id'])?$data['id']:'';
@@ -13,6 +13,7 @@ class tour
     $this->name_url=isset($data['name_url'])?$data['name_url']:'';
     $this->code=isset($data['code'])?$data['code']:'';
     $this->img=isset($data['img'])?$data['img']:'';
+    $this->price_sales=isset($data['price_sales'])?$data['price_sales']:'';
     $this->price=isset($data['price'])?$data['price']:'';
     $this->price_2=isset($data['price_2'])?$data['price_2']:'';
     $this->price_3=isset($data['price_3'])?$data['price_3']:'';
@@ -48,6 +49,7 @@ class tour
             $this->name_url=addslashes($this->name_url);
             $this->code=addslashes($this->code);
             $this->img=addslashes($this->img);
+            $this->price_sales=addslashes($this->price_sales);
             $this->price=addslashes($this->price);
             $this->price_2=addslashes($this->price_2);
             $this->price_3=addslashes($this->price_3);
@@ -82,6 +84,7 @@ class tour
             $this->name_url=stripslashes($this->name_url);
             $this->code=stripslashes($this->code);
             $this->img=stripslashes($this->img);
+            $this->price_sales=stripslashes($this->price_sales);
             $this->price=stripslashes($this->price);
             $this->price_2=stripslashes($this->price_2);
             $this->price_3=stripslashes($this->price_3);

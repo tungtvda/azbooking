@@ -14,12 +14,12 @@ require_once DIR.'/controller/default/public.php';
 $data['menu']=menu_getByTop('','','');
 $data['config']=config_getByTop(1,'','');
 ////
-$data['tour_PROMOTIONS']=tour_getByTop(6,'promotion=1 ','id desc');
-//
-$data['khachsan_index']=khachsan_getByTop(9,'highlights=1 ','id desc');
-//
+$data['tour_PROMOTIONS']=tour_getByTop(5,'promotion=1 ','id desc');
+$data['tour_sales']=tour_getByTop(5,'price_sales!="" ','id desc');
+$data['tintuc_index']=news_getByTop(5,'','id desc');
 
-//$data['tintuc_index']=news_getByTop(8,'','id desc');
+$data['khachsan_index']=khachsan_getByTop(9,'highlights=1 ','id desc');
+$data['video_index']=video_getByTop(1,'','id desc');
 
 $title=$data['menu'][0]->title;
 $description=$data['menu'][0]->description;

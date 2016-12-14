@@ -23,5 +23,13 @@ function view_footer($data = array())
     $asign['facebook'] = $data['mangxahoi'][0]->facebook;
     $asign['google'] = $data['mangxahoi'][0]->google;
     $asign['rss'] = $data['mangxahoi'][0]->rss;
+
+    $asign['quydinh'] = $data['info'][0]->name;
+    $asign['baomat'] = $data['info'][1]->name;
+    $asign['thanhtoan'] = $data['info'][2]->name;
+    $asign['doitra'] = $data['info'][3]->name;
+    $asign['khieunai'] = $data['info'][4]->name;
+    $asign['giaonhan'] = $data['info'][5]->name;
+
     print_template($asign, 'footer');
 }
