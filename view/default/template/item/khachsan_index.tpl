@@ -9,5 +9,5 @@
             </ul>
         </div>-->
     </div>
-    <div class="item-available"><span class="count">{price_format} vnđ</span> {start}</div>
+    <div class="item-available"><span class="count">{price_format}</span> {start}</div>
 </div>

@@ -108,7 +108,8 @@
                         <li><a href="{SITE-NAME}/controller/admin/news.php">Danh sách</a></li>
                     </ul>
                 </li>
-                <li class="{kichhoat_tag}"><a href="{SITE-NAME}/controller/admin/tag.php"><span class="icon-tag"></span> Tag</a></li>
+                <li class="{kichhoat_tag}"><a href="{SITE-NAME}/controller/admin/tag.php"><span class="icon-pencil"></span> Tag</a></li>
+                <li class="{kichhoat_info}"><a href="{SITE-NAME}/controller/admin/info_mix.php"><span class="icon-tag"></span> Thông tin chính sách</a></li>
                 <li class="{kichhoat_hotro}"><a href="{SITE-NAME}/controller/admin/subport.php"><span class="icon-question-sign"></span> Hỗ trợ trực tuyến</a></li>
 
                 <li class="{kichhoat_video}"><a href="{SITE-NAME}/controller/admin/video.php"><span class="icon-facetime-video"></span> Video</a></li>

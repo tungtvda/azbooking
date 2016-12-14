@@ -62,17 +62,17 @@ function news_getByPaging($CurrentPage, $PageSize,$Order,$where)
 //
 function news_getByPagingReplace($CurrentPage, $PageSize,$Order,$where)
 {
-   return news_Get("SELECT news.id, danhmuc_tintuc.name as danhmuc_id, news.name, news.name_url, news.img, news.content, news.title, news.keyword, news.description, news.created FROM  news, danhmuc_tintuc where danhmuc_tintuc.id=news.danhmuc_id  ".(($where!='')?(' and '.$where):'')." Order By ".$Order." Limit ".(($CurrentPage-1)*$PageSize)." , ".$PageSize);
+   return news_Get("SELECT news.id, danhmuc_tintuc.name as danhmuc_id, news.name, news.name_url, news.img, news.view, news.content, news.title, news.keyword, news.description, news.created FROM  news, danhmuc_tintuc where danhmuc_tintuc.id=news.danhmuc_id  ".(($where!='')?(' and '.$where):'')." Order By ".$Order." Limit ".(($CurrentPage-1)*$PageSize)." , ".$PageSize);
 }
 //
 function news_insert($obj)
 {
-    return exe_query("insert into news (danhmuc_id,name,name_url,img,content,title,keyword,description,created) values ('$obj->danhmuc_id','$obj->name','$obj->name_url','$obj->img','$obj->content','$obj->title','$obj->keyword','$obj->description','$obj->created')",'news');
+    return exe_query("insert into news (danhmuc_id,name,name_url,img,view,content,title,keyword,description,created) values ('$obj->danhmuc_id','$obj->name','$obj->name_url','$obj->img','$obj->view','$obj->content','$obj->title','$obj->keyword','$obj->description','$obj->created')",'news');
 }
 //
 function news_update($obj)
 {
-    return exe_query("update news set danhmuc_id='$obj->danhmuc_id',name='$obj->name',name_url='$obj->name_url',img='$obj->img',content='$obj->content',title='$obj->title',keyword='$obj->keyword',description='$obj->description',created='$obj->created' where id=$obj->id",'news');
+    return exe_query("update news set danhmuc_id='$obj->danhmuc_id',name='$obj->name',name_url='$obj->name_url',img='$obj->img',view='$obj->view',content='$obj->content',title='$obj->title',keyword='$obj->keyword',description='$obj->description',created='$obj->created' where id=$obj->id",'news');
 }
 //
 function news_delete($obj)

@@ -112,6 +112,7 @@ function show_footer($data1=array())
     $data=array();
     $data['config']=$data1['config'];
     $data['mangxahoi']=social_getByTop(1,'','');
+    $data['info']=info_mix_getByTop('','','id asc');
     view_footer($data);
 }
 
