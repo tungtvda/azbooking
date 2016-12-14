@@ -82,6 +82,11 @@
                         Spa</label></li>
             </ul>
         </div>
+        <div class="widget widget_has_thumbnail"><h3>Tin tức nổi bật</h3>
+            <ul>
+               {tintuc_left}
+            </ul>
+        </div>
         <div class="widget widget_product_tag_cloud"><h3>Tags</h3>
             <div class="tagcloud"><a href="#">Hotel</a> <a href="#">Motel</a> <a href="#">Hostel</a> <a
                         href="#">Homestay</a></div>

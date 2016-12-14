@@ -118,5 +118,6 @@ function show_footer($data1=array())
 function  show_left_danhmuc($data1=array())
 {
     $data=array();
+    $data['tintuc_left']=news_getByTop('3','','id desc');
     view_left_danhmuc($data);
 }
