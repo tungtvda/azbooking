@@ -115,4 +115,8 @@ function show_footer($data1=array())
     $data['info']=info_mix_getByTop('','','id asc');
     view_footer($data);
 }
-
+function  show_left_danhmuc($data1=array())
+{
+    $data=array();
+    view_left_danhmuc($data);
+}

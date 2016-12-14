@@ -6,8 +6,7 @@
             <div class="find"><h2 class="text-center">Find Your Trip </h2>
                 <div class="breadcrumb">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><span>Trips</span></li>
+                        <li><a href="#">Home</a></li> <li><span>Trips</span></li>
                     </ul>
                 </div>
             </div>

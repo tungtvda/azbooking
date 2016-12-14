@@ -35,20 +35,20 @@ function showPagingAtLink($countRecord,$PageSize,$currentPage,$Link)
     if($PageSize>=$countRecord) return $result;
     if($currentPage!=1)
     {
-        $result=$result."<li><a  href=\"".$Link."page-1\" title=\"First Page\"> First</a></li><li class='prev'><a href=\"".$Link."page-".($currentPage-1)."\" title=\"Previous Page\"> «</a></li>";
+        $result=$result."<a  href=\"".$Link."page-1\" title=\"First Page\"> << </a><a href=\"".$Link."page-".($currentPage-1)."\" title=\"Previous Page\"> «</a>";
     }
     for($i=1;$i<=($countRecord/$PageSize+1);$i++)
     {
-        if($i==$currentPage) $result=$result."<li class='active'><a  href=\"".$Link."page-".$i."\" class=\"number\"  title=\"".$i."\">".$i."</a></li>";
+        if($i==$currentPage) $result=$result."<span  href=\"".$Link."page-".$i."\" class=\"current\"  title=\"".$i."\">".$i."</span>";
         else
         {
-            $result=$result."<li><a href=\"".$Link."page-".$i."\" class=\"number \" title=\"".$i."\">".$i."</a></li>";
+            $result=$result."<a href=\"".$Link."page-".$i."\" class=\"number \" title=\"".$i."\">".$i."</a>";
         }
 
     }
     if($currentPage!=intval($countRecord/$PageSize+1))
     {
-        $result=$result."<li class='next'><a href=\"".$Link."page-".($currentPage+1)."\" title=\"Next Page\">»</a></li><li><a href=\"".$Link."page-".intval($countRecord/$PageSize+1)."\" title=\"Last Page\">Last </a></li>";
+        $result=$result."<a href=\"".$Link."page-".($currentPage+1)."\" title=\"Next Page\">»</a><a href=\"".$Link."page-".intval($countRecord/$PageSize+1)."\" title=\"Last Page\"> >> </a>";
     }
     return $result;
 }
