@@ -13,4 +13,5 @@ RewriteRule ^tour/([a-zA-Z0-9_-]+)/$ controller/default/chitietdanhmuc.php?Id=$1
 RewriteRule ^tour/([a-zA-Z0-9_-]+)/page-([0-9]+)$ controller/default/chitietdanhmuc.php?Id=$1&page=$2
 RewriteRule ^tour/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/$ controller/default/chitietdanhmuc.php?Id=$1&Id_sub=$2
 RewriteRule ^tour/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/page-([0-9]+)$ controller/default/chitietdanhmuc.php?Id=$1&Id_sub=$2&page=$3
-RewriteRule ^tour/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ controller/default/chitiettour.php?danhmucId=$1&Id=$2
+RewriteRule ^tour/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ controller/default/chitiettour.php?Id=$1&name_url=$2
+RewriteRule ^tour/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ controller/default/chitiettour.php?Id=$1&Id_sub=$2&name_url=$3

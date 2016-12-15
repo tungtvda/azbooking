@@ -193,10 +193,263 @@
             $('#tab_khachsan').hide();
             $('#tab_tintuc').slideDown();
         });
+        jQuery('.calender').pignoseCalender({
+            select: function (date, obj) {
+                console.log(date);
+                date_check = (date[0] === null ? '' : date[0].format('YYYY-MM-DD'));
+                date_now = "{date_now}";
+                if (date_check == '') {
+                    alert('Bạn vui lòng chọn ngày đặt tour');
+                }
+                else {
+                    if (date_check < date_now) {
+                        alert('Bạn vui lòng chọn ngày đặt phải lớn hơn hoặc bằng ngày hiện tại');
+                    }
+                    else {
+                        jQuery('#date_input').val(date_check);
+                        jQuery("#date_table").text(convertDate(date_check));
+                    }
+                }
 
+
+            }
+        });
+        jQuery("#next_booking").click(function(){
+            date_now="{date_now}";
+            price_children=jQuery('#date_input').val();
+            if(price_children==''){
+                alert('{check_date}');
+            }
+            else{
+                if(price_children<date_now){
+                    alert('{check_param_date}');
+                }
+                else{
+                    jQuery('.back_detail').hide();
+                    jQuery('.back_detail_cal').hide();
+                    jQuery('.next_detail').slideDown();
+                }
+            }
+
+
+
+        });
+        jQuery("#back_booking").click(function(){
+
+            jQuery('.next_detail').hide();
+            jQuery('.back_detail_cal').slideDown();
+            jQuery('.back_detail').slideDown();
+        });
+        jQuery("#booking_ajax").click(function(){
+            jQuery('#loading_booking').show();
+            jQuery('#back_booking').hide();
+            id=jQuery('#id_input').val();
+            name_url=jQuery('#name_url_input').val();
+            date=jQuery('#date_input').val();
+            price=jQuery('#price_adults').val();
+            price_children=0;
+            price_children_5=0;
+//                                                        price_children=$('#price_children').val();
+//                                                        price_children_5=$('#price_children_5').val();
+            number_adults=jQuery('#num_price_adults').val();
+            number_children=jQuery('#num_price_children_val').val();
+            number_children_5=jQuery('#num_price_children_5_val').val();
+            total_input=jQuery('#total_input').val();
+            full_name=jQuery('#name_booking').val();
+            email=jQuery('#email_booking').val();
+            phone=jQuery('#phone_booking').val();
+            address=jQuery('#address_booking').val();
+            request=jQuery('#request_booking').val();
+            check=1;
+            if(full_name==""){
+                jQuery("#full_name_er").show();
+                check_name=0;
+            }
+            else{
+                jQuery("#full_name_er").hide();
+                check_name=1;
+            }
+            if(email==""){
+                jQuery("#email_er").show();
+                check_email=0;
+            }else{
+                if(validateEmail(email)){
+                    jQuery("#email_er").hide();
+                    check_email=1;
+                }else{
+                    jQuery("#email_er").show();
+                    check_email=0;
+                }
+
+            }
+            if(phone==""){
+                jQuery("#phone_er").show();
+                check_phone=0;
+            }
+            else{
+                jQuery("#phone_er").hide();
+                check_phone=1;
+            }
+            if(address==""){
+                jQuery("#address_er").show();
+                check_address=0;
+            }else{
+                jQuery("#address_er").hide();
+                check_address=1;
+            }
+            if (check_name != 0&&check_email != 0&&check_phone!=0&&check_address!=0) {
+
+                jQuery.post("{SITE-NAME}/dat-tour/ajax/",
+                        {
+                            id: id,
+                            name_url: name_url,
+                            date: date,
+                            price: price,
+                            price_children: price_children,
+                            price_children_5:price_children_5,
+                            number_adults:number_adults,
+                            number_children:number_children,
+                            number_children_5:number_children_5,
+                            total_input:total_input,
+                            full_name:full_name,
+                            email:email,
+                            phone:phone,
+                            address:address,
+                            request:request
+
+                        }
+                        )
+                        .
+                        done(function (data) {
+                            if(data==1)
+                            {
+                                jQuery('#loading_booking').hide();
+                                jQuery('#back_booking').show();
+                                alert('Đặt tour thành công, Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất. Xin cảm ơn!');
+                                location.reload(true);
+                            }
+                            else{
+                                jQuery('#loading_booking').hide();
+                                jQuery('#back_booking').show();
+                                alert('Đặt tour thất bại, vui lòng kiểm tra lại thông tin đặt tour')
+                            }
+                        });
+            } else {
+                alert('Bạn vui lòng kiểm tra lại thông tin đặt tour');
+            }
+        });
     });
 
     //
+    function convertDate(inputFormat) {
+        function pad(s) { return (s < 10) ? '0' + s : s; }
+        var d = new Date(inputFormat);
+        return [pad(d.getDate()), pad(d.getMonth()+1), d.getFullYear()].join('-');
+    }
+    function phonenumber(inputtxt)
+    {
+        var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+        if(inputtxt.match(phoneno))
+        {
+            alert('yhsnh vonh');
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    function validateEmail(email) {
+        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+    }
+    function myFunction() {
+        price=jQuery('#price_adults').val();
+        price_2=jQuery('#price_2').val();
+        price_3=jQuery('#price_3').val();
+        price_4=jQuery('#price_4').val();
+        price_5=jQuery('#price_5').val();
+        price_6=jQuery('#price_6').val();
+
+        price_adults=jQuery('#num_price_adults').val();
+        price_children_val=jQuery('#num_price_children_val').val();
+        price_children_5_val=jQuery('#num_price_children_5_val').val();
+
+        if(price=='')
+        {
+            price=0;
+        }
+        if(price_2=='')
+        {
+            price_2=0;
+        }
+        if(price_3=='')
+        {
+            price_3=0;
+        }
+        if(price_4=='')
+        {
+            price_4=0;
+        }
+        if(price_5=='')
+        {
+            price_5=0;
+        }
+        if(price_6=='')
+        {
+            price_6=0;
+        }
+        if(price_adults=='')
+        {
+            price_adults=0;
+        }
+        if(price_children_val=='')
+        {
+            price_children_val=0;
+        }
+        if(price_children_5_val=='')
+        {
+            price_children_5_val=0;
+        }
+        price_adults=parseInt(price_adults);
+        price_children_val=parseInt(price_children_val);
+        price_children_5_val=parseInt(price_children_5_val);
+
+        if(price==''){
+            total="Liên hệ";
+
+        }
+        else{
+            total=(price_adults+price_children_val+price_children_5_val)*price;
+            if(total==0){
+                total="Liên hệ";
+            }
+            else{
+                var n = parseFloat(total);
+//                                                        total = Math.round(n * 1000)/1000;
+                total=n.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1.")+" vnđ";
+            }
+        }
+        jQuery("#amount_total").text(total);
+        jQuery("#no_adults").text(price_adults);
+        jQuery("#no_children").text(price_children_val);
+        jQuery("#no_children_5").text(price_children_5_val);
+        jQuery("#total_fee").text(total);
+        jQuery('#total_input').val(total);
+        jQuery("#hidden_total").show();
+        jQuery("#next_booking").show();
+
+    }
+    function nformat(a) {
+        var b = parseInt(parseFloat(a)*1000)/1000;
+        return b.toFixed(0);
+    }
 </script>
+<link rel="stylesheet" type="text/css"
+      href="{SITE-NAME}/view/default/themes/calendar/src/css/pignose.calender.css"/>
+<!--                                <script src="themes/calendar/dist/jquery-1.12.4.min.js"></script>-->
+<script src="{SITE-NAME}/view/default/themes/calendar/dist/moment.min.js"></script>
+<script type="text/javascript"
+        src="{SITE-NAME}/view/default/themes/calendar/src/js/pignose.calender.js"></script>
 </body>
 </html>
