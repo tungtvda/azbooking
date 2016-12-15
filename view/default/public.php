@@ -114,11 +114,11 @@ function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberfor
                 if(count($data_dm)==0){
                     redict(SITE_NAME);
                 }
-                $data_dm=danhmuc_1_getById($item->DanhMuc1Id);
-                if(count($data_dm)==0){
+                $data_dm2=danhmuc_2_getById($item->DanhMuc2Id);
+                if(count($data_dm2)==0){
                     redict(SITE_NAME);
                 }
-                $ft->assign('link',link_tourdetail($item,$data_dm[0]->name_url));
+                $ft->assign('link',link_tourdetail($item,$data_dm[0]->name_url,$data_dm2[0]->name_url));
 
             }
             if(get_class($item)=='tour_img') {
@@ -231,9 +231,15 @@ function link_dm_tour2($app, $name_url)
 {
     return SITE_NAME.'/tour/'.$name_url.'/'.$app->name_url.'/';
 }
-function link_tourdetail($app,$name_url='')
+function link_tourdetail($app,$name_url='',$name2_url='')
 {
-    return SITE_NAME.'/tour/'.$name_url.'/'.$app->name_url.'.html';
+    if($name2_url==''){
+        return SITE_NAME.'/tour/'.$name_url.'/'.$app->name_url.'.html';
+    }
+    else{
+        return SITE_NAME.'/tour/'.$name_url.'/'.$name2_url.'/'.$app->name_url.'.html';
+    }
+
 }
 
 function link_news($app)
