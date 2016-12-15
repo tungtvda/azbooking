@@ -118,6 +118,10 @@ function show_footer($data1=array())
 function  show_left_danhmuc($data1=array())
 {
     $data=array();
-    $data['tintuc_left']=news_getByTop('3','','id desc');
+    $data['tintuc_left']=news_getByTop('10','','id desc');
+    $data['danhmuc_1_timkiem']=danhmuc_1_getByTop('','id!=1','position asc');
+    $data['danhmuc_khachsan_timkiem']=danhmuc_khachsan_getByTop('','','position asc');
+    $data['danhmuc_tintuc_timkiem']=danhmuc_tintuc_getByTop('','','position asc');
+    $data['tag_left']=tag_getByTop('','','id desc');
     view_left_danhmuc($data);
 }

@@ -91,7 +91,7 @@
                         </div>
                         <div class="form-group" style="padding-right: 20px">
                             <div class="form-elements">
-                                <div class="form-item"><select class="awe-select">
+                                <div class="form-item"><select name="gia_timkiem" class="awe-select">
                                         <option value="">Giá tiền</option>
                                        {price_khachsan}
                                     </select></div>
