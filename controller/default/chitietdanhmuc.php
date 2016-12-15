@@ -31,7 +31,7 @@ if(isset($_GET['Id_sub'])&&$_GET['Id_sub']!=''){
         {
             $dk="DanhMuc2Id=".$danhmuc2[0]->id;
             $data['current']=isset($_GET['page'])?$_GET['page']:'1';;
-            $data['pagesize']=3;
+            $data['pagesize']=9;
             $data['count']=tour_count($dk);
             $data['danhsach']=tour_getByPaging($data['current'],$data['pagesize'],'id desc',$dk);
             $data['PAGING'] = showPagingAtLink($data['count'], $data['pagesize'], $data['current'], '' . SITE_NAME . '/tour/'.$danhmuc_1[0]->name_url.'/'.$danhmuc2[0]->name_url.'/');
@@ -65,7 +65,7 @@ else{
         $dk='DanhMuc1Id='.$danhmuc[0]->id;
 
         $data['current']=isset($_GET['page'])?$_GET['page']:'1';;
-        $data['pagesize']=7;
+        $data['pagesize']=9;
         $data['count']=tour_count($dk);
         $data['danhsach']=tour_getByPaging($data['current'],$data['pagesize'],'id desc',$dk);
         $data['PAGING'] = showPagingAtLink($data['count'], $data['pagesize'], $data['current'], '' . SITE_NAME . '/tour/'.$danhmuc[0]->name_url.'/');
@@ -82,7 +82,7 @@ else{
     }
     else{
         $data['current']=isset($_GET['page'])?$_GET['page']:'1';;
-        $data['pagesize']=7;
+        $data['pagesize']=9;
         $data['count']=tour_count('');
         $data['danhsach']=tour_getByPaging($data['current'],$data['pagesize'],'id desc','');
         $data['PAGING'] = showPagingAtLink($data['count'], $data['pagesize'], $data['current'], '' . SITE_NAME . '/tour/');

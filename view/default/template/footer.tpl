@@ -169,6 +169,30 @@
             }
 
         });
+        $("#tab_tour_title").click(function() {
+            $(this).addClass("active_tab_left");
+            $('#tab_khachsan_title').removeClass("active_tab_left");
+            $('#tab_tintuc_title').removeClass("active_tab_left");
+            $('#tab_khachsan').hide();
+            $('#tab_tintuc').hide();
+            $('#tab_tour').slideDown();
+        });
+        $("#tab_khachsan_title").click(function() {
+            $(this).addClass("active_tab_left");
+            $('#tab_tour_title').removeClass("active_tab_left");
+            $('#tab_tintuc_title').removeClass("active_tab_left");
+            $('#tab_tour').hide();
+            $('#tab_tintuc').hide();
+            $('#tab_khachsan').slideDown();
+        });
+        $("#tab_tintuc_title").click(function() {
+            $(this).addClass("active_tab_left");
+            $('#tab_tour_title').removeClass("active_tab_left");
+            $('#tab_khachsan_title').removeClass("active_tab_left");
+            $('#tab_tour').hide();
+            $('#tab_khachsan').hide();
+            $('#tab_tintuc').slideDown();
+        });
 
     });
 
