@@ -61,6 +61,15 @@ function show_chitiet_tour($data = array())
     $asign['exclusion']=$data['detail'][0]->exclusion;
     $asign['price_list']=$data['detail'][0]->price_list;
     $asign['vehicle']=$data['detail'][0]->vehicle;
+
+    $asign['tour_lienquan'] ='';
+    if(count($data['tour_lienquan'])>0) {
+        $asign['tour_lienquan'] = print_item('lienquan', $data['tour_lienquan']);
+    }
+
+    $asign['Hotline'] = $data['config'][0]->Hotline;
+    $asign['Hotline_hcm'] = $data['config'][0]->Hotline_hcm;
+
     print_template($asign, 'chitiettour');
 }
 

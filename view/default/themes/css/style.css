@@ -3202,10 +3202,10 @@ span.dropcap {
 }
 
 .related-post .post .post-meta > div + div:before, .blog-page__content .post .post-meta > div + div:before {
-    content: '\//';
-    display: inline-block;
-    margin-left: 5px;
-    margin-right: 5px
+    /*content: '\//';*/
+    /*display: inline-block;*/
+    /*margin-left: 5px;*/
+    /*margin-right: 5px*/
 }
 
 .related-post .post .post-meta .cat ul, .blog-page__content .post .post-meta .cat ul {
@@ -3232,7 +3232,7 @@ span.dropcap {
 }
 
 .related-post .post .post-title h2, .blog-page__content .post .post-title h2 {
-    font-size: 24px;
+    font-size: 18px;
     color: #0091ea;
     margin-top: 0;
     margin-bottom: 5px
@@ -3260,8 +3260,8 @@ span.dropcap {
 }
 
 .related-post .post .post-content, .blog-page__content .post .post-content {
-    margin-bottom: 32px;
-    color: #666
+    /*margin-bottom: 32px;*/
+    color: #0091EA
 }
 
 .page__pagination {
@@ -10737,4 +10737,49 @@ body.single-post .blog-page__content > .post .post-content {
     font-size: 16px;
     font-weight: 400;
     margin: 0 0 20px;
+}
+table {
+    border: 1px solid #f1f1f1;
+}
+table {
+    border-bottom: 1px solid #f1f1f1;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 14px;
+    line-height: 1;
+    margin: 0 0 20px;
+    width: 100%;
+}
+th, td, .table>tbody>tr>td {
+    border: 1px solid #d4d4d4;
+    padding: 12px 10px;
+    background: rgba(238, 238, 238, 0.25);
+}
+caption, th, td {
+    font-weight: normal;
+    text-align: left;
+}
+.calculate_bt {
+    width: 40%;
+    color: #ffffff;
+    padding: 2px 20px;
+    background-color: #0086cd;
+}
+.input_booking{
+    margin-bottom: 10px;
+}
+.lienquan_item{
+    float: left;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.price_list{
+    font-weight: 700;
+    font-style: normal;
+    font-size: 19px;
+    color: #ff0909;
+}
+.khachsan_list ul{
+    list-style: none;
+    padding-left:0px !important;
 }

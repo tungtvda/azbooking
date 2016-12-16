@@ -29,5 +29,13 @@ function view_left_danhmuc($data = array())
     {
         $asign['tag_left'] = print_item('tag_left', $data['tag_left']);
     }
+
+    $asign['tab_tour_title']=$data['tab_tour_title'];
+    $asign['tab_khachsan_title']=$data['tab_khachsan_title'];
+    $asign['tab_tintuc_title']=$data['tab_tintuc_title'];
+
+    $asign['tab_tour']=$data['tab_tour'];
+    $asign['tab_khachsan']=$data['tab_khachsan'];
+    $asign['tab_tintuc']=$data['tab_tintuc'];
     print_template($asign, 'left_danhmuc');
 }

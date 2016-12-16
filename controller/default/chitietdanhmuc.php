@@ -98,6 +98,13 @@ else{
         $keyword=$data['menu'][1]->keyword;
     }
 }
+$data['tab_tour_title']='active_tab_left';
+$data['tab_khachsan_title']='';
+$data['tab_tintuc_title']='';
+
+$data['tab_tour']='';
+$data['tab_khachsan']='hidden';
+$data['tab_tintuc']='hidden';
 
 $title=($title)?$title:'Azbooking.vn';
 $description=($description)?$description:'Azbooking.vn';

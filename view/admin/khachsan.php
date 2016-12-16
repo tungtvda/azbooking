@@ -72,7 +72,21 @@ function showFrom($form,$ListKey=array())
     $str_from.='<p><label>name_url</label><input class="text-input small-input" type="text"  name="name_url" value="'.(($form!=false)?$form->name_url:'').'" /></p>';
     $str_from.='<p><label>start</label><input class="text-input small-input" type="text"  name="start" value="'.(($form!=false)?$form->start:'').'" /></p>';
     $str_from.='<p><label>price</label><input class="text-input small-input" type="text"  name="price" value="'.(($form!=false)?$form->price:'').'" /></p>';
-    $str_from.='<p><label>room_type</label><input class="text-input small-input" type="text"  name="room_type" value="'.(($form!=false)?$form->room_type:'').'" /></p>';
+    $str_from.='<p><label>room_type</label>';
+    $arr_check=array();
+    if($form!=false){
+        $arr_check=explode(',',$form->room_type);
+    }
+    foreach($ListKey['room_type'] as $key)
+    {
+        $checked='';
+        if(in_array($key->id,$arr_check)){
+            $checked='checked';
+        }
+        $str_from.=$key->name.' <input style="margin-top: -4px;" '.$checked.'  class="text-input small-input" type="checkbox"  name="room_type[]" value="'.$key->id.'" /> --- ';
+    }
+    $str_from.='</p>';
+//    $str_from.='<p><label>room_type</label><input class="text-input small-input" type="text"  name="room_type" value="'.(($form!=false)?$form->room_type:'').'" /></p>';
     $str_from.='<p><label>img</label><input class="text-input small-input" type="text"  name="img" value="'.(($form!=false)?$form->img:'').'"/><a class="button" onclick="openKcEditor(\'img\');">Upload ảnh</a></p>';
     $str_from.='<p><label>content</label><textarea name="content">'.(($form!=false)?$form->content:'').'</textarea><script type="text/javascript">CKEDITOR.replace(\'content\'); </script></p>';
     $str_from.='<p><label>title</label><input class="text-input small-input" type="text"  name="title" value="'.(($form!=false)?$form->title:'').'" /></p>';

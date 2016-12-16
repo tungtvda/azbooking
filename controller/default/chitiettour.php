@@ -73,6 +73,7 @@ $description=$data['detail'][0]->description;
 $keyword=$data['detail'][0]->keyword;
 $data['link_anh']=$data['detail'][0]->img;
 $data['link_url']=$link_detail;
+$data['tour_lienquan']=tour_getByTop(6,'id!='.$data['detail'][0]->id.' and DanhMuc1Id='.$data['detail'][0]->DanhMuc1Id,'id desc');
 
 $title=($title)?$title:'Azbooking.vn';
 $description=($description)?$description:'Azbooking.vn';

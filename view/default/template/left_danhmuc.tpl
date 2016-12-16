@@ -2,12 +2,12 @@
     <div class="page-sidebar">
         <div class="sidebar-title">
             <div class="clear-filter">
-                <a class="active_tab_left" href="javascript:void(0)" id="tab_tour_title"><i class="awe-icon awe-icon-briefcase"></i> Tìm tour</a> &nbsp;&nbsp;
-                <a href="javascript:void(0)" id="tab_khachsan_title"><i class="awe-icon awe-icon-hotel"></i> Tìm khách sạn</a> &nbsp;&nbsp;
-                <a href="javascript:void(0)" id="tab_tintuc_title"><i class="awe-icon fa fa-newspaper-o"></i> Tin tức</a>
+                <a class="{tab_tour_title}" href="javascript:void(0)" id="tab_tour_title"><i class="awe-icon awe-icon-briefcase"></i> Tìm tour</a> &nbsp;&nbsp;
+                <a class="{tab_khachsan_title}" href="javascript:void(0)" id="tab_khachsan_title"><i class="awe-icon awe-icon-hotel"></i> Tìm khách sạn</a> &nbsp;&nbsp;
+                <a class="{tab_tintuc_title}" href="javascript:void(0)" id="tab_tintuc_title"><i class="awe-icon fa fa-newspaper-o"></i> Tin tức</a>
             </div>
         </div>
-        <div id="tab_tour" class="widget widget_has_radio_checkbox_text"><h3>Tìm kiếm tour</h3>
+        <div {tab_tour} id="tab_tour" class="widget widget_has_radio_checkbox_text"><h3>Tìm kiếm tour</h3>
             <div class="widget_content search_left">
                 <form action="{SITE-NAME}/tim-kiem-tour" method="get">
                     <label class="from"> <span class="form-item db">
@@ -51,7 +51,7 @@
                 </form>
             </div>
         </div>
-        <div hidden id="tab_khachsan" class="widget widget_has_radio_checkbox_text"><h3>Tìm kiếm khách sạn</h3>
+        <div {tab_khachsan} id="tab_khachsan" class="widget widget_has_radio_checkbox_text"><h3>Tìm kiếm khách sạn</h3>
             <div class="widget_content search_left">
                 <form action="{SITE-NAME}/tim-kiem-khach-san" method="get">
                     <label class="from"> <span class="form-item db">
@@ -95,7 +95,7 @@
                 </form>
             </div>
         </div>
-        <div hidden id="tab_tintuc" class="widget widget_has_radio_checkbox_text"><h3>Tìm kiếm tin tức</h3>
+        <div {tab_tintuc} id="tab_tintuc" class="widget widget_has_radio_checkbox_text"><h3>Tìm kiếm tin tức</h3>
             <div class="widget_content search_left">
                 <form action="{SITE-NAME}/tim-kiem-khach-san" method="get">
                     <label class="from"> <span class="form-item db">
@@ -120,7 +120,6 @@
                 </form>
             </div>
         </div>
-
         <div class="widget widget_price_filter"><h3>Fanpage</h3>
             <div class="price-slider-wrapper">
                 <div class="price-slider"></div>

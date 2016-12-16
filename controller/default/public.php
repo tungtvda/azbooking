@@ -117,7 +117,7 @@ function show_footer($data1=array())
 }
 function  show_left_danhmuc($data1=array())
 {
-    $data=array();
+    $data=$data1;
     $data['tintuc_left']=news_getByTop('10','','id desc');
     $data['danhmuc_1_timkiem']=danhmuc_1_getByTop('','id!=1','position asc');
     $data['danhmuc_khachsan_timkiem']=danhmuc_khachsan_getByTop('','','position asc');

@@ -195,9 +195,10 @@
         });
         jQuery('.calender').pignoseCalender({
             select: function (date, obj) {
+
                 console.log(date);
                 date_check = (date[0] === null ? '' : date[0].format('YYYY-MM-DD'));
-                date_now = "{date_now}";
+                date_now=jQuery('#date_get_now').val();
                 if (date_check == '') {
                     alert('Bạn vui lòng chọn ngày đặt tour');
                 }
@@ -215,14 +216,14 @@
             }
         });
         jQuery("#next_booking").click(function(){
-            date_now="{date_now}";
+            date_now=jQuery('#date_get_now').val();
             price_children=jQuery('#date_input').val();
             if(price_children==''){
-                alert('{check_date}');
+                alert('Bạn vui lòng chọn ngày khởi hành');
             }
             else{
                 if(price_children<date_now){
-                    alert('{check_param_date}');
+                    alert('Bạn không thể chọn ngày trong quá khứ');
                 }
                 else{
                     jQuery('.back_detail').hide();
@@ -230,9 +231,6 @@
                     jQuery('.next_detail').slideDown();
                 }
             }
-
-
-
         });
         jQuery("#back_booking").click(function(){
 
@@ -241,8 +239,8 @@
             jQuery('.back_detail').slideDown();
         });
         jQuery("#booking_ajax").click(function(){
-            jQuery('#loading_booking').show();
-            jQuery('#back_booking').hide();
+
+
             id=jQuery('#id_input').val();
             name_url=jQuery('#name_url_input').val();
             date=jQuery('#date_input').val();
@@ -298,7 +296,8 @@
                 check_address=1;
             }
             if (check_name != 0&&check_email != 0&&check_phone!=0&&check_address!=0) {
-
+                jQuery('#loading_booking').show();
+                jQuery('#back_booking').hide();
                 jQuery.post("{SITE-NAME}/dat-tour/ajax/",
                         {
                             id: id,
