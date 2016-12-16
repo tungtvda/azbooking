@@ -9,6 +9,7 @@
 require_once DIR.'/common/cls_fast_template.php';
 require_once DIR.'/common/locdautiengviet.php';
 require_once DIR . '/common/redict.php';
+require_once DIR.'/model/danhmuc_room_typeService.php';
 function print_template($data=array(),$tem)
 {
     $ft=new FastTemplate(DIR.'/view/default/template');
@@ -191,8 +192,24 @@ function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberfor
                 else{
                     $ft->assign('price_format',number_format((int)$item->price,0,",",".").' vnđ');
                 }
-
-
+                $room_type='';
+                $room_type_array=explode(',',$item->room_type);
+                if(count($room_type_array)>0){
+                    $count_room=1;
+                    foreach($room_type_array as $key)
+                    {
+                        $data_room=danhmuc_room_type_getById($key);
+                        if(count($data_room)>0){
+                            if($count_room==1){
+                                $room_type.=$data_room[0]->name;
+                            }else{
+                                $room_type.=', '.$data_room[0]->name;
+                            }
+                        }
+                        $count_room++;
+                    }
+                }
+                $ft->assign('room_type',' Loại phòng: '.$room_type);
                 $content=$item->content;
                 if (strlen($content) > 210) {
                     $ten1=strip_tags($content);

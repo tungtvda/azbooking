@@ -2,6 +2,7 @@
 require_once '../../config.php';
 require_once DIR.'/model/khachsanService.php';
 require_once DIR.'/model/danhmuc_khachsanService.php';
+require_once DIR.'/model/danhmuc_room_typeService.php';
 require_once DIR.'/view/admin/khachsan.php';
 require_once DIR.'/common/messenger.php';
 require_once DIR.'/common/locdautiengviet.php';
@@ -40,6 +41,7 @@ if(isset($_SESSION["Admin"]))
         $data['tab1_class']='default-tab current';
     }
     $data['listfkey']['danhmuc_id']=danhmuc_khachsan_getByAll();
+    $data['listfkey']['room_type']=danhmuc_room_type_getByAll();
     if(isset($_GET["action_all"]))
     {
         if($_GET["action_all"]=="ThemMoi")
@@ -77,6 +79,11 @@ if(isset($_SESSION["Admin"]))
        $array['price']='0';
        if(!isset($array['room_type']))
        $array['room_type']='0';
+        $mutil_dm='';
+        if($_POST["room_type"]!=''){
+            $mutil_dm=implode(',',$_POST["room_type"]);
+        }
+        $array['room_type']=$mutil_dm;
        if(!isset($array['img']))
        $array['img']='0';
        if(!isset($array['content']))

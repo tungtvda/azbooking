@@ -15,3 +15,7 @@ RewriteRule ^tour/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/$ controller/default/chitiet
 RewriteRule ^tour/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/page-([0-9]+)$ controller/default/chitietdanhmuc.php?Id=$1&Id_sub=$2&page=$3
 RewriteRule ^tour/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ controller/default/chitiettour.php?Id=$1&name_url=$2
 RewriteRule ^tour/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ controller/default/chitiettour.php?Id=$1&Id_sub=$2&name_url=$3
+RewriteRule ^dat-tour/ajax/$ controller/default/booking.php
+
+RewriteRule ^khach-san/$ controller/default/khachsan.php
+RewriteRule ^khach-san/page-([0-9]+)$ controller/default/khachsan.php?page=$1
