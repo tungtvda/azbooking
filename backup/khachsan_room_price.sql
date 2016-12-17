@@ -1,0 +1,11 @@
+insert into khachsan_room_price (danhmuc_id,name,price) values ('1','Phòng đơn','500000');
+insert into khachsan_room_price (danhmuc_id,name,price) values ('1','Phòng đôi','600000');
+insert into khachsan_room_price (danhmuc_id,name,price) values ('1','Phòng hạng sang','1000000');
+insert into khachsan_room_price (danhmuc_id,name,price) values ('1','Phòng tập thể','1500000');
+insert into khachsan_room_price (danhmuc_id,name,price) values ('2','Phòng đơn','400000');
+insert into khachsan_room_price (danhmuc_id,name,price) values ('1','Phòng đôi','500000');
+update khachsan_room_price set danhmuc_id='2',name='Phòng đơn',price='400000' where id=5;
+insert into khachsan_room_price (danhmuc_id,name,price) values ('2','Phòng VIP','1000000');
+update khachsan_room_price set danhmuc_id='2',name='Phòng đơn',price='500000' where id=1;
+update khachsan_room_price set danhmuc_id='1',name='Phòng đơn',price='400000' where id=5;
+update khachsan_room_price set danhmuc_id='2',name='Phòng đôi',price='600000' where id=2;

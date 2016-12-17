@@ -200,7 +200,7 @@
                 date_check = (date[0] === null ? '' : date[0].format('YYYY-MM-DD'));
                 date_now=jQuery('#date_get_now').val();
                 if (date_check == '') {
-                    alert('Bạn vui lòng chọn ngày đặt tour');
+                    alert('Bạn vui lòng chọn ngày đặt');
                 }
                 else {
                     if (date_check < date_now) {

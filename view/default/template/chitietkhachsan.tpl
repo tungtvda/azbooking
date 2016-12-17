@@ -1,4 +1,4 @@
-<section class="filter-page">
+<section class="blog-page">
     <div class="container">
         <div class="row">
             <div class="col-md-9">
@@ -19,37 +19,35 @@
                                 <p class="price"><i class="icon-dollar"></i> Giá:
                                     <ins><span class="amount"> {price_format}</span> {vnd}</ins>
                                 </p>
-                                <p class="price"><i class="icon-dollar"></i> Mã tour:
-                                    <ins><span class="parameter"> {code}</span></ins>
-                                </p>
-                                <p class="price"><i class="icon-calendar"></i> Thời gian:
-                                    <ins><span class="parameter"> {durations}</span></ins>
-                                </p>
-                                <!--<p class="price"><i class="icon-logout"></i> Departure: <ins><span class="parameter">Hanoi</span></ins></p>-->
-                                <p class="price"><i class="icon-login"></i> Điểm đến:
-                                    <ins><span class="parameter"> {destination}</span></ins>
+                                <p class="price"><i class="icon-dollar"></i>Loại phòng:
+                                    <ins><span class="parameter"> {room_type}</span></ins>
                                 </p>
                                 <p class="price"><i class="icon-home"></i> Khách sạn:
                                     <ins>{start}</ins>
                                 </p>
-                                <p class="price" style="margin-bottom: 10px"><i class="icon-plane"></i> Phương tiện:
-                                    <ins><span class="parameter"> {vehicle}</span></ins>
-                                </p>
                             </div>
-                            <div itemprop="description"><p></p></div>
+                            <div itemprop="description"><div class="entry-header">
+                                    <div class="addthis_toolbox addthis_default_style "><a class="addthis_button_facebook_like"
+                                                                                           fb:like:layout="button_count"></a> <a
+                                                class="addthis_button_tweet"></a> <a class="addthis_button_pinterest_pinit"
+                                                                                     pi:pinit:layout="horizontal"></a> <a
+                                                class="addthis_counter addthis_pill_style"></a></div>
+                                    <script type="text/javascript"
+                                            src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-5254127c1833f872"></script>
+                                </div></div>
                             <div itemprop="description">
                                 <div style="float: left;width: 100%;" class="booking_detail_div grid grid_2">
                                     <a href="#booking" class="booking_detail">BOOK NOW </a>
                                     <div style="float: left;margin-top: 10px;margin-left: 10px;" class="social-share">
                                         <ul>
                                             <li><a href="https://www.facebook.com/sharer/sharer.php?u={link}" target="_blank"><i style="background-color: #ffffff"
-                                                            class="fa fa-facebook"></i></a></li>
+                                                                                                                                 class="fa fa-facebook"></i></a></li>
                                             <li><a href="https://twitter.com/intent/tweet?source=webclient&text={link}" target="_blank"><i style="background-color: #ffffff"
-                                                            class="fa fa-twitter"></i></a></li>
+                                                                                                                                           class="fa fa-twitter"></i></a></li>
                                             <li><a href="https://plus.google.com/share?url={link}" onclick='javascript:window.open(this.href, "", "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600");return false;' target="_blank"><i style="background-color: #ffffff"
-                                                            class="fa fa-google-plus"></i></a></li>
+                                                                                                                                                                                                                                                               class="fa fa-google-plus"></i></a></li>
                                             <li><a href="http://pinterest.com/pin/create/button/?url={link}" onclick="window.open(this.href); return false;" title="Pinterest" target="_blank"><i style="background-color: #ffffff"
-                                                            class="fa fa-pinterest"></i></a></li>
+                                                                                                                                                                                                  class="fa fa-pinterest"></i></a></li>
                                             <li><a  href="mailto:?Subject={name}?&amp;body={name}:{content_short}" target="_blank"><i
                                                             class="fa fa-envelope"></i></a></li>
                                         </ul>
@@ -60,47 +58,10 @@
                         </div>
                     </div>
                     <div class="package-details-content" style="float: left; width: 100%">
-                        <h3 class="title">Tóm tắt</h3>
-                        <p>{summary}
+                        <h3 class="title">&nbsp;</h3>
+                        <p>{content}
                         </p>
-
-                        <h3 class="title">Nổi bật</h3>
-                        <p>{highlights}
-                        </p>
-                    </div>
-                </div>
-                <div class="product-tabs tabs col-md-12" style="border-bottom: 1px solid #D4D4D4;
-    overflow: hidden;
-    padding-bottom: 35px;
-    margin-bottom: 35px;">
-
-                    <ul>
-                        <li><a href="#tabs-1">Lịch trình</a></li>
-                        <li><a href="#tabs-2">Bao gồm</a></li>
-                        <li><a href="#tabs-3">Không bao gồm</a></li>
-                        <li><a href="#tabs-4">Bảng giá</a></li>
-                    </ul>
-                    <div class="product-tabs__content">
-                        <div id="tabs-1">
-                            <div class="initiative">
-                                {schedule}
-                            </div>
-                        </div>
-                        <div id="tabs-2">
-                            <div class="services-on-flight">
-                                {inclusion}
-                            </div>
-                        </div>
-                        <div id="tabs-3">
-                            <div class="initiative">
-                                {exclusion}
-                            </div>
-                        </div>
-                        <div id="tabs-4">
-                            <div id="reviews">
-                                {price_list}
-                            </div>
-                        </div>
+                        <h3 class="title">&nbsp;</h3>
                     </div>
                 </div>
                 <div  class="related-post col-md-12 row"><h4>Có thể bạn quan tâm</h4>
@@ -116,7 +77,7 @@
                         <span><a href="tel:{Hotline}">{Hotline}</a></span>
                         <span><a href="tel:{Hotline_hcm}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{Hotline_hcm}</a></span>
                     </div>
-                    <div class="booking-info"><h3>Đặt tour</h3>
+                    <div class="booking-info"><h3>Đặt phòng</h3>
                         <div class="calender"></div>
                         <input id="date_input" hidden value="{date_now}">
                         <input id="date_get_now" hidden value="{date_now}">
@@ -124,11 +85,6 @@
                         <input id="name_url_input" hidden value="{name_url}">
 
                         <input id="price_adults" value="{price}" hidden>
-                        <input id="price_2" value="{price_2}" hidden>
-                        <input id="price_3" value="{price_3}" hidden>
-                        <input id="price_4" value="{price_4}" hidden>
-                        <input id="price_5" value="{price_5}" hidden>
-                        <input id="price_6" value="{price_6}" hidden>
                         <!--<div style="margin-top: 30px" class="form-group">
                             <div class="form-elements form-adult"><label>Adult</label>
                                 <div class="form-item"><select class="awe-select">
@@ -149,22 +105,18 @@
                         </div>-->
                         <div style="margin-top: 20px" class="back_detail">
                             <div  class="form-group">
-                                <label>Số người lớn</label>
+                                <label>Số người</label>
                                 <div class="form-item">
                                     <input   onkeyup="myFunction()" onchange="myFunction()" min="1" type="number" id="num_price_adults"   id="price_adults" value="">
                                 </div>
                             </div>
-                            <div class="form-baggage-weight">
-                                <label>Trẻ em</label>
+                            <div {hidden_zoom_type} class="form-baggage-weight">
+                                <label>Loại phòng</label>
                                 <div class="form-item">
-                                    <input  onkeyup="myFunction()" onchange="myFunction()"  min="0" type="number" id="num_price_children_val"  placeholder="Số trẻ em"  value="0">
-                                </div>
-                            </div>
-                            <div class="form-baggage-weight">
-                                <label>Trẻ em dưới 5 tuổi</label>
-                                <div class="form-item">
-                                    <input style="width: 100%;padding: 5px;"  onkeyup="myFunction()" onchange="myFunction()" min="0" type="number" id="num_price_children_5_val"  placeholder="Trẻ em dưới 5 tuổi"  value="0">
-                                    <input hidden class="nicdark_bg_greydark2 nicdark_border_none grey medium subtitle" id="total_input"   >
+                                    <select class="awe-select">
+                                        <option value="">Chọn loại phòng</option>
+                                        {string_zoom_type}
+                                    </select>
                                 </div>
                             </div>
                             <div style="display: none" id="hidden_total" class="price"><em>Tổng tiền đặt tour</em> <span  class="amount" id="amount_total"></span></div>
