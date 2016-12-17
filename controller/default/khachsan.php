@@ -15,8 +15,6 @@ require_once DIR . '/common/paging.php';
 require_once DIR . '/common/redict.php';
 $data['menu']=menu_getByTop('','','');
 $data['config']=config_getByTop(1,'','');
-
-
     if(isset($_GET['Id'])&&$_GET['Id']!=''){
         $id=addslashes(strip_tags($_GET['Id']));
         $danhmuc=danhmuc_khachsan_getByTop(1,'name_url="'.$id.'"','');

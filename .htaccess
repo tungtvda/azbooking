@@ -19,3 +19,6 @@ RewriteRule ^dat-tour/ajax/$ controller/default/booking.php
 
 RewriteRule ^khach-san/$ controller/default/khachsan.php
 RewriteRule ^khach-san/page-([0-9]+)$ controller/default/khachsan.php?page=$1
+RewriteRule ^khach-san/([a-zA-Z0-9_-]+)/$ controller/default/khachsan.php?Id=$1
+RewriteRule ^khach-san/([a-zA-Z0-9_-]+)/page-([0-9]+)$ controller/default/khachsan.php?Id=$1&page=$2
+RewriteRule ^khach-san/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ controller/default/chitietkhachsan.php?Id=$1&name_url=$2

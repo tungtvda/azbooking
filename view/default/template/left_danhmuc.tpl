@@ -24,7 +24,7 @@
                     </label>
                     <label class="to"> <span class="form-item db">
                           <select style="width: 100%" name="danhmuc_tour_2" id="DanhMuc2Id" class="awe-select">
-                              <option value="">Danh mục cấp 2</option>
+                              <option value="">Chọn loại tour</option>
                           </select>
                         </span>
                     </label>
@@ -118,14 +118,6 @@
                         </div>
                     </div>
                 </form>
-            </div>
-        </div>
-        <div class="widget widget_price_filter"><h3>Fanpage</h3>
-            <div class="price-slider-wrapper">
-                <div class="price-slider"></div>
-                <div class="price_slider_amount">
-                    <div class="price_label"><span class="from"></span> - <span class="to"></span></div>
-                </div>
             </div>
         </div>
         <div class="widget widget_has_radio_checkbox"><h3>Văn phòng Hà Nội</h3>
