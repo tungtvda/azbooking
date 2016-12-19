@@ -10783,3 +10783,11 @@ caption, th, td {
     list-style: none;
     padding-left:0px !important;
 }
+.booking_hotel tr th{
+    font-weight: 600;
+    font-size: 13px;
+}
+.booking_hotel tr td label{
+    font-weight: normal;
+    font-size: 13px;
+}

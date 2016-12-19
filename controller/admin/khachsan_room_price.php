@@ -56,7 +56,7 @@ if(isset($_SESSION["Admin"]))
             header('Location: '.SITE_NAME.'/controller/admin/khachsan_room_price.php');
         }
     }
-    if(isset($_POST["danhmuc_id"])&&isset($_POST["name"])&&isset($_POST["price"]))
+    if(isset($_POST["danhmuc_id"])&&isset($_POST["name"])&&isset($_POST["price"])&&isset($_POST["amount_people"]))
     {
        $array=$_POST;
        if(!isset($array['id']))
@@ -67,6 +67,8 @@ if(isset($_SESSION["Admin"]))
        $array['name']='0';
        if(!isset($array['price']))
        $array['price']='0';
+       if(!isset($array['amount_people']))
+       $array['amount_people']='0';
       $new_obj=new khachsan_room_price($array);
         if($insert)
         {
@@ -84,7 +86,7 @@ if(isset($_SESSION["Admin"]))
     $data['username']=isset($_SESSION["UserName"])?$_SESSION["UserName"]:'quản trị viên';
     $data['count_paging']=khachsan_room_price_count('');
     $data['page']=isset($_GET['page'])?$_GET['page']:'1';
-    $data['table_body']=khachsan_room_price_getByPagingReplace($data['page'],20,'danhmuc_id DESC','');
+    $data['table_body']=khachsan_room_price_getByPagingReplace($data['page'],20,'id DESC','');
     // gọi phương thức trong tầng view để hiển thị
     view_khachsan_room_price($data);
 }

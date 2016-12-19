@@ -51,8 +51,11 @@ $data['tour_lienquan']=khachsan_getByTop(6,'id!='.$data['detail'][0]->id.' and d
 $title=($title)?$title:'Azbooking.vn';
 $description=($description)?$description:'Azbooking.vn';
 $keywords=($keyword)?$keyword:'Azbooking.vn';
+
+
 show_header($title,$description,$keywords,$data);
 show_menu($data,'khachsan');
 show_banner($data);
 show_chitiet_khachsan($data);
 show_footer($data);
+bookingHotel($data['detail'][0]);

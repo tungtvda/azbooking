@@ -247,8 +247,6 @@
             price=jQuery('#price_adults').val();
             price_children=0;
             price_children_5=0;
-//                                                        price_children=$('#price_children').val();
-//                                                        price_children_5=$('#price_children_5').val();
             number_adults=jQuery('#num_price_adults').val();
             number_children=jQuery('#num_price_children_val').val();
             number_children_5=jQuery('#num_price_children_5_val').val();
@@ -337,6 +335,126 @@
                 alert('Bạn vui lòng kiểm tra lại thông tin đặt tour');
             }
         });
+
+        $("#tinhtien").click(function() {
+            var checkbox=0;
+            var total=0;
+            var rest_room_type='';
+            $(".price_room").each(function(){
+                if($(this).is(':checked')) {
+                    var Id = $(this).attr("value");
+                    var id_link='#number_'+Id;
+                    var name = $(this).attr("valueName");
+                    rest_room_type=rest_room_type+' - '+name+' <br>'
+
+                    var price= $(this).attr("valuePrice");
+                    var amount_people= $(id_link).val();
+                    if(price==''){
+                        price=0;
+                    }
+                    if(amount_people==''){
+                        amount_people=1;
+                        $(id_link).val(1);
+                    }
+                    price=parseInt(price);
+                    amount_people=parseInt(amount_people);
+                    checkbox=checkbox+1;
+                    var sub_total=price*amount_people;
+                    total+=sub_total;
+                }
+            });
+            if(checkbox==0){
+                alert('Bạn vui lòng chọn loại phòng và số lượng phòng')
+            }
+            else{
+                var num_member = $('#num_member').val();
+                if(num_member!=''&&parseInt(num_member)>0){
+                    var total_format='Liên hệ'
+                    if(total>0){
+                        var n = parseFloat(total);
+                        total_format=n.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1.")+" vnđ";
+                        jQuery("#amount_total").text(total_format);
+                        jQuery("#amount_total").show();
+                        jQuery("#total_fee").text(total_format);
+                        jQuery("#hidden_total").show();
+                        jQuery("#next_booking").show();
+                        jQuery("#rest_room_type").html(rest_room_type);
+                        jQuery("#num_member_table").html(num_member);
+                    }
+                }
+                else{
+                    document.getElementById('num_member').focus();
+                    alert('Bạn vui lòng nhập số người');
+
+                }
+
+            }
+        });
+
+        $(".price_room").click(function() {
+            if($(this).is(':checked')) {
+                var Id = $(this).attr("value");
+                var field='number_'+Id;
+                document.getElementById(field).focus();
+            }
+        });
+    });
+
+    jQuery("#booking_hotel_ajax").click(function(){
+
+
+        id=jQuery('#id_input').val();
+        name_url=jQuery('#name_url_input').val();
+        date=jQuery('#date_input').val();
+        price=jQuery('#price_adults').val();
+        total_input=jQuery('#total_input').val();
+        full_name=jQuery('#name_booking').val();
+        email=jQuery('#email_booking').val();
+        phone=jQuery('#phone_booking').val();
+        address=jQuery('#address_booking').val();
+        request=jQuery('#request_booking').val();
+        check=1;
+        if(full_name==""){
+            jQuery("#full_name_er").show();
+            check_name=0;
+        }
+        else{
+            jQuery("#full_name_er").hide();
+            check_name=1;
+        }
+        if(email==""){
+            jQuery("#email_er").show();
+            check_email=0;
+        }else{
+            if(validateEmail(email)){
+                jQuery("#email_er").hide();
+                check_email=1;
+            }else{
+                jQuery("#email_er").show();
+                check_email=0;
+            }
+
+        }
+        if(phone==""){
+            jQuery("#phone_er").show();
+            check_phone=0;
+        }
+        else{
+            jQuery("#phone_er").hide();
+            check_phone=1;
+        }
+        if(address==""){
+            jQuery("#address_er").show();
+            check_address=0;
+        }else{
+            jQuery("#address_er").hide();
+            check_address=1;
+        }
+        if (check_name != 0&&check_email != 0&&check_phone!=0&&check_address!=0) {
+            $( "#booking_hotel" ).submit();
+        } else {
+            alert('Bạn vui lòng kiểm tra lại thông tin đặt tour');
+        }
     });
 
     //
@@ -443,6 +561,51 @@
         var b = parseInt(parseFloat(a)*1000)/1000;
         return b.toFixed(0);
     }
+    function myFunctionHotel() {
+        price=jQuery('#price').val();
+        num_member=jQuery('#num_member').val();
+        room_type=jQuery('#room_type').val();
+        var element = $('#room_type').find('option:selected');
+        var price_zoom = element.attr("myTag");
+        if(price=='')
+        {
+            price=0;
+        }
+        if(num_member=='')
+        {
+            num_member=1;
+        }
+        if(price_zoom=='')
+        {
+            price=0;
+        }
+        num_member=parseInt(num_member);
+        price_zoom=parseInt(price_zoom);
+        if(price_zoom==''){
+            total="Liên hệ";
+        }
+        else{
+            total=(price_adults+price_children_val+price_children_5_val)*price;
+            if(total==0){
+                total="Liên hệ";
+            }
+            else{
+                var n = parseFloat(total);
+//                                                        total = Math.round(n * 1000)/1000;
+                total=n.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1.")+" vnđ";
+            }
+        }
+        jQuery("#amount_total").text(total);
+        jQuery("#no_adults").text(price_adults);
+        jQuery("#no_children").text(price_children_val);
+        jQuery("#no_children_5").text(price_children_5_val);
+        jQuery("#total_fee").text(total);
+        jQuery('#total_input').val(total);
+        jQuery("#hidden_total").show();
+        jQuery("#next_booking").show();
+
+    }
+
 </script>
 <link rel="stylesheet" type="text/css"
       href="{SITE-NAME}/view/default/themes/calendar/src/css/pignose.calender.css"/>
