@@ -25,22 +25,35 @@ function show_chitiet_khachsan($data = array())
     $asign['content']= $data['detail'][0]->content;
     $asign['start']= sao($data['detail'][0]->start);
     $room_type='';
-    $room_type_array=explode(',',$data['detail'][0]->room_type);
-    if(count($room_type_array)>0){
+    $string_zoom_type='';
+    $data_room=khachsan_room_price_getByTop('','danhmuc_id='.$data['detail'][0]->id,'id desc');
+    if(count($data_room)>0){
         $count_room=1;
-        foreach($room_type_array as $key)
-        {
-            $data_room=danhmuc_room_type_getById($key);
-            if(count($data_room)>0){
-                if($count_room==1){
-                    $room_type.=$data_room[0]->name;
-                }else{
-                    $room_type.=', '.$data_room[0]->name;
-                }
+        foreach($data_room as $row){
+            if($count_room==1){
+                $room_type.=$row->name;
+            }else{
+                $room_type.=', '.$row->name;
             }
+            $dongia='Liên hệ';
+            if($row->price>0){
+                $dongia=number_format($row->price,0,",",".").'vnđ';
+            }
+
+//            $string_zoom_type.='<option myTag="'.$row->price.'" value="'.$row->id.'">'.$row->name.'</option>';
+            $string_zoom_type.=' <tr>
+                                            <td>
+                                                <label title="Đơn giá: '.$dongia.'"><input  style="height: 14px; width: 14px; margin: 0px" type="checkbox" class="price_room" valueName="'.$row->name.'" value="'.$row->id.'" valuePrice="'.$row->price.'" valueNumber="" id="price_'.$row->id.'" name="price_room[]"> '.$row->name.'</label>
+                                            </td>
+                                            <td>
+                                                <input   style="width: 50px; height: 27px;" type="number" id="number_'.$row->id.'"  min="0" max="'.$row->amount_people.'" name="amount_people_'.$row->id.'">
+                                            </td>
+                                        </tr>';
             $count_room++;
         }
+
     }
+    $asign['string_zoom_type'] =$string_zoom_type;
     $asign['room_type']=$room_type;
     $asign['price']= $data['detail'][0]->price;
     if($data['detail'][0]->price==0||$data['detail'][0]->price==''){
@@ -57,24 +70,8 @@ function show_chitiet_khachsan($data = array())
     $asign['date_now'] = date('Y-m-d', strtotime(date(DATETIME_FORMAT)));
     $asign['date_now_vn'] = date('d-m-Y', strtotime(date(DATETIME_FORMAT)));
 
-    $arr_check=explode(',',$data['detail'][0]->room_type);
-    $string_zoom_type='';
-    $asign['hidden_zoom_type'] ='';
-    if(count($arr_check)>0){
 
-        $data['room_type']=danhmuc_room_type_getByAll();
-        foreach($data['room_type'] as $key)
-        {
-            if(in_array($key->id,$arr_check)){
-                $string_zoom_type.='<option value="'.$key->id.'">'.$key->name.'</option>';
-            }
-        }
-    }
-    else{
-        $asign['hidden_zoom_type'] ='hidden';
-    }
 
-    $asign['string_zoom_type'] =$string_zoom_type;
     print_template($asign, 'chitietkhachsan');
 }
 

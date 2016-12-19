@@ -193,21 +193,18 @@ function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberfor
                     $ft->assign('price_format',number_format((int)$item->price,0,",",".").' vnđ');
                 }
                 $room_type='';
-                $room_type_array=explode(',',$item->room_type);
-                if(count($room_type_array)>0){
+                $data_room=khachsan_room_price_getByTop('','danhmuc_id='.$item->id,'id desc');
+                if(count($data_room)>0){
                     $count_room=1;
-                    foreach($room_type_array as $key)
-                    {
-                        $data_room=danhmuc_room_type_getById($key);
-                        if(count($data_room)>0){
-                            if($count_room==1){
-                                $room_type.=$data_room[0]->name;
-                            }else{
-                                $room_type.=', '.$data_room[0]->name;
-                            }
+                    foreach($data_room as $row){
+                        if($count_room==1){
+                            $room_type.=$row->name;
+                        }else{
+                            $room_type.=', '.$row->name;
                         }
                         $count_room++;
                     }
+
                 }
                 $ft->assign('room_type',' Loại phòng: '.$room_type);
                 $content=$item->content;

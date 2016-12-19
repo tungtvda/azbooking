@@ -29,7 +29,7 @@ function view_khachsan_room_price($data)
 //
 function showTableHeader()
 {
-    return '<th>id</th><th>danhmuc_id</th><th>name</th><th>price</th>';
+    return '<th>id</th><th>danhmuc_id</th><th>name</th><th>price</th><th>amount_people</th>';
 }
 //
 function showTableBody($data)
@@ -42,6 +42,7 @@ function showTableBody($data)
         $TableBody.="<td>".$obj->danhmuc_id."</td>";
         $TableBody.="<td>".$obj->name."</td>";
         $TableBody.="<td>".$obj->price."</td>";
+        $TableBody.="<td>".$obj->amount_people."</td>";
         $TableBody.="<td><a href=\"?action=edit&id=".$obj->id."\" title=\"Edit\"><img src=\"".SITE_NAME."/view/admin/Themes/images/pencil.png\" alt=\"Edit\"></a>";
         $TableBody.="<a href=\"?action=delete&id=".$obj->id."\" title=\"Delete\" onClick=\"return confirm('Bạn có chắc chắc muốn xóa?')\"><img src=\"".SITE_NAME."/view/admin/Themes/images/cross.png\" alt=\"Delete\"></a> ";
         $TableBody.="</td>";
@@ -65,5 +66,6 @@ function showFrom($form,$ListKey=array())
     $str_from.='</select></p>';
     $str_from.='<p><label>name</label><input class="text-input small-input" type="text"  name="name" value="'.(($form!=false)?$form->name:'').'" /></p>';
     $str_from.='<p><label>price</label><input class="text-input small-input" type="text"  name="price" value="'.(($form!=false)?$form->price:'').'" /></p>';
+    $str_from.='<p><label>amount_people</label><input class="text-input small-input" type="text"  name="amount_people" value="'.(($form!=false)?$form->amount_people:'').'" /></p>';
     return $str_from;
 }

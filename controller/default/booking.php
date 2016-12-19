@@ -126,12 +126,3 @@ if (count($data_tour) > 0) {
     exit;
 }
 
-function checkPostParamSecurity($param)
-{
-    if (isset($_POST[$param])) {
-        return addslashes(strip_tags($_POST[$param]));
-    } else {
-        return false;
-    }
-
-}
