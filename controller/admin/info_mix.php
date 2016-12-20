@@ -54,7 +54,7 @@ if(isset($_SESSION["Admin"]))
             header('Location: '.SITE_NAME.'/controller/admin/info_mix.php');
         }
     }
-    if(isset($_POST["img"])&&isset($_POST["name"])&&isset($_POST["content"])&&isset($_POST["title"])&&isset($_POST["keyword"])&&isset($_POST["description"]))
+    if(isset($_POST["img"])&&isset($_POST["name"])&&isset($_POST["name_url"])&&isset($_POST["content"])&&isset($_POST["title"])&&isset($_POST["keyword"])&&isset($_POST["description"]))
     {
        $array=$_POST;
        if(!isset($array['id']))
@@ -63,6 +63,8 @@ if(isset($_SESSION["Admin"]))
        $array['img']='0';
        if(!isset($array['name']))
        $array['name']='0';
+       if(!isset($array['name_url']))
+       $array['name_url']='0';
        if(!isset($array['content']))
        $array['content']='0';
        if(!isset($array['title']))

@@ -35,13 +35,13 @@ class config
             $this->Hotline=addslashes($this->Hotline);
             $this->Email=addslashes($this->Email);
             $this->Website=addslashes($this->Website);
-            $this->Map=addslashes($this->Map);
+//            $this->Map=addslashes($this->Map);
             $this->Address_hcm=addslashes($this->Address_hcm);
             $this->Phone_hcm=addslashes($this->Phone_hcm);
             $this->fax_hcm=addslashes($this->fax_hcm);
             $this->Hotline_hcm=addslashes($this->Hotline_hcm);
             $this->Email_hcm=addslashes($this->Email_hcm);
-            $this->Map_hcm=addslashes($this->Map_hcm);
+//            $this->Map_hcm=addslashes($this->Map_hcm);
         }
     public function decode()
         {
@@ -55,12 +55,12 @@ class config
             $this->Hotline=stripslashes($this->Hotline);
             $this->Email=stripslashes($this->Email);
             $this->Website=stripslashes($this->Website);
-            $this->Map=stripslashes($this->Map);
+//            $this->Map=stripslashes($this->Map);
             $this->Address_hcm=stripslashes($this->Address_hcm);
             $this->Phone_hcm=stripslashes($this->Phone_hcm);
             $this->fax_hcm=stripslashes($this->fax_hcm);
             $this->Hotline_hcm=stripslashes($this->Hotline_hcm);
             $this->Email_hcm=stripslashes($this->Email_hcm);
-            $this->Map_hcm=stripslashes($this->Map_hcm);
+//            $this->Map_hcm=stripslashes($this->Map_hcm);
         }
 }

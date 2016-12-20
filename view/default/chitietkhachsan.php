@@ -23,6 +23,15 @@ function show_chitiet_khachsan($data = array())
     $asign['Hotline_hcm'] = $data['config'][0]->Hotline_hcm;
     $asign['img']= $data['detail'][0]->img;
     $asign['content']= $data['detail'][0]->content;
+    $content=$data['detail'][0]->content;
+    if (strlen($content) > 200) {
+        $ten1=strip_tags($content);
+
+        $ten = substr($ten1, 0, 200);
+        $asign['content_short'] = substr($ten, 0, strrpos($ten, ' ')) . "...";
+    } else {
+        $asign['content_short']=strip_tags($content);
+    }
     $asign['start']= sao($data['detail'][0]->start);
     $room_type='';
     $string_zoom_type='';
@@ -39,8 +48,6 @@ function show_chitiet_khachsan($data = array())
             if($row->price>0){
                 $dongia=number_format($row->price,0,",",".").'vnđ';
             }
-
-//            $string_zoom_type.='<option myTag="'.$row->price.'" value="'.$row->id.'">'.$row->name.'</option>';
             $string_zoom_type.=' <tr>
                                             <td>
                                                 <label title="Đơn giá: '.$dongia.'"><input  style="height: 14px; width: 14px; margin: 0px" type="checkbox" class="price_room" valueName="'.$row->name.'" value="'.$row->id.'" valuePrice="'.$row->price.'" valueNumber="" id="price_'.$row->id.'" name="price_room[]"> '.$row->name.'</label>

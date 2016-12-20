@@ -3845,7 +3845,7 @@ body.single-post .blog-page__content > .post .post-content {
 }
 
 .contact-page__form {
-    padding-top: 82px;
+    padding-top: 20px;
     padding-bottom: 120px
 }
 
@@ -3857,9 +3857,9 @@ body.single-post .blog-page__content > .post .post-content {
 .contact-page__form .title h2 {
     color: #0091ea;
     font-weight: 700;
-    font-size: 60px;
+    font-size: 15px;
     line-height: 1.1em;
-    margin-top: 5px
+    margin-top: 5px;
 }
 
 .contact-page__form .descriptions {
@@ -10790,4 +10790,14 @@ caption, th, td {
 .booking_hotel tr td label{
     font-weight: normal;
     font-size: 13px;
+}
+.title_map {
+    position: relative;
+    font-size: 15px;
+    font-weight: 700;
+    color: #0091ea;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    margin-top: 20px;
 }

@@ -90,3 +90,8 @@ function news_count($where)
     }
    else return false;
 }
+//
+function news_update_view($obj)
+{
+    return exe_query("update news set view='$obj->view' where id=$obj->id",'news');
+}

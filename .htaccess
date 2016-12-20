@@ -22,3 +22,17 @@ RewriteRule ^khach-san/page-([0-9]+)$ controller/default/khachsan.php?page=$1
 RewriteRule ^khach-san/([a-zA-Z0-9_-]+)/$ controller/default/khachsan.php?Id=$1
 RewriteRule ^khach-san/([a-zA-Z0-9_-]+)/page-([0-9]+)$ controller/default/khachsan.php?Id=$1&page=$2
 RewriteRule ^khach-san/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ controller/default/chitietkhachsan.php?Id=$1&name_url=$2
+
+RewriteRule ^tin-tuc/$ controller/default/tintuc.php
+RewriteRule ^tin-tuc/page-([0-9]+)$ controller/default/tintuc.php?page=$1
+RewriteRule ^tin-tuc/([a-zA-Z0-9_-]+)/$ controller/default/tintuc.php?Id=$1
+RewriteRule ^tin-tuc/([a-zA-Z0-9_-]+)/page-([0-9]+)$ controller/default/tintuc.php?Id=$1&page=$2
+RewriteRule ^tin-tuc/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ controller/default/chitiettintuc.php?Id=$1&name_url=$2
+
+
+
+RewriteRule ^tim-kiem-tour$ controller/default/timkiemtour.php
+RewriteRule ^tim-kiem-khach-san$ controller/default/timkiemkhachsan.php
+RewriteRule ^tim-kiem-tin-tuc$ controller/default/timkiemtintuc.php
+
+RewriteRule ^([a-zA-Z0-9_-]+).html$ controller/default/info.php?Id=$1
