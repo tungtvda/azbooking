@@ -37,5 +37,7 @@ function view_left_danhmuc($data = array())
     $asign['tab_tour']=$data['tab_tour'];
     $asign['tab_khachsan']=$data['tab_khachsan'];
     $asign['tab_tintuc']=$data['tab_tintuc'];
+    $asign['map_hn'] = $data['config'][0]->Map;
+    $asign['map_hcm'] = $data['config'][0]->Map_hcm;
     print_template($asign, 'left_danhmuc');
 }

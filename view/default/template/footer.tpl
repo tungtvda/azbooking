@@ -25,7 +25,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="widget widget_categories"><h3>Categiries</h3>
+                <div class="widget widget_categories"><h3>Về chúng tôi</h3>
                     <ul>
                         <li><a href="{SITE-NAME}/chinh-sach-quy-dinh-chung.html">- {quydinh}</a></li>
                         <li><a href="{SITE-NAME}/chinh-sach-bao-mat-thong-tin.html">- {baomat}</a></li>
