@@ -108,6 +108,7 @@
                                         </tr>
                                         {string_zoom_type}
                                     </table>
+
                                 </div>
                                 <label>Số người</label>
                                 <div class="form-item">
