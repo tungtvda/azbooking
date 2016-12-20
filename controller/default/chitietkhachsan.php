@@ -13,6 +13,8 @@ if(!defined('SITE_NAME'))
 require_once DIR.'/controller/default/public.php';
 require_once DIR . '/common/paging.php';
 require_once DIR . '/common/redict.php';
+require_once DIR . '/common/class.phpmailer.php';
+require_once(DIR . "/common/Mail.php");
 $data['menu']=menu_getByTop('','','');
 $data['config']=config_getByTop(1,'','');
 if(!isset($_GET['name_url'])){

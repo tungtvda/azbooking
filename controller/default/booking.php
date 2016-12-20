@@ -104,7 +104,7 @@ if (count($data_tour) > 0) {
                             <p>Điện thoại: <span style="color: #132fff; font-weight: bold">' . $phone . '</span>,</p>
                             <p>Địa chỉ: <span style="color: #132fff; font-weight: bold">' . $address . '</span>,</p>
                             <p>Khởi hành: <span style="color: #132fff; font-weight: bold">' . $date . '</span>,</p>
-                            <p>Ngày khởi hành: <span style="color: #132fff; font-weight: bold">' . date(DATETIME_FORMAT) . '</span>,</p>
+                            <p>Ngày khởi hành: <span style="color: #132fff; font-weight: bold">' . _returnGetDateTime() . '</span>,</p>
                             <p>Tour: <span style="color: #132fff; font-weight: bold">' . $data_tour[0]->name . '</span>,</p>
                             <p>Mã tour: <span style="color: #132fff; font-weight: bold">' . $code . '</span>,</p>
                              <p>Giá: <span style="color: #132fff; font-weight: bold">' . $price_number . '</span>,</p>
@@ -115,7 +115,7 @@ if (count($data_tour) > 0) {
 
                            <p>' . $request . '</p>
                         </div>';
-//    SendMail('sales@mixtourist.com', $message, $subject);
+    SendMail('sales@mixtourist.com', $message, $subject);
     SendMail('tungtv.soict@gmail.com', $message, 'Azbooking.vn – Xác nhận đặt tour');
 //    echo "<script>alert('$mes')</script>";
 //
