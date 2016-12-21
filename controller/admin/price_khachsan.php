@@ -5,6 +5,7 @@ require_once DIR.'/view/admin/price_khachsan.php';
 require_once DIR.'/common/messenger.php';
 $data=array();
 $insert=true;
+returnCountData();
 if(isset($_SESSION["Admin"]))
 {
     if(isset($_GET["action"])&&isset($_GET["id"]))

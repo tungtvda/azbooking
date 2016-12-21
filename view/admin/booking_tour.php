@@ -4,6 +4,9 @@ require_once DIR.'/common/cls_fast_template.php';
 function view_booking_tour($data)
 {
     $ft=new FastTemplate(DIR.'/view/admin/templates');
+    $ft->assign('count_contact',$_SESSION['contact']);
+    $ft->assign('booking_hotel',$_SESSION['booking_hotel']);
+    $ft->assign('count_booking',$_SESSION['booking']);
     $ft->define('header','header.tpl');
     $ft->define('body','body.tpl');
     $ft->define('footer','footer.tpl');
