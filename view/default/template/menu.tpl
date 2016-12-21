@@ -34,7 +34,7 @@
                 </nav>
                 <div class="search-box"><span class="searchtoggle"><i class="awe-icon awe-icon-search"></i></span>
                     <form method="get" class="form-search" action="{SITE-NAME}/tim-kiem/">
-                        <div class="form-item"><input type="text" name="value" value="Search &amp; hit enter"></div>
+                        <div class="form-item"><input type="text" name="value" value="Nhập từ khóa tìm kiếm"></div>
                     </form>
                 </div>
                 <a class="toggle-menu-responsive" href="#">

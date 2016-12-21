@@ -8,6 +8,7 @@ require_once DIR.'/common/messenger.php';
 require_once DIR.'/common/locdautiengviet.php';
 $data=array();
 $insert=true;
+returnCountData();
 if(isset($_SESSION["Admin"]))
 {
     if(isset($_GET["action"])&&isset($_GET["id"]))

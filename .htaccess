@@ -34,5 +34,6 @@ RewriteRule ^tin-tuc/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ controller/default/
 RewriteRule ^tim-kiem-tour$ controller/default/timkiemtour.php
 RewriteRule ^tim-kiem-khach-san$ controller/default/timkiemkhachsan.php
 RewriteRule ^tim-kiem-tin-tuc$ controller/default/timkiemtintuc.php
+RewriteRule ^tim-kiem/$ controller/default/timkiem.php
 
 RewriteRule ^([a-zA-Z0-9_-]+).html$ controller/default/info.php?Id=$1

@@ -253,3 +253,12 @@ function _returnGetDateTime()
     date_default_timezone_set("Asia/Ho_Chi_Minh");
     return date('Y-m-d H:i:s');
 }
+
+function returnCountData(){
+    $count_contact=contact_count('status=0');
+    $_SESSION['contact']=$count_contact;
+    $count_dangky=booking_hotel_count('status=0');
+    $_SESSION['booking_hotel']=$count_dangky;
+    $count_booking=booking_tour_count('status=0');
+    $_SESSION['booking']=$count_booking;
+}

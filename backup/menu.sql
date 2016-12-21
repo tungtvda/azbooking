@@ -8,3 +8,4 @@ update menu set img='/mix/view/admin/Themes/kcfinder/upload/images/slide/anh-dep
 update menu set img='/azbooking/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/848166.jpg',name='Tìm kiếm tour',title='Tìm kiếm tour',keyword='Tìm kiếm tour',description='Tìm kiếm tour' where id=6;
 update menu set img='/azbooking/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/848166.jpg',name='Tìm kiếm khách sạn',title='Tìm kiếm khách sạn',keyword='Tìm kiếm khách sạn',description='Tìm kiếm khách sạn' where id=7;
 update menu set img='/azbooking/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/848166.jpg',name='Tìm kiếm khách sạn',title='Tìm kiếm khách sạn',keyword='Tìm kiếm khách sạn',description='Tìm kiếm khách sạn' where id=8;
+update menu set img='/azbooking/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/848166.jpg',name='Tìm kiếm',title='Tìm kiếm',keyword='Tìm kiếm',description='Tìm kiếm' where id=9;

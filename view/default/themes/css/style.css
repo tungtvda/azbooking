@@ -2684,7 +2684,7 @@ span.dropcap {
 }
 
 .category-heading-content.category-heading-content__2 {
-    padding-top: 140px
+    padding-top: 80px
 }
 
 .category-heading-content > h3 {
@@ -10800,4 +10800,11 @@ caption, th, td {
     margin-bottom: 10px;
     text-transform: uppercase;
     margin-top: 20px;
+}
+.title_timkiem{
+    border-top: 5px solid #0091ea;
+    margin-top: 37px;
+    font-size: 14px;
+    padding-top: 20px;
+    color: #0091ea;
 }
