@@ -395,7 +395,10 @@
             if($(this).is(':checked')) {
                 var Id = $(this).attr("value");
                 var field='number_'+Id;
+
                 document.getElementById(field).focus();
+                jQuery('#'+field).val(1);
+                jQuery('#'+field).select();
             }
         });
     });
