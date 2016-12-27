@@ -16,7 +16,10 @@ define('PRIVATE_KEY','hoidinhnvbk');
 session_start();
 require_once DIR.'/common/minifi.output.php';
 ob_start("minify_output");
-
+require_once DIR.'/model/contactService.php';
+require_once DIR.'/model/booking_hotelService.php';
+require_once DIR.'/model/booking_tourService.php';
+require_once DIR.'/model/khachsan_room_priceService.php';
 function returnSearchDurations(){
     $data['data']=tour_getByTop('','','durations asc');
     $data_arr=array();
@@ -261,4 +264,37 @@ function returnCountData(){
     $_SESSION['booking_hotel']=$count_dangky;
     $count_booking=booking_tour_count('status=0');
     $_SESSION['booking']=$count_booking;
+}
+function returnRoomPrice($room){
+    $room_rest=array();
+    $arr_rom=explode('/',$room);
+    if(count($arr_rom)>0){
+        foreach($arr_rom as $val){
+            $array_room_price=explode('-',$val);
+            if(count($array_room_price)>0){
+                if(isset($array_room_price[0])&&isset($array_room_price[1])){
+                    $room_data=khachsan_room_price_getById($array_room_price[0]);
+                   if(count($room_data)>0){
+                       $name=$room_data[0]->name;
+                       $number=$array_room_price[1];
+                       $price='Liên hệ';
+                       $sub_total='Liên hệ';
+                       if($room_data[0]->price>0){
+                           $price=number_format((int)$room_data[0]->price,0,",",".").'vnđ';
+                           $sub_total=number_format($room_data[0]->price*$array_room_price[1],0,",",".").'vnđ';
+                       }
+                        $item=array(
+                            'name'=>$name,
+                            'number'=>$number,
+                            'price'=>$price,
+                            'sub_total'=>$sub_total
+                        );
+                       array_push($room_rest,$item);
+                   }
+                }
+            }
+        }
+    }
+    return  $room_rest;
+
 }

@@ -31,6 +31,12 @@
                             $("#danhmuc2_destinations").html(data);
                         });
             });
+            $(".show_table").click(function() {
+                var idSelect = $(this).attr('countid');
+                var field = '#table_'+idSelect;
+                $(".table_hidden").hide();
+                $(field).slideDown();
+            });
 
         });
 
@@ -50,7 +56,14 @@
         var sitename='{SITE-NAME}';
     </script>
     <script type="text/javascript" src="{SITE-NAME}/view/admin/Themes/ckeditor/ckeditor.js"></script>
-
+    <style>
+        .table_hidden tr th{
+            font-size: 11px;
+        }
+        .table_hidden tr td{
+            font-size: 11px;
+        }
+    </style>
 </head>
 
 <body>
@@ -86,7 +99,7 @@
                 <li class="{kichhoat}"><a href="{SITE-NAME}/admin"><span class="icon-align-justify"></span> Dashboard</a></li>
                 <li class="{kichhoat_admin}" ><a href="{SITE-NAME}/controller/admin/admin.php"><span class="icon-user"></span> Tài khoản quản trị</a></li>
                 <li class="{kichhoat_config}"><a href="{SITE-NAME}/controller/admin/config.php"><span class=" icon-wrench"></span> Cấu hình hệ thống</a></li>
-                <li class="{kichhoat_dangky}"><a href="{SITE-NAME}/controller/admin/dangky_email.php"><span class="icon-envelope"></span> Đăng ký email <span style="color: red; float: right">{count_dangky}</span></a></li>
+                <li class="{kichhoat_booking_hotel}"><a href="{SITE-NAME}/controller/admin/booking_hotel.php"><span class="icon-envelope"></span> Đăng phòng khách sạn <span style="color: red; float: right">{booking_hotel}</span></a></li>
                 <li class="{kichhoat_dathang}"><a href="{SITE-NAME}/controller/admin/booking_tour.php"><span class="icon-shopping-cart"></span> Đặt tour <span style="color: red; float: right">{count_booking}</span></a></li>
                 <li class="{kichhoat_lienhe}"><a href="{SITE-NAME}/controller/admin/contact.php"><span class="icon-envelope"></span> Liên hệ <span style="color: red; float: right">{count_contact}</span></a></li>
                 <li class="dropdown {kichhoat_tour}" ><a href="#"><span class=" icon-plane"></span> Tour du lịch</a>
@@ -94,6 +107,7 @@
                         <li><a href="{SITE-NAME}/controller/admin/danhmuc_1.php">Danh mục cấp 1</a></li>
                         <li><a href="{SITE-NAME}/controller/admin/danhmuc_2.php">Danh mục cấp 2</a></li>
                         <li><a href="{SITE-NAME}/controller/admin/tour.php">Danh sách tour</a></li>
+                        <li><a href="{SITE-NAME}/controller/admin/price_timkiem.php">Giá tìm kiếm tour</a></li>
                     </ul>
                 </li>
                 <li class="dropdown {kichhoat_khachsan}"><a href="#"><span class=" icon-home"></span> Khách sạn</a>
@@ -101,6 +115,7 @@
                         <li><a href="{SITE-NAME}/controller/admin/danhmuc_khachsan.php">Danh mục khách sạn</a></li>
                         <li><a href="{SITE-NAME}/controller/admin/khachsan.php">Danh sách khách sạn</a></li>
                         <li><a href="{SITE-NAME}/controller/admin/khachsan_room_price.php">Giá phòng</a></li>
+                        <li><a href="{SITE-NAME}/controller/admin/price_khachsan.php">Giá tìm kiếm khách sạn</a></li>
                     </ul>
                 </li>
                 <li class="dropdown {kichhoat_tintuc}"><a href="#"><span class=" icon-pencil"></span> Tin tức</a>

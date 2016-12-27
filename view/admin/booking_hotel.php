@@ -23,6 +23,7 @@ function view_booking_hotel($data)
     $ft->assign('CONTENT-BOX-RIGHT',isset($data['content_box_right'])?$data['content_box_right']:' ');
     $ft->assign('NOTIFICATION',isset($data['notification'])?$data['notification']:' ');
     $ft->assign('SITE-NAME',isset($data['sitename'])?$data['sitename']:SITE_NAME);
+    $ft->assign('kichhoat_booking_hotel', 'active');
     $ft->assign('FORM',showFrom(isset($data['form'])?$data['form']:'',isset($data['listfkey'])?$data['listfkey']:array()));
     //
     print $ft->parse_and_return('header');
@@ -32,7 +33,7 @@ function view_booking_hotel($data)
 //
 function showTableHeader()
 {
-    return '<th>id</th><th>name_hotel</th><th>phone</th><th>email</th><th>departure_day</th><th>num_member</th><th>total_price</th><th>status</th><th>created</th>';
+    return '<th>name_hotel</th><th>phone</th><th>email</th><th>departure_day</th><th>num_member</th><th>total_price</th><th>Phòng</th><th>created</th>';
 }
 //
 function showTableBody($data)
@@ -40,19 +41,53 @@ function showTableBody($data)
     $TableBody='';
     if(count($data)>0) foreach($data as $obj)
     {
-        $TableBody.="<tr><td><input type=\"checkbox\" name=\"check_".$obj->id."\"/></td>";
-        $TableBody.="<td>".$obj->id."</td>";
+        if($obj->status==0){
+            $font='font-weight: bold; background-color: #e6e6e6';
+        }
+        else{
+            $font='';
+        }
+        $TableBody.="<tr style='".$font."'>
+        <td><input type=\"checkbox\" name=\"check_".$obj->id."\"/></td>";
         $TableBody.="<td>".$obj->name_hotel."</td>";
         $TableBody.="<td>".$obj->phone."</td>";
         $TableBody.="<td>".$obj->email."</td>";
         $TableBody.="<td>".$obj->departure_day."</td>";
         $TableBody.="<td>".$obj->num_member."</td>";
-        $TableBody.="<td>".$obj->total_price."</td>";
-        $TableBody.="<td>".$obj->status."</td>";
+        if($obj->total_price>0){
+            $TableBody.="<td>". number_format((int)$obj->total_price,0,",",".")." vnđ </td>";
+        }
+        else{
+            $TableBody.="<td>Liên hệ</td>";
+        }
+
+
+        $TableBody.="<td>";
+        if($obj->price_room!='')
+        {
+            $TableBody.="<a countid='$obj->id' class='show_table' href='javascript:void(0)' style='font-size: 13px; font-weight: normal'>Thông tin phòng</a>
+            <table class='table_hidden' hidden id='table_$obj->id'>
+            <tr><th>Loại phòng</th><th>Số lượng</th><th>Đơn giá</th><th>Thành tiền</th></tr>";
+            $data_rest=returnRoomPrice($obj->price_room);
+            if(count($data_rest)){
+                foreach($data_rest as $row){
+                    $name=$row['name'];
+                    $number=$row['number'];
+                    $price=$row['price'];
+                    $sub_total=$row['sub_total'];
+                    $TableBody.="
+                    <tr><td>$name</td><td>$number</td><td>$price</td><td>$sub_total</td></tr>";
+                }
+            }
+            $TableBody.="</table>";
+        }
+
+        $TableBody.="</td>";
         $TableBody.="<td>".$obj->created."</td>";
         $TableBody.="<td><a href=\"?action=edit&id=".$obj->id."\" title=\"Edit\"><img src=\"".SITE_NAME."/view/admin/Themes/images/pencil.png\" alt=\"Edit\"></a>";
         $TableBody.="<a href=\"?action=delete&id=".$obj->id."\" title=\"Delete\" onClick=\"return confirm('Bạn có chắc chắc muốn xóa?')\"><img src=\"".SITE_NAME."/view/admin/Themes/images/cross.png\" alt=\"Delete\"></a> ";
         $TableBody.="</td>";
+
         $TableBody.="</tr>";
     }
     return $TableBody;
@@ -70,6 +105,27 @@ function showFrom($form,$ListKey=array())
     $str_from.='<p><label>departure_day</label><input class="text-input small-input" type="text"  name="departure_day" value="'.(($form!=false)?$form->departure_day:'').'" /></p>';
     $str_from.='<p><label>num_member</label><input class="text-input small-input" type="text"  name="num_member" value="'.(($form!=false)?$form->num_member:'').'" /></p>';
     $str_from.='<p><label>price</label><input class="text-input small-input" type="text"  name="price" value="'.(($form!=false)?$form->price:'').'" /></p>';
+
+    if($form!=false&&$form->price_room!='')
+    {
+        $str_from.="
+            <table class=\"table table-bordered dataTable\" id=\"dyntable\" aria-describedby=\"dyntable_info\"   id='table_$form->id'>
+            <tr><th>Loại phòng</th><th>Số lượng</th><th>Đơn giá</th><th>Thành tiền</th></tr>";
+        $data_rest=returnRoomPrice($form->price_room);
+        if(count($data_rest)){
+            foreach($data_rest as $row){
+                $name=$row['name'];
+                $number=$row['number'];
+                $price=$row['price'];
+                $sub_total=$row['sub_total'];
+                $str_from.="
+                    <tr><td>$name</td><td>$number</td><td>$price</td><td>$sub_total</td></tr>";
+            }
+        }
+        $str_from.="</table>";
+    }
+
+
     $str_from.='<p><label>price_room</label><input class="text-input small-input" type="text"  name="price_room" value="'.(($form!=false)?$form->price_room:'').'" /></p>';
     $str_from.='<p><label>total_price</label><input class="text-input small-input" type="text"  name="total_price" value="'.(($form!=false)?$form->total_price:'').'" /></p>';
     $str_from.='<p><label>request</label><textarea name="request">'.(($form!=false)?$form->request:'').'</textarea><script type="text/javascript">CKEDITOR.replace(\'request\'); </script></p>';
