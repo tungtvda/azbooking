@@ -1,3 +1,16 @@
+<section style="background: #f0f0f0;" class="masonry-section-demo">
+    <div class="container">
+        <div class="wrapper_footer">
+
+            <div class="links">
+
+                {danhmuc_menu_footer}
+            </div>
+        </div>
+    </div>
+</section>
+
+
 <footer id="footer-page">
     <div class="container">
         <div class="row">
@@ -42,7 +55,7 @@
                         <li style="line-height: 27px;"><i class="fa fa-map-marker"></i> {Address}</li>
                         <li><a href="tel:{Phone}">- Tel: {Phone}</a></li>
                         <li><a href="tel:{Phone}">- Mobile: {Hotline}</a></li>
-                        <li><a >- Fax: {Fax}</a></li>
+                        <li><a>- Fax: {Fax}</a></li>
                         <li><a href="mailto:{Email}">- Email: {Email}</a></li>
 
                     </ul>
@@ -54,13 +67,28 @@
                         <li style="line-height: 27px;"><i class="fa fa-map-marker"></i> {Address_hcm}</li>
                         <li><a href="tel:{Phone_hcm}">- Tel: {Phone_hcm}</a></li>
                         <li><a href="tel:{Hotline_hcm}">- Mobile: {Hotline_hcm}</a></li>
-                        <li><a >- Fax: {Fax_hcm}</a></li>
+                        <li><a>- Fax: {Fax_hcm}</a></li>
                         <li><a href="mailto:{Email}">- Email: {Email_hcm}</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="copyright"><p>©2016 . <a href="{SITE-NAME}">Azbooking.vn</a></p></div>
+    </div>
+    <div class="row-footer">
+
+        <div class="container">
+            <div class="">
+                <a class="button_hotline" href="tel:{Hotline}">Hà Nội: {Hotline}</a> &nbsp;
+                <a class="button_hotline" href="tel:{Hotline_hcm}">Hồ Chí Minh {Hotline_hcm}</a> &nbsp;
+                <div class="box">
+
+
+
+
+                </div>
+            </div>
+        </div>
     </div>
 </footer>
 </div>
@@ -72,8 +100,44 @@
 <script type="text/javascript" src="{SITE-NAME}/view/default/themes/js/lib/jquery.magnific-popup.min.js"></script>
 <script type="text/javascript" src="{SITE-NAME}/view/default/themes/js/lib/jquery-ui.js"></script>
 <script type="text/javascript" src="{SITE-NAME}/view/default/themes/js/scripts.js"></script>
-<script type="text/javascript" src="{SITE-NAME}/view/default/themes/revslider-demo/js/jquery.themepunch.revolution.min.js"></script>
-<script type="text/javascript" src="{SITE-NAME}/view/default/themes/revslider-demo/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript"
+        src="{SITE-NAME}/view/default/themes/revslider-demo/js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript"
+        src="{SITE-NAME}/view/default/themes/revslider-demo/js/jquery.themepunch.tools.min.js"></script>
+
+<script type="text/javascript"
+        src="{SITE-NAME}/view/default/themes/js/kkcountdown.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $(".kkcountdown-9").kkcountdown({
+            dayText: 'ngày ',
+            daysText: ' ngày ',
+            hoursText: 'h ',
+            minutesText: 'm ',
+            secondsText: 's',
+            displayZeroDays: true,
+            callback: cBack,
+            rusNumbers: false
+        });
+        $(".kkcountdown-10").kkcountdown({
+            dayText: 'ngày ',
+            daysText: ' ngày ',
+            hoursText: 'h ',
+            minutesText: 'm ',
+            secondsText: 's',
+            displayZeroDays: true,
+            callback: cBack,
+            rusNumbers: false
+        });
+    });
+
+    function cBack() {
+        console.log('THE END - Function callback!');
+    }
+</script>
+
 <script type="text/javascript">if ($('#slider-revolution').length) {
         $('#slider-revolution').show().revolution({
             ottedOverlay: "none",
@@ -152,24 +216,24 @@
         });
     }</script>
 <script type="text/javascript">
-    $(document).ready(function(){
-        $("#DanhMuc1Id").change(function() {
-            if($('#DanhMuc1Id  option:selected').val()!=''){
+    $(document).ready(function () {
+        $("#DanhMuc1Id").change(function () {
+            if ($('#DanhMuc1Id  option:selected').val() != '') {
                 $.post('{SITE-NAME}/controller/default/ajax.php',
                         {
-                            Tour:$('#DanhMuc1Id  option:selected').val()
+                            Tour: $('#DanhMuc1Id  option:selected').val()
                         },
-                        function(data,status){
+                        function (data, status) {
                             $("#DanhMuc2Id").html(data);
 
                         });
             }
-            else{
+            else {
                 $("#DanhMuc2Id").html('');
             }
 
         });
-        $("#tab_tour_title").click(function() {
+        $("#tab_tour_title").click(function () {
             $(this).addClass("active_tab_left");
             $('#tab_khachsan_title').removeClass("active_tab_left");
             $('#tab_tintuc_title').removeClass("active_tab_left");
@@ -177,7 +241,7 @@
             $('#tab_tintuc').hide();
             $('#tab_tour').slideDown();
         });
-        $("#tab_khachsan_title").click(function() {
+        $("#tab_khachsan_title").click(function () {
             $(this).addClass("active_tab_left");
             $('#tab_tour_title').removeClass("active_tab_left");
             $('#tab_tintuc_title').removeClass("active_tab_left");
@@ -185,7 +249,7 @@
             $('#tab_tintuc').hide();
             $('#tab_khachsan').slideDown();
         });
-        $("#tab_tintuc_title").click(function() {
+        $("#tab_tintuc_title").click(function () {
             $(this).addClass("active_tab_left");
             $('#tab_tour_title').removeClass("active_tab_left");
             $('#tab_khachsan_title').removeClass("active_tab_left");
@@ -198,7 +262,7 @@
 
                 console.log(date);
                 date_check = (date[0] === null ? '' : date[0].format('YYYY-MM-DD'));
-                date_now=jQuery('#date_get_now').val();
+                date_now = jQuery('#date_get_now').val();
                 if (date_check == '') {
                     alert('Bạn vui lòng chọn ngày đặt');
                 }
@@ -215,85 +279,85 @@
 
             }
         });
-        jQuery("#next_booking").click(function(){
-            date_now=jQuery('#date_get_now').val();
-            price_children=jQuery('#date_input').val();
-            if(price_children==''){
+        jQuery("#next_booking").click(function () {
+            date_now = jQuery('#date_get_now').val();
+            price_children = jQuery('#date_input').val();
+            if (price_children == '') {
                 alert('Bạn vui lòng chọn ngày khởi hành');
             }
-            else{
-                if(price_children<date_now){
+            else {
+                if (price_children < date_now) {
                     alert('Bạn không thể chọn ngày trong quá khứ');
                 }
-                else{
+                else {
                     jQuery('.back_detail').hide();
                     jQuery('.back_detail_cal').hide();
                     jQuery('.next_detail').slideDown();
                 }
             }
         });
-        jQuery("#back_booking").click(function(){
+        jQuery("#back_booking").click(function () {
 
             jQuery('.next_detail').hide();
             jQuery('.back_detail_cal').slideDown();
             jQuery('.back_detail').slideDown();
         });
-        jQuery("#booking_ajax").click(function(){
+        jQuery("#booking_ajax").click(function () {
 
 
-            id=jQuery('#id_input').val();
-            name_url=jQuery('#name_url_input').val();
-            date=jQuery('#date_input').val();
-            price=jQuery('#price_adults').val();
-            price_children=0;
-            price_children_5=0;
-            number_adults=jQuery('#num_price_adults').val();
-            number_children=jQuery('#num_price_children_val').val();
-            number_children_5=jQuery('#num_price_children_5_val').val();
-            total_input=jQuery('#total_input').val();
-            full_name=jQuery('#name_booking').val();
-            email=jQuery('#email_booking').val();
-            phone=jQuery('#phone_booking').val();
-            address=jQuery('#address_booking').val();
-            request=jQuery('#request_booking').val();
-            check=1;
-            if(full_name==""){
+            id = jQuery('#id_input').val();
+            name_url = jQuery('#name_url_input').val();
+            date = jQuery('#date_input').val();
+            price = jQuery('#price_adults').val();
+            price_children = 0;
+            price_children_5 = 0;
+            number_adults = jQuery('#num_price_adults').val();
+            number_children = jQuery('#num_price_children_val').val();
+            number_children_5 = jQuery('#num_price_children_5_val').val();
+            total_input = jQuery('#total_input').val();
+            full_name = jQuery('#name_booking').val();
+            email = jQuery('#email_booking').val();
+            phone = jQuery('#phone_booking').val();
+            address = jQuery('#address_booking').val();
+            request = jQuery('#request_booking').val();
+            check = 1;
+            if (full_name == "") {
                 jQuery("#full_name_er").show();
-                check_name=0;
+                check_name = 0;
             }
-            else{
+            else {
                 jQuery("#full_name_er").hide();
-                check_name=1;
+                check_name = 1;
             }
-            if(email==""){
+            if (email == "") {
                 jQuery("#email_er").show();
-                check_email=0;
-            }else{
-                if(validateEmail(email)){
+                check_email = 0;
+            } else {
+                if (validateEmail(email)) {
                     jQuery("#email_er").hide();
-                    check_email=1;
-                }else{
+                    check_email = 1;
+                } else {
                     jQuery("#email_er").show();
-                    check_email=0;
+                    check_email = 0;
                 }
 
             }
-            if(phone==""){
+            if (phone == "") {
                 jQuery("#phone_er").show();
-                check_phone=0;
+                check_phone = 0;
             }
-            else{
+            else {
                 jQuery("#phone_er").hide();
-                check_phone=1;
+                check_phone = 1;
             }
-            if(address==""){
+            if (address == "") {
                 jQuery("#address_er").show();
-                check_address=0;
-            }else{
+                check_address = 0;
+            } else {
                 jQuery("#address_er").hide();
-                check_address=1;
+                check_address = 1;
             }
-            if (check_name != 0&&check_email != 0&&check_phone!=0&&check_address!=0) {
+            if (check_name != 0 && check_email != 0 && check_phone != 0 && check_address != 0) {
                 jQuery('#loading_booking').show();
                 jQuery('#back_booking').hide();
                 jQuery.post("{SITE-NAME}/dat-tour/ajax/",
@@ -303,29 +367,27 @@
                             date: date,
                             price: price,
                             price_children: price_children,
-                            price_children_5:price_children_5,
-                            number_adults:number_adults,
-                            number_children:number_children,
-                            number_children_5:number_children_5,
-                            total_input:total_input,
-                            full_name:full_name,
-                            email:email,
-                            phone:phone,
-                            address:address,
-                            request:request
+                            price_children_5: price_children_5,
+                            number_adults: number_adults,
+                            number_children: number_children,
+                            number_children_5: number_children_5,
+                            total_input: total_input,
+                            full_name: full_name,
+                            email: email,
+                            phone: phone,
+                            address: address,
+                            request: request
 
                         }
                         )
-                        .
-                        done(function (data) {
-                            if(data==1)
-                            {
+                        .done(function (data) {
+                            if (data == 1) {
                                 jQuery('#loading_booking').hide();
                                 jQuery('#back_booking').show();
                                 alert('Đặt tour thành công, Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất. Xin cảm ơn!');
                                 location.reload(true);
                             }
-                            else{
+                            else {
                                 jQuery('#loading_booking').hide();
                                 jQuery('#back_booking').show();
                                 alert('Đặt tour thất bại, vui lòng kiểm tra lại thông tin đặt tour')
@@ -336,43 +398,43 @@
             }
         });
 
-        $("#tinhtien").click(function() {
-            var checkbox=0;
-            var total=0;
-            var rest_room_type='';
-            $(".price_room").each(function(){
-                if($(this).is(':checked')) {
+        $("#tinhtien").click(function () {
+            var checkbox = 0;
+            var total = 0;
+            var rest_room_type = '';
+            $(".price_room").each(function () {
+                if ($(this).is(':checked')) {
                     var Id = $(this).attr("value");
-                    var id_link='#number_'+Id;
+                    var id_link = '#number_' + Id;
                     var name = $(this).attr("valueName");
-                    rest_room_type=rest_room_type+' - '+name+' <br>'
+                    rest_room_type = rest_room_type + ' - ' + name + ' <br>'
 
-                    var price= $(this).attr("valuePrice");
-                    var amount_people= $(id_link).val();
-                    if(price==''){
-                        price=0;
+                    var price = $(this).attr("valuePrice");
+                    var amount_people = $(id_link).val();
+                    if (price == '') {
+                        price = 0;
                     }
-                    if(amount_people==''){
-                        amount_people=1;
+                    if (amount_people == '') {
+                        amount_people = 1;
                         $(id_link).val(1);
                     }
-                    price=parseInt(price);
-                    amount_people=parseInt(amount_people);
-                    checkbox=checkbox+1;
-                    var sub_total=price*amount_people;
-                    total+=sub_total;
+                    price = parseInt(price);
+                    amount_people = parseInt(amount_people);
+                    checkbox = checkbox + 1;
+                    var sub_total = price * amount_people;
+                    total += sub_total;
                 }
             });
-            if(checkbox==0){
+            if (checkbox == 0) {
                 alert('Bạn vui lòng chọn loại phòng và số lượng phòng')
             }
-            else{
+            else {
                 var num_member = $('#num_member').val();
-                if(num_member!=''&&parseInt(num_member)>0){
-                    var total_format='Liên hệ'
-                    if(total>0){
+                if (num_member != '' && parseInt(num_member) > 0) {
+                    var total_format = 'Liên hệ'
+                    if (total > 0) {
                         var n = parseFloat(total);
-                        total_format=n.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1.")+" vnđ";
+                        total_format = n.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1.") + " vnđ";
                         jQuery("#amount_total").text(total_format);
                         jQuery("#amount_total").show();
                         jQuery("#total_fee").text(total_format);
@@ -382,7 +444,7 @@
                         jQuery("#num_member_table").html(num_member);
                     }
                 }
-                else{
+                else {
                     document.getElementById('num_member').focus();
                     alert('Bạn vui lòng nhập số người');
 
@@ -391,70 +453,74 @@
             }
         });
 
-        $(".price_room").click(function() {
-            if($(this).is(':checked')) {
+        $(".price_room").click(function () {
+            if ($(this).is(':checked')) {
                 var Id = $(this).attr("value");
-                var field='number_'+Id;
+                var field = 'number_' + Id;
 
                 document.getElementById(field).focus();
-                jQuery('#'+field).val(1);
-                jQuery('#'+field).select();
+                jQuery('#' + field).val(1);
+                jQuery('#' + field).select();
             }
+        });
+        $("#search_maybay").click(function () {
+
+            window.open('http://vemaybay.azbooking.vn/', '_blank');
         });
     });
 
-    jQuery("#booking_hotel_ajax").click(function(){
+    jQuery("#booking_hotel_ajax").click(function () {
 
 
-        id=jQuery('#id_input').val();
-        name_url=jQuery('#name_url_input').val();
-        date=jQuery('#date_input').val();
-        price=jQuery('#price_adults').val();
-        total_input=jQuery('#total_input').val();
-        full_name=jQuery('#name_booking').val();
-        email=jQuery('#email_booking').val();
-        phone=jQuery('#phone_booking').val();
-        address=jQuery('#address_booking').val();
-        request=jQuery('#request_booking').val();
-        check=1;
-        if(full_name==""){
+        id = jQuery('#id_input').val();
+        name_url = jQuery('#name_url_input').val();
+        date = jQuery('#date_input').val();
+        price = jQuery('#price_adults').val();
+        total_input = jQuery('#total_input').val();
+        full_name = jQuery('#name_booking').val();
+        email = jQuery('#email_booking').val();
+        phone = jQuery('#phone_booking').val();
+        address = jQuery('#address_booking').val();
+        request = jQuery('#request_booking').val();
+        check = 1;
+        if (full_name == "") {
             jQuery("#full_name_er").show();
-            check_name=0;
+            check_name = 0;
         }
-        else{
+        else {
             jQuery("#full_name_er").hide();
-            check_name=1;
+            check_name = 1;
         }
-        if(email==""){
+        if (email == "") {
             jQuery("#email_er").show();
-            check_email=0;
-        }else{
-            if(validateEmail(email)){
+            check_email = 0;
+        } else {
+            if (validateEmail(email)) {
                 jQuery("#email_er").hide();
-                check_email=1;
-            }else{
+                check_email = 1;
+            } else {
                 jQuery("#email_er").show();
-                check_email=0;
+                check_email = 0;
             }
 
         }
-        if(phone==""){
+        if (phone == "") {
             jQuery("#phone_er").show();
-            check_phone=0;
+            check_phone = 0;
         }
-        else{
+        else {
             jQuery("#phone_er").hide();
-            check_phone=1;
+            check_phone = 1;
         }
-        if(address==""){
+        if (address == "") {
             jQuery("#address_er").show();
-            check_address=0;
-        }else{
+            check_address = 0;
+        } else {
             jQuery("#address_er").hide();
-            check_address=1;
+            check_address = 1;
         }
-        if (check_name != 0&&check_email != 0&&check_phone!=0&&check_address!=0) {
-            $( "#booking_hotel" ).submit();
+        if (check_name != 0 && check_email != 0 && check_phone != 0 && check_address != 0) {
+            $("#booking_hotel").submit();
         } else {
             alert('Bạn vui lòng kiểm tra lại thông tin đặt tour');
         }
@@ -462,20 +528,20 @@
 
     //
     function convertDate(inputFormat) {
-        function pad(s) { return (s < 10) ? '0' + s : s; }
+        function pad(s) {
+            return (s < 10) ? '0' + s : s;
+        }
+
         var d = new Date(inputFormat);
-        return [pad(d.getDate()), pad(d.getMonth()+1), d.getFullYear()].join('-');
+        return [pad(d.getDate()), pad(d.getMonth() + 1), d.getFullYear()].join('-');
     }
-    function phonenumber(inputtxt)
-    {
+    function phonenumber(inputtxt) {
         var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
-        if(inputtxt.match(phoneno))
-        {
+        if (inputtxt.match(phoneno)) {
             alert('yhsnh vonh');
             return true;
         }
-        else
-        {
+        else {
             return false;
         }
     }
@@ -484,70 +550,61 @@
         return re.test(email);
     }
     function myFunction() {
-        price=jQuery('#price_adults').val();
-        price_2=jQuery('#price_2').val();
-        price_3=jQuery('#price_3').val();
-        price_4=jQuery('#price_4').val();
-        price_5=jQuery('#price_5').val();
-        price_6=jQuery('#price_6').val();
+        price = jQuery('#price_adults').val();
+        price_2 = jQuery('#price_2').val();
+        price_3 = jQuery('#price_3').val();
+        price_4 = jQuery('#price_4').val();
+        price_5 = jQuery('#price_5').val();
+        price_6 = jQuery('#price_6').val();
 
-        price_adults=jQuery('#num_price_adults').val();
-        price_children_val=jQuery('#num_price_children_val').val();
-        price_children_5_val=jQuery('#num_price_children_5_val').val();
+        price_adults = jQuery('#num_price_adults').val();
+        price_children_val = jQuery('#num_price_children_val').val();
+        price_children_5_val = jQuery('#num_price_children_5_val').val();
 
-        if(price=='')
-        {
-            price=0;
+        if (price == '') {
+            price = 0;
         }
-        if(price_2=='')
-        {
-            price_2=0;
+        if (price_2 == '') {
+            price_2 = 0;
         }
-        if(price_3=='')
-        {
-            price_3=0;
+        if (price_3 == '') {
+            price_3 = 0;
         }
-        if(price_4=='')
-        {
-            price_4=0;
+        if (price_4 == '') {
+            price_4 = 0;
         }
-        if(price_5=='')
-        {
-            price_5=0;
+        if (price_5 == '') {
+            price_5 = 0;
         }
-        if(price_6=='')
-        {
-            price_6=0;
+        if (price_6 == '') {
+            price_6 = 0;
         }
-        if(price_adults=='')
-        {
-            price_adults=0;
+        if (price_adults == '') {
+            price_adults = 0;
         }
-        if(price_children_val=='')
-        {
-            price_children_val=0;
+        if (price_children_val == '') {
+            price_children_val = 0;
         }
-        if(price_children_5_val=='')
-        {
-            price_children_5_val=0;
+        if (price_children_5_val == '') {
+            price_children_5_val = 0;
         }
-        price_adults=parseInt(price_adults);
-        price_children_val=parseInt(price_children_val);
-        price_children_5_val=parseInt(price_children_5_val);
+        price_adults = parseInt(price_adults);
+        price_children_val = parseInt(price_children_val);
+        price_children_5_val = parseInt(price_children_5_val);
 
-        if(price==''){
-            total="Liên hệ";
+        if (price == '') {
+            total = "Liên hệ";
 
         }
-        else{
-            total=(price_adults+price_children_val+price_children_5_val)*price;
-            if(total==0){
-                total="Liên hệ";
+        else {
+            total = (price_adults + price_children_val + price_children_5_val) * price;
+            if (total == 0) {
+                total = "Liên hệ";
             }
-            else{
+            else {
                 var n = parseFloat(total);
 //                                                        total = Math.round(n * 1000)/1000;
-                total=n.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1.")+" vnđ";
+                total = n.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1.") + " vnđ";
             }
         }
         jQuery("#amount_total").text(total);
@@ -561,41 +618,38 @@
 
     }
     function nformat(a) {
-        var b = parseInt(parseFloat(a)*1000)/1000;
+        var b = parseInt(parseFloat(a) * 1000) / 1000;
         return b.toFixed(0);
     }
     function myFunctionHotel() {
-        price=jQuery('#price').val();
-        num_member=jQuery('#num_member').val();
-        room_type=jQuery('#room_type').val();
+        price = jQuery('#price').val();
+        num_member = jQuery('#num_member').val();
+        room_type = jQuery('#room_type').val();
         var element = $('#room_type').find('option:selected');
         var price_zoom = element.attr("myTag");
-        if(price=='')
-        {
-            price=0;
+        if (price == '') {
+            price = 0;
         }
-        if(num_member=='')
-        {
-            num_member=1;
+        if (num_member == '') {
+            num_member = 1;
         }
-        if(price_zoom=='')
-        {
-            price=0;
+        if (price_zoom == '') {
+            price = 0;
         }
-        num_member=parseInt(num_member);
-        price_zoom=parseInt(price_zoom);
-        if(price_zoom==''){
-            total="Liên hệ";
+        num_member = parseInt(num_member);
+        price_zoom = parseInt(price_zoom);
+        if (price_zoom == '') {
+            total = "Liên hệ";
         }
-        else{
-            total=(price_adults+price_children_val+price_children_5_val)*price;
-            if(total==0){
-                total="Liên hệ";
+        else {
+            total = (price_adults + price_children_val + price_children_5_val) * price;
+            if (total == 0) {
+                total = "Liên hệ";
             }
-            else{
+            else {
                 var n = parseFloat(total);
 //                                                        total = Math.round(n * 1000)/1000;
-                total=n.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1.")+" vnđ";
+                total = n.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1.") + " vnđ";
             }
         }
         jQuery("#amount_total").text(total);

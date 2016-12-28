@@ -120,7 +120,19 @@ function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberfor
                     redict(SITE_NAME);
                 }
                 $ft->assign('link',link_tourdetail($item,$data_dm[0]->name_url,$data_dm2[0]->name_url));
-
+                $key_id='';
+                $mes_='Đã hết hạn';
+                $date_count='';
+                if($item->count_down!=''){
+                     $date_now=_returnGetDateTime();
+                    $date_count=strtotime($item->count_down);
+//                    $date=date('Y-m-d H:i:s', strtotime($item->count_down-$date_now));
+                    $key_id=$item->id;
+                    $mes_='';
+                }
+                $ft->assign('key_id',$key_id);
+                $ft->assign('mes_',$mes_);
+                $ft->assign('date_count',$date_count);
             }
             if(get_class($item)=='tour_img') {
                 $class='column';
