@@ -1570,7 +1570,7 @@ span.dropcap {
 
 .awe-search-tabs__content {
     background: #fff;
-    padding: 32px
+    padding: 15px 0px;
 }
 
 .awe-search-tabs__content .ui-tabs-panel {
@@ -1579,7 +1579,7 @@ span.dropcap {
 
 .awe-search-tabs__content .ui-tabs-panel h2 {
     font-weight: 400;
-    font-size: 32px;
+    font-size: 20px;
     color: #666;
     margin: 0
 }
@@ -1612,26 +1612,26 @@ span.dropcap {
 }
 
 .awe-search-tabs__content .ui-tabs-panel .form-group:nth-child(1) {
-    width: 33.2%;
-    padding-right: 64px
+    width: 19%;
+    /*padding-right: 64px*/
 }
 
 .awe-search-tabs__content .ui-tabs-panel .form-group:nth-child(2) {
-    width: 36.5%;
-    padding-right: 100px
+    width: 68%;
+    /*padding-right: 100px*/
 }
 
 .awe-search-tabs__content .ui-tabs-panel .form-group:nth-child(2) .form-elements {
-    width: 50%;
+    width: 25%;
     float: left
 }
 
 .awe-search-tabs__content .ui-tabs-panel .form-group:nth-child(2) .form-elements:nth-child(odd) {
-    padding-right: 15px
+    /*padding-right: 15px*/
 }
 
 .awe-search-tabs__content .ui-tabs-panel .form-group:nth-child(2) .form-elements:nth-child(even) {
-    padding-left: 15px
+    /*padding-left: 15px*/
 }
 
 .awe-search-tabs__content .ui-tabs-panel .form-group:nth-child(3) {
@@ -10807,4 +10807,215 @@ caption, th, td {
     font-size: 14px;
     padding-top: 20px;
     color: #0091ea;
+}
+.button_hotline {
+
+    /*background-color: #004A7F;*/
+
+    -webkit-border-radius: 10px;
+
+    border-radius: 10px;
+
+    border: none;
+
+    color: #0094FF;
+
+    cursor: pointer;
+
+    display: inline-block;
+
+    font-family: Arial;
+
+    font-size: 16px;
+
+    padding: 5px 10px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+}
+@-webkit-keyframes glowing {
+    0% { color: #ff0909; -webkit-box-shadow: 0 0 3px #004A7F; }
+    50% { color: #0094FF; -webkit-box-shadow: 0 0 10px #0094FF; }
+    100% { color: #ff0909; -webkit-box-shadow: 0 0 3px #004A7F; }
+}
+
+@-moz-keyframes glowing {
+    0% { color: #ff0909; -moz-box-shadow: 0 0 3px #004A7F; }
+    50% { color: #0094FF; -moz-box-shadow: 0 0 10px #0094FF; }
+    100% { color: #ff0909; -moz-box-shadow: 0 0 3px #004A7F; }
+}
+
+@-o-keyframes glowing {
+    0% { color: #ff0909; box-shadow: 0 0 3px #004A7F; }
+    50% { color: #0094FF; box-shadow: 0 0 10px #0094FF; }
+    100% { color: #ff0909; box-shadow: 0 0 3px #004A7F; }
+}
+
+@keyframes glowing {
+    0% { color: #ff0909; box-shadow: 0 0 3px #004A7F; }
+    50% { color: #0094FF; box-shadow: 0 0 10px #0094FF; }
+    100% { color: #ff0909; box-shadow: 0 0 3px #004A7F; }
+}
+
+.button_hotline {
+    -webkit-animation: glowing 1500ms infinite;
+    -moz-animation: glowing 1500ms infinite;
+    -o-animation: glowing 1500ms infinite;
+    animation: glowing 1500ms infinite;
+}
+.row-footer {
+    background: none repeat scroll 0 0 #e6ebec;
+    bottom: 0;
+    margin: 0;
+    padding: 5px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.links, .info {
+    clear: both;
+    padding: 20px 0;
+    margin: 0;
+    overflow: hidden;
+}
+.Domestic {
+    width: 49%;
+    float: left;
+    /*height: 230px;*/
+    /*overflow: hidden;*/
+}
+.Domestic ul,.Outbound ul {
+    float: left;
+    padding-left: 0px;
+}
+.Domestic ul li {
+    width: 180px;
+    height: 21px;
+    overflow: hidden;
+    float: left;
+    white-space: nowrap;
+    margin-bottom: 2px;
+    display: block;
+    text-overflow: ellipsis;
+}
+.Domestic ul li a {
+    color: #79787d;
+}
+.Outbound {
+    width: 49%;
+    float: right;
+    /*height: 230px;*/
+    /*overflow: hidden;*/
+}
+ .Outbound ul li {
+     width: 180px;
+     height: 21px;
+     overflow: hidden;
+     float: left;
+     white-space: nowrap;
+     margin-bottom: 2px;
+     display: block;
+     text-overflow: ellipsis;
+}
+.wrapper_footer{
+    margin-bottom: 50px;
+}
+.Outbound ul li a {
+    color: #79787d;
+}
+.title_index{
+    font-weight: 600;
+    font-size: 18px;
+    border-bottom: 3px solid #0091EA;
+    color: #0091ea;
+    line-height: 1.3em;
+    margin-top: 0;
+    line-height: 58px;
+    z-index: 9;
+    text-transform: uppercase;
+}
+.tourGioChot .item .Img {
+    position: relative;
+}
+.tourGioChot .item img {
+    width: 100%;
+    border: 1px solid #fff;
+}
+.tourGioChot .item .Img .Name {
+    position: absolute;
+    bottom: 0px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 30px 8px 8px 14px;
+    width: 100%;
+    height: 134px;
+    background: -webkit-linear-gradient(top, rgba(51, 51, 51, 0) , rgb(0, 0, 0));
+    background: -o-linear-gradient(bottom, rgba(51, 51, 51, 0) , rgb(0, 0, 0));
+    background: -moz-linear-gradient(bottom, rgba(51, 51, 51, 0) , rgb(0, 0, 0));
+    background: linear-gradient(to bottom, rgba(51, 51, 51, 0) , rgb(0, 0, 0));
+    white-space: nowrap;
+}
+.tourGioChot .item .Discount {
+    position: absolute;
+    background: url(../images/Orange-Sale.png) no-repeat left top;
+    top: 10px;
+    left: 10px;
+    width: 74px;
+    height: 74px;
+}
+.tourGioChot .item .Img a {
+    color: white;
+}
+.tourGioChot .item .Img .Name .songay {
+    font-size: 12px;
+    font-weight: normal;
+    color: white;
+}
+.tourGioChot .item .Img .Name .ngaykhoihanh {
+    font-size: 12px;
+    font-weight: normal;
+    padding-left: 62px;
+}
+.tourGioChot .item .Img .Name .PriceDiscount {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+.tourGioChot .item .Img .Name .Price {
+    color: #f70f06;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 40px;
+    line-height: 27px;
+}
+.tourGioChot .item .CountDown {
+    position: absolute;
+    padding-top: 5px;
+    height: 36px;
+    width: 200px;
+    top: 10px;
+    right: 15px;
+    color: white;
+    /* background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 0.84)); */
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 0.84)); */
+    font-size: 8px;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.52);
+}
+.tourGioChot .item .CountDown i {
+    padding-top: 4px;
+    padding-left: 10px;
+}
+.tourGioChot .item .CountDown span {
+    font-size: 14px;
+    text-align: center;
+}
+.name_tour_count_down{
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }

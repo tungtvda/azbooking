@@ -12,26 +12,30 @@
                 <li><a title="Tìm kiếm tour" href="#awe-search-tabs-1"><i class="awe-icon awe-icon-briefcase"></i></a></li>
                 <li><a title="Tìm kiếm khách sạn" href="#awe-search-tabs-2"><i class="awe-icon awe-icon-hotel"></i></a></li>
                 <li><a title="Tìm kiếm tin tức" href="#awe-search-tabs-3"><i class="awe-icon fa fa-newspaper-o"></i></a></li>
-                <!--<li><a href="#awe-search-tabs-4"><i class="awe-icon awe-icon-train"></i></a></li>
-                <li><a href="#awe-search-tabs-5"><i class="awe-icon awe-icon-car"></i></a></li>
+                <li><a id="search_maybay" title="Tìm kiếm vé máy bay" href="#awe-search-tabs-4"><i class="awe-icon awe-icon-plane"></i></a></li>
+                <!--<li><a href="#awe-search-tabs-5"><i class="awe-icon awe-icon-car"></i></a></li>
                 <li><a href="#awe-search-tabs-6"><i class="awe-icon awe-icon-bus"></i></a></li>-->
             </ul>
 
             <div class="awe-search-tabs__content tabs__content">
                 <div id="awe-search-tabs-1" class="search-flight-hotel"><h2>Tìm kiếm tour</h2>
                     <form action="{SITE-NAME}/tim-kiem-tour" method="get">
-                        <div style="width: 35%;" class="form-group">
+                        <div style="" class="form-group">
                             <div class="form-elements">
-                                <div class="form-item"><i class="awe-icon awe-icon-marker-1"></i>
-                                    <input type="text" name="key_timkiem"  placeholder="Từ khóa tìm kiếm...">
-                                </div>
+                                <!--<div class="form-item"><i class="awe-icon awe-icon-marker-1"></i>
+                                    <input type="text" name="key_timkiem"  placeholder="Nơi khởi hành...">
+                                </div>-->
+                                <div class="form-item"><select  name="khoihanh_1" id="" class="awe-select">
+                                        <option value="">Nơi khởi hành...</option>
+                                        {danhmuc_1_timkiem}
+                                    </select></div>
                             </div>
 
                         </div>
-                        <div style="width: 52%;" class="form-group">
+                        <div  class="form-group">
                             <div class="form-elements">
                                 <div class="form-item"><select  name="danhmuc_tour_1" id="DanhMuc1Id" class="awe-select">
-                                        <option value="">Chọn loại tour</option>
+                                        <option value="">Loại tour</option>
                                         {danhmuc_1_timkiem}
                                     </select></div>
                             </div>

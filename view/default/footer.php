@@ -31,5 +31,25 @@ function view_footer($data = array())
     $asign['khieunai'] = $data['info'][4]->name;
     $asign['giaonhan'] = $data['info'][5]->name;
 
+    $asign['danhmuc_menu_footer'] ='';
+    if(count($data['danhmuc_menu_footer'])>0){
+
+        foreach($data['danhmuc_menu_footer'] as $row){
+            $link_dm1=link_dm_tour1($row);
+            $data_danhmuc2=danhmuc_2_getByTop('','id!=1 and danhmuc1_id='.$row->id,'position asc');
+            if(count($data_danhmuc2)>0){
+                $asign['danhmuc_menu_footer'] .=' <div class="Domestic"> <ul>';
+                $asign['danhmuc_menu_footer'] .=' <li><a style="font-weight: bold" href="'.$link_dm1.'">'.$row->name.'</a></li>';
+                foreach($data_danhmuc2 as $row2){
+                    $link_dm2=link_dm_tour2($row2,$row->name_url);
+                    $asign['danhmuc_menu_footer'] .=' <li><a href="'.$link_dm2.'">'.$row2->name.'</a></li>';
+                }
+                $asign['danhmuc_menu_footer'] .='</ul></div>';
+            }
+
+        }
+
+    }
+
     print_template($asign, 'footer');
 }

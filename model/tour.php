@@ -1,7 +1,7 @@
 <?php
 class tour
 {
-    public $id,$DanhMuc1Id,$DanhMuc2Id,$promotion,$packages,$name,$name_url,$code,$img,$price_sales,$price,$price_2,$price_3,$price_4,$price_5,$price_6,$durations,$departure,$destination,$vehicle,$hotel,$summary,$highlights,$schedule,$price_list,$content,$list_img,$title,$keyword,$description,$inclusion,$exclusion;
+    public $id,$DanhMuc1Id,$DanhMuc2Id,$promotion,$packages,$name,$name_url,$count_down,$code,$img,$price_sales,$price,$price_2,$price_3,$price_4,$price_5,$price_6,$durations,$departure,$destination,$vehicle,$hotel,$summary,$highlights,$schedule,$price_list,$content,$list_img,$title,$keyword,$description,$inclusion,$exclusion;
     public function tour($data=array())
     {
     $this->id=isset($data['id'])?$data['id']:'';
@@ -11,6 +11,7 @@ class tour
     $this->packages=isset($data['packages'])?$data['packages']:'';
     $this->name=isset($data['name'])?$data['name']:'';
     $this->name_url=isset($data['name_url'])?$data['name_url']:'';
+    $this->count_down=isset($data['count_down'])?$data['count_down']:'';
     $this->code=isset($data['code'])?$data['code']:'';
     $this->img=isset($data['img'])?$data['img']:'';
     $this->price_sales=isset($data['price_sales'])?$data['price_sales']:'';
@@ -47,6 +48,7 @@ class tour
             $this->packages=addslashes($this->packages);
             $this->name=addslashes($this->name);
             $this->name_url=addslashes($this->name_url);
+            $this->count_down=addslashes($this->count_down);
             $this->code=addslashes($this->code);
             $this->img=addslashes($this->img);
             $this->price_sales=addslashes($this->price_sales);
@@ -82,6 +84,7 @@ class tour
             $this->packages=stripslashes($this->packages);
             $this->name=stripslashes($this->name);
             $this->name_url=stripslashes($this->name_url);
+            $this->count_down=stripslashes($this->count_down);
             $this->code=stripslashes($this->code);
             $this->img=stripslashes($this->img);
             $this->price_sales=stripslashes($this->price_sales);
