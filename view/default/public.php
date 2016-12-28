@@ -101,6 +101,14 @@ function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberfor
                 else{
                     $ft->assign('price_format',number_format((int)$item->price,0,",",".").' vnđ');
                 }
+
+                if($item->price==0||$item->price==''){
+                    $ft->assign('price_format_sales','');
+                }
+                else{
+                    $ft->assign('price_format_sales',number_format((int)$item->price_sales,0,",",".").' vnđ');
+                }
+
                 $content=$item->summary;
                 if (strlen($content) > 200) {
                     $ten1=strip_tags($content);

@@ -14,7 +14,7 @@
             <span class="ngaykhoihanh"><a href="{link}" title="Ngày khác"><i class="fa fa-calendar"></i>&nbsp; 30/12/2016</a></span>
             <br>
                                     <span class="PriceDiscount">
-3,090,000<span>₫</span>
+{price_format_sales}
                                     </span>
             <span class="Price">{price_format}</span>
         </div>
