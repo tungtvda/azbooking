@@ -8,10 +8,10 @@
             </a>
 
             <br>
-            <span class="songay"><i class="fa fa-clock-o"></i>&nbsp; 4 ngày</span>
+            <span class="songay"><i class="fa fa-clock-o"></i>&nbsp; {durations}</span>
 
 
-            <span class="ngaykhoihanh"><a href="{link}" title="Ngày khác"><i class="fa fa-calendar"></i>&nbsp; 30/12/2016</a></span>
+            <span class="ngaykhoihanh"><a href="{link}" title="Ngày khởi hành"><i class="fa fa-calendar"></i>&nbsp; {departure_time}</a></span>
             <br>
                                     <span class="PriceDiscount">
 {price_format_sales}

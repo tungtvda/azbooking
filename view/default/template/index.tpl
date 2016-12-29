@@ -8,6 +8,7 @@
                         <div class="contentGioChotOver">
                             <div class="wrapper">
                                {tour_count_down}
+                                {tour_count_down_js}
                             </div>
                         </div>
                     </div>
@@ -37,15 +38,16 @@
             <div class="col-md-8">
                 <div class="sale-flights-tabs tabs">
                     <ul>
-                        <li><a href="#sale-flights-tabs-1">Tour nổi bật</a></li>
-                        <li><a href="#sale-flights-tabs-2">Tour giảm giá</a></li>
+                        <li><a href="#sale-flights-tabs-1">Tour giảm giá</a></li>
+                        <li><a href="#sale-flights-tabs-2">Tour nổi bật</a></li>
                     </ul>
                     <div class="sale-flights-tabs__content tabs__content">
                         <div id="sale-flights-tabs-1">
-                            {tour_PROMOTIONS}
+                            {tour_sales}
                         </div>
                         <div id="sale-flights-tabs-2">
-                            {tour_sales}
+
+                            {tour_PROMOTIONS}
                         </div>
                     </div>
                 </div>

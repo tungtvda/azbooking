@@ -70,6 +70,26 @@ function show_chitiet_tour($data = array())
     $asign['Hotline'] = $data['config'][0]->Hotline;
     $asign['Hotline_hcm'] = $data['config'][0]->Hotline_hcm;
 
+    $asign['departure_time']=$data['detail'][0]->departure_time;
+    $asign['hidden_date']='';
+    $asign['hidden_date_select']='hidden';
+    $asign['date_select']='';
+    if($data['detail'][0]->departure_time!=''){
+        $asign['hidden_date']='hidden';
+        $arr_explode=explode(',',$data['detail'][0]->departure_time);
+        if(count($arr_explode)>0){
+            $asign['date_now']=date('Y-m-d', strtotime(trim($arr_explode[0])));
+            $asign['date_now_vn'] =trim($arr_explode[0]);
+            $asign['hidden_date_select']='';
+            foreach($arr_explode as $row){
+                $date=trim($row);
+                $date_en=date('Y-m-d', strtotime(trim($row)));
+                $asign['date_select'].='<option value="'.$date_en.'">'.$date.'</option>';
+            }
+        }
+    }
+
+
     print_template($asign, 'chitiettour');
 }
 

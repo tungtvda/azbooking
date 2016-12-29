@@ -1636,7 +1636,7 @@ span.dropcap {
 
 .awe-search-tabs__content .ui-tabs-panel .form-group:nth-child(3) {
     width: 18.1%;
-    padding-right: 64px
+    /*padding-right: 64px*/
 }
 
 .awe-search-tabs__content .ui-tabs-panel .form-elements {
@@ -10865,6 +10865,39 @@ caption, th, td {
     -o-animation: glowing 1500ms infinite;
     animation: glowing 1500ms infinite;
 }
+
+
+@-webkit-keyframes glowing_count_down {
+    0% { color: #ff0909; -webkit-box-shadow: 0 0 3px #004A7F; }
+    50% { color: #0094FF; -webkit-box-shadow: 0 0 10px #0094FF; }
+    100% { color: #ff0909; -webkit-box-shadow: 0 0 3px #004A7F; }
+}
+
+@-moz-keyframes glowing_count_down {
+    0% { color: #ff0909; -moz-box-shadow: 0 0 3px #004A7F; }
+    50% { color: #0094FF; -moz-box-shadow: 0 0 10px #0094FF; }
+    100% { color: #ff0909; -moz-box-shadow: 0 0 3px #004A7F; }
+}
+
+@-o-keyframes glowing_count_down {
+    0% { color: #ff0909; box-shadow: 0 0 3px #004A7F; }
+    50% { color: #0094FF; box-shadow: 0 0 10px #0094FF; }
+    100% { color: #ff0909; box-shadow: 0 0 3px #004A7F; }
+}
+
+@keyframes glowing_count_down {
+    0% { color: #ff0909; box-shadow: 0 0 3px #004A7F; }
+    50% { color: #0094FF; box-shadow: 0 0 10px #0094FF; }
+    100% { color: #ff0909; box-shadow: 0 0 3px #004A7F; }
+}
+
+.button_count_down {
+    -webkit-animation: glowing_count_down 1500ms infinite;
+    -moz-animation: glowing_count_down 1500ms infinite;
+    -o-animation: glowing_count_down 1500ms infinite;
+    animation: glowing_count_down 1500ms infinite;
+}
+
 .row-footer {
     background: none repeat scroll 0 0 #e6ebec;
     bottom: 0;

@@ -105,6 +105,10 @@ $data['tab_tintuc_title']='';
 $data['tab_tour']='';
 $data['tab_khachsan']='hidden';
 $data['tab_tintuc']='hidden';
+$date_now=_returnGetDateTime();
+$data['tour_count_down']=tour_getByTop(9,'count_down!="" and count_down>"'.$date_now.'"','id desc');
+$data['tour_PROMOTIONS']=tour_getByTop(9,'promotion=1 ','id desc');
+$data['tour_sales']=tour_getByTop(9,'price_sales!="" ','id desc');
 
 $title=($title)?$title:'Azbooking.vn';
 $description=($description)?$description:'Azbooking.vn';

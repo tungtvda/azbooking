@@ -10,10 +10,11 @@
         <div {tab_tour} id="tab_tour" class="widget widget_has_radio_checkbox_text"><h3>Tìm kiếm tour</h3>
             <div class="widget_content search_left">
                 <form action="{SITE-NAME}/tim-kiem-tour" method="get">
-                    <label class="from"> <span class="form-item db">
-                            <i class="awe-icon awe-icon-key"></i>
-                            <input type="text" name="key_timkiem" placeholder="Từ khóa tìm kiếm...">
-                        </span>
+                    <label class="from">
+                        <select  name="departure" id="" class="awe-select">
+                            <option value="">Nơi khởi hành...</option>
+                            {departure_timkiem}
+                        </select>
                     </label>
                     <label class="to"> <span class="form-item db">
                           <select style="width: 100%"  name="danhmuc_tour_1" id="DanhMuc1Id" class="awe-select">
