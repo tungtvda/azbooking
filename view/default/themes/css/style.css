@@ -11052,3 +11052,42 @@ caption, th, td {
     overflow: hidden;
     white-space: nowrap;
 }
+#mda-why {
+    background-color: #e7e7e7;
+    margin-top: 30px;
+    padding: 50px 0;
+}
+#mda-why .mda-content {
+    text-align: center;
+}
+.mda-content {
+    width: 90%;
+    margin: auto;
+    min-width: 1024px;
+}
+
+#mda-why .mda-item-title-icon {
+    margin-top: 20px;
+}
+.mda-item-title-icon {
+    margin-top: 30px;
+    display: inline-table;
+}
+#mda-why .mda-why-box ul {
+    margin: 30px 0;
+    padding: 0;
+}
+#mda-why .mda-why-box ul li {
+    list-style: none;
+    float: left;
+    width: calc(100% / 5);
+    text-align: center;
+    padding: 0 10px;
+    margin: 0;
+}
+#mda-why .mda-why-box ul li img {
+    margin-bottom: 40px;
+}
+#mda-why .mda-why-box ul li p {
+    color: #fff;
+}
