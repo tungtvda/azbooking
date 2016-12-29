@@ -1,3 +1,5 @@
+
+
 <div class="trip-item">
     <div class="item-media">
         <div class="image-cover"><img title="{name}" src="{img}" alt="{name}"></div>
@@ -15,12 +17,12 @@
             </ul>
         </div>
         <div class="item-footer">
-
-            <!--<div class="item-icon"><i class="awe-icon awe-icon-gym"></i>
-                <i class="awe-icon awe-icon-car"></i> <i
-                        class="awe-icon awe-icon-food"></i> <i
-                        class="awe-icon awe-icon-level"></i> <i
-                        class="awe-icon awe-icon-wifi"></i></div>-->
+            <div class="CountDown button_count_down">
+                <i class="fa fa-clock-o fa-2x"></i>&nbsp;&nbsp;
+                                           <span data-time="{date_count}" class="kkcountdown-{key_id}">
+                                                <span class="kkcountdown-box">{mes_}</span>
+                                           </span>
+            </div>
         </div>
     </div>
     <div class="item-price-more">
@@ -28,5 +30,6 @@
             <ins><span class="amount">{price_format}</span></ins>
             <del><span class="amount">{price_sales}</span></del>
         </div>
+
         <a href="{link}#booking" class="awe-btn">Đặt tour</a></div>
 </div>

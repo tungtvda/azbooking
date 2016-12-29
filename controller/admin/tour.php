@@ -3,6 +3,7 @@ require_once '../../config.php';
 require_once DIR.'/model/tourService.php';
 require_once DIR.'/model/danhmuc_1Service.php';
 require_once DIR.'/model/danhmuc_2Service.php';
+require_once DIR.'/model/departureService.php';
 require_once DIR.'/view/admin/tour.php';
 require_once DIR.'/common/messenger.php';
 require_once DIR.'/common/locdautiengviet.php';
@@ -43,6 +44,7 @@ if(isset($_SESSION["Admin"]))
     }
     $data['listfkey']['DanhMuc1Id']=danhmuc_1_getByAll();
     $data['listfkey']['DanhMuc2Id']=danhmuc_2_getByAll();
+    $data['listfkey']['departure']=departure_getByTop('','','position asc');
     if(isset($_GET["action_all"]))
     {
         if($_GET["action_all"]=="ThemMoi")
@@ -60,7 +62,7 @@ if(isset($_SESSION["Admin"]))
             header('Location: '.SITE_NAME.'/controller/admin/tour.php');
         }
     }
-    if(isset($_POST["DanhMuc1Id"])&&isset($_POST["DanhMuc2Id"])&&isset($_POST["name"])&&isset($_POST["name_url"])&&isset($_POST["count_down"])&&isset($_POST["code"])&&isset($_POST["img"])&&isset($_POST["price_sales"])&&isset($_POST["price"])&&isset($_POST["price_2"])&&isset($_POST["price_3"])&&isset($_POST["price_4"])&&isset($_POST["price_5"])&&isset($_POST["price_6"])&&isset($_POST["durations"])&&isset($_POST["departure"])&&isset($_POST["destination"])&&isset($_POST["vehicle"])&&isset($_POST["hotel"])&&isset($_POST["summary"])&&isset($_POST["highlights"])&&isset($_POST["schedule"])&&isset($_POST["price_list"])&&isset($_POST["content"])&&isset($_POST["list_img"])&&isset($_POST["title"])&&isset($_POST["keyword"])&&isset($_POST["description"])&&isset($_POST["inclusion"])&&isset($_POST["exclusion"]))
+    if(isset($_POST["DanhMuc1Id"])&&isset($_POST["DanhMuc2Id"])&&isset($_POST["name"])&&isset($_POST["name_url"])&&isset($_POST["count_down"])&&isset($_POST["code"])&&isset($_POST["img"])&&isset($_POST["price_sales"])&&isset($_POST["price"])&&isset($_POST["price_2"])&&isset($_POST["price_3"])&&isset($_POST["price_4"])&&isset($_POST["price_5"])&&isset($_POST["price_6"])&&isset($_POST["durations"])&&isset($_POST["departure"])&&isset($_POST["departure_time"])&&isset($_POST["destination"])&&isset($_POST["vehicle"])&&isset($_POST["hotel"])&&isset($_POST["summary"])&&isset($_POST["highlights"])&&isset($_POST["schedule"])&&isset($_POST["price_list"])&&isset($_POST["content"])&&isset($_POST["list_img"])&&isset($_POST["title"])&&isset($_POST["keyword"])&&isset($_POST["description"])&&isset($_POST["inclusion"])&&isset($_POST["exclusion"]))
     {
        $array=$_POST;
        if(!isset($array['id']))
@@ -102,6 +104,8 @@ if(isset($_SESSION["Admin"]))
        $array['durations']='0';
        if(!isset($array['departure']))
        $array['departure']='0';
+        if(!isset($array['departure_time']))
+            $array['departure_time']='0';
        if(!isset($array['destination']))
        $array['destination']='0';
        if(!isset($array['vehicle']))

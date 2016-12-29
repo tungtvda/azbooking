@@ -19,8 +19,11 @@
                                 <p class="price"><i class="icon-dollar"></i> Giá:
                                     <ins><span class="amount"> {price_format}</span> {vnd}</ins>
                                 </p>
-                                <p class="price"><i class="icon-dollar"></i> Mã tour:
+                                <!--<p class="price"><i class="icon-dollar"></i> Mã tour:
                                     <ins><span class="parameter"> {code}</span></ins>
+                                </p>-->
+                                <p class="price"><i class="icon-dollar"></i> Khởi hành:
+                                    <ins><span class="parameter"> {departure_time}</span></ins>
                                 </p>
                                 <p class="price"><i class="icon-calendar"></i> Thời gian:
                                     <ins><span class="parameter"> {durations}</span></ins>
@@ -117,7 +120,7 @@
                         <span><a href="tel:{Hotline_hcm}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{Hotline_hcm}</a></span>
                     </div>
                     <div class="booking-info"><h3>Đặt tour</h3>
-                        <div class="calender"></div>
+                        <div {hidden_date} class="calender"></div>
                         <input id="date_input" hidden value="{date_now}">
                         <input id="date_get_now" hidden value="{date_now}">
                         <input id="id_input" hidden value="{id}">
@@ -129,6 +132,11 @@
                         <input id="price_4" value="{price_4}" hidden>
                         <input id="price_5" value="{price_5}" hidden>
                         <input id="price_6" value="{price_6}" hidden>
+
+                        <p {hidden_date_select}>Thời gian khởi anh</p>
+                        <select {hidden_date_select} style="width: 100%;     padding: 0px;" id="date_select" name="date_select">
+                            {date_select}
+                        </select>
                         <!--<div style="margin-top: 30px" class="form-group">
                             <div class="form-elements form-adult"><label>Adult</label>
                                 <div class="form-item"><select class="awe-select">

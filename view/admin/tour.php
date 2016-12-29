@@ -98,7 +98,19 @@ function showFrom($form,$ListKey=array())
     $str_from.='<p><label>price_5</label><input class="text-input small-input" type="text"  name="price_5" value="'.(($form!=false)?$form->price_5:'').'" /></p>';
     $str_from.='<p><label>price_6</label><input class="text-input small-input" type="text"  name="price_6" value="'.(($form!=false)?$form->price_6:'').'" /></p>';
     $str_from.='<p><label>durations</label><input class="text-input small-input" type="text"  name="durations" value="'.(($form!=false)?$form->durations:'').'" /></p>';
-    $str_from.='<p><label>departure</label><input class="text-input small-input" type="text"  name="departure" value="'.(($form!=false)?$form->departure:'').'" /></p>';
+//    $str_from.='<p><label>departure</label><input class="text-input small-input" type="text"  name="departure" value="'.(($form!=false)?$form->departure:'').'" /></p>';
+    $str_from.='<p><label>departure</label>';
+    $str_from.='<select name="departure">';
+    if(isset($ListKey['departure']))
+    {
+        $str_from.='<option value="">Điểm khởi hành</option>';
+        foreach($ListKey['departure'] as $key)
+        {
+            $str_from.='<option value="'.$key->id.'" '.(($form!=false)?(($form->departure==$key->id)?'selected':''):'').'>'.$key->name.'</option>';
+        }
+    }
+    $str_from.='</select></p>';
+    $str_from.='<p><label>departure_time</label><input class="text-input small-input" type="text"  name="departure_time" value="'.(($form!=false)?$form->departure_time:'').'" /></p>';
     $str_from.='<p><label>destination</label><input class="text-input small-input" type="text"  name="destination" value="'.(($form!=false)?$form->destination:'').'" /></p>';
     $str_from.='<p><label>vehicle</label><input class="text-input small-input" type="text"  name="vehicle" value="'.(($form!=false)?$form->vehicle:'').'" /></p>';
     $str_from.='<p><label>hotel</label><input class="text-input small-input" type="text"  name="hotel" value="'.(($form!=false)?$form->hotel:'').'" /></p>';

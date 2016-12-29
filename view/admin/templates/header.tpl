@@ -108,6 +108,7 @@
                         <li><a href="{SITE-NAME}/controller/admin/danhmuc_2.php">Danh mục cấp 2</a></li>
                         <li><a href="{SITE-NAME}/controller/admin/tour.php">Danh sách tour</a></li>
                         <li><a href="{SITE-NAME}/controller/admin/price_timkiem.php">Giá tìm kiếm tour</a></li>
+                        <li><a href="{SITE-NAME}/controller/admin/departure.php">Điểm khởi hành</a></li>
                     </ul>
                 </li>
                 <li class="dropdown {kichhoat_khachsan}"><a href="#"><span class=" icon-home"></span> Khách sạn</a>

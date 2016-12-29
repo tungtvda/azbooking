@@ -1,7 +1,7 @@
 <?php
 class tour
 {
-    public $id,$DanhMuc1Id,$DanhMuc2Id,$promotion,$packages,$name,$name_url,$count_down,$code,$img,$price_sales,$price,$price_2,$price_3,$price_4,$price_5,$price_6,$durations,$departure,$destination,$vehicle,$hotel,$summary,$highlights,$schedule,$price_list,$content,$list_img,$title,$keyword,$description,$inclusion,$exclusion;
+    public $id,$DanhMuc1Id,$DanhMuc2Id,$promotion,$packages,$name,$name_url,$count_down,$code,$img,$price_sales,$price,$price_2,$price_3,$price_4,$price_5,$price_6,$durations,$departure,$departure_time,$destination,$vehicle,$hotel,$summary,$highlights,$schedule,$price_list,$content,$list_img,$title,$keyword,$description,$inclusion,$exclusion;
     public function tour($data=array())
     {
     $this->id=isset($data['id'])?$data['id']:'';
@@ -23,6 +23,7 @@ class tour
     $this->price_6=isset($data['price_6'])?$data['price_6']:'';
     $this->durations=isset($data['durations'])?$data['durations']:'';
     $this->departure=isset($data['departure'])?$data['departure']:'';
+    $this->departure_time=isset($data['departure_time'])?$data['departure_time']:'';
     $this->destination=isset($data['destination'])?$data['destination']:'';
     $this->vehicle=isset($data['vehicle'])?$data['vehicle']:'';
     $this->hotel=isset($data['hotel'])?$data['hotel']:'';
@@ -60,6 +61,7 @@ class tour
             $this->price_6=addslashes($this->price_6);
             $this->durations=addslashes($this->durations);
             $this->departure=addslashes($this->departure);
+            $this->departure_time=addslashes($this->departure_time);
             $this->destination=addslashes($this->destination);
             $this->vehicle=addslashes($this->vehicle);
             $this->hotel=addslashes($this->hotel);
@@ -96,6 +98,7 @@ class tour
             $this->price_6=stripslashes($this->price_6);
             $this->durations=stripslashes($this->durations);
             $this->departure=stripslashes($this->departure);
+            $this->departure_time=stripslashes($this->departure_time);
             $this->destination=stripslashes($this->destination);
             $this->vehicle=stripslashes($this->vehicle);
             $this->hotel=stripslashes($this->hotel);

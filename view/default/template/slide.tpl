@@ -25,9 +25,9 @@
                                 <!--<div class="form-item"><i class="awe-icon awe-icon-marker-1"></i>
                                     <input type="text" name="key_timkiem"  placeholder="Nơi khởi hành...">
                                 </div>-->
-                                <div class="form-item"><select  name="khoihanh_1" id="" class="awe-select">
+                                <div class="form-item"><select  name="departure" id="" class="awe-select">
                                         <option value="">Nơi khởi hành...</option>
-                                        {danhmuc_1_timkiem}
+                                        {departure_timkiem}
                                     </select></div>
                             </div>
 
@@ -69,7 +69,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group" style="width: 26.5%;    padding-right: 55px;">
+                        <div class="form-group" style="width: 26.5%;">
                             <div style="width: 100%" class="form-elements">
                                 <div class="form-item"><select name="danhmuc_id" class="awe-select">
                                         <option value="">Chọn danh mục</option>

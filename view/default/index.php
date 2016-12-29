@@ -36,10 +36,13 @@ function show_index($data = array())
         $asign['link_video'] = $data['video_index'][0]->link_video;
     }
     $asign['tour_count_down'] ='';
+    $asign['tour_count_down_js'] ='';
     if(count($data['tour_count_down'])>0)
     {
         $asign['tour_count_down'] = print_item('tour_count_down', $data['tour_count_down']);
+        $asign['tour_count_down_js'] = print_item('tour_count_down_js', $data['tour_count_down']);
     }
+
 
     print_template($asign, 'index');
 }

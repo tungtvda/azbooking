@@ -108,35 +108,7 @@
 <script type="text/javascript"
         src="{SITE-NAME}/view/default/themes/js/kkcountdown.js"></script>
 
-<script type="text/javascript">
-    $(document).ready(function () {
 
-        $(".kkcountdown-9").kkcountdown({
-            dayText: 'ngày ',
-            daysText: ' ngày ',
-            hoursText: 'h ',
-            minutesText: 'm ',
-            secondsText: 's',
-            displayZeroDays: true,
-            callback: cBack,
-            rusNumbers: false
-        });
-        $(".kkcountdown-10").kkcountdown({
-            dayText: 'ngày ',
-            daysText: ' ngày ',
-            hoursText: 'h ',
-            minutesText: 'm ',
-            secondsText: 's',
-            displayZeroDays: true,
-            callback: cBack,
-            rusNumbers: false
-        });
-    });
-
-    function cBack() {
-        console.log('THE END - Function callback!');
-    }
-</script>
 
 <script type="text/javascript">if ($('#slider-revolution').length) {
         $('#slider-revolution').show().revolution({
@@ -278,6 +250,14 @@
 
 
             }
+        });
+        jQuery("#date_select").change(function(){
+            var value_en=jQuery("#date_select option:selected" ).val();
+            var value_vn=jQuery("#date_select option:selected" ).text();
+//
+            jQuery('#date_input').val(value_en);
+            jQuery("#date_table").text(value_vn);
+
         });
         jQuery("#next_booking").click(function () {
             date_now = jQuery('#date_get_now').val();
