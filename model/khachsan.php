@@ -1,7 +1,7 @@
 <?php
 class khachsan
 {
-    public $id,$danhmuc_id,$highlights,$name,$name_url,$start,$price,$room_type,$img,$content,$title,$keyword,$description;
+    public $id,$danhmuc_id,$highlights,$name,$name_url,$start,$price,$dichvu,$img,$address,$phone,$map,$content,$title,$keyword,$description;
     public function khachsan($data=array())
     {
     $this->id=isset($data['id'])?$data['id']:'';
@@ -11,8 +11,11 @@ class khachsan
     $this->name_url=isset($data['name_url'])?$data['name_url']:'';
     $this->start=isset($data['start'])?$data['start']:'';
     $this->price=isset($data['price'])?$data['price']:'';
-    $this->room_type=isset($data['room_type'])?$data['room_type']:'';
+    $this->dichvu=isset($data['dichvu'])?$data['dichvu']:'';
     $this->img=isset($data['img'])?$data['img']:'';
+    $this->address=isset($data['address'])?$data['address']:'';
+        $this->phone=isset($data['phone'])?$data['phone']:'';
+    $this->map=isset($data['map'])?$data['map']:'';
     $this->content=isset($data['content'])?$data['content']:'';
     $this->title=isset($data['title'])?$data['title']:'';
     $this->keyword=isset($data['keyword'])?$data['keyword']:'';
@@ -28,8 +31,11 @@ class khachsan
             $this->name_url=addslashes($this->name_url);
             $this->start=addslashes($this->start);
             $this->price=addslashes($this->price);
-            $this->room_type=addslashes($this->room_type);
+            $this->dichvu=addslashes($this->dichvu);
             $this->img=addslashes($this->img);
+            $this->address=addslashes($this->address);
+            $this->phone=addslashes($this->phone);
+//            $this->map=addslashes($this->map);
             $this->content=addslashes($this->content);
             $this->title=addslashes($this->title);
             $this->keyword=addslashes($this->keyword);
@@ -44,8 +50,11 @@ class khachsan
             $this->name_url=stripslashes($this->name_url);
             $this->start=stripslashes($this->start);
             $this->price=stripslashes($this->price);
-            $this->room_type=stripslashes($this->room_type);
+            $this->dichvu=stripslashes($this->dichvu);
             $this->img=stripslashes($this->img);
+            $this->address=stripslashes($this->address);
+            $this->phone=stripslashes($this->phone);
+//            $this->map=stripslashes($this->map);
             $this->content=stripslashes($this->content);
             $this->title=stripslashes($this->title);
             $this->keyword=stripslashes($this->keyword);

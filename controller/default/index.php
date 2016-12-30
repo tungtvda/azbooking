@@ -23,6 +23,9 @@ $data['tour_count_down']=tour_getByTop(2,'count_down!="" and count_down>"'.$date
 $data['khachsan_index']=khachsan_getByTop(9,'highlights=1 ','id desc');
 $data['video_index']=video_getByTop(1,'','id desc');
 
+$data['tieuchi']=tieuchi_getByTop('','','position asc');
+
+
 $title=$data['menu'][0]->title;
 $description=$data['menu'][0]->description;
 $keyword=$data['menu'][0]->keyword;

@@ -2,13 +2,11 @@
 require_once '../../config.php';
 require_once DIR.'/model/khachsanService.php';
 require_once DIR.'/model/danhmuc_khachsanService.php';
-require_once DIR.'/model/danhmuc_room_typeService.php';
 require_once DIR.'/view/admin/khachsan.php';
 require_once DIR.'/common/messenger.php';
 require_once DIR.'/common/locdautiengviet.php';
 $data=array();
 $insert=true;
-returnCountData();
 if(isset($_SESSION["Admin"]))
 {
     if(isset($_GET["action"])&&isset($_GET["id"]))
@@ -42,7 +40,6 @@ if(isset($_SESSION["Admin"]))
         $data['tab1_class']='default-tab current';
     }
     $data['listfkey']['danhmuc_id']=danhmuc_khachsan_getByAll();
-    $data['listfkey']['room_type']=danhmuc_room_type_getByAll();
     if(isset($_GET["action_all"]))
     {
         if($_GET["action_all"]=="ThemMoi")
@@ -60,7 +57,7 @@ if(isset($_SESSION["Admin"]))
             header('Location: '.SITE_NAME.'/controller/admin/khachsan.php');
         }
     }
-    if(isset($_POST["danhmuc_id"])&&isset($_POST["name"])&&isset($_POST["name_url"])&&isset($_POST["start"])&&isset($_POST["price"])&&isset($_POST["room_type"])&&isset($_POST["img"])&&isset($_POST["content"])&&isset($_POST["title"])&&isset($_POST["keyword"])&&isset($_POST["description"]))
+    if(isset($_POST["danhmuc_id"])&&isset($_POST["name"])&&isset($_POST["name_url"])&&isset($_POST["start"])&&isset($_POST["price"])&&isset($_POST["dichvu"])&&isset($_POST["img"])&&isset($_POST["address"])&&isset($_POST["phone"])&&isset($_POST["map"])&&isset($_POST["content"])&&isset($_POST["title"])&&isset($_POST["keyword"])&&isset($_POST["description"]))
     {
        $array=$_POST;
        if(!isset($array['id']))
@@ -78,15 +75,16 @@ if(isset($_SESSION["Admin"]))
        $array['start']='0';
        if(!isset($array['price']))
        $array['price']='0';
-       if(!isset($array['room_type']))
-       $array['room_type']='0';
-        $mutil_dm='';
-        if($_POST["room_type"]!=''){
-            $mutil_dm=implode(',',$_POST["room_type"]);
-        }
-        $array['room_type']=$mutil_dm;
+       if(!isset($array['dichvu']))
+       $array['dichvu']='0';
        if(!isset($array['img']))
        $array['img']='0';
+       if(!isset($array['address']))
+       $array['address']='0';
+        if(!isset($array['phone']))
+            $array['phone']='0';
+       if(!isset($array['map']))
+       $array['map']='0';
        if(!isset($array['content']))
        $array['content']='0';
        if(!isset($array['title']))

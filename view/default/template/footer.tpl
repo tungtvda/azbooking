@@ -433,6 +433,12 @@
             }
         });
 
+        $(".chitiet_gia").click(function () {
+            var Id = $(this).attr("countId");
+            jQuery("#chitiet_gia_"+Id).slideToggle();
+        });
+
+
         $(".price_room").click(function () {
             if ($(this).is(':checked')) {
                 var Id = $(this).attr("value");

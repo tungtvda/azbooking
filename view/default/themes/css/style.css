@@ -758,7 +758,7 @@ span.dropcap {
     animation: preloader 5s linear infinite
 }
 
-@-webkit-keyframes "preloader" {
+@-webkit-keyframes preloader {
     0% {
         background-color: #FF007F;
         -webkit-transform: scale(0);
@@ -811,7 +811,7 @@ span.dropcap {
     }
 }
 
-@-moz-keyframes "preloader" {
+@-moz-keyframes preloader {
     0% {
         background-color: #FF007F;
         -moz-transform: scale(0);
@@ -864,7 +864,7 @@ span.dropcap {
     }
 }
 
-@keyframes "preloader" {
+@keyframes preloader {
     0% {
         background-color: #FF007F;
         transform: scale(0);
@@ -1460,7 +1460,9 @@ span.dropcap {
     padding: 0;
     border-bottom: 3px solid transparent;
     line-height: 58px;
-    z-index: 9
+    z-index: 9;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
@@ -1837,6 +1839,7 @@ span.dropcap {
     margin-top: 0;
     line-height: 58px;
     z-index: 9;
+    text-transform: uppercase;
 }
 
 .awe-services .video-wrapper {
@@ -4871,7 +4874,7 @@ body.single-post .blog-page__content > .post .post-content {
 
 .flight-item .item-body, .trip-item .item-body, .attraction-item .item-body, .hotel-item .item-body {
     position: relative;
-    padding: 13px 34px;
+    padding: 13px 15px;
     width: 50%;
     float: left;
     overflow: hidden;
@@ -10968,6 +10971,7 @@ caption, th, td {
     line-height: 58px;
     z-index: 9;
     text-transform: uppercase;
+    text-align: center;
 }
 .tourGioChot .item .Img {
     position: relative;
@@ -11053,17 +11057,18 @@ caption, th, td {
     white-space: nowrap;
 }
 #mda-why {
-    background-color: #e7e7e7;
-    margin-top: 30px;
+    /*background-color: #e7e7e7;*/
+    /*margin-top: 30px;*/
     padding: 50px 0;
 }
 #mda-why .mda-content {
     text-align: center;
 }
 .mda-content {
-    width: 90%;
+    width: 100%;
     margin: auto;
-    min-width: 1024px;
+    /*min-width: 1024px;*/
+    float: left;
 }
 
 #mda-why .mda-item-title-icon {
@@ -11080,7 +11085,8 @@ caption, th, td {
 #mda-why .mda-why-box ul li {
     list-style: none;
     float: left;
-    width: calc(100% / 5);
+    /*width: calc(100% / 5);*/
+    width: 20%;
     text-align: center;
     padding: 0 10px;
     margin: 0;
@@ -11088,6 +11094,102 @@ caption, th, td {
 #mda-why .mda-why-box ul li img {
     margin-bottom: 40px;
 }
-#mda-why .mda-why-box ul li p {
-    color: #fff;
+#mda-why .mda-why-box  p {
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+.package-location{
+    padding-bottom: 20px;
+}
+.mda-item-title-icon .lb {
+    float: left;
+    font-size: 22px;
+    padding: 5px 0 0 5px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+.backgroup_tieuchi{
+    background-image: url(../images/Layer-85.png) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.tour_count_down_index {
+
+    /*background-color: #004A7F;*/
+
+    -webkit-border-radius: 10px;
+
+    border-radius: 10px;
+
+    border: none;
+
+    color: #ffffff;
+
+    cursor: pointer;
+
+    display: inline-block;
+
+    font-family: Arial;
+
+    font-size: 16px;
+
+    padding: 5px 10px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+}
+@-webkit-keyframes glowing_tour_count_down_index {
+    0% { color: #01fff3; -webkit-box-shadow: 0 0 3px #ffffff; }
+    50% { color: #ffffff; -webkit-box-shadow: 0 0 10px #ffffff; }
+    100% { color: #01fff3; -webkit-box-shadow: 0 0 3px #ffffff; }
+}
+
+@-moz-keyframes glowing_tour_count_down_index {
+    0% { color: #01fff3; -moz-box-shadow: 0 0 3px #ffffff; }
+    50% { color: #ffffff; -moz-box-shadow: 0 0 10px #ffffff; }
+    100% { color: #01fff3; -moz-box-shadow: 0 0 3px #ffffff; }
+}
+
+@-o-keyframes glowing_tour_count_down_index {
+    0% { color: #01fff3; box-shadow: 0 0 3px red; }
+    50% { color: #ffffff; box-shadow: 0 0 10px #ffffff; }
+    100% { color: #01fff3; box-shadow: 0 0 3px red; }
+}
+
+@keyframes glowing_tour_count_down_index {
+    0% { color: #01fff3; box-shadow: 0 0 3px #ffffff; }
+    50% { color: #ffffff; box-shadow: 0 0 10px #ffffff; }
+    100% { color: #01fff3; box-shadow: 0 0 3px #ffffff; }
+}
+
+.tour_count_down_index {
+    -webkit-animation: glowing_tour_count_down_index 1500ms infinite;
+    -moz-animation: glowing_tour_count_down_index 1500ms infinite;
+    -o-animation: glowing_tour_count_down_index 1500ms infinite;
+    animation: glowing_tour_count_down_index 1500ms infinite;
+}
+.phone_khachsan{
+
+}
+.hotel-price-assistance {
+    font-size: 13px;
+    color: #999;
+    margin-top: 16px;
+}
+.hotel-price-assistance>a {
+    font-size: 16px;
+    font-weight: 600;
+}
+.item_khachsan li a{
+    font-size: 13px;
+}
+.list-icon li{
+    font-size: 13px;
+}
+.view-imgs-link {
+    color: #a8a8a8;
 }
