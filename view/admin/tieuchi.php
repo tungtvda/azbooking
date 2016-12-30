@@ -1,9 +1,12 @@
 <?php
 require_once DIR.'/common/paging.php';
 require_once DIR.'/common/cls_fast_template.php';
-function view_khachsan($data)
+function view_tieuchi($data)
 {
     $ft=new FastTemplate(DIR.'/view/admin/templates');
+    $ft->assign('count_contact',$_SESSION['contact']);
+    $ft->assign('booking_hotel',$_SESSION['booking_hotel']);
+    $ft->assign('count_booking',$_SESSION['booking']);
     $ft->define('header','header.tpl');
     $ft->define('body','body.tpl');
     $ft->define('footer','footer.tpl');
@@ -15,11 +18,12 @@ function view_khachsan($data)
     $ft->assign('TABLE-HEADER',showTableHeader());
     $ft->assign('PAGING',showPaging($data['count_paging'],20,$data['page']));
     $ft->assign('TABLE-BODY',showTableBody($data['table_body']));
-    $ft->assign('TABLE-NAME','khachsan');
+    $ft->assign('TABLE-NAME','tieuchi');
     $ft->assign('CONTENT-BOX-LEFT',isset($data['content_box_left'])?$data['content_box_left']:'');
     $ft->assign('CONTENT-BOX-RIGHT',isset($data['content_box_right'])?$data['content_box_right']:' ');
     $ft->assign('NOTIFICATION',isset($data['notification'])?$data['notification']:' ');
     $ft->assign('SITE-NAME',isset($data['sitename'])?$data['sitename']:SITE_NAME);
+    $ft->assign('kichhoat_tieuchi', 'active');
     $ft->assign('FORM',showFrom(isset($data['form'])?$data['form']:'',isset($data['listfkey'])?$data['listfkey']:array()));
     //
     print $ft->parse_and_return('header');
@@ -29,7 +33,7 @@ function view_khachsan($data)
 //
 function showTableHeader()
 {
-    return '<th>id</th><th>danhmuc_id</th><th>highlights</th><th>name</th><th>start</th><th>price</th><th>img</th>';
+    return '<th>id</th><th>name</th><th>img</th><th>position</th>';
 }
 //
 function showTableBody($data)
@@ -39,12 +43,9 @@ function showTableBody($data)
     {
         $TableBody.="<tr><td><input type=\"checkbox\" name=\"check_".$obj->id."\"/></td>";
         $TableBody.="<td>".$obj->id."</td>";
-        $TableBody.="<td>".$obj->danhmuc_id."</td>";
-        $TableBody.="<td>".$obj->highlights."</td>";
         $TableBody.="<td>".$obj->name."</td>";
-        $TableBody.="<td>".$obj->start."</td>";
-        $TableBody.="<td>".$obj->price."</td>";
         $TableBody.="<td><img src=\"".$obj->img."\" width=\"50px\" height=\"50px\"/> </td>";
+        $TableBody.="<td>".$obj->position."</td>";
         $TableBody.="<td><a href=\"?action=edit&id=".$obj->id."\" title=\"Edit\"><img src=\"".SITE_NAME."/view/admin/Themes/images/pencil.png\" alt=\"Edit\"></a>";
         $TableBody.="<a href=\"?action=delete&id=".$obj->id."\" title=\"Delete\" onClick=\"return confirm('Bạn có chắc chắc muốn xóa?')\"><img src=\"".SITE_NAME."/view/admin/Themes/images/cross.png\" alt=\"Delete\"></a> ";
         $TableBody.="</td>";
@@ -56,29 +57,8 @@ function showTableBody($data)
 function showFrom($form,$ListKey=array())
 {
     $str_from='';
-    $str_from.='<p><label>danhmuc_id</label>';
-    $str_from.='<select name="danhmuc_id">';
-    if(isset($ListKey['danhmuc_id']))
-    {
-        foreach($ListKey['danhmuc_id'] as $key)
-        {
-            $str_from.='<option value="'.$key->id.'" '.(($form!=false)?(($form->danhmuc_id==$key->id)?'selected':''):'').'>'.$key->name.'</option>';
-        }
-    }
-    $str_from.='</select></p>';
-    $str_from.='<p><label>highlights</label><input  type="checkbox"  name="highlights" value="1" '.(($form!=false)?(($form->highlights=='1')?'checked':''):'').' /></p>';
     $str_from.='<p><label>name</label><input class="text-input small-input" type="text"  name="name" value="'.(($form!=false)?$form->name:'').'" /></p>';
-    $str_from.='<p><label>name_url</label><input class="text-input small-input" type="text"  name="name_url" value="'.(($form!=false)?$form->name_url:'').'" /></p>';
-    $str_from.='<p><label>start</label><input class="text-input small-input" type="text"  name="start" value="'.(($form!=false)?$form->start:'').'" /></p>';
-    $str_from.='<p><label>price</label><input class="text-input small-input" type="text"  name="price" value="'.(($form!=false)?$form->price:'').'" /></p>';
-    $str_from.='<p><label>dichvu</label><textarea style="width: 100%" name="dichvu">'.(($form!=false)?$form->dichvu:'').'</textarea></p>';
     $str_from.='<p><label>img</label><input class="text-input small-input" type="text"  name="img" value="'.(($form!=false)?$form->img:'').'"/><a class="button" onclick="openKcEditor(\'img\');">Upload ảnh</a></p>';
-    $str_from.='<p><label>address</label><input class="text-input small-input" type="text"  name="address" value="'.(($form!=false)?$form->address:'').'" /></p>';
-    $str_from.='<p><label>phone</label><input class="text-input small-input" type="text"  name="phone" value="'.(($form!=false)?$form->phone:'').'" /></p>';
-    $str_from.='<p><label>map</label><textarea  style="width: 100%" name="map">'.(($form!=false)?$form->map:'').'</textarea></p>';
-    $str_from.='<p><label>content</label><textarea name="content">'.(($form!=false)?$form->content:'').'</textarea><script type="text/javascript">CKEDITOR.replace(\'content\'); </script></p>';
-    $str_from.='<p><label>title</label><input class="text-input small-input" type="text"  name="title" value="'.(($form!=false)?$form->title:'').'" /></p>';
-    $str_from.='<p><label>keyword</label><input class="text-input small-input" type="text"  name="keyword" value="'.(($form!=false)?$form->keyword:'').'" /></p>';
-    $str_from.='<p><label>description</label><input class="text-input small-input" type="text"  name="description" value="'.(($form!=false)?$form->description:'').'" /></p>';
+    $str_from.='<p><label>position</label><input class="text-input small-input" type="text"  name="position" value="'.(($form!=false)?$form->position:'').'" /></p>';
     return $str_from;
 }

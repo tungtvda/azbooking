@@ -42,7 +42,11 @@ function show_index($data = array())
         $asign['tour_count_down'] = print_item('tour_count_down', $data['tour_count_down']);
         $asign['tour_count_down_js'] = print_item('tour_count_down_js', $data['tour_count_down']);
     }
-
+    $asign['tieuchi'] ='';
+    if(count($data['tieuchi'])>0)
+    {
+        $asign['tieuchi'] = print_item('tieuchi', $data['tieuchi']);
+    }
 
     print_template($asign, 'index');
 }

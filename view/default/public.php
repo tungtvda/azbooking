@@ -212,21 +212,19 @@ function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberfor
                 else{
                     $ft->assign('price_format',number_format((int)$item->price,0,",",".").' vnđ');
                 }
-                $room_type='';
-                $data_room=khachsan_room_price_getByTop('','danhmuc_id='.$item->id,'id desc');
-                if(count($data_room)>0){
-                    $count_room=1;
-                    foreach($data_room as $row){
-                        if($count_room==1){
-                            $room_type.=$row->name;
-                        }else{
-                            $room_type.=', '.$row->name;
+                $dichvu='';
+                if($item->dichvu!=''){
+                    $array_ex=explode('-',$item->dichvu);
+                    if(count($array_ex)>0){
+                        foreach($array_ex as $row_dichvu){
+                            $dichvu.='<li><i class="fa fa-check-square-o"></i> '.trim($row_dichvu).'</li>';
                         }
-                        $count_room++;
                     }
-
                 }
-                $ft->assign('room_type',' Loại phòng: '.$room_type);
+
+
+
+                $ft->assign('dichvu_arr',$dichvu);
                 $content=$item->content;
                 if (strlen($content) > 210) {
                     $ten1=strip_tags($content);
@@ -241,6 +239,32 @@ function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberfor
                 if(count($data_dm)==0){
                     redict(SITE_NAME);
                 }
+                $gia_phong='';
+                $data_giaphong=khachsan_room_price_getByTop('','danhmuc_id='.$item->id,'id desc');
+                if(count($data_giaphong)>0){
+                    foreach($data_giaphong as $row_room){
+                        if($row_room->price==0||$row_room->price==''){
+                           $gia ='Liên hệ';
+                        }
+                        else{
+                            $gia =number_format((int)$row_room->price,0,",",".").' vnđ';
+                        }
+
+                        $gia_phong.='<tr class="search-result-row-item-single">
+                <td class="room1 quiet"> '.$row_room->name.' <span style="font-size:8pt;white-space:nowrap;color:#aaa;">(bao gồm ăn sáng)</span>
+                </td>
+                <td>'.$row_room->amount_people.'</td>
+                <td class="totalprice">
+                    <div id="divRate" class="top-10 bottom-5" style="text-align: right; padding-right: 20px;">'.$gia.'</div>
+                </td>
+                <td class="bookroom quiet"><a class="lnkBookHotel clearfix btn btn-sm btn-primary"
+                                              href="'.link_khachsandetail($item,$data_dm[0]->name_url).'"
+                                              rel="nofollow">Đặt Phòng</a></td>
+            </tr>';
+                    }
+
+                }
+                $ft->assign('gia_phong',$gia_phong);
                 $ft->assign('start',sao($item->start));
                 $ft->assign('link',link_khachsandetail($item,$data_dm[0]->name_url));
             }

@@ -67,43 +67,23 @@
     </div>
 </section>
 
-<section style="background: #f0f0f0;" class="masonry-section-demo">
+<section class="masonry-section-demo backgroup_tieuchi">
     <div class="container">
-        <div class="wrapper_footer">
+
 
             <div id="mda-why" class="clearfix">
                 <div class="mda-content">
                     <div class="mda-item-title-icon clearfix">
                         <div class="lb">
-                            VÌ SAO CHỌN DU LỊCH VIỆT ?
+                            VÌ SAO CHỌN AZBOOKING.VN ?
                         </div>
                     </div>
                     <div class="mda-why-box">
-                        <ul class="">
-                            <li>
-                                <img src="/images/bandidau/images/why-1.png">
-                                <p class="">Mạng bán tour số 1 Việt Nam</p>
-                            </li>
-                            <li>
-                                <img src="/images/bandidau/images/why-2.png">
-                                <p class="">Thanh toán an toàn và linh hoạt</p>
-                            </li>
-                            <li>
-                                <img src="/images/bandidau/images/why-3.png">
-                                <p class="">Sản phẩm đa dạng và chất lượng</p>
-                            </li>
-                            <li>
-                                <img src="/images/bandidau/images/why-4.png">
-                                <p class="">Luôn có mức giá tốt nhất</p>
-                            </li>
-                            <li>
-                                <img src="/images/bandidau/images/why-5.png">
-                                <p class="">Đặt tour dễ dàng và nhanh chóng</p>
-                            </li>
-                        </ul>
+                       {tieuchi}
+
                     </div>
                 </div>
             </div>
-        </div>
+
     </div>
 </section>
