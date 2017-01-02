@@ -57,7 +57,7 @@ if(isset($_SESSION["Admin"]))
             header('Location: '.SITE_NAME.'/controller/admin/khachsan.php');
         }
     }
-    if(isset($_POST["danhmuc_id"])&&isset($_POST["name"])&&isset($_POST["name_url"])&&isset($_POST["start"])&&isset($_POST["price"])&&isset($_POST["dichvu"])&&isset($_POST["img"])&&isset($_POST["address"])&&isset($_POST["phone"])&&isset($_POST["map"])&&isset($_POST["content"])&&isset($_POST["title"])&&isset($_POST["keyword"])&&isset($_POST["description"]))
+    if(isset($_POST["danhmuc_id"])&&isset($_POST["name"])&&isset($_POST["name_url"])&&isset($_POST["start"])&&isset($_POST["price"])&&isset($_POST["dichvu"])&&isset($_POST["img"])&&isset($_POST["address"])&&isset($_POST["phone"])&&isset($_POST["email"])&&isset($_POST["map"])&&isset($_POST["content"])&&isset($_POST["title"])&&isset($_POST["keyword"])&&isset($_POST["description"]))
     {
        $array=$_POST;
        if(!isset($array['id']))
@@ -83,6 +83,8 @@ if(isset($_SESSION["Admin"]))
        $array['address']='0';
         if(!isset($array['phone']))
             $array['phone']='0';
+        if(!isset($array['email']))
+            $array['email']='0';
        if(!isset($array['map']))
        $array['map']='0';
        if(!isset($array['content']))

@@ -75,7 +75,7 @@
         </div>
         <div class="copyright"><p>©2016 . <a href="{SITE-NAME}">Azbooking.vn</a></p></div>
     </div>
-    <div class="row-footer">
+    <div hidden class="row-footer">
 
         <div class="container">
             <div class="">
@@ -281,6 +281,24 @@
             jQuery('.next_detail').hide();
             jQuery('.back_detail_cal').slideDown();
             jQuery('.back_detail').slideDown();
+        });
+        jQuery(".map_show").click(function () {
+            var Id = $(this).attr("id_data");
+            if(Id>0){
+                jQuery.post("{SITE-NAME}/check-map/",
+                        {
+                            id: Id
+                        }
+                        )
+                        .done(function (data) {
+                            jQuery('.modal-content').html(data)
+                        });
+            }
+            else{
+                alert('Ban không thể xem bản đồ');
+                location.reload(true);
+            }
+
         });
         jQuery("#booking_ajax").click(function () {
 

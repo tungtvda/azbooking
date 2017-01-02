@@ -1,3 +1,6 @@
+<link rel="stylesheet" href="{SITE-NAME}/view/default/themes/css/map/bootstrap.min.css">
+<script src="{SITE-NAME}/view/default/themes/css/map/jquery.min.js"></script>
+<script src="{SITE-NAME}/view/default/themes/css/map/bootstrap.min.js"></script>
 <section class="filter-page">
     <div class="container">
         <div class="row">
@@ -21,3 +24,14 @@
         font-weight: bold;
     }
 </style>
+
+            <div class="modal fade" id="myModal" role="dialog" style="margin-top: 10%">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+
+                    </div>
+
+                </div>
+            </div>

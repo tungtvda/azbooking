@@ -8,6 +8,7 @@ function view_menu($data = array())
     $asign['email']=$data['config'][0]->Email;
     $asign['Logo']=$data['config'][0]->Logo;
     $asign['Name']=$data['config'][0]->Name;
+    $asign['Hotline']=$data['config'][0]->Hotline;
 
     $asign['trangchu']=$data['menu'][0]->name;
     $asign['tour']=$data['menu'][1]->name;

@@ -116,6 +116,7 @@
                         <li><a href="{SITE-NAME}/controller/admin/danhmuc_khachsan.php">Danh mục khách sạn</a></li>
                         <li><a href="{SITE-NAME}/controller/admin/khachsan.php">Danh sách khách sạn</a></li>
                         <li><a href="{SITE-NAME}/controller/admin/khachsan_room_price.php">Giá phòng</a></li>
+                        <li><a href="{SITE-NAME}/controller/admin/khachsan_img.php">Hình ảnh khách sạn</a></li>
                         <li><a href="{SITE-NAME}/controller/admin/price_khachsan.php">Giá tìm kiếm khách sạn</a></li>
                     </ul>
                 </li>

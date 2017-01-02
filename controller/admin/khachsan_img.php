@@ -1,8 +1,8 @@
 <?php
 require_once '../../config.php';
-require_once DIR.'/model/khachsan_room_priceService.php';
+require_once DIR.'/model/khachsan_imgService.php';
 require_once DIR.'/model/khachsanService.php';
-require_once DIR.'/view/admin/khachsan_room_price.php';
+require_once DIR.'/view/admin/khachsan_img.php';
 require_once DIR.'/common/messenger.php';
 $data=array();
 $insert=true;
@@ -12,14 +12,14 @@ if(isset($_SESSION["Admin"]))
     {
         if($_GET["action"]=="delete")
         {
-            $new_obj= new khachsan_room_price();
+            $new_obj= new khachsan_img();
             $new_obj->id=$_GET["id"];
-            khachsan_room_price_delete($new_obj);
-            header('Location: '.SITE_NAME.'/controller/admin/khachsan_room_price.php');
+            khachsan_img_delete($new_obj);
+            header('Location: '.SITE_NAME.'/controller/admin/khachsan_img.php');
         }
         else if($_GET["action"]=="edit")
         {
-            $new_obj=khachsan_room_price_getById($_GET["id"]);
+            $new_obj=khachsan_img_getById($_GET["id"]);
             if($new_obj!=false)
             {
                 $data['form']=$new_obj[0];
@@ -27,7 +27,7 @@ if(isset($_SESSION["Admin"]))
                 $data['tab1_class']=' ';
                 $insert=false;
             }
-            else header('Location: '.SITE_NAME.'/controller/admin/khachsan_room_price.php');
+            else header('Location: '.SITE_NAME.'/controller/admin/khachsan_img.php');
         }
         else
         {
@@ -48,15 +48,15 @@ if(isset($_SESSION["Admin"]))
         }
         else
         {
-            $List_khachsan_room_price=khachsan_room_price_getByAll();
-            foreach($List_khachsan_room_price as $khachsan_room_price)
+            $List_khachsan_img=khachsan_img_getByAll();
+            foreach($List_khachsan_img as $khachsan_img)
             {
-                if(isset($_GET["check_".$khachsan_room_price->id])) khachsan_room_price_delete($khachsan_room_price);
+                if(isset($_GET["check_".$khachsan_img->id])) khachsan_img_delete($khachsan_img);
             }
-            header('Location: '.SITE_NAME.'/controller/admin/khachsan_room_price.php');
+            header('Location: '.SITE_NAME.'/controller/admin/khachsan_img.php');
         }
     }
-    if(isset($_POST["danhmuc_id"])&&isset($_POST["name"])&&isset($_POST["description"])&&isset($_POST["price"])&&isset($_POST["amount_people"]))
+    if(isset($_POST["danhmuc_id"])&&isset($_POST["name"])&&isset($_POST["img"])&&isset($_POST["position"]))
     {
        $array=$_POST;
        if(!isset($array['id']))
@@ -65,32 +65,30 @@ if(isset($_SESSION["Admin"]))
        $array['danhmuc_id']='0';
        if(!isset($array['name']))
        $array['name']='0';
-       if(!isset($array['description']))
-       $array['description']='0';
-       if(!isset($array['price']))
-       $array['price']='0';
-       if(!isset($array['amount_people']))
-       $array['amount_people']='0';
-      $new_obj=new khachsan_room_price($array);
+       if(!isset($array['img']))
+       $array['img']='0';
+       if(!isset($array['position']))
+       $array['position']='0';
+      $new_obj=new khachsan_img($array);
         if($insert)
         {
-            khachsan_room_price_insert($new_obj);
-            header('Location: '.SITE_NAME.'/controller/admin/khachsan_room_price.php');
+            khachsan_img_insert($new_obj);
+            header('Location: '.SITE_NAME.'/controller/admin/khachsan_img.php');
         }
         else
         {
             $new_obj->id=$_GET["id"];
-            khachsan_room_price_update($new_obj);
+            khachsan_img_update($new_obj);
             $insert=false;
-            header('Location: '.SITE_NAME.'/controller/admin/khachsan_room_price.php');
+            header('Location: '.SITE_NAME.'/controller/admin/khachsan_img.php');
         }
     }
     $data['username']=isset($_SESSION["UserName"])?$_SESSION["UserName"]:'quản trị viên';
-    $data['count_paging']=khachsan_room_price_count('');
+    $data['count_paging']=khachsan_img_count('');
     $data['page']=isset($_GET['page'])?$_GET['page']:'1';
-    $data['table_body']=khachsan_room_price_getByPagingReplace($data['page'],20,'id DESC','');
+    $data['table_body']=khachsan_img_getByPagingReplace($data['page'],20,'id DESC','');
     // gọi phương thức trong tầng view để hiển thị
-    view_khachsan_room_price($data);
+    view_khachsan_img($data);
 }
 else
 {

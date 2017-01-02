@@ -1,4 +1,4 @@
-<section >
+<section {hidden_count_down} >
     <div class="container">
         <div class=" col-sm-12 col-md-12 " style="padding: 0px">
             <h3 class="title_index">tour giờ chót</h3>
