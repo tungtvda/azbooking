@@ -16,3 +16,10 @@ update khachsan_room_price set danhmuc_id='1',name='Phòng tập thể',price='1
 update khachsan_room_price set danhmuc_id='1',name='Phòng đơn',price='400000',amount_people='1' where id=5;
 update khachsan_room_price set danhmuc_id='1',name='Phòng đôi',price='500000',amount_people='2' where id=6;
 update khachsan_room_price set danhmuc_id='2',name='Phòng VIP',price='1000000',amount_people='4' where id=7;
+update khachsan_room_price set danhmuc_id='2',name='Phòng VIP',description='(bao gồm ăn sáng)',price='1000000',amount_people='4' where id=7;
+update khachsan_room_price set danhmuc_id='1',name='Phòng đôi',description='(bao gồm ăn sáng)',price='500000',amount_people='2' where id=6;
+update khachsan_room_price set danhmuc_id='1',name='Phòng đơn',description='(bao gồm ăn sáng)',price='400000',amount_people='1' where id=5;
+update khachsan_room_price set danhmuc_id='1',name='Phòng tập thể',description='(bao gồm ăn sáng)',price='1500000',amount_people='10' where id=4;
+update khachsan_room_price set danhmuc_id='1',name='Phòng hạng sang',description='(bao gồm ăn sáng)',price='1000000',amount_people='3' where id=3;
+update khachsan_room_price set danhmuc_id='2',name='Phòng đôi',description='(bao gồm ăn sáng)',price='600000',amount_people='2' where id=2;
+update khachsan_room_price set danhmuc_id='2',name='Phòng đơn',description='(bao gồm ăn sáng)',price='500000',amount_people='1' where id=1;

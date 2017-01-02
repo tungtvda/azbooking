@@ -37,3 +37,5 @@ RewriteRule ^tim-kiem-tin-tuc$ controller/default/timkiemtintuc.php
 RewriteRule ^tim-kiem/$ controller/default/timkiem.php
 
 RewriteRule ^([a-zA-Z0-9_-]+).html$ controller/default/info.php?Id=$1
+
+RewriteRule ^check-map/$ controller/default/checkmap.php

@@ -251,7 +251,7 @@ function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberfor
                         }
 
                         $gia_phong.='<tr class="search-result-row-item-single">
-                <td class="room1 quiet"> '.$row_room->name.' <span style="font-size:8pt;white-space:nowrap;color:#aaa;">(bao gồm ăn sáng)</span>
+                <td class="room1 quiet"> '.$row_room->name.' <span style="font-size:8pt;white-space:nowrap;color:#aaa;">'.$row_room->description.'</span>
                 </td>
                 <td>'.$row_room->amount_people.'</td>
                 <td class="totalprice">

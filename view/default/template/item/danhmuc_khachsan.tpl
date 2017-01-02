@@ -7,7 +7,7 @@
         <div class="item-title"><h2><a href="{link}">{name}</a></h2></div>
         <div class="item-list khachsan_list">
             <ul class="item_khachsan">
-                <li>{start} | <a href=""><i class="fa fa-map-marker"></i> Bản đồ</a></li>
+                <li>{start} | <a href="javascript:void(0)" data-toggle="modal" data-target="#myModal" id_data="{id}" class="map_show"><i class="fa fa-map-marker"></i> Bản đồ</a></li>
                 <li>
                     <i class="fa fa-map-marker"></i> {address}
                 </li>
@@ -58,3 +58,4 @@
         </table>
     </div>
 </div>
+

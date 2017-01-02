@@ -980,7 +980,7 @@ span.dropcap {
 .awe-navigation .menu-list li {
     position: relative;
     display: inline-block;
-    padding: 0 22px
+    padding: 0 15px
 }
 
 .awe-navigation .menu-list li a {
@@ -11192,4 +11192,56 @@ caption, th, td {
 }
 .view-imgs-link {
     color: #a8a8a8;
+}
+.menu_mobi{
+    color: #0094FF;
+    -webkit-animation: glowing_hotline 1500ms infinite;
+    -moz-animation: glowing_hotline 1500ms infinite;
+    -o-animation: glowing_hotline 1500ms infinite;
+    animation: glowing_hotline 1500ms infinite;
+}
+@-webkit-keyframes glowing_hotline {
+    0% { color: #ff0909;  }
+    50% { color: #0094FF; }
+    100% { color: #ff0909;  }
+}
+
+@-moz-keyframes glowing_hotline {
+    0% { color: #ff0909; }
+    50% { color: #0094FF;  }
+    100% { color: #ff0909; }
+}
+
+@-o-keyframes glowing_hotline {
+    0% { color: #ff0909;  }
+    50% { color: #0094FF; }
+    100% { color: #ff0909; }
+}
+
+@keyframes glowing_hotline {
+    0% { color: #ff0909;  }
+    50% { color: #0094FF;  }
+    100% { color: #ff0909;  }
+}
+.ui-widget-content {
+    border: 1px solid #0091EA;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #0091EA;
+    position: absolute;;
+    height: auto;
+    width: 100%;
+    top: 23px;
+    left: 104px;
+    display: block;
+}
+.ui-widget-content p{
+    color: #ffffff;
+    font-size: 14px;
+}
+.map_name{
+padding: 10px 0px;
+}
+.body_map{
+
 }
