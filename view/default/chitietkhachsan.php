@@ -12,6 +12,10 @@ function show_chitiet_khachsan($data = array())
 {
     $asign = array();
     $asign['name']= $data['detail'][0]->name;
+    $asign['address']= $data['detail'][0]->address;
+    $asign['email']= $data['detail'][0]->email;
+    $asign['phone']= $data['detail'][0]->phone;
+    $asign['start_img']= sao($data['detail'][0]->start);
 
 
     $asign['tour_lienquan'] ='';
@@ -53,7 +57,7 @@ function show_chitiet_khachsan($data = array())
                                                 <label title="Đơn giá: '.$dongia.'"><input  style="height: 14px; width: 14px; margin: 0px" type="checkbox" class="price_room" valueName="'.$row->name.'" value="'.$row->id.'" valuePrice="'.$row->price.'" valueNumber="" id="price_'.$row->id.'" name="price_room[]"> '.$row->name.'</label>
                                             </td>
                                             <td>
-                                                <input   style="width: 50px; height: 27px;" type="number" id="number_'.$row->id.'"  min="0" max="'.$row->amount_people.'" name="amount_people_'.$row->id.'">
+                                                <input   style="width: 50px; height: 27px;" type="number" id="number_'.$row->id.'"  min="0" max="'.$row->amount_room.'" name="amount_people_'.$row->id.'">
                                             </td>
                                         </tr>';
             $count_room++;
@@ -75,9 +79,36 @@ function show_chitiet_khachsan($data = array())
     $asign['name_url']=$data['detail'][0]->name_url;
     $asign['id']= $data['detail'][0]->id;
     $asign['date_now'] = date('Y-m-d', strtotime(date(DATETIME_FORMAT)));
-    $asign['date_now_vn'] = date('d-m-Y', strtotime(date(DATETIME_FORMAT)));
+    $asign['date_now_vn'] = date('d/m/Y', strtotime(date(DATETIME_FORMAT)));
 
+    $asign['list_images'] ='';
+    $asign['list_images_icon'] ='';
+    if(count($data['list_images'])>0) {
+        $asign['list_images'] = print_item('list_images', $data['list_images']);
+        $asign['list_images_icon'] = print_item('list_images_icon', $data['list_images']);
+    }
 
+//    $asign['list_phong'] ='';
+//    if(count($data['list_phong'])>0) {
+//        $asign['list_phong'] = print_item('list_phong', $data['list_phong']);
+//    }
+
+    $dichvu='';
+    if($data['detail'][0]->dichvu!=''){
+        $array_ex=explode('-',$data['detail'][0]->dichvu);
+        if(count($array_ex)>0){
+            foreach($array_ex as $row_dichvu){
+                $dichvu.='<div class="item"><i class="awe-icon fa fa-check-square-o "></i> <span>'.trim($row_dichvu).'</span></div>';
+            }
+        }
+    }
+    $asign['dichvu']=$dichvu;
+    $asign['map']=$data['detail'][0]->map;
+
+    $asign['list_phong'] ='';
+    if(count($data['list_phong'])>0) {
+        $asign['list_phong'] = print_item('list_phong', $data['list_phong']);
+    }
 
     print_template($asign, 'chitietkhachsan');
 }

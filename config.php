@@ -70,11 +70,12 @@ function _returnDateFormatConvert($date)
     return $DatesRemainder;
 }
 function bookingHotel($data){
-    if(isset($_POST['date_input'])&&isset($_POST['date_get_now'])&&isset($_POST['id_input'])&&isset($_POST['price_room'])&&isset($_POST['num_member'])&&isset($_POST['name_booking'])&&isset($_POST['email_booking'])&&isset($_POST['phone_booking'])&&isset($_POST['address_booking'])&&isset($_POST['request_booking'])){
+    if(isset($_POST['from_date'])&&isset($_POST['to_date'])&&isset($_POST['id_input'])&&isset($_POST['price_room'])&&isset($_POST['num_member'])&&isset($_POST['name_booking'])&&isset($_POST['email_booking'])&&isset($_POST['phone_booking'])&&isset($_POST['address_booking'])&&isset($_POST['request_booking'])){
         $contact = "Liên hệ";
         $id = $data->id;
         $name_url = $data->name_url;
-        $date = checkPostParamSecurity('date_input');
+        $from_date = str_replace('/','-',checkPostParamSecurity('from_date'));
+        $to_date =  str_replace('/','-',checkPostParamSecurity('to_date'));
         $price =$data->price;
         $num_member = checkPostParamSecurity('num_member');
         $full_name = checkPostParamSecurity('name_booking');
@@ -83,6 +84,33 @@ function bookingHotel($data){
         $address = checkPostParamSecurity('address_booking');
         $request = checkPostParamSecurity('request_booking');
         $price_room=$_POST['price_room'];
+        if($from_date==''||$to_date==""){
+            echo "<script>alert('Bạn vui lòng chọn ngày đến và ngày đi')</script>";
+            exit;
+        }
+        $from_date = date('Y-m-d', strtotime($from_date));
+        $to_date = date('Y-m-d', strtotime($to_date));
+         $date_now = date('Y-m-d', strtotime(date(DATETIME_FORMAT)));
+
+        if($from_date<$date_now||$to_date<$from_date){
+            if($from_date<$date_now){
+                echo "<script>alert('Bạn không thể chọn ngày trong quá khứ')</script>";
+            }
+            else{
+                if($to_date<$from_date){
+                    echo "<script>alert('Ngày đến không được nhỏ hơn ngày đi')</script>";
+                }
+            }
+
+        }
+        $first_date = strtotime($from_date);
+        $second_date = strtotime($to_date);
+        $datediff = abs($second_date - $first_date);
+        $tongngay= floor($datediff / (60*60*24));
+        if($tongngay==0)
+        {
+            $tongngay=1;
+        }
         if($num_member>0&&$full_name!=''&&$email!=''&&$phone!=''&&$address!=''&&count($price_room)>0){
 
             $new = new booking_hotel();
@@ -93,7 +121,8 @@ function bookingHotel($data){
             $new->phone = $phone;
             $new->email = $email;
             $new->address = $address;
-            $new->departure_day = $date;
+            $new->from_date = $from_date;
+            $new->from_date = $to_date;
             $new->num_member = $num_member;
             $new->price = $price;
             $new->request = $request;
@@ -130,7 +159,7 @@ function bookingHotel($data){
                                         </tr>";
 
                     if($data_price_room[0]->price>0){
-                        $sub_total=$data_price_room[0]->price*$amount_people;
+                        $sub_total=($data_price_room[0]->price*$amount_people)*$tongngay;
                         $total+=$sub_total;
                     }
                     else{
@@ -186,8 +215,8 @@ function bookingHotel($data){
                             <p>Tổng tiền: '.$total_format.'</p>
                            <p>' . $request . '</p>
                         </div>';
-            SendMail('sales@mixtourist.com', $message, $subject);
-            SendMail($email, $message, 'Azbooking.vn – Xác nhận đặt phòng');
+//            SendMail('sales@mixtourist.com', $message, $subject);
+//            SendMail($email, $message, 'Azbooking.vn – Xác nhận đặt phòng');
             echo "<script>alert('$mes')</script>";
 
         }else{

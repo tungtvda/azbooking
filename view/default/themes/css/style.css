@@ -7285,7 +7285,7 @@ body.single-post .blog-page__content > .post .post-content {
 }
 
 .room-type-table .room-people {
-    width: 11.5%;
+    width: 5.5%;
     padding-right: 30px
 }
 
@@ -7295,7 +7295,7 @@ body.single-post .blog-page__content > .post .post-content {
 }
 
 .room-type-table .room-price {
-    width: 14.5%;
+    width: 21.5%;
     padding-right: 30px
 }
 
@@ -7374,8 +7374,8 @@ body.single-post .blog-page__content > .post .post-content {
 .room-type-table tbody td.room-price .price .amount {
     display: block;
     font-weight: 700;
-    font-size: 24px;
-    color: #666;
+    font-size: 14px;
+    color: #FF6666;
     line-height: normal
 }
 
@@ -7968,7 +7968,7 @@ body.single-post .blog-page__content > .post .post-content {
 }
 
 .detail-sidebar {
-    margin-top: 72px
+    margin-top: 52px
 }
 
 .call-to-book {
@@ -11223,22 +11223,8 @@ caption, th, td {
     50% { color: #0094FF;  }
     100% { color: #ff0909;  }
 }
-.ui-widget-content {
-    border: 1px solid #0091EA;
-    padding: 10px;
-    color: #ffffff;
-    background-color: #0091EA;
-    position: absolute;;
-    height: auto;
-    width: 100%;
-    top: 23px;
-    left: 104px;
-    display: block;
-}
-.ui-widget-content p{
-    color: #ffffff;
-    font-size: 14px;
-}
+
+
 .map_name{
 padding: 10px 0px;
 }

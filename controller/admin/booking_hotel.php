@@ -55,7 +55,7 @@ if(isset($_SESSION["Admin"]))
             header('Location: '.SITE_NAME.'/controller/admin/booking_hotel.php');
         }
     }
-    if(isset($_POST["hotel_id"])&&isset($_POST["name_hotel"])&&isset($_POST["name_customer"])&&isset($_POST["phone"])&&isset($_POST["email"])&&isset($_POST["address"])&&isset($_POST["departure_day"])&&isset($_POST["num_member"])&&isset($_POST["price"])&&isset($_POST["price_room"])&&isset($_POST["total_price"])&&isset($_POST["request"])&&isset($_POST["created"]))
+    if(isset($_POST["hotel_id"])&&isset($_POST["name_hotel"])&&isset($_POST["name_customer"])&&isset($_POST["phone"])&&isset($_POST["email"])&&isset($_POST["address"])&&isset($_POST["from_date"])&&isset($_POST["to_date"])&&isset($_POST["num_member"])&&isset($_POST["price"])&&isset($_POST["price_room"])&&isset($_POST["total_price"])&&isset($_POST["request"])&&isset($_POST["created"]))
     {
        $array=$_POST;
        if(!isset($array['id']))
@@ -72,8 +72,10 @@ if(isset($_SESSION["Admin"]))
        $array['email']='0';
        if(!isset($array['address']))
        $array['address']='0';
-       if(!isset($array['departure_day']))
-       $array['departure_day']='0';
+       if(!isset($array['from_date']))
+       $array['from_date']='0';
+        if(!isset($array['to_date']))
+            $array['to_date']='0';
        if(!isset($array['num_member']))
        $array['num_member']='0';
        if(!isset($array['price']))
