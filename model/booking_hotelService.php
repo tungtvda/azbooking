@@ -62,17 +62,17 @@ function booking_hotel_getByPaging($CurrentPage, $PageSize,$Order,$where)
 //
 function booking_hotel_getByPagingReplace($CurrentPage, $PageSize,$Order,$where)
 {
-   return booking_hotel_Get("SELECT booking_hotel.id, booking_hotel.hotel_id, booking_hotel.name_hotel, booking_hotel.name_customer, booking_hotel.phone, booking_hotel.email, booking_hotel.address, booking_hotel.departure_day, booking_hotel.num_member, booking_hotel.price, booking_hotel.price_room, booking_hotel.total_price, booking_hotel.request, booking_hotel.status, booking_hotel.created FROM  booking_hotel ".(($where!='')?(' where '.$where):'')." Order By ".$Order." Limit ".(($CurrentPage-1)*$PageSize)." , ".$PageSize);
+   return booking_hotel_Get("SELECT booking_hotel.id, booking_hotel.hotel_id, booking_hotel.name_hotel, booking_hotel.name_customer, booking_hotel.phone, booking_hotel.email, booking_hotel.address, booking_hotel.from_date, booking_hotel.to_date, booking_hotel.num_member, booking_hotel.price, booking_hotel.price_room, booking_hotel.total_price, booking_hotel.request, booking_hotel.status, booking_hotel.created FROM  booking_hotel ".(($where!='')?(' where '.$where):'')." Order By ".$Order." Limit ".(($CurrentPage-1)*$PageSize)." , ".$PageSize);
 }
 //
 function booking_hotel_insert($obj)
 {
-    return exe_query("insert into booking_hotel (hotel_id,name_hotel,name_customer,phone,email,address,departure_day,num_member,price,price_room,total_price,request,status,created) values ('$obj->hotel_id','$obj->name_hotel','$obj->name_customer','$obj->phone','$obj->email','$obj->address','$obj->departure_day','$obj->num_member','$obj->price','$obj->price_room','$obj->total_price','$obj->request','$obj->status','$obj->created')",'booking_hotel');
+    return exe_query("insert into booking_hotel (hotel_id,name_hotel,name_customer,phone,email,address,from_date, to_date,num_member,price,price_room,total_price,request,status,created) values ('$obj->hotel_id','$obj->name_hotel','$obj->name_customer','$obj->phone','$obj->email','$obj->address','$obj->from_date','$obj->to_date','$obj->num_member','$obj->price','$obj->price_room','$obj->total_price','$obj->request','$obj->status','$obj->created')",'booking_hotel');
 }
 //
 function booking_hotel_update($obj)
 {
-    return exe_query("update booking_hotel set hotel_id='$obj->hotel_id',name_hotel='$obj->name_hotel',name_customer='$obj->name_customer',phone='$obj->phone',email='$obj->email',address='$obj->address',departure_day='$obj->departure_day',num_member='$obj->num_member',price='$obj->price',price_room='$obj->price_room',total_price='$obj->total_price',request='$obj->request',status='$obj->status',created='$obj->created' where id=$obj->id",'booking_hotel');
+    return exe_query("update booking_hotel set hotel_id='$obj->hotel_id',name_hotel='$obj->name_hotel',name_customer='$obj->name_customer',phone='$obj->phone',email='$obj->email',address='$obj->address',from_date='$obj->from_date',to_date='$obj->to_date',num_member='$obj->num_member',price='$obj->price',price_room='$obj->price_room',total_price='$obj->total_price',request='$obj->request',status='$obj->status',created='$obj->created' where id=$obj->id",'booking_hotel');
 }
 //
 function booking_hotel_delete($obj)

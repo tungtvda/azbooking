@@ -33,7 +33,7 @@
     </div>
     <div id="chitiet_gia_{id}" class="hotel-price-detail" hidden>
         <div id="divRate2" visible="false"></div>
-        <table class="search-result-roomtype" style="width: 100%">
+        <table  class="search-result-roomtype" style="width: 100%; ">
             <tbody>
             <tr class="search-result-row-header-single">
                 <th class="room quiet">Phòng</th>

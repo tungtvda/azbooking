@@ -33,7 +33,7 @@ function view_booking_hotel($data)
 //
 function showTableHeader()
 {
-    return '<th>name_hotel</th><th>phone</th><th>email</th><th>departure_day</th><th>num_member</th><th>total_price</th><th>Phòng</th><th>created</th>';
+    return '<th>name_hotel</th><th>phone</th><th>email</th><th>from_date</th><th>to_date</th><th>num_member</th><th>total_price</th><th>Phòng</th><th>created</th>';
 }
 //
 function showTableBody($data)
@@ -52,7 +52,8 @@ function showTableBody($data)
         $TableBody.="<td>".$obj->name_hotel."</td>";
         $TableBody.="<td>".$obj->phone."</td>";
         $TableBody.="<td>".$obj->email."</td>";
-        $TableBody.="<td>".$obj->departure_day."</td>";
+        $TableBody.="<td>".$obj->from_date."</td>";
+        $TableBody.="<td>".$obj->to_date."</td>";
         $TableBody.="<td>".$obj->num_member."</td>";
         if($obj->total_price>0){
             $TableBody.="<td>". number_format((int)$obj->total_price,0,",",".")." vnđ </td>";
@@ -102,7 +103,8 @@ function showFrom($form,$ListKey=array())
     $str_from.='<p><label>phone</label><input class="text-input small-input" type="text"  name="phone" value="'.(($form!=false)?$form->phone:'').'" /></p>';
     $str_from.='<p><label>email</label><input class="text-input small-input" type="text"  name="email" value="'.(($form!=false)?$form->email:'').'" /></p>';
     $str_from.='<p><label>address</label><input class="text-input small-input" type="text"  name="address" value="'.(($form!=false)?$form->address:'').'" /></p>';
-    $str_from.='<p><label>departure_day</label><input class="text-input small-input" type="text"  name="departure_day" value="'.(($form!=false)?$form->departure_day:'').'" /></p>';
+    $str_from.='<p><label>from_date</label><input class="text-input small-input" type="text"  name="from_date" value="'.(($form!=false)?$form->from_date:'').'" /></p>';
+    $str_from.='<p><label>to_date</label><input class="text-input small-input" type="text"  name="to_date" value="'.(($form!=false)?$form->to_date:'').'" /></p>';
     $str_from.='<p><label>num_member</label><input class="text-input small-input" type="text"  name="num_member" value="'.(($form!=false)?$form->num_member:'').'" /></p>';
     $str_from.='<p><label>price</label><input class="text-input small-input" type="text"  name="price" value="'.(($form!=false)?$form->price:'').'" /></p>';
 

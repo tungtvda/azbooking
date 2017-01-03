@@ -56,7 +56,7 @@ if(isset($_SESSION["Admin"]))
             header('Location: '.SITE_NAME.'/controller/admin/khachsan_room_price.php');
         }
     }
-    if(isset($_POST["danhmuc_id"])&&isset($_POST["name"])&&isset($_POST["description"])&&isset($_POST["price"])&&isset($_POST["amount_people"]))
+    if(isset($_POST["danhmuc_id"])&&isset($_POST["name"])&&isset($_POST["img"])&&isset($_POST["description"])&&isset($_POST["dichvu"])&&isset($_POST["price"])&&isset($_POST["amount_people"])&&isset($_POST["amount_room"]))
     {
        $array=$_POST;
        if(!isset($array['id']))
@@ -65,12 +65,18 @@ if(isset($_SESSION["Admin"]))
        $array['danhmuc_id']='0';
        if(!isset($array['name']))
        $array['name']='0';
+       if(!isset($array['img']))
+       $array['img']='0';
        if(!isset($array['description']))
        $array['description']='0';
+       if(!isset($array['dichvu']))
+       $array['dichvu']='0';
        if(!isset($array['price']))
        $array['price']='0';
        if(!isset($array['amount_people']))
        $array['amount_people']='0';
+       if(!isset($array['amount_room']))
+       $array['amount_room']='0';
       $new_obj=new khachsan_room_price($array);
         if($insert)
         {

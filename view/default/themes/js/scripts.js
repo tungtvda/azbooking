@@ -88,7 +88,7 @@
             e(this).datepicker({
                 showOtherMonths: !0,
                 selectOtherMonths: !0,
-                dayNamesMin: ["Sun", "Mon", "Tue", "Wen", "Thu", "Fri", "Sat"]
+                dayNamesMin: ["CN", "T2", "T3", "T4", "T5", "T6", "T7"]
             })
         })
     }
@@ -195,7 +195,7 @@
                         e(this).datepicker({
                             showOtherMonths: !0,
                             selectOtherMonths: !0,
-                            dayNamesMin: ["Sun", "Mon", "Tue", "Wen", "Thu", "Fri", "Sat"]
+                            dayNamesMin: ["CN", "T2", "T3", "T4", "T5", "T6", "T7"]
                         })
                     })
                 }

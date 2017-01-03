@@ -24,7 +24,10 @@ $id=addslashes(strip_tags($_GET['name_url']));
 $data['detail']=khachsan_getByTop('1','name_url="'.$id.'"','');
 if(count($data['detail'])==0){
     redict(SITE_NAME);
+
 }
+$data['list_images']=khachsan_img_getByTop('','danhmuc_id='.$data['detail'][0]->id,'position asc');
+$data['list_phong']=khachsan_room_price_getByTop('','danhmuc_id='.$data['detail'][0]->id,'id desc');
 $url='';
 $banner='';
 $link_detail='';

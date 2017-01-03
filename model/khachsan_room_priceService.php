@@ -62,17 +62,17 @@ function khachsan_room_price_getByPaging($CurrentPage, $PageSize,$Order,$where)
 //
 function khachsan_room_price_getByPagingReplace($CurrentPage, $PageSize,$Order,$where)
 {
-   return khachsan_room_price_Get("SELECT khachsan_room_price.id, khachsan.name as danhmuc_id, khachsan_room_price.name, khachsan_room_price.description, khachsan_room_price.price, khachsan_room_price.amount_people FROM  khachsan_room_price, khachsan where khachsan.id=khachsan_room_price.danhmuc_id  ".(($where!='')?(' and '.$where):'')." Order By ".$Order." Limit ".(($CurrentPage-1)*$PageSize)." , ".$PageSize);
+   return khachsan_room_price_Get("SELECT khachsan_room_price.id, khachsan.name as danhmuc_id, khachsan_room_price.name, khachsan_room_price.img, khachsan_room_price.description, khachsan_room_price.dichvu, khachsan_room_price.price, khachsan_room_price.amount_people, khachsan_room_price.amount_room FROM  khachsan_room_price, khachsan where khachsan.id=khachsan_room_price.danhmuc_id  ".(($where!='')?(' and '.$where):'')." Order By ".$Order." Limit ".(($CurrentPage-1)*$PageSize)." , ".$PageSize);
 }
 //
 function khachsan_room_price_insert($obj)
 {
-    return exe_query("insert into khachsan_room_price (danhmuc_id,name,description,price,amount_people) values ('$obj->danhmuc_id','$obj->name','$obj->description','$obj->price','$obj->amount_people')",'khachsan_room_price');
+    return exe_query("insert into khachsan_room_price (danhmuc_id,name,img,description,dichvu,price,amount_people,amount_room) values ('$obj->danhmuc_id','$obj->name','$obj->img','$obj->description','$obj->dichvu','$obj->price','$obj->amount_people','$obj->amount_room')",'khachsan_room_price');
 }
 //
 function khachsan_room_price_update($obj)
 {
-    return exe_query("update khachsan_room_price set danhmuc_id='$obj->danhmuc_id',name='$obj->name',description='$obj->description',price='$obj->price',amount_people='$obj->amount_people' where id=$obj->id",'khachsan_room_price');
+    return exe_query("update khachsan_room_price set danhmuc_id='$obj->danhmuc_id',name='$obj->name',img='$obj->img',description='$obj->description',dichvu='$obj->dichvu',price='$obj->price',amount_people='$obj->amount_people',amount_room='$obj->amount_room' where id=$obj->id",'khachsan_room_price');
 }
 //
 function khachsan_room_price_delete($obj)

@@ -251,14 +251,14 @@ function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberfor
                         }
 
                         $gia_phong.='<tr class="search-result-row-item-single">
-                <td class="room1 quiet"> '.$row_room->name.' <span style="font-size:8pt;white-space:nowrap;color:#aaa;">'.$row_room->description.'</span>
+                <td style="padding: 5px 5px" class="room1 quiet"> '.$row_room->name.' <span style="font-size:8pt;white-space:nowrap;color:#aaa;"></span>
                 </td>
-                <td>'.$row_room->amount_people.'</td>
+                <td style="text-align: center">'.$row_room->amount_people.'</td>
                 <td class="totalprice">
                     <div id="divRate" class="top-10 bottom-5" style="text-align: right; padding-right: 20px;">'.$gia.'</div>
                 </td>
-                <td class="bookroom quiet"><a class="lnkBookHotel clearfix btn btn-sm btn-primary"
-                                              href="'.link_khachsandetail($item,$data_dm[0]->name_url).'"
+                <td style="text-align: center; padding: 5px 5px" class="bookroom quiet"><a class="lnkBookHotel clearfix btn btn-sm btn-primary"
+                                              href="'.link_khachsandetail($item,$data_dm[0]->name_url).'#booking"
                                               rel="nofollow">Đặt Phòng</a></td>
             </tr>';
                     }
@@ -267,6 +267,25 @@ function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberfor
                 $ft->assign('gia_phong',$gia_phong);
                 $ft->assign('start',sao($item->start));
                 $ft->assign('link',link_khachsandetail($item,$data_dm[0]->name_url));
+            }
+            if(get_class($item)=='khachsan_room_price')
+            {
+                if($item->price==0||$item->price==''){
+                    $ft->assign('price_format','Liên hệ');
+                }
+                else{
+                    $ft->assign('price_format',number_format((int)$item->price,0,",",".").'(vnđ/đêm)');
+                }
+                $dichvu='';
+                if($item->dichvu!=''){
+                    $array_ex=explode('-',$item->dichvu);
+                    if(count($array_ex)>0){
+                        foreach($array_ex as $row_dichvu){
+                            $dichvu.='<li style="font-weight: normal"><i class="fa fa-check-square-o"></i> '.trim($row_dichvu).'</li>';
+                        }
+                    }
+                }
+                $ft->assign('dichvu_arr',$dichvu);
             }
 
 

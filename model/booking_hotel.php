@@ -1,7 +1,7 @@
 <?php
 class booking_hotel
 {
-    public $id,$hotel_id,$name_hotel,$name_customer,$phone,$email,$address,$departure_day,$num_member,$price,$price_room,$total_price,$request,$status,$created;
+    public $id,$hotel_id,$name_hotel,$name_customer,$phone,$email,$address,$from_date,$to_date,$num_member,$price,$price_room,$total_price,$request,$status,$created;
     public function booking_hotel($data=array())
     {
     $this->id=isset($data['id'])?$data['id']:'';
@@ -11,7 +11,8 @@ class booking_hotel
     $this->phone=isset($data['phone'])?$data['phone']:'';
     $this->email=isset($data['email'])?$data['email']:'';
     $this->address=isset($data['address'])?$data['address']:'';
-    $this->departure_day=isset($data['departure_day'])?$data['departure_day']:'';
+    $this->from_date=isset($data['from_date'])?$data['from_date']:'';
+        $this->to_date=isset($data['to_date'])?$data['to_date']:'';
     $this->num_member=isset($data['num_member'])?$data['num_member']:'';
     $this->price=isset($data['price'])?$data['price']:'';
     $this->price_room=isset($data['price_room'])?$data['price_room']:'';
@@ -30,7 +31,8 @@ class booking_hotel
             $this->phone=addslashes($this->phone);
             $this->email=addslashes($this->email);
             $this->address=addslashes($this->address);
-            $this->departure_day=addslashes($this->departure_day);
+            $this->from_date=addslashes($this->from_date);
+            $this->to_date=addslashes($this->to_date);
             $this->num_member=addslashes($this->num_member);
             $this->price=addslashes($this->price);
             $this->price_room=addslashes($this->price_room);
@@ -48,7 +50,8 @@ class booking_hotel
             $this->phone=stripslashes($this->phone);
             $this->email=stripslashes($this->email);
             $this->address=stripslashes($this->address);
-            $this->departure_day=stripslashes($this->departure_day);
+            $this->from_date=stripslashes($this->from_date);
+            $this->to_date=stripslashes($this->to_date);
             $this->num_member=stripslashes($this->num_member);
             $this->price=stripslashes($this->price);
             $this->price_room=stripslashes($this->price_room);
