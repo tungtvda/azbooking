@@ -84,3 +84,12 @@ update khachsan_room_price set danhmuc_id='2',name='Phòng đôi',img='/azbookin
 update khachsan_room_price set danhmuc_id='2',name='Phòng đơn',img='/azbooking/view/admin/Themes/kcfinder/upload/images/khachsan/6.jpg',description='Diện tích khoảng 90m2, hướng rừng mưa nhiệt đới.Tối đa 2 người lớn, không kê được giường phụ',dichvu='Tivi-Dụng cụ pha trà / cafe-Tủ lạnh-Điện thoại-Dép đi trong phòng
 
 ',price='500000',amount_people='1',amount_room='16' where id=1;
+update khachsan_room_price set amount_people='2',amount_room='111' where id=;
+update khachsan_room_price set amount_people='2',amount_room='111' where id=;
+update khachsan_room_price set amount_people='2',amount_room='11111' where id=;
+update khachsan_room_price set amount_people='2',amount_room='1111' where id=;
+update khachsan_room_price set amount_people='2',amount_room='111' where id=6;
+update khachsan_room_price set amount_people='3',amount_room='111' where id=6;
+insert into khachsan_room_price (danhmuc_id,name,img,description,dichvu,price,amount_people,amount_room) values ('6','asdfasdf','','','','','','');
+delete from khachsan_room_price where danhmuc_id=;
+delete from khachsan_room_price where danhmuc_id=6;

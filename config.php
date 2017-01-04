@@ -74,8 +74,8 @@ function bookingHotel($data){
         $contact = "Liên hệ";
         $id = $data->id;
         $name_url = $data->name_url;
-        $from_date = str_replace('/','-',checkPostParamSecurity('from_date'));
-        $to_date =  str_replace('/','-',checkPostParamSecurity('to_date'));
+        $from_date_old=$from_date = str_replace('/','-',checkPostParamSecurity('from_date'));
+        $to_date_old=$to_date =  str_replace('/','-',checkPostParamSecurity('to_date'));
         $price =$data->price;
         $num_member = checkPostParamSecurity('num_member');
         $full_name = checkPostParamSecurity('name_booking');
@@ -122,7 +122,7 @@ function bookingHotel($data){
             $new->email = $email;
             $new->address = $address;
             $new->from_date = $from_date;
-            $new->from_date = $to_date;
+            $new->to_date = $to_date;
             $new->num_member = $num_member;
             $new->price = $price;
             $new->request = $request;
@@ -156,6 +156,7 @@ function bookingHotel($data){
                                             <th>".$data_price_room[0]->name."</th>
                                              <th>$price_format</th>
                                             <th>$amount_people</th>
+                                             <th>$tongngay</th>
                                         </tr>";
 
                     if($data_price_room[0]->price>0){
@@ -181,7 +182,7 @@ function bookingHotel($data){
             $new->price_room = $price_room_string;
             booking_hotel_insert($new);
 
-            $mes = 'Đặt phòng thành công';
+            $mes = 'Đặt phòng thành công, chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất, xin cảm ơn!';
 
             $message = "";
             $subject = "Azbooking.vn – Thông báo đặt phòng từ khách hàng";
@@ -197,7 +198,8 @@ function bookingHotel($data){
                             <p>Email: <span style="color: #132fff; font-weight: bold">' . $email . '</span>,</p>
                             <p>Điện thoại: <span style="color: #132fff; font-weight: bold">' . $phone . '</span>,</p>
                             <p>Địa chỉ: <span style="color: #132fff; font-weight: bold">' . $address . '</span>,</p>
-                            <p>Ngày check-in: <span style="color: #132fff; font-weight: bold">' . $date . '</span>,</p>
+                            <p>Ngày check-in: <span style="color: #132fff; font-weight: bold">' . $from_date_old . '</span>,</p>
+                            <p>Ngày check-out: <span style="color: #132fff; font-weight: bold">' . $to_date_old . '</span>,</p>
                             <p>Ngày đặt: <span style="color: #132fff; font-weight: bold">' . _returnGetDateTime() . '</span>,</p>
                             <p>Khách sạn: <span style="color: #132fff; font-weight: bold">' . $data->name . '</span>,</p>
                              <p>Giá: <span style="color: #132fff; font-weight: bold">' . $data->price . '</span>,</p>
@@ -209,16 +211,21 @@ function bookingHotel($data){
                                             <th>Loại phòng</th>
                                              <th>Đơn giá</th>
                                             <th>Số lượng phòng</th>
+                                            <th>Số ngày đặt</th>
                                         </tr>
                                       '.$price_room_string_table.'
                                     </table></p>
                             <p>Tổng tiền: '.$total_format.'</p>
                            <p>' . $request . '</p>
                         </div>';
-//            SendMail('sales@mixtourist.com', $message, $subject);
-//            SendMail($email, $message, 'Azbooking.vn – Xác nhận đặt phòng');
+            SendMail('tungtv.soict@gmail.com', $message, $subject);
+            SendMail($email, $message, 'Azbooking.vn – Xác nhận đặt phòng');
+            if($data->email!=''){
+                SendMail($data->email, $message, 'Azbooking.vn – Xác nhận đặt phòng');
+            }
             echo "<script>alert('$mes')</script>";
-
+            $link_web=SITE_NAME.'/khach-san/';
+            echo "<script>window.location.href='$link_web';</script>";
         }else{
             echo "<script>alert('Bạn vui lòng điền đầy đủ thông tin đặt phòng')</script>";
         }
@@ -287,12 +294,22 @@ function _returnGetDateTime()
 }
 
 function returnCountData(){
-    $count_contact=contact_count('status=0');
-    $_SESSION['contact']=$count_contact;
-    $count_dangky=booking_hotel_count('status=0');
-    $_SESSION['booking_hotel']=$count_dangky;
-    $count_booking=booking_tour_count('status=0');
-    $_SESSION['booking']=$count_booking;
+
+    if(isset($_SESSION['Quyen'])){
+        if($_SESSION['Quyen']==1){
+            $count_dangky=booking_hotel_count('status=0');
+            $_SESSION['booking_hotel']=$count_dangky;
+            $count_contact=contact_count('status=0');
+            $_SESSION['contact']=$count_contact;
+            $count_booking=booking_tour_count('status=0');
+            $_SESSION['booking']=$count_booking;
+        }
+        else{
+            exit;
+        }
+
+    }
+
 }
 function returnRoomPrice($room){
     $room_rest=array();

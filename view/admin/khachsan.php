@@ -4,8 +4,22 @@ require_once DIR.'/common/cls_fast_template.php';
 function view_khachsan($data)
 {
     $ft=new FastTemplate(DIR.'/view/admin/templates');
-    $ft->define('header','header.tpl');
-    $ft->define('body','body.tpl');
+
+
+
+    if( $_SESSION["Quyen"]==1){
+        $ft->assign('booking_hotel',$_SESSION['booking_hotel']);
+        $ft->assign('count_contact',$_SESSION['contact']);
+        $ft->assign('count_booking',$_SESSION['booking']);
+        $ft->define('header','header.tpl');
+        $ft->define('body','body.tpl');
+    }
+    else{
+        $data['listfkey']['danhmuc_id']=danhmuc_khachsan_getById($_SESSION["khach_san_id"]);
+        $ft->define('header','header_khachsan.tpl');
+        $ft->define('body','body_khachsan.tpl');
+    }
+
     $ft->define('footer','footer.tpl');
     //
     $ft->assign('TAB1-CLASS',isset($data['tab1_class'])?$data['tab1_class']:'');
@@ -18,8 +32,9 @@ function view_khachsan($data)
     $ft->assign('TABLE-NAME','khachsan');
     $ft->assign('CONTENT-BOX-LEFT',isset($data['content_box_left'])?$data['content_box_left']:'');
     $ft->assign('CONTENT-BOX-RIGHT',isset($data['content_box_right'])?$data['content_box_right']:' ');
-    $ft->assign('NOTIFICATION',isset($data['notification'])?$data['notification']:' ');
+    $ft->assign('NOTIFICATION',isset($data['notification'])?$data[' notification']:' ');
     $ft->assign('SITE-NAME',isset($data['sitename'])?$data['sitename']:SITE_NAME);
+    $ft->assign('kichhoat_khachsan', 'active');
     $ft->assign('FORM',showFrom(isset($data['form'])?$data['form']:'',isset($data['listfkey'])?$data['listfkey']:array()));
     //
     print $ft->parse_and_return('header');
@@ -45,8 +60,11 @@ function showTableBody($data)
         $TableBody.="<td>".$obj->start."</td>";
         $TableBody.="<td>".$obj->price."</td>";
         $TableBody.="<td><img src=\"".$obj->img."\" width=\"50px\" height=\"50px\"/> </td>";
-        $TableBody.="<td><a href=\"?action=edit&id=".$obj->id."\" title=\"Edit\"><img src=\"".SITE_NAME."/view/admin/Themes/images/pencil.png\" alt=\"Edit\"></a>";
-        $TableBody.="<a href=\"?action=delete&id=".$obj->id."\" title=\"Delete\" onClick=\"return confirm('Bạn có chắc chắc muốn xóa?')\"><img src=\"".SITE_NAME."/view/admin/Themes/images/cross.png\" alt=\"Delete\"></a> ";
+        $TableBody.="<td>";
+        if( $_SESSION["Quyen"]==1) {
+            $TableBody.="<a href=\"?action=edit&id=".$obj->id."\" title=\"Edit\"><img src=\"".SITE_NAME."/view/admin/Themes/images/pencil.png\" alt=\"Edit\"></a>";
+            $TableBody .= "<a href=\"?action=delete&id=" . $obj->id . "\" title=\"Delete\" onClick=\"return confirm('Bạn có chắc chắc muốn xóa?')\"><img src=\"" . SITE_NAME . "/view/admin/Themes/images/cross.png\" alt=\"Delete\"></a> ";
+        }
         $TableBody.="</td>";
         $TableBody.="</tr>";
     }
@@ -69,15 +87,25 @@ function showFrom($form,$ListKey=array())
     $str_from.='<p><label>highlights</label><input  type="checkbox"  name="highlights" value="1" '.(($form!=false)?(($form->highlights=='1')?'checked':''):'').' /></p>';
     $str_from.='<p><label>name</label><input class="text-input small-input" type="text"  name="name" value="'.(($form!=false)?$form->name:'').'" /></p>';
     $str_from.='<p><label>name_url</label><input class="text-input small-input" type="text"  name="name_url" value="'.(($form!=false)?$form->name_url:'').'" /></p>';
-    $str_from.='<p><label>start</label><input class="text-input small-input" type="text"  name="start" value="'.(($form!=false)?$form->start:'').'" /></p>';
+    $str_from.='<p><label>start</label><input class="text-input small-input" type="text" max="5" min="0" name="start" value="'.(($form!=false)?$form->start:'').'" /></p>';
     $str_from.='<p><label>price</label><input class="text-input small-input" type="text"  name="price" value="'.(($form!=false)?$form->price:'').'" /></p>';
     $str_from.='<p><label>dichvu</label><textarea style="width: 100%" name="dichvu">'.(($form!=false)?$form->dichvu:'').'</textarea></p>';
-    $str_from.='<p><label>img</label><input class="text-input small-input" type="text"  name="img" value="'.(($form!=false)?$form->img:'').'"/><a class="button" onclick="openKcEditor(\'img\');">Upload ảnh</a></p>';
+
+    $str_from.='<p><label>img</label><input class="text-input small-input" type="text"  name="img" value="'.(($form!=false)?$form->img:'').'"/>';
+    if( $_SESSION["Quyen"]==1) {
+        $str_from.='<a class="button" onclick="openKcEditor(\'img\');">Upload ảnh</a>';
+    }
+
+    $str_from.='</p>';
+
     $str_from.='<p><label>address</label><input class="text-input small-input" type="text"  name="address" value="'.(($form!=false)?$form->address:'').'" /></p>';
     $str_from.='<p><label>phone</label><input class="text-input small-input" type="text"  name="phone" value="'.(($form!=false)?$form->phone:'').'" /></p>';
     $str_from.='<p><label>email</label><input class="text-input small-input" type="email"  name="email" value="'.(($form!=false)?$form->email:'').'" /></p>';
     $str_from.='<p><label>map</label><textarea  style="width: 100%" name="map">'.(($form!=false)?$form->map:'').'</textarea></p>';
-    $str_from.='<p><label>content</label><textarea name="content">'.(($form!=false)?$form->content:'').'</textarea><script type="text/javascript">CKEDITOR.replace(\'content\'); </script></p>';
+    if( $_SESSION["Quyen"]==1) {
+        $str_from.='<p><label>content</label><textarea name="content">'.(($form!=false)?$form->content:'').'</textarea><script type="text/javascript">CKEDITOR.replace(\'content\'); </script></p>';
+    }
+
     $str_from.='<p><label>title</label><input class="text-input small-input" type="text"  name="title" value="'.(($form!=false)?$form->title:'').'" /></p>';
     $str_from.='<p><label>keyword</label><input class="text-input small-input" type="text"  name="keyword" value="'.(($form!=false)?$form->keyword:'').'" /></p>';
     $str_from.='<p><label>description</label><input class="text-input small-input" type="text"  name="description" value="'.(($form!=false)?$form->description:'').'" /></p>';

@@ -23,6 +23,7 @@ function view_admin($data)
     $ft->assign('CONTENT-BOX-RIGHT',isset($data['content_box_right'])?$data['content_box_right']:' ');
     $ft->assign('NOTIFICATION',isset($data['notification'])?$data['notification']:' ');
     $ft->assign('SITE-NAME',isset($data['sitename'])?$data['sitename']:SITE_NAME);
+
     $ft->assign('kichhoat_admin', 'active');
     $ft->assign('FORM',showFrom(isset($data['form'])?$data['form']:'',isset($data['listfkey'])?$data['listfkey']:array()));
     //
@@ -33,7 +34,7 @@ function view_admin($data)
 //
 function showTableHeader()
 {
-    return '<th>Id</th><th>TenDangNhap</th><th>Full_name</th>';
+    return '<th>Id</th><th>khachsan_id</th><th>TenDangNhap</th><th>Full_name</th><th>Quyen</th><th>status</th>';
 }
 //
 function showTableBody($data)
@@ -43,8 +44,11 @@ function showTableBody($data)
     {
         $TableBody.="<tr><td><input type=\"checkbox\" name=\"check_".$obj->Id."\"/></td>";
         $TableBody.="<td>".$obj->Id."</td>";
+        $TableBody.="<td>".$obj->khachsan_id."</td>";
         $TableBody.="<td>".$obj->TenDangNhap."</td>";
         $TableBody.="<td>".$obj->Full_name."</td>";
+        $TableBody.="<td>".$obj->Quyen."</td>";
+        $TableBody.="<td>".$obj->status."</td>";
         $TableBody.="<td><a href=\"?action=edit&Id=".$obj->Id."\" title=\"Edit\"><img src=\"".SITE_NAME."/view/admin/Themes/images/pencil.png\" alt=\"Edit\"></a>";
         $TableBody.="<a href=\"?action=delete&Id=".$obj->Id."\" title=\"Delete\" onClick=\"return confirm('Bạn có chắc chắc muốn xóa?')\"><img src=\"".SITE_NAME."/view/admin/Themes/images/cross.png\" alt=\"Delete\"></a> ";
         $TableBody.="</td>";
@@ -56,8 +60,32 @@ function showTableBody($data)
 function showFrom($form,$ListKey=array())
 {
     $str_from='';
+    $str_from.='<p><label>khachsan_id</label>';
+    $str_from.='<select name="khachsan_id">';
+    if(isset($ListKey['khachsan_id']))
+    {
+        foreach($ListKey['khachsan_id'] as $key)
+        {
+            $str_from.='<option value="'.$key->id.'" '.(($form!=false)?(($form->khachsan_id==$key->id)?'selected':''):'').'>'.$key->name.'</option>';
+        }
+    }
+    $str_from.='</select></p>';
+
+    $str_from.='<p><label>Quyen</label>';
+    $str_from.='<select name="Quyen">';
+    if(isset($ListKey['Quyen']))
+    {
+        foreach($ListKey['Quyen'] as $key)
+        {
+            $str_from.='<option value="'.$key->id.'" '.(($form!=false)?(($form->Quyen==$key->id)?'selected':''):'').'>'.$key->name.'</option>';
+        }
+    }
+    $str_from.='</select></p>';
+    $str_from.='<p><label>status</label><input  type="checkbox"  name="status" value="1" '.(($form!=false)?(($form->status=='1')?'checked':''):'').' /></p>';
     $str_from.='<p><label>TenDangNhap</label><input class="text-input small-input" type="text"  name="TenDangNhap" value="'.(($form!=false)?$form->TenDangNhap:'').'" /></p>';
     $str_from.='<p><label>Full_name</label><input class="text-input small-input" type="text"  name="Full_name" value="'.(($form!=false)?$form->Full_name:'').'" /></p>';
-    $str_from.='<p><label>MatKhau</label><input class="text-input small-input" type="text"  name="MatKhau" value="'.(($form!=false)?$form->MatKhau:'').'" /></p>';
+    $str_from.='<p><label>MatKhau</label><input class="text-input small-input" type="password"  name="MatKhau" value="'.(($form!=false)?$form->MatKhau:'').'" /></p>';
+
+
     return $str_from;
 }

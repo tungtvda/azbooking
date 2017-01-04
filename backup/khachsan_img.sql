@@ -6,3 +6,6 @@ update khachsan_img set danhmuc_id='1',name='Somerset Central TD Hai Phong',img=
 insert into khachsan_img (danhmuc_id,name,img,position) values ('1','Somerset Central TD Hai Phong','/azbooking/view/admin/Themes/kcfinder/upload/images/khachsan/4.jpg','4');
 insert into khachsan_img (danhmuc_id,name,img,position) values ('1','Somerset Central TD Hai Phong','/azbooking/view/admin/Themes/kcfinder/upload/images/khachsan/5.jpg','5');
 insert into khachsan_img (danhmuc_id,name,img,position) values ('1','Somerset Central TD Hai Phong','/azbooking/view/admin/Themes/kcfinder/upload/images/khachsan/6.jpg','6');
+insert into khachsan_img (danhmuc_id,name,img,position) values ('6','asdfasdf','','');
+delete from khachsan_img where danhmuc_id=;
+delete from khachsan_img where danhmuc_id=6;

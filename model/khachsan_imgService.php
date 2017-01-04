@@ -90,3 +90,7 @@ function khachsan_img_count($where)
     }
    else return false;
 }
+function khachsan_img_danhmuc_delete($obj)
+{
+    return exe_query('delete from khachsan_img where danhmuc_id='.$obj->danhmuc_id,'khachsan_img');
+}

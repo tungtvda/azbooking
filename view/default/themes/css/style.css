@@ -959,7 +959,7 @@ span.dropcap {
 }
 
 #header-page .logo img {
-    max-height: 50px
+    max-height: 70px
 }
 
 .awe-navigation {
@@ -998,7 +998,7 @@ span.dropcap {
 
 .awe-navigation .menu-list li .sub-menu {
     position: absolute;
-    width: 210px;
+    width: 225px;
     list-style: none;
     padding: 0;
     top: 110%;
@@ -10763,7 +10763,7 @@ caption, th, td {
     text-align: left;
 }
 .calculate_bt {
-    width: 40%;
+    width: 45%;
     color: #ffffff;
     padding: 2px 20px;
     background-color: #0086cd;

@@ -17,7 +17,7 @@
             <ul class="list-unstyled list-icon">
                 {dichvu_arr}
             </ul>
-            <a class="view-imgs-link btnPriceDetail chitiet_gia" href="javascript:void(0)" countId="{id}">Xem chi tiết giá phòng <i
+            <a class="view-imgs-link btnPriceDetail chitiet_gia" href="javascript:void(0)" countid="{id}">Xem chi tiết giá phòng <i
                         class="fa fa-angle-double-right"></i></a>
         </div>
     </div>

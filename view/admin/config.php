@@ -66,12 +66,14 @@ function showFrom($form,$ListKey=array())
     $str_from.='<p><label>Hotline</label><input class="text-input small-input" type="text"  name="Hotline" value="'.(($form!=false)?$form->Hotline:'').'" /></p>';
     $str_from.='<p><label>Email</label><input class="text-input small-input" type="text"  name="Email" value="'.(($form!=false)?$form->Email:'').'" /></p>';
     $str_from.='<p><label>Website</label><input class="text-input small-input" type="text"  name="Website" value="'.(($form!=false)?$form->Website:'').'" /></p>';
-    $str_from.='<p><label>Map</label><input class="text-input small-input" type="text"  name="Map" value="'.(($form!=false)?$form->Map:'').'" /></p>';
+    $str_from.='<p><label>Map</label><textarea  style="width: 100%" name="Map">'.(($form!=false)?$form->Map:'').'</textarea></p>';
+//    $str_from.='<p><label>Map</label><input class="text-input small-input" type="text"  name="Map" value="'.(($form!=false)?$form->Map:'').'" /></p>';
     $str_from.='<p><label>Address_hcm</label><input class="text-input small-input" type="text"  name="Address_hcm" value="'.(($form!=false)?$form->Address_hcm:'').'" /></p>';
     $str_from.='<p><label>Phone_hcm</label><input class="text-input small-input" type="text"  name="Phone_hcm" value="'.(($form!=false)?$form->Phone_hcm:'').'" /></p>';
     $str_from.='<p><label>fax_hcm</label><input class="text-input small-input" type="text"  name="fax_hcm" value="'.(($form!=false)?$form->fax_hcm:'').'" /></p>';
     $str_from.='<p><label>Hotline_hcm</label><input class="text-input small-input" type="text"  name="Hotline_hcm" value="'.(($form!=false)?$form->Hotline_hcm:'').'" /></p>';
     $str_from.='<p><label>Email_hcm</label><input class="text-input small-input" type="text"  name="Email_hcm" value="'.(($form!=false)?$form->Email_hcm:'').'" /></p>';
-    $str_from.='<p><label>Map_hcm</label><input class="text-input small-input" type="text"  name="Map_hcm" value="'.(($form!=false)?$form->Map_hcm:'').'" /></p>';
+//    $str_from.='<p><label>Map_hcm</label><input class="text-input small-input" type="text"  name="Map_hcm" value="'.(($form!=false)?$form->Map_hcm:'').'" /></p>';
+    $str_from.='<p><label>Map_hcm</label><textarea  style="width: 100%" name="Map_hcm">'.(($form!=false)?$form->Map_hcm:'').'</textarea></p>';
     return $str_from;
 }

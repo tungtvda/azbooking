@@ -63,24 +63,46 @@ function showTableBody($data)
 function showFrom($form,$ListKey=array())
 {
     $str_from='';
-    $str_from.='<p><label>DanhMuc1Id</label>';
-    $str_from.='<select name="DanhMuc1Id">';
-    if(isset($ListKey['DanhMuc1Id']))
+    $str_from.='<p><label>Chọn danh mục cấp 1</label>';
+    $str_from.='<select name="DanhMuc1Id" id="DanhMuc1Id">';
+    if($form!=false)
     {
-        foreach($ListKey['DanhMuc1Id'] as $key)
+        if(isset($ListKey['DanhMuc1Id']))
         {
-            $str_from.='<option value="'.$key->id.'" '.(($form!=false)?(($form->DanhMuc1Id==$key->id)?'selected':''):'').'>'.$key->name.'</option>';
+            foreach($ListKey['DanhMuc1Id'] as $key)
+            {
+                $str_from.='<option value="'.$key->id.'" '.(($form!=false)?(($form->DanhMuc1Id==$key->id)?'selected':''):'').'>'.$key->name.'</option>';
+            }
+        }
+    }
+    else
+    {
+
+        if(isset($ListKey['DanhMuc1Id']))
+        {
+            foreach($ListKey['DanhMuc1Id'] as $key)
+            {
+                $str_from.='<option value="'.$key->id.'" '.(($form!=false)?(($form->DanhMuc1Id==$key->id)?'selected':''):'').'>'.$key->name.'</option>';
+            }
         }
     }
     $str_from.='</select></p>';
-    $str_from.='<p><label>DanhMuc2Id</label>';
-    $str_from.='<select name="DanhMuc2Id">';
-    if(isset($ListKey['DanhMuc2Id']))
+    $str_from.='<p><label>Chọn danh mục cấp 2</label>';
+    $str_from.='<select name="DanhMuc2Id" id="DanhMuc2Id">';
+    if($form!=false)
     {
-        foreach($ListKey['DanhMuc2Id'] as $key)
+        $str_from .= '<option value="1">Chọn danh mục cấp 2</option>';
+        if(isset($ListKey['DanhMuc2Id']))
         {
-            $str_from.='<option value="'.$key->id.'" '.(($form!=false)?(($form->DanhMuc2Id==$key->id)?'selected':''):'').'>'.$key->name.'</option>';
+            foreach($ListKey['DanhMuc2Id'] as $key)
+            {
+                $str_from.='<option value="'.$key->id.'" '.(($form!=false)?(($form->DanhMuc2Id==$key->id)?'selected':''):'').'>'.$key->name.'</option>';
+            }
         }
+    }
+    else
+    {
+        $str_from .= '<option value="1">Chọn danh mục cấp 2</option>';
     }
     $str_from.='</select></p>';
     $str_from.='<p><label>promotion</label><input  type="checkbox"  name="promotion" value="1" '.(($form!=false)?(($form->promotion=='1')?'checked':''):'').' /></p>';
