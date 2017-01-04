@@ -19,14 +19,29 @@
             {
                 if($result[0]->MatKhau==$Pass)
                 {
-                    $_SESSION["username"]=$UserName;
-                    $_SESSION["UserName"]=$result[0]->Full_name;
-                    $_SESSION["UserId"]=$result[0]->Id;
-                    $_SESSION["UserEmail"]=$result[0]->Email;
-                    $_SESSION['user']=$UserName;
-                    $_SESSION['userid']=$result[0]->Id;
-                    $_SESSION["Admin"]=$UserName;
-                    header('Location: '.SITE_NAME.'/controller/admin/index.php');
+
+                    if($result[0]->status==1){
+                        $_SESSION["username"]=$UserName;
+                        $_SESSION["UserName"]=$result[0]->Full_name;
+                        $_SESSION["UserId"]=$result[0]->Id;
+                        $_SESSION["UserEmail"]=$result[0]->Email;
+                        $_SESSION['user']=$UserName;
+                        $_SESSION['userid']=$result[0]->Id;
+                        $_SESSION["Admin"]=$UserName;
+                        $_SESSION["khach_san_id"]=$result[0]->khachsan_id;
+                        $_SESSION["Quyen"]=$result[0]->Quyen;
+                        if($result[0]->Quyen==1){
+                            header('Location: '.SITE_NAME.'/controller/admin/index.php');
+                        }
+                        else{
+                            header('Location: '.SITE_NAME.'/controller/admin/khachsan.php');
+                        }
+                    }
+                    else{
+                        echo "<script type=\"text/javascript\">alert(\"Tài khoản của bạn chưa được kích hoạt\")</script>";
+                    }
+
+
                 }
                 else
                 {

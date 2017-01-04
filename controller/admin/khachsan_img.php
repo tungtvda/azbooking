@@ -6,6 +6,7 @@ require_once DIR.'/view/admin/khachsan_img.php';
 require_once DIR.'/common/messenger.php';
 $data=array();
 $insert=true;
+returnCountData();
 if(isset($_SESSION["Admin"]))
 {
     if(isset($_GET["action"])&&isset($_GET["id"]))

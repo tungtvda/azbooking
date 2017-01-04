@@ -567,7 +567,7 @@
         });
 
         $(".chitiet_gia").click(function () {
-            var Id = $(this).attr("countId");
+            var Id = $(this).attr("countid");
             jQuery("#chitiet_gia_"+Id).slideToggle();
         });
 

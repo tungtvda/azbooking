@@ -90,3 +90,11 @@ function khachsan_room_price_count($where)
     }
    else return false;
 }
+function khachsan_room_price_update_hotel($obj)
+{
+    return exe_query("update khachsan_room_price set amount_people='$obj->amount_people',amount_room='$obj->amount_room' where id=$obj->id",'khachsan_room_price');
+}
+function khachsan_room_danhmuc_delete($obj)
+{
+    return exe_query('delete from khachsan_room_price where danhmuc_id='.$obj->danhmuc_id,'khachsan_room_price');
+}

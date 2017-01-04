@@ -11,37 +11,7 @@
     <script type="text/javascript" src="{SITE-NAME}/view/admin/Themes/js/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="{SITE-NAME}/view/admin/Themes/js/jquery-migrate-1.1.1.min.js"></script>
     <script type="text/javascript" src="{SITE-NAME}/view/admin/Themes/js/jquery-ui-1.9.2.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $("#DanhMuc1Id").change(function() {
-                $.post('{SITE-NAME}/controller/default/ajax.php',
-                        {
-                            Tour:$('#DanhMuc1Id  option:selected').val()
-                        },
-                        function(data,status){
-                            $("#DanhMuc2Id").html(data);
-                        });
-            });
-            $("#danhmuc1_destinations").change(function() {
-                $.post('{SITE-NAME}/controller/default/ajax.php',
-                        {
-                            Tour:$('#danhmuc1_destinations  option:selected').val()
-                        },
-                        function(data,status){
-                            $("#danhmuc2_destinations").html(data);
-                        });
-            });
-            $(".show_table").click(function() {
-                var idSelect = $(this).attr('countid');
-                var field = '#table_'+idSelect;
-                $(".table_hidden").hide();
-                $(field).slideDown();
-            });
 
-        });
-
-        //
-    </script>
     <script type="text/javascript" src="{SITE-NAME}/view/admin/Themes/js/jquery.flot.min.js"></script>
     <script type="text/javascript" src="{SITE-NAME}/view/admin/Themes/js/jquery.flot.resize.min.js"></script>
     <script type="text/javascript" src="{SITE-NAME}/view/admin/Themes/js/bootstrap.min.js"></script>
@@ -96,45 +66,14 @@
         <div class="leftmenu">
             <ul class="nav nav-tabs nav-stacked">
                 <li class="nav-header">Main Navigation</li>
-                <li class="{kichhoat}"><a href="{SITE-NAME}/admin"><span class="icon-align-justify"></span> Dashboard</a></li>
-                <li class="{kichhoat_admin}" ><a href="{SITE-NAME}/controller/admin/admin.php"><span class="icon-user"></span> Tài khoản quản trị</a></li>
-                <li class="{kichhoat_config}"><a href="{SITE-NAME}/controller/admin/config.php"><span class=" icon-wrench"></span> Cấu hình hệ thống</a></li>
-                <li class="{kichhoat_booking_hotel}"><a href="{SITE-NAME}/controller/admin/booking_hotel.php"><span class="icon-envelope"></span> Đăng phòng khách sạn <span style="color: red; float: right">{booking_hotel}</span></a></li>
-                <li class="{kichhoat_dathang}"><a href="{SITE-NAME}/controller/admin/booking_tour.php"><span class="icon-shopping-cart"></span> Đặt tour <span style="color: red; float: right">{count_booking}</span></a></li>
-                <li class="{kichhoat_lienhe}"><a href="{SITE-NAME}/controller/admin/contact.php"><span class="icon-envelope"></span> Liên hệ <span style="color: red; float: right">{count_contact}</span></a></li>
-                <li class="dropdown {kichhoat_tour}" ><a href="#"><span class=" icon-plane"></span> Tour du lịch</a>
-                    <ul>
-                        <li><a href="{SITE-NAME}/controller/admin/danhmuc_1.php">Danh mục cấp 1</a></li>
-                        <li><a href="{SITE-NAME}/controller/admin/danhmuc_2.php">Danh mục cấp 2</a></li>
-                        <li><a href="{SITE-NAME}/controller/admin/tour.php">Danh sách tour</a></li>
-                        <li><a href="{SITE-NAME}/controller/admin/price_timkiem.php">Giá tìm kiếm tour</a></li>
-                        <li><a href="{SITE-NAME}/controller/admin/departure.php">Điểm khởi hành</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown {kichhoat_khachsan}"><a href="#"><span class=" icon-home"></span> Khách sạn</a>
-                    <ul>
-                        <li><a href="{SITE-NAME}/controller/admin/danhmuc_khachsan.php">Danh mục khách sạn</a></li>
-                        <li><a href="{SITE-NAME}/controller/admin/khachsan.php">Danh sách khách sạn</a></li>
-                        <li><a href="{SITE-NAME}/controller/admin/khachsan_room_price.php">Giá phòng</a></li>
-                        <li><a href="{SITE-NAME}/controller/admin/khachsan_img.php">Hình ảnh khách sạn</a></li>
-                        <li><a href="{SITE-NAME}/controller/admin/price_khachsan.php">Giá tìm kiếm khách sạn</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown {kichhoat_tintuc}"><a href="#"><span class=" icon-pencil"></span> Tin tức</a>
-                    <ul>
-                        <li><a href="{SITE-NAME}/controller/admin/danhmuc_tintuc.php">Danh mục</a></li>
-                        <li><a href="{SITE-NAME}/controller/admin/news.php">Danh sách</a></li>
-                    </ul>
-                </li>
-                <li class="{kichhoat_tag}"><a href="{SITE-NAME}/controller/admin/tag.php"><span class="icon-pencil"></span> Tag</a></li>
-                <li class="{kichhoat_info}"><a href="{SITE-NAME}/controller/admin/info_mix.php"><span class="icon-tag"></span> Thông tin chính sách</a></li>
-                <li class="{kichhoat_hotro}"><a href="{SITE-NAME}/controller/admin/subport.php"><span class="icon-question-sign"></span> Hỗ trợ trực tuyến</a></li>
 
-                <li class="{kichhoat_video}"><a href="{SITE-NAME}/controller/admin/video.php"><span class="icon-facetime-video"></span> Video</a></li>
-                <li class="{kichhoat_slide}"><a href="{SITE-NAME}/controller/admin/slide.php"><span class="icon-film"></span> Slide</a></li>
-                <li class="{kichhoat_menu}"><a href="{SITE-NAME}/controller/admin/menu.php"><span class="icon-th-list"></span> Cấu hình menu</a></li>
-                <li class="{kichhoat_mangxahoi}"><a href="{SITE-NAME}/controller/admin/social.php"><span class=" iconfa-facebook"></span> Mạng xã hội</a></li>
-                <li class="{kichhoat_tieuchi}"><a href="{SITE-NAME}/controller/admin/tieuchi.php"><span class=" iconfa-pencil"></span> Tiêu chí</a></li>
+                <li class="dropdown {kichhoat_khachsan}"><a href="#"><span class=" icon-home"></span> Khách sạn</a>
+                    <ul style="display: block!important;">
+                        <li><a href="{SITE-NAME}/controller/admin/khachsan.php">Khách sạn</a></li>
+                        <li><a href="{SITE-NAME}/controller/admin/khachsan_room_price.php">Giá phòng</a></li>
+
+                    </ul>
+                </li>
             </ul>
         </div>
         <!--leftmenu-->
@@ -154,7 +93,7 @@
                 <div class="dropdown userinfo">
                     <a class="dropdown-toggle" data-toggle="dropdown" data-target="#"
                        href="#">Xin chào, {USER-NAME} <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" >
                         <li><a href="{SITE-NAME}"><span class=" icon-globe"></span>Tới website</a></li>
                         <li><a href="{SITE-NAME}/controller/admin/signout.php"><span class="icon-share"></span> Đăng xuất</a></li>
 
