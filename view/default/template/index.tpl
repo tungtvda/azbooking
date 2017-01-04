@@ -23,7 +23,7 @@
         <div class="destination-grid-content">
             <div class="section-title"></div>
             <div class="">
-                <h3 class="title_index">Khách sạn</h3>
+                <h3 class="title_index">Khách sạn giảm giá</h3>
                 <div class="awe-masonry">
                     {khachsan_index}
                 </div>
