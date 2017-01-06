@@ -90,3 +90,7 @@ function booking_hotel_count($where)
     }
    else return false;
 }
+function booking_hotel_update_status($id)
+{
+    return exe_query("update booking_hotel set status=1 where id=$id",'booking_hotel');
+}

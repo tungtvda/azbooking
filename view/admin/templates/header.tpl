@@ -58,31 +58,13 @@
     <script type="text/javascript" src="{SITE-NAME}/view/admin/Themes/ckeditor/ckeditor.js"></script>
     <style>
         .table_hidden tr th{
-            font-size: 11px;
+            font-size: 13px;
         }
         .table_hidden tr td{
-            font-size: 11px;
+            font-size: 13px;
         }
     </style>
-    <script>
-        $( function() {
-            $( "#dialog" ).dialog({
-                autoOpen: false,
-                show: {
-                    effect: "blind",
-                    duration: 1000
-                },
-                hide: {
-                    effect: "explode",
-                    duration: 1000
-                }
-            });
 
-            $( "#opener" ).on( "click", function() {
-                $( "#dialog" ).dialog( "open" );
-            });
-        } );
-    </script>
 </head>
 
 <body>
@@ -203,8 +185,63 @@
 
 
 
-            <div hidden id="dialog" title="Basic dialog">
-                <p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
-            </div>
+            <div hidden id="dialog" title="Thông tin chi tiết đặt phòng">
 
-            <button id="opener">Open Dialog</button>
+            </div>
+            <script>
+                $( function() {
+                    $( "#dialog" ).dialog({
+                        autoOpen: false,
+                        show: {
+                            effect: "blind",
+                            duration: 1000
+                        },
+                        hide: {
+                            effect: "explode",
+                            duration: 1000
+                        }
+                    });
+
+                    $( ".show_table_detail" ).on( "click", function() {
+                        var Id = $(this).attr("countid");
+                        if(Id>0){
+                            jQuery.post("{SITE-NAME}/get-info-booking/",
+                                    {
+                                        id: Id
+                                    }
+                                    )
+                                    .done(function (data) {
+                                        jQuery('#dialog').html(data)
+                                    });
+                        }
+                        else{
+                            alert('Ban không thể tải được dữ liệu đặt phòng');
+                            location.reload(true);
+                        }
+                        $( "#dialog" ).dialog( "open" );
+                    });
+                    $('body').on('click','.update_booking_hotel',function(){
+                        var Id = $(this).attr("countid");
+                        if(Id>0){
+                            jQuery.post("{SITE-NAME}/update-status-booking-hotel/",
+                                    {
+                                        id: Id
+                                    }
+                                    )
+                                    .done(function (data) {
+                                        if(data==1){
+                                            location.reload(true);
+                                        }
+                                        else{
+                                            alert('Cập nhật trạng thái thất bại');
+                                        }
+
+                                    });
+                        }
+                        else{
+                            alert('Ban không thể cập nhật trạng thái');
+                            location.reload(true);
+                        }
+                    });
+                } );
+            </script>

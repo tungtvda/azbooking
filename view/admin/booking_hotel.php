@@ -66,7 +66,7 @@ function showTableBody($data)
         $TableBody.="<td>";
         if($obj->price_room!='')
         {
-            $TableBody.="<a countid='$obj->id' class='show_table' href='javascript:void(0)' style='font-size: 13px; font-weight: normal'>Thông tin phòng</a>
+            $TableBody.="<a countid='$obj->id' class='show_table_detail' href='javascript:void(0)' style='font-size: 13px; font-weight: normal'>Thông tin phòng</a>
             <table class='table_hidden' hidden id='table_$obj->id'>
             <tr><th>Loại phòng</th><th>Số lượng</th><th>Đơn giá</th><th>Thành tiền</th></tr>";
             $data_rest=returnRoomPrice($obj->price_room);
