@@ -128,7 +128,12 @@
 
 
 /**DIALOG**/
-.ui-dialog { background: url(../img/blacktrans.html); padding: 5px; }
+.ui-dialog {
+	background: url(../img/blacktrans.html);
+	padding: 5px;
+	border: 1px solid #666;
+	background: #666;
+}
 .ui-dialog { position: relative; }
 .ui-dialog-titlebar { padding: 8px 10px; color: #fff; background: #eee url(../img/thead.png) repeat-x top left; border-bottom: 1px solid #ccc; }
 .ui-dialog-content { background: #fff; padding: 10px; }
