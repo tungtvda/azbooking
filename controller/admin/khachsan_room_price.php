@@ -11,6 +11,10 @@ if( $_SESSION["Quyen"]==1) {
 }
 if(isset($_SESSION["Admin"]))
 {
+    $danhmuc_id_get='';
+    if(isset($_GET['danhmuc_id'])&&$_GET['danhmuc_id']!=''){
+        $danhmuc_id_get='?danhmuc_id='.$_GET['danhmuc_id'];
+    }
     if(isset($_GET["action"])&&isset($_GET["id"]))
     {
         if($_GET["action"]=="delete")
@@ -20,7 +24,7 @@ if(isset($_SESSION["Admin"]))
                 $new_obj->id = $_GET["id"];
                 khachsan_room_price_delete($new_obj);
             }
-            header('Location: '.SITE_NAME.'/controller/admin/khachsan_room_price.php');
+            header('Location: '.SITE_NAME.'/controller/admin/khachsan_room_price.php'.$danhmuc_id_get);
         }
         else if($_GET["action"]=="edit")
         {
@@ -33,7 +37,7 @@ if(isset($_SESSION["Admin"]))
                 $insert=false;
                 $danhmuc_id=$new_obj[0]->danhmuc_id;
             }
-            else header('Location: '.SITE_NAME.'/controller/admin/khachsan_room_price.php');
+            else header('Location: '.SITE_NAME.'/controller/admin/khachsan_room_price.php'.$danhmuc_id_get);
         }
         else
         {
@@ -84,13 +88,14 @@ if(isset($_SESSION["Admin"]))
        $array['amount_people']='0';
        if(!isset($array['amount_room']))
        $array['amount_room']='0';
+
       $new_obj=new khachsan_room_price($array);
         if($insert)
         {
             if( $_SESSION["Quyen"]==1) {
                 khachsan_room_price_insert($new_obj);
             }
-            header('Location: '.SITE_NAME.'/controller/admin/khachsan_room_price.php');
+            header('Location: '.SITE_NAME.'/controller/admin/khachsan_room_price.php'.$danhmuc_id_get);
         }
         else
         {
@@ -101,7 +106,7 @@ if(isset($_SESSION["Admin"]))
 
 
             $insert=false;
-            header('Location: '.SITE_NAME.'/controller/admin/khachsan_room_price.php');
+            header('Location: '.SITE_NAME.'/controller/admin/khachsan_room_price.php'.$danhmuc_id_get);
         }
     }
     else{
@@ -138,9 +143,30 @@ if(isset($_SESSION["Admin"]))
     }
     if( $_SESSION["Quyen"]==1){
         $data['username']=isset($_SESSION["UserName"])?$_SESSION["UserName"]:'quản trị viên';
-        $data['count_paging']=khachsan_room_price_count('');
+
+        $dk='';
+        $dk_count='';
+        if(isset($_GET['giatri'])&&$_GET['giatri']!=''){
+            $key_timkiem=mb_strtolower(addslashes(strip_tags($_GET['giatri'])));
+            $dk_count='name LIKE "%'.$key_timkiem.'%" or description LIKE "%'.$key_timkiem.'%" or dichvu LIKE "%'.$key_timkiem.'%" or price LIKE "%'.$key_timkiem.'%" ';
+            $dk='(khachsan_room_price.name LIKE "%'.$key_timkiem.'%" or khachsan_room_price.description LIKE "%'.$key_timkiem.'%" or khachsan_room_price.dichvu LIKE "%'.$key_timkiem.'%" or khachsan_room_price.price LIKE "%'.$key_timkiem.'%" )';
+        }
+        if(isset($_GET['danhmuc_id'])&&$_GET['danhmuc_id']!=''){
+            $danhmuc_id=mb_strtolower(addslashes(strip_tags($_GET['danhmuc_id'])));
+            if($dk!='')
+            {
+                $dk.=' (and khachsan_room_price.danhmuc_id='.$danhmuc_id.')';
+                $dk_count.=' and danhmuc_id='.$danhmuc_id;
+            }
+            else{
+                $dk.='  khachsan_room_price.danhmuc_id='.$danhmuc_id.'';
+                $dk_count.='  danhmuc_id='.$danhmuc_id;
+            }
+
+        }
+        $data['count_paging']=khachsan_room_price_count($dk_count);
         $data['page']=isset($_GET['page'])?$_GET['page']:'1';
-        $data['table_body']=khachsan_room_price_getByPagingReplace($data['page'],20,'id DESC','');
+        $data['table_body']=khachsan_room_price_getByPagingReplace($data['page'],20,'id DESC',$dk);
     }else{
         $data['username']=isset($_SESSION["UserName"])?$_SESSION["UserName"]:'quản trị viên';
         $data['count_paging']=khachsan_room_price_count('danhmuc_id='.$_SESSION["khach_san_id"]);

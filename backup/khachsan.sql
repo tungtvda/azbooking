@@ -308,3 +308,16 @@ update khachsan set danhmuc_id='1',highlights='1',name='Somerset Central TD Hai 
 insert into khachsan (danhmuc_id,highlights,name,name_url,start,price,dichvu,img,address,phone, email,map,content,title,keyword,description) values ('1','0','adstadasff','adstadasff','','','','','','','','','','','','');
 delete from khachsan where id=6;
 delete from khachsan where id=6;
+update khachsan set danhmuc_id='2',highlights='1',name='Khách Sạn Classic Hoàng Long',name_url='khach-san-classic-hoang-long',start='3',price='830000',dichvu=' Ăn sáng miễn phí-  Wifi miễn phí  -Dịch vụ hội họp',img='/azbooking/view/admin/Themes/kcfinder/upload/images/khachsan/5.jpg',address='25 Trần Quang Khải, Phường Hoàng Văn Thụ, Quận Hồng Bàng, Hải Phòng',phone='(+84)94 161 9956',email='test@gmail.com',map='<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14915.065447524628!2d106.712712!3d20.841139!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2sus!4v1483069919997" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>',content='<div class=\"pHotelDes\" font-size:=\"\" open=\"\" style=\"box-sizing: border-box; margin: 0px; padding: 0px; text-align: justify; color: rgb(0, 0, 0); font-family: Arial, \">
+	<p style=\"box-sizing: border-box; margin: 0px 0px 15px; padding: 0px;\">
+		<span style=\"box-sizing: border-box; margin: 0px; padding: 0px; font-weight: 700;\">Kh&aacute;ch Sạn Classic Ho&agrave;ng Long</span>&nbsp;được thiết kế theo phong c&aacute;ch cổ điển phương T&acirc;y v&agrave; phương Đ&ocirc;ng. Kh&aacute;ch sạn c&oacute; 54 ph&ograve;ng nghỉ bao gồm c&aacute;c loại: Premium, Superior, Suite, Excutive Deluxe, Classic Suite. Mỗi ph&ograve;ng đều được trang bị vật dụng tiện nghi, m&agrave;u sắc h&agrave;i h&ograve;a dễ chịu.<br style=\"box-sizing: border-box; margin: 0px; padding: 0px;\" />
+		<br style=\"box-sizing: border-box; margin: 0px; padding: 0px;\" />
+		Nh&agrave; h&agrave;ng Ancient được trang tr&iacute; theo phong c&aacute;ch cổ xưa với bộ sưu tập gốm sứ ch&acirc;u &Aacute; tinh tế. Đến đ&acirc;y thực kh&aacute;ch sẽ được thưởng thức những m&oacute;n ăn Việt Nam, ch&acirc;u &Aacute; hấp dẫn. Cafe Crystallize từ tầng 17 l&agrave; nơi thưởng thức những ly c&agrave; ph&ecirc; thơm ngon v&agrave; thưởng ngoạn cảnh đẹp th&agrave;nh phố từ tr&ecirc;n cao.<br style=\"box-sizing: border-box; margin: 0px; padding: 0px;\" />
+		<br style=\"box-sizing: border-box; margin: 0px; padding: 0px;\" />
+		Ngo&agrave;i ra, Qu&yacute; kh&aacute;ch c&oacute; thể thư gi&atilde;n với những liệu tr&igrave;nh spa l&agrave;m đẹp da, ph&ograve;ng x&ocirc;ng hơi phục hồi sức khỏe từ kh&aacute;ch sạn.</p>
+	<div>
+		&nbsp;</div>
+</div>
+<p>
+	&nbsp;</p>
+',title='Khách Sạn Classic Hoàng Long',keyword='Khách Sạn Classic Hoàng Long',description='Khách Sạn Classic Hoàng Long' where id=5;

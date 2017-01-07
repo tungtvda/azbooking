@@ -24,6 +24,7 @@ function view_price_khachsan($data)
     $ft->assign('NOTIFICATION',isset($data['notification'])?$data['notification']:' ');
     $ft->assign('SITE-NAME',isset($data['sitename'])?$data['sitename']:SITE_NAME);
     $ft->assign('kichhoat_khachsan', 'active');
+    $ft->assign('kichhoat_khachsan_hienthi', 'display: block');
     $ft->assign('FORM',showFrom(isset($data['form'])?$data['form']:'',isset($data['listfkey'])?$data['listfkey']:array()));
     //
     print $ft->parse_and_return('header');

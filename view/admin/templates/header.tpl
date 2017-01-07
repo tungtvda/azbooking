@@ -82,7 +82,7 @@
         <div class="datewidget"><iframe scrolling="no" frameborder="no" style="overflow:hidden;border:0;margin:0;padding:0;width:235px;height:45px;"src="http://clocklink.com/html5embed.php?clock=lat&timezone=ICT&color=gray&size=235&Title=&Message=&Target=&From=2015,1,1,0,0,0&Color=gray"></iframe></div>
 
         <div class="searchwidget">
-            <form action="" method="post">
+            <form action="" method="get">
                 <div class="input-append">
                     <input type="text" class="span2 search-query" name="giatri" placeholder="Tìm kiếm...">
                     <button type="submit" class="btn"><span class="icon-search"></span></button>
@@ -104,7 +104,7 @@
                 <li class="{kichhoat_dathang}"><a href="{SITE-NAME}/controller/admin/booking_tour.php"><span class="icon-shopping-cart"></span> Đặt tour <span style="color: red; float: right">{count_booking}</span></a></li>
                 <li class="{kichhoat_lienhe}"><a href="{SITE-NAME}/controller/admin/contact.php"><span class="icon-envelope"></span> Liên hệ <span style="color: red; float: right">{count_contact}</span></a></li>
                 <li class="dropdown {kichhoat_tour}" ><a href="#"><span class=" icon-plane"></span> Tour du lịch</a>
-                    <ul>
+                    <ul style="{kichhoat_tour_hienthi}">
                         <li><a href="{SITE-NAME}/controller/admin/danhmuc_1.php">Danh mục cấp 1</a></li>
                         <li><a href="{SITE-NAME}/controller/admin/danhmuc_2.php">Danh mục cấp 2</a></li>
                         <li><a href="{SITE-NAME}/controller/admin/tour.php">Danh sách tour</a></li>
@@ -113,7 +113,7 @@
                     </ul>
                 </li>
                 <li class="dropdown {kichhoat_khachsan}"><a href="#"><span class=" icon-home"></span> Khách sạn</a>
-                    <ul>
+                    <ul style="{kichhoat_khachsan_hienthi}">
                         <li><a href="{SITE-NAME}/controller/admin/danhmuc_khachsan.php">Danh mục khách sạn</a></li>
                         <li><a href="{SITE-NAME}/controller/admin/khachsan.php">Danh sách khách sạn</a></li>
                         <li><a href="{SITE-NAME}/controller/admin/khachsan_room_price.php">Giá phòng</a></li>
@@ -122,7 +122,7 @@
                     </ul>
                 </li>
                 <li class="dropdown {kichhoat_tintuc}"><a href="#"><span class=" icon-pencil"></span> Tin tức</a>
-                    <ul>
+                    <ul style="{kichhoat_tintuc_hienthi}">
                         <li><a href="{SITE-NAME}/controller/admin/danhmuc_tintuc.php">Danh mục</a></li>
                         <li><a href="{SITE-NAME}/controller/admin/news.php">Danh sách</a></li>
                     </ul>

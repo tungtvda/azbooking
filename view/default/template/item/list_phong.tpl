@@ -8,6 +8,9 @@
 
     </td>
     <td class="room-people">
+        {amount_room}
+    </td>
+    <td class="room-people">
          {amount_people}
     </td>
     <td style="padding: 5px" class="room-condition">

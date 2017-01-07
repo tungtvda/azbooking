@@ -14,6 +14,10 @@ if( $_SESSION["Quyen"]==1) {
 }
 if(isset($_SESSION["Admin"]))
 {
+    $danhmuc_id_get='';
+    if(isset($_GET['danhmuc_id'])&&$_GET['danhmuc_id']!=''){
+        $danhmuc_id_get='?danhmuc_id='.$_GET['danhmuc_id'];
+    }
     if(isset($_GET["action"])&&isset($_GET["id"]))
     {
         if($_GET["action"]=="delete")
@@ -34,7 +38,7 @@ if(isset($_SESSION["Admin"]))
                 }
                 khachsan_delete($new_obj);
             }
-            header('Location: '.SITE_NAME.'/controller/admin/khachsan.php');
+            header('Location: '.SITE_NAME.'/controller/admin/khachsan.php'.$danhmuc_id_get);
         }
         else if($_GET["action"]=="edit")
         {
@@ -47,7 +51,7 @@ if(isset($_SESSION["Admin"]))
                 $insert=false;
 
             }
-            else header('Location: '.SITE_NAME.'/controller/admin/khachsan.php');
+            else header('Location: '.SITE_NAME.'/controller/admin/khachsan.php'.$danhmuc_id_get);
         }
         else
         {
@@ -123,6 +127,7 @@ if(isset($_SESSION["Admin"]))
        $array['keyword']='0';
        if(!isset($array['description']))
        $array['description']='0';
+
       $new_obj=new khachsan($array);
         if($insert)
         {
@@ -130,7 +135,7 @@ if(isset($_SESSION["Admin"]))
                 khachsan_insert($new_obj);
 
             }
-            header('Location: '.SITE_NAME.'/controller/admin/khachsan.php');
+            header('Location: '.SITE_NAME.'/controller/admin/khachsan.php'.$danhmuc_id_get);
         }
         else
         {
@@ -142,14 +147,35 @@ if(isset($_SESSION["Admin"]))
             }
             khachsan_update($new_obj);
             $insert=false;
-            header('Location: '.SITE_NAME.'/controller/admin/khachsan.php');
+            header('Location: '.SITE_NAME.'/controller/admin/khachsan.php'.$danhmuc_id_get);
         }
     }
+
     $data['username']=isset($_SESSION["UserName"])?$_SESSION["UserName"]:'quản trị viên';
     if( $_SESSION["Quyen"]==1){
-        $data['count_paging']=khachsan_count('');
+        $dk='';
+        $dk_count='';
+        if(isset($_GET['giatri'])&&$_GET['giatri']!=''){
+            $key_timkiem=mb_strtolower(addslashes(strip_tags($_GET['giatri'])));
+            $dk_count='name LIKE "%'.$key_timkiem.'%" or name_url LIKE "%'.$key_timkiem.'%" or dichvu LIKE "%'.$key_timkiem.'%" or address LIKE "%'.$key_timkiem.'%" or phone LIKE "%'.$key_timkiem.'%" or email LIKE "%'.$key_timkiem.'%"  or price LIKE "%'.$key_timkiem.'%"';
+            $dk='(khachsan.name LIKE "%'.$key_timkiem.'%" or khachsan.name_url LIKE "%'.$key_timkiem.'%" or khachsan.dichvu LIKE "%'.$key_timkiem.'%" or khachsan.address LIKE "%'.$key_timkiem.'%" or khachsan.phone LIKE "%'.$key_timkiem.'%" or khachsan.email LIKE "%'.$key_timkiem.'%" or khachsan.price LIKE "%'.$key_timkiem.'%")';
+        }
+        if(isset($_GET['danhmuc_id'])&&$_GET['danhmuc_id']!=''){
+            $danhmuc_id=mb_strtolower(addslashes(strip_tags($_GET['danhmuc_id'])));
+            if($dk!='')
+            {
+                $dk.=' (and khachsan.danhmuc_id='.$danhmuc_id.')';
+                $dk_count.=' and danhmuc_id='.$danhmuc_id;
+            }
+            else{
+                $dk.='  khachsan.danhmuc_id='.$danhmuc_id.'';
+                $dk_count.='  danhmuc_id='.$danhmuc_id;
+            }
+
+        }
+        $data['count_paging']=khachsan_count($dk_count);
         $data['page']=isset($_GET['page'])?$_GET['page']:'1';
-        $data['table_body']=khachsan_getByPagingReplace($data['page'],20,'id DESC','');
+        $data['table_body']=khachsan_getByPagingReplace($data['page'],20,'id DESC',$dk);
     }
     else{
         $data['count_paging']=khachsan_count('id='.$_SESSION["khach_san_id"]);
