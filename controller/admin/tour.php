@@ -12,6 +12,15 @@ $insert=true;
 returnCountData();
 if(isset($_SESSION["Admin"]))
 {
+    $danhmuc_id_get='';
+    if(isset($_GET['DanhMuc1Id'])&&$_GET['DanhMuc1Id']!=''){
+        $danhmuc_id_get='?DanhMuc1Id='.$_GET['DanhMuc1Id'];
+    }
+    else{
+        if(isset($_GET['DanhMuc2Id'])&&$_GET['DanhMuc2Id']!=''){
+            $danhmuc_id_get='?DanhMuc2Id='.$_GET['DanhMuc2Id'];
+        }
+    }
     if(isset($_GET["action"])&&isset($_GET["id"]))
     {
         if($_GET["action"]=="delete")
@@ -19,7 +28,7 @@ if(isset($_SESSION["Admin"]))
             $new_obj= new tour();
             $new_obj->id=$_GET["id"];
             tour_delete($new_obj);
-            header('Location: '.SITE_NAME.'/controller/admin/tour.php');
+            header('Location: '.SITE_NAME.'/controller/admin/tour.php'.$danhmuc_id_get);
         }
         else if($_GET["action"]=="edit")
         {
@@ -31,7 +40,7 @@ if(isset($_SESSION["Admin"]))
                 $data['tab1_class']=' ';
                 $insert=false;
             }
-            else header('Location: '.SITE_NAME.'/controller/admin/tour.php');
+            else header('Location: '.SITE_NAME.'/controller/admin/tour.php'.$danhmuc_id_get);
         }
         else
         {
@@ -138,20 +147,54 @@ if(isset($_SESSION["Admin"]))
         if($insert)
         {
             tour_insert($new_obj);
-            header('Location: '.SITE_NAME.'/controller/admin/tour.php');
+            header('Location: '.SITE_NAME.'/controller/admin/tour.php'.$danhmuc_id_get);
         }
         else
         {
             $new_obj->id=$_GET["id"];
             tour_update($new_obj);
             $insert=false;
-            header('Location: '.SITE_NAME.'/controller/admin/tour.php');
+            header('Location: '.SITE_NAME.'/controller/admin/tour.php'.$danhmuc_id_get);
+        }
+    }
+    $dk='';
+    $dk_count='';
+    if(isset($_GET['giatri'])&&$_GET['giatri']!=''){
+        $key_timkiem=mb_strtolower(addslashes(strip_tags($_GET['giatri'])));
+        $dk_count='name LIKE "%'.$key_timkiem.'%" or name_url LIKE "%'.$key_timkiem.'%" or code LIKE "%'.$key_timkiem.'%" or price_sales LIKE "%'.$key_timkiem.'%" or price LIKE "%'.$key_timkiem.'%" or durations LIKE "%'.$key_timkiem.'%"  or departure LIKE "%'.$key_timkiem.'%" or departure_time LIKE "%'.$key_timkiem.'%" or destination LIKE "%'.$key_timkiem.'%" or destination LIKE "%'.$key_timkiem.'%"';
+        $dk='(tour.name LIKE "%'.$key_timkiem.'%" or tour.name_url LIKE "%'.$key_timkiem.'%" or tour.code LIKE "%'.$key_timkiem.'%" or tour.price_sales LIKE "%'.$key_timkiem.'%" or tour.price LIKE "%'.$key_timkiem.'%" or tour.durations LIKE "%'.$key_timkiem.'%"  or tour.departure LIKE "%'.$key_timkiem.'%" or tour.departure_time LIKE "%'.$key_timkiem.'%" or tour.destination LIKE "%'.$key_timkiem.'%" or tour.destination LIKE "%'.$key_timkiem.'%")';
+    }
+    if(isset($_GET['DanhMuc1Id'])&&$_GET['DanhMuc1Id']!=''){
+        $danhmuc_id=mb_strtolower(addslashes(strip_tags($_GET['DanhMuc1Id'])));
+        if($dk!='')
+        {
+            $dk.=' (and tour.DanhMuc1Id='.$danhmuc_id.')';
+            $dk_count.=' and DanhMuc1Id='.$danhmuc_id;
+        }
+        else{
+            $dk.='  tour.DanhMuc1Id='.$danhmuc_id.'';
+            $dk_count.='  DanhMuc1Id='.$danhmuc_id;
+        }
+
+    }else{
+        if(isset($_GET['DanhMuc2Id'])&&$_GET['DanhMuc2Id']!=''){
+            $danhmuc_id=mb_strtolower(addslashes(strip_tags($_GET['DanhMuc2Id'])));
+            if($dk!='')
+            {
+                $dk.=' (and tour.DanhMuc2Id='.$danhmuc_id.')';
+                $dk_count.=' and DanhMuc2Id='.$danhmuc_id;
+            }
+            else{
+                $dk.='  tour.DanhMuc2Id='.$danhmuc_id.'';
+                $dk_count.='  DanhMuc2Id='.$danhmuc_id;
+            }
+
         }
     }
     $data['username']=isset($_SESSION["UserName"])?$_SESSION["UserName"]:'quản trị viên';
-    $data['count_paging']=tour_count('');
+    $data['count_paging']=tour_count($dk_count);
     $data['page']=isset($_GET['page'])?$_GET['page']:'1';
-    $data['table_body']=tour_getByPagingReplace($data['page'],20,'id DESC','');
+    $data['table_body']=tour_getByPagingReplace($data['page'],20,'id DESC',$dk);
     // gọi phương thức trong tầng view để hiển thị
     view_tour($data);
 }

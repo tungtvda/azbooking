@@ -24,6 +24,7 @@ function view_danhmuc_1($data)
     $ft->assign('NOTIFICATION',isset($data['notification'])?$data['notification']:' ');
     $ft->assign('SITE-NAME',isset($data['sitename'])?$data['sitename']:SITE_NAME);
     $ft->assign('kichhoat_tour', 'active');
+    $ft->assign('kichhoat_tour_hienthi', 'display: block');
     $ft->assign('FORM',showFrom(isset($data['form'])?$data['form']:'',isset($data['listfkey'])?$data['listfkey']:array()));
     //
     print $ft->parse_and_return('header');
@@ -33,7 +34,7 @@ function view_danhmuc_1($data)
 //
 function showTableHeader()
 {
-    return '<th>id</th><th>name</th><th>img</th><th>position</th>';
+    return '<th>id</th><th>name</th><th>img</th><th>position</th><th>danh mục cấp 2</th><th>danh sách tour</th>';
 }
 //
 function showTableBody($data)
@@ -41,15 +42,20 @@ function showTableBody($data)
     $TableBody='';
     if(count($data)>0) foreach($data as $obj)
     {
-        $TableBody.="<tr><td><input type=\"checkbox\" name=\"check_".$obj->id."\"/></td>";
-        $TableBody.="<td>".$obj->id."</td>";
-        $TableBody.="<td>".$obj->name."</td>";
-        $TableBody.="<td><img src=\"".$obj->img."\" width=\"50px\" height=\"50px\"/> </td>";
-        $TableBody.="<td>".$obj->position."</td>";
-        $TableBody.="<td><a href=\"?action=edit&id=".$obj->id."\" title=\"Edit\"><img src=\"".SITE_NAME."/view/admin/Themes/images/pencil.png\" alt=\"Edit\"></a>";
-        $TableBody.="<a href=\"?action=delete&id=".$obj->id."\" title=\"Delete\" onClick=\"return confirm('Bạn có chắc chắc muốn xóa?')\"><img src=\"".SITE_NAME."/view/admin/Themes/images/cross.png\" alt=\"Delete\"></a> ";
-        $TableBody.="</td>";
-        $TableBody.="</tr>";
+        if($obj->id!=1){
+            $TableBody.="<tr><td><input type=\"checkbox\" name=\"check_".$obj->id."\"/></td>";
+            $TableBody.="<td>".$obj->id."</td>";
+            $TableBody.="<td>".$obj->name."</td>";
+            $TableBody.="<td><img src=\"".$obj->img."\" width=\"50px\" height=\"50px\"/> </td>";
+            $TableBody.="<td>".$obj->position."</td>";
+            $TableBody.="<td><a href=\"".SITE_NAME."/controller/admin/danhmuc_2.php?danhmuc1_id=".$obj->id."\" title=\"Danh sách danh mục cấp 2\">Danh sách</a></td>";
+            $TableBody.="<td><a href=\"".SITE_NAME."/controller/admin/tour.php?DanhMuc1Id=".$obj->id."\" title=\"Danh sách tour\">Danh sách tour</a></td>";
+            $TableBody.="<td><a href=\"?action=edit&id=".$obj->id."\" title=\"Edit\"><img src=\"".SITE_NAME."/view/admin/Themes/images/pencil.png\" alt=\"Edit\"></a>";
+            $TableBody.="<a href=\"?action=delete&id=".$obj->id."\" title=\"Delete\" onClick=\"return confirm('Bạn có chắc chắc muốn xóa?')\"><img src=\"".SITE_NAME."/view/admin/Themes/images/cross.png\" alt=\"Delete\"></a> ";
+            $TableBody.="</td>";
+            $TableBody.="</tr>";
+        }
+
     }
     return $TableBody;
 }

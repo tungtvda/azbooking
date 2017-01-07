@@ -31,6 +31,7 @@ function view_khachsan_room_price($data)
     $ft->assign('NOTIFICATION',isset($data['notification'])?$data['notification']:' ');
     $ft->assign('SITE-NAME',isset($data['sitename'])?$data['sitename']:SITE_NAME);
     $ft->assign('kichhoat_khachsan', 'active');
+    $ft->assign('kichhoat_khachsan_hienthi', 'display: block');
     $ft->assign('FORM',showFrom(isset($data['form'])?$data['form']:'',isset($data['listfkey'])?$data['listfkey']:array()));
     //
     print $ft->parse_and_return('header');
@@ -45,6 +46,10 @@ function showTableHeader()
 //
 function showTableBody($data)
 {
+    $danhmuc_id_get='';
+    if(isset($_GET['danhmuc_id'])&&$_GET['danhmuc_id']!=''){
+        $danhmuc_id_get='&danhmuc_id='.$_GET['danhmuc_id'];
+    }
     $TableBody='';
     if(count($data)>0) foreach($data as $obj)
     {
@@ -56,9 +61,9 @@ function showTableBody($data)
         $TableBody.="<td>".$obj->price."</td>";
         $TableBody.="<td>".$obj->amount_people."</td>";
         $TableBody.="<td>".$obj->amount_room."</td>";
-        $TableBody.="<td><a href=\"?action=edit&id=".$obj->id."\" title=\"Edit\"><img src=\"".SITE_NAME."/view/admin/Themes/images/pencil.png\" alt=\"Edit\"></a>";
+        $TableBody.="<td><a href=\"?action=edit&id=".$obj->id.$danhmuc_id_get."\" title=\"Edit\"><img src=\"".SITE_NAME."/view/admin/Themes/images/pencil.png\" alt=\"Edit\"></a>";
         if( $_SESSION["Quyen"]==1) {
-            $TableBody .= "<a href=\"?action=delete&id=" . $obj->id . "\" title=\"Delete\" onClick=\"return confirm('Bạn có chắc chắc muốn xóa?')\"><img src=\"" . SITE_NAME . "/view/admin/Themes/images/cross.png\" alt=\"Delete\"></a> ";
+            $TableBody .= "<a href=\"?action=delete&id=" . $obj->id .$danhmuc_id_get. "\" title=\"Delete\" onClick=\"return confirm('Bạn có chắc chắc muốn xóa?')\"><img src=\"" . SITE_NAME . "/view/admin/Themes/images/cross.png\" alt=\"Delete\"></a> ";
         }
         $TableBody.="</td>";
         $TableBody.="</tr>";
@@ -72,9 +77,17 @@ function showFrom($form,$ListKey=array())
         $str_from = '';
         $str_from .= '<p><label>danhmuc_id</label>';
         $str_from .= '<select name="danhmuc_id">';
-        if (isset($ListKey['danhmuc_id'])) {
-            foreach ($ListKey['danhmuc_id'] as $key) {
-                $str_from .= '<option value="' . $key->id . '" ' . (($form != false) ? (($form->danhmuc_id == $key->id) ? 'selected' : '') : '') . '>' . $key->name . '</option>';
+        if(isset($ListKey['danhmuc_id']))
+        {
+            foreach($ListKey['danhmuc_id'] as $key)
+            {
+                if(isset($_GET['danhmuc_id'])&&$_GET['danhmuc_id']!=''&&$form==false){
+                    $str_from.='<option value="'.$key->id.'" '.(($_GET['danhmuc_id']==$key->id)?'selected':'').'>'.$key->name.'</option>';
+                }
+                else{
+                    $str_from.='<option value="'.$key->id.'" '.(($form!=false)?(($form->danhmuc_id==$key->id)?'selected':''):'').'>'.$key->name.'</option>';
+                }
+
             }
         }
         $str_from .= '</select></p>';

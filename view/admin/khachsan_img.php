@@ -24,6 +24,7 @@ function view_khachsan_img($data)
     $ft->assign('NOTIFICATION',isset($data['notification'])?$data['notification']:' ');
     $ft->assign('SITE-NAME',isset($data['sitename'])?$data['sitename']:SITE_NAME);
     $ft->assign('kichhoat_khachsan', 'active');
+    $ft->assign('kichhoat_khachsan_hienthi', 'display: block');
     $ft->assign('FORM',showFrom(isset($data['form'])?$data['form']:'',isset($data['listfkey'])?$data['listfkey']:array()));
     //
     print $ft->parse_and_return('header');
@@ -64,7 +65,13 @@ function showFrom($form,$ListKey=array())
     {
         foreach($ListKey['danhmuc_id'] as $key)
         {
-            $str_from.='<option value="'.$key->id.'" '.(($form!=false)?(($form->danhmuc_id==$key->id)?'selected':''):'').'>'.$key->name.'</option>';
+            if(isset($_GET['danhmuc_id'])&&$_GET['danhmuc_id']!=''&&$form==false){
+                $str_from.='<option value="'.$key->id.'" '.(($_GET['danhmuc_id']==$key->id)?'selected':'').'>'.$key->name.'</option>';
+            }
+            else{
+                $str_from.='<option value="'.$key->id.'" '.(($form!=false)?(($form->danhmuc_id==$key->id)?'selected':''):'').'>'.$key->name.'</option>';
+            }
+
         }
     }
     $str_from.='</select></p>';
