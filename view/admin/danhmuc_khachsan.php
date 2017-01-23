@@ -24,6 +24,7 @@ function view_danhmuc_khachsan($data)
     $ft->assign('NOTIFICATION',isset($data['notification'])?$data['notification']:' ');
     $ft->assign('SITE-NAME',isset($data['sitename'])?$data['sitename']:SITE_NAME);
     $ft->assign('kichhoat_khachsan', 'active');
+    $ft->assign('kichhoat_khachsan_hienthi', 'display: block');
     $ft->assign('FORM',showFrom(isset($data['form'])?$data['form']:'',isset($data['listfkey'])?$data['listfkey']:array()));
     //
     print $ft->parse_and_return('header');
@@ -33,7 +34,7 @@ function view_danhmuc_khachsan($data)
 //
 function showTableHeader()
 {
-    return '<th>id</th><th>name</th><th>img</th><th>position</th>';
+    return '<th>id</th><th>name</th><th>img</th><th>position</th><th>Khách sạn</th>';
 }
 //
 function showTableBody($data)
@@ -46,6 +47,7 @@ function showTableBody($data)
         $TableBody.="<td>".$obj->name."</td>";
         $TableBody.="<td><img src=\"".$obj->img."\" width=\"50px\" height=\"50px\"/> </td>";
         $TableBody.="<td>".$obj->position."</td>";
+        $TableBody.="<td><a href=\"".SITE_NAME."/controller/admin/khachsan.php?danhmuc_id=".$obj->id."\" title=\"Danh sách khách sạn\">Danh sách khách sạn</a></td>";
         $TableBody.="<td><a href=\"?action=edit&id=".$obj->id."\" title=\"Edit\"><img src=\"".SITE_NAME."/view/admin/Themes/images/pencil.png\" alt=\"Edit\"></a>";
         $TableBody.="<a href=\"?action=delete&id=".$obj->id."\" title=\"Delete\" onClick=\"return confirm('Bạn có chắc chắc muốn xóa?')\"><img src=\"".SITE_NAME."/view/admin/Themes/images/cross.png\" alt=\"Delete\"></a> ";
         $TableBody.="</td>";

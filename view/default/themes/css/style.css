@@ -708,7 +708,8 @@ span.dropcap {
     -moz-transition: all 0.3s linear;
     -ms-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
-    transition: all 0.3s linear
+    transition: all 0.3s linear;
+    height: auto!important;
 }
 
 .pt-80 {
@@ -7280,7 +7281,7 @@ body.single-post .blog-page__content > .post .post-content {
 }
 
 .room-type-table .room-type {
-    width: 53%;
+    width: 46%;
     padding-right: 30px
 }
 
@@ -7295,7 +7296,7 @@ body.single-post .blog-page__content > .post .post-content {
 }
 
 .room-type-table .room-price {
-    width: 21.5%;
+    width: 25.5%;
     padding-right: 30px
 }
 
@@ -10588,10 +10589,11 @@ body.single-post .blog-page__content > .post .post-content {
 }
 
 .slider-caption {
-    font-size: 60px;
+    font-size: 50px;
     color: #fff;
     text-transform: uppercase;
-    font-family: 'Lato';
+    /*font-family: 'Lato';*/
+    font-family: Tahoma, Arial, Helvetica, sans-serif !important;
     line-height: 1
 }
 
@@ -10599,18 +10601,18 @@ body.single-post .blog-page__content > .post .post-content {
     display: inline-block;
     line-height: 1;
     font-weight: 500;
-    font-family: 'Hind';
+    font-family: Tahoma, Arial, Helvetica, sans-serif !important;
     font-size: 30px;
     color: #fff;
     line-height: 1.15em
 }
 
 .slider-caption.slider-caption-1 {
-    font-weight: bold
+    /*font-weight: bold*/
 }
 
 .slider-caption.slider-caption-2 {
-    font-weight: bold;
+    /*font-weight: bold;*/
     font-size: 80px
 }
 

@@ -88,6 +88,7 @@
                                         <thead>
                                         <tr>
                                             <th class="room-type">Loại phòng</th>
+                                            <th class="room-people">Số phòng</th>
                                             <th class="room-people">Số người</th>
                                             <th class="room-condition">Dịch vụ</th>
                                             <th class="room-price">Giá</th>
