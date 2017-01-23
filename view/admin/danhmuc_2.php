@@ -24,7 +24,6 @@ function view_danhmuc_2($data)
     $ft->assign('NOTIFICATION',isset($data['notification'])?$data['notification']:' ');
     $ft->assign('SITE-NAME',isset($data['sitename'])?$data['sitename']:SITE_NAME);
     $ft->assign('kichhoat_tour', 'active');
-    $ft->assign('kichhoat_tour_hienthi', 'display: block');
     $ft->assign('FORM',showFrom(isset($data['form'])?$data['form']:'',isset($data['listfkey'])?$data['listfkey']:array()));
     //
     print $ft->parse_and_return('header');
@@ -34,7 +33,7 @@ function view_danhmuc_2($data)
 //
 function showTableHeader()
 {
-    return '<th>id</th><th>danhmuc1_id</th><th>name</th><th>name_url</th><th>img</th><th>position</th><th>Danh sách tour</th>';
+    return '<th>id</th><th>danhmuc1_id</th><th>name</th><th>name_url</th><th>img</th><th>position</th>';
 }
 //
 function showTableBody($data)
@@ -51,7 +50,6 @@ function showTableBody($data)
             $TableBody.="<td>".$obj->name_url."</td>";
             $TableBody.="<td><img src=\"".$obj->img."\" width=\"50px\" height=\"50px\"/> </td>";
             $TableBody.="<td>".$obj->position."</td>";
-            $TableBody.="<td><a href=\"".SITE_NAME."/controller/admin/tour.php?DanhMuc2Id=".$obj->id."\" title=\"Danh sách tour\">Danh sách tour</a></td>";
             $TableBody.="<td><a href=\"?action=edit&id=".$obj->id."\" title=\"Edit\"><img src=\"".SITE_NAME."/view/admin/Themes/images/pencil.png\" alt=\"Edit\"></a>";
             $TableBody.="<a href=\"?action=delete&id=".$obj->id."\" title=\"Delete\" onClick=\"return confirm('Bạn có chắc chắc muốn xóa?')\"><img src=\"".SITE_NAME."/view/admin/Themes/images/cross.png\" alt=\"Delete\"></a> ";
             $TableBody.="</td>";
@@ -71,13 +69,7 @@ function showFrom($form,$ListKey=array())
     {
         foreach($ListKey['danhmuc1_id'] as $key)
         {
-            if(isset($_GET['danhmuc1_id'])&&$_GET['danhmuc1_id']!=''&&$form==false){
-                $str_from.='<option value="'.$key->id.'" '.(($_GET['danhmuc1_id']==$key->id)?'selected':'').'>'.$key->name.'</option>';
-            }
-            else{
-                $str_from.='<option value="'.$key->id.'" '.(($form!=false)?(($form->danhmuc1_id==$key->id)?'selected':''):'').'>'.$key->name.'</option>';
-            }
-
+            $str_from.='<option value="'.$key->id.'" '.(($form!=false)?(($form->danhmuc1_id==$key->id)?'selected':''):'').'>'.$key->name.'</option>';
         }
     }
     $str_from.='</select></p>';
