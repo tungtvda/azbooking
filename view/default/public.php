@@ -132,7 +132,7 @@ function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberfor
                 $mes_='Đã hết hạn';
                 $date_count='';
                 if($item->count_down!=''){
-                     $date_now=_returnGetDateTime();
+                    $date_now=_returnGetDateTime();
                     $date_count=strtotime($item->count_down);
 //                    $date=date('Y-m-d H:i:s', strtotime($item->count_down-$date_now));
                     $key_id=$item->id;
@@ -302,19 +302,37 @@ function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberfor
 }
 function link_dm_tour1($app)
 {
-    return SITE_NAME.'/tour/'.$app->name_url.'/';
+    if($app->tour_quoc_te==0){
+
+        $link='/tour-du-lich-trong-nuoc/';
+    }else{
+        $link='/tour-du-lich-quoc-te/';
+    }
+    return SITE_NAME.$link.$app->name_url.'/';
 }
-function link_dm_tour2($app, $name_url)
+function link_dm_tour2($app, $name_url, $tour_quoc_te=0)
 {
-    return SITE_NAME.'/tour/'.$name_url.'/'.$app->name_url.'/';
+    if($tour_quoc_te==0){
+
+        $link='/tour-du-lich-trong-nuoc/';
+    }else{
+        $link='/tour-du-lich-quoc-te/';
+    }
+    return SITE_NAME.$link.$name_url.'/'.$app->name_url.'/';
 }
 function link_tourdetail($app,$name_url='',$name2_url='')
 {
+    if($app->tour_quoc_te==0){
+
+        $link='/tour-du-lich-trong-nuoc/';
+    }else{
+        $link='/tour-du-lich-quoc-te/';
+    }
     if($name2_url==''){
-        return SITE_NAME.'/tour/'.$name_url.'/'.$app->name_url.'.html';
+        return SITE_NAME.$link.$name_url.'/'.$app->name_url.'.html';
     }
     else{
-        return SITE_NAME.'/tour/'.$name_url.'/'.$name2_url.'/'.$app->name_url.'.html';
+        return SITE_NAME.$link.$name_url.'/'.$name2_url.'/'.$app->name_url.'.html';
     }
 
 }
