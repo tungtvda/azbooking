@@ -46,13 +46,13 @@
                                     <div style="float: left;margin-top: 10px;margin-left: 10px;" class="social-share">
                                         <ul>
                                             <li><a href="https://www.facebook.com/sharer/sharer.php?u={link}" target="_blank"><i style="background-color: #ffffff"
-                                                            class="fa fa-facebook"></i></a></li>
+                                                                                                                                 class="fa fa-facebook"></i></a></li>
                                             <li><a href="https://twitter.com/intent/tweet?source=webclient&text={link}" target="_blank"><i style="background-color: #ffffff"
-                                                            class="fa fa-twitter"></i></a></li>
+                                                                                                                                           class="fa fa-twitter"></i></a></li>
                                             <li><a href="https://plus.google.com/share?url={link}" onclick='javascript:window.open(this.href, "", "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600");return false;' target="_blank"><i style="background-color: #ffffff"
-                                                            class="fa fa-google-plus"></i></a></li>
+                                                                                                                                                                                                                                                               class="fa fa-google-plus"></i></a></li>
                                             <li><a href="http://pinterest.com/pin/create/button/?url={link}" onclick="window.open(this.href); return false;" title="Pinterest" target="_blank"><i style="background-color: #ffffff"
-                                                            class="fa fa-pinterest"></i></a></li>
+                                                                                                                                                                                                  class="fa fa-pinterest"></i></a></li>
                                             <li><a  href="mailto:?Subject={name}?&amp;body={name}:{content_short}" target="_blank"><i
                                                             class="fa fa-envelope"></i></a></li>
                                         </ul>
@@ -63,25 +63,25 @@
                         </div>
                     </div>
                     <div class="package-details-content" style="float: left; width: 100%">
-                        <h3 class="title">Tóm tắt</h3>
+                        <h3 {hidden_summary} class="title">Tóm tắt</h3>
                         <p>{summary}
                         </p>
 
-                        <h3 class="title">Nổi bật</h3>
+                        <h3 {hidden_summary} class="title">Nổi bật</h3>
                         <p>{highlights}
                         </p>
+                        {quocgia}
                     </div>
                 </div>
                 <div class="product-tabs tabs col-md-12" style="border-bottom: 1px solid #D4D4D4;
     overflow: hidden;
-    padding-bottom: 35px;
-    margin-bottom: 35px;">
+    padding-bottom: 20px;">
 
                     <ul>
                         <li><a href="#tabs-1">Lịch trình</a></li>
-                        <li><a href="#tabs-2">Bao gồm</a></li>
-                        <li><a href="#tabs-3">Không bao gồm</a></li>
-                        <li><a href="#tabs-4">Bảng giá</a></li>
+                        <li hidden><a href="#tabs-2">Bao gồm</a></li>
+                        <li hidden><a href="#tabs-3">Không bao gồm</a></li>
+                        <li hidden><a href="#tabs-4">Bảng giá</a></li>
                     </ul>
                     <div class="product-tabs__content">
                         <div id="tabs-1">
@@ -104,6 +104,53 @@
                                 {price_list}
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="product-tabs tabs col-md-12" style="border-bottom: 1px solid #D4D4D4;
+    overflow: hidden;
+    padding-bottom: 20px;">
+
+                    <ul>
+                        <li><a href="#tabs-1">Bảng giá</a></li>
+                    </ul>
+                    <div class="product-tabs__content">
+                        <div id="tabs-1">
+                            <div class="initiative">
+                                {price_list}
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div {hidden_inclusion} class="product-tabs tabs col-md-12" style="border-bottom: 1px solid #D4D4D4;
+    overflow: hidden;
+    padding-bottom: 20px;">
+                    <ul>
+                        <li><a href="#tabs-1">Bao gồm</a></li>
+                    </ul>
+                    <div class="product-tabs__content">
+                        <div id="tabs-1">
+                            <div class="initiative">
+                                {inclusion}
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div {hidden_exclusion} class="product-tabs tabs col-md-12" style="border-bottom: 1px solid #D4D4D4;
+    overflow: hidden;
+    padding-bottom: 20px;;">
+                    <ul>
+                        <li><a href="#tabs-1">Không bao gồm</a></li>
+                    </ul>
+                    <div class="product-tabs__content">
+                        <div id="tabs-1">
+                            <div class="initiative">
+                                {exclusion}
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <div  class="related-post col-md-12 row"><h4>Có thể bạn quan tâm</h4>
@@ -133,7 +180,7 @@
                         <input id="price_5" value="{price_5}" hidden>
                         <input id="price_6" value="{price_6}" hidden>
 
-                        <p {hidden_date_select}>Thời gian khởi anh</p>
+                        <p {hidden_date_select}>Thời gian khởi hành</p>
                         <select {hidden_date_select} style="width: 100%;     padding: 0px;" id="date_select" name="date_select">
                             {date_select}
                         </select>

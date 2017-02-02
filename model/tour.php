@@ -1,12 +1,14 @@
 <?php
 class tour
 {
-    public $id,$DanhMuc1Id,$DanhMuc2Id,$promotion,$packages,$name,$name_url,$count_down,$code,$img,$price_sales,$price,$price_2,$price_3,$price_4,$price_5,$price_6,$durations,$departure,$departure_time,$destination,$vehicle,$hotel,$summary,$highlights,$schedule,$price_list,$content,$list_img,$title,$keyword,$description,$inclusion,$exclusion;
+    public $id,$tour_quoc_te,$DanhMuc1Id,$DanhMuc2Id,$danhmuc_multi,$promotion,$packages,$name,$name_url,$count_down,$code,$img,$price_sales,$price,$price_2,$price_3,$price_4,$price_5,$price_6,$durations,$departure,$departure_time,$destination,$vehicle,$hotel,$summary,$highlights,$schedule,$price_list,$content,$list_img,$title,$keyword,$description,$inclusion,$exclusion;
     public function tour($data=array())
     {
     $this->id=isset($data['id'])?$data['id']:'';
+        $this->tour_quoc_te = isset($data['tour_quoc_te']) ? $data['tour_quoc_te'] : '';
     $this->DanhMuc1Id=isset($data['DanhMuc1Id'])?$data['DanhMuc1Id']:'';
     $this->DanhMuc2Id=isset($data['DanhMuc2Id'])?$data['DanhMuc2Id']:'';
+        $this->danhmuc_multi=isset($data['danhmuc_multi'])?$data['danhmuc_multi']:'';
     $this->promotion=isset($data['promotion'])?$data['promotion']:'';
     $this->packages=isset($data['packages'])?$data['packages']:'';
     $this->name=isset($data['name'])?$data['name']:'';
@@ -38,13 +40,15 @@ class tour
     $this->description=isset($data['description'])?$data['description']:'';
     $this->inclusion=isset($data['inclusion'])?$data['inclusion']:'';
     $this->exclusion=isset($data['exclusion'])?$data['exclusion']:'';
-          $this->encode();
+//          $this->encode();
     }
     public function encode()
         {
             $this->id=addslashes($this->id);
+            $this->tour_quoc_te = addslashes($this->tour_quoc_te);
             $this->DanhMuc1Id=addslashes($this->DanhMuc1Id);
             $this->DanhMuc2Id=addslashes($this->DanhMuc2Id);
+            $this->danhmuc_multi=addslashes($this->danhmuc_multi);
             $this->promotion=addslashes($this->promotion);
             $this->packages=addslashes($this->packages);
             $this->name=addslashes($this->name);
@@ -65,23 +69,25 @@ class tour
             $this->destination=addslashes($this->destination);
             $this->vehicle=addslashes($this->vehicle);
             $this->hotel=addslashes($this->hotel);
-            $this->summary=addslashes($this->summary);
-            $this->highlights=addslashes($this->highlights);
-            $this->schedule=addslashes($this->schedule);
-            $this->price_list=addslashes($this->price_list);
-            $this->content=addslashes($this->content);
-            $this->list_img=addslashes($this->list_img);
+//            $this->summary=addslashes($this->summary);
+//            $this->highlights=addslashes($this->highlights);
+//            $this->schedule=addslashes($this->schedule);
+//            $this->price_list=addslashes($this->price_list);
+//            $this->content=addslashes($this->content);
+//            $this->list_img=addslashes($this->list_img);
             $this->title=addslashes($this->title);
             $this->keyword=addslashes($this->keyword);
             $this->description=addslashes($this->description);
-            $this->inclusion=addslashes($this->inclusion);
-            $this->exclusion=addslashes($this->exclusion);
+//            $this->inclusion=addslashes($this->inclusion);
+//            $this->exclusion=addslashes($this->exclusion);
         }
     public function decode()
         {
             $this->id=stripslashes($this->id);
+            $this->tour_quoc_te = stripslashes($this->tour_quoc_te);
             $this->DanhMuc1Id=stripslashes($this->DanhMuc1Id);
             $this->DanhMuc2Id=stripslashes($this->DanhMuc2Id);
+            $this->danhmuc_multi=stripslashes($this->danhmuc_multi);
             $this->promotion=stripslashes($this->promotion);
             $this->packages=stripslashes($this->packages);
             $this->name=stripslashes($this->name);
@@ -102,16 +108,16 @@ class tour
             $this->destination=stripslashes($this->destination);
             $this->vehicle=stripslashes($this->vehicle);
             $this->hotel=stripslashes($this->hotel);
-            $this->summary=stripslashes($this->summary);
-            $this->highlights=stripslashes($this->highlights);
-            $this->schedule=stripslashes($this->schedule);
-            $this->price_list=stripslashes($this->price_list);
-            $this->content=stripslashes($this->content);
-            $this->list_img=stripslashes($this->list_img);
+//            $this->summary=stripslashes($this->summary);
+//            $this->highlights=stripslashes($this->highlights);
+//            $this->schedule=stripslashes($this->schedule);
+//            $this->price_list=stripslashes($this->price_list);
+//            $this->content=stripslashes($this->content);
+//            $this->list_img=stripslashes($this->list_img);
             $this->title=stripslashes($this->title);
             $this->keyword=stripslashes($this->keyword);
             $this->description=stripslashes($this->description);
-            $this->inclusion=stripslashes($this->inclusion);
-            $this->exclusion=stripslashes($this->exclusion);
+//            $this->inclusion=stripslashes($this->inclusion);
+//            $this->exclusion=stripslashes($this->exclusion);
         }
 }

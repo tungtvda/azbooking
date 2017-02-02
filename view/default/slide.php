@@ -14,6 +14,16 @@ function view_slide($data=array())
     {
         $asign['slide'] = print_item('slide', $data['slide']);
     }
+    $asign['danhmuc_1_timkiem_trongnuoc'] ='';
+    if(count($data['danhmuc_1_timkiem_trongnuoc'])>0)
+    {
+        $asign['danhmuc_1_timkiem_trongnuoc'] = print_item('danhmuc_cbox_timkiem', $data['danhmuc_1_timkiem_trongnuoc']);
+    }
+    $asign['danhmuc_1_timkiem_quocte'] ='';
+    if(count($data['danhmuc_1_timkiem_quocte'])>0)
+    {
+        $asign['danhmuc_1_timkiem_quocte'] = print_item('danhmuc_cbox_timkiem', $data['danhmuc_1_timkiem_quocte']);
+    }
     if(count($data['danhmuc_1_timkiem'])>0)
     {
         $asign['danhmuc_1_timkiem'] = print_item('danhmuc_cbox', $data['danhmuc_1_timkiem']);

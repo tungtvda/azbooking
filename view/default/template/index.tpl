@@ -1,7 +1,7 @@
 <section {hidden_count_down} >
     <div class="container">
         <div class=" col-sm-12 col-md-12 " style="padding: 0px">
-            <h3 class="title_index">tour giờ chót</h3>
+            <h3 class="title_index">tour giờ chót <a style="float: right; margin-top: 10px; color: red; font-weight: bold;font-size: 14px;" href="{SITE-NAME}/tour-gio-chot/">Xem thêm...</a></h3>
             <div class="" style="height: auto !important;">
                 <div class="tourGioChot">
                     <div class="contentGioChot">
@@ -60,6 +60,14 @@
                     <div class="video-wrapper embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item"
                                 src="{link_video}" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="awe-services"><h2>Fanpage</h2>
+                    <div class="fb-page" data-href="https://www.facebook.com/azbooking.vietnam/" style="width: 100% !important;"
+                         data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+                         data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/azbooking.vietnam/" class="fb-xfbml-parse-ignore"><a
+                                    href="https://www.facebook.com/azbooking.vietnam/">AZBOOKING.VN</a></blockquote>
                     </div>
                 </div>
             </div>
