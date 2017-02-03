@@ -354,6 +354,30 @@
             }
 
         });
+        jQuery("#next_booking_tour").click(function () {
+
+            var checkbox = 0;
+            var total = 0;
+            var rest_room_type = '';
+
+            var date_input=$('#date_input').val();
+            var date_now = jQuery('#date_get_now').val();
+            if(date_input==''||date_now==""){
+                alert('Bạn vui lòng check ngày đặt tour');
+            }
+            else{
+
+                if(date_input<date_now){
+                    alert('Bạn không thể chọn ngày trong quá khứ');
+                }
+                else{
+                    jQuery('.back_detail').hide();
+                    jQuery('.back_detail_cal').hide();
+                    jQuery('.next_detail').slideDown();
+                }
+            }
+
+        });
         jQuery("#back_booking").click(function () {
             jQuery('#form_to_date').show();
             jQuery('.next_detail').hide();
@@ -548,7 +572,7 @@
                                 jQuery("#amount_total").show();
                                 jQuery("#total_fee").text(total_format);
                                 jQuery("#hidden_total").show();
-                                jQuery("#next_booking").show();
+                                jQuery("#next_booking_tour").show();
                                 jQuery("#rest_room_type").html(rest_room_type);
                                 jQuery("#num_member_table").html(num_member);
                                 jQuery("#from_date_table").html(from_date_old);
@@ -736,7 +760,7 @@
         jQuery("#total_fee").text(total);
         jQuery('#total_input').val(total);
         jQuery("#hidden_total").show();
-        jQuery("#next_booking").show();
+        jQuery("#next_booking_tour").show();
 
     }
     function nformat(a) {
