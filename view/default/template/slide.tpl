@@ -34,13 +34,15 @@
                         </div>
                         <div  class="form-group">
                             <div class="form-elements">
-                                <div class="form-item"><select  name="danhmuc_tour_1" id="DanhMuc1Id" class="awe-select">
+                                <div class="form-item">
+                                    <select  name="danhmuc_tour_1" id="DanhMuc1Id" class="awe-select">
                                         <option value="">Loại tour</option>
                                         <option value="tour_trong_nuoc" style="font-weight: bold">Tour du lịch trong nước</option>
                                         {danhmuc_1_timkiem_trongnuoc}
                                         <option value="tour_quoc_te" style="font-weight: bold">Tour du lịch quốc tế</option>
                                         {danhmuc_1_timkiem_quocte}
-                                    </select></div>
+                                    </select>
+                                </div>
                             </div>
                             <div class="form-elements">
                                 <div class="form-item"><select name="danhmuc_tour_2" id="DanhMuc2Id" class="awe-select">

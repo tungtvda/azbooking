@@ -91,7 +91,7 @@ function show_chitiet_tour($data = array())
     $asign['hidden_date']='';
     $asign['hidden_date_select']='hidden';
     $asign['date_select']='';
-    if($data['detail'][0]->departure_time!=''){
+    if($data['detail'][0]->departure_time!=''&&$data['detail'][0]->departure_time!='Theo yêu cầu'&&$data['detail'][0]->departure_time!='theo yêu cầu'){
         $asign['hidden_date']='hidden';
         $arr_explode=explode(',',$data['detail'][0]->departure_time);
         if(count($arr_explode)>0){

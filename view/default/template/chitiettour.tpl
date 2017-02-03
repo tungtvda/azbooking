@@ -225,7 +225,7 @@
                             <div style="display: none" id="hidden_total" class="price"><em>Tổng tiền đặt tour</em> <span  class="amount" id="amount_total"></span></div>
                             <div  class="form-submit">
                                 <div class="add-to-cart">
-                                    <a style=" display: none;" href="javascript:void(0);"  id="next_booking"> Tiếp tục <i style="    background-color: #0086cd;" class="fa fa-arrow-right"></i></a>
+                                    <a style=" display: none;" href="javascript:void(0);"  id="next_booking_tour"> Tiếp tục <i style="    background-color: #0086cd;" class="fa fa-arrow-right"></i></a>
                                     <!--<button type="submit"><i class="awe-icon awe-icon-cart"></i>Add this to Cart
                                     </button>-->
                                 </div>
