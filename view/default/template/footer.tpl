@@ -40,12 +40,12 @@
             <div class="col-md-3">
                 <div class="widget widget_categories"><h3>Về chúng tôi</h3>
                     <ul>
-                        <li><a href="{SITE-NAME}/chinh-sach-quy-dinh-chung.html">- {quydinh}</a></li>
-                        <li><a href="{SITE-NAME}/chinh-sach-bao-mat-thong-tin.html">- {baomat}</a></li>
-                        <li><a href="{SITE-NAME}/hinh-thuc-thanh-toan.html">- {thanhtoan}</a></li>
-                        <li><a href="{SITE-NAME}/quy-dinh-doi-tra.html">- {doitra}</a></li>
-                        <li><a href="{SITE-NAME}/chinh-sach-quy-trinh-xu-ly-khieu-nai.html">- {khieunai}</a></li>
-                        <li><a href="{SITE-NAME}/chinh-sach-van-chuyen-giao-nhan.html">- {giaonhan}</a></li>
+                        <li><a href="{SITE-NAME}/info/chinh-sach-quy-dinh-chung.html">- {quydinh}</a></li>
+                        <li><a href="{SITE-NAME}/info/chinh-sach-bao-mat-thong-tin.html">- {baomat}</a></li>
+                        <li><a href="{SITE-NAME}/info/hinh-thuc-thanh-toan.html">- {thanhtoan}</a></li>
+                        <li><a href="{SITE-NAME}/info/quy-dinh-doi-tra.html">- {doitra}</a></li>
+                        <li><a href="{SITE-NAME}/info/chinh-sach-quy-trinh-xu-ly-khieu-nai.html">- {khieunai}</a></li>
+                        <li><a href="{SITE-NAME}/info/chinh-sach-van-chuyen-giao-nhan.html">- {giaonhan}</a></li>
                     </ul>
                 </div>
             </div>

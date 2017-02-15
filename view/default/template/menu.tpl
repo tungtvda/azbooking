@@ -38,7 +38,7 @@
                             </ul>
                         </li>
 
-                        <li class=" {lienhe_mn}"><a href="{SITE-NAME}/lien-he.html">Liên hệ</a>
+                        <li class=" {lienhe_mn}"><a href="{SITE-NAME}/info/lien-he.html">Liên hệ</a>
                         </li>
                         <li class=" {lienhe_mn}"><a class="menu_mobi" href="tel:{Hotline}"><img style="width: 25px;" src="{SITE-NAME}/view/default/themes/images/tel-anphong2.gif"> {Hotline}</a>
                         </li>
