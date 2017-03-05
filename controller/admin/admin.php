@@ -63,26 +63,26 @@ if(isset($_SESSION["Admin"]))
     if(isset($_POST["khachsan_id"])&&isset($_POST["TenDangNhap"])&&isset($_POST["Full_name"])&&isset($_POST["MatKhau"])&&isset($_POST["Quyen"]))
     {
 
-       $array=$_POST;
-       if(!isset($array['Id']))
-       $array['Id']='0';
-       if(!isset($array['khachsan_id']))
-       $array['khachsan_id']='0';
-       if(!isset($array['TenDangNhap']))
-       $array['TenDangNhap']='0';
-       if(!isset($array['Full_name']))
-       $array['Full_name']='0';
-       if(!isset($array['MatKhau']))
-       $array['MatKhau']='0';
-       if(!isset($array['Quyen']))
-       $array['Quyen']='0';
-       if(!isset($array['status']))
-       $array['status']='0';
+        $array=$_POST;
+        if(!isset($array['Id']))
+            $array['Id']='0';
+        if(!isset($array['khachsan_id']))
+            $array['khachsan_id']='0';
+        if(!isset($array['TenDangNhap']))
+            $array['TenDangNhap']='0';
+        if(!isset($array['Full_name']))
+            $array['Full_name']='0';
+        if(!isset($array['MatKhau']))
+            $array['MatKhau']='0';
+        if(!isset($array['Quyen']))
+            $array['Quyen']='0';
+        if(!isset($array['status']))
+            $array['status']='0';
         $new_obj=new admin($array);
 
         if($insert)
         {
-
+            $new_obj->MatKhau=hash_pass($_POST["Pass"]);
             $new_obj->MatKhau=$Pass;
             admin_insert($new_obj);
             header('Location: '.SITE_NAME.'/controller/admin/admin.php');
@@ -94,7 +94,7 @@ if(isset($_SESSION["Admin"]))
                 $new_obj->MatKhau=$pass_old;
             }
             else{
-                $new_obj->MatKhau=$Pass;
+                $new_obj->MatKhau=hash_pass($_POST["MatKhau"]);
             }
 
             $new_obj->Id=$_GET["Id"];
@@ -112,5 +112,5 @@ if(isset($_SESSION["Admin"]))
 }
 else
 {
-     header('location: '.SITE_NAME);
+    header('location: '.SITE_NAME);
 }

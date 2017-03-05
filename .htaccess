@@ -67,8 +67,10 @@ RewriteRule ^tim-kiem-khach-san$ controller/default/timkiemkhachsan.php
 RewriteRule ^tim-kiem-tin-tuc$ controller/default/timkiemtintuc.php
 RewriteRule ^tim-kiem/$ controller/default/timkiem.php
 
-RewriteRule ^([a-zA-Z0-9_-]+).html$ controller/default/info.php?Id=$1
+RewriteRule ^info/([a-zA-Z0-9_-]+).html$ controller/default/info.php?Id=$1
 
 RewriteRule ^check-map/$ controller/default/checkmap.php
 RewriteRule ^get-info-booking/$ controller/default/getinfobooking.php
 RewriteRule ^update-status-booking-hotel/$ controller/default/updatestatushotel.php
+
+RewriteRule ^google27f37442f4187815.html$ google27f37442f4187815.html
