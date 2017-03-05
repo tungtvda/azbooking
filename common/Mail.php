@@ -22,7 +22,7 @@ function SendMail($Sendto,$Body,$Subject)
     $mail->SMTPAuth = true;
     $mail->Username = 'qsg546.qsoft@gmail.com';
     $mail->Password = 'edbhqegduzpmwuui';
-    $mail->SetFrom('sales@mixtourist.com', 'Mixtourist.com');
+    $mail->SetFrom('sales@mixtourist.com', 'Azbooking.vn');
     $mail->AddReplyTo('sales@mixtourist.com', "");
     $mail->AddAddress($Sendto,'test');
     $mail->Subject = "" . $Subject . "";

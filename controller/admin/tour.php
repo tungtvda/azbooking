@@ -113,6 +113,11 @@ if(isset($_SESSION["Admin"]))
        $array['durations']='0';
        if(!isset($array['departure']))
        $array['departure']='0';
+        $departure='';
+        if(isset($_POST["departure"])&&$_POST["departure"]!=''){
+            $departure=implode(',',$_POST["departure"]);
+            $array['departure']=$departure;
+        }
         if(!isset($array['departure_time']))
             $array['departure_time']='0';
        if(!isset($array['destination']))

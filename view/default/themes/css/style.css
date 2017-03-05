@@ -168,9 +168,9 @@ img {
 
 .awe-parallax {
     color: #fff;
-    background-position: 50% 50%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    /*background-position: 50% 50%;*/
+    /*background-attachment: fixed;*/
+    /*background-repeat: no-repeat;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -7173,7 +7173,7 @@ body.single-post .blog-page__content > .post .post-content {
 .product-tabs__content .ui-tabs-panel {
     overflow: hidden;
     overflow-x: auto;
-    min-height: 500px
+    /*min-height: 500px*/
 }
 
 .product-tabs__content .ui-tabs-panel .check-availability {
@@ -11061,7 +11061,7 @@ caption, th, td {
 #mda-why {
     /*background-color: #e7e7e7;*/
     /*margin-top: 30px;*/
-    padding: 50px 0;
+    padding: 10px 0;
 }
 #mda-why .mda-content {
     text-align: center;
@@ -11232,4 +11232,20 @@ padding: 10px 0px;
 }
 .body_map{
 
+}
+.item_dm_khachsan h1{
+    font-size: 16px;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.item_dm_khachsan{
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 1px dotted #DFDFDF;
+    padding:10px;
+}
+.item_dm_khachsan:hover{
+    border-bottom: 1px dotted #0091EA;
 }

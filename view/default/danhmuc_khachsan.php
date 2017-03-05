@@ -13,7 +13,12 @@ function show_khachsan($data = array())
     $asign['danhsach'] ='';
     if(count($data['danhsach'])>0)
     {
-        $asign['danhsach'] = print_item('danhmuc_khachsan', $data['danhsach']);
+        if(isset( $data['danhmuc_cap1'])){
+            $asign['danhsach'] = print_item('item_danhmuc_khachsan', $data['danhsach']);
+        }else{
+            $asign['danhsach'] = print_item('danhmuc_khachsan', $data['danhsach']);
+        }
+
     }
     else{
         $asign['danhsach'] ='<div class="item_tour col-xs-12 col-sm-6 col-md-4">Hệ thống đang cập nhật dữ liệu</div>';

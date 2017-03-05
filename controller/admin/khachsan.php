@@ -2,6 +2,7 @@
 require_once '../../config.php';
 require_once DIR.'/model/khachsanService.php';
 require_once DIR.'/model/danhmuc_khachsanService.php';
+require_once DIR.'/model/danhmuc_khachsan_2Service.php';
 require_once DIR.'/model/khachsan_imgService.php';
 require_once DIR.'/model/khachsan_room_priceService.php';
 require_once DIR.'/view/admin/khachsan.php';
@@ -64,9 +65,11 @@ if(isset($_SESSION["Admin"]))
     }
     if( $_SESSION["Quyen"]==1){
         $data['listfkey']['danhmuc_id']=danhmuc_khachsan_getByAll();
+        $data['listfkey']['danhmuc2_id']=danhmuc_khachsan_2_getByAll();
     }
     else{
         $data['listfkey']['danhmuc_id']=danhmuc_khachsan_getById($_SESSION["khach_san_id"]);
+        $data['listfkey']['danhmuc2_id']=danhmuc_khachsan_2_getById($_SESSION["khach_san_id"]);
     }
 
     if(isset($_GET["action_all"]))
@@ -96,6 +99,8 @@ if(isset($_SESSION["Admin"]))
        $array['id']='0';
        if(!isset($array['danhmuc_id']))
        $array['danhmuc_id']='0';
+        if(!isset($array['danhmuc2_id']))
+            $array['danhmuc2_id']='0';
        if(!isset($array['highlights']))
        $array['highlights']='0';
        if(!isset($array['name']))
