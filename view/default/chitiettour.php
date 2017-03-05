@@ -87,27 +87,61 @@ function show_chitiet_tour($data = array())
     $asign['Hotline'] = $data['config'][0]->Hotline;
     $asign['Hotline_hcm'] = $data['config'][0]->Hotline_hcm;
 
+    $arr_check=explode(',',$data['detail'][0]->departure);
+    if($arr_check==''){
+        $arr_check=array();
+    }
+    $string_khoihanh='';
+    $data_khoihanh=departure_getByTop('','','position asc');
+    $count_khoihanh=0;
+    foreach($data_khoihanh as $row_kh){
+        if(in_array($row_kh->id,$arr_check)){
+            if($count_khoihanh==0)
+            {
+                $string_khoihanh.=$row_kh->name;
+            }
+            else{
+                $string_khoihanh.=', '.$row_kh->name;
+            }
+
+            $count_khoihanh++;
+        }
+
+    }
+    $asign['khoihanh']=$string_khoihanh;
     $asign['departure_time']=$data['detail'][0]->departure_time;
     $asign['hidden_date']='';
     $asign['hidden_date_select']='hidden';
     $asign['date_select']='';
+    $now = getdate();
+    $year_current=$now["year"];
     if($data['detail'][0]->departure_time!=''&&$data['detail'][0]->departure_time!='Theo yêu cầu'&&$data['detail'][0]->departure_time!='theo yêu cầu'){
         $asign['hidden_date']='hidden';
         $arr_explode=explode(',',$data['detail'][0]->departure_time);
         if(count($arr_explode)>0){
-
-            $asign['date_now']=date('Y-m-d', strtotime(trim($arr_explode[0])));
-            $asign['date_now_vn'] =trim($arr_explode[0]);
+            if(strlen($arr_explode[0])>=8){
+                $time_explode_0=$arr_explode[0];
+            }else{
+                $time_explode_0=$arr_explode[0].'-'.$year_current;
+            }
+            $asign['date_now']=date('Y-m-d', strtotime(trim($time_explode_0)));
+            $asign['date_now_vn'] =trim($time_explode_0);
             $asign['hidden_date_select']='';
             foreach($arr_explode as $row){
                 $date=trim($row);
-                if(validateDate($date)==false){
+                if(strlen($date)>=8){
+                    $time_format=$date;
+                }else{
+                    $time_format=$date.'-'.$year_current;
+                }
+                $validate= validateDate($time_format);
+                if($validate==false){
                     $asign['hidden_date']='';
                     $asign['hidden_date_select']='hidden';
                     break;
                 }
-                $date_en=date('Y-m-d', strtotime(trim($row)));
-                $asign['date_select'].='<option value="'.$date_en.'">'.$date.'</option>';
+                $date_en=date('Y-m-d', strtotime(trim($time_format)));
+                $asign['date_select'].='<option value="'.$date_en.'">'.$time_format.'</option>';
             }
         }
     }

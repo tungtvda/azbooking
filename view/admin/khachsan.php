@@ -45,7 +45,7 @@ function view_khachsan($data)
 //
 function showTableHeader()
 {
-    return '<th>id</th><th>danhmuc_id</th><th>highlights</th><th>name</th><th>start</th><th>price</th><th>img</th><th>Loại phòng</th><th>Hình ảnh</th>';
+    return '<th>id</th><th>danhmuc_id</th><th>danhmuc2_id</th><th>highlights</th><th>name</th><th>start</th><th>price</th><th>img</th><th>Loại phòng</th><th>Hình ảnh</th>';
 }
 //
 function showTableBody($data)
@@ -60,6 +60,7 @@ function showTableBody($data)
         $TableBody.="<tr><td><input type=\"checkbox\" name=\"check_".$obj->id."\"/></td>";
         $TableBody.="<td>".$obj->id."</td>";
         $TableBody.="<td>".$obj->danhmuc_id."</td>";
+        $TableBody.="<td>".$obj->danhmuc2_id."</td>";
         $TableBody.="<td>".$obj->highlights."</td>";
         $TableBody.="<td>".$obj->name."</td>";
         $TableBody.="<td>".$obj->start."</td>";
@@ -91,21 +92,64 @@ function showTableBody($data)
 //
 function showFrom($form,$ListKey=array())
 {
+//    $str_from='';
+//    $str_from.='<p><label>danhmuc_id</label>';
+//    $str_from.='<select name="danhmuc_id">';
+//    if(isset($ListKey['danhmuc_id']))
+//    {
+//        foreach($ListKey['danhmuc_id'] as $key)
+//        {
+//            if(isset($_GET['danhmuc_id'])&&$_GET['danhmuc_id']!=''&&$form==false){
+//                $str_from.='<option value="'.$key->id.'" '.(($_GET['danhmuc_id']==$key->id)?'selected':'').'>'.$key->name.'</option>';
+//            }
+//            else{
+//                $str_from.='<option value="'.$key->id.'" '.(($form!=false)?(($form->danhmuc_id==$key->id)?'selected':''):'').'>'.$key->name.'</option>';
+//            }
+//
+//        }
+//    }
+//    $str_from.='</select></p>';
     $str_from='';
-    $str_from.='<p><label>danhmuc_id</label>';
-    $str_from.='<select name="danhmuc_id">';
-    if(isset($ListKey['danhmuc_id']))
+    $str_from.='<p><label>Chọn danh mục cấp 1</label>';
+    $str_from.='<select name="danhmuc_id" id="danhmuc_id">';
+    if($form!=false)
     {
-        foreach($ListKey['danhmuc_id'] as $key)
+        if(isset($ListKey['danhmuc_id']))
         {
-            if(isset($_GET['danhmuc_id'])&&$_GET['danhmuc_id']!=''&&$form==false){
-                $str_from.='<option value="'.$key->id.'" '.(($_GET['danhmuc_id']==$key->id)?'selected':'').'>'.$key->name.'</option>';
-            }
-            else{
+            foreach($ListKey['danhmuc_id'] as $key)
+            {
                 $str_from.='<option value="'.$key->id.'" '.(($form!=false)?(($form->danhmuc_id==$key->id)?'selected':''):'').'>'.$key->name.'</option>';
             }
-
         }
+    }
+    else
+    {
+
+        if(isset($ListKey['danhmuc_id']))
+        {
+            foreach($ListKey['danhmuc_id'] as $key)
+            {
+                $str_from.='<option value="'.$key->id.'" '.(($form!=false)?(($form->danhmuc_id==$key->id)?'selected':''):'').'>'.$key->name.'</option>';
+            }
+        }
+    }
+    $str_from.='</select></p>';
+    $str_from.='<p><label>Chọn danh mục cấp 2</label>';
+    $str_from.='<select name="danhmuc2_id" id="danhmuc2_id">';
+    if($form!=false)
+    {
+        $str_from .= '<option value="1">Chọn danh mục cấp 2</option>';
+        if(isset($ListKey['danhmuc2_id']))
+        {
+            foreach($ListKey['danhmuc2_id'] as $key)
+            {
+                $str_from.='<option value="'.$key->id.'" '.(($form!=false)?(($form->danhmuc2_id==$key->id)?'selected':''):'').'>'.$key->name.'</option>';
+            }
+        }
+    }
+    else
+    {
+        $str_from .= '<option value="1">Chọn danh mục cấp 2</option>';
     }
     $str_from.='</select></p>';
     $str_from.='<p><label>highlights</label><input  type="checkbox"  name="highlights" value="1" '.(($form!=false)?(($form->highlights=='1')?'checked':''):'').' /></p>';

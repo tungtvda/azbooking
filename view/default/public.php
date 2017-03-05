@@ -156,6 +156,29 @@ function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberfor
                 $ft->assign('key_id',$key_id);
                 $ft->assign('mes_',$mes_);
                 $ft->assign('date_count',$date_count);
+                $ft->assign('start',sao($item->hotel));
+                $arr_check=explode(',',$item->departure);
+                if($arr_check==''){
+                    $arr_check=array();
+                }
+                $string_khoihanh='';
+                $data_khoihanh=departure_getByTop('','','position asc');
+                $count_khoihanh=0;
+                foreach($data_khoihanh as $row_kh){
+                    if(in_array($row_kh->id,$arr_check)){
+                        if($count_khoihanh==0)
+                        {
+                            $string_khoihanh.=$row_kh->name;
+                        }
+                        else{
+                            $string_khoihanh.=', '.$row_kh->name;
+                        }
+
+                        $count_khoihanh++;
+                    }
+
+                }
+                $ft->assign('khoihanh',$string_khoihanh);
             }
             if(get_class($item)=='tour_img') {
                 $class='column';
@@ -218,6 +241,14 @@ function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberfor
             if(get_class($item)=='danhmuc_khachsan')
             {
                 $ft->assign('link',link_danhmuc_khachsan($item));
+            }
+            if(get_class($item)=='danhmuc_khachsan_2')
+            {
+                $data_dm=danhmuc_khachsan_getById($item->danhmuc_id);
+                if(count($data_dm)==0){
+                    redict(SITE_NAME);
+                }
+                $ft->assign('link',link_danhmuc_khachsan_2($item,$data_dm[0]->name_url));
             }
             if(get_class($item)=='khachsan')
             {
@@ -367,6 +398,10 @@ function link_khachsandetail($app,$name_url='')
 function link_danhmuc_khachsan($app)
 {
     return SITE_NAME.'/khach-san/'.$app->name_url.'/';
+}
+function link_danhmuc_khachsan_2($app, $url_dm1)
+{
+    return SITE_NAME.'/khach-san/'.$url_dm1.'/'.$app->name_url.'/';
 }
 function link_dichvu($app,$name_url='')
 {

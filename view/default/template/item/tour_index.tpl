@@ -8,8 +8,11 @@
         <div class="item-list">
             <ul>
                 <li {show_code}> Mã tour: {code}</li>
-                <li> Hành trình: {tring_des}
+                <li>Điểm khởi hành: {khoihanh}
+                <li>Hành trình: {tring_des}
                 <li>Thời gian: {durations}</li>
+                <li>Khởi hành: {departure_time}</li>
+                <li>Khách sạn: {start}</li>
             </ul>
         </div>
         <div class="item-footer">

@@ -26,9 +26,7 @@
                             {danhmuc_menu_quocte}
                         </li>
                         <li class="menu-item-has-children {khachsan_mn}"><a href="{SITE-NAME}/khach-san/">{khachsan}</a>
-                            <ul class="sub-menu">
-                               {danhmuc_khachsan}
-                            </ul>
+                            {danhmuc_khachsan}
                         </li>
                         <li class=""><a target="_blank" href="http://vemaybay.azbooking.vn/">Vé máy bay</a>
                         </li>

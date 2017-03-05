@@ -22,6 +22,15 @@
                             $("#DanhMuc2Id").html(data);
                         });
             });
+            $("#danhmuc_id").change(function() {
+                $.post('{SITE-NAME}/controller/default/ajax_khach_san.php',
+                        {
+                            KhachSan:$('#danhmuc_id  option:selected').val()
+                        },
+                        function(data,status){
+                            $("#danhmuc2_id").html(data);
+                        });
+            });
             $("#danhmuc1_destinations").change(function() {
                 $.post('{SITE-NAME}/controller/default/ajax.php',
                         {
@@ -114,7 +123,8 @@
                 </li>
                 <li class="dropdown {kichhoat_khachsan}"><a href="#"><span class=" icon-home"></span> Khách sạn</a>
                     <ul style="{kichhoat_khachsan_hienthi}">
-                        <li><a href="{SITE-NAME}/controller/admin/danhmuc_khachsan.php">Danh mục khách sạn</a></li>
+                        <li><a href="{SITE-NAME}/controller/admin/danhmuc_khachsan.php">Danh mục cấp 1</a></li>
+                        <li><a href="{SITE-NAME}/controller/admin/danhmuc_khachsan_2.php">Danh mục cấp 2</a></li>
                         <li><a href="{SITE-NAME}/controller/admin/khachsan.php">Danh sách khách sạn</a></li>
                         <li><a href="{SITE-NAME}/controller/admin/khachsan_room_price.php">Giá phòng</a></li>
                         <li><a href="{SITE-NAME}/controller/admin/khachsan_img.php">Hình ảnh khách sạn</a></li>

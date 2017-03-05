@@ -1,5 +1,5 @@
 
-        <section class="awe-parallax category-heading-section-demo" style="background-image:url({banner_img});background-size: cover;background-position: 50% 12px;">
+        <section class="awe-parallax category-heading-section-demo" style="background:url({banner_img}) no-repeat;">
             <div class="awe-overlay"></div>
             <div class="container">
                 <div class="category-heading-content category-heading-content__2 text-uppercase">

@@ -1,12 +1,14 @@
 <?php
 class config
 {
-    public $Id,$Logo,$Icon,$Name,$Address,$Phone,$fax,$Hotline,$Email,$Website,$Map,$Address_hcm,$Phone_hcm,$fax_hcm,$Hotline_hcm,$Email_hcm,$Map_hcm;
+    public $Id,$Logo,$Icon,$banner_email,$footer_email,$Name,$Address,$Phone,$fax,$Hotline,$Email,$Website,$Map,$Address_hcm,$Phone_hcm,$fax_hcm,$Hotline_hcm,$Email_hcm,$Map_hcm;
     public function config($data=array())
     {
     $this->Id=isset($data['Id'])?$data['Id']:'';
     $this->Logo=isset($data['Logo'])?$data['Logo']:'';
     $this->Icon=isset($data['Icon'])?$data['Icon']:'';
+        $this->banner_email=isset($data['banner_email'])?$data['banner_email']:'';
+        $this->footer_email=isset($data['footer_email'])?$data['footer_email']:'';
     $this->Name=isset($data['Name'])?$data['Name']:'';
     $this->Address=isset($data['Address'])?$data['Address']:'';
     $this->Phone=isset($data['Phone'])?$data['Phone']:'';
@@ -28,6 +30,8 @@ class config
             $this->Id=addslashes($this->Id);
             $this->Logo=addslashes($this->Logo);
             $this->Icon=addslashes($this->Icon);
+            $this->banner_email=addslashes($this->banner_email);
+            $this->footer_email=addslashes($this->footer_email);
             $this->Name=addslashes($this->Name);
             $this->Address=addslashes($this->Address);
             $this->Phone=addslashes($this->Phone);
@@ -48,6 +52,8 @@ class config
             $this->Id=stripslashes($this->Id);
             $this->Logo=stripslashes($this->Logo);
             $this->Icon=stripslashes($this->Icon);
+            $this->banner_email=stripslashes($this->banner_email);
+            $this->footer_email=stripslashes($this->footer_email);
             $this->Name=stripslashes($this->Name);
             $this->Address=stripslashes($this->Address);
             $this->Phone=stripslashes($this->Phone);

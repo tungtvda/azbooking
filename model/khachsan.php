@@ -2,12 +2,13 @@
 
 class khachsan
 {
-    public $id, $danhmuc_id, $highlights, $name, $name_url, $start, $price, $dichvu, $img, $address, $phone, $email, $map, $content, $title, $keyword, $description;
+    public $id, $danhmuc_id,$danhmuc2_id, $highlights, $name, $name_url, $start, $price, $dichvu, $img, $address, $phone, $email, $map, $content, $title, $keyword, $description;
 
     public function khachsan($data = array())
     {
         $this->id = isset($data['id']) ? $data['id'] : '';
         $this->danhmuc_id = isset($data['danhmuc_id']) ? $data['danhmuc_id'] : '';
+        $this->danhmuc2_id = isset($data['danhmuc2_id']) ? $data['danhmuc2_id'] : '';
         $this->highlights = isset($data['highlights']) ? $data['highlights'] : '';
         $this->name = isset($data['name']) ? $data['name'] : '';
         $this->name_url = isset($data['name_url']) ? $data['name_url'] : '';
@@ -30,6 +31,7 @@ class khachsan
     {
         $this->id = addslashes($this->id);
         $this->danhmuc_id = addslashes($this->danhmuc_id);
+        $this->danhmuc2_id = addslashes($this->danhmuc2_id);
         $this->highlights = addslashes($this->highlights);
         $this->name = addslashes($this->name);
         $this->name_url = addslashes($this->name_url);
@@ -51,6 +53,7 @@ class khachsan
     {
         $this->id = stripslashes($this->id);
         $this->danhmuc_id = stripslashes($this->danhmuc_id);
+        $this->danhmuc2_id = stripslashes($this->danhmuc2_id);
         $this->highlights = stripslashes($this->highlights);
         $this->name = stripslashes($this->name);
         $this->name_url = stripslashes($this->name_url);
