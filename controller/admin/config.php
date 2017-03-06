@@ -63,7 +63,11 @@ if(isset($_SESSION["Admin"]))
        if(!isset($array['Logo']))
        $array['Logo']='0';
        if(!isset($array['Icon']))
-       $array['Icon']='0';
+        $array['Icon']='0';
+        if(!isset($array['banner_email']))
+            $array['banner_email']='0';
+        if(!isset($array['footer_email']))
+            $array['footer_email']='0';
        if(!isset($array['Name']))
        $array['Name']='0';
        if(!isset($array['Address']))

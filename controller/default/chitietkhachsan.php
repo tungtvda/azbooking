@@ -32,9 +32,17 @@ $url='';
 $banner='';
 $link_detail='';
 $danhmuc_1 = danhmuc_khachsan_getById($data['detail'][0]->danhmuc_id);
+$danhmuc_2 = danhmuc_khachsan_2_getById($data['detail'][0]->danhmuc2_id);
+
 if(count($danhmuc_1)>0)
 {
-    $url='<li><a href="'.SITE_NAME.'">Trang chủ</a></li><li><a href="'.SITE_NAME.'/khach-san/">'.$data['menu'][2]->name.'</a></li><li><a href="'.SITE_NAME.'/khach-san/'.$danhmuc_1[0]->name_url.'/">'.$danhmuc_1[0]->name.'</a></li><li><span>'.$data['detail'][0]->name.'</span></li>';
+    $link_danhmuc_2='';
+
+    if(count($danhmuc_2)>0){
+        $link_dm2=link_danhmuc_khachsan_2($danhmuc_2[0],$danhmuc_1[0]->name_url);
+        $link_danhmuc_2='<li><a href="'.$link_dm2.'">'.$danhmuc_2[0]->name.'</a></li>';
+    }
+    $url='<li><a href="'.SITE_NAME.'">Trang chủ</a></li><li><a href="'.SITE_NAME.'/khach-san/">'.$data['menu'][2]->name.'</a></li><li><a href="'.SITE_NAME.'/khach-san/'.$danhmuc_1[0]->name_url.'/">'.$danhmuc_1[0]->name.'</a></li>'.$link_danhmuc_2;
     $banner=$danhmuc_1[0]->img;
     $link_detail=link_khachsandetail($data['detail'][0],$danhmuc_1[0]->name_url,'');
 }

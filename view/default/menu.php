@@ -69,8 +69,25 @@ function view_menu($data = array())
     $asign['danhmuc_khachsan'] ='';
     if(count($data['danhmuc_khachsan'])>0)
     {
-        $asign['danhmuc_khachsan'] = print_item('menu_item', $data['danhmuc_khachsan']);
+//        $asign['danhmuc_khachsan'] = print_item('menu_item', $data['danhmuc_khachsan']);
+        $asign['danhmuc_khachsan'] .='<ul class="sub-menu">';
+        foreach($data['danhmuc_khachsan'] as $row){
+            $link_dm1=link_danhmuc_khachsan($row);
+            $asign['danhmuc_khachsan'] .='<li class="menu-item-has-children"><a href="'.$link_dm1.'">'.$row->name.'</a>';
+            $data_danhmuc2=danhmuc_khachsan_2_getByTop('','id!=1 and danhmuc_id='.$row->id,'position asc');
+            if(count($data_danhmuc2)>0){
+                $asign['danhmuc_khachsan'] .='<ul class="sub-menu">';
+                foreach($data_danhmuc2 as $row2){
+                    $link_dm2=link_danhmuc_khachsan_2($row2,$row->name_url);
+                    $asign['danhmuc_khachsan'] .='<li><a href="'.$link_dm2.'">'.$row2->name.'</a></li>';
+                }
+                $asign['danhmuc_khachsan'] .='</ul>';
+            }
+            $asign['danhmuc_khachsan'] .='</li>';
+        }
+        $asign['danhmuc_khachsan'] .='</ul>';
     }
+
     $asign['danhmuc_tintuc'] ='';
     if(count($data['danhmuc_tintuc'])>0)
     {

@@ -15,6 +15,42 @@ require_once DIR . '/common/paging.php';
 require_once DIR . '/common/redict.php';
 $data['menu']=menu_getByTop('','','');
 $data['config']=config_getByTop(1,'','');
+if(isset($_GET['Id_sub'])&&$_GET['Id_sub']!=''){
+    if(isset($_GET['Id'])&&$_GET['Id']!=''){
+        $id=addslashes(strip_tags($_GET['Id']));
+    }
+    else{
+        redict(SITE_NAME);
+    }
+    $Id_sub=addslashes(strip_tags($_GET['Id_sub']));
+    $danhmuc2=danhmuc_khachsan_2_getByTop(1,'name_url="'.$Id_sub.'"','');
+    if(count($danhmuc2)==0){
+        redict(SITE_NAME);
+    }
+    $id=addslashes(strip_tags($_GET['Id']));
+    $danhmuc=danhmuc_khachsan_getByTop(1,'name_url="'.$id.'"','');
+    if(count($danhmuc)==0){
+        redict(SITE_NAME);
+    }
+    $dk='danhmuc2_id='.$danhmuc2[0]->id;
+
+    $data['current']=isset($_GET['page'])?$_GET['page']:'1';;
+    $data['pagesize']=9;
+    $data['count']=khachsan_count($dk);
+    $data['danhsach']=khachsan_getByPaging($data['current'],$data['pagesize'],'id desc',$dk);
+    $data['PAGING'] = showPagingAtLink($data['count'], $data['pagesize'], $data['current'], '' . SITE_NAME . '/khach-san/'.$danhmuc[0]->name_url.'/');
+    $name=$danhmuc2[0]->name;
+    $link_dm1=link_danhmuc_khachsan($danhmuc[0]);
+    $data['banner']=array(
+        'banner_img'=>$danhmuc2[0]->img,
+        'name'=>$name,
+        'url'=>'<li><a href="'.SITE_NAME.'">Trang chủ</a></li><li><a href="'.SITE_NAME.'/khach-san/">'.$data['menu'][2]->name.'</a></li><li><a href="'.$link_dm1.'">'.$danhmuc[0]->name.'</a></li><li><span>'.$name.'</span></li>'
+    );
+    $data['link_anh']=$danhmuc[0]->img;
+    $title=$danhmuc[0]->title;
+    $description=$danhmuc[0]->description;
+    $keyword=$danhmuc[0]->keyword;
+}else{
     if(isset($_GET['Id'])&&$_GET['Id']!=''){
         $id=addslashes(strip_tags($_GET['Id']));
         $danhmuc=danhmuc_khachsan_getByTop(1,'name_url="'.$id.'"','');
@@ -25,8 +61,8 @@ $data['config']=config_getByTop(1,'','');
 
         $data['current']=isset($_GET['page'])?$_GET['page']:'1';;
         $data['pagesize']=9;
-        $data['count']=khachsan_count($dk);
-        $data['danhsach']=khachsan_getByPaging($data['current'],$data['pagesize'],'id desc',$dk);
+        $data['count']=danhmuc_khachsan_2_count($dk);
+        $data['danhsach']=danhmuc_khachsan_2_getByPaging($data['current'],$data['pagesize'],'id desc',$dk);
         $data['PAGING'] = showPagingAtLink($data['count'], $data['pagesize'], $data['current'], '' . SITE_NAME . '/khach-san/'.$danhmuc[0]->name_url.'/');
         $name=$danhmuc[0]->name;
         $data['banner']=array(
@@ -34,6 +70,7 @@ $data['config']=config_getByTop(1,'','');
             'name'=>$name,
             'url'=>'<li><a href="'.SITE_NAME.'">Trang chủ</a></li><li><a href="'.SITE_NAME.'/khach-san/">'.$data['menu'][2]->name.'</a></li><li><span>'.$name.'</span></li>'
         );
+        $data['danhmuc_cap1']=1;
         $data['link_anh']=$danhmuc[0]->img;
         $title=$danhmuc[0]->title;
         $description=$danhmuc[0]->description;
@@ -56,6 +93,8 @@ $data['config']=config_getByTop(1,'','');
         $description=$data['menu'][2]->description;
         $keyword=$data['menu'][2]->keyword;
     }
+}
+
 
 $data['tab_tour_title']='';
 $data['tab_khachsan_title']='active_tab_left';

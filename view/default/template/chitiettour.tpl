@@ -22,6 +22,9 @@
                                 <!--<p class="price"><i class="icon-dollar"></i> Mã tour:
                                     <ins><span class="parameter"> {code}</span></ins>
                                 </p>-->
+                                <p class="price"><i class="icon-dollar"></i> Điểm khởi hành:
+                                    <ins><span class="parameter"> {khoihanh}</span></ins>
+                                </p>
                                 <p class="price"><i class="icon-dollar"></i> Khởi hành:
                                     <ins><span class="parameter"> {departure_time}</span></ins>
                                 </p>

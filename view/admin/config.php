@@ -33,7 +33,7 @@ function view_config($data)
 //
 function showTableHeader()
 {
-    return '<th>Id</th><th>Logo</th><th>Icon</th><th>Tên</th>';
+    return '<th>Id</th><th>Logo</th><th>Icon</th><th>Banner email</th><th>Footer email</th><th>Tên</th>';
 }
 //
 function showTableBody($data)
@@ -45,6 +45,8 @@ function showTableBody($data)
         $TableBody.="<td>".$obj->Id."</td>";
         $TableBody.="<td><img src=\"".$obj->Logo."\" width=\"50px\" height=\"50px\"/> </td>";
         $TableBody.="<td><img src=\"".$obj->Icon."\" width=\"50px\" height=\"50px\"/> </td>";
+        $TableBody.="<td><img src=\"".$obj->banner_email."\" width=\"50px\" height=\"50px\"/> </td>";
+        $TableBody.="<td><img src=\"".$obj->footer_email."\" width=\"50px\" height=\"50px\"/> </td>";
         $TableBody.="<td>".$obj->Name."</td>";
         $TableBody.="<td><a href=\"?action=edit&Id=".$obj->Id."\" title=\"Edit\"><img src=\"".SITE_NAME."/view/admin/Themes/images/pencil.png\" alt=\"Edit\"></a>";
 //        $TableBody.="<a href=\"?action=delete&Id=".$obj->Id."\" title=\"Delete\" onClick=\"return confirm('Bạn có chắc chắc muốn xóa?')\"><img src=\"".SITE_NAME."/view/admin/Themes/images/cross.png\" alt=\"Delete\"></a> ";
@@ -59,6 +61,8 @@ function showFrom($form,$ListKey=array())
     $str_from='';
     $str_from.='<p><label>Logo</label><input class="text-input small-input" type="text"  name="Logo" value="'.(($form!=false)?$form->Logo:'').'"/><a class="button" onclick="openKcEditor(\'Logo\');">Upload ảnh</a></p>';
     $str_from.='<p><label>Icon</label><input class="text-input small-input" type="text"  name="Icon" value="'.(($form!=false)?$form->Icon:'').'"/><a class="button" onclick="openKcEditor(\'Icon\');">Upload ảnh</a></p>';
+    $str_from.='<p><label>banner_email</label><input class="text-input small-input" type="text"  name="banner_email" value="'.(($form!=false)?$form->banner_email:'').'"/><a class="button" onclick="openKcEditor(\'banner_email\');">Upload ảnh</a></p>';
+    $str_from.='<p><label>footer_email</label><input class="text-input small-input" type="text"  name="footer_email" value="'.(($form!=false)?$form->footer_email:'').'"/><a class="button" onclick="openKcEditor(\'footer_email\');">Upload ảnh</a></p>';
     $str_from.='<p><label>Tên</label><input class="text-input small-input" type="text"  name="Name" value="'.(($form!=false)?$form->Name:'').'" /></p>';
     $str_from.='<p><label>Địa chỉ</label><input class="text-input small-input" type="text"  name="Address" value="'.(($form!=false)?$form->Address:'').'" /></p>';
     $str_from.='<p><label>Điện Thoại</label><input class="text-input small-input" type="text"  name="Phone" value="'.(($form!=false)?$form->Phone:'').'" /></p>';
