@@ -45,7 +45,7 @@ if(isset($_GET['Id_sub'])&&$_GET['Id_sub']!=''){
 //            $data['danhsach']=tour_getByPaging($data['current'],$data['pagesize'],'id desc',$dk);
             $pagesize=9;
             $arr_push=array();
-            $data_all=tour_getByTop('','','id desc');
+            $data_all=tour_getByTop('','','updated desc');
 
             foreach($data_all as $row){
                 $arr_check=explode(',',$row->danhmuc_multi);
@@ -114,7 +114,7 @@ else{
             $data['current']=isset($_GET['page'])?$_GET['page']:'1';;
             $data['pagesize']=9;
             $data['count']=tour_count($dk);
-            $data['danhsach']=tour_getByPaging($data['current'],$data['pagesize'],'id desc',$dk);
+            $data['danhsach']=tour_getByPaging($data['current'],$data['pagesize'],'updated desc',$dk);
             $data['PAGING'] = showPagingAtLink($data['count'], $data['pagesize'], $data['current'], '' . SITE_NAME . $link);
             $name=$data['menu'][1]->name;
             $data['banner']=array(
@@ -188,7 +188,7 @@ else{
         $data['current']=isset($_GET['page'])?$_GET['page']:'1';;
         $data['pagesize']=9;
         $data['count']=tour_count($dk);
-        $data['danhsach']=tour_getByPaging($data['current'],$data['pagesize'],'id desc',$dk);
+        $data['danhsach']=tour_getByPaging($data['current'],$data['pagesize'],'updated desc',$dk);
         $data['PAGING'] = showPagingAtLink($data['count'], $data['pagesize'], $data['current'], '' . SITE_NAME . $link);
         $name=$data_menu->name;
         $data['banner']=array(

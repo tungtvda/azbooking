@@ -148,6 +148,7 @@ if(isset($_SESSION["Admin"]))
        $array['inclusion']='0';
        if(!isset($array['exclusion']))
        $array['exclusion']='0';
+        $array['updated']=date(DATETIME_FORMAT);
       $new_obj=new tour($array);
         if($insert)
         {
