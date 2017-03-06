@@ -1,7 +1,7 @@
 <?php
 class tour
 {
-    public $id,$tour_quoc_te,$DanhMuc1Id,$DanhMuc2Id,$danhmuc_multi,$promotion,$packages,$name,$name_url,$count_down,$code,$img,$price_sales,$price,$price_2,$price_3,$price_4,$price_5,$price_6,$durations,$departure,$departure_time,$destination,$vehicle,$hotel,$summary,$highlights,$schedule,$price_list,$content,$list_img,$title,$keyword,$description,$inclusion,$exclusion;
+    public $id,$tour_quoc_te,$DanhMuc1Id,$DanhMuc2Id,$danhmuc_multi,$promotion,$packages,$name,$name_url,$count_down,$code,$img,$price_sales,$price,$price_2,$price_3,$price_4,$price_5,$price_6,$durations,$departure,$departure_time,$destination,$vehicle,$hotel,$summary,$highlights,$schedule,$price_list,$content,$list_img,$title,$keyword,$description,$inclusion,$exclusion, $updated;
     public function tour($data=array())
     {
     $this->id=isset($data['id'])?$data['id']:'';
@@ -40,6 +40,7 @@ class tour
     $this->description=isset($data['description'])?$data['description']:'';
     $this->inclusion=isset($data['inclusion'])?$data['inclusion']:'';
     $this->exclusion=isset($data['exclusion'])?$data['exclusion']:'';
+        $this->updated=isset($data['updated'])?$data['updated']:'';
 //          $this->encode();
     }
     public function encode()
@@ -80,6 +81,7 @@ class tour
             $this->description=addslashes($this->description);
 //            $this->inclusion=addslashes($this->inclusion);
 //            $this->exclusion=addslashes($this->exclusion);
+        $this->updated=addslashes($this->updated);
         }
     public function decode()
         {
@@ -119,5 +121,7 @@ class tour
             $this->description=stripslashes($this->description);
 //            $this->inclusion=stripslashes($this->inclusion);
 //            $this->exclusion=stripslashes($this->exclusion);
+        $this->updated=stripslashes($this->updated);
+
         }
 }

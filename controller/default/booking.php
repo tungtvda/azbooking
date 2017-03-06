@@ -284,6 +284,17 @@ if (count($data_tour) > 0) {
                                 border-top: 1px solid #ddd;"><span style=" color: #0091ea;
                                 font-weight: bold;">' . date('d-m-Y H:i:s', strtotime(_returnGetDateTime())) . '</span></td>
                             </tr>
+                            <tr>
+                                <td style="width: 30%;padding: 8px;
+                                line-height: 1.42857143;
+                                vertical-align: top;
+                                border-top: 1px solid #ddd;">Yêu cầu</td>
+                                <td style="width: 70%;padding: 8px;
+                                line-height: 1.42857143;
+                                vertical-align: top;
+                                border-top: 1px solid #ddd;"><span style=" color: #0091ea;
+                                font-weight: bold;">' . $request . '</span></td>
+                            </tr>
 
                         </table>
                     </div>

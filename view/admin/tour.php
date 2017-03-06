@@ -172,5 +172,6 @@ function showFrom($form,$ListKey=array())
     $str_from.='<p><label>description</label><input class="text-input small-input" type="text"  name="description" value="'.(($form!=false)?$form->description:'').'" /></p>';
     $str_from.='<p><label>inclusion</label><textarea name="inclusion">'.(($form!=false)?$form->inclusion:'').'</textarea><script type="text/javascript">CKEDITOR.replace(\'inclusion\'); </script></p>';
     $str_from.='<p><label>exclusion</label><textarea name="exclusion">'.(($form!=false)?$form->exclusion:'').'</textarea><script type="text/javascript">CKEDITOR.replace(\'exclusion\'); </script></p>';
+    $str_from.='<p hidden><label>updated</label><input class="text-input small-input" type="text"  name="updated" value="'.(($form!=false)?$form->updated:'').'" /></p>';
     return $str_from;
 }
