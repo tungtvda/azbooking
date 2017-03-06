@@ -42,7 +42,7 @@ if(isset($_GET['Id_sub'])&&$_GET['Id_sub']!=''){
     $name=$danhmuc2[0]->name;
     $link_dm1=link_danhmuc_khachsan($danhmuc[0]);
     $data['banner']=array(
-        'banner_img'=>$danhmuc2[0]->img,
+        'banner_img'=>$danhmuc2[0]->img_banner,
         'name'=>$name,
         'url'=>'<li><a href="'.SITE_NAME.'">Trang chủ</a></li><li><a href="'.SITE_NAME.'/khach-san/">'.$data['menu'][2]->name.'</a></li><li><a href="'.$link_dm1.'">'.$danhmuc[0]->name.'</a></li><li><span>'.$name.'</span></li>'
     );
