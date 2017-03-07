@@ -57,6 +57,7 @@
                        src="https://www.facebook.com/tr?id=1031554816897182&amp;ev=PageView&amp;noscript=1"
             /></noscript>
         <script type="text/javascript" src="{SITE-NAME}/view/default/themes/js/lib/jquery-1.11.2.min.js"></script>
+        <script src="//load.sumome.com/" data-sumo-site-id="e0ac176c5b8e65a2948988f7990fd6a49b91f26d7a674b7a191e39b057e6f7de" async="async"></script>
     </head>
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
