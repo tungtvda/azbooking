@@ -220,6 +220,10 @@ function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberfor
 
                 $ft->assign('link',link_newsdetail($item,$data_dm[0]->name_url));
             }
+            if(get_class($item)=='danhmuc_tintuc')
+            {
+                $ft->assign('link',link_news($item));
+            }
             if(get_class($item)=='dichvu')
             {
                 $content=$item->content;
@@ -385,11 +389,11 @@ function link_tourdetail($app,$name_url='',$name2_url='')
 
 function link_news($app)
 {
-    return SITE_NAME.'/tin-tuc/'.$app->name_url.'/';
+    return SITE_NAME.'/cam-nang/'.$app->name_url.'/';
 }
 function link_newsdetail($app,$name_url='')
 {
-    return SITE_NAME.'/tin-tuc/'.$name_url.'/'.$app->name_url.'.html';
+    return SITE_NAME.'/cam-nang/'.$name_url.'/'.$app->name_url.'.html';
 }
 function link_khachsandetail($app,$name_url='')
 {
