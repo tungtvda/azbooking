@@ -65,6 +65,16 @@
             /></noscript>
         <script type="text/javascript" src="{SITE-NAME}/view/default/themes/js/lib/jquery-1.11.2.min.js"></script>
         <script src="//load.sumome.com/" data-sumo-site-id="e0ac176c5b8e65a2948988f7990fd6a49b91f26d7a674b7a191e39b057e6f7de" async="async"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-93468700-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
     </head>
     <div id="fb-root"></div>
     <script>(function(d, s, id) {

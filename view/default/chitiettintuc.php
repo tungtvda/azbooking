@@ -17,7 +17,7 @@ function show_chitiet_tintuc($data = array())
     $asign['name_url']=$data['detail'][0]->name_url;
     $asign['id']= $data['detail'][0]->id;
     $asign['view']= $data['detail'][0]->view;
-    $asign['created']= $data['detail'][0]->created;
+    $asign['created']=date('d-m-Y H:i:s', strtotime($data['detail'][0]->created));
     $content=$data['detail'][0]->content;
     if (strlen($content) > 200) {
         $ten1=strip_tags($content);

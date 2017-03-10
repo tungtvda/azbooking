@@ -23,8 +23,8 @@ $data['detail']=news_getByTop('1','name_url="'.$id.'"','');
 if(count($data['detail'])==0){
     redict(SITE_NAME);
 }
-$view=$data['detail'][0]->view;
-$view++;
+ $view=$data['detail'][0]->view;
+ $view=$view+1;
 $view_update = new news();
 $view_update->id=$data['detail'][0]->id;
 $view_update->view=$view;
