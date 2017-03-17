@@ -6,7 +6,7 @@
 <div id="page-wrap">
     <!--<div class="preloader"></div>-->
     <header id="header-page">
-        <div class="header-page__inner" style="position: fixed;">
+        <div class="header-page__inner" style="position: fixed;top: 0px">
             <div class="container">
                 <div class="logo"><a href="{SITE-NAME}"><img src="{Logo}" alt="{Name}"></a></div>
                 <nav class="navigation awe-navigation" data-responsive="1200">
