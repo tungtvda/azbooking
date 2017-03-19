@@ -74,3 +74,6 @@ RewriteRule ^get-info-booking/$ controller/default/getinfobooking.php
 RewriteRule ^update-status-booking-hotel/$ controller/default/updatestatushotel.php
 
 RewriteRule ^google27f37442f4187815.html$ google27f37442f4187815.html
+
+
+RewriteRule ^booking$ controller/default/dattour.php
