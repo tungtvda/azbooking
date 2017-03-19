@@ -1,0 +1,1 @@
+INSERT INTO `azbk_az`.`menu` (`id`, `img`, `name`, `title`, `keyword`, `description`) VALUES ('16', '/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/848166.jpg', 'Đặt tour', 'Đặt tour', 'Đặt tour', 'Đặt tour');
