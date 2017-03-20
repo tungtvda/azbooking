@@ -92,13 +92,15 @@
     </div>
 </footer>
 </div>
-<script type="text/javascript" src="{SITE-NAME}/view/default/themes/js/lib/jquery-1.11.2.min.js"></script>
+<!--<script type="text/javascript" src="{SITE-NAME}/view/default/themes/js/lib/jquery-1.11.2.min.js"></script>-->
+<script type="text/javascript" src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
 <script type="text/javascript" src="{SITE-NAME}/view/default/themes/js/lib/masonry.pkgd.min.js"></script>
 <script type="text/javascript" src="{SITE-NAME}/view/default/themes/js/lib/jquery.parallax-1.1.3.js"></script>
 <script type="text/javascript" src="{SITE-NAME}/view/default/themes/js/lib/jquery.owl.carousel.js"></script>
 <script type="text/javascript" src="{SITE-NAME}/view/default/themes/js/lib/theia-sticky-sidebar.js"></script>
-<script type="text/javascript" src="{SITE-NAME}/view/default/themes/js/lib/jquery.magnific-popup.min.js"></script>
-<script type="text/javascript" src="{SITE-NAME}/view/default/themes/js/lib/jquery-ui.js"></script>
+<!--<script type="text/javascript" src="{SITE-NAME}/view/default/themes/js/lib/jquery.magnific-popup.min.js"></script>-->
+<!--<script type="text/javascript" src="{SITE-NAME}/view/default/themes/js/lib/jquery-ui.js"></script>
+<script type="text/javascript" src="{SITE-NAME}/view/default/themes/js/lib/jquery-ui.js"></script>-->
 <script type="text/javascript" src="{SITE-NAME}/view/default/themes/js/scripts.js"></script>
 <script type="text/javascript"
         src="{SITE-NAME}/view/default/themes/revslider-demo/js/jquery.themepunch.revolution.min.js"></script>
