@@ -816,7 +816,96 @@
         return (second - first) / (1000 * 60 * 60 * 24)
     }
 
+
+    // toàn bộ phần mới
+
+    $('body').on("blur", '#input_num_nguoi_lon', function () {
+        returnDanhSachDoan('#input_num_nguoi_lon');
+    });
+    $('body').on("blur", '#input_num_tre_em', function () {
+        returnDanhSachDoan('#input_num_tre_em');
+    });
+    $('body').on("blur", '#input_num_tre_em_5', function () {
+        returnDanhSachDoan('#input_num_tre_em_5');
+    });
+
+    function returnDanhSachDoan(id_field){
+        var value=$(id_field).val();
+        var id=$(id_field).attr('id_title');
+        var name_1=$('#input_num_nguoi_lon').attr('name_title');
+        var name_2=$('#input_num_tre_em').attr('name_title');
+        var name_3=$('#input_num_tre_em_5').attr('name_title');
+        if(value==''){
+            if(id==1){
+                $(id_field).val(1);
+            }
+            if(id==2||id==3){
+                $(id_field).val(0);
+            }
+        }
+        if(value==0&&id==1){
+            $(id_field).val(1);
+        }
+        var numbe_1=parseInt($('#input_num_nguoi_lon').val());
+        var numbe_2=parseInt($('#input_num_tre_em').val());
+        var numbe_3=parseInt($('#input_num_tre_em_5').val());
+        var so_cho=$('#input_so_cho').val();
+        var check_show_table=true;
+        var total=numbe_1+numbe_2+numbe_3;
+        $('#input_total_num').val(total);
+       if(so_cho!=undefined){
+           so_cho=parseInt(so_cho);
+           if(total>so_cho){
+               check_show_table=false;
+               $('#input_total_num').addClass("input-error").removeClass("valid");
+               $('#error_total_num').show().html('Số người bạn vừa nhập đã vượt quá số chỗ, bạn vui lòng nhập lại số người');
+           }else{
+               check_show_table=true;
+               $('#input_total_num').addClass("valid").removeClass("input-error");
+               $('#error_total_num').hide().html('Bạn vui lòng kiểm tra lại số người');
+           }
+       }
+        var row='';
+        var stt=1;
+        if(check_show_table==true){
+            $(".show_hide_table").html('');
+            for(var i=1;i<=numbe_1;i++){
+                row =row+'<tr id="row_customer_' + stt+ '"><td class="center stt_cus">' + stt + '</td>' +
+                        '<td><input style="height: 30px" name="name_customer_sub[]" id="input_name_customer_sub_' + stt + '" type="text"class="valid input_table"></td>' +
+                        '<td><input style="height: 30px" name="email_customer[]" id="input_email_customer_' + stt + '" type="text" class="valid input_table"></td>' +
+                        '<td><input style="height: 30px" name="phone_customer[]" id="input_phone_customer_' + stt + '" type="text" class="valid input_table"></td>' +
+                        '<td><input  style="height: 30px" name="address_customer[]" id="input_address_customer_' + stt + '" type="text" class="valid input_table"></td>' +
+                        '<td><input hidden value="1"  style="height: 30px" name="tuoi_customer[]" id="input_tuoi_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;">'+name_1+'</span></td>' +
+                        '</tr>';
+                stt=stt+1;
+            }
+            for(var j=1;j<=numbe_2;j++){
+                row =row+'<tr id="row_customer_' + stt+ '"><td class="center stt_cus">' + stt + '</td>' +
+                        '<td><input style="height: 30px" name="name_customer_sub[]" id="input_name_customer_sub_' + stt + '" type="text"class="valid input_table"></td>' +
+                        '<td><input style="height: 30px" name="email_customer[]" id="input_email_customer_' + stt + '" type="text" class="valid input_table"></td>' +
+                        '<td><input style="height: 30px" name="phone_customer[]" id="input_phone_customer_' + stt + '" type="text" class="valid input_table"></td>' +
+                        '<td><input  style="height: 30px" name="address_customer[]" id="input_address_customer_' + stt + '" type="text" class="valid input_table"></td>' +
+                        '<td><input hidden value="2"  style="height: 30px" name="tuoi_customer[]" id="input_tuoi_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;">'+name_2+'</span></td>' +
+                        '</tr>';
+                stt=stt+1;
+            }
+            for(var k=1;k<=numbe_3;k++){
+                row =row+'<tr id="row_customer_' + stt+ '"><td class="center stt_cus">' + stt + '</td>' +
+                        '<td><input style="height: 30px" name="name_customer_sub[]" id="input_name_customer_sub_' + stt + '" type="text"class="valid input_table"></td>' +
+                        '<td><input style="height: 30px" name="email_customer[]" id="input_email_customer_' + stt + '" type="text" class="valid input_table"></td>' +
+                        '<td><input style="height: 30px" name="phone_customer[]" id="input_phone_customer_' + stt + '" type="text" class="valid input_table"></td>' +
+                        '<td><input  style="height: 30px" name="address_customer[]" id="input_address_customer_' + stt + '" type="text" class="valid input_table"></td>' +
+                        '<td><input hidden value="3"  style="height: 30px" name="tuoi_customer[]" id="input_tuoi_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;">'+name_3+'</span></td>' +
+                        '</tr>';
+                stt=stt+1;
+            }
+            $(".show_hide_table").html(row);
+        }
+    }
+
+
 </script>
+<!--'<td><a id="stt_custommer_' + stt + '"  deleteid="' + stt + '"  title="Xóa khách hàng"  class="red btn_remove_customer" href="javascript:void()"><i class="ace-icon fa fa-trash-o bigger-130"></i></a></td>' +-->
 <link rel="stylesheet" type="text/css"
       href="{SITE-NAME}/view/default/themes/calendar/src/css/pignose.calender.css"/>
 <!--                                <script src="themes/calendar/dist/jquery-1.12.4.min.js"></script>-->

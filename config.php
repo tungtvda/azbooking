@@ -344,3 +344,28 @@ function returnRoomPrice($room){
     return  $room_rest;
 
 }
+
+function _return_mc_encrypt($encrypt)
+{
+    $encode = base64_encode($encrypt);
+    $encode = base64_encode($encode);
+    $encode = base64_encode($encode);
+    $encode = base64_encode($encode);
+    $encode = base64_encode($encode);
+    $encode = base64_encode($encode);
+    $encode = base64_encode($encode);
+    return $encode;
+}
+
+// Code giải mã
+function _return_mc_decrypt($decrypt)
+{
+    $decoded = base64_decode($decrypt);
+    $decoded = base64_decode($decoded);
+    $decoded = base64_decode($decoded);
+    $decoded = base64_decode($decoded);
+    $decoded = base64_decode($decoded);
+    $decoded = base64_decode($decoded);
+    $decoded = base64_decode($decoded);
+    return $decoded;
+}

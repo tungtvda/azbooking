@@ -45,7 +45,7 @@
                             <div itemprop="description"><p></p></div>
                             <div itemprop="description">
                                 <div style="float: left;width: 100%;" class="booking_detail_div grid grid_2">
-                                    <a href="#booking" class="booking_detail">BOOK NOW </a>
+                                    <a href="{link_booking}" class="booking_detail">ĐẶT NGAY </a>
                                     <div style="float: left;margin-top: 10px;margin-left: 10px;" class="social-share">
                                         <ul>
                                             <li><a href="https://www.facebook.com/sharer/sharer.php?u={link}" target="_blank"><i style="background-color: #ffffff"

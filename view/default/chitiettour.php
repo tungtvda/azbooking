@@ -168,6 +168,7 @@ function show_chitiet_tour($data = array())
         }
         $asign['quocgia'].=' </ul></div>';
     }
+    $asign['link_booking']=link_booking($data['detail'][0]);
 
     print_template($asign, 'chitiettour');
 }

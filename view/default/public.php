@@ -95,6 +95,14 @@ function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberfor
                 }
                 $ft->assign('show_sales',$show_sales);
                 $ft->assign('price_sales',$price_sales);
+                $ft->assign('link_booking',link_booking($item));
+                $songuoi='';
+                if($item->so_cho!=''){
+                    $songuoi='<div class="price" style="margin-top: 10px">
+            <ins><span style="font-size: 16px; color: #000000">Số người: '.$item->so_cho.'</span></ins>
+        </div>';
+                }
+                $ft->assign('so_nguoi',$songuoi);
                 if($item->price==0||$item->price==''){
                     $ft->assign('price_format','Liên hệ');
                 }
@@ -386,7 +394,9 @@ function link_tourdetail($app,$name_url='',$name2_url='')
     }
 
 }
-
+function link_booking($app){
+    return SITE_NAME.'/booking?id_booking='._return_mc_encrypt($app->id);
+}
 function link_news($app)
 {
     return SITE_NAME.'/cam-nang/'.$app->name_url.'/';
