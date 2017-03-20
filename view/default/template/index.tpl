@@ -75,10 +75,8 @@
     </div>
 </section>
 
-<section class="masonry-section-demo backgroup_tieuchi">
+<section class="masonry-section-demo" style="    background: #1897e9;">
     <div class="container">
-
-
             <div id="mda-why" class="clearfix">
                 <div class="mda-content">
                     <div class="mda-item-title-icon clearfix">
@@ -92,6 +90,5 @@
                     </div>
                 </div>
             </div>
-
     </div>
 </section>

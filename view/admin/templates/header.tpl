@@ -137,6 +137,7 @@
                         <li><a href="{SITE-NAME}/controller/admin/news.php">Danh sách</a></li>
                     </ul>
                 </li>
+                <li class="{kichhoat_httt}"><a href="{SITE-NAME}/controller/admin/httt.php"><span class="icon-pencil"></span> Hình thức thanh toán</a></li>
                 <li class="{kichhoat_tag}"><a href="{SITE-NAME}/controller/admin/tag.php"><span class="icon-pencil"></span> Tag</a></li>
                 <li class="{kichhoat_info}"><a href="{SITE-NAME}/controller/admin/info_mix.php"><span class="icon-tag"></span> Thông tin chính sách</a></li>
                 <li class="{kichhoat_hotro}"><a href="{SITE-NAME}/controller/admin/subport.php"><span class="icon-question-sign"></span> Hỗ trợ trực tuyến</a></li>

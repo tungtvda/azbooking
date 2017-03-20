@@ -178,20 +178,19 @@
                             <div class="col-md-12">
                                 <div style="background-color: #fff;padding: 10px;margin-bottom: 10px;"
                                      class="product-detail__info">
-                                    <div class="product-title"><h2>Qatar : Hanoi - NYC</h2></div>
+                                    <div class="product-title"><h2>{name}</h2></div>
 
                                     <p class="product-email"><i class="fa fa-barcode"></i> <a href="#">Mã tour:
-                                            12353534</a></p>
+                                            {code}</a></p>
                                     <p class="product-email"><i class="fa fa-clock-o"></i> <a href="#">Thời gian:
-                                            12353534</a></p>
-                                    <p class="product-email"><i class="fa fa-dollar"></i> <a href="#">Giá: 12353534</a>
+                                            {durations}</a></p>
+                                    <p class="product-email"><i class="fa fa-dollar"></i> <a href="#">Giá: {price_format}</a>
                                     </p>
                                     <p class="product-email"><i class="fa fa-calendar"></i> <a href="#">Ngày khởi hành:
-                                            12353534</a></p>
+                                            {departure_time}</a></p>
                                     <p class="product-email"><i class="fa fa-map-marker"></i> <a href="#">Nơi khởi hành:
-                                            12353534</a></p>
-                                    <p class="product-email"><i class="fa fa-sort-numeric-desc"></i> <a href="#">Số chỗ
-                                            còn nhận: 12353534</a></p>
+                                            {khoihanh}</a></p>
+                                   {so_cho}
                                 </div>
                                 <div class="checkout-page__content">
                                     <div style="padding: 10px;" class="yourcart-content">
@@ -207,8 +206,16 @@
                                                 </thead>
                                                 <tbody>
                                                 <tr>
-                                                    <td class=""><span>Room type 1</span></td>
-                                                    <td class=""><span class="amount">$ 253</span></td>
+                                                    <td class=""><span>{name_price}</span></td>
+                                                    <td class=""><span style="color: red" class="amount">{price_format}</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class=""><span>{name_price_2}</span></td>
+                                                    <td class=""><span style="color: red" class="amount">{price_2_format}</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class=""><span>{name_price_3}</span></td>
+                                                    <td class=""><span style="color: red" class="amount">{price_3_format}</span></td>
                                                 </tr>
                                                 </tbody>
                                             </table>
@@ -252,29 +259,31 @@
                                                 </div>
                                                 <div style="width: 100%;float: left;">
                                                     <div class="form-item so_nguoi">
-                                                        <label>Người lớn <span style="color: red">*</span></label>
-                                                        <input required="" value="1" min="1" type="number"
+                                                        <label>{name_price} <span style="color: red">*</span></label>
+                                                        <input id_title="1" name_title="{name_price}" required="" value="1" min="1" type="number" class="valid"
                                                                id="input_num_nguoi_lon" name="num_nguoi_lon">
                                                     </div>
                                                     <div class="form-item so_nguoi">
-                                                        <label>Trẻ em 5-11 tuổi </label>
-                                                        <input required="" value="0" min="0" type="number"
+                                                        <label>{name_price_2} </label>
+                                                        <input id_title="2" name_title="{name_price_2}" required="" value="0" min="0" type="number" class="valid"
                                                                id="input_num_tre_em" name="num_tre_em">
                                                     </div>
                                                     <div class="form-item so_nguoi">
-                                                        <label>Trẻ em dưới 5 tuổi</label>
-                                                        <input required="" value="0" min="0" type="number"
+                                                        <label>{name_price_3}</label>
+                                                        <input id_title="3" name_title="{name_price_3}" required="" value="0" min="0" type="number" class="valid"
                                                                id="input_num_tre_em_5" name="num_tre_em_5">
+                                                        {so_cho_input}
                                                     </div>
 
                                                     <div class="form-item so_nguoi">
                                                         <label>Tổng số người</label>
                                                         <input style="background-color: #eee;" disabled required=""
                                                                value="1" min="1"
-                                                               type="number" placeholder="" name="total_num"
-                                                               id="inpu_total_num">
+                                                               type="number" placeholder="" name="total_num" class="valid"
+                                                               id="input_total_num">
+
                                                     </div>
-                                                    <label style="padding-left: 10px;" id="error_num"
+                                                    <label style="padding-left: 10px;" id="error_total_num"
                                                            class="error_booking">Bạn vui lòng kiểm tra số lượng
                                                         người</label>
                                                 </div>
@@ -298,36 +307,31 @@
                                                         <th>Email</th>
                                                         <th>Điện thoại</th>
                                                         <th>Địa chỉ</th>
-                                                        <th>Xóa</th>
+                                                        <th>Độ tuổi</th>
                                                     </tr>
                                                     </thead>
-                                                    <tbody id="row_customer_1">
-                                                    <tr>
+                                                    <tbody class="show_hide_table">
+                                                    <tr class="row_customer_1">
                                                         <td class="center stt_cus">1</td>
                                                         <td>
-                                                            <input style="height: 30px" name="name_customer_sub[]"
-                                                                   id="input_name_customer_sub_1" type="text"
-                                                                   class="valid input_table">
+                                                            <input style="height: 30px" name="name_customer_sub[]" id="input_name_customer_sub_1" type="text"class="valid input_table">
                                                         </td>
                                                         <td>
-                                                            <input style="height: 30px" name="email_customer[]"
-                                                                   id="input_email_customer_1" type="text"
-                                                                   class="valid input_table">
+                                                            <input style="height: 30px" name="email_customer[]" id="input_email_customer_1" type="text" class="valid input_table">
                                                         </td>
                                                         <td>
-                                                            <input style="height: 30px" name="phone_customer[]"
-                                                                   id="input_phone_customer_1" type="text"
-                                                                   class="valid input_table">
+                                                            <input style="height: 30px" name="phone_customer[]" id="input_phone_customer_1" type="text" class="valid input_table">
                                                         </td>
                                                         <td>
-                                                            <input style="height: 30px" name="address_customer[]"
-                                                                   id="input_address_customer_1" type="text"
-                                                                   class="valid input_table">
+                                                            <input  style="height: 30px" name="address_customer[]" id="input_address_customer_1" type="text" class="valid input_table">
                                                         </td>
-                                                        <td><a id="stt_custommer_1" deleteid="1" title="Xóa khách hàng"
+                                                        <td>
+                                                            <input hidden  style="height: 30px" name="tuoi_customer[]" value="1" id="input_tuoi_customer_1" type="text" class="valid input_table">{name_price}
+                                                        </td>
+                                                        <!--<td><a id="stt_custommer_1" deleteid="1" title="Xóa khách hàng"
                                                                class="red btn_remove_customer" href="javascript:void()"><i
                                                                         class="ace-icon fa fa-trash-o bigger-130"></i></a>
-                                                        </td>
+                                                        </td>-->
                                                     </tr>
                                                     </tbody>
                                                 </table>

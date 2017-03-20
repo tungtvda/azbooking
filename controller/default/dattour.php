@@ -13,6 +13,16 @@ if(!defined('SITE_NAME'))
 require_once DIR.'/controller/default/public.php';
 require_once DIR . '/common/paging.php';
 require_once DIR . '/common/redict.php';
+if(!isset($_GET['id_booking'])){
+    redict(SITE_NAME);
+}
+$id=addslashes(strip_tags($_GET['id_booking']));
+$id=_return_mc_decrypt($id);
+$data['detail']=tour_getById($id);
+if(count($data['detail'])==0){
+    redict(SITE_NAME);
+}
+
 $data['menu']=menu_getByTop('','','');
 $data['config']=config_getByTop(1,'','');
 $active='';
