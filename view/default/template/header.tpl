@@ -33,8 +33,8 @@
         <link rel="stylesheet" type="text/css" href="{SITE-NAME}/view/default/themes/css/lib/awe-booking-font.css">
         <link rel="stylesheet" type="text/css" href="{SITE-NAME}/view/default/themes/css/lib/owl.carousel.css">
         <link rel="stylesheet" type="text/css" href="{SITE-NAME}/view/default/themes/css/lib/magnific-popup.css">
-        <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
-        <!--<link rel="stylesheet" type="text/css" href="{SITE-NAME}/view/default/themes/css/lib/jquery-ui.css">-->
+        <!--<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">-->
+        <link rel="stylesheet" type="text/css" href="{SITE-NAME}/view/default/themes/css/lib/jquery-ui.css">
         <link rel="stylesheet" type="text/css" href="{SITE-NAME}/view/default/themes/revslider-demo/css/settings.css">
         <link rel="stylesheet" type="text/css" href="{SITE-NAME}/view/default/themes/css/style.css">
         <link rel="stylesheet" type="text/css" href="{SITE-NAME}/view/default/themes/css/demo.css">

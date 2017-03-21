@@ -16,6 +16,9 @@ require_once DIR . '/common/redict.php';
 if(!isset($_GET['id_booking'])){
     redict(SITE_NAME);
 }
+//if(isset($_POST['name_customer'])){
+////    print_r($_POST);
+//}
 $id=addslashes(strip_tags($_GET['id_booking']));
 $id=_return_mc_decrypt($id);
 $data['detail']=tour_getById($id);

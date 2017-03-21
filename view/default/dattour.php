@@ -25,9 +25,9 @@ function show_dattour($data = array())
     $asign['price_4']= $data['detail'][0]->price_4;
     $asign['price_5']= $data['detail'][0]->price_5;
     $asign['price_6']= $data['detail'][0]->price_6;
-
     if($data['detail'][0]->price==0||$data['detail'][0]->price==''){
         $asign['price_format']='Liên hệ';
+        $asign['price']='Liên hệ';
     }
     else{
         $asign['price_format']= number_format($data['detail'][0]->price,0,",",".").' vnđ';
@@ -35,29 +35,46 @@ function show_dattour($data = array())
 
     if($data['detail'][0]->price_2==''){
         $asign['price_2_format']=$asign['price_format'];
+        $asign['price_2']=$asign['price'];
     }else{
         $asign['price_2_format']= number_format($data['detail'][0]->price_2,0,",",".").' vnđ';
     }
     if($data['detail'][0]->price_3==''){
         $asign['price_3_format']=$asign['price_format'];
+        $asign['price_3']=$asign['price'];
     }else{
         $asign['price_3_format']= number_format($data['detail'][0]->price_3,0,",",".").' vnđ';
     }
     if($data['detail'][0]->price_4==''){
         $asign['price_4_format']=$asign['price_format'];
+        $asign['price_4']=$asign['price'];
     }else{
         $asign['price_4_format']= number_format($data['detail'][0]->price_4,0,",",".").' vnđ';
     }
     if($data['detail'][0]->price_5==''){
         $asign['price_5_format']=$asign['price_format'];
+        $asign['price_5']=$asign['price'];
     }else{
         $asign['price_5_format']= number_format($data['detail'][0]->price_5,0,",",".").' vnđ';
     }
     if($data['detail'][0]->price_6==''){
         $asign['price_6_format']=$asign['price_format'];
+        $asign['price_6']=$asign['price'];
     }else{
         $asign['price_6_format']= number_format($data['detail'][0]->price_6,0,",",".").' vnđ';
     }
+    $asign['price_number']= $data['detail'][0]->price_number;
+    $asign['price_number_2']= $data['detail'][0]->price_number_2;
+    $asign['price_number_3']= $data['detail'][0]->price_number_3;
+    $asign['price_number_4']= $data['detail'][0]->price_number_4;
+    $asign['price_number_5']= $data['detail'][0]->price_number_5;
+    $asign['price_number_6']= $data['detail'][0]->price_number_6;
+
+    $asign['list_price_nguoi_lon']=returnInput_price($asign['price_number'],'price_nguoi_lon_');
+    $asign['list_price_tre_em_511']=returnInput_price($asign['price_number_2'],'price_tre_em_511_');
+    $asign['list_price_tre_em_5']=returnInput_price($asign['price_number_3'],'price_tre_em_5_');
+
+
     $asign['name_price']='Giá người lớn';
     $asign['name_price_2']='Giá trẻ em 5-11 tuổi';
     $asign['name_price_3']='Giá trẻ em dưới 5 tuổi';
@@ -111,9 +128,53 @@ function show_dattour($data = array())
     $asign['khoihanh']=$string_khoihanh;
     $asign['departure_time']=$data['detail'][0]->departure_time;
 
-
+    $data_httt=httt_getByTop('','','id asc');
+    $asign['httt']='';
+    $asign['httt_content']='';
+    if(count($data_httt)>0){
+        foreach($data_httt as $row_httt){
+            $asign['httt'].=' <li><label><input class="httt_check" name_value="httt_'.$row_httt->id.'" type="radio" name="httt" value="'.$row_httt->id.'"><i class="awe-icon awe-icon-check"></i>'.$row_httt->name.'</label></li>';
+            $asign['httt_content'].='<div class="hidden_content_httt" style="height: 150px;width: auto;overflow: scroll;margin-bottom: 20px" hidden id="httt_'.$row_httt->id.'">
+                                                                <p style="font-size: 16px; font-weight: bold">'.$row_httt->name.'</p>
+                                                                <p>
+                                                               '.$row_httt->content.'
+                                                                </p>
+                                                            </div>';
+        }
+    }
+    $data_dieu_khoan=dieu_khoan_getById(1);
+    $asign['content_dk']='';
+    if(count($data_dieu_khoan)>0){
+        $asign['content_dk']=$data_dieu_khoan[0]->content;
+    }
     print_template($asign, 'dattour');
 }
 
+function returnInput_price($price,$name_price){
+    $string='';
+    if($price!=''){
+        $array_price=explode(',',$price);
+        if(count($array_price)>0){
+            foreach($array_price as $row){
+                if($row!=''){
+                    $array_item=explode('-',$row);
+                    if(count($array_item)>0){
+                        if(isset($array_item[0])&&isset($array_item[1])&&$array_item[0]!=''&&$array_item[1]!=''){
+                           $check_lon_hon=strstr($array_item[0],">");
+                            $input_lon_hon='';
+                            if($check_lon_hon!=''){
+                                $number_lonhon=str_replace('>','',$check_lon_hon);
+                                $input_lon_hon='<input hidden value="'.$number_lonhon.'" id="input_'.$name_price.'tu" class="valid" name="'.$name_price.'tu">';
+                                $array_item[0]=str_replace('>','lon_hon_',$array_item[0]);
+                            }
+                            $string.='<input hidden value="'.$array_item[1].'" id="input_'.$name_price.$array_item[0].'" class="valid" name="'.$name_price.$array_item[0].'">'.$input_lon_hon;
 
+                        }
+                    }
+                }
+            }
+        }
+    }
+    return $string;
+}
 
