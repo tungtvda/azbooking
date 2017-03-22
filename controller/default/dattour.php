@@ -16,14 +16,55 @@ require_once DIR . '/common/redict.php';
 if(!isset($_GET['id_booking'])){
     redict(SITE_NAME);
 }
-//if(isset($_POST['name_customer'])){
-////    print_r($_POST);
-//}
 $id=addslashes(strip_tags($_GET['id_booking']));
 $id=_return_mc_decrypt($id);
 $data['detail']=tour_getById($id);
 if(count($data['detail'])==0){
     redict(SITE_NAME);
+}
+
+if(isset($_POST['name_customer'])){
+    $name_customer=_returnPostParamSecurity('name_customer');
+    $email=_returnPostParamSecurity('email');
+    $address=_returnPostParamSecurity('address');
+    $phone=_returnPostParamSecurity('phone');
+    $num_nguoi_lon=_returnPostParamSecurity('num_nguoi_lon');
+    $num_tre_em=_returnPostParamSecurity('num_tre_em');
+    $num_tre_em_5=_returnPostParamSecurity('num_tre_em_5');
+    $httt=_returnPostParamSecurity('httt');
+    $dieu_khoan=_returnPostParamSecurity('dieu_khoan');
+    $note=_returnPostParamSecurity('note');
+
+
+    if($name_customer!=''&&$email!=''&&$phone!=''&&$num_nguoi_lon!=''&&$httt!=''&&$dieu_khoan!='')
+    {
+        $name_customer_mahoa=_return_mc_encrypt($name_customer);
+        $email_mahoa=_return_mc_encrypt($email);
+        $phone_mahoa=_return_mc_encrypt($phone);
+        $num_nguoi_lon_mahoa=_return_mc_encrypt($num_nguoi_lon);
+        $httt_mahoa=_return_mc_encrypt($httt);
+        $note_mahoa=_return_mc_encrypt($note);
+        $nguontour_mahoa=_return_mc_encrypt($_SERVER['HTTP_HOST']);
+        $name_tour_mahoa=_return_mc_encrypt($data['detail'][0]->name);
+        $code_tour_mahoa=_return_mc_encrypt($data['detail'][0]->code);
+        $price=$data['detail'][0]->price;
+
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL,"http://manage.mixtourist.com.vn/booking-website/");
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS,
+            "name=tungtv&postvar2=value2&postvar3=value3");
+
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+        $server_output = curl_exec ($ch);
+
+        curl_close ($ch);
+
+        print_r($server_output);
+    }
+
+
 }
 
 $data['menu']=menu_getByTop('','','');

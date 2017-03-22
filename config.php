@@ -369,3 +369,22 @@ function _return_mc_decrypt($decrypt)
     $decoded = base64_decode($decoded);
     return $decoded;
 }
+function _returnGetParamSecurity($param)
+{
+    if (isset($_GET[$param])) {
+        $param_val = addslashes(strip_tags(trim($_GET[$param])));
+        return $param_val;
+    } else {
+        return '';
+    }
+}
+
+function _returnPostParamSecurity($param)
+{
+    if (isset($_POST[$param])) {
+        $param_val = addslashes(strip_tags(trim($_POST[$param])));
+        return $param_val;
+    } else {
+        return '';
+    }
+}

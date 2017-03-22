@@ -833,6 +833,7 @@
     $('body').on("click", '.httt_check', function () {
        var class_name=$(this).attr('name_value');
         $('.hidden_content_httt').hide();
+        $('#error_check_httt').hide().html('');
         $('#'+class_name).slideDown();
         $(this).addClass("valid").removeClass("input-error");
         $('#input_check_httt').addClass("valid").removeClass("input-error");
@@ -841,9 +842,11 @@
     $('body').on("click", '#input_dieu_khoan', function () {
         if ($(this).is(":checked"))
         {
+            $('#error_check_dieu_khoan').hide().html('');
             $('#input_dieu_khoan').addClass("valid").removeClass("input-error");
             $('#input_check_dieu_khoan').addClass("valid").removeClass("input-error");
         }else{
+            $('#error_check_dieu_khoan').show().html('Bạn vui lòng đồng ý với điều khoản và dịch vụ của chúng tôi');
             $('#input_dieu_khoan').addClass("input-error").removeClass("valid");
             $('#input_check_dieu_khoan').addClass("input-error").removeClass("valid");
         }
@@ -890,7 +893,13 @@
             showHiddenPhoneCustomer(0, mess);
         } else {
             var mess = '';
-            showHiddenPhoneCustomer(1, mess);
+           var check_phone=telephoneCheck(value);
+            if(check_phone==true){
+                showHiddenPhoneCustomer(1, mess);
+            }else{
+                showHiddenPhoneCustomer(0, 'Điện thoại không đúng định dạng');
+            }
+
         }
     }
     function showHiddenPhoneCustomer(res, mess) {
@@ -1191,7 +1200,7 @@
         var error_free = true;
         for (var input in form_data) {
             var name_input=form_data[input]['name'];
-            if (name_input != "note"&&name_input!='name_customer_sub[]'&&name_input!='email_customer[]'&&name_input!='phone_customer[]'&&name_input!='address_customer[]'&&name_input!='tuoi_customer[]'&&name_input!='httt') {
+            if (name_input != "note"&&name_input!='name_customer_sub[]'&&name_input!='email_customer[]'&&name_input!='phone_customer[]'&&name_input!='address_customer[]'&&name_input!='tuoi_customer[]'&&name_input!='httt'&&name_input!='dongia_customer[]') {
                 var element = $("#input_" + name_input);
                 var error = $("#error_" + name_input);
                 var valid = element.hasClass("valid");
@@ -1209,6 +1218,11 @@
 
     });
 
+
+    function telephoneCheck(str) {
+        var patt = new RegExp(/^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g);
+        return patt.test(str);
+    }
 
 </script>
 <!--'<td><a id="stt_custommer_' + stt + '"  deleteid="' + stt + '"  title="Xóa khách hàng"  class="red btn_remove_customer" href="javascript:void()"><i class="ace-icon fa fa-trash-o bigger-130"></i></a></td>' +-->
