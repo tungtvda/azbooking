@@ -394,7 +394,8 @@
                                                 </div>
                                                 <div class="content-title"><h2><i
                                                                 class="awe-icon fa fa-credit-card "></i>Hình
-                                                        thức thanh toán <label id="error_check_httt"
+                                                        thức thanh toán
+                                                        </br><label id="error_check_httt"
                                                                                class="error_booking">Bạn vui lòng chọn
                                                             hình thức thanh toán</label></h2>
 
@@ -416,6 +417,7 @@
 
                                                 <div class="content-title" style="margin-top: 20px"><h2><i
                                                                 class="awe-icon fa fa-check "></i>Điều khoản bắt buộc khi đăng ký online
+                                                        </br>
                                                         <label id="error_check_dieu_khoan"
                                                                class="error_booking">Bạn vui lòng đồng ý với điều khoản và dịch vụ cảu chúng tôi</label>
                                                     </h2></div>
