@@ -318,6 +318,9 @@
                                                                class="error_booking">Bạn vui lòng kiểm tra số lượng
                                                             người</label>
                                                     </div>
+                                                    <div style="width: 100%; float: left;">
+                                                       {date_select}
+                                                    </div>
                                                     <div class="form-textarea-wrapper" style="width: 100%">
                                                         <label>Ghi chú</label>
                                                     <textarea style="background-color: #ffffff" name="note"

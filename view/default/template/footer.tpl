@@ -1202,14 +1202,25 @@
             var name_input=form_data[input]['name'];
             if (name_input != "note"&&name_input!='name_customer_sub[]'&&name_input!='email_customer[]'&&name_input!='phone_customer[]'&&name_input!='address_customer[]'&&name_input!='tuoi_customer[]'&&name_input!='httt'&&name_input!='dongia_customer[]') {
                 var element = $("#input_" + name_input);
-                var error = $("#error_" + name_input);
-                var valid = element.hasClass("valid");
-                if (valid == false) {
-                    console.log(name_input);
-                    element.addClass("input-error").removeClass("valid");
-                    error.show();
-                    error_free = false
+
+                    var error = $("#error_" + name_input);
+                    var valid = element.hasClass("valid");
+                if(name_input=="ngay_khoi_hanh"){
+                    var ngay_khoi_hanh= $( "#input_select_ngay_khoi_hanh option:selected" ).val();
+                    if(ngay_khoi_hanh==''){
+                        valid=false;
+                    }else{
+                        valid=true;
+                    }
                 }
+                    if (valid == false) {
+                        console.log(name_input);
+                        element.addClass("input-error").removeClass("valid");
+                        error.show();
+                        error_free = false
+                    }
+
+
             }
         }
         if (error_free != false) {
@@ -1217,8 +1228,57 @@
         }
 
     });
+    $('body').on("input", '#input_ngay_khoi_hanh', function () {
+        checkNgayKhoiHanh();
+    });
+    $('body').on("keyup", '#input_ngay_khoi_hanh', function () {
+        checkNgayKhoiHanh();
+    });
+    $('body').on("change", '#input_ngay_khoi_hanh', function () {
+        checkNgayKhoiHanh();
+    });
+    // check ngày bắt đầu
+    function checkNgayKhoiHanh() {
+        var value = $("#input_ngay_khoi_hanh").val();
+        if (value == '') {
+            var mess = 'Bạn vui lòng chọn ngày bắt đầu';
+            showHiddenNgayKhoiHanh(0, mess);
+        } else {
+            var value_date = value.split("-");
+            var value = new Date(value_date[2], value_date[1] - 1, value_date[0]);
+            var mess = '';
+            var res = 0;
+            var eighteenYearsAgo = moment().subtract(18, "years");
+            var birthday = moment(value);
 
-
+            if (!birthday.isValid()) {
+                mess = "Không đúng định dạng ngày tháng năm";
+            }
+            else {
+                mess = '';
+                res = 1;
+            }
+            //var mess='';
+            showHiddenNgayKhoiHanh(res, mess);
+        }
+    }
+    function showHiddenNgayKhoiHanh(res, mess) {
+        var error_ngay_khoi_hanh = $("#error_ngay_khoi_hanh");
+        if (res == 1) {
+            error_ngay_khoi_hanh.hide();
+            $('#input_ngay_khoi_hanh').removeClass("input-error").addClass("valid");
+        }
+        else {
+            if (res != 0) {
+                mess = res;
+            }
+            $('#input_ngay_khoi_hanh').addClass("input-error").removeClass("valid");
+            error_ngay_khoi_hanh.removeClass("success-color");
+            error_ngay_khoi_hanh.addClass("error-color");
+            error_ngay_khoi_hanh.html(mess);
+            error_ngay_khoi_hanh.show();
+        }
+    }
     function telephoneCheck(str) {
         var patt = new RegExp(/^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g);
         return patt.test(str);

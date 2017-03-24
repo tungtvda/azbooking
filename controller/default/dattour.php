@@ -24,6 +24,13 @@ if(count($data['detail'])==0){
 }
 
 if(isset($_POST['name_customer'])){
+    $name_customer_sub=$_POST['name_customer_sub'];
+    $email_customer_sub=$_POST['email_customer'];
+    $phone_customer_sub=$_POST['phone_customer'];
+    $address_customer_sub=$_POST['address_customer'];
+    $tuoi_customer_sub=$_POST['tuoi_customer'];
+
+
     $name_customer=_returnPostParamSecurity('name_customer');
     $email=_returnPostParamSecurity('email');
     $address=_returnPostParamSecurity('address');
@@ -34,8 +41,13 @@ if(isset($_POST['name_customer'])){
     }
     $num_tre_em=_returnPostParamSecurity('num_tre_em');
     $num_tre_em_5=_returnPostParamSecurity('num_tre_em_5');
+   echo $ngay_khoi_hanh=_returnPostParamSecurity('ngay_khoi_hanh');
     $httt=_returnPostParamSecurity('httt');
+
     $dieu_khoan=_returnPostParamSecurity('dieu_khoan');
+    if($dieu_khoan=='on'||$dieu_khoan==1){
+        $dieu_khoan=1;
+    }
     $note=_returnPostParamSecurity('note');
     $price=$data['detail'][0]->price;
     $price_2=$data['detail'][0]->price_2;
@@ -58,8 +70,9 @@ if(isset($_POST['name_customer'])){
 
 
 
-    if($name_customer!=''&&$email!=''&&$phone!=''&&$num_nguoi_lon!=''&&$httt!=''&&$dieu_khoan!='')
+    if($name_customer!=''&&$email!=''&&$phone!=''&&$num_nguoi_lon!=''&&$httt!=''&&$dieu_khoan!=''&&$ngay_khoi_hanh!='')
     {
+        $string_info_booking='';
         $price_number= $data['detail'][0]->price_number;
         $price_number_2= $data['detail'][0]->price_number_2;
         $price_number_3= $data['detail'][0]->price_number_3;
@@ -82,23 +95,40 @@ if(isset($_POST['name_customer'])){
         $total_tre_em=0;
         $total_tre_em_5=0;
 
+
         $name_customer_mahoa=_return_mc_encrypt($name_customer);
         $email_mahoa=_return_mc_encrypt($email);
         $phone_mahoa=_return_mc_encrypt($phone);
+        $address_mahoa=_return_mc_encrypt($address);
         $num_nguoi_lon_mahoa=_return_mc_encrypt($num_nguoi_lon);
+        $num_tre_em_mahoa=_return_mc_encrypt($num_tre_em);
+        $num_tre_em_5_mahoa=_return_mc_encrypt($num_tre_em_5);
         $httt_mahoa=_return_mc_encrypt($httt);
         $note_mahoa=_return_mc_encrypt($note);
         $nguontour_mahoa=_return_mc_encrypt($_SERVER['HTTP_HOST']);
         $name_tour_mahoa=_return_mc_encrypt($data['detail'][0]->name);
         $code_tour_mahoa=_return_mc_encrypt($data['detail'][0]->code);
+        $id_tour_mahoa=_return_mc_encrypt($data['detail'][0]->id);
 
         $name_price_mahoa=_return_mc_encrypt($name_price);
         $name_price_2_mahoa=_return_mc_encrypt($name_price_2);
         $name_price_3_mahoa=_return_mc_encrypt($name_price_3);
 
-        $price_mahoa=$data['detail'][0]->price;
-        $price_2_mahoa=$data['detail'][0]->price_2;
-        $price_3_mahoa=$data['detail'][0]->price_3;
+        $price_mahoa=_return_mc_encrypt($data['detail'][0]->price);
+        $price_2_mahoa=_return_mc_encrypt($data['detail'][0]->price_2);
+        $price_3_mahoa=_return_mc_encrypt($data['detail'][0]->price_3);
+
+        $name_customer_sub_mahoa=_return_mc_encrypt(json_encode($name_customer_sub));
+        $email_customer_sub_mahoa=_return_mc_encrypt(json_encode($email_customer_sub));
+        $phone_customer_sub_mahoa=_return_mc_encrypt(json_encode($phone_customer_sub));
+        $address_customer_sub_mahoa=_return_mc_encrypt(json_encode($address_customer_sub));
+        $tuoi_customer_sub_mahoa=_return_mc_encrypt(json_encode($tuoi_customer_sub));
+
+
+        $price_new=$price;
+        $price_new_2=$price_2;
+        $price_new_3=$price_3;
+
 
 
         $check_total=1;
@@ -118,17 +148,21 @@ if(isset($_POST['name_customer'])){
         if($num_tre_em>1&&$price_2!='Liên hệ'){
             $array_price_so_nguoi_lon=returnArray_price($price_number_2,$array_price=array());
             if(count($array_price_so_nguoi_lon)>0){
-                 $price_new_2= price_new($num_tre_em,$array_price_so_nguoi_lon,$price_new_2);
+                $price_new_2= price_new($num_tre_em,$array_price_so_nguoi_lon,$price_new_2);
                 $total_tre_em=$num_tre_em*$price_new_2;
             }
         }else{
             if($num_tre_em==0){
                 $total_tre_em=0;
             }else{
-                if($price_2=='Liên hệ'){
-                    $total_tre_em='Liên hệ';
-                    $check_total=0;
+                if($num_tre_em==1){
+                    if($price_2=='Liên hệ'){
+                        $total_tre_em='Liên hệ';
+                        $check_total=0;
+                    }
+                    $total_tre_em=$price_2;
                 }
+
             }
 
         }
@@ -143,24 +177,78 @@ if(isset($_POST['name_customer'])){
             if($num_tre_em_5==0){
                 $total_tre_em_5=0;
             }else{
-                if($price_3=='Liên hệ'){
-                    $total_tre_em_5='Liên hệ';
-                    $check_total=0;
+                if($num_tre_em_5==1){
+                    if($price_3=='Liên hệ'){
+                        $total_tre_em_5='Liên hệ';
+                        $check_total=0;
+                    }
+                    $total_tre_em_5=$price_3;
                 }
+
             }
 
         }
         if($check_total==0){
             $total='Liên hệ';
         }else{
-          echo  $total=$total_nguoi_lon+$total_tre_em+$total_tre_em_5;
+            $total=$total_nguoi_lon+$total_tre_em+$total_tre_em_5;
         }
+        $price_new_mahoa=_return_mc_encrypt($price_new);
+        $price_new_2_mahoa=_return_mc_encrypt($price_new_2);
+        $price_new_3_mahoa=_return_mc_encrypt($price_new_3);
+
+        $name_price_mahoa=_return_mc_encrypt($name_price);
+        $name_price_2_mahoa=_return_mc_encrypt($name_price_2);
+        $name_price_3_mahoa=_return_mc_encrypt($name_price_3);
+
+        $string_info_booking.="name_customer=".$name_customer_mahoa;
+        $string_info_booking.="&email=".$email_mahoa;
+        $string_info_booking.="&phone=".$phone_mahoa;
+        $string_info_booking.="&address=".$address_mahoa;
+
+        $string_info_booking.="&ngay_khoi_hanh="._return_mc_encrypt($ngay_khoi_hanh);
+
+        $string_info_booking.="&id_tour=".$id_tour_mahoa;
+        $string_info_booking.="&name_tour=".$name_tour_mahoa;
+        $string_info_booking.="&code_tour=".$code_tour_mahoa;
+        $string_info_booking.="&ng_tour=".$nguontour_mahoa;
+        $string_info_booking.="&n1=".$num_nguoi_lon_mahoa;
+        $string_info_booking.="&n2=".$num_tre_em_mahoa;
+        $string_info_booking.="&n3=".$num_tre_em_5_mahoa;
+        $string_info_booking.="&po1=".$price_mahoa;
+        $string_info_booking.="&po2=".$price_2_mahoa;
+        $string_info_booking.="&po3=".$price_3_mahoa;
+        $string_info_booking.="&pn1=".$price_new_mahoa;
+        $string_info_booking.="&pn2=".$price_new_2_mahoa;
+        $string_info_booking.="&pn3=".$price_new_3_mahoa;
+        $string_info_booking.="&httt=".$httt_mahoa;
+        $string_info_booking.="&note=".$note_mahoa;
+
+        $string_info_booking.="&name_customer_sub=".$name_customer_sub_mahoa;
+        $string_info_booking.="&email_customer_sub=".$email_customer_sub_mahoa;
+        $string_info_booking.="&phone_customer_sub=".$phone_customer_sub_mahoa;
+        $string_info_booking.="&address_customer_sub=".$address_customer_sub_mahoa;
+        $string_info_booking.="&tuoi_customer_sub=".$tuoi_customer_sub_mahoa;
+
+        $string_info_booking.="&name_price=".$name_price_mahoa;
+        $string_info_booking.="&name_price_2=".$name_price_2_mahoa;
+        $string_info_booking.="&name_price_3=".$name_price_3_mahoa;
+
+        $string_info_booking.="&number="._return_mc_encrypt($price_number);
+        $string_info_booking.="&number_2="._return_mc_encrypt($price_number_2);
+        $string_info_booking.="&number_3="._return_mc_encrypt($price_number_3);
+        $string_info_booking.="&gen="._return_mc_encrypt(rand(1,9).'-tungtv');
+
+
+        $string_info_booking.="&tol="._return_mc_encrypt($total);
+
+
 
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL,"http://manage.mixtourist.com.vn/booking-website/");
+//        curl_setopt($ch, CURLOPT_URL,"http://manage.mixtourist.com.vn/booking-website/");
+        curl_setopt($ch, CURLOPT_URL,"http://localhost/manage_mix/booking-website/");
         curl_setopt($ch, CURLOPT_POST, 1);
-        curl_setopt($ch, CURLOPT_POSTFIELDS,
-            "name=tungtv&postvar2=value2&postvar3=value3");
+        curl_setopt($ch, CURLOPT_POSTFIELDS,$string_info_booking);
 
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
@@ -168,7 +256,7 @@ if(isset($_POST['name_customer'])){
 
         curl_close ($ch);
 
-//        print_r($server_output);
+        print_r($server_output);
     }
 
 
