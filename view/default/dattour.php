@@ -147,6 +147,71 @@ function show_dattour($data = array())
     if(count($data_dieu_khoan)>0){
         $asign['content_dk']=$data_dieu_khoan[0]->content;
     }
+
+
+    $asign['date_select']='<div class="form-item">
+                                                            <label>Ngày khởi hành <span style="color: red">*</span></label>
+                                                            <br>
+
+                                                            <select style="width: 100%; padding: 0px;height: 35px" name="ngay_khoi_hanh" id="input_select_ngay_khoi_hanh">';
+    $now = getdate();
+    $year_current=$now["year"];
+    if($data['detail'][0]->departure_time!=''&&$data['detail'][0]->departure_time!='Theo yêu cầu'&&$data['detail'][0]->departure_time!='theo yêu cầu'){
+        $arr_explode=explode(',',$data['detail'][0]->departure_time);
+        if(count($arr_explode)>0){
+            if(strlen($arr_explode[0])>=8){
+                $time_explode_0=$arr_explode[0];
+            }else{
+                $time_explode_0=$arr_explode[0].'-'.$year_current;
+            }
+            $asign['date_now']=date('Y-m-d', strtotime(trim($time_explode_0)));
+            $asign['date_now_vn'] =trim($time_explode_0);
+            foreach($arr_explode as $row){
+                $date=trim($row);
+                if(strlen($date)>=8){
+                    $time_format=$date;
+                }else{
+                    $time_format=$date.'-'.$year_current;
+                }
+                $validate= validateDate($time_format);
+                if($validate==false){
+                    $asign['date_select']='<div class="form-item">
+                                                            <label>Ngày khởi hành<span style="color: red">*</span></label>
+                                                            <input required="" type="date" id="input_ngay_khoi_hanh"
+                                                                   name="ngay_khoi_hanh">
+                                                            <label class="error_booking" id="error_ngay_khoi_hanh">Bạn vui lòng chọn ngày khởi hành</label>
+                                                        </div>';
+                    $khongtontai_delect=1;
+                    break;
+                }
+                $date_en=date('Y-m-d', strtotime(trim($time_format)));
+                $asign['date_select'].='<option value="'.$time_format.'">'.$time_format.'</option>';
+            }
+            if(!isset($khongtontai_delect)){
+                $asign['date_select'].=' </select>
+                                                            <label class="error_booking" id="error_ngay_khoi_hanh">Bạn vui lòng chọn ngày khởi hành</label>
+                                                        </div>';
+            }
+        }
+        else{
+            $asign['date_select']=' <div class="form-item">
+                                                            <label>Ngày khởi hành<span style="color: red">*</span></label>
+                                                            <input required="" type="date" id="input_ngay_khoi_hanh"
+                                                                   name="ngay_khoi_hanh">
+                                                            <label class="error_booking" id="error_ngay_khoi_hanh">Bạn vui lòng chọn ngày khởi hành</label>
+                                                        </div>';
+        }
+    }else{
+        $asign['date_select']=' <div class="form-item">
+                                                            <label>Ngày khởi hành<span style="color: red">*</span></label>
+                                                            <input required="" type="date" id="input_ngay_khoi_hanh"
+                                                                   name="ngay_khoi_hanh">
+                                                            <label class="error_booking" id="error_ngay_khoi_hanh">Bạn vui lòng chọn ngày khởi hành</label>
+                                                        </div>';
+    }
+
+
+
     print_template($asign, 'dattour');
 }
 
