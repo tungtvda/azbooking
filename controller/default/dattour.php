@@ -41,7 +41,7 @@ if(isset($_POST['name_customer'])){
     }
     $num_tre_em=_returnPostParamSecurity('num_tre_em');
     $num_tre_em_5=_returnPostParamSecurity('num_tre_em_5');
-   echo $ngay_khoi_hanh=_returnPostParamSecurity('ngay_khoi_hanh');
+    $ngay_khoi_hanh=_returnPostParamSecurity('ngay_khoi_hanh');
     $httt=_returnPostParamSecurity('httt');
 
     $dieu_khoan=_returnPostParamSecurity('dieu_khoan');
@@ -109,6 +109,7 @@ if(isset($_POST['name_customer'])){
         $name_tour_mahoa=_return_mc_encrypt($data['detail'][0]->name);
         $code_tour_mahoa=_return_mc_encrypt($data['detail'][0]->code);
         $id_tour_mahoa=_return_mc_encrypt($data['detail'][0]->id);
+        $phuong_tien=_return_mc_encrypt($data['detail'][0]->vehicle);
 
         $name_price_mahoa=_return_mc_encrypt($name_price);
         $name_price_2_mahoa=_return_mc_encrypt($name_price_2);
@@ -212,6 +213,7 @@ if(isset($_POST['name_customer'])){
         $string_info_booking.="&name_tour=".$name_tour_mahoa;
         $string_info_booking.="&code_tour=".$code_tour_mahoa;
         $string_info_booking.="&ng_tour=".$nguontour_mahoa;
+        $string_info_booking.="&phuong_tien=".$phuong_tien;
         $string_info_booking.="&n1=".$num_nguoi_lon_mahoa;
         $string_info_booking.="&n2=".$num_tre_em_mahoa;
         $string_info_booking.="&n3=".$num_tre_em_5_mahoa;
@@ -252,11 +254,15 @@ if(isset($_POST['name_customer'])){
 
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
-        $server_output = curl_exec ($ch);
-
+        $res = curl_exec ($ch);
         curl_close ($ch);
 
-        print_r($server_output);
+        if($res==0){
+            echo "<script>alert('Đặt tour thất bại, bạn vui lòng thử lại')</script>";
+        }else{
+            echo $res;
+        }
+
     }
 
 
