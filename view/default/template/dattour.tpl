@@ -342,7 +342,7 @@
                                                             <th>Điện thoại</th>
                                                             <th>Địa chỉ</th>
                                                             <th>Độ tuổi</th>
-                                                            <th>Đơn giá</th>
+                                                            <th>Đơn giá <i class="fa fa-sort-amount-desc "></i></th>
                                                         </tr>
                                                         </thead>
                                                         <tbody class="show_hide_table">
@@ -375,12 +375,12 @@
                                                                        class="valid input_table"><span
                                                                         style="font-size: 12px">{name_price}</span>
                                                             </td>
-                                                            <td style="width: 100px">
+                                                            <td style="width: 130px">
                                                                 <input hidden style="height: 30px"
                                                                        name="tuoi_customer[]" value="1"
                                                                        id="input_tuoi_customer_1" type="text"
                                                                        class="valid input_table"><span
-                                                                        style="color: red; font-size: 12px">{price_format}</span>
+                                                                        style="color: red; font-size: 12px">{price_format} (<i class="fa fa-long-arrow-down"></i>09%)</span>
                                                             </td>
                                                             <!--<td><a id="stt_custommer_1" deleteid="1" title="Xóa khách hàng"
                                                                    class="red btn_remove_customer" href="javascript:void()"><i
@@ -450,6 +450,7 @@
                                                 </div>
                                                 <div class="cart-footer">
                                                     <div class="cart-submit">
+                                                        <img id="loading" style="width: 150px; display: none" src="{SITE-NAME}/view/default/themes/images/loading.gif">
                                                         <input type="button" value="ĐẶT TOUR" id="submit_form_action"
                                                                class="checkout">
                                                     </div>

@@ -970,6 +970,7 @@
             price_3==price
         }
         var total_nguoi_lon=0;
+        var ti_le_nguoi_lon='';
         if(check_show_table==true){
             $(".show_hide_table").html('');
             if(numbe_1>0){
@@ -988,6 +989,16 @@
                         }else{
                             price_item= price_in_array.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.") + ' vnđ';
                             total_nguoi_lon=(price_in_array*numbe_1);
+
+                            ti_le_nguoi_lon=((price-price_in_array)/price)*100;
+                            ti_le_nguoi_lon = Math.round(ti_le_nguoi_lon);
+                            if(ti_le_nguoi_lon!=0){
+                                ti_le_nguoi_lon='(<i class="fa fa-long-arrow-down"></i>'+ti_le_nguoi_lon+'%)';
+                            }else{
+                                ti_le_nguoi_lon='';
+                            }
+
+
                         }
                     }else{
                         var price_tu=$('#input_price_nguoi_lon_tu').val();
@@ -999,6 +1010,14 @@
                                }else{
                                    price_item= price_in_array.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.") + ' vnđ';
                                    total_nguoi_lon=(price_in_array*numbe_1);
+
+                                   ti_le_nguoi_lon=((price-price_in_array)/price)*100;
+                                   ti_le_nguoi_lon = Math.round(ti_le_nguoi_lon);
+                                   if(ti_le_nguoi_lon!=0){
+                                       ti_le_nguoi_lon='(<i class="fa fa-long-arrow-down"></i>'+ti_le_nguoi_lon+'%)';
+                                   }else{
+                                       ti_le_nguoi_lon='';
+                                   }
                                }
                            }
                         }
@@ -1011,11 +1030,12 @@
                             '<td><input style="height: 30px" name="phone_customer[]" id="input_phone_customer_' + stt + '" type="text" class="valid input_table"></td>' +
                             '<td><input  style="height: 30px" name="address_customer[]" id="input_address_customer_' + stt + '" type="text" class="valid input_table"></td>' +
                             '<td><input hidden value="1"  style="height: 30px" name="tuoi_customer[]" id="input_tuoi_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;">'+name_1+'</span></td>' +
-                            '<td style="width: 100px"><input hidden value=""  style="height: 30px" name="dongia_customer[]" id="input_dongia_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;color: red">'+price_item+'</span></td>' +
+                            '<td style="width: 130px"><input hidden value=""  style="height: 30px" name="dongia_customer[]" id="input_dongia_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;color: red">'+price_item+' '+ti_le_nguoi_lon+'</span></td>' +
                             '</tr>';
                     stt=stt+1;
                 }
             }
+            var ti_le_tre_em_511='';
             var total_tre_em_511=0;
             if(numbe_2>0){
                 if(price_2==='Liên hệ'){
@@ -1033,6 +1053,14 @@
                         }else{
                             price_item= price_in_array.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.") + ' vnđ';
                             total_tre_em_511=(price_in_array*numbe_2);
+
+                            ti_le_tre_em_511=((price_2-price_in_array)/price_2)*100;
+                            ti_le_tre_em_511 = Math.round(ti_le_tre_em_511);
+                            if(ti_le_tre_em_511!=0){
+                                ti_le_tre_em_511='(<i class="fa fa-long-arrow-down"></i>'+ti_le_tre_em_511+'%)';
+                            }else{
+                                ti_le_tre_em_511='';
+                            }
                         }
                     }else{
                         var price_tu=$('#input_price_tre_em_511_tu').val();
@@ -1044,6 +1072,14 @@
                                 }else{
                                     price_item= price_in_array.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.") + ' vnđ';
                                     total_tre_em_511=(price_in_array*numbe_2);
+
+                                    ti_le_tre_em_511=((price_2-price_in_array)/price_2)*100;
+                                    ti_le_tre_em_511 = Math.round(ti_le_tre_em_511);
+                                    if(ti_le_tre_em_511!=0){
+                                        ti_le_tre_em_511='(<i class="fa fa-long-arrow-down"></i>'+ti_le_tre_em_511+'%)';
+                                    }else{
+                                        ti_le_tre_em_511='';
+                                    }
                                 }
                             }
                         }
@@ -1057,11 +1093,12 @@
                             '<td><input style="height: 30px" name="phone_customer[]" id="input_phone_customer_' + stt + '" type="text" class="valid input_table"></td>' +
                             '<td><input  style="height: 30px" name="address_customer[]" id="input_address_customer_' + stt + '" type="text" class="valid input_table"></td>' +
                             '<td><input hidden value="2"  style="height: 30px" name="tuoi_customer[]" id="input_tuoi_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;">'+name_2+'</span></td>' +
-                            '<td><input hidden value=""  style="height: 30px" name="dongia_customer[]" id="input_dongia_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;color: red">'+price_item+'</span></td>' +
+                            '<td><input hidden value=""  style="height: 30px" name="dongia_customer[]" id="input_dongia_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;color: red">'+price_item+' '+ti_le_tre_em_511+'</span></td>' +
                             '</tr>';
                     stt=stt+1;
                 }
             }
+            var ti_le_tre_em_5='';
             var total_tre_em_5=0;
             if(numbe_3>0){
                 if(price_3==='Liên hệ'){
@@ -1079,6 +1116,14 @@
                         }else{
                             price_item= price_in_array.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.") + ' vnđ';
                             total_tre_em_5=(price_in_array*numbe_3);
+
+                            ti_le_tre_em_5=((price_3-price_in_array)/price_3)*100;
+                            ti_le_tre_em_5 = Math.round(ti_le_tre_em_5);
+                            if(ti_le_tre_em_5!=0){
+                                ti_le_tre_em_5='(<i class="fa fa-long-arrow-down"></i>'+ti_le_tre_em_5+'%)';
+                            }else{
+                                ti_le_tre_em_5='';
+                            }
                         }
                     }else{
                         var price_tu=$('#input_price_tre_em_5_tu').val();
@@ -1090,6 +1135,14 @@
                                 }else{
                                     price_item= price_in_array.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.") + ' vnđ';
                                     total_tre_em_5=(price_in_array*numbe_3);
+
+                                    ti_le_tre_em_5=((price_3-price_in_array)/price_3)*100;
+                                    ti_le_tre_em_5 = Math.round(ti_le_tre_em_5);
+                                    if(ti_le_tre_em_5!=0){
+                                        ti_le_tre_em_5='(<i class="fa fa-long-arrow-down"></i>'+ti_le_tre_em_5+'%)';
+                                    }else{
+                                        ti_le_tre_em_5='';
+                                    }
                                 }
                             }
                         }
@@ -1102,7 +1155,7 @@
                             '<td><input style="height: 30px" name="phone_customer[]" id="input_phone_customer_' + stt + '" type="text" class="valid input_table"></td>' +
                             '<td><input  style="height: 30px" name="address_customer[]" id="input_address_customer_' + stt + '" type="text" class="valid input_table"></td>' +
                             '<td><input hidden value="3"  style="height: 30px" name="tuoi_customer[]" id="input_tuoi_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;">'+name_3+'</span></td>' +
-                            '<td><input hidden value=""  style="height: 30px" name="dongia_customer[]" id="input_dongia_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;color: red">'+price_item+'</span></td>' +
+                            '<td><input hidden value=""  style="height: 30px" name="dongia_customer[]" id="input_dongia_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;color: red">'+price_item+' '+ti_le_tre_em_5+'</span></td>' +
                             '</tr>';
                     stt=stt+1;
                 }
@@ -1224,6 +1277,7 @@
             }
         }
         if (error_free != false) {
+            $('#loading').show();
             $("#submit_form").submit();
         }
 
