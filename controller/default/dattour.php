@@ -36,6 +36,9 @@ if(isset($_POST['name_customer'])){
     $phone_customer_sub=$_POST['phone_customer'];
     $address_customer_sub=$_POST['address_customer'];
     $tuoi_customer_sub=$_POST['tuoi_customer'];
+    $birthday_customer_sub=$_POST['birthday_customer'];
+    $passport_customer_sub=$_POST['passport_customer'];
+    $date_passport_customer_sub=$_POST['date_passport_customer'];
 
 
     $name_customer=_returnPostParamSecurity('name_customer');
@@ -131,7 +134,9 @@ if(isset($_POST['name_customer'])){
         $phone_customer_sub_mahoa=_return_mc_encrypt(json_encode($phone_customer_sub));
         $address_customer_sub_mahoa=_return_mc_encrypt(json_encode($address_customer_sub));
         $tuoi_customer_sub_mahoa=_return_mc_encrypt(json_encode($tuoi_customer_sub));
-
+        $birthday_customer_sub_mahoa=_return_mc_encrypt(json_encode($birthday_customer_sub));
+        $passport_customer_sub_mahoa=_return_mc_encrypt(json_encode($passport_customer_sub));
+        $date_passport_customer_sub_mahoa=_return_mc_encrypt(json_encode($date_passport_customer_sub));
 
         $price_new=$price;
         $price_new_2=$price_2;
@@ -237,6 +242,9 @@ if(isset($_POST['name_customer'])){
         $string_info_booking.="&phone_customer_sub=".$phone_customer_sub_mahoa;
         $string_info_booking.="&address_customer_sub=".$address_customer_sub_mahoa;
         $string_info_booking.="&tuoi_customer_sub=".$tuoi_customer_sub_mahoa;
+        $string_info_booking.="&birthday_customer_sub=".$birthday_customer_sub_mahoa;
+        $string_info_booking.="&passport_customer_sub=".$passport_customer_sub_mahoa;
+        $string_info_booking.="&date_passport_customer_sub=".$date_passport_customer_sub_mahoa;
 
         $string_info_booking.="&name_price=".$name_price_mahoa;
         $string_info_booking.="&name_price_2=".$name_price_2_mahoa;
@@ -259,7 +267,7 @@ if(isset($_POST['name_customer'])){
         curl_setopt($ch, CURLOPT_POSTFIELDS,$string_info_booking);
 
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-       echo $res = curl_exec ($ch);
+        $res = curl_exec ($ch);
         curl_close ($ch);
 
         if($res===0){
@@ -638,10 +646,11 @@ if(isset($_POST['name_customer'])){
 </div>
 </body>
 </html>';
-            SendMail('info@mixtourist.com.vn', $message, $subject);
+//            SendMail('info@mixtourist.com.vn', $message, $subject);
 //    SendMail('hoangthuy@mixtourist.com.vn', $message, $subject);
 //    SendMail('tungtv.soict@gmail.com', $message, 'Azbooking.vn – Xác nhận đặt tour');
-            SendMail($email, $message, 'Azbooking.vn – Xác nhận đặt tour');
+//            SendMail($email, $message, 'Azbooking.vn – Xác nhận đặt tour');
+            $_SESSION['xac_nhan']=1;
         }
 
     }
@@ -681,7 +690,7 @@ show_header($title,$description,$keywords,$data);
 show_menu($data,$active);
 show_banner($data);
 show_dattour($data);
-show_left_danhmuc($data);
+//show_left_danhmuc($data);
 show_footer($data);
 
 function returnArray_price($price,$array_price_return=array()){

@@ -177,7 +177,7 @@ function show_dattour($data = array())
                 if($validate==false){
                     $asign['date_select']='<div class="form-item">
                                                             <label>Ngày khởi hành<span style="color: red">*</span></label>
-                                                            <input required="" type="date" id="input_ngay_khoi_hanh"
+                                                            <input required="" type="text" id="input_ngay_khoi_hanh" class="datepicker"
                                                                    name="ngay_khoi_hanh">
                                                             <label class="error_booking" id="error_ngay_khoi_hanh">Bạn vui lòng chọn ngày khởi hành</label>
                                                         </div>';
@@ -196,7 +196,7 @@ function show_dattour($data = array())
         else{
             $asign['date_select']=' <div class="form-item">
                                                             <label>Ngày khởi hành<span style="color: red">*</span></label>
-                                                            <input required="" type="date" id="input_ngay_khoi_hanh"
+                                                            <input required="" type="text" id="input_ngay_khoi_hanh" class="datepicker"
                                                                    name="ngay_khoi_hanh">
                                                             <label class="error_booking" id="error_ngay_khoi_hanh">Bạn vui lòng chọn ngày khởi hành</label>
                                                         </div>';
@@ -204,7 +204,7 @@ function show_dattour($data = array())
     }else{
         $asign['date_select']=' <div class="form-item">
                                                             <label>Ngày khởi hành<span style="color: red">*</span></label>
-                                                            <input required="" type="date" id="input_ngay_khoi_hanh"
+                                                           <input required="" type="text" id="input_ngay_khoi_hanh" class="datepicker"
                                                                    name="ngay_khoi_hanh">
                                                             <label class="error_booking" id="error_ngay_khoi_hanh">Bạn vui lòng chọn ngày khởi hành</label>
                                                         </div>';

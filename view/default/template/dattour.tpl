@@ -1,7 +1,7 @@
 <section class="filter-page">
     <div class="container">
         <div class="row">
-            <div class="col-md-9 col-md-push-3">
+            <div class="col-md-12">
                 <div class="filter-item-wrapper" style="margin-top: 13px;">
                     <div class=" col-md-12 row" style="
     padding-bottom: 35px;
@@ -338,10 +338,13 @@
                                                         <tr>
                                                             <th class="center">#</th>
                                                             <th>Họ tên</th>
+                                                            <th>Ngày sinh</th>
                                                             <th>Email</th>
                                                             <th>Điện thoại</th>
                                                             <th>Địa chỉ</th>
                                                             <th>Độ tuổi</th>
+                                                            <th>Số Passport</th>
+                                                            <th>Ngày hết hạn</th>
                                                             <th>Đơn giá <i class="fa fa-sort-amount-desc "></i></th>
                                                         </tr>
                                                         </thead>
@@ -352,6 +355,11 @@
                                                                 <input style="height: 30px" name="name_customer_sub[]"
                                                                        id="input_name_customer_sub_1" type="text"
                                                                        class="valid input_table">
+                                                            </td>
+                                                            <td>
+                                                                <input style="height: 30px" name="birthday_customer[]"
+                                                                       id="input_birthday_customer_sub_1" type="text"
+                                                                       class="valid input_table datepicker">
                                                             </td>
                                                             <td>
                                                                 <input style="height: 30px" name="email_customer[]"
@@ -370,22 +378,25 @@
                                                             </td>
                                                             <td>
                                                                 <input hidden style="height: 30px"
-                                                                       name="tuoi_customer[]" value="1"
+                                                                       name="tuoi_customer[]" value="{name_price}" data-date-format="dd/mm/yyyy"
                                                                        id="input_tuoi_customer_1" type="text"
                                                                        class="valid input_table"><span
                                                                         style="font-size: 12px">{name_price}</span>
                                                             </td>
-                                                            <td style="width: 130px">
-                                                                <input hidden style="height: 30px"
-                                                                       name="tuoi_customer[]" value="1"
-                                                                       id="input_tuoi_customer_1" type="text"
-                                                                       class="valid input_table"><span
-                                                                        style="color: red; font-size: 12px">{price_format} (<i class="fa fa-long-arrow-down"></i>09%)</span>
+                                                            <td>
+                                                                <input  style="height: 30px" name="passport_customer[]"
+                                                                       id="input_passport_customer_1" type="text"
+                                                                       class="valid input_table">
                                                             </td>
-                                                            <!--<td><a id="stt_custommer_1" deleteid="1" title="Xóa khách hàng"
-                                                                   class="red btn_remove_customer" href="javascript:void()"><i
-                                                                            class="ace-icon fa fa-trash-o bigger-130"></i></a>
-                                                            </td>-->
+
+                                                            <td>
+                                                                <input style="height: 30px" name="date_passport_customer[]" data-date-format="dd/mm/yyyy"
+                                                                       id="input_date_passport_customer_1" type="text"
+                                                                       class="valid input_table datepicker">
+                                                            </td>
+                                                            <td style="width: 130px">
+                                                              <span  style="color: red; font-size: 12px">{price_format}</span>
+                                                            </td>
                                                         </tr>
                                                         </tbody>
                                                     </table>
@@ -466,3 +477,6 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</section>

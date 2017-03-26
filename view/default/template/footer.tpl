@@ -93,7 +93,7 @@
 </footer>
 </div>
 <!--<script type="text/javascript" src="{SITE-NAME}/view/default/themes/js/lib/jquery-1.11.2.min.js"></script>-->
-<script type="text/javascript" src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
+<script type="text/javascript" src="{SITE-NAME}/view/default/themes/js/jquery-ui.min.js"></script>
 <script type="text/javascript" src="{SITE-NAME}/view/default/themes/js/lib/masonry.pkgd.min.js"></script>
 <script type="text/javascript" src="{SITE-NAME}/view/default/themes/js/lib/jquery.parallax-1.1.3.js"></script>
 <script type="text/javascript" src="{SITE-NAME}/view/default/themes/js/lib/jquery.owl.carousel.js"></script>
@@ -1026,10 +1026,13 @@
                 for(var i=1;i<=numbe_1;i++){
                     row =row+'<tr id="row_customer_' + stt+ '"><td class="center stt_cus">' + stt + '</td>' +
                             '<td><input style="height: 30px" name="name_customer_sub[]" id="input_name_customer_sub_' + stt + '" type="text"class="valid input_table"></td>' +
+                            '<td><input style="height: 30px" name="birthday_customer[]" id="input_birthday_customer_sub_' + stt + '" type="date" placeholder="dd/MM/yyyy" class="valid input_table datepicker"></td>' +
                             '<td><input style="height: 30px" name="email_customer[]" id="input_email_customer_' + stt + '" type="text" class="valid input_table"></td>' +
                             '<td><input style="height: 30px" name="phone_customer[]" id="input_phone_customer_' + stt + '" type="text" class="valid input_table"></td>' +
                             '<td><input  style="height: 30px" name="address_customer[]" id="input_address_customer_' + stt + '" type="text" class="valid input_table"></td>' +
-                            '<td><input hidden value="1"  style="height: 30px" name="tuoi_customer[]" id="input_tuoi_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;">'+name_1+'</span></td>' +
+                            '<td><input hidden value="'+name_1+'"  style="height: 30px" name="tuoi_customer[]" id="input_tuoi_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;">'+name_1+'</span></td>' +
+                            '<td><input style="height: 30px" name="passport_customer[]" id="input_passport_customer_' + stt + '" type="text" class="valid input_table "></td>' +
+                            '<td><input style="height: 30px" name="date_passport_customer[]" id="input_date_passport_customer_' + stt + '" type="date" class="valid input_table datepicker"></td>' +
                             '<td style="width: 130px"><input hidden value=""  style="height: 30px" name="dongia_customer[]" id="input_dongia_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;color: red">'+price_item+' '+ti_le_nguoi_lon+'</span></td>' +
                             '</tr>';
                     stt=stt+1;
@@ -1089,10 +1092,13 @@
                 for(var j=1;j<=numbe_2;j++){
                     row =row+'<tr id="row_customer_' + stt+ '"><td class="center stt_cus">' + stt + '</td>' +
                             '<td><input style="height: 30px" name="name_customer_sub[]" id="input_name_customer_sub_' + stt + '" type="text"class="valid input_table"></td>' +
+                            '<td><input style="height: 30px" name="birthday_customer[]" id="input_birthday_customer_sub_' + stt + '" type="date" class="valid input_table datepicker"></td>' +
                             '<td><input style="height: 30px" name="email_customer[]" id="input_email_customer_' + stt + '" type="text" class="valid input_table"></td>' +
                             '<td><input style="height: 30px" name="phone_customer[]" id="input_phone_customer_' + stt + '" type="text" class="valid input_table"></td>' +
                             '<td><input  style="height: 30px" name="address_customer[]" id="input_address_customer_' + stt + '" type="text" class="valid input_table"></td>' +
-                            '<td><input hidden value="2"  style="height: 30px" name="tuoi_customer[]" id="input_tuoi_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;">'+name_2+'</span></td>' +
+                            '<td><input hidden value="'+name_2+'"  style="height: 30px" name="tuoi_customer[]" id="input_tuoi_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;">'+name_2+'</span></td>' +
+                            '<td><input style="height: 30px" name="passport_customer[]" id="input_passport_customer_' + stt + '" type="text"class="valid input_table "></td>' +
+                            '<td><input style="height: 30px" name="date_passport_customer[]" id="input_date_passport_customer_' + stt + '" type="date"class="valid input_table datepicker"></td>' +
                             '<td><input hidden value=""  style="height: 30px" name="dongia_customer[]" id="input_dongia_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;color: red">'+price_item+' '+ti_le_tre_em_511+'</span></td>' +
                             '</tr>';
                     stt=stt+1;
@@ -1151,10 +1157,13 @@
                 for(var k=1;k<=numbe_3;k++){
                     row =row+'<tr id="row_customer_' + stt+ '"><td class="center stt_cus">' + stt + '</td>' +
                             '<td><input style="height: 30px" name="name_customer_sub[]" id="input_name_customer_sub_' + stt + '" type="text"class="valid input_table"></td>' +
+                            '<td><input style="height: 30px" name="birthday_customer[]" id="input_birthday_customer_sub_' + stt + '" type="date" class="valid input_table datepicker"></td>' +
                             '<td><input style="height: 30px" name="email_customer[]" id="input_email_customer_' + stt + '" type="text" class="valid input_table"></td>' +
                             '<td><input style="height: 30px" name="phone_customer[]" id="input_phone_customer_' + stt + '" type="text" class="valid input_table"></td>' +
                             '<td><input  style="height: 30px" name="address_customer[]" id="input_address_customer_' + stt + '" type="text" class="valid input_table"></td>' +
-                            '<td><input hidden value="3"  style="height: 30px" name="tuoi_customer[]" id="input_tuoi_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;">'+name_3+'</span></td>' +
+                            '<td><input hidden value="'+name_3+'"  style="height: 30px" name="tuoi_customer[]" id="input_tuoi_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;">'+name_3+'</span></td>' +
+                            '<td><input style="height: 30px" name="passport_customer[]" id="input_passport_customer_' + stt + '" type="text"class="valid input_table "></td>' +
+                            '<td><input style="height: 30px" name="date_passport_customer[]" id="input_date_passport_customer_' + stt + '" type="date"class="valid input_table datepicker"></td>' +
                             '<td><input hidden value=""  style="height: 30px" name="dongia_customer[]" id="input_dongia_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;color: red">'+price_item+' '+ti_le_tre_em_5+'</span></td>' +
                             '</tr>';
                     stt=stt+1;
@@ -1253,17 +1262,26 @@
         var error_free = true;
         for (var input in form_data) {
             var name_input=form_data[input]['name'];
-            if (name_input != "note"&&name_input!='name_customer_sub[]'&&name_input!='email_customer[]'&&name_input!='phone_customer[]'&&name_input!='address_customer[]'&&name_input!='tuoi_customer[]'&&name_input!='httt'&&name_input!='dongia_customer[]') {
+            if (name_input != "note"&&name_input!='name_customer_sub[]'&&name_input!='email_customer[]'&&name_input!='phone_customer[]'&&name_input!='address_customer[]'&&name_input!='tuoi_customer[]'&&name_input!='httt'&&name_input!='dongia_customer[]'&&name_input!='birthday_customer[]'&&name_input!='date_passport_customer[]'&&name_input!='passport_customer[]') {
                 var element = $("#input_" + name_input);
 
                     var error = $("#error_" + name_input);
                     var valid = element.hasClass("valid");
                 if(name_input=="ngay_khoi_hanh"){
                     var ngay_khoi_hanh= $( "#input_select_ngay_khoi_hanh option:selected" ).val();
-                    if(ngay_khoi_hanh==''){
-                        valid=false;
+                    if(ngay_khoi_hanh==undefined){
+                        var ngay_khoi_hanh= $("#input_ngay_khoi_hanh").val();
+                        if(ngay_khoi_hanh==''){
+                            valid=false;
+                        }else{
+                            valid=true;
+                        }
                     }else{
-                        valid=true;
+                        if(ngay_khoi_hanh==''){
+                            valid=false;
+                        }else{
+                            valid=true;
+                        }
                     }
                 }
                     if (valid == false) {
@@ -1337,7 +1355,13 @@
         var patt = new RegExp(/^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g);
         return patt.test(str);
     }
-
+    show_date_format();
+    function show_date_format(){
+        $('.datepicker').datepicker({
+            format: 'dd/mm/yyyy',
+            startDate: '-3d'
+        });
+    }
 </script>
 <!--'<td><a id="stt_custommer_' + stt + '"  deleteid="' + stt + '"  title="Xóa khách hàng"  class="red btn_remove_customer" href="javascript:void()"><i class="ace-icon fa fa-trash-o bigger-130"></i></a></td>' +-->
 <link rel="stylesheet" type="text/css"
