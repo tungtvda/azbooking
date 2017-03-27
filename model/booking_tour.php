@@ -1,10 +1,11 @@
 <?php
 class booking_tour
 {
-    public $id,$tour_id,$name_tour,$name_customer,$language,$phone,$email,$address,$departure_day,$adults,$children_5_10,$children_5,$price,$price_children,$price_children_under_5,$total_price,$request,$status,$created;
+    public $id,$code_booking,$tour_id,$name_tour,$name_customer,$language,$phone,$email,$address,$departure_day,$adults,$children_5_10,$children_5,$price,$price_children,$price_children_under_5,$total_price,$request,$status,$created;
     public function booking_tour($data=array())
     {
     $this->id=isset($data['id'])?$data['id']:'';
+        $this->code_booking=isset($data['code_booking'])?$data['code_booking']:'';
     $this->tour_id=isset($data['tour_id'])?$data['tour_id']:'';
     $this->name_tour=isset($data['name_tour'])?$data['name_tour']:'';
     $this->name_customer=isset($data['name_customer'])?$data['name_customer']:'';
@@ -28,6 +29,7 @@ class booking_tour
     public function encode()
         {
             $this->id=addslashes($this->id);
+            $this->code_booking=addslashes($this->code_booking);
             $this->tour_id=addslashes($this->tour_id);
             $this->name_tour=addslashes($this->name_tour);
             $this->name_customer=addslashes($this->name_customer);
@@ -50,6 +52,7 @@ class booking_tour
     public function decode()
         {
             $this->id=stripslashes($this->id);
+            $this->code_booking=stripslashes($this->code_booking);
             $this->tour_id=stripslashes($this->tour_id);
             $this->name_tour=stripslashes($this->name_tour);
             $this->name_customer=stripslashes($this->name_customer);
