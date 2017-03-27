@@ -33,7 +33,7 @@ function view_booking_tour($data)
 //
 function showTableHeader()
 {
-    return '<th>id</th><th>name_tour</th><th>name_customer</th><th>phone</th><th>email</th><th>status</th><th>created</th>';
+    return '<th>id</th><th>Mã booking</th><th>name_tour</th><th>name_customer</th><th>phone</th><th>email</th><th>status</th><th>created</th>';
 }
 //
 function showTableBody($data)
@@ -50,6 +50,7 @@ function showTableBody($data)
         $TableBody.="<tr style='".$font."'>
         <td><input type=\"checkbox\" name=\"check_".$obj->id."\"/></td>";
         $TableBody.="<td>".$obj->id."</td>";
+        $TableBody.="<td>".$obj->code_booking."</td>";
         $TableBody.="<td>".$obj->name_tour."</td>";
         $TableBody.="<td>".$obj->name_customer."</td>";
         $TableBody.="<td>".$obj->phone."</td>";
@@ -67,6 +68,7 @@ function showTableBody($data)
 function showFrom($form,$ListKey=array())
 {
     $str_from='';
+    $str_from.='<p><label>code_booking</label><input class="text-input small-input" type="text"  name="code_booking" value="'.(($form!=false)?$form->code_booking:'').'" /></p>';
     $str_from.='<p><label>tour_id</label><input class="text-input small-input" type="text"  name="tour_id" value="'.(($form!=false)?$form->tour_id:'').'" /></p>';
     $str_from.='<p><label>name_tour</label><input class="text-input small-input" type="text"  name="name_tour" value="'.(($form!=false)?$form->name_tour:'').'" /></p>';
     $str_from.='<p><label>name_customer</label><input class="text-input small-input" type="text"  name="name_customer" value="'.(($form!=false)?$form->name_customer:'').'" /></p>';

@@ -62,17 +62,17 @@ function booking_tour_getByPaging($CurrentPage, $PageSize,$Order,$where)
 //
 function booking_tour_getByPagingReplace($CurrentPage, $PageSize,$Order,$where)
 {
-   return booking_tour_Get("SELECT booking_tour.id, booking_tour.tour_id, booking_tour.name_tour, booking_tour.name_customer, booking_tour.language, booking_tour.phone, booking_tour.email, booking_tour.address, booking_tour.departure_day, booking_tour.adults, booking_tour.children_5_10, booking_tour.children_5, booking_tour.price, booking_tour.price_children, booking_tour.price_children_under_5, booking_tour.total_price, booking_tour.request, booking_tour.status, booking_tour.created FROM  booking_tour ".(($where!='')?(' where '.$where):'')." Order By ".$Order." Limit ".(($CurrentPage-1)*$PageSize)." , ".$PageSize);
+   return booking_tour_Get("SELECT booking_tour.id,booking_tour.code_booking, booking_tour.tour_id, booking_tour.name_tour, booking_tour.name_customer, booking_tour.language, booking_tour.phone, booking_tour.email, booking_tour.address, booking_tour.departure_day, booking_tour.adults, booking_tour.children_5_10, booking_tour.children_5, booking_tour.price, booking_tour.price_children, booking_tour.price_children_under_5, booking_tour.total_price, booking_tour.request, booking_tour.status, booking_tour.created FROM  booking_tour ".(($where!='')?(' where '.$where):'')." Order By ".$Order." Limit ".(($CurrentPage-1)*$PageSize)." , ".$PageSize);
 }
 //
 function booking_tour_insert($obj)
 {
-    return exe_query("insert into booking_tour (tour_id,name_tour,name_customer,language,phone,email,address,departure_day,adults,children_5_10,children_5,price,price_children,price_children_under_5,total_price,request,status,created) values ('$obj->tour_id','$obj->name_tour','$obj->name_customer','$obj->language','$obj->phone','$obj->email','$obj->address','$obj->departure_day','$obj->adults','$obj->children_5_10','$obj->children_5','$obj->price','$obj->price_children','$obj->price_children_under_5','$obj->total_price','$obj->request','$obj->status','$obj->created')",'booking_tour');
+    return exe_query("insert into booking_tour (code_booking,tour_id,name_tour,name_customer,language,phone,email,address,departure_day,adults,children_5_10,children_5,price,price_children,price_children_under_5,total_price,request,status,created) values ('$obj->code_booking','$obj->tour_id','$obj->name_tour','$obj->name_customer','$obj->language','$obj->phone','$obj->email','$obj->address','$obj->departure_day','$obj->adults','$obj->children_5_10','$obj->children_5','$obj->price','$obj->price_children','$obj->price_children_under_5','$obj->total_price','$obj->request','$obj->status','$obj->created')",'booking_tour');
 }
 //
 function booking_tour_update($obj)
 {
-    return exe_query("update booking_tour set tour_id='$obj->tour_id',name_tour='$obj->name_tour',name_customer='$obj->name_customer',language='$obj->language',phone='$obj->phone',email='$obj->email',address='$obj->address',departure_day='$obj->departure_day',adults='$obj->adults',children_5_10='$obj->children_5_10',children_5='$obj->children_5',price='$obj->price',price_children='$obj->price_children',price_children_under_5='$obj->price_children_under_5',total_price='$obj->total_price',request='$obj->request',status='$obj->status',created='$obj->created' where id=$obj->id",'booking_tour');
+    return exe_query("update booking_tour set code_booking='$obj->code_booking',tour_id='$obj->tour_id',name_tour='$obj->name_tour',name_customer='$obj->name_customer',language='$obj->language',phone='$obj->phone',email='$obj->email',address='$obj->address',departure_day='$obj->departure_day',adults='$obj->adults',children_5_10='$obj->children_5_10',children_5='$obj->children_5',price='$obj->price',price_children='$obj->price_children',price_children_under_5='$obj->price_children_under_5',total_price='$obj->total_price',request='$obj->request',status='$obj->status',created='$obj->created' where id=$obj->id",'booking_tour');
 }
 //
 function booking_tour_delete($obj)

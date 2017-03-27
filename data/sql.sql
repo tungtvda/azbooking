@@ -9,6 +9,9 @@ ALTER TABLE `tour` ADD `name_price` VARCHAR(255) NULL AFTER `price_6`, ADD `name
 -- thêm bảng giá theo người
 ALTER TABLE `tour` ADD `price_number` VARCHAR(255) NULL AFTER `price_6`, ADD `price_number_2` VARCHAR(255) NULL AFTER `price_number`, ADD `price_number_3` VARCHAR(255) NULL AFTER `price_number_2`, ADD `price_number_4` VARCHAR(255) NULL AFTER `price_number_3`, ADD `price_number_5` VARCHAR(255) NULL AFTER `price_number_4`, ADD `price_number_6` VARCHAR(255) NULL AFTER `price_number_5`;
 
+-- thêm trường code bôking
+ALTER TABLE `booking_tour` ADD `code_booking` VARCHAR(100) NULL AFTER `id`;
+
 
 -- thêm bảng điều khoản
 

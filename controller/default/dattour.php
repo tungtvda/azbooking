@@ -275,6 +275,7 @@ if(isset($_POST['name_customer'])){
         }else{
             $code_booking=$res;
             $new = new booking_tour();
+            $new->code_booking = $code_booking;
             $new->tour_id = $data['detail'][0]->id;
             $new->name_tour =  $data['detail'][0]->name;
             $new->name_customer = $name_customer;
@@ -294,48 +295,51 @@ if(isset($_POST['name_customer'])){
             $new->status = 0;
             $new->created = date(DATETIME_FORMAT);
             booking_tour_insert($new);
-            $data_danhmuc_1_detail=danhmuc_1_getById($data['detail'][0]->DanhMuc1Id);
-            $data_danhmuc_2_detail=danhmuc_2_getById($data['detail'][0]->DanhMuc2Id);
-            $name_url_dm1_detail='';
-            if(count($data_danhmuc_1_detail)>0){
-                $name_url_dm1_detail=$data_danhmuc_1_detail[0]->name_url;
-            }
-            $name_url_dm2_detail='';
-            if(count($data_danhmuc_2_detail)>0){
-                $name_url_dm2_detail=$data_danhmuc_2_detail[0]->name_url;
-            }
-            $link_tour_list_detail=link_tourdetail_ajax($data['detail'][0],$name_url_dm1_detail,$name_url_dm2_detail);
-            $logo=SITE_NAME.'/email_template/images/logoazboong.vn.png';
-            $banner=SITE_NAME.'/email_template/images/banner.jpg';
-            $footer=SITE_NAME.'/email_template/images/footer.png';
-            $title='AZBOOKING.VN - GIÁ RẺ VÀ SẼ LUÔN NHƯ VẬY';
-            $data_tour_sales=tour_getByTop(4,'price_sales!="" ','id desc');
-            $tour_string='';
-            if(count($data_tour_sales)>0){
-                foreach($data_tour_sales as $row_tour){
-                    $name_list_tour=$row_tour->name;
-                    $price_list='';
-                    if($row_tour->price==0||$row_tour->price==''){
-                        $price_list='Liên hệ';
-                    }
-                    else{
-                        $price_list=number_format((int)$row_tour->price,0,",",".").' vnđ';
-                    }
-                    $price_list_sales=number_format((int)$row_tour->price_sales,0,",",".").' vnđ';
-                    $durations=$row_tour->durations;
-                    $data_danhmuc_1=danhmuc_1_getById($row_tour->DanhMuc1Id);
-                    $data_danhmuc_2=danhmuc_2_getById($row_tour->DanhMuc2Id);
-                    $name_url_dm1='';
-                    if(count($data_danhmuc_1)>0){
-                        $name_url_dm1=$data_danhmuc_1[0]->name_url;
-                    }
-                    $name_url_dm2='';
-                    if(count($data_danhmuc_2)>0){
-                        $name_url_dm2=$data_danhmuc_2[0]->name_url;
-                    }
-                    $link_tour_list=link_tourdetail_ajax($row_tour,$name_url_dm1,$name_url_dm2);
-                    $img_list=SITE_NAME.$row_tour->img;
-                    $tour_string.='<div style="width: 23%;float: left;padding-left: 10px; padding-right: 10px" class="col-md-3 col-sm-6">
+            $data_detail_booking=booking_tour_getByTop('1','code_booking="'.$code_booking.'"','id desc');
+            if(count($data_detail_booking)>0){
+                $link_chitiet_don_hang=SITE_NAME . '/dơn-hang/?id_booking='._return_mc_encrypt($data_detail_booking[0]->id);
+                $data_danhmuc_1_detail=danhmuc_1_getById($data['detail'][0]->DanhMuc1Id);
+                $data_danhmuc_2_detail=danhmuc_2_getById($data['detail'][0]->DanhMuc2Id);
+                $name_url_dm1_detail='';
+                if(count($data_danhmuc_1_detail)>0){
+                    $name_url_dm1_detail=$data_danhmuc_1_detail[0]->name_url;
+                }
+                $name_url_dm2_detail='';
+                if(count($data_danhmuc_2_detail)>0){
+                    $name_url_dm2_detail=$data_danhmuc_2_detail[0]->name_url;
+                }
+                $link_tour_list_detail=link_tourdetail_ajax($data['detail'][0],$name_url_dm1_detail,$name_url_dm2_detail);
+                $logo=SITE_NAME.'/email_template/images/logoazboong.vn.png';
+                $banner=SITE_NAME.'/email_template/images/banner.jpg';
+                $footer=SITE_NAME.'/email_template/images/footer.png';
+                $title='AZBOOKING.VN - GIÁ RẺ VÀ SẼ LUÔN NHƯ VẬY';
+                $data_tour_sales=tour_getByTop(4,'price_sales!="" ','id desc');
+                $tour_string='';
+                if(count($data_tour_sales)>0){
+                    foreach($data_tour_sales as $row_tour){
+                        $name_list_tour=$row_tour->name;
+                        $price_list='';
+                        if($row_tour->price==0||$row_tour->price==''){
+                            $price_list='Liên hệ';
+                        }
+                        else{
+                            $price_list=number_format((int)$row_tour->price,0,",",".").' vnđ';
+                        }
+                        $price_list_sales=number_format((int)$row_tour->price_sales,0,",",".").' vnđ';
+                        $durations=$row_tour->durations;
+                        $data_danhmuc_1=danhmuc_1_getById($row_tour->DanhMuc1Id);
+                        $data_danhmuc_2=danhmuc_2_getById($row_tour->DanhMuc2Id);
+                        $name_url_dm1='';
+                        if(count($data_danhmuc_1)>0){
+                            $name_url_dm1=$data_danhmuc_1[0]->name_url;
+                        }
+                        $name_url_dm2='';
+                        if(count($data_danhmuc_2)>0){
+                            $name_url_dm2=$data_danhmuc_2[0]->name_url;
+                        }
+                        $link_tour_list=link_tourdetail_ajax($row_tour,$name_url_dm1,$name_url_dm2);
+                        $img_list=SITE_NAME.$row_tour->img;
+                        $tour_string.='<div style="width: 23%;float: left;padding-left: 10px; padding-right: 10px" class="col-md-3 col-sm-6">
                         <div style="    text-align: center;
     margin-bottom: 30px;" class="news">
                             <a href="'.$link_tour_list.'"><img title="'.$name_list_tour.'" alt="'.$name_list_tour.'" style="    width: 100%;
@@ -354,45 +358,45 @@ if(isset($_POST['name_customer'])){
                             </p>
                         </div>
                     </div>';
+                    }
                 }
-            }
 
-            $data_config=config_getByTop(1,'','');
-            if(count($data_config)>0&&$data_config[0]->Logo!=''){
-                $logo=SITE_NAME.$data_config[0]->Logo;
-                $banner=SITE_NAME.$data_config[0]->banner_email;
-                $footer=SITE_NAME.$data_config[0]->footer_email;
-                $title=SITE_NAME.$data_config[0]->Name;
-            }
-            if($total==0||$total=='Liên hệ'){
-                $total_format='Liên hệ';
-            }
-            else{
-                $total_format=number_format((int)$total,0,",",".").' vnđ';
-            }
-            if($price_new=='Liên hệ'){
-                $price_new_format='Liên hệ';
-            }
-            else{
-                $price_new_format=number_format((int)$price_new,0,",",".").' vnđ';
-            }
-            if($price_new_2=='Liên hệ'){
-                $price_new_2_format='Liên hệ';
-            }
-            else{
-                $price_new_2_format=number_format((int)$price_new_2,0,",",".").' vnđ';
-            }
-            if($price_new_3=='Liên hệ'){
-                $price_new_3_format='Liên hệ';
-            }
-            else{
-                $price_new_3_format=number_format((int)$price_new_3,0,",",".").' vnđ';
-            }
+                $data_config=config_getByTop(1,'','');
+                if(count($data_config)>0&&$data_config[0]->Logo!=''){
+                    $logo=SITE_NAME.$data_config[0]->Logo;
+                    $banner=SITE_NAME.$data_config[0]->banner_email;
+                    $footer=SITE_NAME.$data_config[0]->footer_email;
+                    $title=SITE_NAME.$data_config[0]->Name;
+                }
+                if($total==0||$total=='Liên hệ'){
+                    $total_format='Liên hệ';
+                }
+                else{
+                    $total_format=number_format((int)$total,0,",",".").' vnđ';
+                }
+                if($price_new=='Liên hệ'){
+                    $price_new_format='Liên hệ';
+                }
+                else{
+                    $price_new_format=number_format((int)$price_new,0,",",".").' vnđ';
+                }
+                if($price_new_2=='Liên hệ'){
+                    $price_new_2_format='Liên hệ';
+                }
+                else{
+                    $price_new_2_format=number_format((int)$price_new_2,0,",",".").' vnđ';
+                }
+                if($price_new_3=='Liên hệ'){
+                    $price_new_3_format='Liên hệ';
+                }
+                else{
+                    $price_new_3_format=number_format((int)$price_new_3,0,",",".").' vnđ';
+                }
 
-            $data_tour[0]=$data['detail'][0];
-            $message = "";
-            $subject = "Azbooking.vn – Thông báo đặt tour từ khách hàng";
-            $message.='<!DOCTYPE html>
+                $data_tour[0]=$data['detail'][0];
+                $message = "";
+                $subject = "Azbooking.vn – Thông báo đặt tour từ khách hàng";
+                $message.='<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -650,7 +654,9 @@ if(isset($_POST['name_customer'])){
 //    SendMail('hoangthuy@mixtourist.com.vn', $message, $subject);
 //    SendMail('tungtv.soict@gmail.com', $message, 'Azbooking.vn – Xác nhận đặt tour');
 //            SendMail($email, $message, 'Azbooking.vn – Xác nhận đặt tour');
-            $_SESSION['xac_nhan']=1;
+                redict(SITE_NAME . '/dơn-hang/?id_booking='._return_mc_encrypt());
+            }
+
         }
 
     }
