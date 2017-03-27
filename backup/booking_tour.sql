@@ -42,3 +42,81 @@ insert into booking_tour (tour_id,name_tour,name_customer,language,phone,email,a
 insert into booking_tour (tour_id,name_tour,name_customer,language,phone,email,address,departure_day,adults,children_5_10,children_5,price,price_children,price_children_under_5,total_price,request,status,created) values ('10','VietNam - Cambodia - Laosdffghfghfgd','Trần Văn Tùng','','123465464','tungtv.soict@gmail.com','Hà Nội','2017-03-25','1','1','1','900000','800000','500000','2200000','','0','17-03-26 14:52:46');
 insert into booking_tour (tour_id,name_tour,name_customer,language,phone,email,address,departure_day,adults,children_5_10,children_5,price,price_children,price_children_under_5,total_price,request,status,created) values ('10','VietNam - Cambodia - Laosdffghfghfgd','Trần Văn Tùng','','123465464','tungtv.soict@gmail.com','Hà Nội','2017-03-25','1','1','1','900000','800000','500000','2200000','','0','17-03-26 14:53:38');
 insert into booking_tour (tour_id,name_tour,name_customer,language,phone,email,address,departure_day,adults,children_5_10,children_5,price,price_children,price_children_under_5,total_price,request,status,created) values ('10','VietNam - Cambodia - Laosdffghfghfgd','Trần Văn Tùng','','0123534343','tungtv@gmail.com','Hà Nội','2017-03-31','2','1','1','900000','800000','500000','3100000','','0','17-03-27 02:56:19');
+insert into booking_tour (code_booking,tour_id,name_tour,name_customer,language,phone,email,address,departure_day,adults,children_5_10,children_5,price,price_children,price_children_under_5,total_price,request,status,created) values ('Array
+(
+    [0] => 1990-03-01
+    [1] => 1990-03-02
+    [2] => 1990-03-03
+)
+Array
+(
+    [0] => 1990-03-01
+    [1] => 1990-03-02
+    [2] => 1990-03-03
+)
+Array
+(
+    [0] => 1990-03-01
+    [1] => 1990-03-02
+    [2] => 1990-03-03
+)
+#3291','10','VietNam - Cambodia - Laosdffghfghfgd','Trần Văn Tùng','','12323523345','tungtv.soict@gmail.com','Hà Nội','2017-03-31','1','1','1','900000','800000','500000','2200000','','0','17-03-27 14:32:16');
+insert into booking_tour (code_booking,tour_id,name_tour,name_customer,language,phone,email,address,departure_day,adults,children_5_10,children_5,price,price_children,price_children_under_5,total_price,request,status,created) values ('Array
+(
+    [0] => 1990-03-01
+    [1] => 1990-03-02
+    [2] => 1990-03-03
+)
+Array
+(
+    [0] => 1990-03-01
+    [1] => 1990-03-02
+    [2] => 1990-03-03
+)
+Array
+(
+    [0] => 1990-03-01
+    [1] => 1990-03-02
+    [2] => 1990-03-03
+)
+#3349','10','VietNam - Cambodia - Laosdffghfghfgd','Trần Văn Tùng','','12323523345','tungtv.soict@gmail.com','Hà Nội','2017-03-31','1','1','1','900000','800000','500000','2200000','','0','17-03-27 14:34:50');
+insert into booking_tour (code_booking,tour_id,name_tour,name_customer,language,phone,email,address,departure_day,adults,children_5_10,children_5,price,price_children,price_children_under_5,total_price,request,status,created) values ('Array
+(
+    [0] => 1990-03-01
+    [1] => 1990-03-02
+    [2] => 1990-03-03
+)
+Array
+(
+    [0] => 1990-03-01
+    [1] => 1990-03-02
+    [2] => 1990-03-03
+)
+Array
+(
+    [0] => 1990-03-01
+    [1] => 1990-03-02
+    [2] => 1990-03-03
+)
+#79625810','10','VietNam - Cambodia - Laosdffghfghfgd','Trần Văn Tùng','','12323523345','tungtv.soict@gmail.com','Hà Nội','2017-03-31','1','1','1','900000','800000','500000','2200000','','0','17-03-27 14:36:15');
+insert into booking_tour (code_booking,tour_id,name_tour,name_customer,language,phone,email,address,departure_day,adults,children_5_10,children_5,price,price_children,price_children_under_5,total_price,request,status,created) values ('Array
+(
+    [0] => 1990-03-01
+    [1] => 1990-03-02
+    [2] => 1990-03-03
+)
+Array
+(
+    [0] => 1990-03-01
+    [1] => 1990-03-02
+    [2] => 1990-03-03
+)
+Array
+(
+    [0] => 1990-03-01
+    [1] => 1990-03-02
+    [2] => 1990-03-03
+)
+#32507020','10','VietNam - Cambodia - Laosdffghfghfgd','Trần Văn Tùng','','12323523345','tungtv.soict@gmail.com','Hà Nội','2017-03-31','1','1','1','900000','800000','500000','2200000','','0','17-03-27 14:37:12');
+insert into booking_tour (code_booking,tour_id,name_tour,name_customer,language,phone,email,address,departure_day,adults,children_5_10,children_5,price,price_children,price_children_under_5,total_price,request,status,created) values ('#67133430','10','VietNam - Cambodia - Laosdffghfghfgd','Trần Văn Tùng','','12323523345','tungtv.soict@gmail.com','Hà Nội','2017-03-31','1','1','1','900000','800000','500000','2200000','','0','17-03-27 14:39:30');
+insert into booking_tour (code_booking,tour_id,name_tour,name_customer,language,phone,email,address,departure_day,adults,children_5_10,children_5,price,price_children,price_children_under_5,total_price,request,status,created) values ('#43','10','VietNam - Cambodia - Laosdffghfghfgd','Trần Văn Tùng','','123141','tungtv.soict@gmail.com','Hà Nội','2017-03-31','1','1','1','900000','800000','500000','2200000','','0','17-03-27 14:45:57');

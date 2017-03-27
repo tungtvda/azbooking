@@ -297,7 +297,7 @@ if(isset($_POST['name_customer'])){
             booking_tour_insert($new);
             $data_detail_booking=booking_tour_getByTop('1','code_booking="'.$code_booking.'"','id desc');
             if(count($data_detail_booking)>0){
-                $link_chitiet_don_hang=SITE_NAME . '/dơn-hang/?id_booking='._return_mc_encrypt($data_detail_booking[0]->id);
+                $link_chitiet_don_hang=SITE_NAME . '/don-hang?id_booking='._return_mc_encrypt($data_detail_booking[0]->id).'&code_booking='._return_mc_encrypt($code_booking);
                 $data_danhmuc_1_detail=danhmuc_1_getById($data['detail'][0]->DanhMuc1Id);
                 $data_danhmuc_2_detail=danhmuc_2_getById($data['detail'][0]->DanhMuc2Id);
                 $name_url_dm1_detail='';
@@ -436,13 +436,15 @@ if(isset($_POST['name_customer'])){
   text-transform: uppercase;
   text-align: center;" class="title_index">Kính chào quý khách ' . $name_customer . '!</h3>
                 <div style="float: left;width: 100%;" class="col-xs-12 row">
-                    <p style="font-weight: bold;line-height: 25px;"><span style="color: #0091ea;">AZBOOKING.VN</span> vừa nhận được yêu cầu
-                        đặt tour <span style="color: #0091ea;">"' . $data_tour[0]->name . '"</span> của quý khách đặt ngày <span
+                    <p style="font-weight: bold;line-height: 25px;"><span style="color: #0091ea;">AZBOOKING.VN</span>  vừa nhận được
+                        đơn hàng <a href="'.$link_chitiet_don_hang.'" style="color: #0091ea;">"' . $code_booking . '"</a> của quý khách đặt ngày <span
                                 style="color: #0091ea;">' . date('d-m-Y H:i:s', strtotime(_returnGetDateTime())) . '</span>.
                         Chúng tôi sẽ gửi thông báo và liên hệ với quý khách trong thới gian sớm nhất, Xin cảm ơn!.</br>
-                        Dưới đây là thông tin đặt tour:
+
                     </p>
                 </div>
+                <p style="text-align: center;"><a href="'.$link_chitiet_don_hang.'" style="text-decoration: none;color: #ffffff; background-color: #f36f21;padding:10px 10px">"Thông tin đơn hàng"</a></p>
+                <p> Dưới đây là thông tin đặt tour:</p>
                 <div class="row" style="float: left; width: 100%; display: inline">
                     <div class="col-md-6 col-sm-6 col-xs-12" style="float: left;width: 47%;padding-right: 10px;">
                         <h6 style="font-size: 16px;
@@ -652,9 +654,9 @@ if(isset($_POST['name_customer'])){
 </html>';
 //            SendMail('info@mixtourist.com.vn', $message, $subject);
 //    SendMail('hoangthuy@mixtourist.com.vn', $message, $subject);
-//    SendMail('tungtv.soict@gmail.com', $message, 'Azbooking.vn – Xác nhận đặt tour');
+    SendMail('tungtv.soict@gmail.com', $message, 'Azbooking.vn – Xác nhận đặt tour');
 //            SendMail($email, $message, 'Azbooking.vn – Xác nhận đặt tour');
-                redict(SITE_NAME . '/dơn-hang/?id_booking='._return_mc_encrypt());
+                redict($link_chitiet_don_hang);
             }
 
         }

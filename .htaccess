@@ -77,3 +77,4 @@ RewriteRule ^google27f37442f4187815.html$ google27f37442f4187815.html
 
 
 RewriteRule ^booking$ controller/default/dattour.php
+RewriteRule ^don-hang$ controller/default/chitietdonhang.php
