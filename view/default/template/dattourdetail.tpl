@@ -180,156 +180,112 @@
                                 <div class="col-md-12">
                                     <div style="background-color: #fff;padding: 10px;margin-bottom: 10px;"
                                          class="product-detail__info">
-                                        <div class="product-title"><h2>{name}</h2></div>
+                                        <p class="product-email"><i class="fa fa-thumbs-o-up"></i> <a>Azbooking.vn xin cảm ơn quý khách đã sử dụng dịch vụ của chúng tôi!</a></p>
 
-                                        <p class="product-email"><i class="fa fa-barcode"></i> <a href="#">Mã tour:
-                                                {code}</a></p>
-                                        <p class="product-email"><i class="fa fa-clock-o"></i> <a href="#">Thời gian:
-                                                {durations}</a></p>
-                                        <p class="product-email"><i class="fa fa-dollar"></i> <a
-                                                    href="#">Giá: {price_format}</a>
-                                        </p>
-                                        <p class="product-email"><i class="fa fa-calendar"></i> <a href="#">Ngày khởi
-                                                hành:
-                                                {departure_time}</a></p>
-                                        <p class="product-email"><i class="fa fa-map-marker"></i> <a href="#">Nơi khởi
-                                                hành:
-                                                {khoihanh}</a></p>
                                     </div>
-                                    <div style="background-color: #fff;padding: 10px;margin-bottom: 10px;"
-                                         class="product-detail__info">
-                                        <div class="product-title"><h2>{name}</h2></div>
 
-                                        <p class="product-email"><i class="fa fa-barcode"></i> <a href="#">Mã tour:
-                                                {code}</a></p>
-                                        <p class="product-email"><i class="fa fa-clock-o"></i> <a href="#">Thời gian:
-                                                {durations}</a></p>
-                                        <p class="product-email"><i class="fa fa-dollar"></i> <a
-                                                    href="#">Giá: {price_format}</a>
-                                        </p>
-                                        <p class="product-email"><i class="fa fa-calendar"></i> <a href="#">Ngày khởi
-                                                hành:
-                                                {departure_time}</a></p>
-                                        <p class="product-email"><i class="fa fa-map-marker"></i> <a href="#">Nơi khởi
-                                                hành:
-                                                {khoihanh}</a></p>
-                                    </div>
                                     <div class="checkout-page__content">
                                         <div style="padding: 10px;" class="yourcart-content">
-                                            <div class="content-title"><h2><i class="awe-icon fa fa-dollar"></i>Bảng giá cơ bản
+                                            <div class="content-title"><h2><i class="awe-icon fa fa-plane"></i>Thông tin tour
                                                 </h2></div>
-                                            <div class="cart-content">
-                                                <table class="cart-table">
-                                                    <thead>
+                                            <div style="background-color: #fff;padding: 10px;margin-bottom: 10px;"
+                                                 class="product-detail__info">
+                                                <div class="product-title"><h2>{name}</h2></div>
+                                                <style>
+                                                    .with_td_left{
+                                                        padding-left: 0px;
+                                                        width: 200px;
+                                                    }
+                                                </style>
+                                                <table>
                                                     <tr>
-                                                        <th class="product-name">Loại khách</th>
-                                                        <th class="">Đơn giá</th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                    <tr>
-                                                        <td class=""><span>{name_price}</span></td>
-                                                        <td class=""><span style="color: red"
-                                                                           class="amount">{price_format}</span></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class=""><span>{name_price_2}</span></td>
-                                                        <td class=""><span style="color: red"
-                                                                           class="amount">{price_2_format}</span></td>
+                                                        <td class="with_td_left"><i class="fa fa-barcode"></i> Mã tour: </td>
+                                                        <td style="font-weight: bold"><a >{code}</td>
                                                     </tr>
                                                     <tr>
-                                                        <td class=""><span>{name_price_3}</span></td>
-                                                        <td class=""><span style="color: red"
-                                                                           class="amount">{price_3_format}</span></td>
+                                                        <td class="with_td_left"><i class="fa fa-clock-o"></i> Thời gian: </td>
+                                                        <td style="font-weight: bold"><a >{durations}</a></td>
                                                     </tr>
-                                                    </tbody>
+                                                    <tr>
+                                                        <td class="with_td_left"><i class="fa fa-calendar"></i> Ngày khởi hành:</td>
+                                                        <td style="font-weight: bold"><a >{ngay_khoi_hanh}</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="with_td_left"><i class="fa fa-calendar"></i> Ngày về: </td>
+                                                        <td style="font-weight: bold"><a >{ngay_ket_thuc}</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="with_td_left"> <i class="fa fa-map-marker"></i>Nơi khởi hành:</td>
+                                                        <td style="font-weight: bold"><a >{khoihanh}</a></td>
+                                                    </tr>
                                                 </table>
                                             </div>
-                                            <div class="content-title"><h2><i class="awe-icon fa fa-info-circle "></i>Thông
-                                                    tin
-                                                    liên lạc</h2></div>
-                                            <div class="cart-content">
-                                                <div class="cart-footer contact-form">
-                                                    <div style="width: 100%; float: left;">
-                                                        <div class="form-item">
-                                                            <label>Họ tên <span style="color: red">*</span></label>
-                                                            <input required="" type="text" id="input_name_customer"
-                                                                   name="name_customer">
-                                                            <label class="error_booking" id="error_name_customer">Bạn
-                                                                vui
-                                                                lòng kiểm tra họ tên</label>
-                                                        </div>
-                                                        <div class="form-item">
-                                                            <label>Email <span style="color: red">*</span></label>
-                                                            <input required="" type="email" id="input_email"
-                                                                   name="email">
-                                                            <label class="error_booking" id="error_email">Bạn vui lòng
-                                                                kiểm
-                                                                tra email</label>
-                                                        </div>
-                                                    </div>
-                                                    <div style="width: 100%;float: left;">
-                                                        <div class="form-item">
-                                                            <label>Điện thoại <span style="color: red">*</span></label>
-                                                            <input required="" type="text" id="input_phone"
-                                                                   name="phone">
-                                                            <label id="error_phone" class="error_booking">Bạn vui lòng
-                                                                kiểm
-                                                                tra điện thoại</label>
-                                                        </div>
-                                                        <div class="form-item">
-                                                            <label>Địa chỉ <span style="color: red">*</span></label>
-                                                            <input required="" type="text" id="input_address"
-                                                                   name="address">
-                                                            <label id="error_address" class="error_booking">Bạn vui lòng
-                                                                kiểm tra địa chỉ</label>
-                                                        </div>
-                                                    </div>
-                                                    <div style="width: 100%;float: left;">
-                                                        <div class="form-item so_nguoi">
-                                                            <label>{name_price} <span
-                                                                        style="color: red">*</span></label>
-                                                            <input id_title="1" name_title="{name_price}" required=""
-                                                                   value="1" min="1" type="number" class="valid"
-                                                                   id="input_num_nguoi_lon" name="num_nguoi_lon">
-                                                        </div>
-                                                        <div class="form-item so_nguoi">
-                                                            <label>{name_price_2} </label>
-                                                            <input id_title="2" name_title="{name_price_2}" required=""
-                                                                   value="0" min="0" type="number" class="valid"
-                                                                   id="input_num_tre_em" name="num_tre_em">
-                                                        </div>
-                                                        <div class="form-item so_nguoi">
-                                                            <label>{name_price_3}</label>
-                                                            <input id_title="3" name_title="{name_price_3}" required=""
-                                                                   value="0" min="0" type="number" class="valid"
-                                                                   id="input_num_tre_em_5" name="num_tre_em_5">
-                                                            {so_cho_input}
-                                                        </div>
+                                            <div class="content-title"><h2><i class="awe-icon fa fa-shopping-cart "></i>Chi tiết đơn hàng
+                                                </h2></div>
+                                            <div style="background-color: #fff;padding: 10px;margin-bottom: 10px;"
+                                                 class="product-detail__info">
+                                                <table>
+                                                    <tr>
+                                                        <td class="with_td_left"><i class="fa fa-barcode"></i> Mã đơn hàng: </td>
+                                                        <td style="font-weight: bold"><a >{code_booking}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="with_td_left"><i class="fa fa-dollar"></i> Trị giá đơn hàng: </td>
+                                                        <td style="font-weight: bold"><a style="color: red">{total_price}</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="with_td_left"><i class="fa fa-calendar"></i> Ngày đặt tour: </td>
+                                                        <td style="font-weight: bold"><a >{ngay_tao}</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="with_td_left"><i class="fa fa-credit-card"></i> Hình thức thanh toán: </td>
+                                                        <td style="font-weight: bold"><a >{httt_name}</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="with_td_left"><i class="fa fa-check-square-o "></i> Trạng thái đơn hàng: </td>
+                                                        <td style="font-weight: bold"><a >{ttdh_name}</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="with_td_left"><i class="fa fa-calendar"></i> Hạn thanh toán: </td>
+                                                        <td style="font-weight: bold"><a >{han_thanh_toan}</a></td>
+                                                    </tr>
 
-                                                        <div class="form-item so_nguoi">
-                                                            <label>Tổng số người</label>
-                                                            <input style="background-color: #eee;" disabled required=""
-                                                                   value="1" min="1"
-                                                                   type="number" placeholder="" name="total_num"
-                                                                   class="valid"
-                                                                   id="input_total_num">
-
-                                                        </div>
-                                                        <label style="padding-left: 10px;" id="error_total_num"
-                                                               class="error_booking">Bạn vui lòng kiểm tra số lượng
-                                                            người</label>
-                                                    </div>
-                                                    <div style="width: 100%; float: left;">
-                                                       {date_select}
-                                                    </div>
-                                                    <div class="form-textarea-wrapper" style="width: 100%">
-                                                        <label>Ghi chú</label>
-                                                    <textarea style="background-color: #ffffff" name="note"
-                                                              id="input_note"></textarea>
-                                                    </div>
-                                                </div>
+                                                </table>
                                             </div>
+                                            <div class="content-title"><h2><i class="awe-icon fa fa-info-circle"></i>Thông tin liên lạc
+                                                </h2></div>
+                                            <div style="background-color: #fff;padding: 10px;margin-bottom: 10px;"
+                                                 class="product-detail__info">
+                                                <table>
+                                                    <tr>
+                                                        <td class="with_td_left"><i class="fa fa-user"></i> Họ tên: </td>
+                                                        <td style="font-weight: bold"><a >{name_cus}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="with_td_left"><i class="fa fa-map-marker"></i> Địa chỉ: </td>
+                                                        <td style="font-weight: bold"><a style="color: red">{address_cus}</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="with_td_left"><i class="fa fa-envelope"></i> Email: </td>
+                                                        <td style="font-weight: bold"><a >{email_cus}</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="with_td_left"><i class="fa fa-phone"></i> Điện thoại: </td>
+                                                        <td style="font-weight: bold"><a >{phone_cus}</a></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="with_td_left"><i class="fa fa-pencil-square-o"></i> Ghi chú: </td>
+                                                        <td style="font-weight: bold"><a >{note_cus}</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="with_td_left"><i class="fa fa-pencil-square-o"></i> Tổng số khách: </td>
+                                                        <td style="font-weight: bold"><a >{total_cus}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{name_price}: {num_nguoi_lon} - {name_price_2}: {num_tre_em} - {name_price_3}: {num_tre_em_5}</td>
+                                                    </tr>
+
+                                                </table>
+                                            </div>
+
 
                                             <div class="content-title"><h2><i class="awe-icon fa fa-users"></i>Danh sách
                                                     đoàn đi tour</h2></div>

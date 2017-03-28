@@ -62,6 +62,66 @@ function show_dattourdetail($data = array())
     }else{
         $asign['price_6_format']= number_format($data['detail'][0]->price_6,0,",",".").' vnđ';
     }
+    $asign['ngay_khoi_hanh']='';
+    if($data['booking_server']['ngay_khoi_hanh']!='0000-00-00'){
+        $asign['ngay_khoi_hanh']=date('d-m-Y', strtotime(date($data['booking_server']['ngay_khoi_hanh'])));
+    }
+    $asign['ngay_ket_thuc']='';
+    if($data['booking_server']['ngay_ket_thuc']!='0000-00-00'){
+        $asign['ngay_ket_thuc']=date('d-m-Y', strtotime(date($data['booking_server']['ngay_ket_thuc'])));
+    }
+    $asign['code_booking']=$data['booking_server']['code_booking'];
+
+    $asign['total_price']='Liên hệ';
+    if($data['booking_server']['total_price']!='Liên hệ'){
+        $asign['total_price']=number_format($data['booking_server']['total_price'],0,",",".").' vnđ';
+    }
+
+    $asign['ngay_tao']='';
+    if($data['booking_server']['created']!='0000-00-00 00:00:00'){
+        $asign['ngay_tao']=date('d-m-Y H:j:s', strtotime(date($data['booking_server']['created']))).' (Theo giờ Việt Nam)';
+    }
+    $asign['httt_name']=$data['booking_server']['httt_name'];
+    $asign['ttdh_name']=$data['booking_server']['ttdh_name'];
+
+    $asign['han_thanh_toan']='';
+    if($data['booking_server']['han_thanh_toan']!='0000-00-00'){
+        $asign['han_thanh_toan']=date('d-m-Y', strtotime(date($data['booking_server']['han_thanh_toan'])));
+    }
+
+    $asign['name_cus']='';
+    $asign['address_cus']='';
+    $asign['phone_cus']='';
+    $asign['email_cus']='';
+    $asign['note_cus']=$data['booking_server']['note'];
+
+    $asign['num_nguoi_lon']=$data['booking_server']['num_nguoi_lon'];
+    $asign['num_tre_em']=$data['booking_server']['num_tre_em'];
+    $asign['num_tre_em_5']=$data['booking_server']['num_tre_em_5'];
+
+    $asign['name_price']='Giá người lớn';
+    $asign['name_price_2']='Giá trẻ em 5-11 tuổi';
+    $asign['name_price_3']='Giá trẻ em dưới 5 tuổi';
+    if($data['booking_server']['name_price']!=''){
+        $asign['name_price']=$data['booking_server']['name_price'];
+    }
+    if($data['booking_server']['name_price_2']!=''){
+        $asign['name_price_2']=$data['booking_server']['name_price_2'];
+    }
+    if($data['booking_server']['name_price_3']!=''){
+        $asign['name_price_3']=$data['booking_server']['name_price_3'];
+    }
+
+
+    $asign['total_cus']=$data['booking_server']['num_nguoi_lon']+$data['booking_server']['num_tre_em']+$data['booking_server']['num_tre_em_5'];
+    if(isset($data['booking_server']['data_cus_booking'])&&count($data['booking_server']['data_cus_booking'])>0){
+        $data_cus_booking=$data['booking_server']['data_cus_booking'];
+        $asign['name_cus']=$data_cus_booking[0]['name'];
+        $asign['address_cus']=$data_cus_booking[0]['address'];
+        $asign['phone_cus']=$data_cus_booking[0]['phone'];
+        $asign['email_cus']=$data_cus_booking[0]['email'];
+    }
+
     $asign['price_number']= $data['detail'][0]->price_number;
     $asign['price_number_2']= $data['detail'][0]->price_number_2;
     $asign['price_number_3']= $data['detail'][0]->price_number_3;
@@ -82,9 +142,36 @@ function show_dattourdetail($data = array())
     }
 
 
+
     $asign['name_price_4']=$data['detail'][0]->name_price_4;
     $asign['name_price_5']=$data['detail'][0]->name_price_5;
     $asign['name_price_6']=$data['detail'][0]->name_price_6;
+
+
+    $arr_check=explode(',',$data['detail'][0]->departure);
+    if($arr_check==''){
+        $arr_check=array();
+    }
+    $string_khoihanh='';
+    $data_khoihanh=departure_getByTop('','','position asc');
+    $count_khoihanh=0;
+    foreach($data_khoihanh as $row_kh){
+        if(in_array($row_kh->id,$arr_check)){
+            if($count_khoihanh==0)
+            {
+                $string_khoihanh.=$row_kh->name;
+            }
+            else{
+                $string_khoihanh.=', '.$row_kh->name;
+            }
+
+            $count_khoihanh++;
+        }
+
+    }
+    $asign['khoihanh']=$string_khoihanh;
+
+
 
     print_template($asign, 'dattourdetail');
 }

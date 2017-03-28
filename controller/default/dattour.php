@@ -36,6 +36,7 @@ if(isset($_POST['name_customer'])){
     $phone_customer_sub=$_POST['phone_customer'];
     $address_customer_sub=$_POST['address_customer'];
     $tuoi_customer_sub=$_POST['tuoi_customer'];
+    $tuoi_number_customer_sub=$_POST['tuoi_number_customer'];
     $birthday_customer_sub=$_POST['birthday_customer'];
     $passport_customer_sub=$_POST['passport_customer'];
     $date_passport_customer_sub=$_POST['date_passport_customer'];
@@ -134,6 +135,8 @@ if(isset($_POST['name_customer'])){
         $phone_customer_sub_mahoa=_return_mc_encrypt(json_encode($phone_customer_sub));
         $address_customer_sub_mahoa=_return_mc_encrypt(json_encode($address_customer_sub));
         $tuoi_customer_sub_mahoa=_return_mc_encrypt(json_encode($tuoi_customer_sub));
+        $tuoi_number_customer_sub_mahoa=_return_mc_encrypt(json_encode($tuoi_number_customer_sub));
+
         $birthday_customer_sub_mahoa=_return_mc_encrypt(json_encode($birthday_customer_sub));
         $passport_customer_sub_mahoa=_return_mc_encrypt(json_encode($passport_customer_sub));
         $date_passport_customer_sub_mahoa=_return_mc_encrypt(json_encode($date_passport_customer_sub));
@@ -242,6 +245,8 @@ if(isset($_POST['name_customer'])){
         $string_info_booking.="&phone_customer_sub=".$phone_customer_sub_mahoa;
         $string_info_booking.="&address_customer_sub=".$address_customer_sub_mahoa;
         $string_info_booking.="&tuoi_customer_sub=".$tuoi_customer_sub_mahoa;
+        $string_info_booking.="&tuoi_number_customer_sub=".$tuoi_number_customer_sub_mahoa;
+
         $string_info_booking.="&birthday_customer_sub=".$birthday_customer_sub_mahoa;
         $string_info_booking.="&passport_customer_sub=".$passport_customer_sub_mahoa;
         $string_info_booking.="&date_passport_customer_sub=".$date_passport_customer_sub_mahoa;
