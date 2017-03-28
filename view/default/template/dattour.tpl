@@ -377,10 +377,8 @@
                                                                        class="valid input_table">
                                                             </td>
                                                             <td>
-                                                                <input hidden style="height: 30px"
-                                                                       name="tuoi_customer[]" value="{name_price}" data-date-format="dd/mm/yyyy"
-                                                                       id="input_tuoi_customer_1" type="text"
-                                                                       class="valid input_table"><span
+                                                                <input hidden style="height: 30px" name="tuoi_number_customer[]" value="1"  id="input_tuoi_number_customer_1" type="text"  class="valid input_table">
+                                                                <input hidden style="height: 30px" name="tuoi_customer[]" value="{name_price}"  id="input_tuoi_customer_1" type="text"  class="valid input_table"><span
                                                                         style="font-size: 12px">{name_price}</span>
                                                             </td>
                                                             <td>
