@@ -170,8 +170,68 @@ function show_dattourdetail($data = array())
 
     }
     $asign['khoihanh']=$string_khoihanh;
+    $asign['sub_cus']='';
+    if(isset($data['booking_server']['sub_customer'])&&count($data['booking_server']['sub_customer'])>0){
+        $stt=1;
+       foreach($data['booking_server']['sub_customer'] as $row_sub){
+           $ngay_sinh='';
+           if($row_sub['birthday']!='0000-00-00'){
+               $ngay_sinh=date('d-m-Y', strtotime($row_sub['birthday']));
+           }
+           $date_passport='';
+           if($row_sub['date_passport']!='0000-00-00'){
+               $date_passport=date('d-m-Y', strtotime($row_sub['date_passport']));
+           }
+           $price_item='Liên hệ';
+           if($row_sub['do_tuoi_number']==1){
+                if($data['booking_server']['price_new']!=''&&$data['booking_server']['price_new']!='Liên hệ'){
+                    $price_item= number_format($data['booking_server']['price_new'],0,",",".").' vnđ';
+                }
+           }
+           if($row_sub['do_tuoi_number']==2){
+               if($data['booking_server']['price_11_new']!=''&&$data['booking_server']['price_11_new']!='Liên hệ'){
+                   $price_item= number_format($data['booking_server']['price_11_new'],0,",",".").' vnđ';
+               }
+           }
+           if($row_sub['do_tuoi_number']==3){
+               if($data['booking_server']['price_5_new']!=''&&$data['booking_server']['price_5_new']!='Liên hệ'){
+                   $price_item= number_format($data['booking_server']['price_5_new'],0,",",".").' vnđ';
+               }
+           }
+           $asign['sub_cus'].='<tr class="row_customer_1">
+                                                            <td class="center stt_cus">'.$stt.'</td>
+                                                            <td>
+                                                                <input class="input_table" style="height: 30px; font-size: 10px; padding-left: 10px" title="'.$row_sub['name'].'" value="'.$row_sub['name'].'" >
+                                                            </td>
+                                                            <td>
+                                                                <input class="input_table" style="height: 30px; font-size: 10px;padding-left: 10px" title="'.$ngay_sinh.'" value="'.$ngay_sinh.'" >
+                                                            </td>
+                                                            <td>
+                                                                <input class="input_table" style="height: 30px; font-size: 10px;padding-left: 10px" title="'.$row_sub['email'].'" value="'.$row_sub['email'].'" >
+                                                            </td>
+                                                            <td>
+                                                                <input class="input_table"  style="height: 30px; font-size: 10px;padding-left: 10px" title="'.$row_sub['phone'].'" value="'.$row_sub['phone'].'" >
+                                                            </td>
+                                                            <td>
+                                                                <input class="input_table" style="height: 30px; font-size: 10px;padding-left: 10px" title="'.$row_sub['address'].'" value="'.$row_sub['address'].'" >
+                                                            </td>
+                                                            <td>
+                                                                <span style="font-size: 11px">'.$row_sub['do_tuoi'].'</span>
+                                                            </td>
+                                                            <td>
+                                                                <input class="input_table" style="height: 30px; font-size: 10px;padding-left: 10px" title="'.$row_sub['passport'].'" value="'.$row_sub['passport'].'" >
+                                                            </td>
 
-
+                                                            <td>
+                                                                <input class="input_table" style="height: 30px; font-size: 10px;padding-left: 10px" title="'.$date_passport.'" value="'.$date_passport.'" >
+                                                            </td>
+                                                            <td style="width: 130px">
+                                                                <span style="color: red; font-size: 12px">'.$price_item.'</span>
+                                                            </td>
+                                                        </tr>';
+           $stt=$stt+1;
+       }
+    }
 
     print_template($asign, 'dattourdetail');
 }
