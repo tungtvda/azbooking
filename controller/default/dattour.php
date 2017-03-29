@@ -29,7 +29,6 @@ $data['detail']=tour_getById($id);
 if(count($data['detail'])==0){
     redict(SITE_NAME);
 }
-
 if(isset($_POST['name_customer'])){
     $name_customer_sub=$_POST['name_customer_sub'];
     $email_customer_sub=$_POST['email_customer'];
@@ -51,7 +50,24 @@ if(isset($_POST['name_customer'])){
         $num_nguoi_lon=1;
     }
     $num_tre_em=_returnPostParamSecurity('num_tre_em');
+    if($num_tre_em==''){
+        $num_tre_em=0;
+    }
     $num_tre_em_5=_returnPostParamSecurity('num_tre_em_5');
+    if($num_tre_em_5==''){
+        $num_tre_em_5=0;
+    }
+    $insert=true;
+    $total_num_nguoi=$num_tre_em_5+$num_tre_em+$num_nguoi_lon;
+
+    if($data['detail'][0]->so_cho!=0&&$data['detail'][0]->so_cho!=''){
+        if($total_num_nguoi>$data['detail'][0]->so_cho){
+            $insert=false;
+            echo "<script>alert('Số chỗ hiện tại không đủ cho '+$total_num_nguoi+' người')</script>";
+        }else{
+            $insert=true;
+        }
+    }
     $ngay_khoi_hanh=_returnPostParamSecurity('ngay_khoi_hanh');
     $httt=_returnPostParamSecurity('httt');
 
@@ -81,8 +97,10 @@ if(isset($_POST['name_customer'])){
 
 
 
-    if($name_customer!=''&&$email!=''&&$phone!=''&&$num_nguoi_lon!=''&&$httt!=''&&$dieu_khoan!=''&&$ngay_khoi_hanh!='')
+    if($name_customer!=''&&$email!=''&&$phone!=''&&$num_nguoi_lon!=''&&$httt!=''&&$dieu_khoan!=''&&$ngay_khoi_hanh!=''&&$insert==true)
     {
+
+
         $string_info_booking='';
         $price_number= $data['detail'][0]->price_number;
         $price_number_2= $data['detail'][0]->price_number_2;
@@ -278,6 +296,12 @@ if(isset($_POST['name_customer'])){
         if($res===0){
             echo "<script>alert('Đặt tour thất bại, bạn vui lòng thử lại')</script>";
         }else{
+            $array_tour = (array)$data['detail'][0];
+            $new_tour = new tour($array_tour);
+            $new_tour->so_cho=$data['detail'][0]->so_cho-$total_num_nguoi;
+            tour_update($new_tour);
+
+
             $code_booking=$res;
             $new = new booking_tour();
             $new->code_booking = $code_booking;
