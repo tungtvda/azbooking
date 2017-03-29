@@ -284,8 +284,8 @@ if(isset($_POST['name_customer'])){
 
 
         $ch = curl_init();
-//        curl_setopt($ch, CURLOPT_URL,"http://manage.mixtourist.com.vn/booking-website/");
-        curl_setopt($ch, CURLOPT_URL,"http://localhost/manage_mix/booking-website/");
+        curl_setopt($ch, CURLOPT_URL,"http://manage.mixtourist.com.vn/booking-website/");
+//        curl_setopt($ch, CURLOPT_URL,"http://localhost/manage_mix/booking-website/");
         curl_setopt($ch, CURLOPT_POST, 1);
         curl_setopt($ch, CURLOPT_POSTFIELDS,$string_info_booking);
 
@@ -296,12 +296,12 @@ if(isset($_POST['name_customer'])){
         if($res===0){
             echo "<script>alert('Đặt tour thất bại, bạn vui lòng thử lại')</script>";
         }else{
-            $array_tour = (array)$data['detail'][0];
-            $new_tour = new tour($array_tour);
-            $new_tour->so_cho=$data['detail'][0]->so_cho-$total_num_nguoi;
-            tour_update($new_tour);
-
-
+            if($data['detail'][0]->so_cho!=0&&$data['detail'][0]->so_cho!=''){
+                $array_tour = (array)$data['detail'][0];
+                $new_tour = new tour($array_tour);
+                $new_tour->so_cho=$data['detail'][0]->so_cho-$total_num_nguoi;
+                tour_update($new_tour);
+            }
             $code_booking=$res;
             $new = new booking_tour();
             $new->code_booking = $code_booking;
@@ -683,7 +683,7 @@ if(isset($_POST['name_customer'])){
 </html>';
 //            SendMail('info@mixtourist.com.vn', $message, $subject);
 //    SendMail('hoangthuy@mixtourist.com.vn', $message, $subject);
-    SendMail('tungtv.soict@gmail.com', $message, 'Azbooking.vn – Xác nhận đặt tour');
+                SendMail('tungtv.soict@gmail.com', $message, 'Azbooking.vn – Xác nhận đặt tour');
 //            SendMail($email, $message, 'Azbooking.vn – Xác nhận đặt tour');
                 redict($link_chitiet_don_hang);
             }
