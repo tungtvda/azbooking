@@ -170,6 +170,21 @@ function show_chitiet_tour($data = array())
     }
     $asign['link_booking']=link_booking($data['detail'][0]);
 
+    $arr_destination=explode(',',$data['detail'][0]->destination);
+    $tring_des='';
+    if(count($arr_destination)>0)
+    {
+        $count_check=1;
+        foreach($arr_destination as $row_des){
+            $tring_des.=' <span class="from">'.$row_des;
+            if($count_check<count($arr_destination))
+            {
+                $tring_des.=' <i class="awe-icon fa fa-long-arrow-right"></i></span> ';
+            }
+            $count_check++;
+        }
+    }
+    $asign['hanh_trinh']=$tring_des;
     print_template($asign, 'chitiettour');
 }
 

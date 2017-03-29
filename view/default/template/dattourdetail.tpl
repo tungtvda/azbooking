@@ -182,7 +182,7 @@
                                 <div class="col-md-12">
                                     <div style="background-color: #fff;padding: 10px;margin-bottom: 10px;"
                                          class="product-detail__info">
-                                        <p class="product-email"><i class="fa fa-thumbs-o-up"></i> <a>Azbooking.vn xin
+                                        <p style="text-align: center; " class="product-email"><i class="fa fa-thumbs-o-up"></i> <a style="font-size: 18px; color: rgb(203, 32, 39)">Azbooking.vn xin
                                                 cảm ơn quý khách đã sử dụng dịch vụ của chúng tôi!</a></p>
 
                                     </div>
@@ -353,75 +353,32 @@
 
                                             <div class="cart-footer">
                                                 <div class="order-total"><h4  class="title">Tổng tiền</h4><span
-                                                            class="amount" id="amount_total">{price_format}</span>
+                                                            class="amount" id="amount_total">{total_price}</span>
                                                 </div>
-                                                <div class="content-title"><h2><i
-                                                                class="awe-icon fa fa-credit-card "></i>Hình
-                                                        thức thanh toán
-                                                        </br><label id="error_check_httt"
-                                                                    class="error_booking">Bạn vui lòng chọn
-                                                            hình thức thanh toán</label></h2>
-
-                                                </div>
-                                                <div class="cart-content">
-                                                    <div class="cart-footer contact-form">
-                                                        <div class="widget widget_has_radio_checkbox">
-                                                            <ul>
-                                                                {httt}
-                                                            </ul>
-                                                            <div>
-                                                                {httt_content}
-                                                            </div>
-                                                            <input name="check_httt" id="input_check_httt" value=""
-                                                                   hidden>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="content-title" style="margin-top: 20px"><h2><i
-                                                                class="awe-icon fa fa-check "></i>Điều khoản bắt buộc
-                                                        khi đăng ký online
-                                                        </br>
-                                                        <label id="error_check_dieu_khoan"
-                                                               class="error_booking">Bạn vui lòng đồng ý với điều khoản
-                                                            và dịch vụ cảu chúng tôi</label>
-                                                    </h2></div>
-                                                <div class="cart-content">
-                                                    <div class="cart-footer contact-form">
-                                                        <div class="widget widget_has_radio_checkbox">
-
-                                                            <div class="text"
-                                                                 style="height: 150px;width: auto;overflow: scroll;margin-bottom: 20px">
-                                                                <p>
-                                                                    {content_dk}
-                                                                </p>
-                                                            </div>
-                                                            <ul>
-                                                                <li><label>
-                                                                        <input type="checkbox" name="dieu_khoan"
-                                                                               id="input_dieu_khoan">
-                                                                        <i class="awe-icon awe-icon-check"></i>Đồng ý
-                                                                        điểu khoản
-                                                                        và dịch vụ của chúng tôi</label>
-                                                                    <input name="check_dieu_khoan"
-                                                                           id="input_check_dieu_khoan" value=""
-                                                                           hidden>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="cart-footer">
+                                                <!--<div class="cart-footer">
                                                     <div class="cart-submit">
                                                         <img id="loading" style="width: 150px; display: none"
                                                              src="{SITE-NAME}/view/default/themes/images/loading.gif">
                                                         <input type="button" value="ĐẶT TOUR" id="submit_form_action"
                                                                class="checkout">
                                                     </div>
-                                                </div>
+                                                </div>-->
                                             </div>
 
                                         </div>
+                                    </div>
+
+                                    <div style="background-color: #fff;padding: 10px;margin-bottom: 10px;"
+                                         class="product-detail__info">
+                                        <p style="" class="product-email"><i class="fa fa-thumbs-o-up"></i> <a style="font-size: 18px; color: rgb(203, 32, 39)">
+                                                Quý khách vui lòng kiểm tra email để nhận thông báo xác nhận đặt tour thành công từ Azbooking
+                                            </a>
+                                        </p>
+                                        <p style="" class="product-email"><i class="fa fa-thumbs-o-up"></i> <a style="font-size: 18px; color: rgb(203, 32, 39)">
+                                                Chúc quý khách có một chuyến đi thật vui vẻ và bổ ích!
+                                            </a>
+                                        </p>
+
                                     </div>
                                 </div>
                             </div>

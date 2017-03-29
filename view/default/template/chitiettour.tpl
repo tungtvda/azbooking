@@ -45,18 +45,26 @@
                             <div itemprop="description"><p></p></div>
                             <div itemprop="description">
                                 <div style="float: left;width: 100%;" class="booking_detail_div grid grid_2">
-                                    <a href="{link_booking}" class="booking_detail">ĐẶT NGAY </a>
+                                    <a href="{link_booking}" class="booking_detail CountDown tour_count_down_index">ĐẶT
+                                        NGAY </a>
                                     <div style="float: left;margin-top: 10px;margin-left: 10px;" class="social-share">
                                         <ul>
-                                            <li><a href="https://www.facebook.com/sharer/sharer.php?u={link}" target="_blank"><i style="background-color: #ffffff"
-                                                                                                                                 class="fa fa-facebook"></i></a></li>
-                                            <li><a href="https://twitter.com/intent/tweet?source=webclient&text={link}" target="_blank"><i style="background-color: #ffffff"
-                                                                                                                                           class="fa fa-twitter"></i></a></li>
-                                            <li><a href="https://plus.google.com/share?url={link}" onclick='javascript:window.open(this.href, "", "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600");return false;' target="_blank"><i style="background-color: #ffffff"
-                                                                                                                                                                                                                                                               class="fa fa-google-plus"></i></a></li>
-                                            <li><a href="http://pinterest.com/pin/create/button/?url={link}" onclick="window.open(this.href); return false;" title="Pinterest" target="_blank"><i style="background-color: #ffffff"
-                                                                                                                                                                                                  class="fa fa-pinterest"></i></a></li>
-                                            <li><a  href="mailto:?Subject={name}?&amp;body={name}:{content_short}" target="_blank"><i
+                                            <li><a href="https://www.facebook.com/sharer/sharer.php?u={link}"
+                                                   target="_blank"><i style="background-color: #ffffff"
+                                                                      class="fa fa-facebook"></i></a></li>
+                                            <li><a href="https://twitter.com/intent/tweet?source=webclient&text={link}"
+                                                   target="_blank"><i style="background-color: #ffffff"
+                                                                      class="fa fa-twitter"></i></a></li>
+                                            <li><a href="https://plus.google.com/share?url={link}"
+                                                   onclick='javascript:window.open(this.href, "", "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600");return false;'
+                                                   target="_blank"><i style="background-color: #ffffff"
+                                                                      class="fa fa-google-plus"></i></a></li>
+                                            <li><a href="http://pinterest.com/pin/create/button/?url={link}"
+                                                   onclick="window.open(this.href); return false;" title="Pinterest"
+                                                   target="_blank"><i style="background-color: #ffffff"
+                                                                      class="fa fa-pinterest"></i></a></li>
+                                            <li><a href="mailto:?Subject={name}?&amp;body={name}:{content_short}"
+                                                   target="_blank"><i
                                                             class="fa fa-envelope"></i></a></li>
                                         </ul>
                                     </div>
@@ -156,7 +164,7 @@
 
                     </div>
                 </div>
-                <div  class="related-post col-md-12 row"><h4>Có thể bạn quan tâm</h4>
+                <div class="related-post col-md-12 row"><h4>Có thể bạn quan tâm</h4>
                     <div class="related-slider">
                         {tour_lienquan}
                     </div>
@@ -167,10 +175,94 @@
                 <div id="booking" class="detail-sidebar">
                     <div class="call-to-book"><i class="awe-icon awe-icon-phone"></i> <em>Gọi ngay cho chúng tôi</em>
                         <span><a href="tel:{Hotline}">{Hotline}</a></span>
-                        <span><a href="tel:{Hotline_hcm}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{Hotline_hcm}</a></span>
+                        <span><a href="tel:{Hotline_hcm}">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{Hotline_hcm}</a></span>
                     </div>
-                    <div class="booking-info"><h3>Đặt tour</h3>
-                        <div {hidden_date} class="calender"></div>
+                    <div class="booking-info"><h3>Trương trình tour</h3>
+                        <p style="font-size: 12px">
+                            {hanh_trinh}
+                        </p>
+                        <div style="text-align: center" class="price">
+                            <a href="{link_booking}" style="background: red" class=" CountDown tour_count_down_index">ĐẶT
+                                NGAY </a>
+                        </div>
+                        <div style="padding: 5px" class="price">
+                            <h3>Du lịch giá tốt</h3>
+                            <style>
+                                .tour-sales{
+                                    padding-left: 0px;
+                                }
+                                .tour-sales li {
+                                    clear: both;
+                                    overflow: hidden;
+                                    position: relative;
+                                    height: 118px;
+                                    border-bottom: 1px solid #e9e9f3;
+                                    padding: 5px 0;
+                                }
+                                .spring .block .title {
+                                    /* background-color: #be0500; */
+                                    padding-left: 0px;
+                                }
+                                .tdItem .title {
+                                    clear: both;
+                                    padding: 5px 0;
+                                    height: 47px;
+                                }
+                                .block .title {
+                                    margin-bottom: 2px;
+                                }
+                                .spring .block .title a {
+                                    /* color: white; */
+                                    color: black;
+                                    font-size: 18px;
+                                }
+                                .tdItem .title a {
+                                    color: #035a9d !important;
+                                    font-weight: bold;
+                                    font-size: 10pt !important;
+                                    text-overflow: ellipsis;
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    display: block;
+                                }
+                                .tdItem .priceT span {
+                                    color: #DD3B1F;
+                                    font-size: 14pt;
+                                    font-weight: bold;
+                                }
+                                .tdItem .priceT span {
+                                    color: #DD3B1F;
+                                    font-size: 14pt;
+                                    font-weight: bold;
+                                }
+                                .tdItem .deal {
+                                    color: #7a7b7d;
+                                }
+                                .tdItem .deal strong {
+                                    color: #000;
+                                }
+                                .tdItem .departure {
+                                    position: absolute;
+                                    right: 0;
+                                    top: 53px;
+                                    text-align: right;
+                                    color: #4e525e;
+                                }
+                            </style>
+                            <ul class="tour-sales">
+                                <li class="tdItem">
+                                    <div class="title"><a href="/tourNDSGN311-077-010417VJ-G/da-nang-ba-na-hoi-an-la-vang-dong-thien-duong-hue-khach-san-4sao-2-dem-sieu-tiet-kiem.aspx" title="Đà Nẵng - Bà Nà - Hội An - La Vang - Động Thiên Đường - Huế (Khách sạn 4* 2 đêm. Siêu tiết kiệm)">Đà Nẵng - Bà Nà - Hội An - La Vang - Động Thiên Đường - Huế (Khách sạn 4* 2 ...</a></div>
+                                    <div class="priceT">
+                                        <span>4,990,000</span><span> đ</span></div>
+                                    <div class="deal">
+                                        <strong>600,000</strong><span> đ</span>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div hidden class="calender"></div>
                         <input id="date_input" hidden value="{date_now}">
                         <input id="date_get_now" hidden value="{date_now}">
                         <input id="id_input" hidden value="{id}">
@@ -184,7 +276,8 @@
                         <input id="price_6" value="{price_6}" hidden>
 
                         <p {hidden_date_select}>Thời gian khởi hành</p>
-                        <select {hidden_date_select} style="width: 100%;     padding: 0px;" id="date_select" name="date_select">
+                        <select {hidden_date_select} style="width: 100%;     padding: 0px;" id="date_select"
+                                                     name="date_select">
                             {date_select}
                         </select>
                         <!--<div style="margin-top: 30px" class="form-group">
@@ -205,39 +298,48 @@
                                     </select></div>
                                 <span>11 and under</span></div>
                         </div>-->
-                        <div style="margin-top: 20px" class="back_detail">
-                            <div  class="form-group">
+                        <div style="margin-top: 20px; display: none" class="back_detail">
+                            <div class="form-group">
                                 <label>Số người lớn</label>
                                 <div class="form-item">
-                                    <input   onkeyup="myFunction()" onchange="myFunction()" min="1" type="number" id="num_price_adults"   id="price_adults" value="">
+                                    <input onkeyup="myFunction()" onchange="myFunction()" min="1" type="number"
+                                           id="num_price_adults" id="price_adults" value="">
                                 </div>
                             </div>
                             <div class="form-baggage-weight">
                                 <label>Trẻ em</label>
                                 <div class="form-item">
-                                    <input  onkeyup="myFunction()" onchange="myFunction()"  min="0" type="number" id="num_price_children_val"  placeholder="Số trẻ em"  value="0">
+                                    <input onkeyup="myFunction()" onchange="myFunction()" min="0" type="number"
+                                           id="num_price_children_val" placeholder="Số trẻ em" value="0">
                                 </div>
                             </div>
                             <div class="form-baggage-weight">
                                 <label>Trẻ em dưới 5 tuổi</label>
                                 <div class="form-item">
-                                    <input style="width: 100%;padding: 5px;"  onkeyup="myFunction()" onchange="myFunction()" min="0" type="number" id="num_price_children_5_val"  placeholder="Trẻ em dưới 5 tuổi"  value="0">
-                                    <input hidden class="nicdark_bg_greydark2 nicdark_border_none grey medium subtitle" id="total_input"   >
+                                    <input style="width: 100%;padding: 5px;" onkeyup="myFunction()"
+                                           onchange="myFunction()" min="0" type="number" id="num_price_children_5_val"
+                                           placeholder="Trẻ em dưới 5 tuổi" value="0">
+                                    <input hidden class="nicdark_bg_greydark2 nicdark_border_none grey medium subtitle"
+                                           id="total_input">
                                 </div>
                             </div>
-                            <div style="display: none" id="hidden_total" class="price"><em>Tổng tiền đặt tour</em> <span  class="amount" id="amount_total"></span></div>
-                            <div  class="form-submit">
+                            <div style="display: none" id="hidden_total" class="price"><em>Tổng tiền đặt tour</em> <span
+                                        class="amount" id="amount_total"></span></div>
+                            <div class="form-submit">
                                 <div class="add-to-cart">
-                                    <a style=" display: none;" href="javascript:void(0);"  id="next_booking_tour"> Tiếp tục <i style="    background-color: #0086cd;" class="fa fa-arrow-right"></i></a>
+                                    <a style=" display: none;" href="javascript:void(0);" id="next_booking_tour"> Tiếp
+                                        tục <i style="    background-color: #0086cd;" class="fa fa-arrow-right"></i></a>
                                     <!--<button type="submit"><i class="awe-icon awe-icon-cart"></i>Add this to Cart
                                     </button>-->
                                 </div>
                             </div>
                         </div>
-                        <div class="next_detail" style="display: none;margin-top: 20px; margin-bottom: 20px;float: left;">
+                        <div class="next_detail"
+                             style="display: none;margin-top: 20px; margin-bottom: 20px;float: left;">
                             <table class="nicdark_table extrabig nicdark_bg_yellow">
 
-                                <tbody class="nicdark_bg_grey nicdark_border_grey table_booking" style="background-color: #f9f9f9 !important; border: none">
+                                <tbody class="nicdark_bg_grey nicdark_border_grey table_booking"
+                                       style="background-color: #f9f9f9 !important; border: none">
                                 <tr>
                                     <td>
                                         Ngày khởi hành:
@@ -286,21 +388,38 @@
                                 </tbody>
                             </table>
                             <h3 class=" title left lienquan"></h3>
-                            <p style="color: red;margin-top: 10px; display: none; float: left;" id="full_name_er">Vui lòng nhập họ tên</p>
-                            <input  class="nicdark_bg_greydark2 nicdark_border_none grey medium subtitle input_booking"  type="text"   placeholder="Họ tên" id="name_booking" style="width:100%">
+                            <p style="color: red;margin-top: 10px; display: none; float: left;" id="full_name_er">Vui
+                                lòng nhập họ tên</p>
+                            <input class="nicdark_bg_greydark2 nicdark_border_none grey medium subtitle input_booking"
+                                   type="text" placeholder="Họ tên" id="name_booking" style="width:100%">
                             <p style="color: red ; display: none" id="email_er">Vui lòng nhập email</p>
-                            <input style="width:100%" class="nicdark_bg_greydark2 nicdark_border_none grey medium subtitle input_booking"  type="text"   placeholder="Email" id="email_booking">
+                            <input style="width:100%"
+                                   class="nicdark_bg_greydark2 nicdark_border_none grey medium subtitle input_booking"
+                                   type="text" placeholder="Email" id="email_booking">
                             <p style="color: red; display: none" id="phone_er">Vui lòng nhập số điện thoại</p>
-                            <input style="width:100%" class="nicdark_bg_greydark2 nicdark_border_none grey medium subtitle input_booking"  type="text"   placeholder="Điện thoại" id="phone_booking">
+                            <input style="width:100%"
+                                   class="nicdark_bg_greydark2 nicdark_border_none grey medium subtitle input_booking"
+                                   type="text" placeholder="Điện thoại" id="phone_booking">
                             <p style="color: red; display: none" id="address_er">Vui lòng nhập địa chỉ</p>
-                            <input  class="nicdark_bg_greydark2 nicdark_border_none grey medium subtitle input_booking"  type="text"   placeholder="Địa chỉ" id="address_booking">
-                                                        <textarea  style="height:90px; width:100%; margin-bottom: 20px"  placeholder="Yêu cầu..." class="nicdark_bg_greydark2 nicdark_border_none grey medium subtitle input_booking" id="request_booking">
+                            <input class="nicdark_bg_greydark2 nicdark_border_none grey medium subtitle input_booking"
+                                   type="text" placeholder="Địa chỉ" id="address_booking">
+                                                        <textarea style="height:90px; width:100%; margin-bottom: 20px"
+                                                                  placeholder="Yêu cầu..."
+                                                                  class="nicdark_bg_greydark2 nicdark_border_none grey medium subtitle input_booking"
+                                                                  id="request_booking">
 
                                                         </textarea>
 
-                            <a style="width: 45%;  background-color: #ed1c27; float: left" id="back_booking" href="javascript:void(0);" class="nicdark_btn nicdark_btn_filter fullwidth nicdark_bg_green calculate_bt"><i style="background-color: #ed1c27;" class="fa fa-arrow-left"></i> Trở lại</a>
-                            <img  id="loading_booking" style="width: 45px; display: none" src="{SITE-NAME}/view/default/themes/images/loading.gif">
-                            <a class="calculate_bt" style="float: right;text-align: center;padding: 2px 10px; color:#ffffff;" id="booking_ajax"  href="javascript:void(0);" > Đặt tour <i style="background-color: #0086cd;" class="fa fa-shopping-cart"></i></a>
+                            <a style="width: 45%;  background-color: #ed1c27; float: left" id="back_booking"
+                               href="javascript:void(0);"
+                               class="nicdark_btn nicdark_btn_filter fullwidth nicdark_bg_green calculate_bt"><i
+                                        style="background-color: #ed1c27;" class="fa fa-arrow-left"></i> Trở lại</a>
+                            <img id="loading_booking" style="width: 45px; display: none"
+                                 src="{SITE-NAME}/view/default/themes/images/loading.gif">
+                            <a class="calculate_bt"
+                               style="float: right;text-align: center;padding: 2px 10px; color:#ffffff;"
+                               id="booking_ajax" href="javascript:void(0);"> Đặt tour <i
+                                        style="background-color: #0086cd;" class="fa fa-shopping-cart"></i></a>
                         </div>
                     </div>
                 </div>
