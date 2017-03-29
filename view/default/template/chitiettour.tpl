@@ -187,7 +187,7 @@
                                 NGAY </a>
                         </div>
                         <div style="padding: 5px" class="price">
-                            <h3>Du lịch giá tốt</h3>
+                            <h3 style="margin-top: 20px; margin-bottom: 0px">Du lịch giá tốt</h3>
                             <style>
                                 .tour-sales{
                                     padding-left: 0px;
@@ -196,9 +196,10 @@
                                     clear: both;
                                     overflow: hidden;
                                     position: relative;
-                                    height: 118px;
+                                    /* height: 118px; */
                                     border-bottom: 1px solid #e9e9f3;
                                     padding: 5px 0;
+                                    margin-bottom: 10px;
                                 }
                                 .spring .block .title {
                                     /* background-color: #be0500; */
@@ -207,17 +208,17 @@
                                 .tdItem .title {
                                     clear: both;
                                     padding: 5px 0;
-                                    height: 47px;
+
                                 }
                                 .block .title {
                                     margin-bottom: 2px;
                                 }
-                                .spring .block .title a {
+                                .spring .block .title_left a {
                                     /* color: white; */
                                     color: black;
                                     font-size: 18px;
                                 }
-                                .tdItem .title a {
+                                .tdItem .title_left a {
                                     color: #035a9d !important;
                                     font-weight: bold;
                                     font-size: 10pt !important;
@@ -228,19 +229,25 @@
                                 }
                                 .tdItem .priceT span {
                                     color: #DD3B1F;
-                                    font-size: 14pt;
+                                    font-size: 9pt;
                                     font-weight: bold;
                                 }
                                 .tdItem .priceT span {
                                     color: #DD3B1F;
-                                    font-size: 14pt;
+                                    font-size: 10pt;
                                     font-weight: bold;
+                                }
+                                .tdItem .priceT strong {
+                                    color: #A5A5A5;
+                                    font-size: 9pt;
+                                    text-decoration: line-through;
                                 }
                                 .tdItem .deal {
                                     color: #7a7b7d;
                                 }
                                 .tdItem .deal strong {
                                     color: #000;
+                                    font-size: 9pt;
                                 }
                                 .tdItem .departure {
                                     position: absolute;
@@ -248,17 +255,14 @@
                                     top: 53px;
                                     text-align: right;
                                     color: #4e525e;
+
+                                }
+                                .booking-info .awe-icon, .booking-info .fa {
+                                    background-color: #ffffff;
                                 }
                             </style>
                             <ul class="tour-sales">
-                                <li class="tdItem">
-                                    <div class="title"><a href="/tourNDSGN311-077-010417VJ-G/da-nang-ba-na-hoi-an-la-vang-dong-thien-duong-hue-khach-san-4sao-2-dem-sieu-tiet-kiem.aspx" title="Đà Nẵng - Bà Nà - Hội An - La Vang - Động Thiên Đường - Huế (Khách sạn 4* 2 đêm. Siêu tiết kiệm)">Đà Nẵng - Bà Nà - Hội An - La Vang - Động Thiên Đường - Huế (Khách sạn 4* 2 ...</a></div>
-                                    <div class="priceT">
-                                        <span>4,990,000</span><span> đ</span></div>
-                                    <div class="deal">
-                                        <strong>600,000</strong><span> đ</span>
-                                    </div>
-                                </li>
+                                {tour_sales}
 
                             </ul>
                         </div>

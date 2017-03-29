@@ -80,6 +80,8 @@ if($danhmuc_1[0]->tour_quoc_te==0){
 }else{
     $active='tour_nuoc_ngoai';
 }
+$data['tour_sales']=tour_getByTop(5,'price_sales!="" ','id desc');
+
 $title=$data['detail'][0]->title;
 $description=$data['detail'][0]->description;
 $keyword=$data['detail'][0]->keyword;

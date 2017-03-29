@@ -185,6 +185,11 @@ function show_chitiet_tour($data = array())
         }
     }
     $asign['hanh_trinh']=$tring_des;
+
+    $asign['tour_sales'] ='';
+    if(count($data['tour_sales'])>0) {
+        $asign['tour_sales'] = print_item('tour_sales', $data['tour_sales']);
+    }
     print_template($asign, 'chitiettour');
 }
 

@@ -371,7 +371,7 @@
                                     <div style="background-color: #fff;padding: 10px;margin-bottom: 10px;"
                                          class="product-detail__info">
                                         <p style="" class="product-email"><i class="fa fa-thumbs-o-up"></i> <a style="font-size: 18px; color: rgb(203, 32, 39)">
-                                                Quý khách vui lòng kiểm tra email để nhận thông báo xác nhận đặt tour thành công từ Azbooking
+                                                Quý khách vui lòng kiểm tra email để nhận thông báo xác nhận đặt tour thành công từ Azbooking. Chúng tôi sẽ liên hệ với bạn trong thới gian sớm nhất
                                             </a>
                                         </p>
                                         <p style="" class="product-email"><i class="fa fa-thumbs-o-up"></i> <a style="font-size: 18px; color: rgb(203, 32, 39)">

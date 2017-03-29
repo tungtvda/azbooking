@@ -111,8 +111,6 @@ function show_dattourdetail($data = array())
     if($data['booking_server']['name_price_3']!=''){
         $asign['name_price_3']=$data['booking_server']['name_price_3'];
     }
-
-
     $asign['total_cus']=$data['booking_server']['num_nguoi_lon']+$data['booking_server']['num_tre_em']+$data['booking_server']['num_tre_em_5'];
     if(isset($data['booking_server']['data_cus_booking'])&&count($data['booking_server']['data_cus_booking'])>0){
         $data_cus_booking=$data['booking_server']['data_cus_booking'];
