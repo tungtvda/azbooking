@@ -48,7 +48,7 @@ if(count($data['detail_booking'])==0){
     curl_setopt($ch, CURLOPT_POSTFIELDS,$string_info_booking);
 
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-   echo $res = curl_exec ($ch);
+    $res = curl_exec ($ch);
     curl_close ($ch);
     if($res===0){
         redict(SITE_NAME);
