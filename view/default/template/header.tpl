@@ -100,6 +100,13 @@
                 <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/858491102/?guid=ON&amp;script=0"/>
             </div>
         </noscript>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({
+                google_ad_client: "ca-pub-3956571459667771",
+                enable_page_level_ads: true
+            });
+        </script>
 
     </head>
     <div id="fb-root"></div>
