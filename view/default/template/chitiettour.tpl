@@ -178,7 +178,7 @@
                         <span><a href="tel:{Hotline_hcm}">
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{Hotline_hcm}</a></span>
                     </div>
-                    <div class="booking-info"><h3>Trương trình tour</h3>
+                    <div class="booking-info"><h3>Chương trình tour</h3>
                         <p style="font-size: 12px">
                             {hanh_trinh}
                         </p>
