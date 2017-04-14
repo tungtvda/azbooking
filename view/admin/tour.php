@@ -126,11 +126,11 @@ function showFrom($form,$ListKey=array())
     $str_from.='<p><label>img</label><input class="text-input small-input" type="text"  name="img" value="'.(($form!=false)?$form->img:'').'"/><a class="button" onclick="openKcEditor(\'img\');">Upload ảnh</a></p>';
     $str_from.='<p><label>price_sales</label><input class="text-input small-input" type="text"  name="price_sales" value="'.(($form!=false)?$form->price_sales:'').'" /></p>';
     $str_from.='<p><label>Tên Giá - Giá(1)- đây sẽ là giá chính để hiển thị</label>
-    <input style="width: 40%" class="text-input small-input" type="text"  name="name_price" value="'.(($form!=false)?$form->name_price:'Giá người lớn').'" />
+    <input style="width: 40%" class="text-input small-input" type="text"  name="name_price" value="'.(($form!=false)?$form->name_price:'').'" />
 <input  style="width: 40%" class="text-input small-input" type="text"  name="price" value="'.(($form!=false)?$form->price:'').'" />
 </p>';
     $str_from.='<p><label>Đơn giá theo số người(1)___Chú ý: định dạng theo  <span style="color: blue">songuoi1-gia1,songuoi2-gia2</span>___Ví dụ: <span style="color: red">1-1000000,2-2000000,3-3000000</span></label>
-<input style="width: 100%" class="text-input small-input" type="text"  name="price_number" value="'.(($form!=false)?$form->price_number:'Giá trẻ em 5-11 tuổi').'" /></p>';
+<input style="width: 100%" class="text-input small-input" type="text"  name="price_number" value="'.(($form!=false)?$form->price_number:'').'" /></p>';
 
     $str_from.='<p><label>Tên Giá - Giá(2)</label>
 <input style="width: 40%" class="text-input small-input" type="text"  name="name_price_2" value="'.(($form!=false)?$form->name_price_2:'').'" />
@@ -140,7 +140,7 @@ function showFrom($form,$ListKey=array())
 <input style="width: 100%" class="text-input small-input" type="text"  name="price_number_2" value="'.(($form!=false)?$form->price_number_2:'').'" /></p>';
 
     $str_from.='<p><label>Tên Giá - Giá(3)</label>
-<input style="width: 40%" class="text-input small-input" type="text"  name="name_price_3" value="'.(($form!=false)?$form->name_price_3:'Giá trẻ em dưới 5 tuổi').'" />
+<input style="width: 40%" class="text-input small-input" type="text"  name="name_price_3" value="'.(($form!=false)?$form->name_price_3:'').'" />
 <input style="width: 40%" class="text-input small-input" type="text"  name="price_3" value="'.(($form!=false)?$form->price_3:'').'" />
 </p>';
     $str_from.='<p><label>Đơn giá theo số người(3)___Chú ý: định dạng theo  <span style="color: blue">songuoi1-gia1,songuoi2-gia2</span>___Ví dụ: <span style="color: red">1-1000000,2-2000000,3-3000000</span></label>
