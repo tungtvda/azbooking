@@ -140,7 +140,7 @@ function showFrom($form,$ListKey=array())
 <input style="width: 100%" class="text-input small-input" type="text"  name="price_number_2" value="'.(($form!=false)?$form->price_number_2:'').'" /></p>';
 
     $str_from.='<p><label>Tên Giá - Giá(3)</label>
-<input style="width: 40%" class="text-input small-input" type="text"  name="name_price_3" value="'.(($form!=false)?$form->name_price_3:'Giá trẻ em duwowis5 tuổi').'" />
+<input style="width: 40%" class="text-input small-input" type="text"  name="name_price_3" value="'.(($form!=false)?$form->name_price_3:'Giá trẻ em dưới 5 tuổi').'" />
 <input style="width: 40%" class="text-input small-input" type="text"  name="price_3" value="'.(($form!=false)?$form->price_3:'').'" />
 </p>';
     $str_from.='<p><label>Đơn giá theo số người(3)___Chú ý: định dạng theo  <span style="color: blue">songuoi1-gia1,songuoi2-gia2</span>___Ví dụ: <span style="color: red">1-1000000,2-2000000,3-3000000</span></label>
