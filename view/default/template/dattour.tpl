@@ -343,8 +343,8 @@
                                                             <th>Điện thoại</th>
                                                             <th>Địa chỉ</th>
                                                             <th>Độ tuổi</th>
-                                                            <th>Số Passport</th>
-                                                            <th>Ngày hết hạn</th>
+                                                            <!--<th>Số Passport</th>
+                                                            <th>Ngày hết hạn</th>-->
                                                             <th>Đơn giá <i class="fa fa-sort-amount-desc "></i></th>
                                                         </tr>
                                                         </thead>
@@ -381,7 +381,7 @@
                                                                 <input hidden style="height: 30px" name="tuoi_customer[]" value="{name_price}"  id="input_tuoi_customer_1" type="text"  class="valid input_table"><span
                                                                         style="font-size: 12px">{name_price}</span>
                                                             </td>
-                                                            <td>
+                                                            <!--<td>
                                                                 <input  style="height: 30px" name="passport_customer[]"
                                                                        id="input_passport_customer_1" type="text"
                                                                        class="valid input_table">
@@ -391,7 +391,7 @@
                                                                 <input style="height: 30px" name="date_passport_customer[]" data-date-format="dd/mm/yyyy"
                                                                        id="input_date_passport_customer_1" type="text"
                                                                        class="valid input_table datepicker">
-                                                            </td>
+                                                            </td>-->
                                                             <td style="width: 130px">
                                                               <span  style="color: red; font-size: 12px">{price_format}</span>
                                                             </td>
