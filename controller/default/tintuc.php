@@ -27,12 +27,12 @@ $data['config']=config_getByTop(1,'','');
         $data['pagesize']=9;
         $data['count']=news_count($dk);
         $data['danhsach']=news_getByPaging($data['current'],$data['pagesize'],'id desc',$dk);
-        $data['PAGING'] = showPagingAtLink($data['count'], $data['pagesize'], $data['current'], '' . SITE_NAME . '/tin-tuc/'.$danhmuc[0]->name_url.'/');
+        $data['PAGING'] = showPagingAtLink($data['count'], $data['pagesize'], $data['current'], '' . SITE_NAME . '/cam-nang/'.$danhmuc[0]->name_url.'/');
         $name=$danhmuc[0]->name;
         $data['banner']=array(
             'banner_img'=>$danhmuc[0]->img,
             'name'=>$name,
-            'url'=>'<li><a href="'.SITE_NAME.'">Trang chủ</a></li><li><a href="'.SITE_NAME.'/tin-tuc/">'.$data['menu'][3]->name.'</a></li><li><span>'.$name.'</span></li>'
+            'url'=>'<li><a href="'.SITE_NAME.'">Trang chủ</a></li><li><a href="'.SITE_NAME.'/cam-nang/">'.$data['menu'][3]->name.'</a></li><li><span>'.$name.'</span></li>'
         );
         $data['link_anh']=$danhmuc[0]->img;
         $title=$danhmuc[0]->title;
@@ -44,7 +44,7 @@ $data['config']=config_getByTop(1,'','');
         $data['pagesize']=9;
         $data['count']=news_count('');
         $data['danhsach']=news_getByPaging($data['current'],$data['pagesize'],'id desc','');
-        $data['PAGING'] = showPagingAtLink($data['count'], $data['pagesize'], $data['current'], '' . SITE_NAME . '/tin-tuc/');
+        $data['PAGING'] = showPagingAtLink($data['count'], $data['pagesize'], $data['current'], '' . SITE_NAME . '/cam-nang/');
         $name=$data['menu'][3]->name;
         $data['banner']=array(
             'banner_img'=>$data['menu'][3]->img,
