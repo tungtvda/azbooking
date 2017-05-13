@@ -8,3 +8,14 @@ insert into admin (khachsan_id,TenDangNhap,Full_name,MatKhau,Quyen,status) value
 update admin set khachsan_id='1',TenDangNhap='haiphong',Full_name='Someret Hai Phong',MatKhau='haiphong12345',Quyen='2',status='1' where Id=3;
 update admin set khachsan_id='1',TenDangNhap='tungtv',Full_name='Trần Văn Tùng',MatKhau='1ef26373d3c9447baae66eabd52b1e0e9dc1b702c2f51d5322a67f1c42cf6f3ef0d513d04624c3bfee41b848cac59f4e6c29bf915d10c820c6c883bee00d3afb',Quyen='1',status='1' where Id=2;
 update admin set khachsan_id='1',TenDangNhap='haiphong',Full_name='Someret Hai Phong',MatKhau='1ef26373d3c9447baae66eabd52b1e0e9dc1b702c2f51d5322a67f1c42cf6f3ef0d513d04624c3bfee41b848cac59f4e6c29bf915d10c820c6c883bee00d3afb',Quyen='2',status='1' where Id=3;
+insert into admin (tour_id,khachsan_id,TenDangNhap,Full_name,MatKhau,Quyen,status) values ('','1','sdfg','sdfgdsfg','','1','1');
+delete from admin where Id=4;
+update admin set tour_id='1,2,3,4', khachsan_id='1',TenDangNhap='tungtv',Full_name='Trần Văn Tùng',MatKhau='1ef26373d3c9447baae66eabd52b1e0e9dc1b702c2f51d5322a67f1c42cf6f3ef0d513d04624c3bfee41b848cac59f4e6c29bf915d10c820c6c883bee00d3afb',Quyen='1',status='1' where Id=2;
+update admin set tour_id='1,2,4', khachsan_id='1',TenDangNhap='haiphong',Full_name='Someret Hai Phong',MatKhau='1ef26373d3c9447baae66eabd52b1e0e9dc1b702c2f51d5322a67f1c42cf6f3ef0d513d04624c3bfee41b848cac59f4e6c29bf915d10c820c6c883bee00d3afb',Quyen='2',status='1' where Id=3;
+update admin set tour_id='1,2,3,4', khachsan_id='1',TenDangNhap='haiphong',Full_name='Someret Hai Phong',MatKhau='1ef26373d3c9447baae66eabd52b1e0e9dc1b702c2f51d5322a67f1c42cf6f3ef0d513d04624c3bfee41b848cac59f4e6c29bf915d10c820c6c883bee00d3afb',Quyen='2',status='1' where Id=3;
+update admin set tour_id='1,2,3,4,10', khachsan_id='1',TenDangNhap='haiphong',Full_name='Someret Hai Phong',MatKhau='1ef26373d3c9447baae66eabd52b1e0e9dc1b702c2f51d5322a67f1c42cf6f3ef0d513d04624c3bfee41b848cac59f4e6c29bf915d10c820c6c883bee00d3afb',Quyen='2',status='1' where Id=3;
+insert into admin (tour_id,khachsan_id,TenDangNhap,Full_name,MatKhau,Quyen,status) values ('1,2,3','1','tungtv','tranvatung','','1','1');
+update admin set tour_id='1,2,3', khachsan_id='1',TenDangNhap='tungtv',Full_name='tranvatung',MatKhau='7f95556b24cce073d158beea396fa3b0c27d8c3737ffccca605d96a4aef90134edcaa30b833afb8c04d819aceb3d703a270258fca3f4905c7f0fe3af307c3af7',Quyen='1',status='1' where Id=5;
+delete from admin where Id=5;
+insert into admin (tour_id,khachsan_id,TenDangNhap,Full_name,MatKhau,Quyen,status) values ('5,6,7,8','1','tungtv','tranvantung','7f95556b24cce073d158beea396fa3b0c27d8c3737ffccca605d96a4aef90134edcaa30b833afb8c04d819aceb3d703a270258fca3f4905c7f0fe3af307c3af7','1','1');
+insert into admin (tour_id,khachsan_id,TenDangNhap,Full_name,MatKhau,Quyen,status) values ('1,2,3','1','tungtv','tungtv','7f95556b24cce073d158beea396fa3b0c27d8c3737ffccca605d96a4aef90134edcaa30b833afb8c04d819aceb3d703a270258fca3f4905c7f0fe3af307c3af7','1','1');
