@@ -2,6 +2,7 @@
 require_once '../../config.php';
 require_once DIR.'/model/adminService.php';
 require_once DIR.'/model/khachsanService.php';
+require_once DIR.'/model/tourService.php';
 require_once DIR.'/model/quyenService.php';
 require_once DIR.'/view/admin/admin.php';
 require_once DIR.'/common/messenger.php';
@@ -41,6 +42,7 @@ if(isset($_SESSION["Admin"]))
     {
         $data['tab1_class']='default-tab current';
     }
+    $data['listfkey']['tour_list']=tour_getByAll();
     $data['listfkey']['khachsan_id']=khachsan_getByAll();
     $data['listfkey']['Quyen']=quyen_getByAll();
     if(isset($_GET["action_all"]))
@@ -82,8 +84,7 @@ if(isset($_SESSION["Admin"]))
 
         if($insert)
         {
-            $new_obj->MatKhau=hash_pass($_POST["Pass"]);
-            $new_obj->MatKhau=$Pass;
+            $new_obj->MatKhau=hash_pass($_POST["MatKhau"]);
             admin_insert($new_obj);
             header('Location: '.SITE_NAME.'/controller/admin/admin.php');
         }

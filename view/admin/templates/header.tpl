@@ -7,6 +7,7 @@
     <title>MIXTOURIST ADMIN</title>
     <link rel="stylesheet" href="{SITE-NAME}/view/admin/Themes/css/style.default.css" type="text/css"/>
     <link rel="stylesheet" href="{SITE-NAME}/view/admin/Themes/css/prettify.css" type="text/css"/>
+    <link rel="stylesheet" href="{SITE-NAME}/view/admin/Themes/js/multi/multi.min.css" type="text/css"/>
     <script type="text/javascript" src="{SITE-NAME}/view/admin/Themes/js/prettify.js"></script>
     <script type="text/javascript" src="{SITE-NAME}/view/admin/Themes/js/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="{SITE-NAME}/view/admin/Themes/js/jquery-migrate-1.1.1.min.js"></script>
@@ -59,6 +60,7 @@
     <script type="text/javascript" src="{SITE-NAME}/view/admin/Themes/js/detectizr.min.js"></script>
     <script type="text/javascript" src="{SITE-NAME}/view/admin/Themes/js/jquery.cookie.js"></script>
     <script type="text/javascript" src="{SITE-NAME}/view/admin/Themes/js/custom.js"></script>
+    <script type="text/javascript" src="{SITE-NAME}/view/admin/Themes/js/multi/multi.min.js"></script>
     <!--[if lte IE 8]>
     <script language="javascript" type="text/javascript" src="js/excanvas.min.js"></script><![endif]-->
     <script type="text/javascript">

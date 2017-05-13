@@ -119,9 +119,18 @@
         jQuery('#calendar').datepicker();
 
 
+
     });
 </script>
-
+<script>
+    var select = document.getElementById('fruit_select');
+    multi( select );
+</script>
+<script>
+//    $('body').on('click','.multi-wrapper', function () {
+//        alert('ádfasdfasdf');
+//    });
+</script>
 </body>
 
 <!-- Mirrored from demo.themepixels.com/webpage/katniss/dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Jul 2015 09:21:28 GMT -->
