@@ -6607,3 +6607,1134 @@ update tour set tour_quoc_te='1',DanhMuc1Id='3',DanhMuc2Id='8',danhmuc_multi='',
 <p color:="" font-family:="" font-size:="" line-height:="" padding:="" span="" strong="" style="" text-align:="">
 	<span 19.00="" at="" back="" car="" city="" color:="" dinner="" font-family:="" font-size:="" for="" ha="" hotel="" in="" line-height:="" ll="" local="" long="" night="" night:="" noi.="" p="" padding:="" pick="" recheck="" relax.="" restaurant="" return="" span="" strong="" style="" text-align:="" then="" to="" tourist="" wharf="" you=""><strong chi="" color:="" font-family:="" ho="" padding:="" span="" strong="" style="" text-align:=""><strong chi="" color:="" font-family:="" ho="" minh="" padding:="" presidential="" span="" strong="" style="" text-align:=""><strong 3:="" around="" by="" color:="" day="" font-family:="" font-size:="" go="" ha="" hoan="" kiem="" line-height:="" long="" ngoc="" noi="" old="" p="" padding:="" son="" strong="" style="" text-align:=""><strong chi="" color:="" font-family:="" ho="" padding:="" span="" strong="" style="" text-align:=""><strong chi="" color:="" font-family:="" ho="" minh="" padding:="" span="" strong="" style="" text-align:=""><strong chi="" color:="" font-family:="" ho="" padding:="" span="" strong="" style="" text-align:=""><a .="" 20="" a="" about="" arriving="" before="" break="" color:="" font-family:="" font-size:="" ha="" half="" have="" href="" line-height:="" ll="" long="" minute="" on="" p="" padding:="" short="" style="" target="" text-align:="" text-decoration:="" the="" tourist="" way="" wharf="">&nbsp;Visit and exploring the&nbsp;<strong .="" 13th="" 5:="" 9th="" among="" ancient="" and="" are="" between="" color:="" constructed="" day="" font-family:="" font-size:="" font-stretch:="" h6="" line-height:="" of="" p="" padding:="" riep="" s="" siem="" span="" style="" temples="" text-align:="" the="" unmatched=""> <strong all="" angkor="" at="" best="" god="" hindu="" honors="" next="" of="" padding:="" preserved="" sightseeing="" starts="" stop="" strong="" style="" the="" to="" vishna.="" which="" your="">Bayon Temple</strong>. One of the few Buddhist temples in Angkor, it features some 200 striking faces carved in 54 towers.</strong></a></strong></strong></strong></strong></strong></strong></span></p>
 ',list_img='',title='VietNam - Cambodia - Laos',keyword='VietNam - Cambodia - Laos',description='VietNam - Cambodia - Laos',inclusion='',exclusion='',updated='17-03-30 08:45:18' where id=10;
+update tour set tour_quoc_te='',DanhMuc1Id='',DanhMuc2Id='',danhmuc_multi='',promotion='',packages='',name='',name_url='',count_down='',code='',img='',price_sales='',price='',price_2='',price_3='',price_4='',price_5='',price_6='',price_number='',price_number_2='',price_number_3='',price_number_4='',price_number_5='',price_number_6='',name_price='',name_price_2='',name_price_3='',name_price_4='',name_price_5='',name_price_6='',so_cho='1',durations='',departure='',departure_time='',destination='',vehicle='',hotel='',summary='',highlights='',schedule='',price_list='',content='',list_img='',title='',keyword='',description='',inclusion='',exclusion='',updated='' where id=;
+update tour set tour_quoc_te='',DanhMuc1Id='',DanhMuc2Id='',danhmuc_multi='',promotion='',packages='',name='',name_url='',count_down='',code='',img='',price_sales='',price='',price_2='',price_3='',price_4='',price_5='',price_6='',price_number='',price_number_2='',price_number_3='',price_number_4='',price_number_5='',price_number_6='',name_price='',name_price_2='',name_price_3='',name_price_4='',name_price_5='',name_price_6='',so_cho='1',durations='',departure='',departure_time='',destination='',vehicle='',hotel='',summary='',highlights='',schedule='',price_list='',content='',list_img='',title='',keyword='',description='',inclusion='',exclusion='',updated='' where id=;
+update tour set tour_quoc_te='0',DanhMuc1Id='2',DanhMuc2Id='2',danhmuc_multi='',promotion='1',packages='1',name='Mekong Delta Discover 3 days',name_url='mekong-delta-discover-3-days',count_down='',code='',img='/mix/view/admin/Themes/kcfinder/upload/images/tour/love-travel-27-780.jpg',price_sales='',price='100',price_2='0',price_3='0',price_4='0',price_5='0',price_6='0',price_number='',price_number_2='',price_number_3='',price_number_4='',price_number_5='',price_number_6='',name_price='',name_price_2='',name_price_3='',name_price_4='',name_price_5='',name_price_6='',so_cho='111',durations='3 Days 2 Nights',departure='',departure_time='',destination='Cantho',vehicle='Car',hotel='3',summary='',highlights='',schedule='<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 1: Ho Chi Minh City - Ben Tre - Boat Cruise - Home stay (L, D)</strong><br style="margin: 0px; padding: 0px;" />
+	Pick up at your hotel, Drive to Ben Tre. Here,&nbsp;take a boat to Coconut Island. Enjoy a brief walk on the island, trying native fruits and viewing local handicraft productions. Continue by boat to Tan Thach commune to visit a family-run enterprise making coconut candies. Take a horse-drawn cart to Quoi Son to visit a bee farm and to enjoy tea and candies. Float on a sampan through the narrow, tree-lined canals of the Mekong Delta. Enjoy lunch at Qui Island. After lunch continue by boat to Phu Tuc village for an overnight stay. Enjoy fishing and sightseeing during a late-afternoon rowboat trip along the Tien River. Visit a local family home and have a dinner of traditional Mekong Delta foods. After dinner take in a performance of traditional rural music. Spend the night in a home stay in Ben Tre.</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 2: Ben Tre - Cai Be Floating Market &ndash; Vinh Long &ndash; Can tho (B, L)</strong></p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<table border="0" cellpadding="1" cellspacing="1" style="margin: 0px; padding: 0px; color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">
+	<tbody style="margin: 0px; padding: 0px;">
+		<tr style="margin: 0px; padding: 0px;">
+			<td style="margin: 0px; padding: 0px;">
+				<img alt="Mekong-Delta.jpg" border="0" height="110" src="http://www.asiaviewtravel.com/images/Download/Mekong-Delta.jpg" style="margin: 0px; padding: 0px; border: none;" width="160" /></td>
+			<td style="margin: 0px; padding: 0px;">
+				<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px;">
+					After breakfast depart for Cai Be. Take a boat trip along the mighty Mekong River and its tributaries to view the daily lives of people who work and play on the waterways of the Mekong Delta and canals to Vinh Long. We will stop at the home of a Bonsai gardener for a sumptuous Delta lunch, including the popular dish of &quot;Elephant ear fish&quot;, before continuing our exploration of the tributaries and canals of the delta. Towards the end of the day we arrive in Can tho where we stay in a lovely hotel.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 3: Can tho - Ho chi minh (B, L)</strong><br style="margin: 0px; padding: 0px;" />
+	Rising early to the sounds of the Delta coming to life for another day, we breakfast and start our trip with a boat cruise on sparking streams along the endless waterway of Mighty Mekong River to Cai rang floating markets. There will be hundreds of boats loaded with fruits, vegetables and fish jostling for trade. Sellers advertisers their wares by crying out across the waters. We visit the lush orchards and are treated to a delicious tropical fruits. After Lunch,&nbsp; drive back&nbsp; to Ho Chi Minh city. Drop off at your hotel. End of tour.</p>
+',price_list='<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Tour includes:</strong><br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Tours &amp; transfers in private air-conditioned vehicles<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;1 night at hotel in Can tho with daily breakfast at selected hotels<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;1 night at home stay in Ben tre<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Private English speaking guide&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Meals as indicated in the itinerary at local restaurant with local foods (B = breakfast; L = Lunch; D = Dinner)<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Boat cruise as stated<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Entrance fees and permits for all sights visited<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Mineral Water and towel<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Government taxes &amp; Service charges</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Tour excludes:</strong><br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;International flights to and from Vietnam.&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Vietnam visa arrangement (upon request visa on arrival at 15 USD, not including stamping fee at 25 USD)&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Meals not indicated in the itinerary&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;All other services which are not mentioned above<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Personal travel insurance (Compulsory).<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Personal expenses such as Telephone and Laundry bills.<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Tips and gratuities</p>
+',content='<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 1: Ho Chi Minh City - Ben Tre - Boat Cruise - Home stay (L, D)</strong><br style="margin: 0px; padding: 0px;" />
+	Pick up at your hotel, Drive to Ben Tre. Here,&nbsp;take a boat to Coconut Island. Enjoy a brief walk on the island, trying native fruits and viewing local handicraft productions. Continue by boat to Tan Thach commune to visit a family-run enterprise making coconut candies. Take a horse-drawn cart to Quoi Son to visit a bee farm and to enjoy tea and candies. Float on a sampan through the narrow, tree-lined canals of the Mekong Delta. Enjoy lunch at Qui Island. After lunch continue by boat to Phu Tuc village for an overnight stay. Enjoy fishing and sightseeing during a late-afternoon rowboat trip along the Tien River. Visit a local family home and have a dinner of traditional Mekong Delta foods. After dinner take in a performance of traditional rural music. Spend the night in a home stay in Ben Tre.</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 2: Ben Tre - Cai Be Floating Market &ndash; Vinh Long &ndash; Can tho (B, L)</strong></p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<table border="0" cellpadding="1" cellspacing="1" style="margin: 0px; padding: 0px; color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">
+	<tbody style="margin: 0px; padding: 0px;">
+		<tr style="margin: 0px; padding: 0px;">
+			<td style="margin: 0px; padding: 0px;">
+				<img alt="Mekong-Delta.jpg" border="0" height="110" src="http://www.asiaviewtravel.com/images/Download/Mekong-Delta.jpg" style="margin: 0px; padding: 0px; border: none;" width="160" /></td>
+			<td style="margin: 0px; padding: 0px;">
+				<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px;">
+					After breakfast depart for Cai Be. Take a boat trip along the mighty Mekong River and its tributaries to view the daily lives of people who work and play on the waterways of the Mekong Delta and canals to Vinh Long. We will stop at the home of a Bonsai gardener for a sumptuous Delta lunch, including the popular dish of &quot;Elephant ear fish&quot;, before continuing our exploration of the tributaries and canals of the delta. Towards the end of the day we arrive in Can tho where we stay in a lovely hotel.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 3: Can tho - Ho chi minh (B, L)</strong><br style="margin: 0px; padding: 0px;" />
+	Rising early to the sounds of the Delta coming to life for another day, we breakfast and start our trip with a boat cruise on sparking streams along the endless waterway of Mighty Mekong River to Cai rang floating markets. There will be hundreds of boats loaded with fruits, vegetables and fish jostling for trade. Sellers advertisers their wares by crying out across the waters. We visit the lush orchards and are treated to a delicious tropical fruits. After Lunch,&nbsp; drive back&nbsp; to Ho Chi Minh city. Drop off at your hotel. End of tour.</p>
+',list_img='',title='Mekong Delta Discover 3 days',keyword='Mekong Delta Discover 3 days',description='Mekong Delta Discover 3 days',inclusion='',exclusion='',updated='0000-00-00 00:00:00' where id=3;
+update tour set tour_quoc_te='0',DanhMuc1Id='2',DanhMuc2Id='2',danhmuc_multi='',promotion='1',packages='1',name='Mekong Delta Discover 3 days',name_url='mekong-delta-discover-3-days',count_down='',code='',img='/mix/view/admin/Themes/kcfinder/upload/images/tour/love-travel-27-780.jpg',price_sales='',price='100',price_2='0',price_3='0',price_4='0',price_5='0',price_6='0',price_number='',price_number_2='',price_number_3='',price_number_4='',price_number_5='',price_number_6='',name_price='',name_price_2='',name_price_3='',name_price_4='',name_price_5='',name_price_6='',so_cho='111',durations='3 Days 2 Nights',departure='',departure_time='',destination='Cantho',vehicle='Car',hotel='3',summary='',highlights='',schedule='<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 1: Ho Chi Minh City - Ben Tre - Boat Cruise - Home stay (L, D)</strong><br style="margin: 0px; padding: 0px;" />
+	Pick up at your hotel, Drive to Ben Tre. Here,&nbsp;take a boat to Coconut Island. Enjoy a brief walk on the island, trying native fruits and viewing local handicraft productions. Continue by boat to Tan Thach commune to visit a family-run enterprise making coconut candies. Take a horse-drawn cart to Quoi Son to visit a bee farm and to enjoy tea and candies. Float on a sampan through the narrow, tree-lined canals of the Mekong Delta. Enjoy lunch at Qui Island. After lunch continue by boat to Phu Tuc village for an overnight stay. Enjoy fishing and sightseeing during a late-afternoon rowboat trip along the Tien River. Visit a local family home and have a dinner of traditional Mekong Delta foods. After dinner take in a performance of traditional rural music. Spend the night in a home stay in Ben Tre.</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 2: Ben Tre - Cai Be Floating Market &ndash; Vinh Long &ndash; Can tho (B, L)</strong></p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<table border="0" cellpadding="1" cellspacing="1" style="margin: 0px; padding: 0px; color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">
+	<tbody style="margin: 0px; padding: 0px;">
+		<tr style="margin: 0px; padding: 0px;">
+			<td style="margin: 0px; padding: 0px;">
+				<img alt="Mekong-Delta.jpg" border="0" height="110" src="http://www.asiaviewtravel.com/images/Download/Mekong-Delta.jpg" style="margin: 0px; padding: 0px; border: none;" width="160" /></td>
+			<td style="margin: 0px; padding: 0px;">
+				<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px;">
+					After breakfast depart for Cai Be. Take a boat trip along the mighty Mekong River and its tributaries to view the daily lives of people who work and play on the waterways of the Mekong Delta and canals to Vinh Long. We will stop at the home of a Bonsai gardener for a sumptuous Delta lunch, including the popular dish of &quot;Elephant ear fish&quot;, before continuing our exploration of the tributaries and canals of the delta. Towards the end of the day we arrive in Can tho where we stay in a lovely hotel.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 3: Can tho - Ho chi minh (B, L)</strong><br style="margin: 0px; padding: 0px;" />
+	Rising early to the sounds of the Delta coming to life for another day, we breakfast and start our trip with a boat cruise on sparking streams along the endless waterway of Mighty Mekong River to Cai rang floating markets. There will be hundreds of boats loaded with fruits, vegetables and fish jostling for trade. Sellers advertisers their wares by crying out across the waters. We visit the lush orchards and are treated to a delicious tropical fruits. After Lunch,&nbsp; drive back&nbsp; to Ho Chi Minh city. Drop off at your hotel. End of tour.</p>
+',price_list='<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Tour includes:</strong><br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Tours &amp; transfers in private air-conditioned vehicles<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;1 night at hotel in Can tho with daily breakfast at selected hotels<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;1 night at home stay in Ben tre<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Private English speaking guide&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Meals as indicated in the itinerary at local restaurant with local foods (B = breakfast; L = Lunch; D = Dinner)<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Boat cruise as stated<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Entrance fees and permits for all sights visited<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Mineral Water and towel<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Government taxes &amp; Service charges</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Tour excludes:</strong><br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;International flights to and from Vietnam.&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Vietnam visa arrangement (upon request visa on arrival at 15 USD, not including stamping fee at 25 USD)&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Meals not indicated in the itinerary&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;All other services which are not mentioned above<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Personal travel insurance (Compulsory).<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Personal expenses such as Telephone and Laundry bills.<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Tips and gratuities</p>
+',content='<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 1: Ho Chi Minh City - Ben Tre - Boat Cruise - Home stay (L, D)</strong><br style="margin: 0px; padding: 0px;" />
+	Pick up at your hotel, Drive to Ben Tre. Here,&nbsp;take a boat to Coconut Island. Enjoy a brief walk on the island, trying native fruits and viewing local handicraft productions. Continue by boat to Tan Thach commune to visit a family-run enterprise making coconut candies. Take a horse-drawn cart to Quoi Son to visit a bee farm and to enjoy tea and candies. Float on a sampan through the narrow, tree-lined canals of the Mekong Delta. Enjoy lunch at Qui Island. After lunch continue by boat to Phu Tuc village for an overnight stay. Enjoy fishing and sightseeing during a late-afternoon rowboat trip along the Tien River. Visit a local family home and have a dinner of traditional Mekong Delta foods. After dinner take in a performance of traditional rural music. Spend the night in a home stay in Ben Tre.</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 2: Ben Tre - Cai Be Floating Market &ndash; Vinh Long &ndash; Can tho (B, L)</strong></p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<table border="0" cellpadding="1" cellspacing="1" style="margin: 0px; padding: 0px; color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">
+	<tbody style="margin: 0px; padding: 0px;">
+		<tr style="margin: 0px; padding: 0px;">
+			<td style="margin: 0px; padding: 0px;">
+				<img alt="Mekong-Delta.jpg" border="0" height="110" src="http://www.asiaviewtravel.com/images/Download/Mekong-Delta.jpg" style="margin: 0px; padding: 0px; border: none;" width="160" /></td>
+			<td style="margin: 0px; padding: 0px;">
+				<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px;">
+					After breakfast depart for Cai Be. Take a boat trip along the mighty Mekong River and its tributaries to view the daily lives of people who work and play on the waterways of the Mekong Delta and canals to Vinh Long. We will stop at the home of a Bonsai gardener for a sumptuous Delta lunch, including the popular dish of &quot;Elephant ear fish&quot;, before continuing our exploration of the tributaries and canals of the delta. Towards the end of the day we arrive in Can tho where we stay in a lovely hotel.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 3: Can tho - Ho chi minh (B, L)</strong><br style="margin: 0px; padding: 0px;" />
+	Rising early to the sounds of the Delta coming to life for another day, we breakfast and start our trip with a boat cruise on sparking streams along the endless waterway of Mighty Mekong River to Cai rang floating markets. There will be hundreds of boats loaded with fruits, vegetables and fish jostling for trade. Sellers advertisers their wares by crying out across the waters. We visit the lush orchards and are treated to a delicious tropical fruits. After Lunch,&nbsp; drive back&nbsp; to Ho Chi Minh city. Drop off at your hotel. End of tour.</p>
+',list_img='',title='Mekong Delta Discover 3 days',keyword='Mekong Delta Discover 3 days',description='Mekong Delta Discover 3 days',inclusion='',exclusion='',updated='0000-00-00 00:00:00' where id=3;
+update tour set tour_quoc_te='0',DanhMuc1Id='2',DanhMuc2Id='2',danhmuc_multi='',promotion='1',packages='1',name='Mekong Delta Discover 3 days',name_url='mekong-delta-discover-3-days',count_down='',code='',img='/mix/view/admin/Themes/kcfinder/upload/images/tour/love-travel-27-780.jpg',price_sales='',price='100',price_2='0',price_3='0',price_4='0',price_5='0',price_6='0',price_number='',price_number_2='',price_number_3='',price_number_4='',price_number_5='',price_number_6='',name_price='',name_price_2='',name_price_3='',name_price_4='',name_price_5='',name_price_6='',so_cho='12',durations='3 Days 2 Nights',departure='',departure_time='',destination='Cantho',vehicle='Car',hotel='3',summary='',highlights='',schedule='<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 1: Ho Chi Minh City - Ben Tre - Boat Cruise - Home stay (L, D)</strong><br style="margin: 0px; padding: 0px;" />
+	Pick up at your hotel, Drive to Ben Tre. Here,&nbsp;take a boat to Coconut Island. Enjoy a brief walk on the island, trying native fruits and viewing local handicraft productions. Continue by boat to Tan Thach commune to visit a family-run enterprise making coconut candies. Take a horse-drawn cart to Quoi Son to visit a bee farm and to enjoy tea and candies. Float on a sampan through the narrow, tree-lined canals of the Mekong Delta. Enjoy lunch at Qui Island. After lunch continue by boat to Phu Tuc village for an overnight stay. Enjoy fishing and sightseeing during a late-afternoon rowboat trip along the Tien River. Visit a local family home and have a dinner of traditional Mekong Delta foods. After dinner take in a performance of traditional rural music. Spend the night in a home stay in Ben Tre.</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 2: Ben Tre - Cai Be Floating Market &ndash; Vinh Long &ndash; Can tho (B, L)</strong></p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<table border="0" cellpadding="1" cellspacing="1" style="margin: 0px; padding: 0px; color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">
+	<tbody style="margin: 0px; padding: 0px;">
+		<tr style="margin: 0px; padding: 0px;">
+			<td style="margin: 0px; padding: 0px;">
+				<img alt="Mekong-Delta.jpg" border="0" height="110" src="http://www.asiaviewtravel.com/images/Download/Mekong-Delta.jpg" style="margin: 0px; padding: 0px; border: none;" width="160" /></td>
+			<td style="margin: 0px; padding: 0px;">
+				<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px;">
+					After breakfast depart for Cai Be. Take a boat trip along the mighty Mekong River and its tributaries to view the daily lives of people who work and play on the waterways of the Mekong Delta and canals to Vinh Long. We will stop at the home of a Bonsai gardener for a sumptuous Delta lunch, including the popular dish of &quot;Elephant ear fish&quot;, before continuing our exploration of the tributaries and canals of the delta. Towards the end of the day we arrive in Can tho where we stay in a lovely hotel.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 3: Can tho - Ho chi minh (B, L)</strong><br style="margin: 0px; padding: 0px;" />
+	Rising early to the sounds of the Delta coming to life for another day, we breakfast and start our trip with a boat cruise on sparking streams along the endless waterway of Mighty Mekong River to Cai rang floating markets. There will be hundreds of boats loaded with fruits, vegetables and fish jostling for trade. Sellers advertisers their wares by crying out across the waters. We visit the lush orchards and are treated to a delicious tropical fruits. After Lunch,&nbsp; drive back&nbsp; to Ho Chi Minh city. Drop off at your hotel. End of tour.</p>
+',price_list='<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Tour includes:</strong><br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Tours &amp; transfers in private air-conditioned vehicles<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;1 night at hotel in Can tho with daily breakfast at selected hotels<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;1 night at home stay in Ben tre<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Private English speaking guide&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Meals as indicated in the itinerary at local restaurant with local foods (B = breakfast; L = Lunch; D = Dinner)<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Boat cruise as stated<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Entrance fees and permits for all sights visited<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Mineral Water and towel<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Government taxes &amp; Service charges</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Tour excludes:</strong><br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;International flights to and from Vietnam.&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Vietnam visa arrangement (upon request visa on arrival at 15 USD, not including stamping fee at 25 USD)&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Meals not indicated in the itinerary&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;All other services which are not mentioned above<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Personal travel insurance (Compulsory).<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Personal expenses such as Telephone and Laundry bills.<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Tips and gratuities</p>
+',content='<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 1: Ho Chi Minh City - Ben Tre - Boat Cruise - Home stay (L, D)</strong><br style="margin: 0px; padding: 0px;" />
+	Pick up at your hotel, Drive to Ben Tre. Here,&nbsp;take a boat to Coconut Island. Enjoy a brief walk on the island, trying native fruits and viewing local handicraft productions. Continue by boat to Tan Thach commune to visit a family-run enterprise making coconut candies. Take a horse-drawn cart to Quoi Son to visit a bee farm and to enjoy tea and candies. Float on a sampan through the narrow, tree-lined canals of the Mekong Delta. Enjoy lunch at Qui Island. After lunch continue by boat to Phu Tuc village for an overnight stay. Enjoy fishing and sightseeing during a late-afternoon rowboat trip along the Tien River. Visit a local family home and have a dinner of traditional Mekong Delta foods. After dinner take in a performance of traditional rural music. Spend the night in a home stay in Ben Tre.</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 2: Ben Tre - Cai Be Floating Market &ndash; Vinh Long &ndash; Can tho (B, L)</strong></p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<table border="0" cellpadding="1" cellspacing="1" style="margin: 0px; padding: 0px; color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">
+	<tbody style="margin: 0px; padding: 0px;">
+		<tr style="margin: 0px; padding: 0px;">
+			<td style="margin: 0px; padding: 0px;">
+				<img alt="Mekong-Delta.jpg" border="0" height="110" src="http://www.asiaviewtravel.com/images/Download/Mekong-Delta.jpg" style="margin: 0px; padding: 0px; border: none;" width="160" /></td>
+			<td style="margin: 0px; padding: 0px;">
+				<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px;">
+					After breakfast depart for Cai Be. Take a boat trip along the mighty Mekong River and its tributaries to view the daily lives of people who work and play on the waterways of the Mekong Delta and canals to Vinh Long. We will stop at the home of a Bonsai gardener for a sumptuous Delta lunch, including the popular dish of &quot;Elephant ear fish&quot;, before continuing our exploration of the tributaries and canals of the delta. Towards the end of the day we arrive in Can tho where we stay in a lovely hotel.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 3: Can tho - Ho chi minh (B, L)</strong><br style="margin: 0px; padding: 0px;" />
+	Rising early to the sounds of the Delta coming to life for another day, we breakfast and start our trip with a boat cruise on sparking streams along the endless waterway of Mighty Mekong River to Cai rang floating markets. There will be hundreds of boats loaded with fruits, vegetables and fish jostling for trade. Sellers advertisers their wares by crying out across the waters. We visit the lush orchards and are treated to a delicious tropical fruits. After Lunch,&nbsp; drive back&nbsp; to Ho Chi Minh city. Drop off at your hotel. End of tour.</p>
+',list_img='',title='Mekong Delta Discover 3 days',keyword='Mekong Delta Discover 3 days',description='Mekong Delta Discover 3 days',inclusion='',exclusion='',updated='0000-00-00 00:00:00' where id=3;
+update tour set tour_quoc_te='0',DanhMuc1Id='2',DanhMuc2Id='2',danhmuc_multi='',promotion='1',packages='1',name='Mekong Delta Discover 3 days',name_url='mekong-delta-discover-3-days',count_down='',code='',img='/mix/view/admin/Themes/kcfinder/upload/images/tour/love-travel-27-780.jpg',price_sales='',price='100',price_2='0',price_3='0',price_4='0',price_5='0',price_6='0',price_number='',price_number_2='',price_number_3='',price_number_4='',price_number_5='',price_number_6='',name_price='',name_price_2='',name_price_3='',name_price_4='',name_price_5='',name_price_6='',so_cho='13',durations='3 Days 2 Nights',departure='',departure_time='',destination='Cantho',vehicle='Car',hotel='3',summary='',highlights='',schedule='<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 1: Ho Chi Minh City - Ben Tre - Boat Cruise - Home stay (L, D)</strong><br style="margin: 0px; padding: 0px;" />
+	Pick up at your hotel, Drive to Ben Tre. Here,&nbsp;take a boat to Coconut Island. Enjoy a brief walk on the island, trying native fruits and viewing local handicraft productions. Continue by boat to Tan Thach commune to visit a family-run enterprise making coconut candies. Take a horse-drawn cart to Quoi Son to visit a bee farm and to enjoy tea and candies. Float on a sampan through the narrow, tree-lined canals of the Mekong Delta. Enjoy lunch at Qui Island. After lunch continue by boat to Phu Tuc village for an overnight stay. Enjoy fishing and sightseeing during a late-afternoon rowboat trip along the Tien River. Visit a local family home and have a dinner of traditional Mekong Delta foods. After dinner take in a performance of traditional rural music. Spend the night in a home stay in Ben Tre.</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 2: Ben Tre - Cai Be Floating Market &ndash; Vinh Long &ndash; Can tho (B, L)</strong></p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<table border="0" cellpadding="1" cellspacing="1" style="margin: 0px; padding: 0px; color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">
+	<tbody style="margin: 0px; padding: 0px;">
+		<tr style="margin: 0px; padding: 0px;">
+			<td style="margin: 0px; padding: 0px;">
+				<img alt="Mekong-Delta.jpg" border="0" height="110" src="http://www.asiaviewtravel.com/images/Download/Mekong-Delta.jpg" style="margin: 0px; padding: 0px; border: none;" width="160" /></td>
+			<td style="margin: 0px; padding: 0px;">
+				<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px;">
+					After breakfast depart for Cai Be. Take a boat trip along the mighty Mekong River and its tributaries to view the daily lives of people who work and play on the waterways of the Mekong Delta and canals to Vinh Long. We will stop at the home of a Bonsai gardener for a sumptuous Delta lunch, including the popular dish of &quot;Elephant ear fish&quot;, before continuing our exploration of the tributaries and canals of the delta. Towards the end of the day we arrive in Can tho where we stay in a lovely hotel.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 3: Can tho - Ho chi minh (B, L)</strong><br style="margin: 0px; padding: 0px;" />
+	Rising early to the sounds of the Delta coming to life for another day, we breakfast and start our trip with a boat cruise on sparking streams along the endless waterway of Mighty Mekong River to Cai rang floating markets. There will be hundreds of boats loaded with fruits, vegetables and fish jostling for trade. Sellers advertisers their wares by crying out across the waters. We visit the lush orchards and are treated to a delicious tropical fruits. After Lunch,&nbsp; drive back&nbsp; to Ho Chi Minh city. Drop off at your hotel. End of tour.</p>
+',price_list='<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Tour includes:</strong><br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Tours &amp; transfers in private air-conditioned vehicles<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;1 night at hotel in Can tho with daily breakfast at selected hotels<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;1 night at home stay in Ben tre<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Private English speaking guide&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Meals as indicated in the itinerary at local restaurant with local foods (B = breakfast; L = Lunch; D = Dinner)<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Boat cruise as stated<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Entrance fees and permits for all sights visited<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Mineral Water and towel<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Government taxes &amp; Service charges</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Tour excludes:</strong><br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;International flights to and from Vietnam.&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Vietnam visa arrangement (upon request visa on arrival at 15 USD, not including stamping fee at 25 USD)&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Meals not indicated in the itinerary&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;All other services which are not mentioned above<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Personal travel insurance (Compulsory).<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Personal expenses such as Telephone and Laundry bills.<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Tips and gratuities</p>
+',content='<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 1: Ho Chi Minh City - Ben Tre - Boat Cruise - Home stay (L, D)</strong><br style="margin: 0px; padding: 0px;" />
+	Pick up at your hotel, Drive to Ben Tre. Here,&nbsp;take a boat to Coconut Island. Enjoy a brief walk on the island, trying native fruits and viewing local handicraft productions. Continue by boat to Tan Thach commune to visit a family-run enterprise making coconut candies. Take a horse-drawn cart to Quoi Son to visit a bee farm and to enjoy tea and candies. Float on a sampan through the narrow, tree-lined canals of the Mekong Delta. Enjoy lunch at Qui Island. After lunch continue by boat to Phu Tuc village for an overnight stay. Enjoy fishing and sightseeing during a late-afternoon rowboat trip along the Tien River. Visit a local family home and have a dinner of traditional Mekong Delta foods. After dinner take in a performance of traditional rural music. Spend the night in a home stay in Ben Tre.</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 2: Ben Tre - Cai Be Floating Market &ndash; Vinh Long &ndash; Can tho (B, L)</strong></p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<table border="0" cellpadding="1" cellspacing="1" style="margin: 0px; padding: 0px; color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">
+	<tbody style="margin: 0px; padding: 0px;">
+		<tr style="margin: 0px; padding: 0px;">
+			<td style="margin: 0px; padding: 0px;">
+				<img alt="Mekong-Delta.jpg" border="0" height="110" src="http://www.asiaviewtravel.com/images/Download/Mekong-Delta.jpg" style="margin: 0px; padding: 0px; border: none;" width="160" /></td>
+			<td style="margin: 0px; padding: 0px;">
+				<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px;">
+					After breakfast depart for Cai Be. Take a boat trip along the mighty Mekong River and its tributaries to view the daily lives of people who work and play on the waterways of the Mekong Delta and canals to Vinh Long. We will stop at the home of a Bonsai gardener for a sumptuous Delta lunch, including the popular dish of &quot;Elephant ear fish&quot;, before continuing our exploration of the tributaries and canals of the delta. Towards the end of the day we arrive in Can tho where we stay in a lovely hotel.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 3: Can tho - Ho chi minh (B, L)</strong><br style="margin: 0px; padding: 0px;" />
+	Rising early to the sounds of the Delta coming to life for another day, we breakfast and start our trip with a boat cruise on sparking streams along the endless waterway of Mighty Mekong River to Cai rang floating markets. There will be hundreds of boats loaded with fruits, vegetables and fish jostling for trade. Sellers advertisers their wares by crying out across the waters. We visit the lush orchards and are treated to a delicious tropical fruits. After Lunch,&nbsp; drive back&nbsp; to Ho Chi Minh city. Drop off at your hotel. End of tour.</p>
+',list_img='',title='Mekong Delta Discover 3 days',keyword='Mekong Delta Discover 3 days',description='Mekong Delta Discover 3 days',inclusion='',exclusion='',updated='0000-00-00 00:00:00' where id=3;
+update tour set tour_quoc_te='0',DanhMuc1Id='2',DanhMuc2Id='2',danhmuc_multi='',promotion='1',packages='1',name='Mekong Delta Discover 3 days',name_url='mekong-delta-discover-3-days',count_down='',code='',img='/mix/view/admin/Themes/kcfinder/upload/images/tour/love-travel-27-780.jpg',price_sales='',price='100',price_2='0',price_3='0',price_4='0',price_5='0',price_6='0',price_number='',price_number_2='',price_number_3='',price_number_4='',price_number_5='',price_number_6='',name_price='',name_price_2='',name_price_3='',name_price_4='',name_price_5='',name_price_6='',so_cho='15',durations='3 Days 2 Nights',departure='',departure_time='',destination='Cantho',vehicle='Car',hotel='3',summary='',highlights='',schedule='<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 1: Ho Chi Minh City - Ben Tre - Boat Cruise - Home stay (L, D)</strong><br style="margin: 0px; padding: 0px;" />
+	Pick up at your hotel, Drive to Ben Tre. Here,&nbsp;take a boat to Coconut Island. Enjoy a brief walk on the island, trying native fruits and viewing local handicraft productions. Continue by boat to Tan Thach commune to visit a family-run enterprise making coconut candies. Take a horse-drawn cart to Quoi Son to visit a bee farm and to enjoy tea and candies. Float on a sampan through the narrow, tree-lined canals of the Mekong Delta. Enjoy lunch at Qui Island. After lunch continue by boat to Phu Tuc village for an overnight stay. Enjoy fishing and sightseeing during a late-afternoon rowboat trip along the Tien River. Visit a local family home and have a dinner of traditional Mekong Delta foods. After dinner take in a performance of traditional rural music. Spend the night in a home stay in Ben Tre.</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 2: Ben Tre - Cai Be Floating Market &ndash; Vinh Long &ndash; Can tho (B, L)</strong></p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<table border="0" cellpadding="1" cellspacing="1" style="margin: 0px; padding: 0px; color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">
+	<tbody style="margin: 0px; padding: 0px;">
+		<tr style="margin: 0px; padding: 0px;">
+			<td style="margin: 0px; padding: 0px;">
+				<img alt="Mekong-Delta.jpg" border="0" height="110" src="http://www.asiaviewtravel.com/images/Download/Mekong-Delta.jpg" style="margin: 0px; padding: 0px; border: none;" width="160" /></td>
+			<td style="margin: 0px; padding: 0px;">
+				<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px;">
+					After breakfast depart for Cai Be. Take a boat trip along the mighty Mekong River and its tributaries to view the daily lives of people who work and play on the waterways of the Mekong Delta and canals to Vinh Long. We will stop at the home of a Bonsai gardener for a sumptuous Delta lunch, including the popular dish of &quot;Elephant ear fish&quot;, before continuing our exploration of the tributaries and canals of the delta. Towards the end of the day we arrive in Can tho where we stay in a lovely hotel.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 3: Can tho - Ho chi minh (B, L)</strong><br style="margin: 0px; padding: 0px;" />
+	Rising early to the sounds of the Delta coming to life for another day, we breakfast and start our trip with a boat cruise on sparking streams along the endless waterway of Mighty Mekong River to Cai rang floating markets. There will be hundreds of boats loaded with fruits, vegetables and fish jostling for trade. Sellers advertisers their wares by crying out across the waters. We visit the lush orchards and are treated to a delicious tropical fruits. After Lunch,&nbsp; drive back&nbsp; to Ho Chi Minh city. Drop off at your hotel. End of tour.</p>
+',price_list='<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Tour includes:</strong><br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Tours &amp; transfers in private air-conditioned vehicles<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;1 night at hotel in Can tho with daily breakfast at selected hotels<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;1 night at home stay in Ben tre<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Private English speaking guide&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Meals as indicated in the itinerary at local restaurant with local foods (B = breakfast; L = Lunch; D = Dinner)<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Boat cruise as stated<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Entrance fees and permits for all sights visited<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Mineral Water and towel<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Government taxes &amp; Service charges</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Tour excludes:</strong><br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;International flights to and from Vietnam.&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Vietnam visa arrangement (upon request visa on arrival at 15 USD, not including stamping fee at 25 USD)&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Meals not indicated in the itinerary&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;All other services which are not mentioned above<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Personal travel insurance (Compulsory).<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Personal expenses such as Telephone and Laundry bills.<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Tips and gratuities</p>
+',content='<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 1: Ho Chi Minh City - Ben Tre - Boat Cruise - Home stay (L, D)</strong><br style="margin: 0px; padding: 0px;" />
+	Pick up at your hotel, Drive to Ben Tre. Here,&nbsp;take a boat to Coconut Island. Enjoy a brief walk on the island, trying native fruits and viewing local handicraft productions. Continue by boat to Tan Thach commune to visit a family-run enterprise making coconut candies. Take a horse-drawn cart to Quoi Son to visit a bee farm and to enjoy tea and candies. Float on a sampan through the narrow, tree-lined canals of the Mekong Delta. Enjoy lunch at Qui Island. After lunch continue by boat to Phu Tuc village for an overnight stay. Enjoy fishing and sightseeing during a late-afternoon rowboat trip along the Tien River. Visit a local family home and have a dinner of traditional Mekong Delta foods. After dinner take in a performance of traditional rural music. Spend the night in a home stay in Ben Tre.</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 2: Ben Tre - Cai Be Floating Market &ndash; Vinh Long &ndash; Can tho (B, L)</strong></p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<table border="0" cellpadding="1" cellspacing="1" style="margin: 0px; padding: 0px; color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">
+	<tbody style="margin: 0px; padding: 0px;">
+		<tr style="margin: 0px; padding: 0px;">
+			<td style="margin: 0px; padding: 0px;">
+				<img alt="Mekong-Delta.jpg" border="0" height="110" src="http://www.asiaviewtravel.com/images/Download/Mekong-Delta.jpg" style="margin: 0px; padding: 0px; border: none;" width="160" /></td>
+			<td style="margin: 0px; padding: 0px;">
+				<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px;">
+					After breakfast depart for Cai Be. Take a boat trip along the mighty Mekong River and its tributaries to view the daily lives of people who work and play on the waterways of the Mekong Delta and canals to Vinh Long. We will stop at the home of a Bonsai gardener for a sumptuous Delta lunch, including the popular dish of &quot;Elephant ear fish&quot;, before continuing our exploration of the tributaries and canals of the delta. Towards the end of the day we arrive in Can tho where we stay in a lovely hotel.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 3: Can tho - Ho chi minh (B, L)</strong><br style="margin: 0px; padding: 0px;" />
+	Rising early to the sounds of the Delta coming to life for another day, we breakfast and start our trip with a boat cruise on sparking streams along the endless waterway of Mighty Mekong River to Cai rang floating markets. There will be hundreds of boats loaded with fruits, vegetables and fish jostling for trade. Sellers advertisers their wares by crying out across the waters. We visit the lush orchards and are treated to a delicious tropical fruits. After Lunch,&nbsp; drive back&nbsp; to Ho Chi Minh city. Drop off at your hotel. End of tour.</p>
+',list_img='',title='Mekong Delta Discover 3 days',keyword='Mekong Delta Discover 3 days',description='Mekong Delta Discover 3 days',inclusion='',exclusion='',updated='0000-00-00 00:00:00' where id=3;
+update tour set tour_quoc_te='0',DanhMuc1Id='2',DanhMuc2Id='2',danhmuc_multi='',promotion='1',packages='1',name='Saigon - Mekong Discover 6 days',name_url='saigon-mekong-discover-6-days',count_down='',code='',img='/mix/view/admin/Themes/kcfinder/upload/images/tour/love-travel-27-780.jpg',price_sales='',price='90',price_2='0',price_3='0',price_4='0',price_5='0',price_6='0',price_number='',price_number_2='',price_number_3='',price_number_4='',price_number_5='',price_number_6='',name_price='',name_price_2='',name_price_3='',name_price_4='',name_price_5='',name_price_6='',so_cho='0',durations='6 Days 5 Nights',departure='',departure_time='',destination='Chaudoc',vehicle='Car',hotel='3',summary='',highlights='',schedule='<p>
+	<span style="color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">This trip designed for individual traveler who is keen to explore all aspects of the Mekong Delta. Ho Chi Minh, Cu Chi Tunnel, Vinh Long, Cai Be floating market, Can Tho, Chau Doc and Sa Dec are some of what you will see on this itinerary.</span></p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Itinerary brief:</strong></p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	Day 1: Ho Chi Minh City Arrival<br style="margin: 0px; padding: 0px;" />
+	Day 2: Ho Chi Minh City - Cu chi - Ho Chi Minh&nbsp; (B, L)<br style="margin: 0px; padding: 0px;" />
+	Day 3: Ho Chi Minh - My tho - Ben tre - Can Tho&nbsp;(B, L)<br style="margin: 0px; padding: 0px;" />
+	Day 4: Can Tho - Chau Doc&nbsp;(B, L)<br style="margin: 0px; padding: 0px;" />
+	Day 5: Chau Doc - Xeo Quit - Ho Chi Minh City&nbsp;(B, L)<br style="margin: 0px; padding: 0px;" />
+	Day 6: Ho Chi Minh Departure</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Itinerary in Details</strong></p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 1: Ho Chi Minh City Arrival&nbsp;</strong><br style="margin: 0px; padding: 0px;" />
+	On arrival at Tan Son Nhat Airport, you will be warmly welcomed and transfered to hotel in city center by private Asia View Travel&rsquo;s guide and driver, check in, relax. Overnight at hotel.</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 2: Ho Chi Minh City - Cu chi - Ho Chi Minh City (B, L)</strong></p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<table border="0" cellpadding="1" cellspacing="1" style="margin: 0px; padding: 0px; color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">
+	<tbody style="margin: 0px; padding: 0px;">
+		<tr style="margin: 0px; padding: 0px;">
+			<td style="margin: 0px; padding: 0px;">
+				<img alt="Nha-tho-Duc-Ba-HCMC1.jpg" border="0" height="160" src="http://www.asiaviewtravel.com/images/Download/Nha-tho-Duc-Ba-HCMC1.jpg" style="margin: 0px; padding: 0px; border: none;" width="110" /></td>
+			<td style="margin: 0px; padding: 0px;">
+				<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px;">
+					The sightseeing tour of Ho Chi Minh City begins with a visit to the Reunification Palace which was the former residence of the President of South Vietnam until end of April 1975. Close to the palace are some striking French colonial structures including the Notre Dame Cathedral and the Old Sai Gon Post Office and the War Remnant Museum.<br style="margin: 0px; padding: 0px;" />
+					Afternoon we drive out this afternoon to explore the Cu Chi Tunnels. At the height of the Vietnam war, the tunnel system stretched from the outskirts of Saigon&nbsp; all the way to the Cambodian border of over 250 kilometers of tunnels. The tunnel system, built over 25 years starting in the 1940s,&nbsp; let the Viet Minh&nbsp; and, later, the Viet Cong, control a huge rural area.&nbsp; It was an underground city with living areas, kitchens, storage, weapons factories, field hospitals, command centers.&nbsp; In places, it was several&nbsp; stories deep and housed up to 10,000 people who virtually lived underground for years.... getting married, giving birth,going to school. Transfer back HCM city for overnight.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 3: Ho Chi Minh&nbsp; - My tho - Ben tre - Can Tho (B, L)</strong></p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<table border="0" cellpadding="1" cellspacing="1" style="margin: 0px; padding: 0px; color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">
+	<tbody style="margin: 0px; padding: 0px;">
+		<tr style="margin: 0px; padding: 0px;">
+			<td style="margin: 0px; padding: 0px;">
+				<img alt="cho-noi-4- new.JPG" border="0" height="110" src="http://www.asiaviewtravel.com/images/Download/cho-noi-4-%20new.JPG" style="margin: 0px; padding: 0px; border: none;" width="160" /></td>
+			<td style="margin: 0px; padding: 0px;">
+				<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px;">
+					8:00 AM You will be picked up at your hotel, transfer to My Tho, 84km from Ho chi minh city. This trip provides a look at a wide variety of the life and scenery on Vietnam River from the peaceful Mekong Delta region. The huge ships, which come from many different countries moving slowly, quietly along the river is what you will see at the Saigon River. Do not miss this sight! On the way you will see daily activities of local people along the river sellers and buyers bargaining, exchanging fish, the products that they got from their working on the sea. From My Tho, you will ride on a local motor boat around Dragon Island, Unicorn Island, Phoenix Island, Turtle Island and stop at the famous Unicorn Island. While at the Unicorn Island, you will take a short trek and go for a rowing boat trip. You will also enjoy lunch, tropical fruit and free time&nbsp; bike ride in the rural village.<br style="margin: 0px; padding: 0px;" />
+					From there, you will continue your motor boat trip to Ben Tre province to visit a handmade coconut candy workshop. Then transfer to a small motor boat and travel along the lush, green canals that are so beautiful for photography. We continue drive to Can Tho. Overnight at the hotel in Can Tho.<br style="margin: 0px; padding: 0px;" />
+					&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 4: Can Tho - Chau Doc (B, L)</strong><br style="margin: 0px; padding: 0px;" />
+	Cruising along the small and picturesque tributaries by machine boat, we will see the Cai Rang floating market (the nicest one with heaps of rowing boats). Take in the beautiful scenery and the daily life in Mekong River and you will roam through the , village to visit a rice husking mill and a rice noodles making shop. We now travel by land to Chau Doc, on the way we will pass Crocodile Farm. On arrival at Chau Doc, visit the Sam mountain to enjoy the a breath-taking view and enjoy the sunset on the top of Sam Mountain. Over night at hotel in Chau Doc.&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 5: Chau Doc - Xeo Quit - Ho Chi Minh City (B, L)</strong><br style="margin: 0px; padding: 0px;" />
+	The return trip begins as we depart this border town. A part of the pleasure of travelling in this region is the simple joy of seeing the rice fields and the smiling faces of the people. On arrival we board a boat for an exploration of the Xeo Quit Forest which was once a stronghold of the communist troop during the American wartime. This boundless cajeput forests are dissevered by numerous narrow canals surrounded by aquatic grass and plants, tall trees and vines. The cool and humid air mixing with the fragrance of flowers as well as the beautiful song of bird in the quiet environment make for an unforgettable excursion. After the boat trip we drive back to Ho Chi Minh City, passing through the charming countryside. Overnight at hotel Ho Chi Minh City.&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 6: Ho Chi Minh Departure&nbsp;</strong><br style="margin: 0px; padding: 0px;" />
+	Breakfast at hotel, free time until&nbsp;transfer to&nbsp;the airport for your&nbsp;departure flight. Say goodbye Vietnam.</p>
+',price_list='<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Tour includes:</strong><br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Tours &amp; transfers in private air-conditioned vehicles<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;All accommodation with daily breakfast at selected hotels<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Private English speaking guide&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Meals as indicated in the itinerary at local restaurant with local foods (B = breakfast; L = Lunch; D = Dinner)<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Boat cruise as stated<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Entrance fees and permits for all sights visited<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Mineral Water and towel<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Government taxes &amp; Service charges</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Tour excludes:</strong><br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;International flights to and from Vietnam.&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Vietnam visa arrangement (upon request visa on arrival at 15 USD, not including stamping fee at 25 USD)&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Meals not indicated in the itinerary&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Personal travel insurance (Compulsory).<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Personal expenses such as Telephone and Laundry bills.<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Tips and gratuities</p>
+',content='<p>
+	<span style="color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">This trip designed for individual traveler who is keen to explore all aspects of the Mekong Delta. Ho Chi Minh, Cu Chi Tunnel, Vinh Long, Cai Be floating market, Can Tho, Chau Doc and Sa Dec are some of what you will see on this itinerary.</span></p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Itinerary brief:</strong></p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	Day 1: Ho Chi Minh City Arrival<br style="margin: 0px; padding: 0px;" />
+	Day 2: Ho Chi Minh City - Cu chi - Ho Chi Minh&nbsp; (B, L)<br style="margin: 0px; padding: 0px;" />
+	Day 3: Ho Chi Minh - My tho - Ben tre - Can Tho&nbsp;(B, L)<br style="margin: 0px; padding: 0px;" />
+	Day 4: Can Tho - Chau Doc&nbsp;(B, L)<br style="margin: 0px; padding: 0px;" />
+	Day 5: Chau Doc - Xeo Quit - Ho Chi Minh City&nbsp;(B, L)<br style="margin: 0px; padding: 0px;" />
+	Day 6: Ho Chi Minh Departure</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Itinerary in Details</strong></p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 1: Ho Chi Minh City Arrival&nbsp;</strong><br style="margin: 0px; padding: 0px;" />
+	On arrival at Tan Son Nhat Airport, you will be warmly welcomed and transfered to hotel in city center by private Asia View Travel&rsquo;s guide and driver, check in, relax. Overnight at hotel.</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 2: Ho Chi Minh City - Cu chi - Ho Chi Minh City (B, L)</strong></p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<table border="0" cellpadding="1" cellspacing="1" style="margin: 0px; padding: 0px; color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">
+	<tbody style="margin: 0px; padding: 0px;">
+		<tr style="margin: 0px; padding: 0px;">
+			<td style="margin: 0px; padding: 0px;">
+				<img alt="Nha-tho-Duc-Ba-HCMC1.jpg" border="0" height="160" src="http://www.asiaviewtravel.com/images/Download/Nha-tho-Duc-Ba-HCMC1.jpg" style="margin: 0px; padding: 0px; border: none;" width="110" /></td>
+			<td style="margin: 0px; padding: 0px;">
+				<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px;">
+					The sightseeing tour of Ho Chi Minh City begins with a visit to the Reunification Palace which was the former residence of the President of South Vietnam until end of April 1975. Close to the palace are some striking French colonial structures including the Notre Dame Cathedral and the Old Sai Gon Post Office and the War Remnant Museum.<br style="margin: 0px; padding: 0px;" />
+					Afternoon we drive out this afternoon to explore the Cu Chi Tunnels. At the height of the Vietnam war, the tunnel system stretched from the outskirts of Saigon&nbsp; all the way to the Cambodian border of over 250 kilometers of tunnels. The tunnel system, built over 25 years starting in the 1940s,&nbsp; let the Viet Minh&nbsp; and, later, the Viet Cong, control a huge rural area.&nbsp; It was an underground city with living areas, kitchens, storage, weapons factories, field hospitals, command centers.&nbsp; In places, it was several&nbsp; stories deep and housed up to 10,000 people who virtually lived underground for years.... getting married, giving birth,going to school. Transfer back HCM city for overnight.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 3: Ho Chi Minh&nbsp; - My tho - Ben tre - Can Tho (B, L)</strong></p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<table border="0" cellpadding="1" cellspacing="1" style="margin: 0px; padding: 0px; color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">
+	<tbody style="margin: 0px; padding: 0px;">
+		<tr style="margin: 0px; padding: 0px;">
+			<td style="margin: 0px; padding: 0px;">
+				<img alt="cho-noi-4- new.JPG" border="0" height="110" src="http://www.asiaviewtravel.com/images/Download/cho-noi-4-%20new.JPG" style="margin: 0px; padding: 0px; border: none;" width="160" /></td>
+			<td style="margin: 0px; padding: 0px;">
+				<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px;">
+					8:00 AM You will be picked up at your hotel, transfer to My Tho, 84km from Ho chi minh city. This trip provides a look at a wide variety of the life and scenery on Vietnam River from the peaceful Mekong Delta region. The huge ships, which come from many different countries moving slowly, quietly along the river is what you will see at the Saigon River. Do not miss this sight! On the way you will see daily activities of local people along the river sellers and buyers bargaining, exchanging fish, the products that they got from their working on the sea. From My Tho, you will ride on a local motor boat around Dragon Island, Unicorn Island, Phoenix Island, Turtle Island and stop at the famous Unicorn Island. While at the Unicorn Island, you will take a short trek and go for a rowing boat trip. You will also enjoy lunch, tropical fruit and free time&nbsp; bike ride in the rural village.<br style="margin: 0px; padding: 0px;" />
+					From there, you will continue your motor boat trip to Ben Tre province to visit a handmade coconut candy workshop. Then transfer to a small motor boat and travel along the lush, green canals that are so beautiful for photography. We continue drive to Can Tho. Overnight at the hotel in Can Tho.<br style="margin: 0px; padding: 0px;" />
+					&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 4: Can Tho - Chau Doc (B, L)</strong><br style="margin: 0px; padding: 0px;" />
+	Cruising along the small and picturesque tributaries by machine boat, we will see the Cai Rang floating market (the nicest one with heaps of rowing boats). Take in the beautiful scenery and the daily life in Mekong River and you will roam through the , village to visit a rice husking mill and a rice noodles making shop. We now travel by land to Chau Doc, on the way we will pass Crocodile Farm. On arrival at Chau Doc, visit the Sam mountain to enjoy the a breath-taking view and enjoy the sunset on the top of Sam Mountain. Over night at hotel in Chau Doc.&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 5: Chau Doc - Xeo Quit - Ho Chi Minh City (B, L)</strong><br style="margin: 0px; padding: 0px;" />
+	The return trip begins as we depart this border town. A part of the pleasure of travelling in this region is the simple joy of seeing the rice fields and the smiling faces of the people. On arrival we board a boat for an exploration of the Xeo Quit Forest which was once a stronghold of the communist troop during the American wartime. This boundless cajeput forests are dissevered by numerous narrow canals surrounded by aquatic grass and plants, tall trees and vines. The cool and humid air mixing with the fragrance of flowers as well as the beautiful song of bird in the quiet environment make for an unforgettable excursion. After the boat trip we drive back to Ho Chi Minh City, passing through the charming countryside. Overnight at hotel Ho Chi Minh City.&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 6: Ho Chi Minh Departure&nbsp;</strong><br style="margin: 0px; padding: 0px;" />
+	Breakfast at hotel, free time until&nbsp;transfer to&nbsp;the airport for your&nbsp;departure flight. Say goodbye Vietnam.</p>
+',list_img='',title='Saigon - Mekong Discover 6 days',keyword='Saigon - Mekong Discover 6 days',description='Saigon - Mekong Discover 6 days',inclusion='',exclusion='',updated='0000-00-00 00:00:00' where id=2;
+update tour set tour_quoc_te='0',DanhMuc1Id='2',DanhMuc2Id='2',danhmuc_multi='',promotion='1',packages='1',name='Half-Day Cu Chi Tunnels from Ho Chi Minh City by Luxury Speedboat',name_url='half-day-cu-chi-tunnels-from-ho-chi-minh-city-by-luxury-speedboat',count_down='',code='',img='/mix/view/admin/Themes/kcfinder/upload/images/tour/love-travel-27-780.jpg',price_sales='',price='84.46',price_2='0',price_3='0',price_4='0',price_5='0',price_6='0',price_number='',price_number_2='',price_number_3='',price_number_4='',price_number_5='',price_number_6='',name_price='',name_price_2='',name_price_3='',name_price_4='',name_price_5='',name_price_6='',so_cho='1',durations='3 days 4 nights',departure='',departure_time='',destination='Ho Chi Minh',vehicle='Car',hotel='4',summary='',highlights='',schedule='<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	38 meters (125 feet) long<br style="margin: 0px; padding: 0px;" />
+	8 meters (23 feet) wide<br style="margin: 0px; padding: 0px;" />
+	03 desks, 02 bars<br style="margin: 0px; padding: 0px;" />
+	01 small library<br style="margin: 0px; padding: 0px;" />
+	01 message room<br style="margin: 0px; padding: 0px;" />
+	Total number of room 10<br style="margin: 0px; padding: 0px;" />
+	Ginger Deluxe&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 02<br style="margin: 0px; padding: 0px;" />
+	Ginger Room&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 08</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<table border="0" cellpadding="1" cellspacing="1" style="margin: 0px; padding: 0px; color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">
+	<tbody style="margin: 0px; padding: 0px;">
+		<tr style="margin: 0px; padding: 0px;">
+			<td style="margin: 0px; padding: 0px;">
+				<strong style="margin: 0px; padding: 0px;">Ginger Deluxe room</strong><br style="margin: 0px; padding: 0px;" />
+				Number of rooms:&nbsp;&nbsp;&nbsp;&nbsp; 2<br style="margin: 0px; padding: 0px;" />
+				Average room size:&nbsp;&nbsp;&nbsp;16 sqm<br style="margin: 0px; padding: 0px;" />
+				Number of beds: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 01 Queen - size bed of 165 cm x 205 cm<br style="margin: 0px; padding: 0px;" />
+				Maximum number of persons allowed: &nbsp; 02 adults + 01 child under 12 years old<br style="margin: 0px; padding: 0px;" />
+				Panorama seaview:&nbsp;&nbsp;&nbsp;&nbsp; 03<br style="margin: 0px; padding: 0px;" />
+				Room type:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Non - smoking</td>
+			<td style="margin: 0px; padding: 0px;">
+				&nbsp;</td>
+			<td style="margin: 0px; padding: 0px;">
+				<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px;">
+					<strong style="margin: 0px; padding: 0px;">Ginger&nbsp; room</strong><br style="margin: 0px; padding: 0px;" />
+					Number of rooms:&nbsp;&nbsp;&nbsp; 8<br style="margin: 0px; padding: 0px;" />
+					Average room size:&nbsp;&nbsp;&nbsp;14 sqm<br style="margin: 0px; padding: 0px;" />
+					Number of beds: &nbsp;&nbsp;&nbsp;&nbsp; 02 single - size beds of 95 cm x 205 cm each<br style="margin: 0px; padding: 0px;" />
+					Maximum number of persons allowed: &nbsp;02 adults + 01 child under 12 years old<br style="margin: 0px; padding: 0px;" />
+					Panorama seaview:&nbsp;&nbsp;&nbsp; 02<br style="margin: 0px; padding: 0px;" />
+					Room type: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Non - smoking</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Room amenities (all room types)</strong></p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<table border="0" cellpadding="1" cellspacing="1" style="margin: 0px; padding: 0px; color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">
+	<tbody style="margin: 0px; padding: 0px;">
+		<tr style="margin: 0px; padding: 0px;">
+			<td style="margin: 0px; padding: 0px;">
+				Individually controlled air-conditioning&nbsp;&nbsp;<br style="margin: 0px; padding: 0px;" />
+				Stocked mini-bar&nbsp;&nbsp;&nbsp;<br style="margin: 0px; padding: 0px;" />
+				In-house phone<br style="margin: 0px; padding: 0px;" />
+				Slippers&nbsp;<br style="margin: 0px; padding: 0px;" />
+				Wardrobe<br style="margin: 0px; padding: 0px;" />
+				Umbrella/raincoat at the reception<br style="margin: 0px; padding: 0px;" />
+				Separate glass standing shower cabin<br style="margin: 0px; padding: 0px;" />
+				Bath robe</td>
+			<td style="margin: 0px; padding: 0px;">
+				&nbsp;</td>
+			<td style="margin: 0px; padding: 0px;">
+				Electric shaver outlet<br style="margin: 0px; padding: 0px;" />
+				Shower<br style="margin: 0px; padding: 0px;" />
+				Hot water<br style="margin: 0px; padding: 0px;" />
+				Hair dryer (request housekeeping)&nbsp;&nbsp;&nbsp;&nbsp;<br style="margin: 0px; padding: 0px;" />
+				Bathroom amenities<br style="margin: 0px; padding: 0px;" />
+				Life vests<br style="margin: 0px; padding: 0px;" />
+				Toilet<br style="margin: 0px; padding: 0px;" />
+				Fire extingisher / Smoke detector</td>
+		</tr>
+	</tbody>
+</table>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<table border="0" cellpadding="1" cellspacing="1" style="margin: 0px; padding: 0px; color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">
+	<tbody style="margin: 0px; padding: 0px;">
+		<tr style="margin: 0px; padding: 0px;">
+			<td style="margin: 0px; padding: 0px;">
+				&nbsp;</td>
+			<td style="margin: 0px; padding: 0px;">
+				&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	<strong style="margin: 0px; padding: 0px; color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">Life on board</strong><br style="margin: 0px; padding: 0px;" />
+	<span style="color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">Measuring 38 meters (125 feet) long and 8 meters (23 feet) wide, our custom-built wooden junk features three decks, all outfitted with elegant Asian inspired decor. The lower deck is devoted to Passenger Cabins, with sleeping space for 20 people. The Reception, Restaurant, Ginger Bar, Gift Shop and Library are all located on the main deck. On the top deck passengers will find the Sunset Bar and a spacious lounge area, perfect for our morning Tai Chi classes, weekend BBQs and sunset cocktails. Guests are welcome to make use of our binoculars, snorkeling equipment, and top-of-the-line Canadian made Seaward kayaks.</span></p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Restaurant</strong><br style="margin: 0px; padding: 0px;" />
+	A pleasant ambiance, attentive staff and great views make our restaurant the perfect place to sample the exotic delights of Vietnamese cuisine. Guests can look forward to lavish international breakfast buffets, casual, sit-down lunches of Vietnamese dishes, and formal dinners with delectable fusion cuisine. All dishes are prepared to please both the eye and the palate. Special BBQ dinners are served on the Sundeck on weekends, or upon a group&rsquo;s request</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">ITINERARY 3 DAYS 2 NIGHTS</strong></p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 1: Hanoi - Halong Ginger&nbsp;Cruise (L, D)</strong><br style="margin: 0px; padding: 0px;" />
+	We depart from the capital at 8 :30 am for Ha Long Bay approximately three hours away. En route, we stop on the way for short break and&nbsp; photo.. Upon arrival at Ha Long Bay&nbsp; we will be met by captain and cruise and transferred to our deluxe junk. Welcome aboard and set sail through bay while lunch is served. Passage into the magical bay, where thousands of sculpted limestone islands rise from the waves like dragons&rsquo; teeth.&nbsp;<br style="margin: 0px; padding: 0px;" />
+	After lunch, take a short trek to a nearby summit for a panoramic view of the bay dotted with golden sails, go swimming on a quite beach or sunbathing on the sundeck.&nbsp; Later afternoon, visit an interesting fishing village with opportunity to interact with fishmen who have been living in the bay for almost three generations.&nbsp;<br style="margin: 0px; padding: 0px;" />
+	Back on board and enjoy cocktails while watching sunset and later unwind at restaurant for a lavish dinner</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 2: Halong Bay Cruise with Ginger (B, L, D)</strong><br style="margin: 0px; padding: 0px;" />
+	After breakfast, transfer to your day &ndash; trip boat with private crew and cruise to the bay&rsquo;s most untouched areas. Enjoy swimming on quiet beaches, visiting water tunnels, fishing villages or kayaking. Lunch served on board by your private chef. Return to the mother boat for the night.</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 3: Halong Bay &ndash; Hanoi (Brunch)</strong><br style="margin: 0px; padding: 0px;" />
+	Greet the day with a morning Tai Chi exercise with an opportunity to view the sunrise over the bay. After breakfast, visit beautiful limestone grotto then back to the boat for a final glimpse of the Halong Bay while cruising back to the dock.<br style="margin: 0px; padding: 0px;" />
+	The car and driver will pic k up you, transfer back Hanoi. Drop off at your hotel in Hanoi. End of tour.</p>
+',price_list='<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Tour includes:</strong><br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;3 days Ginger cruise as stated&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;2 night 2 in double/twin private cabin on Ginger boat<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Round Trip private&nbsp; transfers in private air-conditioned vehicles from Hanoi<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;English speaking guide on board&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Welcome drink<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;2 Lunches, 2 Dinners and 1 Breakfast and 1 Brunch on board<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Kayak on day 2<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Entrance fees and permits for all sights visited<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Onboard Insurance<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Government taxes &amp; Service charges</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Tour excludes:</strong><br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;International flights to and from Vietnam.&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Vietnam visa arrangement (upon request visa on arrival at 15 USD, not including stamping fee at 25 USD)&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;All other services which are not mentioned above<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Personal travel insurance (Compulsory).<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Peak surcharge for Christmas, New Year and Lunar New Year<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Personal expenses such as Telephone and Laundry bills, Spa<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Tips and gratuities</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Children Policy:</strong><br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Children aged from 5 -11 will&nbsp; bear 50% adult&rsquo;s cost&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Children under 5 year old will be free of charge&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Children reduction applicable only if sharing a cabin with maximum of 2 adults and only 1 child maximum per cabin</p>
+<div>
+	&nbsp;</div>
+',content='<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	38 meters (125 feet) long<br style="margin: 0px; padding: 0px;" />
+	8 meters (23 feet) wide<br style="margin: 0px; padding: 0px;" />
+	03 desks, 02 bars<br style="margin: 0px; padding: 0px;" />
+	01 small library<br style="margin: 0px; padding: 0px;" />
+	01 message room<br style="margin: 0px; padding: 0px;" />
+	Total number of room 10<br style="margin: 0px; padding: 0px;" />
+	Ginger Deluxe&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 02<br style="margin: 0px; padding: 0px;" />
+	Ginger Room&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 08</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<table border="0" cellpadding="1" cellspacing="1" style="margin: 0px; padding: 0px; color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">
+	<tbody style="margin: 0px; padding: 0px;">
+		<tr style="margin: 0px; padding: 0px;">
+			<td style="margin: 0px; padding: 0px;">
+				<strong style="margin: 0px; padding: 0px;">Ginger Deluxe room</strong><br style="margin: 0px; padding: 0px;" />
+				Number of rooms:&nbsp;&nbsp;&nbsp;&nbsp; 2<br style="margin: 0px; padding: 0px;" />
+				Average room size:&nbsp;&nbsp;&nbsp;16 sqm<br style="margin: 0px; padding: 0px;" />
+				Number of beds: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 01 Queen - size bed of 165 cm x 205 cm<br style="margin: 0px; padding: 0px;" />
+				Maximum number of persons allowed: &nbsp; 02 adults + 01 child under 12 years old<br style="margin: 0px; padding: 0px;" />
+				Panorama seaview:&nbsp;&nbsp;&nbsp;&nbsp; 03<br style="margin: 0px; padding: 0px;" />
+				Room type:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Non - smoking</td>
+			<td style="margin: 0px; padding: 0px;">
+				&nbsp;</td>
+			<td style="margin: 0px; padding: 0px;">
+				<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px;">
+					<strong style="margin: 0px; padding: 0px;">Ginger&nbsp; room</strong><br style="margin: 0px; padding: 0px;" />
+					Number of rooms:&nbsp;&nbsp;&nbsp; 8<br style="margin: 0px; padding: 0px;" />
+					Average room size:&nbsp;&nbsp;&nbsp;14 sqm<br style="margin: 0px; padding: 0px;" />
+					Number of beds: &nbsp;&nbsp;&nbsp;&nbsp; 02 single - size beds of 95 cm x 205 cm each<br style="margin: 0px; padding: 0px;" />
+					Maximum number of persons allowed: &nbsp;02 adults + 01 child under 12 years old<br style="margin: 0px; padding: 0px;" />
+					Panorama seaview:&nbsp;&nbsp;&nbsp; 02<br style="margin: 0px; padding: 0px;" />
+					Room type: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Non - smoking</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Room amenities (all room types)</strong></p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<table border="0" cellpadding="1" cellspacing="1" style="margin: 0px; padding: 0px; color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">
+	<tbody style="margin: 0px; padding: 0px;">
+		<tr style="margin: 0px; padding: 0px;">
+			<td style="margin: 0px; padding: 0px;">
+				Individually controlled air-conditioning&nbsp;&nbsp;<br style="margin: 0px; padding: 0px;" />
+				Stocked mini-bar&nbsp;&nbsp;&nbsp;<br style="margin: 0px; padding: 0px;" />
+				In-house phone<br style="margin: 0px; padding: 0px;" />
+				Slippers&nbsp;<br style="margin: 0px; padding: 0px;" />
+				Wardrobe<br style="margin: 0px; padding: 0px;" />
+				Umbrella/raincoat at the reception<br style="margin: 0px; padding: 0px;" />
+				Separate glass standing shower cabin<br style="margin: 0px; padding: 0px;" />
+				Bath robe</td>
+			<td style="margin: 0px; padding: 0px;">
+				&nbsp;</td>
+			<td style="margin: 0px; padding: 0px;">
+				Electric shaver outlet<br style="margin: 0px; padding: 0px;" />
+				Shower<br style="margin: 0px; padding: 0px;" />
+				Hot water<br style="margin: 0px; padding: 0px;" />
+				Hair dryer (request housekeeping)&nbsp;&nbsp;&nbsp;&nbsp;<br style="margin: 0px; padding: 0px;" />
+				Bathroom amenities<br style="margin: 0px; padding: 0px;" />
+				Life vests<br style="margin: 0px; padding: 0px;" />
+				Toilet<br style="margin: 0px; padding: 0px;" />
+				Fire extingisher / Smoke detector</td>
+		</tr>
+	</tbody>
+</table>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<table border="0" cellpadding="1" cellspacing="1" style="margin: 0px; padding: 0px; color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">
+	<tbody style="margin: 0px; padding: 0px;">
+		<tr style="margin: 0px; padding: 0px;">
+			<td style="margin: 0px; padding: 0px;">
+				&nbsp;</td>
+			<td style="margin: 0px; padding: 0px;">
+				&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	<strong style="margin: 0px; padding: 0px; color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">Life on board</strong><br style="margin: 0px; padding: 0px;" />
+	<span style="color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">Measuring 38 meters (125 feet) long and 8 meters (23 feet) wide, our custom-built wooden junk features three decks, all outfitted with elegant Asian inspired decor. The lower deck is devoted to Passenger Cabins, with sleeping space for 20 people. The Reception, Restaurant, Ginger Bar, Gift Shop and Library are all located on the main deck. On the top deck passengers will find the Sunset Bar and a spacious lounge area, perfect for our morning Tai Chi classes, weekend BBQs and sunset cocktails. Guests are welcome to make use of our binoculars, snorkeling equipment, and top-of-the-line Canadian made Seaward kayaks.</span></p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Restaurant</strong><br style="margin: 0px; padding: 0px;" />
+	A pleasant ambiance, attentive staff and great views make our restaurant the perfect place to sample the exotic delights of Vietnamese cuisine. Guests can look forward to lavish international breakfast buffets, casual, sit-down lunches of Vietnamese dishes, and formal dinners with delectable fusion cuisine. All dishes are prepared to please both the eye and the palate. Special BBQ dinners are served on the Sundeck on weekends, or upon a group&rsquo;s request</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">ITINERARY 3 DAYS 2 NIGHTS</strong></p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 1: Hanoi - Halong Ginger&nbsp;Cruise (L, D)</strong><br style="margin: 0px; padding: 0px;" />
+	We depart from the capital at 8 :30 am for Ha Long Bay approximately three hours away. En route, we stop on the way for short break and&nbsp; photo.. Upon arrival at Ha Long Bay&nbsp; we will be met by captain and cruise and transferred to our deluxe junk. Welcome aboard and set sail through bay while lunch is served. Passage into the magical bay, where thousands of sculpted limestone islands rise from the waves like dragons&rsquo; teeth.&nbsp;<br style="margin: 0px; padding: 0px;" />
+	After lunch, take a short trek to a nearby summit for a panoramic view of the bay dotted with golden sails, go swimming on a quite beach or sunbathing on the sundeck.&nbsp; Later afternoon, visit an interesting fishing village with opportunity to interact with fishmen who have been living in the bay for almost three generations.&nbsp;<br style="margin: 0px; padding: 0px;" />
+	Back on board and enjoy cocktails while watching sunset and later unwind at restaurant for a lavish dinner</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 2: Halong Bay Cruise with Ginger (B, L, D)</strong><br style="margin: 0px; padding: 0px;" />
+	After breakfast, transfer to your day &ndash; trip boat with private crew and cruise to the bay&rsquo;s most untouched areas. Enjoy swimming on quiet beaches, visiting water tunnels, fishing villages or kayaking. Lunch served on board by your private chef. Return to the mother boat for the night.</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 3: Halong Bay &ndash; Hanoi (Brunch)</strong><br style="margin: 0px; padding: 0px;" />
+	Greet the day with a morning Tai Chi exercise with an opportunity to view the sunrise over the bay. After breakfast, visit beautiful limestone grotto then back to the boat for a final glimpse of the Halong Bay while cruising back to the dock.<br style="margin: 0px; padding: 0px;" />
+	The car and driver will pic k up you, transfer back Hanoi. Drop off at your hotel in Hanoi. End of tour.</p>
+',list_img='',title='Half-Day Cu Chi Tunnels from Ho Chi Minh City by Luxury Speedboat',keyword='Half-Day Cu Chi Tunnels from Ho Chi Minh City by Luxury Speedboat',description='Half-Day Cu Chi Tunnels from Ho Chi Minh City by Luxury Speedboat',inclusion='',exclusion='',updated='0000-00-00 00:00:00' where id=1;
+update tour set tour_quoc_te='0',DanhMuc1Id='2',DanhMuc2Id='2',danhmuc_multi='',promotion='1',packages='1',name='Mekong Delta Discover 3 days',name_url='mekong-delta-discover-3-days',count_down='',code='',img='/mix/view/admin/Themes/kcfinder/upload/images/tour/love-travel-27-780.jpg',price_sales='',price='100',price_2='0',price_3='0',price_4='0',price_5='0',price_6='0',price_number='',price_number_2='',price_number_3='',price_number_4='',price_number_5='',price_number_6='',name_price='',name_price_2='',name_price_3='',name_price_4='',name_price_5='',name_price_6='',so_cho='17',durations='3 Days 2 Nights',departure='',departure_time='',destination='Cantho',vehicle='Car',hotel='3',summary='',highlights='',schedule='<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 1: Ho Chi Minh City - Ben Tre - Boat Cruise - Home stay (L, D)</strong><br style="margin: 0px; padding: 0px;" />
+	Pick up at your hotel, Drive to Ben Tre. Here,&nbsp;take a boat to Coconut Island. Enjoy a brief walk on the island, trying native fruits and viewing local handicraft productions. Continue by boat to Tan Thach commune to visit a family-run enterprise making coconut candies. Take a horse-drawn cart to Quoi Son to visit a bee farm and to enjoy tea and candies. Float on a sampan through the narrow, tree-lined canals of the Mekong Delta. Enjoy lunch at Qui Island. After lunch continue by boat to Phu Tuc village for an overnight stay. Enjoy fishing and sightseeing during a late-afternoon rowboat trip along the Tien River. Visit a local family home and have a dinner of traditional Mekong Delta foods. After dinner take in a performance of traditional rural music. Spend the night in a home stay in Ben Tre.</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 2: Ben Tre - Cai Be Floating Market &ndash; Vinh Long &ndash; Can tho (B, L)</strong></p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<table border="0" cellpadding="1" cellspacing="1" style="margin: 0px; padding: 0px; color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">
+	<tbody style="margin: 0px; padding: 0px;">
+		<tr style="margin: 0px; padding: 0px;">
+			<td style="margin: 0px; padding: 0px;">
+				<img alt="Mekong-Delta.jpg" border="0" height="110" src="http://www.asiaviewtravel.com/images/Download/Mekong-Delta.jpg" style="margin: 0px; padding: 0px; border: none;" width="160" /></td>
+			<td style="margin: 0px; padding: 0px;">
+				<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px;">
+					After breakfast depart for Cai Be. Take a boat trip along the mighty Mekong River and its tributaries to view the daily lives of people who work and play on the waterways of the Mekong Delta and canals to Vinh Long. We will stop at the home of a Bonsai gardener for a sumptuous Delta lunch, including the popular dish of &quot;Elephant ear fish&quot;, before continuing our exploration of the tributaries and canals of the delta. Towards the end of the day we arrive in Can tho where we stay in a lovely hotel.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 3: Can tho - Ho chi minh (B, L)</strong><br style="margin: 0px; padding: 0px;" />
+	Rising early to the sounds of the Delta coming to life for another day, we breakfast and start our trip with a boat cruise on sparking streams along the endless waterway of Mighty Mekong River to Cai rang floating markets. There will be hundreds of boats loaded with fruits, vegetables and fish jostling for trade. Sellers advertisers their wares by crying out across the waters. We visit the lush orchards and are treated to a delicious tropical fruits. After Lunch,&nbsp; drive back&nbsp; to Ho Chi Minh city. Drop off at your hotel. End of tour.</p>
+',price_list='<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Tour includes:</strong><br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Tours &amp; transfers in private air-conditioned vehicles<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;1 night at hotel in Can tho with daily breakfast at selected hotels<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;1 night at home stay in Ben tre<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Private English speaking guide&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Meals as indicated in the itinerary at local restaurant with local foods (B = breakfast; L = Lunch; D = Dinner)<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Boat cruise as stated<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Entrance fees and permits for all sights visited<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Mineral Water and towel<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Government taxes &amp; Service charges</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Tour excludes:</strong><br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;International flights to and from Vietnam.&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Vietnam visa arrangement (upon request visa on arrival at 15 USD, not including stamping fee at 25 USD)&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Meals not indicated in the itinerary&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;All other services which are not mentioned above<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Personal travel insurance (Compulsory).<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Personal expenses such as Telephone and Laundry bills.<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Tips and gratuities</p>
+',content='<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 1: Ho Chi Minh City - Ben Tre - Boat Cruise - Home stay (L, D)</strong><br style="margin: 0px; padding: 0px;" />
+	Pick up at your hotel, Drive to Ben Tre. Here,&nbsp;take a boat to Coconut Island. Enjoy a brief walk on the island, trying native fruits and viewing local handicraft productions. Continue by boat to Tan Thach commune to visit a family-run enterprise making coconut candies. Take a horse-drawn cart to Quoi Son to visit a bee farm and to enjoy tea and candies. Float on a sampan through the narrow, tree-lined canals of the Mekong Delta. Enjoy lunch at Qui Island. After lunch continue by boat to Phu Tuc village for an overnight stay. Enjoy fishing and sightseeing during a late-afternoon rowboat trip along the Tien River. Visit a local family home and have a dinner of traditional Mekong Delta foods. After dinner take in a performance of traditional rural music. Spend the night in a home stay in Ben Tre.</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 2: Ben Tre - Cai Be Floating Market &ndash; Vinh Long &ndash; Can tho (B, L)</strong></p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<table border="0" cellpadding="1" cellspacing="1" style="margin: 0px; padding: 0px; color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">
+	<tbody style="margin: 0px; padding: 0px;">
+		<tr style="margin: 0px; padding: 0px;">
+			<td style="margin: 0px; padding: 0px;">
+				<img alt="Mekong-Delta.jpg" border="0" height="110" src="http://www.asiaviewtravel.com/images/Download/Mekong-Delta.jpg" style="margin: 0px; padding: 0px; border: none;" width="160" /></td>
+			<td style="margin: 0px; padding: 0px;">
+				<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px;">
+					After breakfast depart for Cai Be. Take a boat trip along the mighty Mekong River and its tributaries to view the daily lives of people who work and play on the waterways of the Mekong Delta and canals to Vinh Long. We will stop at the home of a Bonsai gardener for a sumptuous Delta lunch, including the popular dish of &quot;Elephant ear fish&quot;, before continuing our exploration of the tributaries and canals of the delta. Towards the end of the day we arrive in Can tho where we stay in a lovely hotel.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 3: Can tho - Ho chi minh (B, L)</strong><br style="margin: 0px; padding: 0px;" />
+	Rising early to the sounds of the Delta coming to life for another day, we breakfast and start our trip with a boat cruise on sparking streams along the endless waterway of Mighty Mekong River to Cai rang floating markets. There will be hundreds of boats loaded with fruits, vegetables and fish jostling for trade. Sellers advertisers their wares by crying out across the waters. We visit the lush orchards and are treated to a delicious tropical fruits. After Lunch,&nbsp; drive back&nbsp; to Ho Chi Minh city. Drop off at your hotel. End of tour.</p>
+',list_img='',title='Mekong Delta Discover 3 days',keyword='Mekong Delta Discover 3 days',description='Mekong Delta Discover 3 days',inclusion='',exclusion='',updated='0000-00-00 00:00:00' where id=3;
+update tour set tour_quoc_te='0',DanhMuc1Id='2',DanhMuc2Id='2',danhmuc_multi='',promotion='1',packages='1',name='Half-Day Cu Chi Tunnels from Ho Chi Minh City by Luxury Speedboat',name_url='half-day-cu-chi-tunnels-from-ho-chi-minh-city-by-luxury-speedboat',count_down='',code='',img='/mix/view/admin/Themes/kcfinder/upload/images/tour/love-travel-27-780.jpg',price_sales='',price='84.46',price_2='0',price_3='0',price_4='0',price_5='0',price_6='0',price_number='',price_number_2='',price_number_3='',price_number_4='',price_number_5='',price_number_6='',name_price='',name_price_2='',name_price_3='',name_price_4='',name_price_5='',name_price_6='',so_cho='',durations='3 days 4 nights',departure='',departure_time='',destination='Ho Chi Minh',vehicle='Car',hotel='4',summary='',highlights='',schedule='<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	38 meters (125 feet) long<br style="margin: 0px; padding: 0px;" />
+	8 meters (23 feet) wide<br style="margin: 0px; padding: 0px;" />
+	03 desks, 02 bars<br style="margin: 0px; padding: 0px;" />
+	01 small library<br style="margin: 0px; padding: 0px;" />
+	01 message room<br style="margin: 0px; padding: 0px;" />
+	Total number of room 10<br style="margin: 0px; padding: 0px;" />
+	Ginger Deluxe&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 02<br style="margin: 0px; padding: 0px;" />
+	Ginger Room&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 08</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<table border="0" cellpadding="1" cellspacing="1" style="margin: 0px; padding: 0px; color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">
+	<tbody style="margin: 0px; padding: 0px;">
+		<tr style="margin: 0px; padding: 0px;">
+			<td style="margin: 0px; padding: 0px;">
+				<strong style="margin: 0px; padding: 0px;">Ginger Deluxe room</strong><br style="margin: 0px; padding: 0px;" />
+				Number of rooms:&nbsp;&nbsp;&nbsp;&nbsp; 2<br style="margin: 0px; padding: 0px;" />
+				Average room size:&nbsp;&nbsp;&nbsp;16 sqm<br style="margin: 0px; padding: 0px;" />
+				Number of beds: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 01 Queen - size bed of 165 cm x 205 cm<br style="margin: 0px; padding: 0px;" />
+				Maximum number of persons allowed: &nbsp; 02 adults + 01 child under 12 years old<br style="margin: 0px; padding: 0px;" />
+				Panorama seaview:&nbsp;&nbsp;&nbsp;&nbsp; 03<br style="margin: 0px; padding: 0px;" />
+				Room type:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Non - smoking</td>
+			<td style="margin: 0px; padding: 0px;">
+				&nbsp;</td>
+			<td style="margin: 0px; padding: 0px;">
+				<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px;">
+					<strong style="margin: 0px; padding: 0px;">Ginger&nbsp; room</strong><br style="margin: 0px; padding: 0px;" />
+					Number of rooms:&nbsp;&nbsp;&nbsp; 8<br style="margin: 0px; padding: 0px;" />
+					Average room size:&nbsp;&nbsp;&nbsp;14 sqm<br style="margin: 0px; padding: 0px;" />
+					Number of beds: &nbsp;&nbsp;&nbsp;&nbsp; 02 single - size beds of 95 cm x 205 cm each<br style="margin: 0px; padding: 0px;" />
+					Maximum number of persons allowed: &nbsp;02 adults + 01 child under 12 years old<br style="margin: 0px; padding: 0px;" />
+					Panorama seaview:&nbsp;&nbsp;&nbsp; 02<br style="margin: 0px; padding: 0px;" />
+					Room type: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Non - smoking</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Room amenities (all room types)</strong></p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<table border="0" cellpadding="1" cellspacing="1" style="margin: 0px; padding: 0px; color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">
+	<tbody style="margin: 0px; padding: 0px;">
+		<tr style="margin: 0px; padding: 0px;">
+			<td style="margin: 0px; padding: 0px;">
+				Individually controlled air-conditioning&nbsp;&nbsp;<br style="margin: 0px; padding: 0px;" />
+				Stocked mini-bar&nbsp;&nbsp;&nbsp;<br style="margin: 0px; padding: 0px;" />
+				In-house phone<br style="margin: 0px; padding: 0px;" />
+				Slippers&nbsp;<br style="margin: 0px; padding: 0px;" />
+				Wardrobe<br style="margin: 0px; padding: 0px;" />
+				Umbrella/raincoat at the reception<br style="margin: 0px; padding: 0px;" />
+				Separate glass standing shower cabin<br style="margin: 0px; padding: 0px;" />
+				Bath robe</td>
+			<td style="margin: 0px; padding: 0px;">
+				&nbsp;</td>
+			<td style="margin: 0px; padding: 0px;">
+				Electric shaver outlet<br style="margin: 0px; padding: 0px;" />
+				Shower<br style="margin: 0px; padding: 0px;" />
+				Hot water<br style="margin: 0px; padding: 0px;" />
+				Hair dryer (request housekeeping)&nbsp;&nbsp;&nbsp;&nbsp;<br style="margin: 0px; padding: 0px;" />
+				Bathroom amenities<br style="margin: 0px; padding: 0px;" />
+				Life vests<br style="margin: 0px; padding: 0px;" />
+				Toilet<br style="margin: 0px; padding: 0px;" />
+				Fire extingisher / Smoke detector</td>
+		</tr>
+	</tbody>
+</table>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<table border="0" cellpadding="1" cellspacing="1" style="margin: 0px; padding: 0px; color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">
+	<tbody style="margin: 0px; padding: 0px;">
+		<tr style="margin: 0px; padding: 0px;">
+			<td style="margin: 0px; padding: 0px;">
+				&nbsp;</td>
+			<td style="margin: 0px; padding: 0px;">
+				&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	<strong style="margin: 0px; padding: 0px; color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">Life on board</strong><br style="margin: 0px; padding: 0px;" />
+	<span style="color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">Measuring 38 meters (125 feet) long and 8 meters (23 feet) wide, our custom-built wooden junk features three decks, all outfitted with elegant Asian inspired decor. The lower deck is devoted to Passenger Cabins, with sleeping space for 20 people. The Reception, Restaurant, Ginger Bar, Gift Shop and Library are all located on the main deck. On the top deck passengers will find the Sunset Bar and a spacious lounge area, perfect for our morning Tai Chi classes, weekend BBQs and sunset cocktails. Guests are welcome to make use of our binoculars, snorkeling equipment, and top-of-the-line Canadian made Seaward kayaks.</span></p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Restaurant</strong><br style="margin: 0px; padding: 0px;" />
+	A pleasant ambiance, attentive staff and great views make our restaurant the perfect place to sample the exotic delights of Vietnamese cuisine. Guests can look forward to lavish international breakfast buffets, casual, sit-down lunches of Vietnamese dishes, and formal dinners with delectable fusion cuisine. All dishes are prepared to please both the eye and the palate. Special BBQ dinners are served on the Sundeck on weekends, or upon a group&rsquo;s request</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">ITINERARY 3 DAYS 2 NIGHTS</strong></p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 1: Hanoi - Halong Ginger&nbsp;Cruise (L, D)</strong><br style="margin: 0px; padding: 0px;" />
+	We depart from the capital at 8 :30 am for Ha Long Bay approximately three hours away. En route, we stop on the way for short break and&nbsp; photo.. Upon arrival at Ha Long Bay&nbsp; we will be met by captain and cruise and transferred to our deluxe junk. Welcome aboard and set sail through bay while lunch is served. Passage into the magical bay, where thousands of sculpted limestone islands rise from the waves like dragons&rsquo; teeth.&nbsp;<br style="margin: 0px; padding: 0px;" />
+	After lunch, take a short trek to a nearby summit for a panoramic view of the bay dotted with golden sails, go swimming on a quite beach or sunbathing on the sundeck.&nbsp; Later afternoon, visit an interesting fishing village with opportunity to interact with fishmen who have been living in the bay for almost three generations.&nbsp;<br style="margin: 0px; padding: 0px;" />
+	Back on board and enjoy cocktails while watching sunset and later unwind at restaurant for a lavish dinner</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 2: Halong Bay Cruise with Ginger (B, L, D)</strong><br style="margin: 0px; padding: 0px;" />
+	After breakfast, transfer to your day &ndash; trip boat with private crew and cruise to the bay&rsquo;s most untouched areas. Enjoy swimming on quiet beaches, visiting water tunnels, fishing villages or kayaking. Lunch served on board by your private chef. Return to the mother boat for the night.</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 3: Halong Bay &ndash; Hanoi (Brunch)</strong><br style="margin: 0px; padding: 0px;" />
+	Greet the day with a morning Tai Chi exercise with an opportunity to view the sunrise over the bay. After breakfast, visit beautiful limestone grotto then back to the boat for a final glimpse of the Halong Bay while cruising back to the dock.<br style="margin: 0px; padding: 0px;" />
+	The car and driver will pic k up you, transfer back Hanoi. Drop off at your hotel in Hanoi. End of tour.</p>
+',price_list='<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Tour includes:</strong><br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;3 days Ginger cruise as stated&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;2 night 2 in double/twin private cabin on Ginger boat<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Round Trip private&nbsp; transfers in private air-conditioned vehicles from Hanoi<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;English speaking guide on board&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Welcome drink<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;2 Lunches, 2 Dinners and 1 Breakfast and 1 Brunch on board<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Kayak on day 2<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Entrance fees and permits for all sights visited<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Onboard Insurance<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Government taxes &amp; Service charges</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Tour excludes:</strong><br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;International flights to and from Vietnam.&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Vietnam visa arrangement (upon request visa on arrival at 15 USD, not including stamping fee at 25 USD)&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;All other services which are not mentioned above<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Personal travel insurance (Compulsory).<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Peak surcharge for Christmas, New Year and Lunar New Year<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Personal expenses such as Telephone and Laundry bills, Spa<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Tips and gratuities</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Children Policy:</strong><br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Children aged from 5 -11 will&nbsp; bear 50% adult&rsquo;s cost&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Children under 5 year old will be free of charge&nbsp;<br style="margin: 0px; padding: 0px;" />
+	&bull;&nbsp;Children reduction applicable only if sharing a cabin with maximum of 2 adults and only 1 child maximum per cabin</p>
+<div>
+	&nbsp;</div>
+',content='<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	38 meters (125 feet) long<br style="margin: 0px; padding: 0px;" />
+	8 meters (23 feet) wide<br style="margin: 0px; padding: 0px;" />
+	03 desks, 02 bars<br style="margin: 0px; padding: 0px;" />
+	01 small library<br style="margin: 0px; padding: 0px;" />
+	01 message room<br style="margin: 0px; padding: 0px;" />
+	Total number of room 10<br style="margin: 0px; padding: 0px;" />
+	Ginger Deluxe&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 02<br style="margin: 0px; padding: 0px;" />
+	Ginger Room&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 08</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<table border="0" cellpadding="1" cellspacing="1" style="margin: 0px; padding: 0px; color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">
+	<tbody style="margin: 0px; padding: 0px;">
+		<tr style="margin: 0px; padding: 0px;">
+			<td style="margin: 0px; padding: 0px;">
+				<strong style="margin: 0px; padding: 0px;">Ginger Deluxe room</strong><br style="margin: 0px; padding: 0px;" />
+				Number of rooms:&nbsp;&nbsp;&nbsp;&nbsp; 2<br style="margin: 0px; padding: 0px;" />
+				Average room size:&nbsp;&nbsp;&nbsp;16 sqm<br style="margin: 0px; padding: 0px;" />
+				Number of beds: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 01 Queen - size bed of 165 cm x 205 cm<br style="margin: 0px; padding: 0px;" />
+				Maximum number of persons allowed: &nbsp; 02 adults + 01 child under 12 years old<br style="margin: 0px; padding: 0px;" />
+				Panorama seaview:&nbsp;&nbsp;&nbsp;&nbsp; 03<br style="margin: 0px; padding: 0px;" />
+				Room type:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Non - smoking</td>
+			<td style="margin: 0px; padding: 0px;">
+				&nbsp;</td>
+			<td style="margin: 0px; padding: 0px;">
+				<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px;">
+					<strong style="margin: 0px; padding: 0px;">Ginger&nbsp; room</strong><br style="margin: 0px; padding: 0px;" />
+					Number of rooms:&nbsp;&nbsp;&nbsp; 8<br style="margin: 0px; padding: 0px;" />
+					Average room size:&nbsp;&nbsp;&nbsp;14 sqm<br style="margin: 0px; padding: 0px;" />
+					Number of beds: &nbsp;&nbsp;&nbsp;&nbsp; 02 single - size beds of 95 cm x 205 cm each<br style="margin: 0px; padding: 0px;" />
+					Maximum number of persons allowed: &nbsp;02 adults + 01 child under 12 years old<br style="margin: 0px; padding: 0px;" />
+					Panorama seaview:&nbsp;&nbsp;&nbsp; 02<br style="margin: 0px; padding: 0px;" />
+					Room type: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Non - smoking</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Room amenities (all room types)</strong></p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<table border="0" cellpadding="1" cellspacing="1" style="margin: 0px; padding: 0px; color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">
+	<tbody style="margin: 0px; padding: 0px;">
+		<tr style="margin: 0px; padding: 0px;">
+			<td style="margin: 0px; padding: 0px;">
+				Individually controlled air-conditioning&nbsp;&nbsp;<br style="margin: 0px; padding: 0px;" />
+				Stocked mini-bar&nbsp;&nbsp;&nbsp;<br style="margin: 0px; padding: 0px;" />
+				In-house phone<br style="margin: 0px; padding: 0px;" />
+				Slippers&nbsp;<br style="margin: 0px; padding: 0px;" />
+				Wardrobe<br style="margin: 0px; padding: 0px;" />
+				Umbrella/raincoat at the reception<br style="margin: 0px; padding: 0px;" />
+				Separate glass standing shower cabin<br style="margin: 0px; padding: 0px;" />
+				Bath robe</td>
+			<td style="margin: 0px; padding: 0px;">
+				&nbsp;</td>
+			<td style="margin: 0px; padding: 0px;">
+				Electric shaver outlet<br style="margin: 0px; padding: 0px;" />
+				Shower<br style="margin: 0px; padding: 0px;" />
+				Hot water<br style="margin: 0px; padding: 0px;" />
+				Hair dryer (request housekeeping)&nbsp;&nbsp;&nbsp;&nbsp;<br style="margin: 0px; padding: 0px;" />
+				Bathroom amenities<br style="margin: 0px; padding: 0px;" />
+				Life vests<br style="margin: 0px; padding: 0px;" />
+				Toilet<br style="margin: 0px; padding: 0px;" />
+				Fire extingisher / Smoke detector</td>
+		</tr>
+	</tbody>
+</table>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<table border="0" cellpadding="1" cellspacing="1" style="margin: 0px; padding: 0px; color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">
+	<tbody style="margin: 0px; padding: 0px;">
+		<tr style="margin: 0px; padding: 0px;">
+			<td style="margin: 0px; padding: 0px;">
+				&nbsp;</td>
+			<td style="margin: 0px; padding: 0px;">
+				&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	<strong style="margin: 0px; padding: 0px; color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">Life on board</strong><br style="margin: 0px; padding: 0px;" />
+	<span style="color: rgb(60, 59, 59); font-family: Arial; text-align: justify;">Measuring 38 meters (125 feet) long and 8 meters (23 feet) wide, our custom-built wooden junk features three decks, all outfitted with elegant Asian inspired decor. The lower deck is devoted to Passenger Cabins, with sleeping space for 20 people. The Reception, Restaurant, Ginger Bar, Gift Shop and Library are all located on the main deck. On the top deck passengers will find the Sunset Bar and a spacious lounge area, perfect for our morning Tai Chi classes, weekend BBQs and sunset cocktails. Guests are welcome to make use of our binoculars, snorkeling equipment, and top-of-the-line Canadian made Seaward kayaks.</span></p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Restaurant</strong><br style="margin: 0px; padding: 0px;" />
+	A pleasant ambiance, attentive staff and great views make our restaurant the perfect place to sample the exotic delights of Vietnamese cuisine. Guests can look forward to lavish international breakfast buffets, casual, sit-down lunches of Vietnamese dishes, and formal dinners with delectable fusion cuisine. All dishes are prepared to please both the eye and the palate. Special BBQ dinners are served on the Sundeck on weekends, or upon a group&rsquo;s request</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">ITINERARY 3 DAYS 2 NIGHTS</strong></p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 1: Hanoi - Halong Ginger&nbsp;Cruise (L, D)</strong><br style="margin: 0px; padding: 0px;" />
+	We depart from the capital at 8 :30 am for Ha Long Bay approximately three hours away. En route, we stop on the way for short break and&nbsp; photo.. Upon arrival at Ha Long Bay&nbsp; we will be met by captain and cruise and transferred to our deluxe junk. Welcome aboard and set sail through bay while lunch is served. Passage into the magical bay, where thousands of sculpted limestone islands rise from the waves like dragons&rsquo; teeth.&nbsp;<br style="margin: 0px; padding: 0px;" />
+	After lunch, take a short trek to a nearby summit for a panoramic view of the bay dotted with golden sails, go swimming on a quite beach or sunbathing on the sundeck.&nbsp; Later afternoon, visit an interesting fishing village with opportunity to interact with fishmen who have been living in the bay for almost three generations.&nbsp;<br style="margin: 0px; padding: 0px;" />
+	Back on board and enjoy cocktails while watching sunset and later unwind at restaurant for a lavish dinner</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 2: Halong Bay Cruise with Ginger (B, L, D)</strong><br style="margin: 0px; padding: 0px;" />
+	After breakfast, transfer to your day &ndash; trip boat with private crew and cruise to the bay&rsquo;s most untouched areas. Enjoy swimming on quiet beaches, visiting water tunnels, fishing villages or kayaking. Lunch served on board by your private chef. Return to the mother boat for the night.</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;">
+	<strong style="margin: 0px; padding: 0px;">Day 3: Halong Bay &ndash; Hanoi (Brunch)</strong><br style="margin: 0px; padding: 0px;" />
+	Greet the day with a morning Tai Chi exercise with an opportunity to view the sunrise over the bay. After breakfast, visit beautiful limestone grotto then back to the boat for a final glimpse of the Halong Bay while cruising back to the dock.<br style="margin: 0px; padding: 0px;" />
+	The car and driver will pic k up you, transfer back Hanoi. Drop off at your hotel in Hanoi. End of tour.</p>
+',list_img='',title='Half-Day Cu Chi Tunnels from Ho Chi Minh City by Luxury Speedboat',keyword='Half-Day Cu Chi Tunnels from Ho Chi Minh City by Luxury Speedboat',description='Half-Day Cu Chi Tunnels from Ho Chi Minh City by Luxury Speedboat',inclusion='',exclusion='',updated='0000-00-00 00:00:00' where id=1;

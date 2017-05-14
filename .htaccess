@@ -80,5 +80,6 @@ RewriteRule ^booking$ controller/default/dattour.php
 RewriteRule ^don-hang$ controller/default/chitietdonhang.php
 
 RewriteRule ^dang-nhap-tour/$ controller/default/login_tour.php
+RewriteRule ^cap-nhat-tour/$ controller/default/cap_nhat_tour.php
 RewriteRule ^dang-xuat-tour/$ controller/default/logout_tour.php
 RewriteRule ^quan-ly-tour/$ controller/default/quanly_tour.php

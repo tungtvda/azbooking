@@ -27,15 +27,25 @@ function show_quanly_tour($data = array())
             else{
                 $price=number_format((int)$row->price,0,",",".").' vnđ';
             }
-
+            $name_dm1='';
+            $data_dm=danhmuc_1_getById($row->danh_muc_1_id);
+            if(count($data_dm)>0){
+                $name_dm1=$data_dm[0]->name_url;
+            }
+            $name_dm2='';
+            $data_dm2=danhmuc_2_getById($row->danh_muc_2_id);
+            if(count($data_dm2)>0){
+                $name_dm2=$data_dm2[0]->name_url;
+            }
+            $link= link_tourdetail($row,$name_dm1,$name_dm2);
             $asign['tour_list'] .= '<tr>
                                     <td>'.$loai_tour.'</td>
                                     <td>'.$row->DanhMuc1Id.'</td>
                                     <td>'.$row->DanhMuc2Id.'</td>
-                                    <td>'.$row->name.'</td>
+                                    <td><a target="_blank" href="'.$link.'">'.$row->name.'</a></td>
                                     <td>'.$price.'</td>
                                     <td>
-                                        <input style="height: 34px;"  class="form-control colorful" type="number" id="so_cho_'.$row->id.'" value="'.$row->so_cho.'" min="0" />
+                                        <input style="height: 34px;"  class="form-control colorful" type="number" id="so_cho_'.$row->id.'" countId="'.$row->id.'" value="'.$row->so_cho.'" min="0" />
                                         <div class="input-group">
                                             <input class="btn btn-primary save_so_cho" nameValue="'.$row->name.'" countId="'.$row->id.'" type="button" value="save">
                                         </div>

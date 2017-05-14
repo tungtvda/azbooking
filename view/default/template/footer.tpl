@@ -207,6 +207,26 @@
             if(id=='' ||name==''){
                 alert('Bạn không thể cập nhật số chỗ');
             }else{
+                var so_cho=$('#so_cho_'+id).val();
+                    if(confirm("Bạn có muốn cập nhật số chỗ cho tour '"+name+"'")){
+                        $.post('{SITE-NAME}/cap-nhat-tour/',
+                                {
+                                    id: id,
+                                    name:name,
+                                    so_cho:so_cho,
+                                },
+                                function (data, status) {
+                                    if(data==1){
+                                        alert('Cập nhật số chỗ thành công');
+                                    }else{
+                                        alert(data);
+                                    }
+
+                                });
+                    }
+                    else{
+                        return false;
+                    }
 
             }
 
