@@ -34,6 +34,12 @@ function tour_Get($command)
         {
             $new_obj=new tour($row);
             $new_obj->decode();
+            if(isset($row['danh_muc_1_id'])){
+                $new_obj->danh_muc_1_id=$row['danh_muc_1_id'];
+            }
+            if(isset($row['danh_muc_2_id'])){
+                $new_obj->danh_muc_2_id=$row['danh_muc_2_id'];
+            }
             array_push($array_result,$new_obj);
         }
     }
@@ -62,7 +68,7 @@ function tour_getByPaging($CurrentPage, $PageSize,$Order,$where)
 //
 function tour_getByPagingReplace($CurrentPage, $PageSize,$Order,$where)
 {
-   return tour_Get("SELECT tour.id,tour.tour_quoc_te, danhmuc_1.name as DanhMuc1Id, danhmuc_2.name as DanhMuc2Id,tour.danhmuc_multi, tour.promotion, tour.packages, tour.name, tour.name_url,tour.count_down, tour.code, tour.img, tour.price_sales, tour.price, tour.price_2, tour.price_3, tour.price_4, tour.price_5, tour.price_6,tour.price_number, tour.price_number_2, tour.price_number_3, tour.price_number_4, tour.price_number_5, tour.price_number_6,tour.name_price, tour.name_price_2, tour.name_price_3, tour.name_price_4, tour.name_price_5, tour.name_price_6, tour.so_cho, tour.durations, tour.departure,tour.departure_time, tour.destination, tour.vehicle, tour.hotel, tour.summary, tour.highlights, tour.schedule, tour.price_list, tour.content, tour.list_img, tour.title, tour.keyword, tour.description, tour.inclusion, tour.exclusion, tour.updated FROM  tour, danhmuc_1, danhmuc_2 where danhmuc_1.id=tour.DanhMuc1Id and danhmuc_2.id=tour.DanhMuc2Id  ".(($where!='')?(' and '.$where):'')." Order By ".$Order." Limit ".(($CurrentPage-1)*$PageSize)." , ".$PageSize);
+    return tour_Get("SELECT tour.id,tour.tour_quoc_te, danhmuc_1.name as DanhMuc1Id,danhmuc_1.id as danh_muc_1_id , danhmuc_2.name as DanhMuc2Id,danhmuc_2.id as danh_muc_2_id,tour.danhmuc_multi, tour.promotion, tour.packages, tour.name, tour.name_url,tour.count_down, tour.code, tour.img, tour.price_sales, tour.price, tour.price_2, tour.price_3, tour.price_4, tour.price_5, tour.price_6,tour.price_number, tour.price_number_2, tour.price_number_3, tour.price_number_4, tour.price_number_5, tour.price_number_6,tour.name_price, tour.name_price_2, tour.name_price_3, tour.name_price_4, tour.name_price_5, tour.name_price_6, tour.so_cho, tour.durations, tour.departure,tour.departure_time, tour.destination, tour.vehicle, tour.hotel, tour.summary, tour.highlights, tour.schedule, tour.price_list, tour.content, tour.list_img, tour.title, tour.keyword, tour.description, tour.inclusion, tour.exclusion, tour.updated FROM  tour, danhmuc_1, danhmuc_2 where danhmuc_1.id=tour.DanhMuc1Id and danhmuc_2.id=tour.DanhMuc2Id  ".(($where!='')?(' and '.$where):'')." Order By ".$Order." Limit ".(($CurrentPage-1)*$PageSize)." , ".$PageSize);
 }
 //
 function tour_insert($obj)
