@@ -62,17 +62,17 @@ function admin_getByPaging($CurrentPage, $PageSize,$Order,$where)
 //
 function admin_getByPagingReplace($CurrentPage, $PageSize,$Order,$where)
 {
-   return admin_Get("SELECT admin.Id, admin.tour_id, admin.khachsan_id, admin.TenDangNhap, admin.Full_name, admin.MatKhau, admin.Quyen, admin.status FROM  admin ".(($where!='')?(' where '.$where):'')." Order By ".$Order." Limit ".(($CurrentPage-1)*$PageSize)." , ".$PageSize);
+   return admin_Get("SELECT admin.Id, admin.tour_id, admin.khachsan_id, admin.TenDangNhap,admin.Email, admin.Full_name, admin.MatKhau, admin.Quyen, admin.status FROM  admin ".(($where!='')?(' where '.$where):'')." Order By ".$Order." Limit ".(($CurrentPage-1)*$PageSize)." , ".$PageSize);
 }
 //
 function admin_insert($obj)
 {
-    return exe_query("insert into admin (tour_id,khachsan_id,TenDangNhap,Full_name,MatKhau,Quyen,status) values ('$obj->tour_id','$obj->khachsan_id','$obj->TenDangNhap','$obj->Full_name','$obj->MatKhau','$obj->Quyen','$obj->status')",'admin');
+    return exe_query("insert into admin (tour_id,khachsan_id,TenDangNhap,Email,Full_name,MatKhau,Quyen,status) values ('$obj->tour_id','$obj->khachsan_id','$obj->TenDangNhap','$obj->Email','$obj->Full_name','$obj->MatKhau','$obj->Quyen','$obj->status')",'admin');
 }
 //
 function admin_update($obj)
 {
-    return exe_query("update admin set tour_id='$obj->tour_id', khachsan_id='$obj->khachsan_id',TenDangNhap='$obj->TenDangNhap',Full_name='$obj->Full_name',MatKhau='$obj->MatKhau',Quyen='$obj->Quyen',status='$obj->status' where Id=$obj->Id",'admin');
+    return exe_query("update admin set tour_id='$obj->tour_id', khachsan_id='$obj->khachsan_id',TenDangNhap='$obj->TenDangNhap',Email='$obj->Email',Full_name='$obj->Full_name',MatKhau='$obj->MatKhau',Quyen='$obj->Quyen',status='$obj->status' where Id=$obj->Id",'admin');
 }
 //
 function admin_delete($obj)

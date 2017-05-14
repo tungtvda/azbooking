@@ -90,7 +90,7 @@ function showFrom($form, $ListKey = array())
 
     $str_from .= '<p><label>Khách sạn</label>';
     $str_from .= '<select name="khachsan_id" style="width: 50%">';
-    $str_from .= '<option value="">Nếu tài khoản là Hotel vui lòng chọn tên khách sạn</option>';
+    $str_from .= '<option value="1">Nếu tài khoản là Hotel vui lòng chọn tên khách sạn</option>';
     if (isset($ListKey['khachsan_id'])) {
         foreach ($ListKey['khachsan_id'] as $key) {
             $str_from .= '<option value="' . $key->id . '" ' . (($form != false) ? (($form->khachsan_id == $key->id) ? 'selected' : '') : '') . '>' . $key->name . '</option>';
@@ -101,6 +101,7 @@ function showFrom($form, $ListKey = array())
 
     $str_from .= '<p><label>status</label><input  type="checkbox"  name="status" value="1" ' . (($form != false) ? (($form->status == '1') ? 'checked' : '') : '') . ' /></p>';
     $str_from .= '<p><label>TenDangNhap</label><input class="text-input small-input" type="text"  name="TenDangNhap" value="' . (($form != false) ? $form->TenDangNhap : '') . '" /></p>';
+    $str_from .= '<p><label>Email</label><input class="text-input small-input" type="email"  name="Email" value="' . (($form != false) ? $form->Email : '') . '" /></p>';
     $str_from .= '<p><label>Full_name</label><input class="text-input small-input" type="text"  name="Full_name" value="' . (($form != false) ? $form->Full_name : '') . '" /></p>';
     $str_from .= '<p><label>MatKhau</label><input class="text-input small-input" type="password"  name="MatKhau" value="' . (($form != false) ? $form->MatKhau : '') . '" /></p>';
 

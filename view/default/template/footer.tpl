@@ -191,6 +191,27 @@
     }</script>
 <script type="text/javascript">
     $(document).ready(function () {
+
+        $("#forgot_url").click(function () {
+            $('.login_page').hide();
+            $('.forgot_page').show();
+        });
+        $("#login_url").click(function () {
+            $('.login_page').show();
+            $('.forgot_page').hide();
+        });
+
+        $(".save_so_cho").click(function () {
+            var id=$(this).attr('countId');
+            var name=$(this).attr('nameValue');
+            if(id=='' ||name==''){
+                alert('Bạn không thể cập nhật số chỗ');
+            }else{
+
+            }
+
+        });
+
         $("#DanhMuc1Id").change(function () {
             if ($('#DanhMuc1Id  option:selected').val() != '') {
                 $.post('{SITE-NAME}/controller/default/ajax.php',
