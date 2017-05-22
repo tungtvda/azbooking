@@ -191,6 +191,47 @@
     }</script>
 <script type="text/javascript">
     $(document).ready(function () {
+
+        $("#forgot_url").click(function () {
+            $('.login_page').hide();
+            $('.forgot_page').show();
+        });
+        $("#login_url").click(function () {
+            $('.login_page').show();
+            $('.forgot_page').hide();
+        });
+
+        $(".save_so_cho").click(function () {
+            var id=$(this).attr('countId');
+            var name=$(this).attr('nameValue');
+            if(id=='' ||name==''){
+                alert('Bạn không thể cập nhật số chỗ');
+            }else{
+                var so_cho=$('#so_cho_'+id).val();
+                    if(confirm("Bạn có muốn cập nhật số chỗ cho tour '"+name+"'")){
+                        $.post('{SITE-NAME}/cap-nhat-tour/',
+                                {
+                                    id: id,
+                                    name:name,
+                                    so_cho:so_cho,
+                                },
+                                function (data, status) {
+                                    if(data==1){
+                                        alert('Cập nhật số chỗ thành công');
+                                    }else{
+                                        alert(data);
+                                    }
+
+                                });
+                    }
+                    else{
+                        return false;
+                    }
+
+            }
+
+        });
+
         $("#DanhMuc1Id").change(function () {
             if ($('#DanhMuc1Id  option:selected').val() != '') {
                 $.post('{SITE-NAME}/controller/default/ajax.php',
@@ -1033,8 +1074,8 @@
                             '<td>' +
                             '<input hidden style="height: 30px" name="tuoi_number_customer[]" value="1"  id="input_tuoi_number_customer_' + stt + '" type="text"  class="valid input_table">' +
                             '<input hidden value="'+name_1+'"  style="height: 30px" name="tuoi_customer[]" id="input_tuoi_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;">'+name_1+'</span></td>' +
-                            '<td><input style="height: 30px" name="passport_customer[]" id="input_passport_customer_' + stt + '" type="text" class="valid input_table "></td>' +
-                            '<td><input style="height: 30px" name="date_passport_customer[]" id="input_date_passport_customer_' + stt + '" type="date" class="valid input_table datepicker"></td>' +
+//                            '<td><input style="height: 30px" name="passport_customer[]" id="input_passport_customer_' + stt + '" type="text" class="valid input_table "></td>' +
+//                            '<td><input style="height: 30px" name="date_passport_customer[]" id="input_date_passport_customer_' + stt + '" type="date" class="valid input_table datepicker"></td>' +
                             '<td style="width: 130px"><input hidden value=""  style="height: 30px" name="dongia_customer[]" id="input_dongia_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;color: red">'+price_item+' '+ti_le_nguoi_lon+'</span></td>' +
                             '</tr>';
                     stt=stt+1;

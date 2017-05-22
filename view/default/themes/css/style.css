@@ -3720,7 +3720,8 @@ body.single-post .blog-page__content > .post .post-content {
 .login-register-page__content {
     max-width: 390px;
     width: 100%;
-    float: right;
+    /*float: right;*/
+    margin: auto;
     padding: 63px 0 135px 0
 }
 
@@ -7274,7 +7275,7 @@ body.single-post .blog-page__content > .post .post-content {
 }
 
 .initiative {
-    min-width: 680px
+    /*min-width: 680px*/
 }
 
 .room-type-table {

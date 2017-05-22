@@ -216,13 +216,13 @@ function show_dattourdetail($data = array())
                                                             <td>
                                                                 <span style="font-size: 11px">'.$row_sub['do_tuoi'].'</span>
                                                             </td>
-                                                            <td>
-                                                                <input class="input_table" style="height: 30px; font-size: 10px;padding-left: 10px" title="'.$row_sub['passport'].'" value="'.$row_sub['passport'].'" >
-                                                            </td>
-
-                                                            <td>
-                                                                <input class="input_table" style="height: 30px; font-size: 10px;padding-left: 10px" title="'.$date_passport.'" value="'.$date_passport.'" >
-                                                            </td>
+//                                                            <td>
+//                                                                <input class="input_table" style="height: 30px; font-size: 10px;padding-left: 10px" title="'.$row_sub['passport'].'" value="'.$row_sub['passport'].'" >
+//                                                            </td>
+//
+//                                                            <td>
+//                                                                <input class="input_table" style="height: 30px; font-size: 10px;padding-left: 10px" title="'.$date_passport.'" value="'.$date_passport.'" >
+//                                                            </td>
                                                             <td style="width: 130px">
                                                                 <span style="color: red; font-size: 12px">'.$price_item.'</span>
                                                             </td>

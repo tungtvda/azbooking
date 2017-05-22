@@ -35,7 +35,7 @@ $link_detail='';
 $danhmuc_1 = danhmuc_tintuc_getById($data['detail'][0]->danhmuc_id);
 if(count($danhmuc_1)>0)
 {
-    $url='<li><a href="'.SITE_NAME.'">Trang chủ</a></li><li><a href="'.SITE_NAME.'/tin-tuc/">'.$data['menu'][2]->name.'</a></li><li><a href="'.SITE_NAME.'/tin-tuc/'.$danhmuc_1[0]->name_url.'/">'.$danhmuc_1[0]->name.'</a></li><li><span>'.$data['detail'][0]->name.'</span></li>';
+    $url='<li><a href="'.SITE_NAME.'">Trang chủ</a></li><li><a href="'.SITE_NAME.'/cam-nang/">'.$data['menu'][2]->name.'</a></li><li><a href="'.SITE_NAME.'/cam-nang/'.$danhmuc_1[0]->name_url.'/">'.$danhmuc_1[0]->name.'</a></li><li><span>'.$data['detail'][0]->name.'</span></li>';
     $banner=$danhmuc_1[0]->img;
     $link_detail=link_newsdetail($data['detail'][0],$danhmuc_1[0]->name_url,'');
 }
