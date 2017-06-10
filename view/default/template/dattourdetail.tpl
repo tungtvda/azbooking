@@ -316,8 +316,8 @@
                                                         <td class="with_td_left"><i class="fa fa-pencil-square-o"></i>
                                                             Tổng số khách:
                                                         </td>
-                                                        <td style="font-weight: bold"><a>{total_cus}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{name_price}
-                                                            : {num_nguoi_lon} - {name_price_2}: {num_tre_em}
+                                                        <td style="font-weight: bold"><a>{total_cus}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {name_price}
+                                                            : {num_nguoi_lon} -  {name_price_2}: {num_tre_em}
                                                             - {name_price_3}: {num_tre_em_5}</td>
                                                     </tr>
 
@@ -339,8 +339,8 @@
                                                             <th>Điện thoại</th>
                                                             <th>Địa chỉ</th>
                                                             <th>Độ tuổi</th>
-                                                            <th>Số Passport</th>
-                                                            <th>Ngày hết hạn</th>
+                                                            <!--<th>Số Passport</th>
+                                                            <th>Ngày hết hạn</th>-->
                                                             <th>Đơn giá <i class="fa fa-sort-amount-desc "></i></th>
                                                         </tr>
                                                         </thead>

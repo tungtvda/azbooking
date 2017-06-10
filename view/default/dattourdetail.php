@@ -99,9 +99,9 @@ function show_dattourdetail($data = array())
     $asign['num_tre_em']=$data['booking_server']['num_tre_em'];
     $asign['num_tre_em_5']=$data['booking_server']['num_tre_em_5'];
 
-    $asign['name_price']='Giá người lớn';
-    $asign['name_price_2']='Giá trẻ em 5-11 tuổi';
-    $asign['name_price_3']='Giá trẻ em dưới 5 tuổi';
+    $asign['name_price']='người lớn';
+    $asign['name_price_2']='trẻ em 5-11 tuổi';
+    $asign['name_price_3']='trẻ em dưới 5 tuổi';
     if($data['booking_server']['name_price']!=''){
         $asign['name_price']=$data['booking_server']['name_price'];
     }
@@ -126,9 +126,9 @@ function show_dattourdetail($data = array())
     $asign['price_number_4']= $data['detail'][0]->price_number_4;
     $asign['price_number_5']= $data['detail'][0]->price_number_5;
     $asign['price_number_6']= $data['detail'][0]->price_number_6;
-    $asign['name_price']='Giá người lớn';
-    $asign['name_price_2']='Giá trẻ em 5-11 tuổi';
-    $asign['name_price_3']='Giá trẻ em dưới 5 tuổi';
+    $asign['name_price']='người lớn';
+    $asign['name_price_2']='trẻ em 5-11 tuổi';
+    $asign['name_price_3']='trẻ em dưới 5 tuổi';
     if($data['detail'][0]->name_price!=''){
         $asign['name_price']=$data['detail'][0]->name_price;
     }
@@ -216,13 +216,7 @@ function show_dattourdetail($data = array())
                                                             <td>
                                                                 <span style="font-size: 11px">'.$row_sub['do_tuoi'].'</span>
                                                             </td>
-//                                                            <td>
-//                                                                <input class="input_table" style="height: 30px; font-size: 10px;padding-left: 10px" title="'.$row_sub['passport'].'" value="'.$row_sub['passport'].'" >
-//                                                            </td>
-//
-//                                                            <td>
-//                                                                <input class="input_table" style="height: 30px; font-size: 10px;padding-left: 10px" title="'.$date_passport.'" value="'.$date_passport.'" >
-//                                                            </td>
+
                                                             <td style="width: 130px">
                                                                 <span style="color: red; font-size: 12px">'.$price_item.'</span>
                                                             </td>

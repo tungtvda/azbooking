@@ -5,6 +5,7 @@
  * @copyright 2013
  */
 define("SITE_NAME", "http://localhost/azbooking");
+define("SITE_NAME_MANAGE", "http://manage.mixmedia.vn");
 define("DIR", dirname(__FILE__));
 define('SERVER','localhost');
 define('DB_USERNAME','root');
