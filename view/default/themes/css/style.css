@@ -920,7 +920,7 @@ span.dropcap {
 
 #header-page {
     position: relative;
-    height: 60px;
+    height: 25px;
     z-index: 99999;
     -webkit-user-select: none;
     -moz-user-select: none;
