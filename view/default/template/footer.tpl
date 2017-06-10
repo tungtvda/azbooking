@@ -1142,8 +1142,8 @@
                             '<td>' +
                             '<input hidden style="height: 30px" name="tuoi_number_customer[]" value="2"  id="input_tuoi_number_customer_' + stt + '" type="text"  class="valid input_table">' +
                             '<input hidden value="'+name_2+'"  style="height: 30px" name="tuoi_customer[]" id="input_tuoi_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;">'+name_2+'</span></td>' +
-                            '<td><input style="height: 30px" name="passport_customer[]" id="input_passport_customer_' + stt + '" type="text"class="valid input_table "></td>' +
-                            '<td><input style="height: 30px" name="date_passport_customer[]" id="input_date_passport_customer_' + stt + '" type="date"class="valid input_table datepicker"></td>' +
+//                            '<td><input style="height: 30px" name="passport_customer[]" id="input_passport_customer_' + stt + '" type="text"class="valid input_table "></td>' +
+//                            '<td><input style="height: 30px" name="date_passport_customer[]" id="input_date_passport_customer_' + stt + '" type="date"class="valid input_table datepicker"></td>' +
                             '<td><input hidden value=""  style="height: 30px" name="dongia_customer[]" id="input_dongia_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;color: red">'+price_item+' '+ti_le_tre_em_511+'</span></td>' +
                             '</tr>';
                     stt=stt+1;
@@ -1209,8 +1209,8 @@
                             '<td>' +
                             '<input hidden style="height: 30px" name="tuoi_number_customer[]" value="3"  id="input_tuoi_number_customer_' + stt + '" type="text"  class="valid input_table">' +
                             '<input hidden value="'+name_3+'"  style="height: 30px" name="tuoi_customer[]" id="input_tuoi_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;">'+name_3+'</span></td>' +
-                            '<td><input style="height: 30px" name="passport_customer[]" id="input_passport_customer_' + stt + '" type="text"class="valid input_table "></td>' +
-                            '<td><input style="height: 30px" name="date_passport_customer[]" id="input_date_passport_customer_' + stt + '" type="date"class="valid input_table datepicker"></td>' +
+//                            '<td><input style="height: 30px" name="passport_customer[]" id="input_passport_customer_' + stt + '" type="text"class="valid input_table "></td>' +
+//                            '<td><input style="height: 30px" name="date_passport_customer[]" id="input_date_passport_customer_' + stt + '" type="date"class="valid input_table datepicker"></td>' +
                             '<td><input hidden value=""  style="height: 30px" name="dongia_customer[]" id="input_dongia_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;color: red">'+price_item+' '+ti_le_tre_em_5+'</span></td>' +
                             '</tr>';
                     stt=stt+1;
