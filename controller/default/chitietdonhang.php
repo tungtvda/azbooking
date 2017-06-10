@@ -42,7 +42,7 @@ if(count($data['detail_booking'])==0){
     }
     $string_info_booking="number="._return_mc_encrypt($code_booking);
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL,"http://manage.mixtourist.com.vn/return-booking-website/");
+    curl_setopt($ch, CURLOPT_URL,SITE_NAME_MANAGE."/return-booking-website/");
 //    curl_setopt($ch, CURLOPT_URL,"http://localhost/manage_mix/return-booking-website/");
     curl_setopt($ch, CURLOPT_POST, 1);
     curl_setopt($ch, CURLOPT_POSTFIELDS,$string_info_booking);

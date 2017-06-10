@@ -45,12 +45,15 @@
                                 </div>
                             </div>
                             <div class="form-elements">
-                                <div class="form-item"><select name="danhmuc_tour_2" id="DanhMuc2Id" class="awe-select">
+                                <div class="form-item">
+                                    <select name="danhmuc_tour_2" id="DanhMuc2Id" class="awe-select">
                                         <option value="">Điểm đến</option>
-                                    </select></div>
+                                    </select>
+                                </div>
                             </div>
                             <div class="form-elements">
-                                <div class="form-item"><select name="gia_timkiem" class="awe-select">
+                                <div class="form-item">
+                                    <select name="gia_timkiem" class="awe-select">
                                         <option value="">Giá tiền</option>
                                        {price_timkiem}
                                     </select></div>

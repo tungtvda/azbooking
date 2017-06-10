@@ -1344,6 +1344,8 @@
         if (error_free != false) {
             $('#loading').show();
             $("#submit_form").submit();
+        }else{
+            alert('Bạn vui lòng nhập đầy đủ thông tin đặt tour');
         }
 
     });
