@@ -22,6 +22,13 @@
         <meta property="og:description" content="{description}" />
         <meta property="og:url" content="{link_url}" />
         <meta property="og:site_name" content="azbooking.vn" />
+        <meta property="fb:app_id" content="487430091415856" />
+        <!--tungtv face-->
+        <!--<meta property="fb:admins" content="487430091415856"/>-->
+        <!--tuyentt face-->
+       <!-- <meta property="fb:admins" content="100009499117208"/>
+        <!--az face-->
+        <!--<meta property="fb:admins" content="503230896512535"/>-->
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
         <meta name="format-detection" content="telephone=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
