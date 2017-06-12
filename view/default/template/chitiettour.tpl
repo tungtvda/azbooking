@@ -164,6 +164,23 @@
 
                     </div>
                 </div>
+                <div class="product-tabs tabs col-md-12" style="border-bottom: 1px solid #D4D4D4;
+    overflow: hidden;
+    padding-bottom: 20px;;">
+                    <ul>
+                        <li><a href="#tabs-1">Bình luận</a></li>
+                    </ul>
+                    <div class="product-tabs__content">
+                        <div id="tabs-1">
+                            <div class="initiative">
+                                <div class="fb-comments"
+                                     data-href="{link}"
+                                     data-numposts="5"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
                 <div class="related-post col-md-12 row"><h4>Có thể bạn quan tâm</h4>
                     <div class="related-slider">
                         {tour_lienquan}

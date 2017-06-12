@@ -211,17 +211,17 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td class=""><span>{name_price}</span></td>
+                                                        <td class=""><span>Giá {name_price}</span></td>
                                                         <td class=""><span style="color: red"
                                                                            class="amount">{price_format}</span></td>
                                                     </tr>
                                                     <tr>
-                                                        <td class=""><span>{name_price_2}</span></td>
+                                                        <td class=""><span>Giá {name_price_2}</span></td>
                                                         <td class=""><span style="color: red"
                                                                            class="amount">{price_2_format}</span></td>
                                                     </tr>
                                                     <tr>
-                                                        <td class=""><span>{name_price_3}</span></td>
+                                                        <td class=""><span>Giá {name_price_3}</span></td>
                                                         <td class=""><span style="color: red"
                                                                            class="amount">{price_3_format}</span></td>
                                                     </tr>
@@ -285,20 +285,20 @@
                                                     </div>
                                                     <div style="width: 100%;float: left;">
                                                         <div class="form-item so_nguoi">
-                                                            <label>{name_price} <span
+                                                            <label class="gia_tour">Số {name_price} <span
                                                                         style="color: red">*</span></label>
                                                             <input id_title="1" name_title="{name_price}" required=""
                                                                    value="1" min="1" type="number" class="valid"
                                                                    id="input_num_nguoi_lon" name="num_nguoi_lon">
                                                         </div>
                                                         <div class="form-item so_nguoi">
-                                                            <label>{name_price_2} </label>
+                                                            <label class="gia_tour">Số {name_price_2} </label>
                                                             <input id_title="2" name_title="{name_price_2}" required=""
                                                                    value="0" min="0" type="number" class="valid"
                                                                    id="input_num_tre_em" name="num_tre_em">
                                                         </div>
                                                         <div class="form-item so_nguoi">
-                                                            <label>{name_price_3}</label>
+                                                            <label class="gia_tour">Số  {name_price_3}</label>
                                                             <input id_title="3" name_title="{name_price_3}" required=""
                                                                    value="0" min="0" type="number" class="valid"
                                                                    id="input_num_tre_em_5" name="num_tre_em_5">
