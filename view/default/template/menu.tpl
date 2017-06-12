@@ -3,14 +3,29 @@
 <body class="ie8 lt-ie9 lt-ie10"><![endif]--><!--[if IE 9]>
 <body class="ie9 lt-ie10"><![endif]--><!--[if (gt IE 9)|!(IE)]><!-->
 <body><!--<![endif]-->
-<div id="fb-root"></div>
+<div id="fb-root"></div><script>window.fbAsyncInit = function() {
+        FB.init({
+            appId : '487430091415856',
+            status : true, // check login status
+            cookie : true, // enable cookies to allow the server to access the session
+            xfbml : true // parse XFBML
+        });
+    };
+    (function() {
+        var e = document.createElement('script');
+        e.src = document.location.protocol + '//connect.facebook.net/vi_VN/all.js';
+        e.async = true;
+        document.getElementById('fb-root').appendChild(e);
+    }());</script>
+
+<!--<div id="fb-root"></div>
 <script>(function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
         js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.9&appId=1906179043002860";
+        js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.9&appId=487430091415856";
         fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+    }(document, 'script', 'facebook-jssdk'));</script>-->
 <div id="page-wrap">
     <!--<div class="preloader"></div>-->
     <header id="header-page">
