@@ -1,4 +1,4 @@
-<div class="col-md-3 col-md-pull-9">
+<div class="col-md-3 col-sm-12 col-xs-12 col-md-pull-9">
     <div class="page-sidebar">
         <div class="sidebar-title">
             <div class="clear-filter">

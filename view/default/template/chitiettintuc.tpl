@@ -40,6 +40,11 @@
                         <h3 class="title">&nbsp;</h3>
                     </div>
                 </div>
+                <div class="related-post col-md-12 row"><h4>Bình luận</h4>
+                    <div class="fb-comments"
+                         data-href="{link}"
+                         data-numposts="5"></div>
+                </div>
                 <div class="related-post col-md-12 row"><h4>Có thể bạn quan tâm</h4>
                     <div class="related-slider">
                         {tour_lienquan}
