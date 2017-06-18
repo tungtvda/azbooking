@@ -4,9 +4,9 @@
  * @author vdbkpro
  * @copyright 2013
  */
-define("SITE_NAME", "http://localhost/azbooking");
+define("SITE_NAME", "http://azbooking.vn");
 define("SITE_NAME_MANAGE", "http://manage.mixmedia.vn");
-define("SITE_NAME_MOBILE", "http://m.azbookig.vn");
+define("SITE_NAME_MOBILE", "http://m.azbooking.vn");
 define("DIR", dirname(__FILE__));
 define('SERVER','localhost');
 define('DB_USERNAME','root');
@@ -25,14 +25,14 @@ require_once DIR.'/model/khachsan_room_priceService.php';
 require_once 'mobi/Mobile_Detect.php';
 require_once DIR . '/common/redict.php';
 $detect = new Mobile_Detect;
-$khach_san='khach-san';
-$actual_link = $_SERVER['REQUEST_URI'];
-if(strstr($actual_link,$khach_san)==''){
-    redict(SITE_NAME_MOBILE.$actual_link);
+$deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') : 'computer');
+if($deviceType=='phone'){
+    $khach_san='khach-san';
+    $actual_link = $_SERVER['REQUEST_URI'];
+    if(strstr($actual_link,$khach_san)==''){
+        redict(SITE_NAME_MOBILE.$actual_link);
+    }
 }
-if($detect->is_mobile()){
-}
-
 
 function returnSearchDurations(){
     $data['data']=tour_getByTop('','','durations asc');
