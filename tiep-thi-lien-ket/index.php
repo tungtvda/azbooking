@@ -5,18 +5,25 @@ $data['config'] = config_getByTop(1, '', '');
 $active_login = '';
 $active_dangky = '';
 $active_forget = '';
+$login_focus='';
+$dangky_focus='';
+$forget_focus='';
 if (isset($_GET['type'])) {
     if ($_GET['type'] == 'dang-ky') {
         $active_dangky = 'visible';
+        $dangky_focus='autofocus="autofocus"';
     } else {
         if ($_GET['type'] == 'quen-mat-khau') {
             $active_forget = 'visible';
+            $forget_focus='autofocus="autofocus"';
         } else {
             $active_login = 'visible';
+            $login_focus='autofocus="autofocus"';
         }
     }
 } else {
     $active_login = 'visible';
+    $login_focus='autofocus="autofocus"';
 }
 ?>
 <!DOCTYPE html>
@@ -100,7 +107,7 @@ if (isset($_GET['type'])) {
                                         <fieldset>
                                             <label class="block clearfix">
 														<span class="block input-icon input-icon-right">
-															<input name="username_login" type="text"
+															<input name="username_login" type="text" <?php echo $login_focus?>
                                                                    class="form-control" required
                                                                    placeholder="Username/email"/>
 															<i class="ace-icon fa fa-user"></i>
@@ -189,7 +196,7 @@ if (isset($_GET['type'])) {
                                         <fieldset>
                                             <label class="block clearfix">
 														<span class="block input-icon input-icon-right">
-															<input type="email" required name="email_forgot"
+															<input type="email" required name="email_forgot" <?php echo $forget_focus?>
                                                                    class="form-control" placeholder="Email"/>
 															<i class="ace-icon fa fa-envelope"></i>
 														</span>
@@ -224,13 +231,12 @@ if (isset($_GET['type'])) {
                                     </h4>
 
                                     <div class="space-6"></div>
-                                    <p> Nhập chi tiết của bạn để bắt đầu: </p>
 
                                     <form action="" method="post">
                                         <fieldset>
                                             <label class="block clearfix">
 														<span class="block input-icon input-icon-right">
-															<input type="email" id="email_dangky" name="email_dangky"
+															<input type="email" id="email_dangky" name="email_dangky" <?php echo $dangky_focus?>
                                                                    required class="form-control" placeholder="Email"
                                                                    value="<?php if (isset($email)) echo $email ?>"/>
 															<i class="ace-icon fa fa-envelope"></i>
@@ -291,7 +297,7 @@ if (isset($_GET['type'])) {
                                                     <span class="bigger-110">Hủy</span>
                                                 </button>
 
-                                                <button type="button" id="dangky_name" name="dangky_name"
+                                                <button style="display: none" type="button" id="dangky_name" name="dangky_name"
                                                         class="width-65 pull-right btn btn-sm btn-success">
                                                     <span class="bigger-110">Đăng ký</span>
 
