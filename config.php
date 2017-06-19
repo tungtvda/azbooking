@@ -4,7 +4,7 @@
  * @author vdbkpro
  * @copyright 2013
  */
-define("SITE_NAME", "http://azbooking.vn");
+define("SITE_NAME", "http://localhost/azbooking");
 define("SITE_NAME_MANAGE", "http://manage.mixmedia.vn");
 define("SITE_NAME_MOBILE", "http://m.azbooking.vn");
 define("DIR", dirname(__FILE__));
@@ -28,8 +28,9 @@ $detect = new Mobile_Detect;
 $deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') : 'computer');
 if($deviceType=='phone'){
     $khach_san='khach-san';
+    $thanh_vien='thanh-vien';
     $actual_link = $_SERVER['REQUEST_URI'];
-    if(strstr($actual_link,$khach_san)==''){
+    if(strstr($actual_link,$khach_san)=='' && strstr($actual_link,$thanh_vien)==''){
         redict(SITE_NAME_MOBILE.$actual_link);
     }
 }
@@ -270,7 +271,7 @@ function contact()
             $new->created=date(DATETIME_FORMAT);
             contact_insert($new);
             $link_web=SITE_NAME;
-            $subject = "Azbooking.org thông báo liên hệ từ khách hàng";
+            $subject = "Azbooking.vn thông báo liên hệ từ khách hàng";
             $message='';
             $message .='<div style="float: left; width: 100%">
 
@@ -284,7 +285,7 @@ function contact()
 
                         </div>';
             SendMail('tungtv.soict@gmail.com', $message, $subject);
-            echo "<script>alert('Dulichchauau.org cảm ơn quý khách đã gửi liên hệ đến chúng tôi, Dulichchauau.org sẽ liên hệ với bạn sớm nhất, xin cảm ơn!')</script>";
+            echo "<script>alert('Azbooking.vn cảm ơn quý khách đã gửi liên hệ đến chúng tôi, Azbooking.vn sẽ liên hệ với bạn sớm nhất, xin cảm ơn!')</script>";
 
             echo "<script>window.location.href='$link_web';</script>";
 
