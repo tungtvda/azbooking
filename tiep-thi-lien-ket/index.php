@@ -66,7 +66,7 @@ if (isset($_GET['type'])) {
 
     <script src="<?php echo SITE_NAME ?>/tiep-thi-lien-ket/themes/admin/js/html5shiv.min.js"></script>
     <script src="<?php echo SITE_NAME ?>/tiep-thi-lien-ket/themes/admin/js/respond.min.js"></script>
-
+    <link href="<?php echo SITE_NAME?>/tiep-thi-lien-ket/themes/admin/css/dialog.css" rel="stylesheet" type="text/css">
 </head>
 
 <body style="background:url('<?php echo SITE_NAME ?>/tiep-thi-lien-ket/themes/admin/images/square.gif')"
@@ -232,12 +232,12 @@ if (isset($_GET['type'])) {
 
                                     <div class="space-6"></div>
 
-                                    <form action="" method="post">
+                                    <form action="" method="post" id="signup-form">
                                         <fieldset>
                                             <label class="block clearfix">
 														<span class="block input-icon input-icon-right">
 															<input type="email" id="email_dangky" name="email_dangky" <?php echo $dangky_focus?>
-                                                                   required class="form-control" placeholder="Email"
+                                                                   required class="form-control" placeholder="Email *"
                                                                    value="<?php if (isset($email)) echo $email ?>"/>
 															<i class="ace-icon fa fa-envelope"></i>
 														</span>
@@ -251,12 +251,12 @@ if (isset($_GET['type'])) {
 															<input type="text" id="username_dangky"
                                                                    name="username_dangky" required class="form-control"
                                                                    value="<?php if (isset($username_dk)) echo $username_dk ?>"
-                                                                   placeholder="Tên đăng nhập"/>
+                                                                   placeholder="Họ tên *"/>
 															<i class="ace-icon fa fa-user"></i>
 														</span>
                                                 <input type="password" id="check_show_username" hidden value="0">
                                                 <span hidden id="mess_username_dang_ky"
-                                                      style="color: red; font-size: 13px">Username đã tồn tại trong hệ thống</span>
+                                                      style="color: red; font-size: 13px">Bạn vui lòng nhập họ và tên</span>
                                             </label>
 
                                             <label class="block clearfix">
@@ -282,12 +282,14 @@ if (isset($_GET['type'])) {
                                                       style="color: red; font-size: 13px">Hai mật khẩu không khớp</span>
                                             </label>
                                             <div class="clearfix">
-                                                <label class="inline">
+                                                <label style="margin-bottom: 0px" class="inline">
                                                     <input type="checkbox" name="confirm_res" id="confirm_res" class="ace">
-                                                    <span class="lbl"> Tôi đã đọc và đồng ý  <a href="" target="_blank">Điều khoản</a> và <a href="" target="_blank"> Chính sách </a></span>
+                                                    <span class="lbl"> Tôi đã đọc và đồng ý  <a href="<?php echo SITE_NAME?>/tiep-thi-lien-ket/dieu-khoan-dich-vu.html" target="_blank">Điều khoản</a> và <a href="<?php echo SITE_NAME?>/tiep-thi-lien-ket/chinh-sach.html" target="_blank"> Chính sách </a></span>
                                                 </label>
+                                                 <label hidden id="mess_confirm_res"
+                                                       style="color: red; font-size: 13px">Bạn vui lòng đồng ý điều khoản và chính sách của chúng tôi</label>
                                             </div>
-                                            <div class="clearfix">
+                                            <div class="clearfix" style="margin-top: 20px">
                                                 <input type="password" id="site_name" hidden
                                                        value="<?php echo SITE_NAME_MANAGE ?>">
 
@@ -378,13 +380,13 @@ if (isset($_GET['type'])) {
             $('body').attr('class', 'login-layout blur-login');
             $('#id-text2').attr('class', 'white');
             $('#id-company-text').attr('class', 'light-blue');
-
             e.preventDefault();
         });
 
     });
 </script>
 <script src="<?php echo SITE_NAME ?>/tiep-thi-lien-ket/themes/admin/js/login.js"></script>
+<script src="<?php echo SITE_NAME?>/tiep-thi-lien-ket/themes/admin/js/dialog.js"></script>
 </body>
 </html>
 

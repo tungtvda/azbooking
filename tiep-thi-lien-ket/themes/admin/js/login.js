@@ -66,33 +66,14 @@ jQuery(function ($) {
         var check_show_pass = $('#check_show_pass').val();
         var confirm_res = $('#confirm_res').is(':checked');
         var value = $('#username_dangky').val();
-        link = site_name + '/check-login.html';
-        var key = "user_name";
         if(value!=''){
-            $.ajax({
-                method: "GET",
-                url: link,
-                data: "value=" + value + '&key=' + key,
-                success: function (response) {
-                    if (response == 1) {
-                        $('#mess_username_dang_ky').hide();
-                        $('#check_show_username').val(1);
-                        if (check_show_email == 1&&check_show_pass == 1 && confirm_res==1) {
-                            $('#dangky_name').show();
-                        }
-                        else {
-                            $('#dangky_name').hide();
-                        }
-                    }
-                    else {
-                        $('#mess_username_dang_ky').show().html('Tên đăng nhập đã tồn tại trong hệ thống');
-                        $('#check_show_username').val(0);
-                        $('#dangky_name').hide();
-                    }
-                }
-            });
+            $('#mess_username_dang_ky').hide();
+            $('#check_show_username').val(1);
+            if (check_show_email == 1&&check_show_pass == 1 && confirm_res==1) {
+                $('#dangky_name').show();
+            }
         }else{
-            $('#mess_username_dang_ky').show().html('Bạn vui lòng nhập tên đăng nhập');
+            $('#mess_username_dang_ky').show().html('Bạn vui lòng nhập họ tên');
             $('#check_show_username').val(0);
             $('#dangky_name').hide();
         }
@@ -226,13 +207,16 @@ jQuery(function ($) {
                     $('#mess_email_dang_ky').show().html('Bạn vui lòng kiểm tra email');
                 }
                 if(check_show_username==0){
-                    $('#mess_username_dang_ky').show().html('Bạn vui lòng kiểm tra tên đăng nhập');
+                    $('#mess_username_dang_ky').show().html('Bạn vui lòng kiểm tra họ tên');
                 }
                 if(check_show_username==0){
                     $('#power_pass').removeClass().addClass('error_pass').html('Bạn vui lòng kiểm tra mật khẩu');
                 }
                 if(check_show_username==0){
                     $('#mess_confirm_password_dangky').show().html('Bạn vui lòng xác nhận mật khẩu');
+                }
+                if(confirm_res==0){
+                    $('#mess_confirm_res').show();
                 }
             }
             return 0
@@ -241,9 +225,42 @@ jQuery(function ($) {
     $('body').on("click",'#dangky_name', function () {
         var check_show=check_dangky(1);
         if(check_show==1){
-            console.log('dung');
+            link = site_name + '/azbooking-dang-ky.html';
+
+            if($("#signup-form").serialize()){
+                $.ajax({
+                    method: "POST",
+                    url: link,
+                    data: $("#signup-form").serialize(),
+                    success: function (response) {
+                        if (response == 1) {
+
+                        }
+                        else {
+
+                        }
+                    }
+                });
+            }else{
+                lnv.alert({
+                    title: 'Lỗi',
+                    content: 'Bạn vui lòng kiểm tra lại thông tin đăng ký',
+                    alertBtnText: 'Ok',
+                    iconBtnText:'<i style="color: red;" class="ace-icon fa fa-exclamation-triangle red"></i>',
+                    alertHandler: function () {
+                    }
+                });
+            }
+
         }else{
-            console.log('sai');
+            lnv.alert({
+                title: 'Lỗi',
+                content: 'Bạn vui lòng kiểm tra lại thông tin đăng ký',
+                alertBtnText: 'Ok',
+                iconBtnText:'<i style="color: red;" class="ace-icon fa fa-exclamation-triangle red"></i>',
+                alertHandler: function () {
+                }
+            });
         }
     });
 
@@ -252,5 +269,6 @@ jQuery(function ($) {
         $('#mess_email_dang_ky').hide();
         $('#mess_username_dang_ky').hide();
         $('#power_pass').html('');
+        $('#mess_confirm_res').hide();
     });
 });
