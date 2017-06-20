@@ -53,9 +53,9 @@ a {
 	text-align: center;
 }
 .login-form-header img {
-	border: 1px solid #CCCCCC;
+	/*border: 1px solid #CCCCCC;*/
     padding: 10px;
-    border-radius: 50px;
+    /*border-radius: 50px;*/
 }
 .login-form-header h3 {
 	font-weight: lighter;
