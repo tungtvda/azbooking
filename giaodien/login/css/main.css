@@ -115,16 +115,7 @@ a {
 .login-form .button:focus {
 	outline: none;
 }
-.login-form .register {
-	margin-top: 5px;
-    background: #CCCCCC;
-    border: 0;
-    color: #676464;
-    padding: 9px;
-    font-size: 15px;
-    display: block;
-    text-align: center;
-}
+
 .login-form .register:hover	{
 	background: #b7b7b7;
 }
@@ -146,35 +137,80 @@ a {
 
 /* SEPARATOR */
 .login-form-content .separator {
-	margin: 20px 0;
 	border-top: 1px solid #CCCCCC;
 	position: relative;
+	margin-top: 30px;
 }
-.login-form-content .separator-text {
+.login-form-content .separator-text-bottom {
 	display: block;
     position: absolute;
     top: -10px;
-    left: 50%;
+    left: 33%;
     margin-left: -22px;
     padding: 0px 10px;
     background: #FFFFFF;
-	color: #8a8a8a;
+	color: #4a96d9;
 }
 
-/* SOCIAL MEDIA LOGIN */
+.login-form-content .separator-text {
+	display: block;
+	position: absolute;
+	top: -14px;
+	left: 38%;
+	margin-left: -22px;
+	padding: 0px 10px;
+	background: #FFFFFF;
+	color: #0091EA;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+}
+/* btn_action */
+.btn_action .login{
+	margin-top: 5px;
+	background: #2e7ec7;
+	border: 0;
+	color: #ffffff;
+	padding: 9px;
+	font-size: 15px;
+	display: inline-block;
+	text-align: center;
+	width: 44%;
+	float: right;
+}
+.btn_action i{
+	width: initial;
+}
+.btn_action{
+	margin-top: 15px;
+}
+.login-form .register {
+	margin-top: 5px;
+	background: #CCCCCC;
+	border: 0;
+	color: #676464;
+	padding: 9px;
+	font-size: 15px;
+	display: inline-block;
+	text-align: center;
+	width: 44%;
+}
+
+	/* SOCIAL MEDIA LOGIN */
 .socmed-login .socmed-btn {
-    padding: 10px 25px;
-    color: #FFFFFF;
-    display: block;
-    margin-top: 5px;
-    text-align: center;
+	padding: 10px 25px;
+	color: #FFFFFF;
+	display: inline-block;
+	margin-top: 5px;
+	text-align: center;
+	width: 18.1%;
 }
 .socmed-login .socmed-btn i {
 	text-align: left;
-    border-right: 1px solid #FFFFFF;
-    margin-right: 15px;
-    width: 25px;
-	font-size: 16x;
+    /*border-right: 1px solid #FFFFFF;*/
+    /*margin-right: 15px;*/
+    width: initial;
+	font-size: 16px;
 	vertical-align: middle;
 }
 .socmed-login .socmed-btn span {
@@ -195,12 +231,40 @@ a {
 	background: #d40909;
 }
 .socmed-login .yahoo-btn {
-	background: #940b94;
+	background: #6fb3e0;
 }
 .socmed-login .yahoo-btn:hover {
-	background: #790a79;
+	background: #4791e0;
 }
-
+.toolbar {
+	padding: 20px 0px;
+	/*background: #428bca;*/
+	/*border-top: 2px solid #597597;*/
+}
+.toolbar a{
+	color: #4a96d9;
+}
+.hidden_box{
+	display: none;
+}
+.show_box{
+	display: block;
+}
+.back-to-login-link {
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 700;
+	text-shadow: 1px 0 1px rgba(0, 0, 0, .25);
+}
+.toolbar > div:first-child {
+	float: left;
+	text-align: left;
+}
+.toolbar > div {
+	width: 50%;
+	display: inline-block;
+	/*padding: 9px 0 11px;*/
+}
 /* RESPONSIVE */
 @media screen and (max-height: 600px) {
 	.login-form-container {
