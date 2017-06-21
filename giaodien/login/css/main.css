@@ -195,7 +195,10 @@ a {
 	text-align: center;
 	width: 44%;
 }
-
+.login-form p{
+	padding: 5px 10px 5px 0px;
+	margin: 0px;
+}
 	/* SOCIAL MEDIA LOGIN */
 .socmed-login .socmed-btn {
 	padding: 10px 25px;
@@ -204,6 +207,7 @@ a {
 	margin-top: 5px;
 	text-align: center;
 	width: 18.1%;
+	padding-bottom: 16px;
 }
 .socmed-login .socmed-btn i {
 	text-align: left;
