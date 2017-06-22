@@ -404,3 +404,15 @@ function _returnPostParamSecurity($param)
         return '';
     }
 }
+function _returnCheckLinkImg($img){
+    $link='';
+    if($img!='')
+    {
+        if(strstr($img,SITE_NAME)!=''){
+            $link=$img;
+        }else{
+            $link=SITE_NAME.$img;
+        }
+    }
+    return $link;
+}
