@@ -360,7 +360,7 @@ if (isset($_POST['name_customer'])) {
                             $name_url_dm2 = $data_danhmuc_2[0]->name_url;
                         }
                         $link_tour_list = link_tourdetail_ajax($row_tour, $name_url_dm1, $name_url_dm2);
-                        $img_list = SITE_NAME . $row_tour->img;
+                        $img_list = _returnCheckLinkImg($row_tour->img);
                         $tour_string .= '<div style="width: 23%;float: left;padding-left: 10px; padding-right: 10px" class="col-md-3 col-sm-6">
                         <div style="    text-align: center;
     margin-bottom: 30px;" class="news">
@@ -385,9 +385,9 @@ if (isset($_POST['name_customer'])) {
 
                 $data_config = config_getByTop(1, '', '');
                 if (count($data_config) > 0 && $data_config[0]->Logo != '') {
-                    $logo = SITE_NAME . $data_config[0]->Logo;
-                    $banner = SITE_NAME . $data_config[0]->banner_email;
-                    $footer = SITE_NAME . $data_config[0]->footer_email;
+                    $logo =_returnCheckLinkImg($data_config[0]->Logo);
+                    $banner =_returnCheckLinkImg($data_config[0]->banner_email);
+                    $footer = _returnCheckLinkImg($data_config[0]->footer_email);
                     $title = SITE_NAME . $data_config[0]->Name;
                 }
                 if ($total == 0 || $total == 'Liên hệ') {
@@ -648,7 +648,7 @@ if (isset($_POST['name_customer'])) {
   text-transform: uppercase;
   text-align: center;" class="title_index">Có thể bạn quan tâm <a
                         style="float: right; margin-top: 10px; color: red; font-weight: bold;font-size: 14px;"
-                        href="' . SITE_NAME . '/tour-du-lich-quoc-te/">Xem thêm...</a></h3>
+                        href="' . SITE_NAME . '/tour-du-lich/">Xem thêm...</a></h3>
 
                 <div style="float: left; width: 100%" class="row">
 
@@ -679,8 +679,6 @@ if (isset($_POST['name_customer'])) {
         }
 
     }
-
-
 }
 
 $data['menu'] = menu_getByTop('', '', '');
@@ -698,11 +696,11 @@ $data['tab_tintuc'] = 'hidden';
 
 $name = $data['menu'][15]->name;
 $data['banner'] = array(
-    'banner_img' => $data['menu'][15]->img,
+    'banner_img' => _returnCheckLinkImg($data['menu'][15]->img),
     'name' => $name,
     'url' => '<li><a href="' . SITE_NAME . '">Trang chủ</a></li><li><span>' . $name . '</span></li>'
 );
-$data['link_anh'] = $data['menu'][15]->img;
+$data['link_anh'] = _returnCheckLinkImg($data['menu'][15]->img);
 
 $title = $data['menu'][15]->title;
 $description = $data['menu'][15]->description;
