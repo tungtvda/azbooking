@@ -73,7 +73,7 @@ a {
 }
 .login-form .input {
 	border: 0;
-	width: 200px;
+	width: 80%;
 }
 .login-form .input:focus {
     outline: none;
@@ -151,12 +151,37 @@ a {
     background: #FFFFFF;
 	color: #4a96d9;
 }
-
+.login-form-content .separator-text-forget {
+	display: block;
+	position: absolute;
+	top: -14px;
+	left: 30%;
+	margin-left: -22px;
+	padding: 0px 10px;
+	background: #FFFFFF;
+	color: #0091EA;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+}
 .login-form-content .separator-text {
 	display: block;
 	position: absolute;
 	top: -14px;
 	left: 38%;
+	margin-left: -22px;
+	padding: 0px 10px;
+	background: #FFFFFF;
+	color: #0091EA;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+}
+.login-form-content .separator-text-register {
+	display: block;
+	position: absolute;
+	top: -14px;
+	left: 42%;
 	margin-left: -22px;
 	padding: 0px 10px;
 	background: #FFFFFF;
@@ -268,6 +293,55 @@ a {
 	width: 50%;
 	display: inline-block;
 	/*padding: 9px 0 11px;*/
+}
+.error_pass{
+	color: red;
+}
+.success_pass{
+	color: green;
+}
+.medium_pass{
+	color: #1b85ff;
+}
+.medium_pass{
+	color: #1b85ff;
+}
+.weak_pass{
+	color: #ff8300;
+}
+.btn_action .loading {
+	/* margin-top: 5px; */
+	/* background: #2e7ec7; */
+	/* border: 0; */
+	/* color: #ffffff; */
+	padding: 9px;
+	font-size: 15px;
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	float: right;
+	margin-bottom: -19px;
+}
+.action_register{
+	margin-bottom: 65px;
+}
+.required_create{
+	text-align: center;
+	margin-top: 10px;
+	font-size: 12px;
+	font-style: italic;
+	color: red;
+}
+.btn_action #cancel_create {
+	margin-top: 5px;
+	background: #CCCCCC;
+	border: 0;
+	color: #676464;
+	padding: 9px;
+	font-size: 15px;
+	display: inline-block;
+	text-align: center;
+	width: 44%;
 }
 /* RESPONSIVE */
 @media screen and (max-height: 600px) {
