@@ -180,8 +180,6 @@ $message_dangky = '<!DOCTYPE html>
 </html>';
 
 $message_dangky=_return_mc_encrypt($message_dangky);
-
-exit;
 ?>
 <html>
 <head>
@@ -307,6 +305,7 @@ exit;
                 <span>(Bạn vui lòng điền đầy đủ thông tin đăng ký)</span>
             </div>
             <form method="post" action="" id="signup-form" class="login-form" style="margin-bottom: 0px">
+                <input type="password" hidden name="mail_create" value="<?php echo $message_dangky?>">
                 <div class="input-container">
                     <i class="fa fa-envelope"></i>
                     <input maxlength="100" type="email" id="email_dangky" class="input"
