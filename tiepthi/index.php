@@ -134,7 +134,7 @@ $message_dangky = '<!DOCTYPE html>
                 <p>Chào bạn, <b>' . $name_customer . '</b></p>
                 <p>Cảm ơn bạn đã đăng ký tài khoản <span style="color: #0091ea;">AZBOOKING.VN</span>. Để kích hoạt tài khoản, bạn vui lòng truy cập đường dẫn bên dưới để hoàn tất quá trình đăng ký.</p>
 
-                <p style="color: #0091ea;"><a href="' . $link_dangky . '">' . $link_dangky . '</a></p>
+                <p style="color: #0091ea;"><a href="' .SITE_NAME.'/'.$link_dangky . '">' . $link_dangky . '</a></p>
                 <p>Nếu nhấp vào đường dẫn không được, bạn có thể sao chéo đường dẫn vào cửa sổ trình duyệt hoặc gõ lại trực tiếp trong đó</p>
                 <p>Trân trọng !</p>
                 </div>
@@ -178,7 +178,6 @@ $message_dangky = '<!DOCTYPE html>
 </div>
 </body>
 </html>';
-
 $message_dangky=_return_mc_encrypt($message_dangky);
 ?>
 <html>
