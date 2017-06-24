@@ -85,3 +85,4 @@ RewriteRule ^dang-xuat-tour/$ controller/default/logout_tour.php
 RewriteRule ^quan-ly-tour/$ controller/default/quanly_tour.php
 
 RewriteRule ^thanh-vien/$ tiepthi/index.php
+RewriteRule ^xac-nhan-dang-ky/$ tiepthi/index.php

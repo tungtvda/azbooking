@@ -1,4 +1,5 @@
 jQuery(function ($) {
+    site_name_manage = $('#site_name_manage').val();
     site_name = $('#site_name').val();
     $('body').on("input",'#email_dangky', function () {
         check_email();
@@ -16,7 +17,7 @@ jQuery(function ($) {
             var re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
             var is_email=re.test(value);
             if(is_email){
-                link = site_name + '/check-login.html';
+                link = site_name_manage + '/check-login.html';
                 var key = "user_email";
                 $.ajax({
                     method: "GET",
@@ -231,7 +232,7 @@ jQuery(function ($) {
             $('#cancel_create').hide();
             $('#toolbar_create').hide();
             $('#loading_create').show();
-            link = site_name + '/azbooking-dang-ky.html';
+            link = site_name_manage + '/azbooking-dang-ky.html';
             if($("#signup-form").serialize()){
                 $.ajax({
                     method: "POST",
@@ -249,7 +250,7 @@ jQuery(function ($) {
                                 alertBtnText: 'Ok',
                                 iconBtnText:'<i style="color: green;" class="ace-icon fa fa-check green"></i>',
                                 alertHandler: function () {
-                                    console.log('asdfsdaf');
+                                    window.location.href=site_name+'/thanh-vien/';
                                 }
                             });
                         }
