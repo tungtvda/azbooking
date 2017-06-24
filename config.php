@@ -16,6 +16,7 @@ define('DB_NAME','azbooking');
 define('CACHE',false);
 define('DATETIME_FORMAT',"y-m-d H:i:s");
 define('PRIVATE_KEY','hoidinhnvbk');
+define('ENCRYPTION_KEY', '5a9adddba4556e4784ec17246552f2033c3f6df767516ef92a55efed1408772b');
 session_start();
 require_once DIR.'/common/minifi.output.php';
 ob_start("minify_output");
@@ -361,28 +362,57 @@ function returnRoomPrice($room){
 
 }
 
-function _return_mc_encrypt($encrypt)
+// Code mã hóa
+function _return_mc_encrypt($encrypt, $key, $code_key = '')
 {
-    $encode = base64_encode($encrypt);
-    $encode = base64_encode($encode);
-    $encode = base64_encode($encode);
-    $encode = base64_encode($encode);
-    $encode = base64_encode($encode);
-    $encode = base64_encode($encode);
-    $encode = base64_encode($encode);
+    if ($code_key == 1) {
+        $encrypt = serialize($encrypt);
+        $iv = mcrypt_create_iv(mcrypt_get_iv_size(MCRYPT_RIJNDAEL_256, MCRYPT_MODE_CBC), MCRYPT_DEV_URANDOM);
+        $key = pack('H*', $key);
+        $mac = hash_hmac('sha256', $encrypt, substr(bin2hex($key), -32));
+        $passcrypt = mcrypt_encrypt(MCRYPT_RIJNDAEL_256, $key, $encrypt . $mac, MCRYPT_MODE_CBC, $iv);
+        $encode = base64_encode($passcrypt) . '|' . base64_encode($iv);
+
+    } else {
+        $encode = base64_encode($encrypt);
+        $encode = base64_encode($encode);
+        $encode = base64_encode($encode);
+        $encode = base64_encode($encode);
+        $encode = base64_encode($encode);
+        $encode = base64_encode($encode);
+        $encode = base64_encode($encode);
+    }
     return $encode;
 }
 
 // Code giải mã
-function _return_mc_decrypt($decrypt)
+function _return_mc_decrypt($decrypt, $key, $code_key = '')
 {
-    $decoded = base64_decode($decrypt);
-    $decoded = base64_decode($decoded);
-    $decoded = base64_decode($decoded);
-    $decoded = base64_decode($decoded);
-    $decoded = base64_decode($decoded);
-    $decoded = base64_decode($decoded);
-    $decoded = base64_decode($decoded);
+    if ($code_key == 1) {
+        $decrypt = explode('|', $decrypt);
+        $decoded = base64_decode($decrypt[0]);
+        $iv = base64_decode($decrypt[1]);
+        if (strlen($iv) !== mcrypt_get_iv_size(MCRYPT_RIJNDAEL_256, MCRYPT_MODE_CBC)) {
+            return false;
+        }
+        $key = pack('H*', $key);
+        $decrypted = trim(mcrypt_decrypt(MCRYPT_RIJNDAEL_256, $key, $decoded, MCRYPT_MODE_CBC, $iv));
+        $mac = substr($decrypted, -64);
+        $decrypted = substr($decrypted, 0, -64);
+        $calcmac = hash_hmac('sha256', $decrypted, substr(bin2hex($key), -32));
+        if ($calcmac !== $mac) {
+            return false;
+        }
+        $decoded = unserialize($decrypted);
+    } else {
+        $decoded = base64_decode($decrypt);
+        $decoded = base64_decode($decoded);
+        $decoded = base64_decode($decoded);
+        $decoded = base64_decode($decoded);
+        $decoded = base64_decode($decoded);
+        $decoded = base64_decode($decoded);
+        $decoded = base64_decode($decoded);
+    }
     return $decoded;
 }
 function _returnGetParamSecurity($param)

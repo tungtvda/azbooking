@@ -1,34 +1,42 @@
 <?php
+
 if (!defined('DIR')) require_once '../config.php';
 require_once DIR . '/controller/default/public.php';
 $data['config'] = config_getByTop(1, '', '');
 $active_login = '';
 $active_dangky = '';
 $active_forget = '';
+$active_confirm = '';
 $login_focus = '';
 $dangky_focus = '';
 $forget_focus = '';
 $title = '';
+$check_tab=0; //0- login, 1-dangky, 2-forget, 3-confirm
+
 if (isset($_GET['type'])) {
     if ($_GET['type'] == 'dang-ky') {
         $active_dangky = 'show_box';
         $dangky_focus = 'autofocus="autofocus"';
         $title = 'Đăng ký - AZBOOKING.VN';
+        $check_tab=1;
     } else {
         if ($_GET['type'] == 'quen-mat-khau') {
             $active_forget = 'show_box';
             $forget_focus = 'autofocus="autofocus"';
             $title = 'Quên mật khẩu - AZBOOKING.VN';
+            $check_tab=2;
         } else {
-            $active_login = 'show_box';
-            $login_focus = 'autofocus="autofocus"';
-            $title = 'Đăng nhập - AZBOOKING.VN';
+             $email_confirm=base64_decode(base64_decode(base64_decode(base64_decode(base64_decode(_returnGetParamSecurity('type'))))));
+            $active_confirm = 'show_box';
+            $title = 'Xác thực tài khoản - AZBOOKING.VN';
+            $check_tab=3;
         }
     }
 } else {
     $active_login = 'show_box';
     $login_focus = 'autofocus="autofocus"';
     $title = 'Đăng nhập - AZBOOKING.VN';
+    $check_tab=0;
 }
 $logo = SITE_NAME . '/email_template/images/logoazboong.vn.png';
 $banner = SITE_NAME . '/email_template/images/banner.jpg';
@@ -90,6 +98,50 @@ if (count($data['config']) > 0 && $data['config'][0]->Logo != '') {
 
 $name_customer = '[username_dangky]';
 $link_dangky = '[link_dangky]';
+$content_email='';
+if($check_tab==1){
+    $content_email=' <h3 style="font-weight: 600;
+  font-size: 18px;
+  border-bottom: 3px solid #0091EA;
+  color: #0091ea;
+  line-height: 1.3em;
+  margin-top: 0;
+  line-height: 58px;
+  z-index: 9;
+  text-transform: uppercase;
+  text-align: center;" class="title_index">XÁC THỰC TÀI KHOẢN</h3>
+                <div style="float: left;width: 100%;" class="col-xs-12 row">
+                <p>Chào bạn, <b>' . $name_customer . '</b></p>
+                <p>Cảm ơn bạn đã đăng ký tài khoản <span style="color: #0091ea;">AZBOOKING.VN</span>. Để kích hoạt tài khoản, bạn vui lòng truy cập đường dẫn bên dưới để hoàn tất quá trình đăng ký.</p>
+
+                <p style="color: #0091ea;"><a href="' .SITE_NAME.'/'.$link_dangky . '">' .SITE_NAME.'/'.$link_dangky . '</a></p>
+                <p>Nếu nhấp vào đường dẫn không được, bạn có thể sao chéo đường dẫn vào cửa sổ trình duyệt hoặc gõ lại trực tiếp trong đó</p>
+                <p>Trân trọng !</p>
+                </div>';
+
+}else{
+    if($check_tab==3){
+        $content_email=' <h3 style="font-weight: 600;
+  font-size: 18px;
+  border-bottom: 3px solid #0091EA;
+  color: #0091ea;
+  line-height: 1.3em;
+  margin-top: 0;
+  line-height: 58px;
+  z-index: 9;
+  text-transform: uppercase;
+  text-align: center;" class="title_index">XÁC THỰC TÀI KHOẢN</h3>
+                <div style="float: left;width: 100%;" class="col-xs-12 row">
+                <p>Chào bạn, <b>' . $name_customer . '</b></p>
+                <p>Tài khoản của bạn đã được kích hoạt. Bạn đã sẵn sàng đăng nhập và tạo chiến dịch tiếp thị liên kết cho riêng mình</p>
+
+                <p >Link đăng nhập: <a style="color: #0091ea;" href="' .SITE_NAME.'/'.$link_dangky . '">' .SITE_NAME.'/'.$link_dangky . '</a></p>
+
+                <p>Trân trọng !</p>
+                </div>';
+
+    }
+}
 
 $message_dangky = '<!DOCTYPE html>
 <html lang="en">
@@ -120,26 +172,7 @@ $message_dangky = '<!DOCTYPE html>
     <main style="float: left; width: 100%" class="main-content">
         <div class="fullwidth-block">
             <div style="width: 100%;" class="container" class="container">
-                <h3 style="font-weight: 600;
-  font-size: 18px;
-  border-bottom: 3px solid #0091EA;
-  color: #0091ea;
-  line-height: 1.3em;
-  margin-top: 0;
-  line-height: 58px;
-  z-index: 9;
-  text-transform: uppercase;
-  text-align: center;" class="title_index">XÁC THỰC TÀI KHOẢN</h3>
-                <div style="float: left;width: 100%;" class="col-xs-12 row">
-                <p>Chào bạn, <b>' . $name_customer . '</b></p>
-                <p>Cảm ơn bạn đã đăng ký tài khoản <span style="color: #0091ea;">AZBOOKING.VN</span>. Để kích hoạt tài khoản, bạn vui lòng truy cập đường dẫn bên dưới để hoàn tất quá trình đăng ký.</p>
-
-                <p style="color: #0091ea;"><a href="' .SITE_NAME.'/'.$link_dangky . '">' . $link_dangky . '</a></p>
-                <p>Nếu nhấp vào đường dẫn không được, bạn có thể sao chéo đường dẫn vào cửa sổ trình duyệt hoặc gõ lại trực tiếp trong đó</p>
-                <p>Trân trọng !</p>
-                </div>
-
-
+               '.$content_email.'
             </div>
         </div>
 
@@ -178,7 +211,7 @@ $message_dangky = '<!DOCTYPE html>
 </div>
 </body>
 </html>';
-$message_dangky=_return_mc_encrypt($message_dangky);
+$message_dangky=_return_mc_encrypt($message_dangky,'','');
 ?>
 <html>
 <head>
@@ -217,9 +250,31 @@ $message_dangky=_return_mc_encrypt($message_dangky);
             <div class="logo">
                 <a href="<?php echo SITE_NAME ?>"><img style="width: 60%" alt="<?php echo $data['config'][0]->Name ?>"
                                                        src="<?php echo $data['config'][0]->Logo ?>"/></a>
-                <input type="password" id="site_name" hidden
+                <input type="password" id="site_name_manage" hidden
                        value="<?php echo SITE_NAME_MANAGE ?>">
+                <input type="password" id="site_name" hidden
+                       value="<?php echo SITE_NAME ?>">
             </div>
+        </div>
+        <div id="confirm-box" class="<?php echo $active_confirm ?> hidden_box">
+            <div class="separator">
+                <span style="left: 19%;font-size: 12px;" class="separator-text-forget">Hệ thống đang xác thực tài khoản...</span>
+            </div>
+            <form method="post" action="" class="login-form" id="confirm-form">
+                <div style="text-align: center;margin-top: 0px; margin-bottom: 10px" class="input-container">
+                    <input type="password" hidden name="mail_confirm" value="<?php echo $message_dangky?>">
+                    <input type="password" hidden name="mail_send" value="<?php echo $_GET['type']?>">
+                    <input type="password" id="email_check_confirm" hidden
+                           value="<?php echo $email_confirm ?>">
+                   <img id="loading_confirm" src="<?php echo SITE_NAME.'/tiepthi/img/loading_1.gif'?>">
+                    <br>
+                </div>
+            </form>
+            <div id="confirm_reset" class="btn_action" id="action_register" style="text-align: center; display: none">
+                <a style="width: inherit; float: inherit" href="javascript:void(0)" class="login"  > <i
+                        class="ace-icon fa fa-refresh "></i> Thử lại</a>
+            </div>
+            <br>
         </div>
         <div id="login-box" class="<?php echo $active_login ?> hidden_box">
             <div class="separator">
@@ -370,6 +425,9 @@ $message_dangky=_return_mc_encrypt($message_dangky);
 </body>
 <script src="<?php echo SITE_NAME ?>/tiepthi/js/login.js"></script>
 <script src="<?php echo SITE_NAME ?>/tiepthi/js/dialog.js"></script>
+<?php if($check_tab==3){?>
+    <script src="<?php echo SITE_NAME ?>/tiepthi/js/confirm_email.js"></script>
+<?php }?>
 </html>
 <?php
 function link_tourdetail_ajax($app, $name_url = '', $name2_url = '')
@@ -385,6 +443,5 @@ function link_tourdetail_ajax($app, $name_url = '', $name2_url = '')
     } else {
         return SITE_NAME . $link . $name_url . '/' . $name2_url . '/' . $app->name_url . '.html';
     }
-
 }
 ?>
