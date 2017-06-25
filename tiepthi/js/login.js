@@ -414,6 +414,64 @@ jQuery(function ($) {
         $('#mess_email_dang_ky').hide();
         $('#mess_username_dang_ky').hide();
         $('#power_pass').html('');
-        $('#mess_confirm_res').hide();
+        $('#mess_email_login').hide();
+        $('#mess_password_login').hide();
     });
+    $('body').on("click",'#login_btn', function () {
+        var email_login=$('#email_login').val();
+        var password_login=$('#password_login').val();
+        if(email_login!=''&&password_login!=''){
+            var check=check_email_login(1);
+            if(check==1){
+                $("#dangnhap_form").submit();
+            }
+        }else{
+            if(email_login==''){
+                $('#mess_email_login').show();
+            }
+            if(email_login==''){
+                $('#mess_password_login').show();
+            }
+        }
+    });
+    $('body').on("input",'#email_login', function () {
+        check_email_login(0);
+    });
+    $('body').on("keyup",'#email_login', function () {
+        check_email_login(0);
+    });
+    function check_email_login(show_check){
+        var value = $('#email_login').val();
+        var return_check=0;
+        if(value!=''){
+            var re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+            var is_email=re.test(value);
+            if(is_email){
+                $('#mess_email_login').hide();
+                return_check=1;
+            }else{
+                $('#mess_email_login').show().html('<i class="fa fa-times"></i> Email không đúng định dạng');
+            }
+        }else{
+            $('#mess_email_login').html('<i class="fa fa-times"></i> Bạn vui lòng nhập email đăng nhập').show();
+        }
+        if(show_check==1){
+            return return_check;
+        }
+    }
+
+    $('body').on("input",'#password_login', function () {
+        check_password_login();
+    });
+    $('body').on("keyup",'#password_login', function () {
+        check_password_login();
+    });
+    function check_password_login(){
+        var value = $('#password_login').val();
+        if(value!=''){
+            $('#mess_password_login').hide();
+        }else{
+            $('#mess_password_login').html('<i class="fa fa-times"></i> Bạn vui lòng nhập mật khẩu đăng nhập').show();
+        }
+    }
 });
