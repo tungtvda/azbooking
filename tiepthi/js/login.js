@@ -298,7 +298,82 @@ jQuery(function ($) {
             });
         }
     });
+    $("#send_forget_email").on("click", function () {
+        var value=$('#email_forget').val();
+        var re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        var is_email=re.test(value);
+        if(is_email){
+            $('#loading_reset').show();
+            $(this).hide();
+            link = site_name_manage + '/check-login.html';
+            var key = "user_email";
+            $.ajax({
+                method: "GET",
+                url: link,
+                data: "value=" + value + '&key=' + key,
+                success: function (response) {
+                    if (response == 0) {
+                        link = site_name_manage + '/azbooking-reset-password.html';
+                        $.ajax({
+                            method: "POST",
+                            url: link,
+                            data: $("#reset-form").serialize(),
+                            success: function (response) {
+                                response=$.parseJSON(response);
+                                if (response.success == 1) {
+                                    lnv.alert({
+                                        title: 'Reset mật khẩu thành công',
+                                        content: response.mess,
+                                        alertBtnText: 'Ok',
+                                        iconBtnText:'<i style="color: green;" class="ace-icon fa fa-check green"></i>',
+                                        alertHandler: function () {
+                                            window.location.href=site_name+'/thanh-vien/';
+                                        }
+                                    });
+                                }
+                                else {
+                                    $('#loading_reset').hide();
+                                    $(this).show();
+                                    lnv.alert({
+                                        title: 'Lỗi',
+                                        content: response.mess,
+                                        alertBtnText: 'Ok',
+                                        iconBtnText:'<i style="color: red;" class="ace-icon fa fa-exclamation-triangle red"></i>',
+                                        alertHandler: function () {
+                                        }
+                                    });
+                                }
+                            }
+                        });
+                    }
+                    else {
+                        $('#loading_reset').hide();
+                        $(this).show();
+                        lnv.alert({
+                            title: 'Lỗi',
+                            content: 'Email không tồn tại trong hệ thống',
+                            alertBtnText: 'Ok',
+                            iconBtnText:'<i style="color: red;" class="ace-icon fa fa-exclamation-triangle red"></i>',
+                            alertHandler: function () {
+                                $('#email_forget').focus().select();
+                            }
+                        });
+                    }
+                }
+            });
+        }else{
+            lnv.alert({
+                title: 'Lỗi',
+                content: 'Email không đúng định dạng',
+                alertBtnText: 'Ok',
+                iconBtnText:'<i style="color: red;" class="ace-icon fa fa-exclamation-triangle red"></i>',
+                alertHandler: function () {
+                    $('#email_forget').focus().select();
+                }
+            });
+        }
 
+    });
     $("#reset_login").on("click", function () {
         $('#mess_confirm_password_dangky').hide();
         $('#mess_email_dang_ky').hide();

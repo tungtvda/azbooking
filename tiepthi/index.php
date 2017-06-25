@@ -140,6 +140,26 @@ if($check_tab==1){
                 <p>Trân trọng !</p>
                 </div>';
 
+    }else{
+        if($check_tab==2){
+            $content_email=' <h3 style="font-weight: 600;
+  font-size: 18px;
+  border-bottom: 3px solid #0091EA;
+  color: #0091ea;
+  line-height: 1.3em;
+  margin-top: 0;
+  line-height: 58px;
+  z-index: 9;
+  text-transform: uppercase;
+  text-align: center;" class="title_index">Cập nhật mật khẩu</h3>
+                <div style="float: left;width: 100%;" class="col-xs-12 row">
+                <p>Chào bạn, <b >' . $name_customer . '</b></p>
+                <p>Hệ thống vừa nhận được yêu cầu reset lại mật khẩu của bạn</p>
+                <p>Mật khẩu mới: <b style="color: #0091ea;">[pass_new]</b></p>
+                <p>Chú ý: sau khi đăng nhập vào hệ thống, bạn hãy thay đổi mật khẩu vừa tạo để tài khoản của bạn được bảo mật</p>
+                <p>Trân trọng !</p>
+                </div>';
+        }
     }
 }
 
@@ -321,9 +341,9 @@ $message_dangky=_return_mc_encrypt($message_dangky,'','');
                 </a>
             </div>
             <div class="toolbar clearfix">
-                <div><a href="javascript:void(0)" class="forgot-password-link"> <i
+                <div><a href="<?php echo SITE_NAME?>/thanh-vien/?type=quen-mat-khau" class="forgot-password-link"> <i
                             class="ace-icon fa fa-arrow-left"></i> Quên mật khẩu </a></div>
-                <div style="float: right;text-align: right;"><a href="javascript:void(0)" class="user-signup-link">
+                <div style="float: right;text-align: right;"><a href="<?php echo SITE_NAME?>/thanh-vien/?type=dang-ky" class="user-signup-link">
                         Đăng ký tài khoản <i
                             class="ace-icon fa fa-arrow-right"></i> </a>
                 </div>
@@ -333,19 +353,22 @@ $message_dangky=_return_mc_encrypt($message_dangky,'','');
             <div class="separator">
                 <span class="separator-text-forget">Quên mật khẩu</span>
             </div>
-            <form method="post" action="" class="login-form">
+            <form method="post" action="" class="login-form" id="reset-form">
                 <div class="input-container">
                     <i class="fa fa-envelope"></i>
-                    <input type="email" class="input" id="email_forget" name="email" <?php echo $forget_focus ?>
+                    <input type="email" class="input" id="email_forget" name="email_forget" <?php echo $forget_focus ?>
                            placeholder="Email"/>
+                    <input type="password" hidden name="mail_confirm" value="<?php echo $message_dangky?>">
                 </div>
                 <div class="btn_action">
-                    <a href="#" class="login"> <i class="ace-icon fa fa-paper-plane-o"></i> Gửi</a>
+                    <a class="loading" id="loading_reset"n style="display: none"><img id="loading" style="width: 150px;"
+                                                                                      src="http://azbooking.vn/view/default/themes/images/loading.gif"></a>
+                    <a  href="javascript:void(0)" id="send_forget_email" class="login"> <i class="ace-icon fa fa-paper-plane-o"></i> Gửi</a>
                 </div>
             </form>
             <br>
-            <div style="margin-top: 20px;" class="toolbar clearfix">
-                <div style="float: right;text-align: right;"><a href="javascript:void(0)" class="login-password-link">
+            <div style="display: inline-block;    width: 100%;" class="toolbar clearfix">
+                <div style="float: right;text-align: right;"><a href="<?php echo SITE_NAME?>/thanh-vien/" class="login-password-link">
                         Đăng nhập <i
                             class="ace-icon fa fa-arrow-right"></i> </a></div>
             </div>
@@ -415,7 +438,7 @@ $message_dangky=_return_mc_encrypt($message_dangky,'','');
                         class="ace-icon fa fa-refresh"></i> Hủy</a>
             </div>
             <div class="toolbar clearfix " id="toolbar_create">
-                <div><a href="javascript:void(0)" class="login-password-link"> <i
+                <div><a href="<?php echo SITE_NAME?>/thanh-vien/" class="login-password-link"> <i
                             class="ace-icon fa fa-arrow-left"></i> Đăng nhập </a></div>
             </div>
         </div>
