@@ -44,6 +44,12 @@ $footer = SITE_NAME . '/email_template/images/footer.png';
 $title = 'AZBOOKING.VN - GIÁ RẺ VÀ SẼ LUÔN NHƯ VẬY';
 $data_tour_sales = tour_getByTop(4, 'price_sales!="" ', 'id desc');
 $tour_string = '';
+
+// checklogin
+if(isset($_POST['username_login'])&&isset($_POST['password_login'])){
+    _returnLogin();
+}
+
 if (count($data_tour_sales) > 0) {
     foreach ($data_tour_sales as $row_tour) {
         $name_list_tour = $row_tour->name;
@@ -300,16 +306,22 @@ $message_dangky=_return_mc_encrypt($message_dangky,'','');
             <div class="separator">
                 <span class="separator-text">Đăng nhập</span>
             </div>
-            <form method="post" action="" class="login-form">
+            <form method="post" action="" class="login-form" id="dangnhap_form">
                 <div class="input-container">
                     <i class="fa fa-envelope"></i>
                     <input type="email" class="input" name="username_login" id="email_login" <?php echo $login_focus ?>
                            placeholder="Email *"/>
+                    <p hidden id="mess_email_login"
+                       style="color: red; font-size: 13px"><i class="fa fa-times"></i> Bạn vui lòng nhập email đăng nhập
+                    </p>
                 </div>
                 <div class="input-container">
                     <i class="fa fa-lock"></i>
                     <input type="password" name="password_login" id="password_login" class="input"
                            placeholder="Mật khẩu *"/>
+                    <p hidden id="mess_password_login"
+                       style="color: red; font-size: 13px"><i class="fa fa-times"></i> Bạn vui lòng nhập mật khẩu đăng nhập
+                    </p>
                 </div>
                 <div class="rememberme-container">
                     <input type="checkbox" name="rememberme" id="rememberme"/>
@@ -334,10 +346,6 @@ $message_dangky=_return_mc_encrypt($message_dangky,'','');
                 <a href="#g-plus" class="socmed-btn google-btn">
                     <i class="fa fa-google"></i>
                     <span> Google</span>
-                </a>
-                <a href="#g-plus" class="socmed-btn yahoo-btn">
-                    <i class="fa fa-twitter "></i>
-                    <span> Twitter</span>
                 </a>
             </div>
             <div class="toolbar clearfix">

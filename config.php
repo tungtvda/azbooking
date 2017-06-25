@@ -446,3 +446,32 @@ function _returnCheckLinkImg($img){
     }
     return $link;
 }
+
+function _returnLogin(){
+    $username_login=_returnPostParamSecurity('username_login');
+    $password_login=_returnPostParamSecurity('password_login');
+    $string_info_booking="username_login=".$username_login;
+    $string_info_booking.="&password_login=".$password_login;
+    if($username_login!=''&&$password_login!=''){
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, SITE_NAME_MANAGE."/azbooking-login.html");
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $string_info_booking);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        $res = curl_exec($ch);
+        curl_close($ch);
+        print_r($res);
+        exit;
+    }else{
+        if($username_login==''&&$password_login==''){
+            return 'Bạn vui lòng nhập email và mật khẩu đăng nhập';
+        }else{
+            if($username_login==''){
+                return 'Bạn vui lòng nhập nhập email đăng nhập';
+            }
+            if($password_login==''){
+                return 'Bạn vui lòng nhập nhập mật khẩu đăng nhập';
+            }
+        }
+    }
+}
