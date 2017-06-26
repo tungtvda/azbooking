@@ -1,6 +1,6 @@
 <?php
 
-if (!defined('DIR')) require_once '../config.php';
+if (!defined('DIR')) require_once '../../config.php';
 require_once DIR . '/controller/default/public.php';
 $data['config'] = config_getByTop(1, '', '');
 $active_login = '';
@@ -26,10 +26,15 @@ if (isset($_GET['type'])) {
             $title = 'Quên mật khẩu - AZBOOKING.VN';
             $check_tab=2;
         } else {
-             $email_confirm=base64_decode(base64_decode(base64_decode(base64_decode(base64_decode(_returnGetParamSecurity('type'))))));
-            $active_confirm = 'show_box';
-            $title = 'Xác thực tài khoản - AZBOOKING.VN';
-            $check_tab=3;
+            if ($_GET['type'] == 'xac-nhan') {
+                $email_confirm=base64_decode(base64_decode(base64_decode(base64_decode(base64_decode(_returnGetParamSecurity('key'))))));
+                $active_confirm = 'show_box';
+                $title = 'Xác thực tài khoản - AZBOOKING.VN';
+                $check_tab=3;
+            }else{
+
+            }
+
         }
     }
 } else {
@@ -49,6 +54,16 @@ $tour_string = '';
 if(isset($_POST['username_login'])&&isset($_POST['password_login'])){
    $check_login=json_decode(_returnLogin(),true);
     if($check_login['success']==1||$check_login['success']==2){
+        if($check_login['success']==1){
+            if(isset($_POST['rememberme'])){
+                setcookie('user_token', json_encode($check_login['user_sec']), time() + (86400 * 30),'/', "",  0); // 86400 = 1 day
+            }else{
+                $_SESSION['user_token']=$check_login['user_sec'];
+            }
+            redict(SITE_NAME.'/tiep-thi-lien-ket/danh-sach-don-hang/');
+        }else{
+
+        }
 
     }else{
         $check_login=$check_login['mess'];
@@ -269,14 +284,14 @@ $message_dangky=_return_mc_encrypt($message_dangky,'','');
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="shortcut icon" href="<?php echo $data['config'][0]->Icon; ?>">
     <link rel="apple-touch-icon" href="<?php echo $data['config'][0]->Icon ?>">
-    <link rel="stylesheet" href="<?php echo SITE_NAME ?>/tiepthi/css/menu.css"/>
-    <link rel="stylesheet" href="<?php echo SITE_NAME ?>/tiepthi/css/main.css"/>
-    <link rel="stylesheet" href="<?php echo SITE_NAME ?>/tiepthi/css/bgimg.css"/>
-    <link rel="stylesheet" href="<?php echo SITE_NAME ?>/tiepthi/css/font.css"/>
-    <link rel="stylesheet" href="<?php echo SITE_NAME ?>/tiepthi/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="<?php echo SITE_NAME ?>/tiepthi/css/dialog.css"/>
-    <script type="text/javascript" src="<?php echo SITE_NAME ?>/tiepthi/js/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="<?php echo SITE_NAME ?>/tiepthi/js/main.js"></script>
+    <link rel="stylesheet" href="<?php echo SITE_NAME ?>/tiepthi/login/css/menu.css"/>
+    <link rel="stylesheet" href="<?php echo SITE_NAME ?>/tiepthi/login/css/main.css"/>
+    <link rel="stylesheet" href="<?php echo SITE_NAME ?>/tiepthi/login/css/bgimg.css"/>
+    <link rel="stylesheet" href="<?php echo SITE_NAME ?>/tiepthi/login/css/font.css"/>
+    <link rel="stylesheet" href="<?php echo SITE_NAME ?>/tiepthi/login/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="<?php echo SITE_NAME ?>/tiepthi/login/css/dialog.css"/>
+    <script type="text/javascript" src="<?php echo SITE_NAME ?>/tiepthi/login/js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="<?php echo SITE_NAME ?>/tiepthi/login/js/main.js"></script>
 </head>
 <body>
 <div class="menu">
@@ -312,15 +327,15 @@ $message_dangky=_return_mc_encrypt($message_dangky,'','');
             <form method="post" action="" class="login-form" id="confirm-form">
                 <div style="text-align: center;margin-top: 0px; margin-bottom: 10px" class="input-container">
                     <input type="password" hidden name="mail_confirm" value="<?php echo $message_dangky?>">
-                    <input type="password" hidden name="mail_send" value="<?php echo $_GET['type']?>">
+                    <input type="password" hidden name="mail_send" value="<?php echo $_GET['key']?>">
                     <input type="password" id="email_check_confirm" hidden
                            value="<?php echo $email_confirm ?>">
-                   <img id="loading_confirm" src="<?php echo SITE_NAME.'/tiepthi/img/loading_1.gif'?>">
+                   <img id="loading_confirm" src="<?php echo SITE_NAME.'/tiepthi/login/img/loading_1.gif'?>">
                     <br>
                 </div>
             </form>
             <div id="confirm_reset" class="btn_action" id="action_register" style="text-align: center; display: none">
-                <a style="width: inherit; float: inherit" href="javascript:void(0)" class="login"  > <i
+                <a style="width: inherit; float: inherit" href="" class="login"  > <i
                         class="ace-icon fa fa-refresh "></i> Thử lại</a>
             </div>
             <br>
@@ -355,7 +370,7 @@ $message_dangky=_return_mc_encrypt($message_dangky,'','');
                     </p>
                 </div>
                 <div class="rememberme-container">
-                    <input type="checkbox" name="rememberme" id="rememberme"/>
+                    <input type="checkbox" name="rememberme" value="1" id="rememberme"/>
                     <label for="rememberme" class="rememberme"><span>Ghi nhớ tài khoản</span></label>
                 </div>
                 <div class="btn_action">
@@ -487,10 +502,10 @@ $message_dangky=_return_mc_encrypt($message_dangky,'','');
     </div>
 </div>
 </body>
-<script src="<?php echo SITE_NAME ?>/tiepthi/js/login.js"></script>
-<script src="<?php echo SITE_NAME ?>/tiepthi/js/dialog.js"></script>
+<script src="<?php echo SITE_NAME ?>/tiepthi/login/js/login.js"></script>
+<script src="<?php echo SITE_NAME ?>/tiepthi/login/js/dialog.js"></script>
 <?php if($check_tab==3){?>
-    <script src="<?php echo SITE_NAME ?>/tiepthi/js/confirm_email.js"></script>
+    <script src="<?php echo SITE_NAME ?>/tiepthi/login/js/confirm_email.js"></script>
 <?php }?>
 </html>
 <?php
