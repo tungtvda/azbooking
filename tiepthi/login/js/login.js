@@ -250,7 +250,7 @@ jQuery(function ($) {
                                 alertBtnText: 'Ok',
                                 iconBtnText:'<i style="color: green;" class="ace-icon fa fa-check green"></i>',
                                 alertHandler: function () {
-                                    window.location.href=site_name+'/thanh-vien/';
+                                    window.location.href=site_name+'/tiep-thi-lien-ket/thanh-vien/';
                                 }
                             });
                         }
@@ -327,7 +327,7 @@ jQuery(function ($) {
                                         alertBtnText: 'Ok',
                                         iconBtnText:'<i style="color: green;" class="ace-icon fa fa-check green"></i>',
                                         alertHandler: function () {
-                                            window.location.href=site_name+'/thanh-vien/';
+                                            window.location.href=site_name+'/tiep-thi-lien-ket/thanh-vien/';
                                         }
                                     });
                                 }
