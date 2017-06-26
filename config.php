@@ -450,8 +450,17 @@ function _returnCheckLinkImg($img){
 function _returnLogin(){
     $username_login=_returnPostParamSecurity('username_login');
     $password_login=_returnPostParamSecurity('password_login');
+    $mail_confirm=_returnPostParamSecurity('mail_confirm');
+    $rememberme=_returnPostParamSecurity('rememberme');
+    if($rememberme){
+        $rememberme=1;
+    }else{
+        $rememberme=0;
+    }
     $string_info_booking="username_login=".$username_login;
     $string_info_booking.="&password_login=".$password_login;
+    $string_info_booking.="&rememberme=".$rememberme;
+    $string_info_booking.="&mail_confirm=".$mail_confirm;
     if($username_login!=''&&$password_login!=''){
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, SITE_NAME_MANAGE."/azbooking-login.html");
@@ -460,8 +469,7 @@ function _returnLogin(){
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $res = curl_exec($ch);
         curl_close($ch);
-        print_r($res);
-        exit;
+        return $res;
     }else{
         if($username_login==''&&$password_login==''){
             return 'Bạn vui lòng nhập email và mật khẩu đăng nhập';
