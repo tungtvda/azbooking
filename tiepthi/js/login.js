@@ -421,9 +421,17 @@ jQuery(function ($) {
         var email_login=$('#email_login').val();
         var password_login=$('#password_login').val();
         if(email_login!=''&&password_login!=''){
+            $('#loading_login').show();
+            $('#login_btn').hide();
+            $('.cancel_btn').hide();
             var check=check_email_login(1);
             if(check==1){
                 $("#dangnhap_form").submit();
+            }
+            else{
+                $('#loading_login').hide();
+                $('#login_btn').show();
+                $('.cancel_btn').show();
             }
         }else{
             if(email_login==''){

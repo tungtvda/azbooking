@@ -47,7 +47,12 @@ $tour_string = '';
 
 // checklogin
 if(isset($_POST['username_login'])&&isset($_POST['password_login'])){
-    _returnLogin();
+   $check_login=json_decode(_returnLogin(),true);
+    if($check_login['success']==1||$check_login['success']==2){
+
+    }else{
+        $check_login=$check_login['mess'];
+    }
 }
 
 if (count($data_tour_sales) > 0) {
@@ -165,6 +170,24 @@ if($check_tab==1){
                 <p>Chú ý: sau khi đăng nhập vào hệ thống, bạn hãy thay đổi mật khẩu vừa tạo để tài khoản của bạn được bảo mật</p>
                 <p>Trân trọng !</p>
                 </div>';
+        }
+        else{
+            if($check_tab==0){
+                $content_email=' <h3 style="font-weight: 600;
+  font-size: 18px;
+  border-bottom: 3px solid #0091EA;
+  color: #0091ea;
+  line-height: 1.3em;
+  margin-top: 0;
+  line-height: 58px;
+  z-index: 9;
+  text-transform: uppercase;
+  text-align: center;" class="title_index">Mã đăng nhập AZBOOKING.VN</h3>
+                <div style="float: left;width: 100%;" class="col-xs-12 row">
+                <p>Mã đăng nhập: <b style="color: #0091ea;">[pass_code]</b></p>
+                <p>Bạn hãy nhập mã <b style="color: #0091ea;">[pass_code]</b> để đăng nhập được vào hệ thống</p>
+                </div>';
+            }
         }
     }
 }
@@ -306,7 +329,15 @@ $message_dangky=_return_mc_encrypt($message_dangky,'','');
             <div class="separator">
                 <span class="separator-text">Đăng nhập</span>
             </div>
+            <?php if(isset($check_login)&&$check_login!=1&&$check_login!=2){?>
+            <div class="required_create">
+                <span>
+                        (<?php echo $check_login?>)
+                </span>
+            </div>
+             <?php }?>
             <form method="post" action="" class="login-form" id="dangnhap_form">
+                <input type="password" hidden name="mail_confirm" value="<?php echo $message_dangky?>">
                 <div class="input-container">
                     <i class="fa fa-envelope"></i>
                     <input type="email" class="input" name="username_login" id="email_login" <?php echo $login_focus ?>
@@ -328,6 +359,8 @@ $message_dangky=_return_mc_encrypt($message_dangky,'','');
                     <label for="rememberme" class="rememberme"><span>Ghi nhớ tài khoản</span></label>
                 </div>
                 <div class="btn_action">
+                    <a class="loading" id="loading_login" style="display: none"><img id="loading" style="width: 150px;"
+                                                                                      src="http://azbooking.vn/view/default/themes/images/loading.gif"></a>
                     <a href="javascript:void(0)" id="login_btn" class="login"> <i class="ace-icon fa fa-key"></i> Đăng
                         nhập</a>
                     <a href="javascript:void(0)" class="register cancel_btn"> <i class="ace-icon fa fa-refresh"></i> Hủy</a>
@@ -335,7 +368,7 @@ $message_dangky=_return_mc_encrypt($message_dangky,'','');
             </form>
 
 
-            <div class="separator" style=" margin-bottom: 20px;">
+            <div class="separator" style=" margin-bottom: 20px;display: inline-block;width: 100%;">
                 <span class="separator-text-bottom">Hoặc đăng nhập bằng</span>
             </div>
             <div class="socmed-login">
@@ -349,9 +382,9 @@ $message_dangky=_return_mc_encrypt($message_dangky,'','');
                 </a>
             </div>
             <div class="toolbar clearfix">
-                <div><a href="<?php echo SITE_NAME?>/thanh-vien/?type=quen-mat-khau" class="forgot-password-link"> <i
+                <div><a href="<?php echo SITE_NAME?>/tiep-thi-lien-ket/thanh-vien/?type=quen-mat-khau" class="forgot-password-link"> <i
                             class="ace-icon fa fa-arrow-left"></i> Quên mật khẩu </a></div>
-                <div style="float: right;text-align: right;"><a href="<?php echo SITE_NAME?>/thanh-vien/?type=dang-ky" class="user-signup-link">
+                <div style="float: right;text-align: right;"><a href="<?php echo SITE_NAME?>/tiep-thi-lien-ket/thanh-vien/?type=dang-ky" class="user-signup-link">
                         Đăng ký tài khoản <i
                             class="ace-icon fa fa-arrow-right"></i> </a>
                 </div>
@@ -376,7 +409,7 @@ $message_dangky=_return_mc_encrypt($message_dangky,'','');
             </form>
             <br>
             <div style="display: inline-block;    width: 100%;" class="toolbar clearfix">
-                <div style="float: right;text-align: right;"><a href="<?php echo SITE_NAME?>/thanh-vien/" class="login-password-link">
+                <div style="float: right;text-align: right;"><a href="<?php echo SITE_NAME?>/tiep-thi-lien-ket/thanh-vien/" class="login-password-link">
                         Đăng nhập <i
                             class="ace-icon fa fa-arrow-right"></i> </a></div>
             </div>
@@ -446,7 +479,7 @@ $message_dangky=_return_mc_encrypt($message_dangky,'','');
                         class="ace-icon fa fa-refresh"></i> Hủy</a>
             </div>
             <div class="toolbar clearfix " id="toolbar_create">
-                <div><a href="<?php echo SITE_NAME?>/thanh-vien/" class="login-password-link"> <i
+                <div><a href="<?php echo SITE_NAME?>/tiep-thi-lien-ket/thanh-vien/" class="login-password-link"> <i
                             class="ace-icon fa fa-arrow-left"></i> Đăng nhập </a></div>
             </div>
         </div>
