@@ -32,7 +32,17 @@ if (isset($_GET['type'])) {
                 $title = 'Xác thực tài khoản - AZBOOKING.VN';
                 $check_tab=3;
             }else{
-
+                if ($_GET['type'] == 'xac-nhan-dang-nhap') {
+                    $active_xacnhan_login = 'show_box';
+                    $xacnhan_login_focus = 'autofocus="autofocus"';
+                    $title = 'Xác nhận đăng nhập - AZBOOKING.VN';
+                    $check_tab=4;
+                }else{
+                    $active_login = 'show_box';
+                    $login_focus = 'autofocus="autofocus"';
+                    $title = 'Đăng nhập - AZBOOKING.VN';
+                    $check_tab=0;
+                }
             }
 
         }
@@ -62,11 +72,49 @@ if(isset($_POST['username_login'])&&isset($_POST['password_login'])){
             }
             redict(SITE_NAME.'/tiep-thi-lien-ket/danh-sach-don-hang/');
         }else{
-
+            if(isset($_POST['rememberme'])){
+                $memory=1;
+            }else{
+                $memory=0;
+            }
+            $_SESSION['confirm_login']=array(
+                'email'=>$check_login['user_sec'],
+                'memory'=>$memory
+            );
+            redict(SITE_NAME.'/tiep-thi-lien-ket/thanh-vien/?type=xac-nhan-dang-nhap');
         }
 
     }else{
         $check_login=$check_login['mess'];
+    }
+}
+$mess_ma_xac_nhan='(Bạn vui lòng nhập mã xác nhận đã được gửi vào email)';
+if(isset($_POST['ma_xac_nhan'])){
+    $ma_xac_nhan=_returnPostParamSecurity('ma_xac_nhan');
+    if($ma_xac_nhan!=''){
+        if(isset($_SESSION['confirm_login'])&&isset($_SESSION['confirm_login']['email']['email'])){
+            $email_xac_nhan=_return_mc_decrypt($_SESSION['confirm_login']['email']['email'],ENCRYPTION_KEY,1);
+            if($email_xac_nhan!=''){
+                $string_info_booking="ma_xac_nhan=".$ma_xac_nhan;
+                $string_info_booking.="&email=".$email_xac_nhan;
+                $ch = curl_init();
+                curl_setopt($ch, CURLOPT_URL, SITE_NAME_MANAGE."/azbooking-confirm-login.html");
+                curl_setopt($ch, CURLOPT_POST, 1);
+                curl_setopt($ch, CURLOPT_POSTFIELDS, $string_info_booking);
+                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                $res = curl_exec($ch);
+                curl_close($ch);
+                echo $res;
+                exit;
+            }else{
+                $mess_ma_xac_nhan='(Xác nhận lỗi! bạn vui lòng thử lại)';
+            }
+
+        }else{
+            $mess_ma_xac_nhan='(Xác nhận lỗi! bạn vui lòng thử lại)';
+        }
+    }else{
+        $mess_ma_xac_nhan='(Bạn vui lòng nhập mã xác nhận)';
     }
 }
 
@@ -318,6 +366,33 @@ $message_dangky=_return_mc_encrypt($message_dangky,'','');
                        value="<?php echo SITE_NAME_MANAGE ?>">
                 <input type="password" id="site_name" hidden
                        value="<?php echo SITE_NAME ?>">
+            </div>
+        </div>
+        <div id="xacnhan-login-box" class="<?php echo $active_xacnhan_login ?> hidden_box">
+            <div class="separator">
+                <span style="left: 23%;" class="separator-text-forget">Xác nhận đăng nhập</span>
+            </div>
+            <div class="required_create">
+                <span><?php echo $mess_ma_xac_nhan?></span>
+            </div>
+            <form method="post" action="" class="login-form" id="xac-nhan-login-form">
+                <div class="input-container">
+                    <i class="fa fa-barcode "></i>
+                    <input type="text" class="input" id="ma_xac_nhan" name="ma_xac_nhan" <?php echo $xacnhan_login_focus ?>
+                           placeholder="Mã xác nhận"/>
+                    <p hidden id="mess_ma_xac_nhan"
+                       style="color: red; font-size: 13px"><i class="fa fa-times"></i> Bạn vui lòng nhập mã xác nhận
+                    </p>
+                </div>
+                <div class="btn_action">
+                    <a  href="javascript:void(0)" id="xac_nhan_btn" class="login"> <i class="ace-icon fa fa-check-square-o"></i> Xác nhận</a>
+                </div>
+            </form>
+            <br>
+            <div style="display: inline-block;    width: 100%;" class="toolbar clearfix">
+                <div style="float: right;text-align: right;"><a href="<?php echo SITE_NAME?>/tiep-thi-lien-ket/thanh-vien/" class="login-password-link">
+                        Đăng nhập <i
+                            class="ace-icon fa fa-arrow-right"></i> </a></div>
             </div>
         </div>
         <div id="confirm-box" class="<?php echo $active_confirm ?> hidden_box">
