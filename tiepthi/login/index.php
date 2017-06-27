@@ -104,14 +104,25 @@ if(isset($_POST['ma_xac_nhan'])){
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
                 $res = curl_exec($ch);
                 curl_close($ch);
-                echo $res;
-                exit;
+                $check_login=json_decode($res,true);
+                if($check_login['success']==1){
+                    if(isset($_SESSION['confirm_login']['memory'])&&$_SESSION['confirm_login']['memory']==1){
+                        setcookie('user_token', json_encode($check_login['user_sec']), time() + (86400 * 30),'/', "",  0); // 86400 = 1 day
+                    }else{
+                        $_SESSION['user_token']=$check_login['user_sec'];
+                    }
+                    unset($_SESSION['confirm_login']);
+                    redict(SITE_NAME.'/tiep-thi-lien-ket/danh-sach-don-hang/');
+                }else{
+                    $mess_ma_xac_nhan=$check_login['mess'];
+                }
+
             }else{
                 $mess_ma_xac_nhan='(Xác nhận lỗi! bạn vui lòng thử lại)';
             }
 
         }else{
-            $mess_ma_xac_nhan='(Xác nhận lỗi! bạn vui lòng thử lại)';
+            $mess_ma_xac_nhan='(Xác nhận lỗi! bạn vui lòng đăng nhập lại)';
         }
     }else{
         $mess_ma_xac_nhan='(Bạn vui lòng nhập mã xác nhận)';
