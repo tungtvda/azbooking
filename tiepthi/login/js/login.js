@@ -482,4 +482,16 @@ jQuery(function ($) {
             $('#mess_password_login').html('<i class="fa fa-times"></i> Bạn vui lòng nhập mật khẩu đăng nhập').show();
         }
     }
+    $('body').on("click",'#xac_nhan_btn', function () {
+        var ma_xac_nhan=$('#ma_xac_nhan').val();
+        if(ma_xac_nhan!=''){
+            $('#mess_ma_xac_nhan').hide();
+            $("#xac-nhan-login-form").submit();
+        }else{
+            if(ma_xac_nhan==''){
+                $('#mess_ma_xac_nhan').show();
+                $('#ma_xac_nhan').focus();
+            }
+        }
+    });
 });
