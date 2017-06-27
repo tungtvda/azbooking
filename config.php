@@ -363,7 +363,7 @@ function returnRoomPrice($room){
 }
 
 // Code mã hóa
-function _return_mc_encrypt($encrypt, $key, $code_key = '')
+function _return_mc_encrypt($encrypt, $key='', $code_key = '')
 {
     if ($code_key == 1) {
         $encrypt = serialize($encrypt);
@@ -386,7 +386,7 @@ function _return_mc_encrypt($encrypt, $key, $code_key = '')
 }
 
 // Code giải mã
-function _return_mc_decrypt($decrypt, $key, $code_key = '')
+function _return_mc_decrypt($decrypt, $key='', $code_key = '')
 {
     if ($code_key == 1) {
         $decrypt = explode('|', $decrypt);
