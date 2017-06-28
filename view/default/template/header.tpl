@@ -45,6 +45,7 @@
         <link rel="stylesheet" type="text/css" href="{SITE-NAME}/view/default/themes/revslider-demo/css/settings.css">
         <link rel="stylesheet" type="text/css" href="{SITE-NAME}/view/default/themes/css/style.css">
         <link rel="stylesheet" type="text/css" href="{SITE-NAME}/view/default/themes/css/demo.css">
+        <link rel="stylesheet" type="text/css" href="{SITE-NAME}/view/default/themes/css/messenger.css">
         <link id="colorreplace" rel="stylesheet" type="text/css" href="{SITE-NAME}/view/default/themes/css/colors/blue.css">
         <script>
             !function (f, b, e, v, n, t, s) {
