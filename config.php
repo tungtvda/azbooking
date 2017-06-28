@@ -26,11 +26,14 @@ require_once DIR.'/model/booking_tourService.php';
 require_once DIR.'/model/khachsan_room_priceService.php';
 require_once 'mobi/Mobile_Detect.php';
 require_once DIR . '/common/redict.php';
+if(isset($_COOKIE['user_token'])){
+    $_SESSION['user_token']=$_COOKIE['user_token'];
+}
 $detect = new Mobile_Detect;
 $deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') : 'computer');
 if($deviceType=='phone'){
     $khach_san='khach-san';
-    $thanh_vien='thanh-vien';
+    $thanh_vien='/tiep-thi-lien-ket/';
     $actual_link = $_SERVER['REQUEST_URI'];
     if(strstr($actual_link,$khach_san)=='' && strstr($actual_link,$thanh_vien)==''){
         redict(SITE_NAME_MOBILE.$actual_link);
@@ -482,4 +485,31 @@ function _returnLogin(){
             }
         }
     }
+}
+function checkSession($return='', $array=''){
+    $check_session=0;
+    $array_res=array();
+    if(isset($_SESSION['user_token'])){
+        $data_user=json_decode($_SESSION['user_token'],true);
+        if(count($data_user)>0){
+            $check_session=1;
+            if($array){
+                $array_res = array(
+                    'id'=>_return_mc_decrypt($data_user['id'],ENCRYPTION_KEY,1),
+                    'name'=>_return_mc_decrypt($data_user['name'],ENCRYPTION_KEY,1),
+                    'user_email'=>_return_mc_decrypt($data_user['user_email'],ENCRYPTION_KEY,1),
+                    'user_code'=>_return_mc_decrypt($data_user['user_code'],ENCRYPTION_KEY,1),
+                    'created'=>_return_mc_decrypt($data_user['created'],ENCRYPTION_KEY,1),
+                    'avatar'=>_return_mc_decrypt($data_user['avatar'],ENCRYPTION_KEY,1),
+                );
+            }
+        }
+    }
+    if($return){
+        return $check_session;
+    }
+    if($array){
+        return $array_res;
+    }
+
 }

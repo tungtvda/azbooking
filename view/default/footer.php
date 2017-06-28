@@ -46,9 +46,16 @@ function view_footer($data = array())
                 }
                 $asign['danhmuc_menu_footer'] .='</ul></div>';
             }
-
         }
-
+    }
+    $full_name='';
+    $avatar='';
+    $data_session=checkSession('', 1);
+    if(count($data_session)>0){
+        $avatar=$data_session['avatar'];
+        $asign['avatar']='<img style="    border-radius: 50%;margin-top: 0px;width: 100px;" title="'.$data_session['name'].'" alt="'.$data_session['name'].'" class="facebook-messenger-avatar" src="'.$avatar.'">';
+    }else{
+        $asign['avatar']='<img title="Tài khoản tiếp thị liên kết" alt="Tài khoản tiếp thị liên kết" class="facebook-messenger-avatar" src="'.SITE_NAME.'/view/default/themes/images/tiepthi/tiepthi3.png">';
     }
 
     print_template($asign, 'footer');

@@ -92,15 +92,15 @@
     <div class="drag-wrapper drag-wrapper-right">
         <div data-drag="data-drag" class="thing" style="top:70px;transform: translate(1289px, 55px);">
             <div class="circle facebook-messenger-avatar facebook-messenger-avatar-type0">
-                <img title="Tài khoản tiếp thị liên kết" alt="Tài khoản tiếp thị liên kết" class="facebook-messenger-avatar" src="{SITE-NAME}/view/default/themes/images/tiepthi/tiepthi3.png">
+                {avatar}
             </div>
             <div class="content" style="display: none; max-height: 263px;">
                 <div class="inside">
 
                     <p style="margin-bottom: 10px; margin-top: 10px;font-size: 14px;font-weight: bold;">
-                       <a href="{SITE-NAME}/tiep-thi-lien-ket/thanh-vien/?type=dang-ky"><i class="fa fa-user"></i> Đăng ký</a> <span style="color: #2b2b2b">|</span> <a href="{SITE-NAME}/tiep-thi-lien-ket/thanh-vien/"><i class="fa fa-sign-in"></i> Đăng nhập</a>
+                       <a sty href="{SITE-NAME}/tiep-thi-lien-ket/thanh-vien/?type=dang-ky"><i class="fa fa-user"></i> Đăng ký</a> <span style="color: #2b2b2b">|</span> <a href="{SITE-NAME}/tiep-thi-lien-ket/thanh-vien/"><i class="fa fa-sign-in"></i> Đăng nhập</a>
                     </p>
-                    <a href=""><label style="color: red;"><i>(Tài khoản tiếp thị liên kết)</i></label></a>
+                    <a href=""><label style="color: red;">(Tài khoản tiếp thị liên kết)</label></a>
                 </div>
             </div>
 
