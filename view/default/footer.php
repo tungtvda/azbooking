@@ -48,14 +48,26 @@ function view_footer($data = array())
             }
         }
     }
-    $full_name='';
-    $avatar='';
     $data_session=checkSession('', 1);
     if(count($data_session)>0){
         $avatar=$data_session['avatar'];
-        $asign['avatar']='<img style="    border-radius: 50%;margin-top: 0px;width: 100px;height: 100px;" title="'.$data_session['name'].'" alt="'.$data_session['name'].'" class="facebook-messenger-avatar" src="'.$avatar.'">';
+        $asign['avatar']='<img class="img_border" title="'.$data_session['name'].'" alt="'.$data_session['name'].'" class="facebook-messenger-avatar" src="'.$avatar.'">';
+        $asign['content_user']='
+            <p><a href="'.SITE_NAME.'/tiep-thi-lien-ket/ho-so/">'.$asign['avatar'].' Hi! '.$data_session['name'].'</a></p>
+            <p><a href="'.SITE_NAME.'/tiep-thi-lien-ket/ho-so/"><i class="fa fa-cogs "></i> Cài đặt tài khoản</a></p>
+            <p><a href="'.SITE_NAME.'/tiep-thi-lien-ket/"><i class="fa fa-share-alt "></i> Tiếp thị liên kết</a></p>
+            <p><a href="'.SITE_NAME.'/tiep-thi-lien-ket/dang-xuat/"><i class="fa fa-sign-out "></i> Đăng xuất</a></p>
+        ';
     }else{
         $asign['avatar']='<img title="Tài khoản tiếp thị liên kết" alt="Tài khoản tiếp thị liên kết" class="facebook-messenger-avatar" src="'.SITE_NAME.'/view/default/themes/images/tiepthi/tiepthi3.png">';
+        $asign['content_user']='
+                    <p>
+                        <a  href="'.SITE_NAME.'/tiep-thi-lien-ket/thanh-vien/?type=dang-ky"><i class="fa fa-user"></i> Đăng ký</a>
+                        <span style="color: #2b2b2b"> | </span>
+                        <a href="'.SITE_NAME.'/tiep-thi-lien-ket/thanh-vien/"><i class="fa fa-sign-in"></i> Đăng nhập</a>
+                    </p>
+                     <a href="'.SITE_NAME.'"><label style="color: red;">(Tài khoản tiếp thị liên kết)</label></a>
+        ';
     }
     
 
