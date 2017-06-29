@@ -186,9 +186,11 @@
     -webkit-transform: translateY(-50%) translateZ(0);
     -moz-transform: translateY(-50%) translateZ(0);
     transform: translateY(-50%) translateZ(0);
+    margin-right: 55px;
 }
 
 .drag-wrapper .magnet {
+    margin-left: -50px;
     pointer-events: none;
     position: relative;
     border: 2px solid #fff;
