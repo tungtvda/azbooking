@@ -89,7 +89,7 @@
         </div>
     </div>
 
-    <div class="drag-wrapper drag-wrapper-right">
+    <!--<div class="drag-wrapper drag-wrapper-right">
         <div data-drag="data-drag" class="thing" style="top:70px;transform: translate(1289px, 55px);">
             <div class="circle facebook-messenger-avatar facebook-messenger-avatar-type0">
                 {avatar}
@@ -106,6 +106,29 @@
 
         </div>
         <div class="magnet-zone" style="margin-left: 0px; margin-bottom: 0px;">
+            <div class="magnet"></div>
+        </div>
+    </div>-->
+    <div class="drag-wrapper drag-wrapper-right">
+        <div data-drag="data-drag" class="thing" style="transform: translate(822px, 341px);">
+            <div class="circle facebook-messenger-avatar facebook-messenger-avatar-type0">
+                {avatar}
+                <!--http://itsolutionstuff.com/post/php-jquery-ajax-crop-image-before-upload-using-croppie-pluginexample.html
+                http://demo.itsolutionstuff.com/demo/demo-php-jquery-ajax-crop-image-before-upload-using-croppie-pluginexample.html-->
+            </div>
+            <div class="content">
+                <div class="inside">
+
+                    <p style="margin-bottom: 10px; margin-top: 10px;font-size: 14px;font-weight: bold;">
+                        <a sty href="{SITE-NAME}/tiep-thi-lien-ket/thanh-vien/?type=dang-ky"><i class="fa fa-user"></i> Đăng ký</a>
+                        <span style="color: #2b2b2b"> | </span>
+                        <a href="{SITE-NAME}/tiep-thi-lien-ket/thanh-vien/"><i class="fa fa-sign-in"></i> Đăng nhập</a>
+                    </p>
+                    <a href=""><label style="color: red;">(Tài khoản tiếp thị liên kết)</label></a>
+                </div>
+            </div>
+        </div>
+        <div class="magnet-zone">
             <div class="magnet"></div>
         </div>
     </div>
