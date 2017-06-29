@@ -45,7 +45,7 @@
                             <div itemprop="description"><p></p></div>
                             <div itemprop="description">
                                 <div style="float: left;width: 100%;" class="booking_detail_div grid grid_2">
-                                    <a href="{link_booking}" class="booking_detail CountDown tour_count_down_index">ĐẶT
+                                    <a href="{link_booking}{id_user}" class="booking_detail btn btn-danger">ĐẶT
                                         NGAY </a>
                                     <div style="float: left;margin-top: 10px;margin-left: 10px;" class="social-share">
                                         <ul>
@@ -70,6 +70,27 @@
                                     </div>
                                 </div>
                                 <div class="social_div grid grid_10"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="link_tiep_thi_lien_ket package-details-content">
+                        <h3 class="title "><b>Tiếp thị liên kết</b></h3>
+                        <p>Bạn hãy kích <span></span> hoặc copy nội dung trong ô textbox hoặc bạn có thể kích vào các biểu tượng mạng xã hội để chia sẻ liên kết</p>
+                        <div class="col-xs-12">
+                            <div class="col-md-3 col-sm-6 col-xs-6" style="text-align: center">
+                                <p><i style="color: red" class="fa fa-hand-o-down fa-2x"></i></p>
+                                <button type="button" class="btn btn-primary"><i class="fa fa-share-alt "></i> Link tiếp thị</button>
+                            </div>
+                            <div class="col-md-5 col-sm-6 col-xs-6" style="text-align: center">
+                                <p><i style="color: #357ebd" class="fa fa-link fa-2x"></i></p>
+                                <input style="height: 34px;    width: 100%;" class="form-control"  value="{link_booking}{id_user}">
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6" style="text-align: center">
+                                <p><i style="color: #eea236" class="fa fa-globe fa-2x"></i></p>
+                                <a style="margin-right: 5px;"  class="btn btn-primary"><i style="background:none" class="fa  fa-facebook"></i></a>
+                                <a style="margin-right: 5px;"  class="btn btn-info"><i style="background:none" class="fa  fa-twitter"></i></a>
+                                <a  style="margin-right: 5px;" class="btn btn-danger"><i style="background:none" class="fa  fa-google-plus"></i></a>
+                                <a  class="btn btn-warning"><i style="background:none" class="fa  fa-envelope"></i></a>
                             </div>
                         </div>
                     </div>
@@ -200,7 +221,7 @@
                             {hanh_trinh}
                         </p>
                         <div style="text-align: center" class="price">
-                            <a href="{link_booking}" style="background: red" class=" CountDown tour_count_down_index">ĐẶT
+                            <a href="{link_booking}{id_user}" class=" btn btn-danger">ĐẶT
                                 NGAY </a>
                         </div>
                         <div style="padding: 5px" class="price">

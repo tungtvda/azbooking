@@ -87,3 +87,4 @@ RewriteRule ^quan-ly-tour/$ controller/default/quanly_tour.php
 RewriteRule ^tiep-thi-lien-ket/thanh-vien/$ tiepthi/login/index.php
 RewriteRule ^tiep-thi-lien-ket/xac-nhan-dang-ky/$ tiepthi/login/index.php
 RewriteRule ^tiep-thi-lien-ket/danh-sach-don-hang/$ tiepthi/manage/index.php
+RewriteRule ^tiep-thi-lien-ket/dang-xuat/$ tiepthi/login/logout.php
