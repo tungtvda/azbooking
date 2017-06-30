@@ -14,6 +14,6 @@
 //}
 //echo "</br>";
 
-//if(isset($_COOKIE['user_token'])){
-//    print_r(json_decode($_COOKIE['user_token'],true));
-//}
+if(isset($_COOKIE['user_token'])){
+    print_r(json_decode($_COOKIE['user_token'],true));
+}

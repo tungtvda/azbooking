@@ -64,10 +64,13 @@ $tour_string = '';
 if(isset($_POST['username_login'])&&isset($_POST['password_login'])){
    $check_login=json_decode(_returnLogin(),true);
     if($check_login['success']==1||$check_login['success']==2){
+        $unique=uniqid();
         if($check_login['success']==1){
             if(isset($_POST['rememberme'])){
+                $check_login['user_sec']['rememberme']=_return_mc_encrypt(1,ENCRYPTION_KEY,1);
                 setcookie('user_token', json_encode($check_login['user_sec']), time() + (86400 * 30),'/', "",  0); // 86400 = 1 day
             }else{
+                $check_login['user_sec']['rememberme']=_return_mc_encrypt(0,ENCRYPTION_KEY,1);
                 $_SESSION['user_token']=json_encode($check_login['user_sec']);
             }
             redict(SITE_NAME.'/tiep-thi-lien-ket/danh-sach-don-hang/');
@@ -107,8 +110,10 @@ if(isset($_POST['ma_xac_nhan'])){
                 $check_login=json_decode($res,true);
                 if($check_login['success']==1){
                     if(isset($_SESSION['confirm_login']['memory'])&&$_SESSION['confirm_login']['memory']==1){
+                        $check_login['user_sec']['rememberme']=_return_mc_encrypt(1,ENCRYPTION_KEY,1);
                         setcookie('user_token', json_encode($check_login['user_sec']), time() + (86400 * 30),'/', "",  0); // 86400 = 1 day
                     }else{
+                        $check_login['user_sec']['rememberme']=_return_mc_encrypt(0,ENCRYPTION_KEY,1);
                         $_SESSION['user_token']=json_encode($check_login['user_sec']);
                     }
                     unset($_SESSION['confirm_login']);
