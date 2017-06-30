@@ -18,6 +18,8 @@ function show_chitiet_tour($data = array())
     $asign['start']=sao($data['detail'][0]->hotel);
     $asign['name_url']=$data['detail'][0]->name_url;
     $asign['id']= $data['detail'][0]->id;
+    $asign['title']= $data['detail'][0]->title;
+    $asign['description']= $data['detail'][0]->description;
 
     $content=$data['detail'][0]->summary;
     if (strlen($content) > 200) {
@@ -208,8 +210,45 @@ function show_chitiet_tour($data = array())
         $asign['tour_sales'] = print_item('tour_sales', $data['tour_sales']);
     }
     $data_session=checkSession('', 1);
+    $asign['div_tiep_thi']='';
     if(count($data_session)>0){
         $asign['id_user']='&key='._return_mc_encrypt($data_session['id']);
+        $link_tiep_thi=$asign['link'].'/'._return_mc_encrypt($data_session['id']);
+        $asign['div_tiep_thi']='<div class="link_tiep_thi_lien_ket package-details-content">
+                        <h3 class="title "><b>Tiếp thị liên kết</b>    <b style="color: red">(Hoa hồng được nhận 10%)</b></h3>
+                        <p>Bạn hãy kích <span></span> hoặc copy nội dung trong ô textbox hoặc bạn có thể kích vào các biểu tượng mạng xã hội để chia sẻ liên kết</p>
+                        <div class="col-xs-12">
+                            <div class="col-md-3 col-sm-6 col-xs-6" style="text-align: center">
+                                <p><i style="color: red" class="fa fa-hand-o-down fa-2x"></i></p>
+                                <button type="button" class="btn btn-primary" id="copy_link_tiep_thi"><i class="fa fa-share-alt "></i> Link tiếp thị</button>
+                            </div>
+                            <div class="col-md-5 col-sm-6 col-xs-6" style="text-align: center">
+                                <p><i style="color: #357ebd" class="fa fa-link fa-2x"></i></p>
+                                <input style="height: 34px;    width: 100%;" id="check_link_tiep_thi" class="form-control"  value="'.$link_tiep_thi.'">
+                                <input hidden  id="link_old" type="password" value="'.$link_tiep_thi.'">
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6" style="text-align: center">
+                                <p><i style="color: #eea236" class="fa fa-globe fa-2x"></i></p>
+                                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u='.$link_tiep_thi.'" style="margin-right: 5px;"  class="btn btn-primary"><i style="background:none" class="fa  fa-facebook"></i></a>
+                                <a target="_blank" href="https://twitter.com/intent/tweet?source=webclient&text='.$link_tiep_thi.'+'.$asign['name'].'" style="margin-right: 5px;"  class="btn btn-info"><i style="background:none" class="fa  fa-twitter"></i></a>
+                                <a target="_blank" href="https://plus.google.com/share?url='.$link_tiep_thi.'" style="margin-right: 5px;" class="btn btn-danger"><i style="background:none" class="fa  fa-google-plus"></i></a>
+                                <a target="_blank" href="mailto:?Subject='.$asign['title'].'&body='.$asign['description'].'%0D%0A%0D%0A'.$link_tiep_thi.'" class="btn btn-warning"><i style="background:none" class="fa  fa-envelope"></i></a>
+                            </div>
+                            <div class="col-md-12 col-xs-12 col-sm-12" style="margin-top: 20px; display: none" id="box_alert">
+                                <div class="col-xs-12">
+                                    <div class="alert alert-block alert-success">
+                                        <button type="button" class="close" id="close_alert">
+                                            <i class="ace-icon fa fa-times"></i>
+                                        </button>
+
+                                        <i class="ace-icon fa fa-check green"></i> Link tiếp thị liên kết đã được copy
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>';
+
     }else{
         $asign['id_user']='';
     }

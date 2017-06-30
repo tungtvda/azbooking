@@ -69,7 +69,7 @@ function view_footer($data = array())
                      <a href="'.SITE_NAME.'"><label style="color: red;">(Tài khoản tiếp thị liên kết)</label></a>
         ';
     }
-    
+
 
     print_template($asign, 'footer');
 }

@@ -26,6 +26,9 @@ RewriteRule ^tour-du-lich-trong-nuoc/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/page-([0-
 RewriteRule ^tour-du-lich-trong-nuoc/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ controller/default/chitiettour.php?Id=$1&name_url=$2
 RewriteRule ^tour-du-lich-trong-nuoc/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ controller/default/chitiettour.php?Id=$1&Id_sub=$2&name_url=$3
 
+RewriteRule ^tour-du-lich-trong-nuoc/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html/(.*)$ controller/default/chitiettour.php?Id=$1&name_url=$2&key=$3
+RewriteRule ^tour-du-lich-trong-nuoc/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html/(.*)$ controller/default/chitiettour.php?Id=$1&Id_sub=$2&name_url=$3&key=$4
+
 RewriteRule ^tour-du-lich-quoc-te/$ controller/default/chitietdanhmuc.php
 RewriteRule ^tour-du-lich-quoc-te/page-([0-9]+)$ controller/default/chitietdanhmuc.php?page=$1
 RewriteRule ^tour-du-lich-quoc-te/([a-zA-Z0-9_-]+)/$ controller/default/chitietdanhmuc.php?Id=$1
@@ -34,6 +37,8 @@ RewriteRule ^tour-du-lich-quoc-te/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/$ controller
 RewriteRule ^tour-du-lich-quoc-te/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/page-([0-9]+)$ controller/default/chitietdanhmuc.php?Id=$1&Id_sub=$2&page=$3
 RewriteRule ^tour-du-lich-quoc-te/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ controller/default/chitiettour.php?Id=$1&name_url=$2
 RewriteRule ^tour-du-lich-quoc-te/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ controller/default/chitiettour.php?Id=$1&Id_sub=$2&name_url=$3
+RewriteRule ^tour-du-lich-quoc-te/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html/(.*)$ controller/default/chitiettour.php?Id=$1&name_url=$2&key=$3
+RewriteRule ^tour-du-lich-quoc-te/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html/(.*)$ controller/default/chitiettour.php?Id=$1&Id_sub=$2&name_url=$3&key=$4
 
 RewriteRule ^tour-gio-chot/$ controller/default/tourgiochot.php
 RewriteRule ^tour-gio-chot/page-([0-9]+)$ controller/default/tourgiochot.php?page=$1
