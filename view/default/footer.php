@@ -57,7 +57,7 @@ function view_footer($data = array())
     }else{
         $asign['avatar']='<img title="Tài khoản tiếp thị liên kết" alt="Tài khoản tiếp thị liên kết" class="facebook-messenger-avatar" src="'.SITE_NAME.'/view/default/themes/images/tiepthi/tiepthi3.png">';
     }
-    
+
 
     print_template($asign, 'footer');
 }
