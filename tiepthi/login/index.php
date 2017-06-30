@@ -68,7 +68,7 @@ if(isset($_POST['username_login'])&&isset($_POST['password_login'])){
             if(isset($_POST['rememberme'])){
                 setcookie('user_token', json_encode($check_login['user_sec']), time() + (86400 * 30),'/', "",  0); // 86400 = 1 day
             }else{
-                $_SESSION['user_token']=$check_login['user_sec'];
+                $_SESSION['user_token']=json_encode($check_login['user_sec']);
             }
             redict(SITE_NAME.'/tiep-thi-lien-ket/danh-sach-don-hang/');
         }else{
@@ -109,7 +109,7 @@ if(isset($_POST['ma_xac_nhan'])){
                     if(isset($_SESSION['confirm_login']['memory'])&&$_SESSION['confirm_login']['memory']==1){
                         setcookie('user_token', json_encode($check_login['user_sec']), time() + (86400 * 30),'/', "",  0); // 86400 = 1 day
                     }else{
-                        $_SESSION['user_token']=$check_login['user_sec'];
+                        $_SESSION['user_token']=json_encode($check_login['user_sec']);
                     }
                     unset($_SESSION['confirm_login']);
                     redict(SITE_NAME.'/tiep-thi-lien-ket/danh-sach-don-hang/');

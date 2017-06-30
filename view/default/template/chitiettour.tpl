@@ -73,27 +73,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="link_tiep_thi_lien_ket package-details-content">
-                        <h3 class="title "><b>Tiếp thị liên kết</b></h3>
-                        <p>Bạn hãy kích <span></span> hoặc copy nội dung trong ô textbox hoặc bạn có thể kích vào các biểu tượng mạng xã hội để chia sẻ liên kết</p>
-                        <div class="col-xs-12">
-                            <div class="col-md-3 col-sm-6 col-xs-6" style="text-align: center">
-                                <p><i style="color: red" class="fa fa-hand-o-down fa-2x"></i></p>
-                                <button type="button" class="btn btn-primary"><i class="fa fa-share-alt "></i> Link tiếp thị</button>
-                            </div>
-                            <div class="col-md-5 col-sm-6 col-xs-6" style="text-align: center">
-                                <p><i style="color: #357ebd" class="fa fa-link fa-2x"></i></p>
-                                <input style="height: 34px;    width: 100%;" class="form-control"  value="{link_booking}{id_user}">
-                            </div>
-                            <div class="col-md-4 col-sm-6 col-xs-6" style="text-align: center">
-                                <p><i style="color: #eea236" class="fa fa-globe fa-2x"></i></p>
-                                <a style="margin-right: 5px;"  class="btn btn-primary"><i style="background:none" class="fa  fa-facebook"></i></a>
-                                <a style="margin-right: 5px;"  class="btn btn-info"><i style="background:none" class="fa  fa-twitter"></i></a>
-                                <a  style="margin-right: 5px;" class="btn btn-danger"><i style="background:none" class="fa  fa-google-plus"></i></a>
-                                <a  class="btn btn-warning"><i style="background:none" class="fa  fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                    {div_tiep_thi}
                     <div class="package-details-content" style="float: left; width: 100%">
                         <h3 {hidden_summary} class="title">Tóm tắt</h3>
                         <p>{summary}
