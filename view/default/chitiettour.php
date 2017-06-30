@@ -55,11 +55,28 @@ function show_chitiet_tour($data = array())
         $asign['price_format']= number_format($data['detail'][0]->price,0,",",".");
         $asign['vnd']='vnđ';
     }
-    $asign['price_2_format']= number_format($data['detail'][0]->price_2,0,",",".");
-    $asign['price_3_format']= number_format($data['detail'][0]->price_3,0,",",".");
-    $asign['price_4_format']= number_format($data['detail'][0]->price_4,0,",",".");
-    $asign['price_5_format']= number_format($data['detail'][0]->price_5,0,",",".");
-    $asign['price_6_format']= number_format($data['detail'][0]->price_6,0,",",".");
+    $asign['price_2_format']='';
+    if($data['detail'][0]->price_2){
+        $asign['price_2_format']= number_format($data['detail'][0]->price_2,0,",",".");
+    }
+    $asign['price_3_format']='';
+    if($data['detail'][0]->price_3){
+        $asign['price_3_format']= number_format($data['detail'][0]->price_3,0,",",".");
+    }
+    $asign['price_4_format']='';
+    if($data['detail'][0]->price_4){
+        $asign['price_4_format']= number_format($data['detail'][0]->price_4,0,",",".");
+    }
+    $asign['price_5_format']='';
+    if($data['detail'][0]->price_5){
+        $asign['price_5_format']= number_format($data['detail'][0]->price_5,0,",",".");
+    }
+    $asign['price_6_format']='';
+    if($asign['price_6_format'])
+    {
+        $asign['price_6_format']= number_format($data['detail'][0]->price_6,0,",",".");
+    }
+
     $asign['date_now'] = date('Y-m-d', strtotime(date(DATETIME_FORMAT)));
     $asign['date_now_vn'] = date('d-m-Y', strtotime(date(DATETIME_FORMAT)));
 
@@ -189,6 +206,12 @@ function show_chitiet_tour($data = array())
     $asign['tour_sales'] ='';
     if(count($data['tour_sales'])>0) {
         $asign['tour_sales'] = print_item('tour_sales', $data['tour_sales']);
+    }
+    $data_session=checkSession('', 1);
+    if(count($data_session)>0){
+        $asign['id_user']='&key='._return_mc_encrypt($data_session['id']);
+    }else{
+        $asign['id_user']='';
     }
     print_template($asign, 'chitiettour');
 }

@@ -89,7 +89,7 @@
         </div>
     </div>
 
-    <div class="drag-wrapper drag-wrapper-right">
+    <!--<div class="drag-wrapper drag-wrapper-right">
         <div data-drag="data-drag" class="thing" style="top:70px;transform: translate(1289px, 55px);">
             <div class="circle facebook-messenger-avatar facebook-messenger-avatar-type0">
                 {avatar}
@@ -106,6 +106,23 @@
 
         </div>
         <div class="magnet-zone" style="margin-left: 0px; margin-bottom: 0px;">
+            <div class="magnet"></div>
+        </div>
+    </div>-->
+    <div class="drag-wrapper drag-wrapper-right">
+        <div data-drag="data-drag" class="thing" style="transform: translate(822px, 341px);">
+            <div class="circle facebook-messenger-avatar facebook-messenger-avatar-type0">
+                <img title="Tài khoản tiếp thị liên kết" alt="Tài khoản tiếp thị liên kết" class="facebook-messenger-avatar" src="{SITE-NAME}/view/default/themes/images/tiepthi/tiepthi3.png">
+                <!--http://itsolutionstuff.com/post/php-jquery-ajax-crop-image-before-upload-using-croppie-pluginexample.html
+                http://demo.itsolutionstuff.com/demo/demo-php-jquery-ajax-crop-image-before-upload-using-croppie-pluginexample.html-->
+            </div>
+            <div class="content">
+                <div class="inside">
+                  {content_user}
+                </div>
+            </div>
+        </div>
+        <div class="magnet-zone">
             <div class="magnet"></div>
         </div>
     </div>
