@@ -7,7 +7,8 @@
 define("SITE_NAME", "http://localhost/azbooking");
 define("SITE_NAME_MANAGE", "http://localhost/manage_mix");
 //define("SITE_NAME_MANAGE", "http://manage.mixmedia.vn");
-define("SITE_NAME_MOBILE", "http://m.azbooking.vn");
+//define("SITE_NAME_MOBILE", "http://m.azbooking.vn");
+define("SITE_NAME_MOBILE", "http://localhost/azbooking_mobi");
 define("DIR", dirname(__FILE__));
 define('SERVER','localhost');
 define('DB_USERNAME','root');
@@ -26,9 +27,14 @@ require_once DIR.'/model/booking_tourService.php';
 require_once DIR.'/model/khachsan_room_priceService.php';
 require_once 'mobi/Mobile_Detect.php';
 require_once DIR . '/common/redict.php';
+$key_token='';
 if(isset($_COOKIE['user_token'])){
     $_SESSION['user_token']=$_COOKIE['user_token'];
 }
+if(isset($_SESSION['user_token'])){
+    $key_token='?key_token_mobile='.base64_encode($_SESSION['user_token']);
+}
+
 $detect = new Mobile_Detect;
 $deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') : 'computer');
 if($deviceType=='phone'){
@@ -36,7 +42,7 @@ if($deviceType=='phone'){
     $thanh_vien='/tiep-thi-lien-ket/';
     $actual_link = $_SERVER['REQUEST_URI'];
     if(strstr($actual_link,$khach_san)=='' && strstr($actual_link,$thanh_vien)==''){
-        redict(SITE_NAME_MOBILE.$actual_link);
+        redict(SITE_NAME_MOBILE.$actual_link.$key_token);
     }
 }
 
