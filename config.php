@@ -507,6 +507,8 @@ function checkSession($return='', $array=''){
                     'user_code'=>_return_mc_decrypt($data_user['user_code'],ENCRYPTION_KEY,1),
                     'created'=>_return_mc_decrypt($data_user['created'],ENCRYPTION_KEY,1),
                     'avatar'=>_return_mc_decrypt($data_user['avatar'],ENCRYPTION_KEY,1),
+                    'token_code'=>_return_mc_decrypt($data_user['token_code'],ENCRYPTION_KEY,1),
+                    'time_token'=>_return_mc_decrypt($data_user['time_token'],ENCRYPTION_KEY,1),
                 );
             }
         }
