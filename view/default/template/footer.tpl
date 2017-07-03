@@ -111,14 +111,56 @@
     </div>-->
     <div class="drag-wrapper drag-wrapper-right">
         <div data-drag="data-drag" class="thing" style="transform: translate(822px, 341px);">
+            <span class="badge badge-important" id="count_notification">2</span>
             <div class="circle facebook-messenger-avatar facebook-messenger-avatar-type0">
-                <img title="Tài khoản tiếp thị liên kết" alt="Tài khoản tiếp thị liên kết" class="facebook-messenger-avatar" src="{SITE-NAME}/view/default/themes/images/tiepthi/tiepthi3.png">
+                <img title="Tài khoản tiếp thị liên kết" alt="Tài khoản tiếp thị liên kết"
+                     class="facebook-messenger-avatar"
+                     src="{SITE-NAME}/view/default/themes/images/tiepthi/tiepthi3.png">
                 <!--http://itsolutionstuff.com/post/php-jquery-ajax-crop-image-before-upload-using-croppie-pluginexample.html
                 http://demo.itsolutionstuff.com/demo/demo-php-jquery-ajax-crop-image-before-upload-using-croppie-pluginexample.html-->
             </div>
             <div class="content">
                 <div class="inside">
-                  {content_user}
+                    {content_user}
+                    <p style="border-bottom: none; margin-bottom: 0px;">
+                        <a style="color: red !important;"><i class="ace-icon fa fa-exclamation-triangle"></i> <span  id="count_un_read">2</span> Thông báo chưa đọc</a>
+                    </p>
+                    <div class="dropdown-noti">
+                        <div class="dropdown-content-noti" style="margin-top: 0px;">
+
+                            <ul style="display: block; position: relative;padding: 0px 0;" class="dropdown-menu dropdown-navbar navbar-pink ul_noti">
+                                <li style="background-color: #edf2fa;"><a
+                                            href="http://localhost/azbooking/http://localhost/manage_mix/booking-new/sua?noti=1&amp;id=Vm0xMGEwNUdWWGhhU0U1U1lrVndVbFpyVWtKUFVUMDk="
+                                            class="clearfix"><span class="msg-body"><span class="msg-title">Trần Văn Tùng đã thêm một đơn hàng cho bạn</span><span
+                                                    class="msg-time"><i class="ace-icon fa fa-clock-o"></i> <span> 06-04-2017 11:04:25 </span></span></span></a><a
+                                            title="Chi tiết thông báo"
+                                            href="http://localhost/azbooking/http://localhost/manage_mix/booking-new/sua?noti=1&amp;id=Vm0xMGEwNUdWWGhhU0U1U1lrVndVbFpyVWtKUFVUMDk="
+                                            style="position: absolute;right: 0%;bottom: 5%; "><i
+                                                style="color:#4a96d9 !important;"
+                                                class="ace-icon fa fa-hand-o-right"></i></a></li>
+                                <li style=""><a
+                                            href="http://localhost/azbooking/http://localhost/manage_mix/booking-new/sua?noti=1&amp;id=Vm0xMGEwNUdWWGhYYms1U1lrVndVbFpyVWtKUFVUMDk="
+                                            class="clearfix"><span class="msg-body"><span class="msg-title">Trần Văn Tùng đã thêm một đơn hàng cho bạn</span><span
+                                                    class="msg-time"><i class="ace-icon fa fa-clock-o"></i> <span> 06-04-2017 09:31:05 </span></span></span></a><a
+                                            title="Chi tiết thông báo"
+                                            href="http://localhost/azbooking/http://localhost/manage_mix/booking-new/sua?noti=1&amp;id=Vm0xMGEwNUdWWGhYYms1U1lrVndVbFpyVWtKUFVUMDk="
+                                            style="position: absolute;right: 0%;bottom: 5%; "><i
+                                                style="color:#4a96d9 !important;"
+                                                class="ace-icon fa fa-hand-o-right"></i></a></li>
+                                <li style="background-color: #edf2fa;"><a
+                                            href="http://localhost/azbooking/http://localhost/manage_mix/booking-new/sua?noti=1&amp;id=Vm0xMGEwNUdWWGhXYms1U1lrVndVbFpyVWtKUFVUMDk="
+                                            class="clearfix"><span class="msg-body"><span class="msg-title">Trần Văn Tùng đã thêm một đơn hàng cho bạn</span><span
+                                                    class="msg-time"><i class="ace-icon fa fa-clock-o"></i> <span> 02-04-2017 17:26:57 </span></span></span></a><a
+                                            title="Chi tiết thông báo"
+                                            href="http://localhost/azbooking/http://localhost/manage_mix/booking-new/sua?noti=1&amp;id=Vm0xMGEwNUdWWGhXYms1U1lrVndVbFpyVWtKUFVUMDk="
+                                            style="position: absolute;right: 0%;bottom: 5%; "><i
+                                                style="color:#4a96d9 !important;"
+                                                class="ace-icon fa fa-hand-o-right"></i></a></li>
+                                <li class="dropdown-footer"><a href=""> Xem tất cả <i
+                                                class="ace-icon fa fa-arrow-right"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1461,12 +1503,12 @@
     $('body').on("click", '#check_link_tiep_thi', function () {
         select_all_link();
     });
-    function select_all_link(){
-        var link=$('#link_old').val();
+    function select_all_link() {
+        var link = $('#link_old').val();
         $('#check_link_tiep_thi').val(link).select();
         copyToClipboard(document.getElementById('check_link_tiep_thi'));
         $("#box_alert").slideDown();
-        $("#box_alert").fadeTo(2000, 500).slideUp(500, function(){
+        $("#box_alert").fadeTo(2000, 500).slideUp(500, function () {
             $("#box_alert").slideUp(500);
         });
     }
@@ -1503,7 +1545,7 @@
         var succeed;
         try {
             succeed = document.execCommand("copy");
-        } catch(e) {
+        } catch (e) {
             succeed = false;
         }
         // restore original focus
