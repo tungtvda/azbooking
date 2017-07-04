@@ -521,3 +521,26 @@ function checkSession($return='', $array=''){
     }
 
 }
+function returnCURL($param=array(), $link){
+    $res='_error_';
+    if(count($param)>0 && $link){
+        $count_param=1;
+        $string_param='';
+        foreach($param as $key=>$row){
+            if($count_param==1){
+                $string_param.=$key."=".$row;
+            }else{
+                $string_param.="&".$key."=".$row;
+            }
+            $count_param++;
+        }
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $link);
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $string_param);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        $res = curl_exec($ch);
+        curl_close($ch);
+    }
+    return $res;
+}
