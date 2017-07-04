@@ -20,7 +20,7 @@ function show_chitiet_tour($data = array())
     $asign['id']= $data['detail'][0]->id;
     $asign['title']= $data['detail'][0]->title;
     $asign['description']= $data['detail'][0]->description;
-
+    $asign['price_tiep_thi']= $data['detail'][0]->price_tiep_thi;
     $content=$data['detail'][0]->summary;
     if (strlen($content) > 200) {
         $ten1=strip_tags($content);
@@ -211,11 +211,11 @@ function show_chitiet_tour($data = array())
     }
     $data_session=checkSession('', 1);
     $asign['div_tiep_thi']='';
-    if(count($data_session)>0){
+    if(count($data_session)>0 && $asign['price_tiep_thi']!='' && $asign['price_tiep_thi']>0){
         $asign['id_user']='&key='._return_mc_encrypt($data_session['id']);
         $link_tiep_thi=$asign['link'].'/'._return_mc_encrypt($data_session['id']);
         $asign['div_tiep_thi']='<div class="link_tiep_thi_lien_ket package-details-content">
-                        <h3 class="title "><b>Tiếp thị liên kết</b>    <b style="color: red">(Hoa hồng được nhận 10%)</b></h3>
+                        <h3 class="title "><b>Tiếp thị liên kết</b>    <b style="color: red">(Tiền hoa hồng '.number_format($asign['price_tiep_thi'],0,",",".").' vnđ)</b></h3>
                         <p>Bạn hãy kích <span></span> hoặc copy nội dung trong ô textbox hoặc bạn có thể kích vào các biểu tượng mạng xã hội để chia sẻ liên kết</p>
                         <div class="col-xs-12">
                             <div class="col-md-3 col-sm-6 col-xs-6" style="text-align: center">

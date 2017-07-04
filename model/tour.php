@@ -2,7 +2,7 @@
 
 class tour
 {
-    public $id, $tour_quoc_te, $DanhMuc1Id, $DanhMuc2Id, $danhmuc_multi, $promotion, $packages, $name, $name_url, $count_down, $code, $img, $price_sales, $price, $price_2, $price_3, $price_4, $price_5, $price_6, $price_number, $price_number_2, $price_number_3, $price_number_4, $price_number_5, $price_number_6, $name_price, $name_price_2, $name_price_3, $name_price_4, $name_price_5, $name_price_6, $so_cho, $durations, $departure, $departure_time, $destination, $vehicle, $hotel, $summary, $highlights, $schedule, $price_list, $content, $list_img, $title, $keyword, $description, $inclusion, $exclusion, $updated;
+    public $id, $tour_quoc_te, $DanhMuc1Id, $DanhMuc2Id, $danhmuc_multi, $promotion, $packages, $name, $name_url, $count_down, $code, $img,$price_tiep_thi, $price_sales, $price, $price_2, $price_3, $price_4, $price_5, $price_6, $price_number, $price_number_2, $price_number_3, $price_number_4, $price_number_5, $price_number_6, $name_price, $name_price_2, $name_price_3, $name_price_4, $name_price_5, $name_price_6, $so_cho, $durations, $departure, $departure_time, $destination, $vehicle, $hotel, $summary, $highlights, $schedule, $price_list, $content, $list_img, $title, $keyword, $description, $inclusion, $exclusion, $updated;
 
     public function tour($data = array())
     {
@@ -18,6 +18,7 @@ class tour
         $this->count_down = isset($data['count_down']) ? $data['count_down'] : '';
         $this->code = isset($data['code']) ? $data['code'] : '';
         $this->img = isset($data['img']) ? $data['img'] : '';
+        $this->price_tiep_thi = isset($data['price_tiep_thi']) ? $data['price_tiep_thi'] : '';
         $this->price_sales = isset($data['price_sales']) ? $data['price_sales'] : '';
         $this->price = isset($data['price']) ? $data['price'] : '';
         $this->price_2 = isset($data['price_2']) ? $data['price_2'] : '';
@@ -73,6 +74,7 @@ class tour
         $this->count_down = addslashes($this->count_down);
         $this->code = addslashes($this->code);
         $this->img = addslashes($this->img);
+        $this->price_tiep_thi = addslashes($this->price_tiep_thi);
         $this->price_sales = addslashes($this->price_sales);
         $this->price = addslashes($this->price);
         $this->price_2 = addslashes($this->price_2);
@@ -127,6 +129,7 @@ class tour
         $this->count_down = stripslashes($this->count_down);
         $this->code = stripslashes($this->code);
         $this->img = stripslashes($this->img);
+        $this->price_tiep_thi = stripslashes($this->price_tiep_thi);
         $this->price_sales = stripslashes($this->price_sales);
         $this->price = stripslashes($this->price);
         $this->price_2 = stripslashes($this->price_2);

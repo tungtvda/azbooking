@@ -34,7 +34,7 @@ function view_tour($data)
 //
 function showTableHeader()
 {
-    return '<th>id</th><th>Quốc tế</th><th>DanhMuc1Id</th><th>DanhMuc2Id</th><th>promotion</th><th>packages</th><th>name</th><th>code</th><th>img</th><th>price_sales</th><th>price</th>';
+    return '<th>id</th><th>Quốc tế</th><th>DanhMuc1Id</th><th>DanhMuc2Id</th><th>promotion</th><th>packages</th><th>name</th><th>code</th><th>img</th><th>Hoa hồng</th><th>price_sales</th><th>price</th>';
 }
 //
 function showTableBody($data)
@@ -61,6 +61,7 @@ function showTableBody($data)
         $TableBody.="<td>".$obj->name."</td>";
         $TableBody.="<td>".$obj->code."</td>";
         $TableBody.="<td><img src=\"".$obj->img."\" width=\"50px\" height=\"50px\"/> </td>";
+        $TableBody.="<td>".$obj->price_tiep_thi."</td>";
         $TableBody.="<td>".$obj->price_sales."</td>";
         $TableBody.="<td>".$obj->price."</td>";
         $TableBody.="<td><a href=\"?action=edit&id=".$obj->id.$danhmuc_id_get."\" title=\"Edit\"><img src=\"".SITE_NAME."/view/admin/Themes/images/pencil.png\" alt=\"Edit\"></a>";
@@ -124,6 +125,7 @@ function showFrom($form,$ListKey=array())
     $str_from.='<p><label>Count down</label><input class="text-input small-input" type="text"  name="count_down" value="'.(($form!=false)?$form->count_down:'').'" /></p>';
     $str_from.='<p><label>code</label><input class="text-input small-input" type="text"  name="code" value="'.(($form!=false)?$form->code:'').'" /></p>';
     $str_from.='<p><label>img</label><input class="text-input small-input" type="text"  name="img" value="'.(($form!=false)?$form->img:'').'"/><a class="button" onclick="openKcEditor(\'img\');">Upload ảnh</a></p>';
+    $str_from.='<p><label>Hoa hồng tiếp thị liên kết (vnđ)</label><input class="text-input small-input" type="text"  name="price_tiep_thi" value="'.(($form!=false)?$form->price_tiep_thi:'').'" /></p>';
     $str_from.='<p><label>price_sales</label><input class="text-input small-input" type="text"  name="price_sales" value="'.(($form!=false)?$form->price_sales:'').'" /></p>';
     $str_from.='<p><label>Tên Giá - Giá(1)- đây sẽ là giá chính để hiển thị</label>
     <input style="width: 40%" class="text-input small-input" type="text"  name="name_price" value="'.(($form!=false)?$form->name_price:'').'" />
