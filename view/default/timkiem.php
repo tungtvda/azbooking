@@ -22,14 +22,13 @@ function show_timkiem($data = array())
 
     $asign['danhsach_khachsan'] ='';
     $asign['hidden_khachsan'] ='';
-    if(count($data['danhsach_tour'])>0)
+    if(count($data['danhsach_khachsan'])>0)
     {
         $asign['danhsach_khachsan'] = print_item('danhmuc_khachsan', $data['danhsach_khachsan']);
     }
     else{
         $asign['hidden_khachsan'] ='hidden';
     }
-
     $asign['danhsach_tintuc'] ='';
     $asign['hidden_tintuc'] ='';
     if(count($data['danhsach_tintuc'])>0)

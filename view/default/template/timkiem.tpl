@@ -1,6 +1,6 @@
 
 <link rel="stylesheet" href="{SITE-NAME}/view/default/themes/css/map/bootstrap.min.css">
-<script src="{SITE-NAME}/view/default/themes/css/map/jquery.min.js"></script>
+<!--<script src="{SITE-NAME}/view/default/themes/css/map/jquery.min.js"></script>-->
 <script src="{SITE-NAME}/view/default/themes/css/map/bootstrap.min.js"></script>
 <section class="filter-page">
     <div class="container">
@@ -13,12 +13,12 @@
                        {danhsach_tour}
                     </div>
 
-                    <div class="filter-item-wrapper">
+                    <div {hidden_khachsan} class="filter-item-wrapper">
                         <div class="title"><h2 class="title_timkiem">KẾT QUẢ TÌM KIẾM KHÁCH SẠN</h2></div>
                         {danhsach_khachsan}
                     </div>
 
-                    <div class="filter-item-wrapper">
+                    <div {hidden_tintuc} class="filter-item-wrapper">
                         <div class="title"><h2 class="title_timkiem">KẾT QUẢ TÌM KIẾM TIN TỨC</h2></div>
                         {danhsach_tintuc}
                     </div>

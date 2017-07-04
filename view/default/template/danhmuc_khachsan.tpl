@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="{SITE-NAME}/view/default/themes/css/map/bootstrap.min.css">
-<script src="{SITE-NAME}/view/default/themes/css/map/jquery.min.js"></script>
+<!--<script src="{SITE-NAME}/view/default/themes/css/map/jquery.min.js"></script>-->
 <script src="{SITE-NAME}/view/default/themes/css/map/bootstrap.min.js"></script>
 <section class="filter-page">
     <div class="container">
