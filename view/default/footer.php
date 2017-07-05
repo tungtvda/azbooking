@@ -76,7 +76,7 @@ function view_footer($data = array())
             <p><a href="'.SITE_NAME.'/tiep-thi-lien-ket/ho-so/">'.$asign['avatar'].' Hi! '.$data_session['name'].'</a></p>
             <p><a href="'.SITE_NAME.'/tiep-thi-lien-ket/ho-so/"><i class="fa fa-cogs "></i> Cài đặt tài khoản</a></p>
             <p><a href="'.SITE_NAME.'/tiep-thi-lien-ket/"><i class="fa fa-share-alt "></i> Tiếp thị liên kết</a></p>
-            <p><a href="'.SITE_NAME.'/tiep-thi-lien-ket/dang-xuat/"><i class="fa fa-sign-out "></i> Đăsite_name_manageng xuất</a></p>
+            <p><a href="'.SITE_NAME.'/tiep-thi-lien-ket/dang-xuat/"><i class="fa fa-sign-out "></i> Đăng xuất</a></p>
         ';
         if(isset($data_list_noti['count_un_read'])&& $data_list_noti['count_un_read']>0){
             $count_un_read=$data_list_noti['count_un_read'];
@@ -84,7 +84,7 @@ function view_footer($data = array())
         $asign['form_']='<form style="display: none" action="" method="" id="form_noti"><input name="noti_name" value="'._return_mc_encrypt(json_encode($array_check_noti)).'"></form>';
         if(count($data_list_noti)>0){
             $list_notification='<p style="border-bottom: none; margin-bottom: 0px;">
-                        <a style="color: #eea236 !important;"><i class="ace-icon fa fa-exclamation-triangle"></i> <span  id="count_un_read">'.$count_un_read.'</span> Thông báo chưa đọc</a>
+                        <a style="color: #eea236 !important;"><i class="ace-icon fa fa-globe"></i> <span  id="count_un_read">'.$count_un_read.'</span> Thông báo chưa đọc</a>
                     </p>
                       <div class="dropdown-noti">
                         <div class="dropdown-content-noti" style="margin-top: 0px;">
