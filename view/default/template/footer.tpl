@@ -1373,7 +1373,6 @@
                     }
                 }
                 if (valid == false) {
-                    console.log(name_input);
                     element.addClass("input-error").removeClass("valid");
                     error.show();
                     error_free = false
