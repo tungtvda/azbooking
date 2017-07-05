@@ -5,6 +5,7 @@
  * @copyright 2013
  */
 define("SITE_NAME", "http://localhost/azbooking");
+//define("SITE_NAME", "http://azbooking.vn");
 define("SITE_NAME_MANAGE", "http://localhost/manage_mix");
 //define("SITE_NAME_MANAGE", "http://manage.mixmedia.vn");
 //define("SITE_NAME_MOBILE", "http://m.azbooking.vn");

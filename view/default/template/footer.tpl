@@ -111,8 +111,8 @@
     </div>-->
     <div class="drag-wrapper drag-wrapper-right">
         <div data-drag="data-drag" class="thing" style="transform: translate(822px, 341px);">
-           {count_noti_string}
-            <div  class="circle facebook-messenger-avatar facebook-messenger-avatar-type0 notification_menu">
+            {count_noti_string}
+            <div class="circle facebook-messenger-avatar facebook-messenger-avatar-type0">
                 <img title="Tài khoản tiếp thị liên kết" alt="Tài khoản tiếp thị liên kết"
                      class="facebook-messenger-avatar"
                      src="{SITE-NAME}/view/default/themes/images/tiepthi/tiepthi3.png">
@@ -121,9 +121,84 @@
             </div>
             <div class="content">
                 <div class="inside">
-                    {content_user}
+                    <div style="float: left; width: 100%;    padding-bottom: 10px;border-bottom: 1px solid #d4cece;">
+                        <div class="dropdown-noti">
+                            <a class="notification_menu" data-toggle="dropdown-noti">
+                                <i class="icon_glo_noti ace-icon fa fa-globe icon-animated-bell color_white fa-2x"></i>
+                                <span class="badge badge-important" id="count_notification">3</span>
+                            </a>
+                            <div class="dropdown-content-noti">
+                                <p class="dropdown-header"><i
+                                            class="ace-icon fa fa-exclamation-triangle"></i> <span
+                                            id="count_un_read">3</span> Thông báo chưa đọc</p>
+                                <ul class="dropdown-menu dropdown-navbar navbar-pink ul_noti">
+                                    <li style="background-color: #edf2fa;"><a
+                                                href="http://localhost/azbooking/http://localhost/manage_mix/booking-new/sua?noti=1&amp;id=Vm0xMGEwNUdWWGhhU0U1U1lrVndVbFpyVWtKUFVUMDk="
+                                                class="clearfix"><span class="msg-body"><span class="msg-title">Trần Văn Tùng đã thêm một đơn hàng cho bạn</span><span
+                                                        class="msg-time"><i class="ace-icon fa fa-clock-o"></i> <span> 06-04-2017 11:04:25 </span></span></span></a><a
+                                                title="Chi tiết thông báo"
+                                                href="http://localhost/azbooking/http://localhost/manage_mix/booking-new/sua?noti=1&amp;id=Vm0xMGEwNUdWWGhhU0U1U1lrVndVbFpyVWtKUFVUMDk="
+                                                style="position: absolute;right: 0%;bottom: 5%; "><i
+                                                    style="color:#4a96d9 !important;"
+                                                    class="ace-icon fa fa-hand-o-right"></i></a></li>
+                                    <li style="background-color: #edf2fa;"><a
+                                                href="http://localhost/azbooking/http://localhost/manage_mix/booking-new/sua?noti=1&amp;id=Vm0xMGEwNUdWWGhYYms1U1lrVndVbFpyVWtKUFVUMDk="
+                                                class="clearfix"><span class="msg-body"><span class="msg-title">Trần Văn Tùng đã thêm một đơn hàng cho bạn</span><span
+                                                        class="msg-time"><i class="ace-icon fa fa-clock-o"></i> <span> 06-04-2017 09:31:05 </span></span></span></a><a
+                                                title="Chi tiết thông báo"
+                                                href="http://localhost/azbooking/http://localhost/manage_mix/booking-new/sua?noti=1&amp;id=Vm0xMGEwNUdWWGhYYms1U1lrVndVbFpyVWtKUFVUMDk="
+                                                style="position: absolute;right: 0%;bottom: 5%; "><i
+                                                    style="color:#4a96d9 !important;"
+                                                    class="ace-icon fa fa-hand-o-right"></i></a></li>
+                                    <li style="background-color: #edf2fa;"><a
+                                                href="http://localhost/azbooking/http://localhost/manage_mix/booking-new/sua?noti=1&amp;id=Vm0xMGEwNUdWWGhXYms1U1lrVndVbFpyVWtKUFVUMDk="
+                                                class="clearfix"><span class="msg-body"><span class="msg-title">Trần Văn Tùng đã thêm một đơn hàng cho bạn</span><span
+                                                        class="msg-time"><i class="ace-icon fa fa-clock-o"></i> <span> 02-04-2017 17:26:57 </span></span></span></a><a
+                                                title="Chi tiết thông báo"
+                                                href="http://localhost/azbooking/http://localhost/manage_mix/booking-new/sua?noti=1&amp;id=Vm0xMGEwNUdWWGhXYms1U1lrVndVbFpyVWtKUFVUMDk="
+                                                style="position: absolute;right: 0%;bottom: 5%; "><i
+                                                    style="color:#4a96d9 !important;"
+                                                    class="ace-icon fa fa-hand-o-right"></i></a></li>
+                                    <li class="dropdown-footer"><a
+                                                href="http://localhost/azbooking/tiep-thi-lien-ket/thong-bao/"> Xem tất cả
+                                            <i class="ace-icon fa fa-arrow-right"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="dropdown">
+                            <a class="user_profile" data-toggle="dropdown">
+                                <img class="nav-user-photo" title="Trần Văn Tùng" alt="Trần Văn Tùng"
+                                     src="http://localhost/manage_mix/view/default/themes/uploads/users/tungtvsoictgmailcom/1487293606.jpg"><span
+                                        class="user-info"><small>Xin chào,</small>Trần Văn Tùng</span><i
+                                        class="ace-icon fa fa-caret-down color_white" style="margin-left: 10px"></i></a>
+                        </div>
+                    </div>
+
+                    <div style="float: left; width: 100%; margin-top: 10px">
+                        <div class="fb-page fb_iframe_widget" data-width="310" data-height="310"
+                             data-href="https://www.facebook.com/Du-L%E1%BB%8Bch-Th%C3%A1i-Lan-dulichvietnamcomvn-209549189532357/"
+                             data-hide-cover="false" data-tabs="messages" data-small-header="true"
+                             data-show-facepile="true"
+                             data-adapt-container-width="true" fb-xfbml-state="rendered"
+                             fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;container_width=0&amp;height=310&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FDu-L%25E1%25BB%258Bch-Th%25C3%25A1i-Lan-dulichvietnamcomvn-209549189532357%2F&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=true&amp;tabs=messages&amp;width=310">
+                <span style="vertical-align: bottom; width: 310px; height: 310px;"><iframe name="f129ac86578f6e"
+                                                                                           width="310px" height="310px"
+                                                                                           frameborder="0"
+                                                                                           allowtransparency="true"
+                                                                                           allowfullscreen="true"
+                                                                                           scrolling="no"
+                                                                                           title="fb:page Facebook Social Plugin"
+                                                                                           src="https://www.facebook.com/v2.5/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FXBwzv5Yrm_1.js%3Fversion%3D42%23cb%3Df2ab55b22fff104%26domain%3Dthailan.luhanhviet.com.vn%26origin%3Dhttps%253A%252F%252Fthailan.luhanhviet.com.vn%252Ff207e8b87746f74%26relation%3Dparent.parent&amp;container_width=0&amp;height=310&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FDu-L%25E1%25BB%258Bch-Th%25C3%25A1i-Lan-dulichvietnamcomvn-209549189532357%2F&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=true&amp;tabs=messages&amp;width=310"
+                                                                                           class=""
+                                                                                           style="border: none; visibility: visible; width: 310px; height: 310px;"></iframe></span>
+                        </div>
+                    </div>
+
+                    <!--{content_user}-->
                 </div>
             </div>
+
         </div>
         <div class="magnet-zone">
             <div class="magnet"></div>
@@ -1530,7 +1605,7 @@
             url: link,
             data: $("#form_noti").serialize(),
             success: function (response) {
-                response=$.parseJSON(response);
+                response = $.parseJSON(response);
                 if (response.success == 1) {
                     $('#count_notification').hide();
                     $('#count_un_read').html(response.count_un_read);
