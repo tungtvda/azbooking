@@ -229,6 +229,8 @@ if (isset($_POST['name_customer'])) {
         $name_price_2_mahoa = _return_mc_encrypt($name_price_2);
         $name_price_3_mahoa = _return_mc_encrypt($name_price_3);
 
+        $price_tiep_thi_mahoa = _return_mc_encrypt($data['detail'][0]->price_tiep_thi);
+
         $string_info_booking .= "name_customer=" . $name_customer_mahoa;
         $string_info_booking .= "&email=" . $email_mahoa;
         $string_info_booking .= "&phone=" . $phone_mahoa;
@@ -239,6 +241,7 @@ if (isset($_POST['name_customer'])) {
         $string_info_booking .= "&id_tour=" . $id_tour_mahoa;
         $string_info_booking .= "&name_tour=" . $name_tour_mahoa;
         $string_info_booking .= "&code_tour=" . $code_tour_mahoa;
+        $string_info_booking .= "&price_tiep_thi=" . $price_tiep_thi_mahoa;
         $string_info_booking .= "&ng_tour=" . $nguontour_mahoa;
         $string_info_booking .= "&phuong_tien=" . $phuong_tien;
         $string_info_booking .= "&n1=" . $num_nguoi_lon_mahoa;
@@ -276,6 +279,9 @@ if (isset($_POST['name_customer'])) {
 
         $string_info_booking .= "&tol=" . _return_mc_encrypt($total);
 
+        if(isset($_GET['key'])){
+            $string_info_booking .= "&key_user=" . _returnGetParamSecurity('key');
+        }
 
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, SITE_NAME_MANAGE."/booking-website/");

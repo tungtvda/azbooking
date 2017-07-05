@@ -210,8 +210,6 @@ function show_dattour($data = array())
                                                         </div>';
     }
 
-
-
     print_template($asign, 'dattour');
 }
 
