@@ -290,9 +290,9 @@ if (isset($_POST['name_customer'])) {
         curl_setopt($ch, CURLOPT_POSTFIELDS, $string_info_booking);
 
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        $res = curl_exec($ch);
+       echo $res = curl_exec($ch);
         curl_close($ch);
-
+        exit;
         if ($res === 0) {
             echo "<script>alert('Đặt tour thất bại, bạn vui lòng thử lại')</script>";
         } else {

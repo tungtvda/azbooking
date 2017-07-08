@@ -11472,7 +11472,7 @@ caption, th, td {
 
 .inside p {
     border-bottom: 1px dotted #0091EA;
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
     margin-top: 10px;
     font-size: 14px;
     font-weight: bold;
@@ -11704,7 +11704,7 @@ caption, th, td {
     display: none;
     position: absolute;
     background-color: #ffffff;
-    width: 248px;
+    width: 290px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 11;
     margin-top: 13px;
@@ -11742,6 +11742,8 @@ caption, th, td {
 .ul_noti{
     margin-left: 0px;
     margin-bottom: 0px;
+    overflow: scroll;
+    height: 232px;
 }
 .ul_noti li{
     position: relative;
@@ -11775,6 +11777,7 @@ caption, th, td {
     color: #4F99C6!important;
     text-align: center;
     font-size: 13px;
+    font-weight: normal;
 }
 .icon_right_noti{
     position: absolute;right: 0%;bottom: 5%;

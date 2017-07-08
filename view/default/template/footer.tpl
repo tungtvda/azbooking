@@ -131,7 +131,7 @@
                                 <p class="dropdown-header"><i
                                             class="ace-icon fa fa-exclamation-triangle"></i> <span
                                             id="count_un_read">3</span> Thông báo chưa đọc</p>
-                                <ul class="dropdown-menu dropdown-navbar navbar-pink ul_noti">
+                                <ul style="    padding: 5px 0;" class=" dropdown-navbar navbar-pink ul_noti">
                                     <li style="background-color: #edf2fa;"><a
                                                 href="http://localhost/azbooking/http://localhost/manage_mix/booking-new/sua?noti=1&amp;id=Vm0xMGEwNUdWWGhhU0U1U1lrVndVbFpyVWtKUFVUMDk="
                                                 class="clearfix"><span class="msg-body"><span class="msg-title">Trần Văn Tùng đã thêm một đơn hàng cho bạn</span><span
@@ -159,10 +159,27 @@
                                                 style="position: absolute;right: 0%;bottom: 5%; "><i
                                                     style="color:#4a96d9 !important;"
                                                     class="ace-icon fa fa-hand-o-right"></i></a></li>
-                                    <li class="dropdown-footer"><a
-                                                href="http://localhost/azbooking/tiep-thi-lien-ket/thong-bao/"> Xem tất cả
-                                            <i class="ace-icon fa fa-arrow-right"></i></a></li>
+                                    <li style="background-color: #edf2fa;"><a
+                                                href="http://localhost/azbooking/http://localhost/manage_mix/booking-new/sua?noti=1&amp;id=Vm0xMGEwNUdWWGhXYms1U1lrVndVbFpyVWtKUFVUMDk="
+                                                class="clearfix"><span class="msg-body"><span class="msg-title">Trần Văn Tùng đã thêm một đơn hàng cho bạn</span><span
+                                                        class="msg-time"><i class="ace-icon fa fa-clock-o"></i> <span> 02-04-2017 17:26:57 </span></span></span></a><a
+                                                title="Chi tiết thông báo"
+                                                href="http://localhost/azbooking/http://localhost/manage_mix/booking-new/sua?noti=1&amp;id=Vm0xMGEwNUdWWGhXYms1U1lrVndVbFpyVWtKUFVUMDk="
+                                                style="position: absolute;right: 0%;bottom: 5%; "><i
+                                                    style="color:#4a96d9 !important;"
+                                                    class="ace-icon fa fa-hand-o-right"></i></a></li>
+                                    <li style="background-color: #edf2fa;"><a
+                                                href="http://localhost/azbooking/http://localhost/manage_mix/booking-new/sua?noti=1&amp;id=Vm0xMGEwNUdWWGhXYms1U1lrVndVbFpyVWtKUFVUMDk="
+                                                class="clearfix"><span class="msg-body"><span class="msg-title">Trần Văn Tùng đã thêm một đơn hàng cho bạn</span><span
+                                                        class="msg-time"><i class="ace-icon fa fa-clock-o"></i> <span> 02-04-2017 17:26:57 </span></span></span></a><a
+                                                title="Chi tiết thông báo"
+                                                href="http://localhost/azbooking/http://localhost/manage_mix/booking-new/sua?noti=1&amp;id=Vm0xMGEwNUdWWGhXYms1U1lrVndVbFpyVWtKUFVUMDk="
+                                                style="position: absolute;right: 0%;bottom: 5%; "><i
+                                                    style="color:#4a96d9 !important;"
+                                                    class="ace-icon fa fa-hand-o-right"></i></a></li>
                                 </ul>
+                                <p class="dropdown-footer">
+                                    <a href=""> Xem tất cả <i class="ace-icon fa fa-arrow-right"></i></a></p>
                             </div>
                         </div>
 
