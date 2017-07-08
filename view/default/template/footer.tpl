@@ -1638,5 +1638,6 @@
 <script src="{SITE-NAME}/view/default/themes/calendar/dist/moment.min.js"></script>
 <script type="text/javascript"
         src="{SITE-NAME}/view/default/themes/calendar/src/js/pignose.calender.js"></script>
+
 </body>
 </html>
