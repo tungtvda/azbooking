@@ -11739,11 +11739,13 @@ caption, th, td {
     padding: 5px 15px;
     margin-bottom: 0px;
 }
+.content_ul_li{
+    overflow: scroll;
+    height: 232px;
+}
 .ul_noti{
     margin-left: 0px;
     margin-bottom: 0px;
-    overflow: scroll;
-    height: 232px;
 }
 .ul_noti li{
     position: relative;

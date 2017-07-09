@@ -131,7 +131,8 @@
                                 <p class="dropdown-header"><i
                                             class="ace-icon fa fa-exclamation-triangle"></i> <span
                                             id="count_un_read">3</span> Thông báo chưa đọc</p>
-                                <ul style="    padding: 5px 0;" class=" dropdown-navbar navbar-pink ul_noti">
+                                <div class="content_ul_li">
+                                    <ul style="    padding: 5px 0;" class=" dropdown-navbar navbar-pink ul_noti">
                                     <li style="background-color: #edf2fa;"><a
                                                 href="http://localhost/azbooking/http://localhost/manage_mix/booking-new/sua?noti=1&amp;id=Vm0xMGEwNUdWWGhhU0U1U1lrVndVbFpyVWtKUFVUMDk="
                                                 class="clearfix"><span class="msg-body"><span class="msg-title">Trần Văn Tùng đã thêm một đơn hàng cho bạn</span><span
@@ -178,6 +179,7 @@
                                                     style="color:#4a96d9 !important;"
                                                     class="ace-icon fa fa-hand-o-right"></i></a></li>
                                 </ul>
+                                </div>
                                 <p class="dropdown-footer">
                                     <a href=""> Xem tất cả <i class="ace-icon fa fa-arrow-right"></i></a></p>
                             </div>
@@ -246,7 +248,6 @@
 <script type='text/javascript' src='{SITE-NAME}/view/default/themes/js/jquery.event.move.js?ver=4.6.1'></script>
 <script type='text/javascript' src='{SITE-NAME}/view/default/themes/js/rebound.min.js?ver=4.6.1'></script>
 <script type='text/javascript' src='{SITE-NAME}/view/default/themes/js/index.js?ver=4.6.1'></script>
-
 <script type="text/javascript">if ($('#slider-revolution').length) {
         $('#slider-revolution').show().revolution({
             ottedOverlay: "none",
@@ -1630,6 +1631,42 @@
             }
         });
     });
+    $('body').on("click", '.notification_menu', function () {
+        link = '{site_name_manage}/update-notification.html';
+        $.ajax({
+            method: "POST",
+            url: link,
+            data: $("#form_noti").serialize(),
+            success: function (response) {
+                response = $.parseJSON(response);
+                if (response.success == 1) {
+                    $('#count_notification').hide();
+                    $('#count_un_read').html(response.count_un_read);
+                }
+            }
+        });
+    });
+
+//    $('.content_ul_li').scroll(function () {
+//        if($("#content_ul_li").scrollTop() >= ($("#ul_li").height() -$("#content_ul_li").height()))
+//        {
+//            console.log($(".content_ul_li").scrollTop());
+//        }
+//
+//    });
+    $contentLoadTriggered = false;
+    $(".content_ul_li").scroll(
+            function()
+            {
+                if($(".content_ul_li").scrollTop() >= ($(".ul_noti").height() - $(".content_ul_li").height()) && $contentLoadTriggered == false)
+                {
+                    console.log($(".content_ul_li").scrollTop());
+                    $contentLoadTriggered = true;
+                    $(".ul_noti").append('<li><a href="">asdfasdf</a></li>');
+                    $contentLoadTriggered = false;
+                }
+            }
+    );
 </script>
 <!--'<td><a id="stt_custommer_' + stt + '"  deleteid="' + stt + '"  title="Xóa khách hàng"  class="red btn_remove_customer" href="javascript:void()"><i class="ace-icon fa fa-trash-o bigger-130"></i></a></td>' +-->
 <link rel="stylesheet" type="text/css"
@@ -1638,6 +1675,8 @@
 <script src="{SITE-NAME}/view/default/themes/calendar/dist/moment.min.js"></script>
 <script type="text/javascript"
         src="{SITE-NAME}/view/default/themes/calendar/src/js/pignose.calender.js"></script>
+<!--<script type="text/javascript"
+        src="{SITE-NAME}/view/default/themes/js/jquery.endless-scroll.js"></script>-->
 
 </body>
 </html>
