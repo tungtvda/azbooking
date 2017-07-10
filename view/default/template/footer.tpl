@@ -88,30 +88,9 @@
             </div>
         </div>
     </div>
-
-    <!--<div class="drag-wrapper drag-wrapper-right">
-        <div data-drag="data-drag" class="thing" style="top:70px;transform: translate(1289px, 55px);">
-            <div class="circle facebook-messenger-avatar facebook-messenger-avatar-type0">
-                {avatar}
-            </div>
-            <div class="content" style="display: none; max-height: 263px;">
-                <div class="inside">
-
-                    <p style="margin-bottom: 10px; margin-top: 10px;font-size: 14px;font-weight: bold;">
-                       <a sty href="{SITE-NAME}/tiep-thi-lien-ket/thanh-vien/?type=dang-ky"><i class="fa fa-user"></i> Đăng ký</a> <span style="color: #2b2b2b">|</span> <a href="{SITE-NAME}/tiep-thi-lien-ket/thanh-vien/"><i class="fa fa-sign-in"></i> Đăng nhập</a>
-                    </p>
-                    <a href=""><label style="color: red;">(Tài khoản tiếp thị liên kết)</label></a>
-                </div>
-            </div>
-
-        </div>
-        <div class="magnet-zone" style="margin-left: 0px; margin-bottom: 0px;">
-            <div class="magnet"></div>
-        </div>
-    </div>-->
     <div class="drag-wrapper drag-wrapper-right">
         <div data-drag="data-drag" class="thing" style="transform: translate(822px, 341px);">
-            <!--{count_noti_string}-->
+            <span class="badge_noti badge-important" id="coutn_mes_noti">10</span>
             <div class="circle facebook-messenger-avatar facebook-messenger-avatar-type0">
                 <img title="Tài khoản tiếp thị liên kết" alt="Tài khoản tiếp thị liên kết"
                      class="facebook-messenger-avatar"
@@ -1585,7 +1564,7 @@
     $(".content_ul_li").scroll(
             function()
             {
-                if($(".content_ul_li").scrollTop() >= ($(".ul_noti").height() - $(".content_ul_li").height()) && $contentLoadTriggered == false)
+                if($(".content_ul_li").scrollTop() >= ($(".content_ul_li").height() - $(".ul_noti").height()) && $contentLoadTriggered == false)
                 {
                     $contentLoadTriggered = true;
                     var page=$('#page_noti').val();
@@ -1601,14 +1580,25 @@
                             response = $.parseJSON(response);
                             if(response.success==1){
                                 response.data_noti.forEach(function(value) {
-                                   $item_noti=' <li style="">' +
-                                    '<a href=""><span class="msg-body"><span class="msg-title">jhljkl</span>' +
+                                    var row_color='';
+                                    if(value.status!=1){
+                                        row_color='background-color: #edf2fa;';
+                                    }
+                                    var time_format=moment(value.created).format('DD-MM-YYYY HH:mm:ss');
+                                   var item_noti=' <li style="'+row_color+'">' +
+                                    '<a href="{SITE-NAME}/'+value.link+'"><span class="msg-body"><span class="msg-title">'+value.name+'</span>' +
                                            '<span class="msg-time"><i class="ace-icon fa fa-clock-o"></i> ' +
-                                           '<span>ghjghjghj</span></span></span> </a>' +
-                                           '<a title="Chi tiết thông báo" href=""  style="position: absolute;right: 0%;bottom: 5%; "> <i style="color:#4a96d9 !important;" class="ace-icon fa fa-hand-o-right"></i>' +
+                                           '<span>'+time_format+'</span></span></span> </a>' +
+                                           '<a title="Chi tiết thông báo" href="{SITE-NAME}/'+value.link+'"  style="position: absolute;right: 0%;bottom: 5%; "> <i style="color:#4a96d9 !important;" class="ace-icon fa fa-hand-o-right"></i>' +
                                            '</a></li>';
+                                    $( ".ul_noti" ).append(item_noti );
                                 });
-                                $contentLoadTriggered =false;
+                                $('#page_noti').val(response.current);
+                                if(response.data_noti.length>0){
+                                    $contentLoadTriggered =false;
+                                }else{
+                                    $contentLoadTriggered =true;
+                                }
 
                             }else{
                                 $contentLoadTriggered = true;
