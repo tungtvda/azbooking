@@ -567,7 +567,7 @@ function timeAgo($time_ago)
     else if($minutes <=60){
         if($minutes==1){
 //            return "one minute ago";
-            return "một phút trước";
+            return "khoảng một phút trước";
         }
         else{
 //            return "$minutes minutes ago";
@@ -578,7 +578,7 @@ function timeAgo($time_ago)
     else if($hours <=24){
         if($hours==1){
 //            return "an hour ago";
-            return "1 giờ trước";
+            return "khoảng một giờ trước";
         }else{
 //            return "$hours hrs ago";
             return "$hours giờ trước";
@@ -597,7 +597,7 @@ function timeAgo($time_ago)
     //Weeks
     else if($weeks <= 4.3){
         if($weeks==1){
-            return "1 tuần trước";
+            return "khoảng một tuần trước";
 //            return "a week ago";
         }else{
 //            return "$weeks weeks ago";
@@ -608,7 +608,7 @@ function timeAgo($time_ago)
     else if($months <=12){
         if($months==1){
 //            return "a month ago";
-            return "1 tháng trước";
+            return "khoảng một tháng trước";
         }else{
 //            return "$months months ago";
             return "$months tháng trước";

@@ -1593,15 +1593,15 @@
                                     if(value.status!=1){
                                         row_color='background-color: #edf2fa;';
                                     }
-                                    var time_format=moment(value.created).format('DD-MM-YYYY HH:mm:ss');
-                                    <!--var time_format = $.timeago(value.created);-->
+//                                    var time_format=moment(value.created).format('DD-MM-YYYY HH:mm:ss');
+                                    var time_format=jQuery.timeago(value.created);;
                                    var item_noti=' <li style="'+row_color+'">' +
                                     '<a href="{SITE-NAME}/'+value.link+'"><span class="msg-body"><span class="msg-title">'+value.name+'</span>' +
                                            '<span class="msg-time"><i class="ace-icon fa fa-clock-o"></i> ' +
                                            '<span class="timeago">'+time_format+'</span></span></span> </a>' +
                                            '<a title="Chi tiết thông báo" href="{SITE-NAME}/'+value.link+'"  style="position: absolute;right: 0%;bottom: 5%; "> <i style="color:#4a96d9 !important;" class="ace-icon fa fa-hand-o-right"></i>' +
                                            '</a></li>';
-                                    $( ".ul_noti" ).append(item_noti );
+                                    $( ".ul_noti" ).append(item_noti);
                                 });
                                 $('#page_noti').val(response.current);
                                 if(response.data_noti.length>0){
