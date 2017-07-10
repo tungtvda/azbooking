@@ -90,7 +90,7 @@
     </div>
     <div class="drag-wrapper drag-wrapper-right">
         <div data-drag="data-drag" class="thing" style="transform: translate(822px, 341px);">
-            <span class="badge_noti badge-important" id="coutn_mes_noti">10</span>
+            {coutn_mes_noti}
             <div class="circle facebook-messenger-avatar facebook-messenger-avatar-type0">
                 <img title="Tài khoản tiếp thị liên kết" alt="Tài khoản tiếp thị liên kết"
                      class="facebook-messenger-avatar"
@@ -153,6 +153,8 @@
 <script type='text/javascript' src='{SITE-NAME}/view/default/themes/js/jquery.event.move.js?ver=4.6.1'></script>
 <script type='text/javascript' src='{SITE-NAME}/view/default/themes/js/rebound.min.js?ver=4.6.1'></script>
 <script type='text/javascript' src='{SITE-NAME}/view/default/themes/js/index.js?ver=4.6.1'></script>
+<script type="text/javascript"
+        src="{SITE-NAME}/view/default/themes/js/jquery.timeago.js"></script>
 <script type="text/javascript">if ($('#slider-revolution').length) {
         $('#slider-revolution').show().revolution({
             ottedOverlay: "none",
@@ -1534,7 +1536,14 @@
                     if (response.success == 1) {
                         $('#count_notification').hide();
                         $('#count_notification').html('');
-                        $('#count_un_read').html(response.count_un_read);
+                        $('#count_mes_noti').hide();
+                        $('#count_mes_noti').html('');
+                        if(response.count_un_read>0){
+                            $('#count_un_read').html(response.count_un_read+' Thông báo chưa đọc');
+                        }else{
+                            $('#count_un_read').html('Tất cả thông báo đã được đọc');
+                        }
+
                     }
                 }
             });
@@ -1585,10 +1594,11 @@
                                         row_color='background-color: #edf2fa;';
                                     }
                                     var time_format=moment(value.created).format('DD-MM-YYYY HH:mm:ss');
+                                    <!--var time_format = $.timeago(value.created);-->
                                    var item_noti=' <li style="'+row_color+'">' +
                                     '<a href="{SITE-NAME}/'+value.link+'"><span class="msg-body"><span class="msg-title">'+value.name+'</span>' +
                                            '<span class="msg-time"><i class="ace-icon fa fa-clock-o"></i> ' +
-                                           '<span>'+time_format+'</span></span></span> </a>' +
+                                           '<span class="timeago">'+time_format+'</span></span></span> </a>' +
                                            '<a title="Chi tiết thông báo" href="{SITE-NAME}/'+value.link+'"  style="position: absolute;right: 0%;bottom: 5%; "> <i style="color:#4a96d9 !important;" class="ace-icon fa fa-hand-o-right"></i>' +
                                            '</a></li>';
                                     $( ".ul_noti" ).append(item_noti );
@@ -1610,6 +1620,7 @@
                 }
             }
     );
+    $("time.timeago").timeago();
 </script>
 <!--'<td><a id="stt_custommer_' + stt + '"  deleteid="' + stt + '"  title="Xóa khách hàng"  class="red btn_remove_customer" href="javascript:void()"><i class="ace-icon fa fa-trash-o bigger-130"></i></a></td>' +-->
 <link rel="stylesheet" type="text/css"
@@ -1618,8 +1629,7 @@
 <script src="{SITE-NAME}/view/default/themes/calendar/dist/moment.min.js"></script>
 <script type="text/javascript"
         src="{SITE-NAME}/view/default/themes/calendar/src/js/pignose.calender.js"></script>
-<!--<script type="text/javascript"
-        src="{SITE-NAME}/view/default/themes/js/jquery.endless-scroll.js"></script>-->
+
 
 </body>
 </html>
