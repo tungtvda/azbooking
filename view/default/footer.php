@@ -81,17 +81,22 @@ function view_footer($data = array())
         $data_list_noti=json_decode($list_noti,true);
         $count_noti=count($data_list_noti['data_noti']);
         if(isset($data_list_noti['count_active'])&& $data_list_noti['count_active']>0){
+            if($data_list_noti['count_active']>100){
+                $data_list_noti['count_active']='100+';
+            }
             $count_noti_string='<span class="badge badge-important" id="count_notification">'.$data_list_noti['count_active'].'</span>';
+            $asign['coutn_mes_noti']='<span class="badge_noti badge-important" id="count_mes_noti">'.$data_list_noti['count_active'].'</span>';
         }else{
             $count_noti_string='<span hidden class="badge badge-important" id="count_notification"></span>';
+            $asign['coutn_mes_noti']='';
         }
         if(isset($data_list_noti['count_un_read'])&& $data_list_noti['count_un_read']>0){
-            $count_un_read=' <i class="ace-icon fa fa-exclamation-triangle"></i> <span id="count_un_read"> '.$data_list_noti['count_un_read'].'</span> Thông báo chưa đọc';
+            $count_un_read=' <i class="ace-icon fa fa-exclamation-triangle"></i> <span id="count_un_read"> '.$data_list_noti['count_un_read'].' Thông báo chưa đọc</span> ';
         }else{
             if($count_noti>0){
-                $count_un_read='Bạn không có thông báo nào';
+                $count_un_read='<span id="count_un_read">Bạn không có thông báo nào</span>';
             }else{
-                $count_un_read='Tất cả thông báo đã được đọc';
+                $count_un_read='<span id="count_un_read">Tất cả thông báo đã được đọc</span>';
             }
         }
         $hidden_div='';
@@ -102,7 +107,8 @@ function view_footer($data = array())
                 if($row_noti['status']!=1){
                     $row_color='background-color: #edf2fa;';
                 }
-                $date_noti = date("d-m-Y H:i:s", strtotime($row_noti['created']));
+//                $date_noti = date("d-m-Y H:i:s", strtotime($row_noti['created']));
+                $date_noti =timeAgo($row_noti['created']);
                 $list_notification.='
                             <li style="'.$row_color.'">
                                 <a href="'.SITE_NAME.'/'.$row_noti['link'].'">
@@ -110,7 +116,7 @@ function view_footer($data = array())
 													<span class="msg-title">
 														'.$row_noti['name'].'
 													</span>
-													<span class="msg-time">
+													<span class="msg-time timeago">
 														<i class="ace-icon fa fa-clock-o"></i> <span> '.$date_noti.' </span>
 													</span>
 												</span>
@@ -143,7 +149,7 @@ function view_footer($data = array())
         $asign['content_user'].= $list_notification;
         $asign['content_user'].='</ul> </div>
                                 <p '.$hidden_div.' class="dropdown-footer">
-                                    <a href=""> Xem tất cả <i class="ace-icon fa fa-arrow-right"></i></a></p>
+                                    <a href="'.SITE_NAME.'/tiep-thi-lien-ket/thong-bao/"> Xem tất cả <i class="ace-icon fa fa-arrow-right"></i></a></p>
                             </div>
                         </div>';
         $avatar=$data_session['avatar'];
@@ -174,4 +180,20 @@ function view_footer($data = array())
 
 
     print_template($asign, 'footer');
+}
+
+function _ago($tm,$rcs = 0) {
+    $cur_tm = time();
+    $dif = $cur_tm-$tm;
+    $pds = array('second','minute','hour','day','week','month','year','decade');
+    $lngh = array(1,60,3600,86400,604800,2630880,31570560,315705600);
+
+    for($v = sizeof($lngh)-1; ($v >= 0)&&(($no = $dif/$lngh[$v])<=1); $v--); if($v < 0) $v = 0; $_tm = $cur_tm-($dif%$lngh[$v]);
+    $no = floor($no);
+    if($no <> 1)
+        $pds[$v] .='s';
+    $x = sprintf("%d %s ",$no,$pds[$v]);
+    if(($rcs == 1)&&($v >= 1)&&(($cur_tm-$_tm) > 0))
+        $x .= time_ago($_tm);
+    return $x;
 }
