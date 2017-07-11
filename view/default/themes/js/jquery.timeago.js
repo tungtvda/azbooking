@@ -52,7 +52,7 @@
         suffixAgo: "trước",
         suffixFromNow: "từ bây giờ",
         inPast: 'bất kỳ lúc nào',
-        seconds: "vừa xong",
+        seconds: "vài giây",
         minute: "khoảng 1 phút",
         minutes: "%d phút",
         hour: "khoảng một giờ",

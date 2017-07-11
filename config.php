@@ -561,7 +561,7 @@ function timeAgo($time_ago)
     // Seconds
     if($seconds <= 60){
 //        return "just now";
-        return "vừa xong";
+        return "vài giây trước";
     }
     //Minutes
     else if($minutes <=60){
@@ -617,8 +617,8 @@ function timeAgo($time_ago)
     //Years
     else{
         if($years==1){
-            return "one year ago";
-//            return "1 năm trước";
+//            return "one year ago";
+            return "1 năm trước";
         }else{
             return "$years năm trước";
 //            return "$years years ago";
