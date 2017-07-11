@@ -94,9 +94,10 @@ function view_footer($data = array())
             $count_un_read=' <i class="ace-icon fa fa-exclamation-triangle"></i> <span id="count_un_read"> '.$data_list_noti['count_un_read'].' Thông báo chưa đọc</span> ';
         }else{
             if($count_noti>0){
-                $count_un_read='<span id="count_un_read">Bạn không có thông báo nào</span>';
-            }else{
                 $count_un_read='<span id="count_un_read">Tất cả thông báo đã được đọc</span>';
+            }else{
+                $count_un_read='<span id="count_un_read">Bạn không có thông báo nào</span>';
+
             }
         }
         $hidden_div='';
