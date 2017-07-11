@@ -107,7 +107,7 @@ function view_footer($data = array())
                 if($row_noti['status']!=1){
                     $row_color='background-color: #edf2fa;';
                 }
-//                $date_noti = date("d-m-Y H:i:s", strtotime($row_noti['created']));
+                $date_show = date("d-m-Y H:i:s", strtotime($row_noti['created']));
                 $date_noti =timeAgo($row_noti['created']);
                 $list_notification.='
                             <li style="'.$row_color.'">
@@ -116,7 +116,7 @@ function view_footer($data = array())
 													<span class="msg-title">
 														'.$row_noti['name'].'
 													</span>
-													<span class="msg-time timeago">
+													<span title="'.$date_show.'" class="msg-time timeago">
 														<i class="ace-icon fa fa-clock-o"></i> <span> '.$date_noti.' </span>
 													</span>
 												</span>
