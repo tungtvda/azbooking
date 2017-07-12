@@ -290,9 +290,9 @@ if (isset($_POST['name_customer'])) {
         curl_setopt($ch, CURLOPT_POSTFIELDS, $string_info_booking);
 
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-       echo $res = curl_exec($ch);
+        $res = curl_exec($ch);
         curl_close($ch);
-        exit;
+
         if ($res === 0) {
             echo "<script>alert('Đặt tour thất bại, bạn vui lòng thử lại')</script>";
         } else {
@@ -676,10 +676,10 @@ if (isset($_POST['name_customer'])) {
 </div>
 </body>
 </html>';
-                SendMail('info@mixtourist.com.vn', $message, $subject);
+//                SendMail('info@mixtourist.com.vn', $message, $subject);
 //                SendMail('tungtv.soict@gmail.com', $message, 'Azbooking.vn – Xác nhận đặt tour');
-                SendMail($email, $message, 'Azbooking.vn – Xác nhận đặt tour');
-                redict($link_chitiet_don_hang);
+//                SendMail($email, $message, 'Azbooking.vn – Xác nhận đặt tour');
+//                redict($link_chitiet_don_hang);
             }
 
         }
