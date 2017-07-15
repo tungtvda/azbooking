@@ -292,17 +292,19 @@ if (isset($_POST['name_customer'])) {
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $res = curl_exec($ch);
         curl_close($ch);
-
         if ($res === 0) {
             echo "<script>alert('Đặt tour thất bại, bạn vui lòng thử lại')</script>";
         } else {
+            $array_res=json_decode($res,true);
+            $code_res=$array_res['code_booking'];
+            $id_booking_res=$array_res['id_booking'];
             if ($data['detail'][0]->so_cho != 0 && $data['detail'][0]->so_cho != '') {
                 $array_tour = (array)$data['detail'][0];
                 $new_tour = new tour($array_tour);
                 $new_tour->so_cho = $data['detail'][0]->so_cho - $total_num_nguoi;
                 tour_update($new_tour);
             }
-            $code_booking = $res;
+            $code_booking = $code_res;
             $new = new booking_tour();
             $new->code_booking = $code_booking;
             $new->tour_id = $data['detail'][0]->id;
@@ -327,6 +329,7 @@ if (isset($_POST['name_customer'])) {
             $data_detail_booking = booking_tour_getByTop('1', 'code_booking="' . $code_booking . '"', 'id desc');
             if (count($data_detail_booking) > 0) {
                 $link_chitiet_don_hang = SITE_NAME . '/don-hang?id_booking=' . _return_mc_encrypt($data_detail_booking[0]->id) . '&code_booking=' . _return_mc_encrypt($code_booking);
+                $link_chitiet_don_hang_tiepthi = SITE_NAME . '/tiep-thi-lien-ket/booking-detail/?id_booking=' .$id_booking_res . '&code_booking=' . _return_mc_encrypt($code_booking);
                 $data_danhmuc_1_detail = danhmuc_1_getById($data['detail'][0]->DanhMuc1Id);
                 $data_danhmuc_2_detail = danhmuc_2_getById($data['detail'][0]->DanhMuc2Id);
                 $name_url_dm1_detail = '';
@@ -419,8 +422,9 @@ if (isset($_POST['name_customer'])) {
 
                 $data_tour[0] = $data['detail'][0];
                 $message = "";
+                $message_tiepthi = "";
                 $subject = "Azbooking.vn – Thông báo đặt tour từ khách hàng";
-                $message .= '<!DOCTYPE html>
+                $message_tiepthi=$message .= '<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -448,8 +452,8 @@ if (isset($_POST['name_customer'])) {
 
     <main style="float: left; width: 100%" class="main-content">
         <div class="fullwidth-block">
-            <div style="width: 100%;" class="container" class="container">
-                <h3 style="font-weight: 600;
+            <div style="width: 100%;" class="container" class="container">';
+                $message .= '<h3 style="font-weight: 600;
   font-size: 18px;
   border-bottom: 3px solid #0091EA;
   color: #0091ea;
@@ -464,11 +468,30 @@ if (isset($_POST['name_customer'])) {
                         đơn hàng <a href="' . $link_chitiet_don_hang . '" style="color: #0091ea;">"' . $code_booking . '"</a> của quý khách đặt ngày <span
                                 style="color: #0091ea;">' . date('d-m-Y H:i:s', strtotime(_returnGetDateTime())) . '</span>.
                         Chúng tôi sẽ gửi thông báo và liên hệ với quý khách trong thới gian sớm nhất, Xin cảm ơn!.</br>
-
                     </p>
                 </div>
-                <p style="text-align: center;"><a href="' . $link_chitiet_don_hang . '" style="text-decoration: none;color: #ffffff; background-color: #f36f21;padding:10px 10px">"Thông tin đơn hàng"</a></p>
-                <p> Dưới đây là thông tin đặt tour:</p>
+                <p style="text-align: center;"><a href="' . $link_chitiet_don_hang . '" style="text-decoration: none;color: #ffffff; background-color: #f36f21;padding:10px 10px">"Thông tin đơn hàng"</a></p>';
+                if(isset($array_res['user']['user_name'])&&$array_res['user']['user_name']!=''){
+                    $message_tiepthi.='<h3 style="font-weight: 600;
+  font-size: 18px;
+  border-bottom: 3px solid #0091EA;
+  color: #0091ea;
+  line-height: 1.3em;
+  margin-top: 0;
+  line-height: 58px;
+  z-index: 9;
+  text-transform: uppercase;
+  text-align: center;" class="title_index">Chào ' . $array_res['user']['user_name'] . '!</h3>
+                <div style="float: left;width: 100%;" class="col-xs-12 row">
+                    <p style="font-weight: bold;line-height: 25px;">Khách hàng <span style="color: #0091ea;">'.$name_customer.'</span>  vừa đặt
+                        đơn hàng <a href="' . $link_chitiet_don_hang_tiepthi . '" style="color: #0091ea;">"' . $code_booking . '"</a> được gắn mã tiếp thị liên kết của bạn.
+                        Bạn hãy truy cập thông tin đơn hàng để theo dõi tiến trình và nhận hoa hồng</br>
+                    </p>
+                </div>
+                <p style="text-align: center;"><a href="' . $link_chitiet_don_hang_tiepthi . '" style="text-decoration: none;color: #ffffff; background-color: #f36f21;padding:10px 10px">"Thông tin đơn hàng"</a></p>';
+                }
+
+                $thongtin_dh='<p> Dưới đây là thông tin đặt tour:</p>
                 <div class="row" style="float: left; width: 100%; display: inline">
                     <div class="col-md-6 col-sm-6 col-xs-12" style="float: left;width: 47%;padding-right: 10px;">
                         <h6 style="font-size: 16px;
@@ -676,10 +699,15 @@ if (isset($_POST['name_customer'])) {
 </div>
 </body>
 </html>';
-//                SendMail('info@mixtourist.com.vn', $message, $subject);
+                $message .= $thongtin_dh;
+                $message_tiepthi .= $thongtin_dh;
+                SendMail('info@mixtourist.com.vn', $message, $subject);
 //                SendMail('tungtv.soict@gmail.com', $message, 'Azbooking.vn – Xác nhận đặt tour');
-//                SendMail($email, $message, 'Azbooking.vn – Xác nhận đặt tour');
-//                redict($link_chitiet_don_hang);
+                if(isset($array_res['user']['user_email'])&&$array_res['user']['user_email']!=''){
+                    SendMail($array_res['user']['user_email'], $message_tiepthi, 'Azbooking.vn – Thông báo đơn hàng tiếp thị liên kết');
+                }
+                SendMail($email, $message, 'Azbooking.vn – Xác nhận đặt tour');
+                redict($link_chitiet_don_hang);
             }
 
         }
