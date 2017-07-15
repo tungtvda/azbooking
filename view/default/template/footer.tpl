@@ -1448,6 +1448,7 @@
     function show_date_format() {
         $('.datepicker').datepicker({
             format: 'dd/mm/yyyy',
+            minDate: '0',
             startDate: '-3d'
         });
     }
