@@ -3554,6 +3554,8 @@ footer .btn {
 .card .title {
   margin-top: 0;
   margin-bottom: 5px;
+  color: #0091ea;
+  font-weight: bold;
 }
 .card .card-image {
   height: 60%;
@@ -3656,6 +3658,7 @@ footer .btn {
   line-height: 22px;
   color: #999999;
   font-size: 12px;
+  width: 100%;
 }
 .card .card-footer .stats .material-icons {
   position: relative;
@@ -3730,6 +3733,7 @@ footer .btn {
 
 .card-stats .title {
   margin: 0;
+  margin-bottom: 20px;
 }
 .card-stats .card-header {
   float: left;
@@ -5078,4 +5082,12 @@ footer .btn {
     margin-left: -20px;
     margin-right: -20px;
   }
+}
+.logo img{
+  width: 150px;
+}
+.count_right{
+  float: right;
+  color: #e53935;
+  font-weight: bold;
 }
