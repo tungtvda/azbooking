@@ -35,6 +35,20 @@ function show_header($title,$description,$keyword,$data1=array())
     }
     view_header($data);
 }
+function show_header_tiep_thi($title,$description,$keyword,$data1=array())
+{
+    $data=array();
+    $data['Title']=$title;
+    $data['Description']=$description;
+    $data['Keyword']=$keyword;
+    $data['config']=$data1['config'];
+    if (isset($data1['link_anh'])) {
+        $data['link_anh'] = $data1['link_anh'];
+    } else {
+        $data['link_anh'] = $data1['config'][0]->Logo;
+    }
+    view_header_tiep_thi($data);
+}
 function show_header2($title,$description,$keyword,$data1=array())
 {
     $data=array();
@@ -103,6 +117,14 @@ function show_menu($data1=array(),$active='trangchu')
     $data['danhmuc_menu']=danhmuc_1_getByTop('','id!=1 and tour_quoc_te=0','position asc');
     $data['danhmuc_menu_quocte']=danhmuc_1_getByTop('','id!=1 and tour_quoc_te=1','position asc');
     view_menu($data);
+}
+
+function show_sidebar_tiep_thi($data1=array(),$active='trangchu')
+{
+    $data=array();
+    $data['config']=$data1['config'];
+    $data['active']=$active;
+    view_sidebar_tiep_thi($data);
 }
 
 function show_banner($data1=array())

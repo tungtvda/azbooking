@@ -1,19 +1,22 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: HPcom
- * Date: 6/26/2017
- * Time: 7:53 PM
+ * User: tungtv
+ * Date: 11/10/14
+ * Time: 2:40 PM
  */
-
-//if (!defined('DIR')) require_once '../../config.php';
-//require_once DIR . '/controller/default/public.php';
-
-//if(isset($_SESSION['user_token'])){
-//    print_r($_SESSION['user_token']);
-//}
-//echo "</br>";
-
-if(isset($_COOKIE['user_token'])){
-    print_r(json_decode($_COOKIE['user_token'],true));
+if(!defined('SITE_NAME'))
+{
+    require_once '../../config.php';
 }
+
+require_once DIR.'/controller/default/public.php';
+$data['config']=config_getByTop(1,'','');
+
+$title='Hệ thống quản lý tiếp thị liên kết';
+$description='Hệ thống quản lý tiếp thị liên kết';
+$keyword='Hệ thống quản lý tiếp thị liên kết';
+show_header_tiep_thi($title,$description,$keyword,$data);
+show_sidebar_tiep_thi($data,'trangchu');
+show_tiepthi();
+
