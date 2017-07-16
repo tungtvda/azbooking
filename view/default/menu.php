@@ -95,3 +95,20 @@ function view_menu($data = array())
     }
     print_template($asign, 'menu');
 }
+
+function view_sidebar_tiep_thi($data = array())
+{
+    $asign = array();
+    $asign['name']=$data['config'][0]->Name;
+    $asign['Logo']=$data['config'][0]->Logo;
+
+    // active menu
+    $asign['trangchu_mn'] = ($data['active'] == 'trangchu') ? 'active' : '';
+    $asign['hoso_mn'] = ($data['active'] == 'hoso') ? 'active' : '';
+    $asign['donhang_mn'] = ($data['active'] == 'donhang') ? 'active' : '';
+    $asign['tour_mn'] = ($data['active'] == 'tour') ? 'active' : '';
+    $asign['tintuc_mn'] = ($data['active'] == 'tintuc') ? 'active' : '';
+    $asign['lienhe_mn'] = ($data['active'] == 'lienhe') ? 'active' : '';
+
+    print_template($asign, 'tiep_thi_sidebar');
+}
