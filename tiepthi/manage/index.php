@@ -18,5 +18,6 @@ $description='Hệ thống quản lý tiếp thị liên kết';
 $keyword='Hệ thống quản lý tiếp thị liên kết';
 show_header_tiep_thi($title,$description,$keyword,$data);
 show_sidebar_tiep_thi($data,'trangchu');
+show_navbar_tiep_thi($data);
 show_tiepthi();
 

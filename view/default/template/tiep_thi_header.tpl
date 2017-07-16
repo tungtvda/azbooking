@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8"/>
     <title>{Title}</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
+    <meta name="viewport" content="width=device-width"/>
     <meta name="description" content="{description}"/>
     <meta name="keywords" content="{keyword}"/>
     <!--FAVICONS-->
@@ -36,3 +38,4 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet'
           type='text/css'>
 </head>
+

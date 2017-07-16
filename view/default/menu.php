@@ -112,3 +112,10 @@ function view_sidebar_tiep_thi($data = array())
 
     print_template($asign, 'tiep_thi_sidebar');
 }
+
+function view_navbar_tiep_thi($data = array())
+{
+    $asign = array();
+    print_template($asign, 'tiep_thi_navbar');
+}
+

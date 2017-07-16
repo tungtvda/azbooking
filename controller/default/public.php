@@ -126,7 +126,11 @@ function show_sidebar_tiep_thi($data1=array(),$active='trangchu')
     $data['active']=$active;
     view_sidebar_tiep_thi($data);
 }
-
+function show_navbar_tiep_thi($data1=array())
+{
+    $data=array();
+    view_navbar_tiep_thi($data);
+}
 function show_banner($data1=array())
 {
     $data=array();

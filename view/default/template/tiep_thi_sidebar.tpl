@@ -20,31 +20,31 @@
                     </a>
                 </li>
                 <li class="active">
-                    <a rel="tooltip" data-original-title="Tiền hoa hồng" href="" style="background-color: #ffffff; box-shadow: none !important;">
+                    <a rel="tooltip" data-original-title="Tiền hoa hồng bạn đang có" href="" style="background-color: #ffffff; box-shadow: none !important;">
                         <p style=" font-size: 15px;font-weight: bold;; color: #e53935"> <img style="width: 60px" src="{SITE-NAME}/view/default/themes/assets/img/hoa_hong.png"> 10.000.000 vnđ</p>
                     </a>
                 </li>
-                <li class="{hoso_mn}>
+                <li class="{hoso_mn}">
                     <a href="{SITE-NAME}/tiep-thi-lien-ket/ho-so/">
                         <i class="fa fa-cogs "></i>
                         <p>Cài đặt tài khoản</p>
                     </a>
                 </li>
-                <li class="{donhang_mn}>
+                <li class="{donhang_mn}">
                     <a href="{SITE-NAME}/tiep-thi-lien-ket/don-hang/">
                         <i class="material-icons">content_paste</i>
                         <p>Danh sách đơn hàng</p>
                     </a>
                 </li>
                 <li class="{tour_mn}">
-                    <a href="table.html">
+                    <a href="{SITE-NAME}/tiep-thi-lien-ket/tour/">
                         <i class="fa fa-plane"></i>
                         <p>Danh sách tour</p>
                     </a>
                 </li>
 
                 <li cl>
-                    <a href="notifications.html">
+                    <a href="{SITE-NAME}/tiep-thi-lien-ket/thong-bao/">
                         <i class="material-icons text-gray">notifications</i>
                         <p>Thông báo</p>
                     </a>
