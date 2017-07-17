@@ -116,6 +116,126 @@ function view_sidebar_tiep_thi($data = array())
 function view_navbar_tiep_thi($data = array())
 {
     $asign = array();
+    $asign['name_module']=$data['name_module'];
+    $data_session=checkSession('', 1);
+    $asign['form_']='';
+    $count_un_read=0;
+    if(count($data_session)>0){
+        $array_check_noti = array(
+            'id'=>_return_mc_encrypt($data_session['id']),
+            'name'=>_return_mc_encrypt($data_session['name']),
+            'user_email'=>_return_mc_encrypt($data_session['user_email']),
+            'user_code'=>_return_mc_encrypt($data_session['user_code']),
+            'created'=>_return_mc_encrypt($data_session['created']),
+            'avatar'=>_return_mc_encrypt($data_session['avatar']),
+            'token_code'=>_return_mc_encrypt($data_session['token_code']),
+            'time_token'=>_return_mc_encrypt($data_session['time_token']),
+            'top_5'=>1,
+        );
+        $asign['form_']='<form style="display: none" action="" method="" id="form_noti">
+        <input name="noti_name" value="'._return_mc_encrypt(json_encode($array_check_noti)).'">
+        <input name="id" value="'._return_mc_encrypt($data_session['id']).'">
+        <input name="name" value="'._return_mc_encrypt($data_session['name']).'">
+        <input name="user_email" value="'._return_mc_encrypt($data_session['user_email']).'">
+        <input name="user_code" value="'._return_mc_encrypt($data_session['user_code']).'">
+        <input name="created" value="'._return_mc_encrypt($data_session['created']).'">
+        <input name="avatar" value="'._return_mc_encrypt($data_session['avatar']).'">
+        <input name="token_code" value="'._return_mc_encrypt($data_session['token_code']).'">
+        <input name="time_token" value="'._return_mc_encrypt($data_session['time_token']).'">
+        <input id="top_5" name="top_5" value="1">
+        <input id="page_noti" name="page" value="1">
+        </form>';
+        $list_noti= returnCURL($array_check_noti, SITE_NAME_MANAGE.'/return-list-notification.html');
+        $data_list_noti=json_decode($list_noti,true);
+        $count_noti=count($data_list_noti['data_noti']);
+        if(isset($data_list_noti['count_active'])&& $data_list_noti['count_active']>0){
+            if($data_list_noti['count_active']>100){
+                $data_list_noti['count_active']='100+';
+            }
+            $count_noti_string='<span class="notification">'.$data_list_noti['count_active'].'</span>';
+            $asign['coutn_mes_noti']='<span class="notification">'.$data_list_noti['count_active'].'</span>';
+        }else{
+            $count_noti_string='<span hidden class="notification"></span>';
+            $asign['coutn_mes_noti']='';
+        }
+        if(isset($data_list_noti['count_un_read'])&& $data_list_noti['count_un_read']>0){
+            $count_un_read=' <i class="ace-icon fa fa-exclamation-triangle"></i> <span id="count_un_read"> '.$data_list_noti['count_un_read'].' Thông báo chưa đọc</span> ';
+        }else{
+            if($count_noti>0){
+                $count_un_read='<span id="count_un_read">Tất cả thông báo đã được đọc</span>';
+            }else{
+                $count_un_read='<span id="count_un_read">Bạn không có thông báo nào</span>';
+
+            }
+        }
+        $hidden_div='';
+        $list_notification='';
+        if($count_noti>0){
+            foreach($data_list_noti['data_noti'] as $row_noti){
+                $row_color='';
+                if($row_noti['status']!=1){
+                    $row_color='background-color: #edf2fa;';
+                }
+                $date_show = date("d-m-Y H:i:s", strtotime($row_noti['created']));
+                $date_noti =timeAgo($row_noti['created']);
+                $list_notification.='
+                            <li style="'.$row_color.'">
+                                <a href="'.SITE_NAME.'/'.$row_noti['link'].'">
+												<span class="msg-body">
+													<span class="msg-title">
+														'.$row_noti['name'].'
+													</span>
+													<span title="'.$date_show.'" class="msg-time timeago">
+														<i class="ace-icon fa fa-clock-o"></i> <span> '.$date_noti.' </span>
+													</span>
+												</span>
+                                </a>
+                                <a title="Chi tiết thông báo"
+                                   href="'.SITE_NAME.'/'.$row_noti['link'].'"
+                                   style="position: absolute;right: 0%;bottom: 5%; "><i
+                                            style="color:#4a96d9 !important;"
+                                            class="ace-icon fa fa-hand-o-right"></i></a>
+                            </li>
+                            ';
+            }
+        }else{
+            $hidden_div='hidden';
+        }
+        $scroll='';
+        if($count_noti>=3){
+            $scroll='scroll_noti';
+        }
+        $asign['content_user']='<div class="div_content_noti">
+                        <div class="dropdown-noti">
+                            <a class="notification_menu" data-toggle="dropdown-noti">
+                                <i class="icon_glo_noti ace-icon fa fa-globe icon-animated-bell color_white fa-2x"></i>
+                                '.$count_noti_string.'
+                            </a>
+                            <div class="dropdown-content-noti">
+                                <p class="dropdown-header">'.$count_un_read.'</p>
+                                <div '.$hidden_div.' class="content_ul_li '.$scroll.'">
+                                    <ul style="    padding: 0px;" class=" dropdown-navbar navbar-pink ul_noti">';
+        $asign['content_user'].= $list_notification;
+        $asign['content_user'].='</ul> </div>
+                                <p '.$hidden_div.' class="dropdown-footer">
+                                    <a href="'.SITE_NAME.'/tiep-thi-lien-ket/thong-bao/"> Xem tất cả <i class="ace-icon fa fa-arrow-right"></i></a></p>
+                            </div>
+                        </div>';
+        $avatar=$data_session['avatar'];
+        $asign['content_user'].='<div class="dropdown">
+                            <a class="user_profile" data-toggle="dropdown">
+                                <img class="nav-user-photo" title="'.$data_session['name'].'" alt="'.$data_session['name'].'"
+                                     src="'.$avatar.'"><span
+                                        class="user-info"><small>Xin chào,</small>'.$data_session['name'].'</span><i
+                                        class="ace-icon fa fa-caret-down color_white" style="margin-left: 10px"></i></a>
+                            <div class="dropdown-content">
+                            <a href="'.SITE_NAME.'/tiep-thi-lien-ket/ho-so/"><i class="fa fa-cogs "></i> Cài đặt tài khoản</a>
+                            <a href="'.SITE_NAME.'/tiep-thi-lien-ket/"><i class="fa fa-share-alt "></i> Tiếp thị liên kết</a>
+                            <a href="'.SITE_NAME.'/tiep-thi-lien-ket/dang-xuat/"><i class="fa fa-sign-out "></i> Đăng xuất</a>
+                            </div>
+                        </div>
+                    </div>';
+    }
     print_template($asign, 'tiep_thi_navbar');
 }
 

@@ -8,18 +8,36 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{SITE-NAME}/tiep-thi-lien-ket/">Dashboard</a>
+                <a class="navbar-brand" href="javascript:void(0)">{name_module}</a>
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="material-icons">notifications</i>
-                            <span class="notification">5</span>
-                            <p class="hidden-lg hidden-md">Notifications</p>
+                            <i class="fa fa-globe"></i>
+                            {coutn_mes_noti}
+                            <p class="hidden-lg hidden-md">Thông báo</p>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Mike John responded to your email</a></li>
+                            <li style="'.$row_color.'">
+                                <a href="">
+												<span class="msg-body">
+													<span class="msg-title">
+														tungtv
+													</span>
+													<span title="" class="msg-time timeago">
+														<i class="ace-icon fa fa-clock-o"></i> <span> 120-023-232 </span>
+													</span>
+                                                    <span class="msg_right_icon">
+                                                        <i class="ace-icon fa fa-hand-o-right"></i>
+                                                    </span>
+
+												</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"> Mike John responded to your email </a>
+                            </li>
                             <li><a href="#">You have 5 new tasks</a></li>
                             <li><a href="#">You're now friend with Andrew</a></li>
                             <li><a href="#">Another Notification</a></li>
@@ -27,10 +45,6 @@
                         </ul>
                     </li>
                     <li>
-                        <!--<a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="material-icons">person</i>
-                            <p class="hidden-lg hidden-md">Profile</p>
-                        </a>-->
                         <a  href="#pablo" style="padding-top: 1px; padding-bottom: 1px" class="user_profile dropdown-toggle" data-toggle="dropdown">
                             <img class="nav-user-photo" title="Trần Văn Tùng"  alt="Trần Văn Tùng"
                                                                             src="http://localhost/manage_mix/view/default/themes/uploads/users/tungtvsoictgmailcom/1487293606.jpg"><span
