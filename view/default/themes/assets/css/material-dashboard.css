@@ -670,7 +670,7 @@ h2.title {
   transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
 }
 .main-panel > .content {
-  margin-top: 70px;
+  margin-top: 85px;
   padding: 30px 15px;
   min-height: calc(100% - 123px);
 }
@@ -2904,9 +2904,10 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 }
 .navbar .notification {
   position: absolute;
-  top: 5px;
+  top: 2px;
   border: 1px solid #FFF;
-  right: 10px;
+  /*right: 10px;*/
+  left: 20px;
   font-size: 9px;
   background: #f44336;
   color: #FFFFFF;
@@ -3359,6 +3360,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
   }
   .navbar .navbar-brand {
     height: 50px;
+    font-size: 15px;
     padding: 10px 15px;
   }
   .navbar .navbar-nav > li > a {
@@ -5090,6 +5092,10 @@ footer .btn {
     font-size: 20px;
     margin-right: 10px;
   }
+  .breadcrumbs{
+    margin-top: 60px;
+    width: 96%;
+  }
 }
 @media (min-width: 768px) {
   .navbar > .container-fluid .navbar-brand {
@@ -5154,4 +5160,23 @@ footer .btn {
 }
 .user-info small {
   display: block;
+}
+.msg-body {
+  display: block;
+  line-height: 20px;
+  white-space: normal;
+  vertical-align: middle;
+  /* margin-left: 50px; */
+}
+.msg-title {
+  display: block;
+  line-height: 14px;
+  margin-bottom: 5px;
+}
+.msg-time {
+  display: inline-block;
+  font-size: 11px;
+}
+.msg_right_icon{
+  float: right;
 }

@@ -16,6 +16,7 @@ $data['config']=config_getByTop(1,'','');
 $title='Hệ thống quản lý tiếp thị liên kết';
 $description='Hệ thống quản lý tiếp thị liên kết';
 $keyword='Hệ thống quản lý tiếp thị liên kết';
+$data['name_module']='Dashboard';
 show_header_tiep_thi($title,$description,$keyword,$data);
 show_sidebar_tiep_thi($data,'trangchu');
 show_navbar_tiep_thi($data);

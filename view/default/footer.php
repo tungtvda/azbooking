@@ -121,14 +121,13 @@ function view_footer($data = array())
 														<i class="ace-icon fa fa-clock-o"></i> <span> '.$date_noti.' </span>
 													</span>
 												</span>
-                                </a>`
+                                </a>
                                 <a title="Chi tiết thông báo"
                                    href="'.SITE_NAME.'/'.$row_noti['link'].'"
                                    style="position: absolute;right: 0%;bottom: 5%; "><i
                                             style="color:#4a96d9 !important;"
                                             class="ace-icon fa fa-hand-o-right"></i></a>
-                            </li>
-                            ';
+                            </li>';
             }
         }else{
             $hidden_div='hidden';
