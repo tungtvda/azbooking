@@ -120,6 +120,7 @@ function view_navbar_tiep_thi($data = array())
     $data_session=checkSession('', 1);
     $asign['form_']='';
     $count_un_read=0;
+    $asign['user-info']='';
     if(count($data_session)>0){
         $array_check_noti = array(
             'id'=>_return_mc_encrypt($data_session['id']),
@@ -153,9 +154,9 @@ function view_navbar_tiep_thi($data = array())
                 $data_list_noti['count_active']='100+';
             }
             $count_noti_string='<span class="notification">'.$data_list_noti['count_active'].'</span>';
-            $asign['coutn_mes_noti']='<span class="notification">'.$data_list_noti['count_active'].'</span>';
+            $asign['coutn_mes_noti']='<span class="notification" id="count_notification">'.$data_list_noti['count_active'].'</span>';
         }else{
-            $count_noti_string='<span hidden class="notification"></span>';
+            $count_noti_string='<span hidden class="notification" id="count_notification"></span>';
             $asign['coutn_mes_noti']='';
         }
         if(isset($data_list_noti['count_un_read'])&& $data_list_noti['count_un_read']>0){
@@ -178,9 +179,8 @@ function view_navbar_tiep_thi($data = array())
                 }
                 $date_show = date("d-m-Y H:i:s", strtotime($row_noti['created']));
                 $date_noti =timeAgo($row_noti['created']);
-                $list_notification.='
-                            <li style="'.$row_color.'">
-                                <a href="'.SITE_NAME.'/'.$row_noti['link'].'">
+                $list_notification.=' <li style="'.$row_color.'" class="item_list_noti" style="">
+                                    <a href="'.SITE_NAME.'/'.$row_noti['link'].'>
 												<span class="msg-body">
 													<span class="msg-title">
 														'.$row_noti['name'].'
@@ -188,23 +188,28 @@ function view_navbar_tiep_thi($data = array())
 													<span title="'.$date_show.'" class="msg-time timeago">
 														<i class="ace-icon fa fa-clock-o"></i> <span> '.$date_noti.' </span>
 													</span>
-												</span>
-                                </a>
-                                <a title="Chi tiết thông báo"
-                                   href="'.SITE_NAME.'/'.$row_noti['link'].'"
-                                   style="position: absolute;right: 0%;bottom: 5%; "><i
-                                            style="color:#4a96d9 !important;"
-                                            class="ace-icon fa fa-hand-o-right"></i></a>
-                            </li>
-                            ';
+                                                    <span class="msg_right_icon">
+                                                        <i class="ace-icon fa fa-hand-o-right"></i>
+                                                    </span></span>
+                                    </a>
+                                </li>';
+            }
+            if($count_noti>=5){
+                $list_notification.=' <li class="item_list_noti">
+                                    <a style="text-align: center" href="'.SITE_NAME.'/tiep-thi-lien-ket/thong-bao/">Xem tất cả <i class="ace-icon fa fa-arrow-right"></i></a>
+                                </li>';
             }
         }else{
-            $hidden_div='hidden';
+            $list_notification=' <li class="item_list_noti" style="">
+                                    <a >Bạn không có thông báo nào</a>
+                                </li>';
         }
+        $asign['list_notification']=$list_notification;
         $scroll='';
         if($count_noti>=3){
             $scroll='scroll_noti';
         }
+
         $asign['content_user']='<div class="div_content_noti">
                         <div class="dropdown-noti">
                             <a class="notification_menu" data-toggle="dropdown-noti">
@@ -222,19 +227,19 @@ function view_navbar_tiep_thi($data = array())
                             </div>
                         </div>';
         $avatar=$data_session['avatar'];
-        $asign['content_user'].='<div class="dropdown">
-                            <a class="user_profile" data-toggle="dropdown">
-                                <img class="nav-user-photo" title="'.$data_session['name'].'" alt="'.$data_session['name'].'"
-                                     src="'.$avatar.'"><span
-                                        class="user-info"><small>Xin chào,</small>'.$data_session['name'].'</span><i
-                                        class="ace-icon fa fa-caret-down color_white" style="margin-left: 10px"></i></a>
-                            <div class="dropdown-content">
-                            <a href="'.SITE_NAME.'/tiep-thi-lien-ket/ho-so/"><i class="fa fa-cogs "></i> Cài đặt tài khoản</a>
-                            <a href="'.SITE_NAME.'/tiep-thi-lien-ket/"><i class="fa fa-share-alt "></i> Tiếp thị liên kết</a>
-                            <a href="'.SITE_NAME.'/tiep-thi-lien-ket/dang-xuat/"><i class="fa fa-sign-out "></i> Đăng xuất</a>
-                            </div>
-                        </div>
-                    </div>';
+        $asign['user_info']='<li> <a href="#pablo" style="padding-top: 1px; padding-bottom: 1px"
+                           class="user_profile dropdown-toggle" data-toggle="dropdown">
+                            <img class="nav-user-photo" title="'.$data_session['name'].'" alt="'.$data_session['name'].'"
+                                 src="'.$avatar.'"><span
+                                    class="user-info"><small>Xin chào,</small>'.$data_session['name'].'</span><i
+                                    class="ace-icon fa fa-caret-down color_white"
+                                    style="margin-left: 10px; float:none"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="'.SITE_NAME.'/tiep-thi-lien-ket/ho-so/"><i class="fa fa-cogs "></i> Cài đặt tài khoản</a></li>
+                            <li><a href="'.SITE_NAME.'/tiep-thi-lien-ket/dang-xuat/"><i class="fa fa-sign-out "></i> Đăng xuất</a></li>
+                        </ul>
+                    </li>';
+
     }
     print_template($asign, 'tiep_thi_navbar');
 }

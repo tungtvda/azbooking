@@ -5164,7 +5164,7 @@ footer .btn {
 .msg-body {
   display: block;
   line-height: 20px;
-  white-space: normal;
+  /*white-space: normal;*/
   vertical-align: middle;
   /* margin-left: 50px; */
 }
@@ -5179,4 +5179,7 @@ footer .btn {
 }
 .msg_right_icon{
   float: right;
+}
+.item_list_noti{
+  border-bottom: 1px dotted #e5e5e5;
 }
