@@ -37,6 +37,9 @@ function show_header($title,$description,$keyword,$data1=array())
 }
 function show_header_tiep_thi($title,$description,$keyword,$data1=array())
 {
+    if(!isset($_SESSION['user_token'])){
+        redict(SITE_NAME.'/tiep-thi-lien-ket/thanh-vien/');
+    }
     $data=array();
     $data['Title']=$title;
     $data['Description']=$description;
@@ -147,6 +150,11 @@ function show_footer($data1=array())
     $data['info']=info_mix_getByTop('','','id asc');
     $data['danhmuc_menu_footer']=danhmuc_1_getByTop('','id!=1','position asc');
     view_footer($data);
+}
+function show_footer_tiep_thi($data1=array())
+{
+    $data=array();
+    view_footer_tiep_thi($data);
 }
 function  show_left_danhmuc($data1=array())
 {

@@ -73,7 +73,7 @@ if(isset($_POST['username_login'])&&isset($_POST['password_login'])){
                 $check_login['user_sec']['rememberme']=_return_mc_encrypt(0,ENCRYPTION_KEY,1);
                 $_SESSION['user_token']=json_encode($check_login['user_sec']);
             }
-            redict(SITE_NAME.'/tiep-thi-lien-ket/danh-sach-don-hang/');
+            redict(SITE_NAME.'/tiep-thi-lien-ket/');
         }else{
             if(isset($_POST['rememberme'])){
                 $memory=1;

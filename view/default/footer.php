@@ -181,3 +181,9 @@ function view_footer($data = array())
 
     print_template($asign, 'footer');
 }
+
+function view_footer_tiep_thi($data = array()){
+    $asign = array();
+    $asign['site_name_manage'] = SITE_NAME_MANAGE;
+    print_template($asign, 'tiep_thi_footer');
+}
