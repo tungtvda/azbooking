@@ -24,6 +24,18 @@ function show_tiepthi($data = array())
     );
     $list_noti= returnCURL($array_check_noti, SITE_NAME_MANAGE.'/azbooking-get-dashboard.html');
     $data_list_noti=json_decode($list_noti,true);
+    $asign['moi']=0;
+    $asign['ket_thuc']=0;
+    $asign['huy']=0;
+    if(isset($data_list_noti['moi'])){
+        $asign['moi']=$data_list_noti['moi'];
+    }
+    if(isset($data_list_noti['ket_thuc'])){
+        $asign['ket_thuc']=$data_list_noti['ket_thuc'];
+    }
+    if(isset($data_list_noti['huy'])){
+        $asign['huy']=$data_list_noti['huy'];
+    }
     print_template($asign, 'tiep_thi');
 }
 
