@@ -30,8 +30,8 @@ $array_check_noti = array(
     'avatar'=>_return_mc_encrypt($data_session['avatar']),
     'token_code'=>_return_mc_encrypt($data_session['token_code']),
     'time_token'=>_return_mc_encrypt($data_session['time_token']),
-    'current'=>1,
-    'pagesize'=>2,
+    'page'=>$current,
+    'pagesize'=>10,
     'type'=>$type,
     'site_name'=>SITE_NAME,
 );
@@ -54,6 +54,8 @@ $data['danhsach']=array();
 $data['PAGING'] ='';
 $list_noti= returnCURL($array_check_noti, SITE_NAME_MANAGE.'/azbooking-get-list-booking.html');
 $data_list_noti=json_decode($list_noti,true);
+//print_r($data_list_noti);
+//exit;
 if(isset($data_list_noti['danhsach'])){
     $data['danhsach']=$data_list_noti['danhsach'];
 }
