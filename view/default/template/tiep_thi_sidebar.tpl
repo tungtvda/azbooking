@@ -31,13 +31,13 @@
                     </a>
                 </li>
                 <li class="{donhang_mn}">
-                    <a href="{SITE-NAME}/tiep-thi-lien-ket/don-hang/">
+                    <a href="{SITE-NAME}/tiep-thi-lien-ket/don-hang">
                         <i class="material-icons">content_paste</i>
                         <p>Danh sách đơn hàng</p>
                     </a>
                 </li>
                 <li class="{tour_mn}">
-                    <a href="{SITE-NAME}/tiep-thi-lien-ket/tour/">
+                    <a href="{SITE-NAME}/tiep-thi-lien-ket/tour">
                         <i class="fa fa-plane"></i>
                         <p>Danh sách tour</p>
                     </a>

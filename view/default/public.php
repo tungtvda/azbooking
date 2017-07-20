@@ -28,6 +28,12 @@ function print_template($data=array(),$tem)
 
 function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberformat=false)
 {
+    $id_user='';
+    if(isset($_SESSION['user_token'])){
+        $data_session=checkSession('', 1);
+        $id_user=_return_mc_encrypt($data_session['id']);
+    }
+
     if(count($ListItem)>0)
     {
         $array_var=get_object_vars($ListItem[0]);
@@ -93,8 +99,14 @@ function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberfor
                     $show_sales='';
                     $price_sales=number_format((int)$item->price_sales,0,",",".").' vnđ';
                 }
+                if($item->tour_quoc_te==1){
+                    $ft->assign('loai_tour','Tour quốc tế');
+                }else{
+                    $ft->assign('loai_tour','Tour trong nước');
+                }
                 $ft->assign('show_sales',$show_sales);
                 $ft->assign('price_sales',$price_sales);
+                $ft->assign('dem',$dem);
                 $ft->assign('link_booking',link_booking($item));
                 $songuoi='';
                 if($item->so_cho!=''){
@@ -108,6 +120,13 @@ function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberfor
                 }
                 else{
                     $ft->assign('price_format',number_format((int)$item->price,0,",",".").' vnđ');
+                }
+
+                if($item->price_tiep_thi==0||$item->price_tiep_thi==''){
+                    $ft->assign('price_tiep_thi','');
+                }
+                else{
+                    $ft->assign('price_tiep_thi',number_format((int)$item->price_tiep_thi,0,",",".").' vnđ');
                 }
 
                 if($item->price==0||$item->price==''){
@@ -135,7 +154,10 @@ function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberfor
                 if(count($data_dm2)==0){
                     redict(SITE_NAME);
                 }
-                $ft->assign('link',link_tourdetail($item,$data_dm[0]->name_url,$data_dm2[0]->name_url));
+                $link=link_tourdetail($item,$data_dm[0]->name_url,$data_dm2[0]->name_url);
+                    ;
+                $ft->assign('link',$link);
+                $ft->assign('link_tiep_thi',$link.'/'.$id_user);
                 $key_id='';
                 $mes_='Đã hết hạn';
                 $date_count='';

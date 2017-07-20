@@ -44,9 +44,9 @@
         <div class="breadcrumbs" id="breadcrumbs">
             <ul class="breadcrumb">
                 <li>
-                    <i class="ace-icon fa fa-home home-icon"></i>
-                    <a href="{SITE-NAME}/tiep-thi-lien-ket/"> Dashboard</a>
+                    <i class="ace-icon fa fa-home home-icon"></i> <a href="{SITE-NAME}/tiep-thi-lien-ket/"> Dashboard</a>
                 </li>
+                {breadcrumb}
             </ul><!-- /.breadcrumb -->
         </div>
     </nav>
