@@ -14,7 +14,7 @@ function show_tiepthi_donhang($data = array())
     $asign['danhsach'] = '';
     $asign['mess_null'] = '';
     if (count($data['danhsach']) > 0) {
-        $dem=0;
+        $dem=1;
         foreach ($data['danhsach'] as $row) {
             switch($row['status']){
                 case '1':
@@ -36,11 +36,15 @@ function show_tiepthi_donhang($data = array())
                     $status='<a class="btn btn-warning">Đang giao dịch</a>';
 
             }
+            $price_tiep_thi='';
+            if($row['price_tiep_thi']!=''){
+                $price_tiep_thi=number_format((int)$row['price_tiep_thi'],0,",",".").' vnđ';
+            }
             $asign['danhsach'] .= '<tr>
             <td >'.$dem.'</td>
             <td >'.$row['code_booking'].'</td>
             <td><a target="_blank" href="{link}">'.$row['name_tour'].'</a></td>
-            <td></td>
+            <td>'.$price_tiep_thi.'</td>
             <td>'.$status.'</td>
             <td>'._returnDateFormatConvert($row['created']).'</td>
 

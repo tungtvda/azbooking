@@ -7,14 +7,14 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="card card-stats">
                             <div class="card-header" data-background-color="orange">
-                                <a href="{SITE-NAME}/tiep-thi-lien-ket/dong-hang?type=1"><i class="fa fa-shopping-cart"></i></a>
+                                <a href="{SITE-NAME}/tiep-thi-lien-ket/don-hang?type=1"><i class="fa fa-shopping-cart"></i></a>
                             </div>
                             <div class="card-content">
-                                <a href="{SITE-NAME}/tiep-thi-lien-ket/dong-hang?type=1"><h3 class="title">{moi}</h3></a>
+                                <a href="{SITE-NAME}/tiep-thi-lien-ket/don-hang?type=1"><h3 class="title">{moi}</h3></a>
                             </div>
                             <div class="card-footer">
                                 <div style="color: #fb8c00" class="stats">
-                                    <a href="{SITE-NAME}/tiep-thi-lien-ket/dong-hang?type=1" style="color: #fb8c00"> <i class="fa fa-exclamation-triangle"></i> Đơn hàng đang giao dịch...</a>
+                                    <a href="{SITE-NAME}/tiep-thi-lien-ket/don-hang?type=1" style="color: #fb8c00"> <i class="fa fa-exclamation-triangle"></i> Đơn hàng đang giao dịch...</a>
                                 </div>
                             </div>
                         </div>
@@ -22,14 +22,14 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="card card-stats">
                             <div class="card-header" data-background-color="green">
-                                <a href="{SITE-NAME}/tiep-thi-lien-ket/dong-hang?type=2"><i class="fa fa-cart-plus"></i></a>
+                                <a href="{SITE-NAME}/tiep-thi-lien-ket/dong-han?type=2"><i class="fa fa-cart-plus"></i></a>
                             </div>
                             <div class="card-content">
-                                <a href="{SITE-NAME}/tiep-thi-lien-ket/dong-hang?type=2"> <h3 class="title">{ket_thuc}</h3></a>
+                                <a href="{SITE-NAME}/tiep-thi-lien-ket/dong-han?type=2"> <h3 class="title">{ket_thuc}</h3></a>
                             </div>
                             <div class="card-footer">
                                 <div class="stats">
-                                    <a href="{SITE-NAME}/tiep-thi-lien-ket/dong-hang?type=2" style="color:#43a047;"><i class="fa fa-check-square-o"></i> Đơn hàng đã giao dịch</a>
+                                    <a href="{SITE-NAME}/tiep-thi-lien-ket/don-hang?type=2" style="color:#43a047;"><i class="fa fa-check-square-o"></i> Đơn hàng đã giao dịch</a>
                                 </div>
                             </div>
                         </div>
@@ -37,14 +37,14 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="card card-stats">
                             <div class="card-header" data-background-color="red">
-                                <a href="{SITE-NAME}/tiep-thi-lien-ket/dong-hang?type=3"><i class="fa fa-cart-arrow-down "></i></a>
+                                <a href="{SITE-NAME}/tiep-thi-lien-ket/don-hang?type=3"><i class="fa fa-cart-arrow-down "></i></a>
                             </div>
                             <div class="card-content">
-                                <a href="{SITE-NAME}/tiep-thi-lien-ket/dong-hang?type=3"><h3 class="title">{huy}</h3></a>
+                                <a href="{SITE-NAME}/tiep-thi-lien-ket/don-hang?type=3"><h3 class="title">{huy}</h3></a>
                             </div>
                             <div class="card-footer">
                                 <div class="stats">
-                                    <a href="{SITE-NAME}/tiep-thi-lien-ket/dong-hang?type=3" style="color: #e53935"><i class="fa fa-window-close-o "></i> Đơn hàng đã hủy</a>
+                                    <a href="{SITE-NAME}/tiep-thi-lien-ket/don-hang?type=3" style="color: #e53935"><i class="fa fa-window-close-o "></i> Đơn hàng đã hủy</a>
                                 </div>
                             </div>
                         </div>
@@ -60,7 +60,7 @@
                             </div>
                             <div class="card-footer">
                                 <div class="stats">
-                                    <a href="" style="color: #00acc1">  <i class="fa fa-usd "></i> Tour tiếp thị liên kết</a>
+                                    <a href="{SITE-NAME}/tiep-thi-lien-ket/tour" style="color: #00acc1">  <i class="fa fa-usd "></i> Tour tiếp thị liên kết</a>
                                 </div>
                             </div>
                         </div>
