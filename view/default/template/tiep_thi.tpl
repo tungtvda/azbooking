@@ -14,7 +14,7 @@
                             </div>
                             <div class="card-footer">
                                 <div style="color: #fb8c00" class="stats">
-                                    <a href="{SITE-NAME}/tiep-thi-lien-ket/dong-hang?type=1" style="color: #fb8c00"> <i class="fa fa-exclamation-triangle"></i> Đơn hàng chờ phê duyệt...</a>
+                                    <a href="{SITE-NAME}/tiep-thi-lien-ket/dong-hang?type=1" style="color: #fb8c00"> <i class="fa fa-exclamation-triangle"></i> Đơn hàng đang giao dịch...</a>
                                 </div>
                             </div>
                         </div>
@@ -53,10 +53,10 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="card card-stats">
                             <div class="card-header" data-background-color="blue">
-                                <i class="fa fa-plane"></i>
+                                <a href="{SITE-NAME}/tiep-thi-lien-ket/tour"><i class="fa fa-plane"></i></a>
                             </div>
                             <div class="card-content">
-                                <h3 class="title">+245</h3>
+                                <a href="{SITE-NAME}/tiep-thi-lien-ket/tour"><h3 class="title">{count_tour}</h3></a>
                             </div>
                             <div class="card-footer">
                                 <div class="stats">
@@ -68,50 +68,72 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="card">
-                            <div class="card-header card-chart" data-background-color="green">
-                                <div class="ct-chart" id="dailySalesChart"></div>
+                            <div class="card-header " data-background-color="blue">
+                               <a href="{SITE-NAME}/tiep-thi-lien-ket/tour?type=1"><img src="{SITE-NAME}/view/default/themes/images/checked.png"></a>
                             </div>
                             <div class="card-content">
 
                             </div>
                             <div class="card-footer">
                                 <div class="stats">
-                                    <a href=""><h4 class="title"><i class="fa fa-plus-square-o"></i> Tour mới <span class="count_right">42</span></h4></a>
+                                    <a href="{SITE-NAME}/tiep-thi-lien-ket/tour?type=1"><h4 class="title"><i class="fa fa-check-square-o"></i> Tour Nổi bật <span class="count_right">{tour_noibat}</span></h4></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="card">
-                            <div class="card-header card-chart" data-background-color="red">
-                                <div class="ct-chart" id="completedTasksChart"></div>
+                            <div class="card-header " data-background-color="red">
+                                <a href="{SITE-NAME}/tiep-thi-lien-ket/tour?type=2"><img src="{SITE-NAME}/view/default/themes/images/badge.png"></a>
                             </div>
                             <div class="card-content">
                             </div>
                             <div class="card-footer">
                                 <div class="stats">
-                                    <a href=""> <h4 class="title"><i class="fa fa-arrow-circle-o-down"></i> Tour giảm giá <span class="count_right">42</span></h4></a>
+                                    <a href="{SITE-NAME}/tiep-thi-lien-ket/tour?type=2"> <h4 class="title"><i class="fa fa-arrow-circle-o-down"></i> Tour giảm giá <span class="count_right">{count_giangia}</span></h4></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="card">
-                            <div class="card-header card-chart" data-background-color="orange">
-                                <div class="ct-chart" id="emailsSubscriptionChart"></div>
+                            <div class="card-header" data-background-color="green">
+                                <a href="{SITE-NAME}/tiep-thi-lien-ket/tour?type=3"><img src="{SITE-NAME}/view/default/themes/images/takeoff-the-plane.png"></a>
+                            </div>
+                            <div class="card-content">
+
+                            </div>
+                            <div class="card-footer">
+                                <div class="stats">
+                                    <a href="{SITE-NAME}/tiep-thi-lien-ket/tour?type=3"><h4 class="title"><i class="material-icons">flight_takeoff</i> Tour quốc tế <span class="count_right">{count_quocte}</span></h4></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-header" data-background-color="orange">
+                                <a href="{SITE-NAME}/tiep-thi-lien-ket/tour?type=4"><img src="{SITE-NAME}/view/default/themes/images/plane-landing.png"></a>
                             </div>
                             <div class="card-content">
                             </div>
                             <div class="card-footer">
                                 <div class="stats">
-                                    <a href=""> <h4 class="title"><i class="fa fa-check-square-o"></i> Tour nổi bật <span class="count_right">42</span></h4></a>
+                                    <a href="{SITE-NAME}/tiep-thi-lien-ket/tour?type=4"> <h4 class="title"><i class="material-icons">flight_land</i> Tour trong nước <span class="count_right">{count_trongnuoc}</span></h4></a>
                                 </div>
                             </div>
 
                         </div>
                     </div>
+
+
+
+
+
+
+
                 </div>
             </div>
         </div>

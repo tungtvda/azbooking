@@ -702,7 +702,7 @@ h2.title {
   border: none;
   border-radius: 3px;
   position: relative;
-  padding: 12px 30px;
+  padding: 10px 10px;
   margin: 10px 1px;
   font-size: 12px;
   font-weight: 400;
@@ -2376,6 +2376,8 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
 }
 .table > thead > tr > th {
   padding-bottom: 4px;
+  color: #337ab7;
+  font-weight: bold;
 }
 .table .td-actions {
   display: flex;
@@ -3607,8 +3609,9 @@ footer .btn {
   box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
   margin: -20px 15px 0;
   border-radius: 3px;
-  padding: 15px;
+  padding: 5px;
   background-color: #999999;
+  text-align: center;
 }
 .card .card-header .title {
   color: #FFFFFF;
@@ -3683,8 +3686,8 @@ footer .btn {
   color: #999999;
 }
 .card img {
-  width: 100%;
-  height: auto;
+  /*width: 100%;*/
+  /*height: auto;*/
 }
 .card .category .material-icons {
   position: relative;

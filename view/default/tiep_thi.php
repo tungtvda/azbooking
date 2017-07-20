@@ -36,6 +36,11 @@ function show_tiepthi($data = array())
     if(isset($data_list_noti['huy'])){
         $asign['huy']=$data_list_noti['huy'];
     }
+    $asign['count_tour']=$data['count_tour'];
+    $asign['tour_noibat']=$data['tour_noibat'];
+    $asign['count_giangia']=$data['count_giangia'];
+    $asign['count_trongnuoc']=$data['count_trongnuoc'];
+    $asign['count_quocte']=$data['count_quocte'];
     print_template($asign, 'tiep_thi');
 }
 

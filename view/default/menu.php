@@ -241,6 +241,14 @@ function view_navbar_tiep_thi($data = array())
                     </li>';
 
     }
+    $asign['breadcrumb']='';
+    if(isset($data['breadcrumb'])){
+        $asign['breadcrumb']=$data['breadcrumb'];
+    }
+    $asign['breadcrumb']='';
+    if(isset($data['breadcrumb'])){
+        $asign['breadcrumb']=$data['breadcrumb'];
+    }
     print_template($asign, 'tiep_thi_navbar');
 }
 

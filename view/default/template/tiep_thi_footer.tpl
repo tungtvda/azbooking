@@ -87,6 +87,76 @@
             });
         }
     });
+    $('body').on('click','.copy_link_list', function () {
+        var id=$(this).attr('countId');
+        copyToClipboard(document.getElementById('value_key_'+id));
+        showNotification('top','right',2,'Link tiếp thị liên kết đã được copy');
+    });
+    function copyToClipboard(elem) {
+        // create hidden text element, if it doesn't already exist
+        var targetId = "_hiddenCopyText_";
+        var isInput = elem.tagName === "INPUT" || elem.tagName === "TEXTAREA";
+        var origSelectionStart, origSelectionEnd;
+        if (isInput) {
+            // can just use the original source element for the selection and copy
+            target = elem;
+            origSelectionStart = elem.selectionStart;
+            origSelectionEnd = elem.selectionEnd;
+        } else {
+            // must use a temporary form element for the selection and copy
+            target = document.getElementById(targetId);
+            if (!target) {
+                var target = document.createElement("textarea");
+                target.style.position = "absolute";
+                target.style.left = "-9999px";
+                target.style.top = "0";
+                target.id = targetId;
+                document.body.appendChild(target);
+            }
+            target.textContent = elem.textContent;
+        }
+        // select the content
+        var currentFocus = document.activeElement;
+        target.focus();
+        target.setSelectionRange(0, target.value.length);
+
+        // copy the selection
+        var succeed;
+        try {
+            succeed = document.execCommand("copy");
+        } catch(e) {
+            succeed = false;
+        }
+        // restore original focus
+        if (currentFocus && typeof currentFocus.focus === "function") {
+            currentFocus.focus();
+        }
+
+        if (isInput) {
+            // restore prior selection
+            elem.setSelectionRange(origSelectionStart, origSelectionEnd);
+        } else {
+            // clear temporary content
+            target.textContent = "";
+        }
+        return succeed;
+    }
+
+    function showNotification(from, align,color,mess){
+//        color = Math.floor((Math.random() * 4) + 1);
+        console.log(color);
+        $.notify({
+            icon: "notifications",
+            message: mess
+
+        },{
+            type: type[color],
+            timer: 4000,
+            placement: {
+                from: from,
+                align: align
+            }
+        });
+    }
 </script>
-<!-- Mirrored from demos.creative-tim.com/material-dashboard/examples/dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 15 Jul 2017 03:43:31 GMT -->
 </html>
