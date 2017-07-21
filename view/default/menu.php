@@ -109,7 +109,25 @@ function view_sidebar_tiep_thi($data = array())
     $asign['tour_mn'] = ($data['active'] == 'tour') ? 'active' : '';
     $asign['tintuc_mn'] = ($data['active'] == 'tintuc') ? 'active' : '';
     $asign['lienhe_mn'] = ($data['active'] == 'lienhe') ? 'active' : '';
-
+    $data_session=checkSession('', 1);
+    $array_check_noti = array(
+        'id'=>_return_mc_encrypt($data_session['id']),
+        'name'=>_return_mc_encrypt($data_session['name']),
+        'user_email'=>_return_mc_encrypt($data_session['user_email']),
+        'user_code'=>_return_mc_encrypt($data_session['user_code']),
+        'created'=>_return_mc_encrypt($data_session['created']),
+        'avatar'=>_return_mc_encrypt($data_session['avatar']),
+        'token_code'=>_return_mc_encrypt($data_session['token_code']),
+        'time_token'=>_return_mc_encrypt($data_session['time_token']),
+        'top_5'=>1,
+    );
+    $list_noti= returnCURL($array_check_noti, SITE_NAME_MANAGE.'/return-hoa-hong.html ');
+    $data_list_hoahong=json_decode($list_noti,true);
+    if(isset($data_list_hoahong['hoa_hong'])){
+        $asign['hoa_hong']=number_format((int)$data_list_hoahong['hoa_hong'],0,",",".").' vnđ';
+    }else{
+        $asign['hoa_hong']="0 vnđ";
+    }
     print_template($asign, 'tiep_thi_sidebar');
 }
 
