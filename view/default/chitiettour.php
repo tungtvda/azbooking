@@ -212,11 +212,10 @@ function show_chitiet_tour($data = array())
     $data_session=checkSession('', 1);
     $asign['div_tiep_thi']='';
     $asign['id_user']='';
+    if(isset($_GET['key'])){
+        $asign['id_user']='&key='._returnGetParamSecurity('key');
+    }
     if(count($data_session)>0 && $asign['price_tiep_thi']!='' && $asign['price_tiep_thi']>0){
-        if(isset($_GET['key'])){
-            $asign['id_user']='&key='.$_GET['key'];
-        }
-
         $link_tiep_thi=$asign['link'].'/'._return_mc_encrypt($data_session['id']);
         $asign['div_tiep_thi']='<div class="link_tiep_thi_lien_ket package-details-content">
                         <h3 class="title "><b>Tiếp thị liên kết</b>    <b style="color: red">(Tiền hoa hồng '.number_format($asign['price_tiep_thi'],0,",",".").' vnđ)</b></h3>
@@ -253,10 +252,7 @@ function show_chitiet_tour($data = array())
                         </div>
                     </div>';
 
-    }else{
-        $asign['id_user']='';
     }
-
     print_template($asign, 'chitiettour');
 }
 
