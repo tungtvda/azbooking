@@ -37,16 +37,25 @@ function show_tiepthi_donhang($data = array())
 
             }
             $price_tiep_thi='';
+            $xacnhan_tiep_thi='';
             if($row['price_tiep_thi']!=''){
                 $price_tiep_thi=number_format((int)$row['price_tiep_thi'],0,",",".").' vnđ';
+                if($row['status_tiep_thi']==1 && $row['confirm_admin_tiep_thi']!=0){
+                    $xacnhan_tiep_thi='<a class="btn btn-success">Đã xác nhận</a>';
+                }else{
+                    $xacnhan_tiep_thi='<a class="btn btn-warning">Đang chờ...</a>';
+                }
             }
+
             $asign['danhsach'] .= '<tr>
             <td >'.$dem.'</td>
-            <td >'.$row['code_booking'].'</td>
+            <td ><a href="'.SITE_NAME.'/tiep-thi-lien-ket/don-hang/chi-tiet?id='._return_mc_encrypt($row['id'], ENCRYPTION_KEY).'">'.$row['code_booking'].'</a></td>
             <td><a target="_blank" href="{link}">'.$row['name_tour'].'</a></td>
             <td>'.$price_tiep_thi.'</td>
+            <td>'.$xacnhan_tiep_thi.'</td>
             <td>'.$status.'</td>
             <td>'._returnDateFormatConvert($row['created']).'</td>
+            <td><a href="'.SITE_NAME.'/tiep-thi-lien-ket/don-hang/chi-tiet?id='._return_mc_encrypt($row['id'], ENCRYPTION_KEY).'"><i class="fa fa-eye"></i></a></td>
 
         </tr>
         ';

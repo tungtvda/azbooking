@@ -1,10 +1,10 @@
 jQuery(function ($) {
     site_name_manage = $('#site_name_manage').val();
     site_name = $('#site_name').val();
-    $('body').on("input",'#email_dangky', function () {
-        check_email();
-    });
-    $('body').on("keyup",'#email_dangky', function () {
+    //$('body').on("input",'#email_dangky', function () {
+    //    check_email();
+    //});
+    $('body').on("blur",'#email_dangky', function () {
         check_email();
     });
     function check_email(){
