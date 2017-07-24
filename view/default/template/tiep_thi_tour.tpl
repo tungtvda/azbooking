@@ -6,10 +6,27 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card">
-                            <div class="card-header" data-background-color="purple">
+                            <!--<div class="card-header" data-background-color="purple">
                                 <h4 class="title">{title_table}</h4>
-                            </div>
+                            </div>-->
                             <div class="card-content table-responsive">
+                                <ul  class="nav nav-pills">
+                                    <li class="{all}">
+                                        <a  href="{SITE-NAME}/tiep-thi-lien-ket/tour" >Danh sách tour</a>
+                                    </li>
+                                    <li class="{noi_bat}">
+                                        <a  href="{SITE-NAME}/tiep-thi-lien-ket/tour?type=1" >Tour nổi bật</a>
+                                    </li>
+                                    <li class="{giam_gia}">
+                                        <a  href="{SITE-NAME}/tiep-thi-lien-ket/tour?type=2" >Tour giảm giá</a>
+                                    </li>
+                                    <li class="{quoc_te}">
+                                        <a  href="{SITE-NAME}/tiep-thi-lien-ket/tour?type=3" >Tour quốc tế</a>
+                                    </li>
+                                    <li class="{trong_nuoc}">
+                                        <a  href="{SITE-NAME}/tiep-thi-lien-ket/tour?type=4" >Tour trong nước</a>
+                                    </li>
+                                </ul>
                                 <table class="table table-hover">
                                     <thead>
                                     <tr>

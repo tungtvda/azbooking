@@ -23,22 +23,27 @@ $data['current']=isset($_GET['page'])?$_GET['page']:'1';
 $data['pagesize']=10;
 $dk='price_tiep_thi!=""';
 $name_module='Danh sách tour';
+$data['active_tab']='all';
 switch($type){
     case '1':
         $dk .=' and promotion=1';
         $name_module='Danh sách tour nổi bật';
+        $data['active_tab']='noi_bat';
         break;
     case '2':
         $dk .=' and price_sales!=""';
         $name_module='Danh sách tour giảm giá';
+        $data['active_tab']='giam_gia';
         break;
     case '3':
         $dk .=' and tour_quoc_te=1';
         $name_module='Danh sách tour quốc tế';
+        $data['active_tab']='quoc_te';
         break;
     case '4':
         $dk .=' and tour_quoc_te=0';
         $name_module='Danh sách tour trong nước';
+        $data['active_tab']='trong_nuoc';
         break;
 }
 $link='/tiep-thi-lien-ket/tour?type='.$type;
@@ -52,7 +57,7 @@ $data['breadcrumb']="<li class='active'>Tour</li>";
 $title='Hệ thống quản lý tiếp thị liên kết';
 $description='Hệ thống quản lý tiếp thị liên kết';
 $keyword='Hệ thống quản lý tiếp thị liên kết';
-$data['name_module']='Tour';
+$data['name_module']=$name_module;
 $data['title_table']=$name_module;
 show_header_tiep_thi($title,$description,$keyword,$data);
 show_sidebar_tiep_thi($data,'tour');

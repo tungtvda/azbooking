@@ -65,6 +65,10 @@ function show_tiepthi_donhang($data = array())
         $asign['mess_null'] = 'Danh sách đơn hàng rỗng';
     }
     $asign['PAGING'] = $data['PAGING'];
+    $asign['all'] = ($data['active_tab'] == 'all') ? 'active' : '';
+    $asign['dang_giao_dich'] = ($data['active_tab'] == 'dang_giao_dich') ? 'active' : '';
+    $asign['da_giao_dich'] = ($data['active_tab'] == 'da_giao_dich') ? 'active' : '';
+    $asign['da_huy'] = ($data['active_tab'] == 'da_huy') ? 'active' : '';
     print_template($asign, 'tiep_thi_donhang');
 }
 
