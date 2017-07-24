@@ -20,6 +20,12 @@ function show_tiepthi_tour($data = array())
         $asign['mess_null'] ='Danh sách tour rỗng';
     }
     $asign['PAGING']=$data['PAGING'];
+    // active menu
+    $asign['all'] = ($data['active_tab'] == 'all') ? 'active' : '';
+    $asign['noi_bat'] = ($data['active_tab'] == 'noi_bat') ? 'active' : '';
+    $asign['giam_gia'] = ($data['active_tab'] == 'giam_gia') ? 'active' : '';
+    $asign['quoc_te'] = ($data['active_tab'] == 'quoc_te') ? 'active' : '';
+    $asign['trong_nuoc'] = ($data['active_tab'] == 'trong_nuoc') ? 'active' : '';
     print_template($asign, 'tiep_thi_tour');
 }
 

@@ -39,15 +39,19 @@ $array_check_noti = array(
 
 $dk='';
 $name_module='Danh sách đơn hàng';
+$data['active_tab']='all';
 switch($type){
     case '1':
         $name_module='Danh sách đơn hàng đang giao dịch';
+        $data['active_tab']='dang_giao_dich';
         break;
     case '2':
         $name_module='Danh sách đơn hàng đã giao dịch';
+        $data['active_tab']='da_giao_dich';
         break;
     case '3':
         $name_module='Danh sách đơn hàng đã hủy';
+        $data['active_tab']='da_huy';
         break;
 }
 $data['danhsach']=array();
@@ -73,7 +77,7 @@ $data['breadcrumb']="<li class='active'>Đơn hàng</li>";
 $title='Quản lý đơn hàng';
 $description=$title;
 $keyword=$title;
-$data['name_module']='ĐƠN HÀNG';
+$data['name_module']=$name_module;
 $data['title_table']=$name_module;
 show_header_tiep_thi($title,$description,$keyword,$data);
 show_sidebar_tiep_thi($data,'donhang');

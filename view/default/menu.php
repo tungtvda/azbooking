@@ -121,7 +121,7 @@ function view_sidebar_tiep_thi($data = array())
         'time_token'=>_return_mc_encrypt($data_session['time_token']),
         'top_5'=>1,
     );
-    $list_noti= returnCURL($array_check_noti, SITE_NAME_MANAGE.'/return-hoa-hong.html ');
+    $list_noti= returnCURL($array_check_noti, SITE_NAME_MANAGE.'/return-hoa-hong.html');
     $data_list_hoahong=json_decode($list_noti,true);
     if(isset($data_list_hoahong['hoa_hong'])){
         $asign['hoa_hong']=number_format((int)$data_list_hoahong['hoa_hong'],0,",",".").' vnđ';
