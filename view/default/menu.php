@@ -1,7 +1,7 @@
 <?php
 require_once DIR . '/view/default/public.php';
 require_once DIR . '/common/locdautiengviet.php';
-
+require_once DIR . '/common/redict.php';
 function view_menu($data = array())
 {
     $asign = array();
@@ -123,11 +123,16 @@ function view_sidebar_tiep_thi($data = array())
     );
     $list_noti= returnCURL($array_check_noti, SITE_NAME_MANAGE.'/return-hoa-hong.html');
     $data_list_hoahong=json_decode($list_noti,true);
-    if(isset($data_list_hoahong['hoa_hong'])){
-        $asign['hoa_hong']=number_format((int)$data_list_hoahong['hoa_hong'],0,",",".").' vnđ';
+    if(isset($data_list_hoahong['success'])&&$data_list_hoahong['success']==1){
+        if(isset($data_list_hoahong['hoa_hong'])){
+            $asign['hoa_hong']=number_format((int)$data_list_hoahong['hoa_hong'],0,",",".").' vnđ';
+        }else{
+            $asign['hoa_hong']="0 vnđ";
+        }
     }else{
-        $asign['hoa_hong']="0 vnđ";
+        redict(SITE_NAME.'/tiep-thi-lien-ket/dang-xuat/');
     }
+
     print_template($asign, 'tiep_thi_sidebar');
 }
 
@@ -198,7 +203,7 @@ function view_navbar_tiep_thi($data = array())
                 $date_show = date("d-m-Y H:i:s", strtotime($row_noti['created']));
                 $date_noti =timeAgo($row_noti['created']);
                 $list_notification.=' <li style="'.$row_color.'" class="item_list_noti" style="">
-                                    <a href="'.SITE_NAME.'/'.$row_noti['link'].'>
+                                    <a href="'.SITE_NAME.'/'.$row_noti['link'].'&id_noti='._return_mc_encrypt($row_noti['id']).'">
 												<span class="msg-body">
 													<span class="msg-title">
 														'.$row_noti['name'].'
