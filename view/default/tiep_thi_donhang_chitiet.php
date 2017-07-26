@@ -10,7 +10,7 @@ require_once DIR . '/common/cls_fast_template.php';
 function show_tiepthi_donhang_chitiet($data = array())
 {
     $asign = array();
-
+    $asign['code_booking']=$data['detail']['code_booking'];
     print_template($asign, 'tiep_thi_donhang_chitiet');
 }
 

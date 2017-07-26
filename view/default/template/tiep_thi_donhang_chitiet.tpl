@@ -4,8 +4,7 @@
             <div class="col-md-8 col-md-offset-2">
                 <div class="card">
                     <div class="card-header text-center" data-background-color="purple">
-                        <h4 class="title">Material Dashboard PRO</h4>
-                        <p class="category">Are you looking for more components? Please check our Premium Version of Material Dashboard.</p>
+                        <h4 class="title">Đơn hàng "{code_booking}"</h4>
                     </div>
                     <div class="card-content">
                         <div class="table-responsive table-upgrade">

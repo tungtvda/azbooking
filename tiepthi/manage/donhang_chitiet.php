@@ -26,11 +26,27 @@ $array_check_noti = array(
 
 $list_noti= returnCURL($array_check_noti, SITE_NAME_MANAGE.'/azbooking-get-detail-booking.html');
 $data_list_hoahong=json_decode($list_noti,true);
-if(!isset($data_list_hoahong['success'])||$data_list_hoahong['success']==0){
+if(!isset($data_list_hoahong['success'])||$data_list_hoahong['success']==0 ||!isset($data_list_hoahong['data'][0])||count($data_list_hoahong['data'][0])==0 ){
     redict(SITE_NAME.'/tiep-thi-lien-ket/');
 }
-$name_module='Danh sách đơn hàng';
-$data['breadcrumb']="<li href=''>Đơn hàng</li><li class='active'>Tour</li>";
+
+$data['detail']=$data_list_hoahong['data'][0];
+$link_bread='don-hang';
+$name_bre='Danh sách đơn hàng';
+if($data['detail']['status']==1||$data['detail']['status']==2||$data['detail']['status']==4){
+    $link_bread='don-hang?type=1';
+    $name_bre='Đơn hàng đang giao dịch';
+}
+if($data['detail']['status']==5){
+    $link_bread='don-hang?type=2';
+    $name_bre='Đơn hàng đã giao dịch';
+}
+if($data['detail']['status']==3){
+    $link_bread='don-hang?type=3';
+    $name_bre='Đơn hàng đã hủy';
+}
+$name_module='Chi tiết đơn hàng "'.$data['detail']['code_booking'].'"';
+$data['breadcrumb']="<li><a href='".SITE_NAME."/tiep-thi-lien-ket/".$link_bread."'>".$name_bre."</a></li><li class='active'>Chi tiết đơn hàng</li>";
 
 $title='Hệ thống quản lý tiếp thị liên kết';
 $description='Hệ thống quản lý tiếp thị liên kết';
