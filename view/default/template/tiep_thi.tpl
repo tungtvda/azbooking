@@ -22,10 +22,10 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="card card-stats">
                             <div class="card-header" data-background-color="green">
-                                <a href="{SITE-NAME}/tiep-thi-lien-ket/dong-hang?type=2"><i class="fa fa-cart-plus"></i></a>
+                                <a href="{SITE-NAME}/tiep-thi-lien-ket/don-hang?type=2"><i class="fa fa-cart-plus"></i></a>
                             </div>
                             <div class="card-content">
-                                <a href="{SITE-NAME}/tiep-thi-lien-ket/dong-hang?type=2"> <h3 class="title">{ket_thuc}</h3></a>
+                                <a href="{SITE-NAME}/tiep-thi-lien-ket/don-hang?type=2"> <h3 class="title">{ket_thuc}</h3></a>
                             </div>
                             <div class="card-footer">
                                 <div class="stats">

@@ -9,53 +9,49 @@
                     <div class="card-content">
                         <div class="table-responsive table-upgrade">
                             <table class="table">
-                                <thead>
+                                <!--<thead>
                                 <tr><th></th>
                                     <th class="text-center">Free</th>
                                     <th class="text-center">PRO</th>
-                                </tr></thead>
+                                </tr></thead>-->
                                 <tbody>
                                 <tr>
-                                    <td>Components</td>
-                                    <td class="text-center">60</td>
-                                    <td class="text-center">200</td>
+                                    <td>Tour</td>
+                                    <td>{name_tour}</td>
                                 </tr>
                                 <tr>
-                                    <td>Plugins</td>
-                                    <td class="text-center">2</td>
-                                    <td class="text-center">15</td>
+                                    <td>Đơn giá</td>
+                                    <td >{price_tour}</td>
                                 </tr>
                                 <tr>
-                                    <td>Example Pages</td>
+                                    <td>Hoa hồng</td>
+                                    <td>{price_tiep_thi}</td>
+                                </tr>
+                                <tr>
+                                    <td>Trạng thái đơn hàng</td>
+                                    <td>{status}</td>
+                                </tr>
+                                <tr>
+                                    <td>Xác nhận hoa hồng</td>
+                                    <td>{xac_nhan_tiep_thi}</td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>Thông tin khách hàng</td>
                                     <td class="text-center">3</td>
-                                    <td class="text-center">27</td>
                                 </tr>
                                 <tr>
-                                    <td>Login, Register, Pricing, Lock Pages</td>
-                                    <td class="text-center"><i class="fa fa-times text-danger"></i></td>
-                                    <td class="text-center"><i class="fa fa-check text-success"></i></td>
+                                    <td>Ngày khởi hành</td>
+                                    <td class="text-center">3</td>
                                 </tr>
                                 <tr>
-                                    <td>DataTables, VectorMap, SweetAlert, Wizard, jQueryValidation, FullCalendar etc...</td>
-                                    <td class="text-center"><i class="fa fa-times text-danger"></i></td>
-                                    <td class="text-center"><i class="fa fa-check text-success"></i></td>
+                                    <td>Ngày đặt</td>
+                                    <td class="text-center">3</td>
                                 </tr>
-                                <tr>
-                                    <td>Mini Sidebar</td>
-                                    <td class="text-center"><i class="fa fa-times text-danger"></i></td>
-                                    <td class="text-center"><i class="fa fa-check text-success"></i></td>
-                                </tr>
-                                <tr>
-                                    <td>Premium Support</td>
-                                    <td class="text-center"><i class="fa fa-times text-danger"></i></td>
-                                    <td class="text-center"><i class="fa fa-check text-success"></i></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="text-center">Free</td>
-                                    <td class="text-center">Just $49</td>
-                                </tr>
-                                <tr>
+
+
+                                <!--<tr>
                                     <td class="text-center"></td>
                                     <td class="text-center">
                                         <a href="#" class="btn btn-round btn-fill btn-default disabled">Current Version</a>
@@ -63,7 +59,7 @@
                                     <td class="text-center">
                                         <a target="_blank" href="http://www.creative-tim.com/product/material-dashboard-pro/?ref=md-free-upgrade-live" class="btn btn-round btn-fill btn-info">Upgrade to PRO</a>
                                     </td>
-                                </tr>
+                                </tr>-->
                                 </tbody>
                             </table>
                         </div>
