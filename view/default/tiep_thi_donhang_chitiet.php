@@ -48,6 +48,23 @@ function show_tiepthi_donhang_chitiet($data = array())
         }
     }
     $asign['xac_nhan_tiep_thi']=$xacnhan_tiep_thi;
+    $asign['khach_hang']='';
+    if(isset($data['detail']['customer'])){
+        $asign['khach_hang']='
+                             <p>Tên: '.$data['detail']['customer']['name'].'</p>
+                             <p>Địa chỉ: '.$data['detail']['customer']['address'].'</p>
+                             <p>Điện thoại: '.$data['detail']['customer']['phone'].'</p>
+                             <p>Email: '.$data['detail']['customer']['email'].'</p>
+        ';
+    }
+    $asign['ngay_khoi_hanh']='';
+    if($data['detail']['ngay_khoi_hanh']!=''){
+        $asign['ngay_khoi_hanh']= date("d-m-Y", strtotime($data['detail']['ngay_khoi_hanh']));
+    }
+    $asign['ngay_khoi_hanh']='';
+    if($data['detail']['created']!=''){
+        $asign['created']=_returnDateFormatConvert($data['detail']['created']);
+    }
     print_template($asign, 'tiep_thi_donhang_chitiet');
 }
 
