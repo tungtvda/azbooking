@@ -39,15 +39,15 @@
 
                                 <tr>
                                     <td>Thông tin khách hàng</td>
-                                    <td class="text-center">3</td>
+                                    <td>{khach_hang}</td>
                                 </tr>
                                 <tr>
                                     <td>Ngày khởi hành</td>
-                                    <td class="text-center">3</td>
+                                    <td>{ngay_khoi_hanh}</td>
                                 </tr>
                                 <tr>
                                     <td>Ngày đặt</td>
-                                    <td class="text-center">3</td>
+                                    <td >{created}</td>
                                 </tr>
 
 
