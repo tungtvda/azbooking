@@ -11,3 +11,4 @@ update news set view='3' where id=5;
 update news set view='4' where id=5;
 update news set view='5' where id=5;
 update news set view='6' where id=5;
+update news set view='500' where id=25;
