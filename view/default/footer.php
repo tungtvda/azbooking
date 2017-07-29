@@ -52,6 +52,7 @@ function view_footer($data = array())
     $data_session=checkSession('', 1);
     $asign['form_']='';
     $count_un_read=0;
+    $asign['coutn_mes_noti']='';
     if(count($data_session)>0){
         $array_check_noti = array(
             'id'=>_return_mc_encrypt($data_session['id']),
