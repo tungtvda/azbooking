@@ -329,7 +329,7 @@ if (isset($_POST['name_customer'])) {
             $data_detail_booking = booking_tour_getByTop('1', 'code_booking="' . $code_booking . '"', 'id desc');
             if (count($data_detail_booking) > 0) {
                 $link_chitiet_don_hang = SITE_NAME . '/don-hang?id_booking=' . _return_mc_encrypt($data_detail_booking[0]->id) . '&code_booking=' . _return_mc_encrypt($code_booking);
-                $link_chitiet_don_hang_tiepthi = SITE_NAME . '/tiep-thi-lien-ket/booking-detail/?id_booking=' .$id_booking_res . '&code_booking=' . _return_mc_encrypt($code_booking);
+                $link_chitiet_don_hang_tiepthi = SITE_NAME . '/tiep-thi-lien-ket/don-hang/chi-tiet?id=' .$id_booking_res;
                 $data_danhmuc_1_detail = danhmuc_1_getById($data['detail'][0]->DanhMuc1Id);
                 $data_danhmuc_2_detail = danhmuc_2_getById($data['detail'][0]->DanhMuc2Id);
                 $name_url_dm1_detail = '';
