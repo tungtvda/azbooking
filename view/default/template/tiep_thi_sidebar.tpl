@@ -44,7 +44,7 @@
                 </li>
 
                 <li cl>
-                    <a href="{SITE-NAME}/tiep-thi-lien-ket/thong-bao/">
+                    <a href="{SITE-NAME}/tiep-thi-lien-ket/thong-bao">
                         <i class="material-icons text-gray">notifications</i>
                         <p>Thông báo</p>
                     </a>
