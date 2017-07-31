@@ -219,7 +219,7 @@ function view_navbar_tiep_thi($data = array())
             }
             if($count_noti>=5){
                 $list_notification.=' <li class="item_list_noti">
-                                    <a style="text-align: center" href="'.SITE_NAME.'/tiep-thi-lien-ket/thong-bao/">Xem tất cả <i class="ace-icon fa fa-arrow-right"></i></a>
+                                    <a style="text-align: center" href="'.SITE_NAME.'/tiep-thi-lien-ket/thong-bao">Xem tất cả <i class="ace-icon fa fa-arrow-right"></i></a>
                                 </li>';
             }
         }else{
@@ -246,7 +246,7 @@ function view_navbar_tiep_thi($data = array())
         $asign['content_user'].= $list_notification;
         $asign['content_user'].='</ul> </div>
                                 <p '.$hidden_div.' class="dropdown-footer">
-                                    <a href="'.SITE_NAME.'/tiep-thi-lien-ket/thong-bao/"> Xem tất cả <i class="ace-icon fa fa-arrow-right"></i></a></p>
+                                    <a href="'.SITE_NAME.'/tiep-thi-lien-ket/thong-bao"> Xem tất cả <i class="ace-icon fa fa-arrow-right"></i></a></p>
                             </div>
                         </div>';
         $avatar=$data_session['avatar'];
