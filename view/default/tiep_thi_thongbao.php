@@ -33,10 +33,10 @@ function show_tiepthi_thongbao($data = array())
             $date_noti =timeAgo($row['created']);
             $asign['danhsach'] .= '<tr>
             <td >'.$dem.'</td>
-            <td ><a target="_blank" href="'.SITE_NAME.''.$row['link'].'">'.$row['name'].'</a></td>
+            <td ><a target="_blank" href="'.SITE_NAME.''.$row['link'].'&id_noti='._return_mc_encrypt($row['id'], ENCRYPTION_KEY).'">'.$row['name'].'</a></td>
             <td ><a href="javascript:void(0)" rel="tooltip" data-original-title="'.$date_show.'">'.$date_noti.'</a></td>
             <td>'.$status.'</td>
-            <td><a target="_blank" href="'.SITE_NAME.''.$row['link'].'"><i class="fa fa-eye"></i></a></td>
+            <td><a target="_blank" href="'.SITE_NAME.''.$row['link'].'&id_noti='._return_mc_encrypt($row['id'], ENCRYPTION_KEY).'"><i class="fa fa-eye"></i></a></td>
 
         </tr>
         ';
