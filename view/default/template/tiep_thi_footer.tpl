@@ -60,6 +60,7 @@
 
 <!-- Material Dashboard DEMO methods, don't include it in your project! -->
 <script src="{SITE-NAME}/view/default/themes/assets/js/demo.js"></script>
+<script type="text/javascript" src="{SITE-NAME}/view/default/themes/js/jquery-ui.min.js"></script>
 <script>
     $( ".notification_menu" ).click(function() {
         link = '{site_name_manage}/update-notification.html';
@@ -156,6 +157,14 @@
                 from: from,
                 align: align
             }
+        });
+    }
+    show_date_format();
+    function show_date_format() {
+        $('.datepicker').datepicker({
+            format: 'dd/mm/yyyy',
+            minDate: '0',
+            startDate: '-3d'
         });
     }
 </script>

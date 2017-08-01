@@ -27,12 +27,15 @@ $array_check_noti = array(
 );
 $list_noti= returnCURL($array_check_noti, SITE_NAME_MANAGE.'/azbooking-hoso.html');
 $data_list_noti=json_decode($list_noti,true);
-print_r($data_list_noti);
-exit;
-$title='Hồ sơ';
+if($data_list_noti['success']==0){
+    redict(SITE_NAME.'/tiep-thi-lien-ket/');
+}
+
+$data['user']=$data_list_noti['user'];
+$title='Hồ sơ "'.$data['user']['name'].'"';
 $description='Hệ thống quản lý tiếp thị liên kết';
 $keyword='Hệ thống quản lý tiếp thị liên kết';
-$data['name_module']='Hồ sơ';
+$data['name_module']=$title;
 show_header_tiep_thi($title,$description,$keyword,$data);
 show_sidebar_tiep_thi($data,'hoso');
 show_navbar_tiep_thi($data);
