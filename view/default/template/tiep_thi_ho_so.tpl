@@ -91,11 +91,11 @@
                                         </div>
                                     </div>
 
-                                    <div class="row">
+                                    <div class="row" id="full_name">
                                         <div class="col-md-6">
                                             <div class="form-group label-floating is-empty">
                                                 <label>Họ tên <span class="required_label">*</span></label>
-                                                <input type="text" class="form-control" name="full_name"
+                                                <input type="text" class="form-control {name_valid}" name="full_name"
                                                        id="input_full_name" value="{name}">
                                                 <span class="material-input error-color  error-color-size"
                                                       id="error_full_name">Bạn vui lòng nhập họ tên</span></div>
@@ -103,7 +103,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group label-floating is-empty">
                                                 <label>Ngày sinh <span class="required_label">*</span></label>
-                                                <input type="text" class="form-control datepicker" name="birthday"
+                                                <input type="text" class="form-control datepicker {date_valid}" name="birthday" value="{birthday}"
                                                        id="input_birthday">
                                                 <span class="material-input error-color  error-color-size"
                                                       id="error_birthday">Bạn vui lòng nhập ngày tháng năm sinh</span>
@@ -114,7 +114,7 @@
                                         <div class="col-md-4">
                                             <div class="form-group label-floating is-empty">
                                                 <label>Điện thoại <span class="required_label">*</span></label>
-                                                <input type="text" class="form-control" name="user_phone"
+                                                <input type="text" class="form-control {phone_valid}" name="user_phone"
                                                        id="input_user_phone" value="{phone}">
                                                 <span class="material-input error-color  error-color-size"
                                                       id="error_user_phone">Bạn vui lòng nhập số điện thoại</span></div>
@@ -155,7 +155,7 @@
                                         <div class="col-md-12">
                                             <div class="form-group label-floating is-empty">
                                                 <label>Địa chỉ <span class="required_label">*</span></label>
-                                                <input type="text" class="form-control" name="address_user"
+                                                <input type="text" class="form-control {address_valid}" name="address_user"
                                                        id="input_address_user" value="{address}">
                                                 <span class="material-input error-color  error-color-size"
                                                       id="error_address_user">Bạn vui lòng nhập địa chỉ</span></div>
@@ -224,7 +224,7 @@
                                         </div>
                                     </div>
 
-                                    <button type="submit" class="btn btn-primary pull-right">Cập nhật</button>
+                                    <button type="button" class="btn btn-primary pull-right" id="submit_form_hoso">Cập nhật</button>
                                     <div class="clearfix"></div>
                                 </form>
                             </div>
