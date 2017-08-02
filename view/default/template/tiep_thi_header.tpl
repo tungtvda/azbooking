@@ -37,5 +37,7 @@
     <link href="{SITE-NAME}/view/default/themes/assets/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet'
           type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{SITE-NAME}/view/default/themes/css/lib/jquery-ui.css">
+    <link rel='stylesheet' id='dt-main-css' href='{SITE-NAME}/view/default/themes/assets/css/fileinput.min.css' type='text/css' media='all'/>
 </head>
 

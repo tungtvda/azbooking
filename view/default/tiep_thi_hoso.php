@@ -20,6 +20,22 @@ function show_hoso($data = array())
     $asign['bank']=$data['user']['bank'];
     $asign['open_bank']=$data['user']['open_bank'];
     $asign['user_code']=$data['user']['user_code'];
+    $asign['skype']=$data['user']['skype'];
+    $asign['facebook']=$data['user']['facebook'];
+    $asign['cmnd']=$data['user']['cmnd'];
+    $asign['date_range_cmnd']=$data['user']['date_range_cmnd'];
+    if($asign['date_range_cmnd']=='0000-00-00'){
+        $asign['date_range_cmnd']='';
+    }else{
+        $asign['date_range_cmnd']=date('d-m-Y', strtotime($asign['date_range_cmnd']));
+    }
+    $asign['issued_by_cmnd']=$data['user']['issued_by_cmnd'];
+    $asign['birthday']=$data['user']['birthday'];
+    if($asign['birthday']=='0000-00-00'){
+        $asign['birthday']='';
+    }else{
+        $asign['birthday']=date('d-m-Y', strtotime($asign['birthday']));
+    }
     if($data['user']['hoa_hong']!='' &&$data['user']['hoa_hong']!=0){
         $asign['hoa_hong']=number_format((int)$data['user']['hoa_hong'],0,",",".").' vnđ';
     }else{

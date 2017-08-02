@@ -60,6 +60,7 @@
 
 <!-- Material Dashboard DEMO methods, don't include it in your project! -->
 <script src="{SITE-NAME}/view/default/themes/assets/js/demo.js"></script>
+<script src="{SITE-NAME}/view/default/themes/assets/js/fileinput.min.js"></script>
 <script type="text/javascript" src="{SITE-NAME}/view/default/themes/js/jquery-ui.min.js"></script>
 <script>
     $( ".notification_menu" ).click(function() {
@@ -163,9 +164,45 @@
     function show_date_format() {
         $('.datepicker').datepicker({
             format: 'dd/mm/yyyy',
-            minDate: '0',
-            startDate: '-3d'
+            maxDate: '-1',
+//            startDate: '-3d'
         });
     }
+    $(document).on('change', '.btn-file :file', function () {
+        var input = $(this),
+                label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+        input.trigger('fileselect', [label]);
+    });
+
+    $('.btn-file :file').on('fileselect', function (event, label) {
+
+        var input = $(this).parents('.input-group').find(':text'),
+                log = label;
+
+        if (input.length) {
+            input.val(log);
+        } else {
+            if (log) alert(log);
+        }
+
+    });
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#img-upload').attr('src', e.target.result);
+                $('#show_avatar').attr('src', e.target.result);
+            };
+            reader.readAsDataURL(input.files[0]);
+        }else{
+            var link_avatar=$('#link_avatar').val();
+            $('#img-upload').attr('src', link_avatar);
+            $('#show_avatar').attr('src',link_avatar);
+        }
+    }
+
+    $("#imgInp").change(function () {
+        readURL(this);
+    });
 </script>
 </html>
