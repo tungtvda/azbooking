@@ -62,6 +62,8 @@
 <script src="{SITE-NAME}/view/default/themes/assets/js/demo.js"></script>
 <script src="{SITE-NAME}/view/default/themes/assets/js/fileinput.min.js"></script>
 <script type="text/javascript" src="{SITE-NAME}/view/default/themes/js/jquery-ui.min.js"></script>
+<script src="{SITE-NAME}/view/default/themes/assets/js/myjs.js"></script>
+<script src="{SITE-NAME}/view/default/themes/calendar/dist/moment.min.js"></script>
 <script>
     $( ".notification_menu" ).click(function() {
         link = '{site_name_manage}/update-notification.html';

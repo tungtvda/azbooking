@@ -12,9 +12,18 @@ function show_hoso($data = array())
     $asign = array();
     $asign['avatar']=$data['user']['avatar'];
     $asign['name']=$data['user']['name'];
+    if($asign['name']!=''){
+        $asign['name_valid']='valid';
+    }
     $asign['phone']=$data['user']['phone'];
+    if($asign['phone']!=''){
+        $asign['phone_valid']='valid';
+    }
     $asign['email']=$data['user']['user_email'];
     $asign['address']=$data['user']['address'];
+    if($asign['address']!=''){
+        $asign['address_valid']='valid';
+    }
     $asign['mobi']=$data['user']['mobi'];
     $asign['account_number_bank']=$data['user']['account_number_bank'];
     $asign['bank']=$data['user']['bank'];
@@ -26,8 +35,10 @@ function show_hoso($data = array())
     $asign['date_range_cmnd']=$data['user']['date_range_cmnd'];
     if($asign['date_range_cmnd']=='0000-00-00'){
         $asign['date_range_cmnd']='';
+
     }else{
         $asign['date_range_cmnd']=date('d-m-Y', strtotime($asign['date_range_cmnd']));
+        $asign['date_valid']='valid';
     }
     $asign['issued_by_cmnd']=$data['user']['issued_by_cmnd'];
     $asign['birthday']=$data['user']['birthday'];
