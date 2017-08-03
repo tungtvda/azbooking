@@ -68,6 +68,7 @@ function show_hoso($data = array())
     $asign['gender']=' <option '.$selected_gender_0.' value="">Chưa xác định</option>
                        <option '.$selected_gender_1.' value="1">Nam</option>
                        <option '.$selected_gender_2.' value="">Nữ</option>';
+    $asign['site_name_manage']=SITE_NAME_MANAGE;
     print_template($asign, 'tiep_thi_ho_so');
 }
 

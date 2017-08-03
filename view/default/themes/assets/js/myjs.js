@@ -171,6 +171,7 @@ $('body').on("click", '#submit_form_hoso', function () {
             var error = $("#error_" + form_data[input]['name']);
             var valid = element.hasClass("valid");
             if (valid == false) {
+                console.log(form_data[input]['name']);
                 if (count_scroll == 0) {
                     $('.main-panel').animate({
                         scrollTop: parseInt($(error).offset().top)
@@ -184,7 +185,22 @@ $('body').on("click", '#submit_form_hoso', function () {
         }
     }
     if (error_free != false) {
-        $("#submit_form").submit();
+        var link = $('#site_name_manage').val() + '/azbooking-update-hoso.html';
+        if(link!=''){
+            $.ajax({
+                method: "POST",
+                url: link,
+                data : { // Danh sách các thuộc tính sẽ gửi đi
+                    user: $('#form_hoso').serializeArray(),
+                    form_noti: $('#form_noti').serializeArray()
+                },
+                success: function (response) {
+                    console.log(response)
+                }
+            });
+        }else{
+            $('error_submit_hoso').show().html('Lỗi! bạn vui lòng F5 và thử lại');
+        }
     }
 
 });

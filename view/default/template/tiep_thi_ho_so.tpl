@@ -7,6 +7,7 @@
                         <img title="{name}" alt="{name}" class="img" src="{avatar}">
                     </div>-->
                     <input hidden id="link_avatar" value="{avatar}">
+                    <input hidden id="site_name_manage" value="{site_name_manage}">
                         <span class="profile-picture">
 													<img id="show_avatar"
                                                          title="{name}" alt="{name}" src="{avatar}">
@@ -122,14 +123,14 @@
                                         <div class="col-md-4">
                                             <div class="form-group label-floating is-empty">
                                                 <label>Di động</label>
-                                                <input type="text" class="form-control" name="mobi" id="input_mobi"
+                                                <input type="text" class="form-control valid" name="mobi" id="input_mobi"
                                                        value="{mobi}">
                                                 <span class="material-input"></span></div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="form-group label-floating is-empty">
                                                 <label>Giới tính </label>
-                                                <select class="form-control" name="gender" id="input_gender">
+                                                <select class="form-control valid" name="gender" id="input_gender">
                                                     {gender}
                                                 </select>
                                                 <span class="material-input"></span></div>
@@ -223,7 +224,7 @@
                                             </div>
                                         </div>
                                     </div>
-
+                                    <span hidden class="required_label" id="error_submit_hoso"></span>
                                     <button type="button" class="btn btn-primary pull-right" id="submit_form_hoso">Cập nhật</button>
                                     <div class="clearfix"></div>
                                 </form>
