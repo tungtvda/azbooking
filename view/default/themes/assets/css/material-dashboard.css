@@ -5423,3 +5423,21 @@ img.editable-click {
   /*width: 100%;*/
   height: 200px;
 }
+.error_pass{
+  color: red;
+}
+.success_pass{
+  color: green;
+}
+.medium_pass{
+  color: #1b85ff;
+}
+.medium_pass{
+  color: #1b85ff;
+}
+.weak_pass{
+  color: #ff8300;
+}
+.active-user-role{
+  color: #ec008c
+}
