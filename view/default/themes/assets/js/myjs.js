@@ -234,7 +234,7 @@ $('body').on('click','.xac_minh_2_buoc', function () {
         var mess_lable=' Chức năng đăng nhập 2 bước đã được kích hoạt';
     }
     else{
-        var mess_lable=' Hủy bỏ chức năng đăng nhập 2 bước thành công';
+        var mess_lable=' Hủy bỏ đăng nhập 2 bước thành công';
     }
     var link = $('#site_name_manage').val() + '/azbooking-update-2buoc.html';
     if(link!=''){
@@ -257,5 +257,11 @@ $('body').on('click','.xac_minh_2_buoc', function () {
     }else{
         showNotification('top','right',4,'Lỗi! bạn vui lòng F5 và thử lại');
     }
+});
+$('body').on("input",'#input_password_old', function () {
+    checkUserPasswordOldConfirm();
+});
+$('body').on("keyup",'#input_password_old', function () {
+    checkUserPasswordOldConfirm();
 });
 
