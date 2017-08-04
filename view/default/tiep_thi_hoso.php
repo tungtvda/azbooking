@@ -32,6 +32,12 @@ function show_hoso($data = array())
     $asign['skype']=$data['user']['skype'];
     $asign['facebook']=$data['user']['facebook'];
     $asign['cmnd']=$data['user']['cmnd'];
+    $asign['login_two_steps']=$data['user']['login_two_steps'];
+    if($data['user']['login_two_steps']==1){
+        $asign['login_two_steps']='checked';
+    }else{
+        $asign['login_two_steps']='';
+    }
     $asign['date_range_cmnd']=$data['user']['date_range_cmnd'];
     if($asign['date_range_cmnd']=='0000-00-00'){
         $asign['date_range_cmnd']='';

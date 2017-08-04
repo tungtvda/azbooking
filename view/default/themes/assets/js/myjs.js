@@ -195,7 +195,12 @@ $('body').on("click", '#submit_form_hoso', function () {
                     form_noti: $('#form_noti').serializeArray()
                 },
                 success: function (response) {
-                    console.log(response)
+                    response = $.parseJSON(response);
+                    if(response.success==1){
+                        showNotification('top','right',2,'Cập nhật hồ sơ thành công');
+                    }else{
+                        showNotification('top','right',4,response.mess);
+                    }
                 }
             });
         }else{
@@ -203,5 +208,54 @@ $('body').on("click", '#submit_form_hoso', function () {
         }
     }
 
+});
+function showNotification(from, align,color,mess){
+//        color = Math.floor((Math.random() * 4) + 1);
+    $.notify({
+        icon: "notifications",
+        message: mess
+
+    },{
+        type: type[color],
+        timer: 4000,
+        placement: {
+            from: from,
+            align: align
+        }
+    });
+}
+$('body').on('click','.xac_minh_2_buoc', function () {
+    var status = 0;
+    if ($('#xacminh_2b').is(":checked")) {
+        status = 1;
+    }
+    if(status==1)
+    {
+        var mess_lable=' Chức năng đăng nhập 2 bước đã được kích hoạt';
+    }
+    else{
+        var mess_lable=' Hủy bỏ chức năng đăng nhập 2 bước thành công';
+    }
+    var link = $('#site_name_manage').val() + '/azbooking-update-2buoc.html';
+    if(link!=''){
+        $.ajax({
+            method: "POST",
+            url: link,
+            data : { // Danh sách các thuộc tính sẽ gửi đi
+                status: status,
+                form_noti: $('#form_noti').serializeArray()
+            },
+            success: function (response) {
+                response = $.parseJSON(response);
+                if(response.success==1){
+                    showNotification('top','right',2,mess_lable);
+                }else{
+                    showNotification('top','right',4,response.mess);
+                }
+            }
+        });
+    }else{
+        showNotification('top','right',4,'Lỗi! bạn vui lòng F5 và thử lại');
+    }
 });
 
