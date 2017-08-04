@@ -261,30 +261,33 @@
                             </div>
                         </div>
                         <div id="menu2" class="tab-pane fade">
-                            <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="col-xs-12 col-sm-12 col-md-12">
                                 <h3>Đổi mật khẩu</h3>
-                                <div class="form-group label-floating is-empty"><label>Mật khẩu hiện tại <span
-                                                class="required_label">*</span></label>
-                                    <input name="password_old" type="password" id="input_password_old"
-                                           class="form-control" required="">
+                                <form id="submit_chang_pass">
+                                    <div class="form-group label-floating is-empty"><label>Mật khẩu hiện tại <span
+                                                    class="required_label">*</span></label>
+                                        <input name="password_old" type="password" id="input_password_old"
+                                               class="form-control" required="">
                                          <span class="material-input error-color  error-color-size"
-                                               id="error_password_old">Mật khẩu không đúng</span></div>
-                                <div style="margin-top: 20px" class="form-group label-floating is-empty"><label>Mật khẩu mới <span
-                                                class="required_label">*</span></label>
-                                    <input name="password_old" type="password" id="input_password_old"
-                                           class="form-control" required="">
+                                               id="error_password_old">Bạn vui lòng kiểm tra mật khẩu cũ</span></div>
+                                    <div style="margin-top: 20px" class="form-group label-floating is-empty"><label>Mật khẩu mới <span
+                                                    class="required_label">*</span></label>
+                                        <input name="password" type="password" id="input_password"
+                                               class="form-control" required="">
                                          <span class="material-input error-color  error-color-size"
-                                               id="error_password_old">Mật khẩu không đúng</span></div>
-                                <div style="margin-top: 20px" class="form-group label-floating is-empty"><label>Mật khẩu mới <span
-                                                class="required_label">*</span></label>
-                                    <input name="password_old" type="password" id="input_password_old"
-                                           class="form-control" required="">
+                                               id="error_password">Bạn vui lòng kiểm tra mật khẩu mới</span></div>
+                                    <div style="margin-top: 20px" class="form-group label-floating is-empty"><label>Mật khẩu mới <span
+                                                    class="required_label">*</span></label>
+                                        <input name="password_confirm" type="password"
+                                               id="input_password_confirm" class="form-control" required="">
                                          <span class="material-input error-color  error-color-size"
-                                               id="error_password_old">Mật khẩu không đúng</span></div>
-                                <button type="button" class="btn btn-primary pull-right" id="submit_form_password">Cập
-                                    nhật</button>
+                                               id="error_password_confirm">Bạn vui lòng xác nhận mật khẩu mới</span></div>
+                                    <button type="button" class="btn btn-primary pull-right" id="submit_form_password">Cập
+                                        nhật</button>
+                                </form>
+
                             </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="col-xs-12 col-sm-12 col-md-12">
                                 <h3>Xác minh 2 bước</h3>
                                 <div class="checkbox checkbox-primary">
                                     <input id="xacminh_2b" class="xac_minh_2_buoc" type="checkbox" {login_two_steps}>
@@ -293,7 +296,7 @@
                                     </label>
                                 </div>
                                 <div class="well">
-                                    <p><label>Mỗi khi bạn đăng nhập vào Tài khoản AZBOOKING của mình, bạn sẽ cần mật
+                                    <p><label>Mỗi khi bạn đăng nhập vào Tài khoản AZBOOKING.VN của mình, bạn sẽ cần mật
                                         khẩu và mã xác minh.</label></p>
                                     <div class="space-8"></div>
                                     <div class="media search-media">
