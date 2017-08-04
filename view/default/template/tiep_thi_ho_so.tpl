@@ -1,3 +1,5 @@
+<link rel='stylesheet' id='dt-main-css' href='{SITE-NAME}/view/default/themes/assets/css/build.css' type='text/css'
+      media='all'/>
 <div class="content">
     <div class="container-fluid">
         <div class="row">
@@ -104,7 +106,8 @@
                                         <div class="col-md-6">
                                             <div class="form-group label-floating is-empty">
                                                 <label>Ngày sinh <span class="required_label">*</span></label>
-                                                <input type="text" class="form-control datepicker {date_valid}" name="birthday" value="{birthday}"
+                                                <input type="text" class="form-control datepicker {date_valid}"
+                                                       name="birthday" value="{birthday}"
                                                        id="input_birthday">
                                                 <span class="material-input error-color  error-color-size"
                                                       id="error_birthday">Bạn vui lòng nhập ngày tháng năm sinh</span>
@@ -123,7 +126,8 @@
                                         <div class="col-md-4">
                                             <div class="form-group label-floating is-empty">
                                                 <label>Di động</label>
-                                                <input type="text" class="form-control valid" name="mobi" id="input_mobi"
+                                                <input type="text" class="form-control valid" name="mobi"
+                                                       id="input_mobi"
                                                        value="{mobi}">
                                                 <span class="material-input"></span></div>
                                         </div>
@@ -156,7 +160,8 @@
                                         <div class="col-md-12">
                                             <div class="form-group label-floating is-empty">
                                                 <label>Địa chỉ <span class="required_label">*</span></label>
-                                                <input type="text" class="form-control {address_valid}" name="address_user"
+                                                <input type="text" class="form-control {address_valid}"
+                                                       name="address_user"
                                                        id="input_address_user" value="{address}">
                                                 <span class="material-input error-color  error-color-size"
                                                       id="error_address_user">Bạn vui lòng nhập địa chỉ</span></div>
@@ -225,7 +230,9 @@
                                         </div>
                                     </div>
                                     <span hidden class="required_label" id="error_submit_hoso"></span>
-                                    <button type="button" class="btn btn-primary pull-right" id="submit_form_hoso">Cập nhật</button>
+                                    <button type="button" class="btn btn-primary pull-right" id="submit_form_hoso">Cập
+                                        nhật
+                                    </button>
                                     <div class="clearfix"></div>
                                 </form>
                             </div>
@@ -262,23 +269,73 @@
                                            class="form-control" required="">
                                          <span class="material-input error-color  error-color-size"
                                                id="error_password_old">Mật khẩu không đúng</span></div>
-                                <div class="form-group label-floating is-empty"><label>Mật khẩu mới <span
+                                <div style="margin-top: 20px" class="form-group label-floating is-empty"><label>Mật khẩu mới <span
                                                 class="required_label">*</span></label>
                                     <input name="password_old" type="password" id="input_password_old"
                                            class="form-control" required="">
                                          <span class="material-input error-color  error-color-size"
                                                id="error_password_old">Mật khẩu không đúng</span></div>
-                                <div class="form-group label-floating is-empty"><label>Mật khẩu mới <span
+                                <div style="margin-top: 20px" class="form-group label-floating is-empty"><label>Mật khẩu mới <span
                                                 class="required_label">*</span></label>
                                     <input name="password_old" type="password" id="input_password_old"
                                            class="form-control" required="">
                                          <span class="material-input error-color  error-color-size"
                                                id="error_password_old">Mật khẩu không đúng</span></div>
+                                <button type="button" class="btn btn-primary pull-right" id="submit_form_password">Cập
+                                    nhật</button>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-6">
                                 <h3>Xác minh 2 bước</h3>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                    laudantium, totam rem aperiam.</p>
+                                <div class="checkbox checkbox-primary">
+                                    <input id="xacminh_2b" class="xac_minh_2_buoc" type="checkbox" {login_two_steps}>
+                                    <label for="xacminh_2b" class="">
+                                        Kích hoạt chức năng đăng nhập 2 bước
+                                    </label>
+                                </div>
+                                <div class="well">
+                                    <p><label>Mỗi khi bạn đăng nhập vào Tài khoản AZBOOKING của mình, bạn sẽ cần mật
+                                        khẩu và mã xác minh.</label></p>
+                                    <div class="space-8"></div>
+                                    <div class="media search-media">
+                                        <div class="media-left">
+                                            <a>
+                                                <img class="media-object" data-src="holder.js/72x72" alt=""
+                                                     src="{SITE-NAME}/view/default/themes/assets/img/email-security.png"
+                                                     data-holder-rendered="true" style="width: 70px; ">
+                                            </a>
+                                        </div>
+
+                                        <div class="media-body">
+                                            <div>
+                                                <h4 class="media-heading">
+                                                    <a class="blue">Thêm lớp bảo mật bổ xung</a>
+                                                </h4>
+                                            </div>
+                                            <p><label>Nhập mật khẩu và mã xác minh duy nhất được gửi đến email đăng ký
+                                                của bạn.</label></p>
+                                        </div>
+                                    </div>
+                                    <div class="space-6"></div>
+                                    <div class="media search-media">
+                                        <div class="media-left">
+                                            <a>
+                                                <img class="media-object" data-src="holder.js/72x72" alt=""
+                                                     src="{SITE-NAME}/view/default/themes/assets/img/hacker.png"
+                                                     style="width: 70px; ">
+                                            </a>
+                                        </div>
+
+                                        <div class="media-body">
+                                            <div>
+                                                <h4 class="media-heading">
+                                                    <a class="red">Tránh những kẻ xấu ra</a>
+                                                </h4>
+                                            </div>
+                                            <p><label>Kể cả nếu ai đó lấy được mật khẩu của bạn thì cũng sẽ không đủ để
+                                                đăng nhập vào tài khoản của bạn.</label></p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
