@@ -8,7 +8,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="javascript:void(0)">{name_module}</a>
+                <a style="    color: #085394;font-weight: bold;" class="navbar-brand" href="javascript:void(0)">{name_module}</a>
             </div>
             {form_}
             <div class="collapse navbar-collapse">
