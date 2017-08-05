@@ -5441,3 +5441,10 @@ img.editable-click {
 .active-user-role{
   color: #ec008c
 }
+.is-empty input{
+  padding-right: 90px;
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

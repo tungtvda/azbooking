@@ -75,6 +75,32 @@ function show_hoso($data = array())
                        <option '.$selected_gender_1.' value="1">Nam</option>
                        <option '.$selected_gender_2.' value="">Nữ</option>';
     $asign['site_name_manage']=SITE_NAME_MANAGE;
+    $asign['site_name']=SITE_NAME;
+    $data_session=checkSession('', 1);
+    $array_check_noti = array(
+        'id'=>_return_mc_encrypt($data_session['id']),
+        'name'=>_return_mc_encrypt($data_session['name']),
+        'user_email'=>_return_mc_encrypt($data_session['user_email']),
+        'user_code'=>_return_mc_encrypt($data_session['user_code']),
+        'created'=>_return_mc_encrypt($data_session['created']),
+        'avatar'=>_return_mc_encrypt($data_session['avatar']),
+        'token_code'=>_return_mc_encrypt($data_session['token_code']),
+        'time_token'=>_return_mc_encrypt($data_session['time_token']),
+        'top_5'=>1,
+    );
+    $asign['div_noti']='<div style="display: none">
+        <input name="noti_name" value="'._return_mc_encrypt(json_encode($array_check_noti)).'">
+        <input name="id" value="'._return_mc_encrypt($data_session['id']).'">
+        <input name="name" value="'._return_mc_encrypt($data_session['name']).'">
+        <input name="user_email" value="'._return_mc_encrypt($data_session['user_email']).'">
+        <input name="user_code" value="'._return_mc_encrypt($data_session['user_code']).'">
+        <input name="created" value="'._return_mc_encrypt($data_session['created']).'">
+        <input name="avatar" value="'._return_mc_encrypt($data_session['avatar']).'">
+        <input name="token_code" value="'._return_mc_encrypt($data_session['token_code']).'">
+        <input name="time_token" value="'._return_mc_encrypt($data_session['time_token']).'">
+        <input id="top_5" name="top_5" value="1">
+        <input id="page_noti" name="page" value="1">
+        </div>';
     print_template($asign, 'tiep_thi_ho_so');
 }
 
