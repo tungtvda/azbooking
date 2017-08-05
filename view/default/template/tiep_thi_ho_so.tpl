@@ -10,6 +10,7 @@
                     </div>-->
                     <input hidden id="link_avatar" value="{avatar}">
                     <input hidden id="site_name_manage" value="{site_name_manage}">
+                    <input hidden id="site_name" value="{site_name}">
                         <span class="profile-picture">
 													<img id="show_avatar"
                                                          title="{name}" alt="{name}" src="{avatar}">
@@ -81,13 +82,13 @@
                                 <form id="form_hoso">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <div class="form-group label-floating is-empty">
+                                            <div class="form-group label-floating ">
                                                 <label>Mã thành viên</label>
                                                 <input type="text" class="form-control" disabled value="{user_code}">
                                                 <span class="material-input"></span></div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="form-group label-floating is-empty">
+                                            <div class="form-group label-floating ">
                                                 <label>Email</label>
                                                 <input type="text" class="form-control" disabled value="{email}">
                                                 <span class="material-input"></span></div>
@@ -96,7 +97,7 @@
 
                                     <div class="row" id="full_name">
                                         <div class="col-md-6">
-                                            <div class="form-group label-floating is-empty">
+                                            <div class="form-group label-floating ">
                                                 <label>Họ tên <span class="required_label">*</span></label>
                                                 <input type="text" class="form-control {name_valid}" name="full_name"
                                                        id="input_full_name" value="{name}">
@@ -104,7 +105,7 @@
                                                       id="error_full_name">Bạn vui lòng nhập họ tên</span></div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="form-group label-floating is-empty">
+                                            <div class="form-group label-floating ">
                                                 <label>Ngày sinh <span class="required_label">*</span></label>
                                                 <input type="text" class="form-control datepicker {date_valid}"
                                                        name="birthday" value="{birthday}"
@@ -116,7 +117,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <div class="form-group label-floating is-empty">
+                                            <div class="form-group label-floating ">
                                                 <label>Điện thoại <span class="required_label">*</span></label>
                                                 <input type="text" class="form-control {phone_valid}" name="user_phone"
                                                        id="input_user_phone" value="{phone}">
@@ -124,7 +125,7 @@
                                                       id="error_user_phone">Bạn vui lòng nhập số điện thoại</span></div>
                                         </div>
                                         <div class="col-md-4">
-                                            <div class="form-group label-floating is-empty">
+                                            <div class="form-group label-floating ">
                                                 <label>Di động</label>
                                                 <input type="text" class="form-control valid" name="mobi"
                                                        id="input_mobi"
@@ -132,7 +133,7 @@
                                                 <span class="material-input"></span></div>
                                         </div>
                                         <div class="col-md-4">
-                                            <div class="form-group label-floating is-empty">
+                                            <div class="form-group label-floating ">
                                                 <label>Giới tính </label>
                                                 <select class="form-control valid" name="gender" id="input_gender">
                                                     {gender}
@@ -142,14 +143,14 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <div class="form-group label-floating is-empty">
+                                            <div class="form-group label-floating ">
                                                 <label>Skype</label>
                                                 <input type="text" class="form-control valid" name="skype"
                                                        id="input_skype" value="{skype}">
                                                 <span class="material-input error-color  error-color-size"></span></div>
                                         </div>
                                         <div class="col-md-4">
-                                            <div class="form-group label-floating is-empty">
+                                            <div class="form-group label-floating ">
                                                 <label>Facebook</label>
                                                 <input type="text" class="form-control valid" name="facebook"
                                                        id="input_facebook" value="{facebook}">
@@ -158,7 +159,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <div class="form-group label-floating is-empty">
+                                            <div class="form-group label-floating ">
                                                 <label>Địa chỉ <span class="required_label">*</span></label>
                                                 <input type="text" class="form-control {address_valid}"
                                                        name="address_user"
@@ -170,14 +171,14 @@
 
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <div class="form-group label-floating is-empty">
+                                            <div class="form-group label-floating ">
                                                 <label>CMTND</label>
                                                 <input type="text" class="form-control valid " name="cmnd"
                                                        id="input_cmnd" value="{cmnd}">
                                                 <span class="material-input error-color  error-color-size"></span></div>
                                         </div>
                                         <div class="col-md-4">
-                                            <div class="form-group label-floating is-empty">
+                                            <div class="form-group label-floating ">
                                                 <label>Ngày cấp CMTND</label>
                                                 <input type="text" class="form-control valid datepicker"
                                                        name="date_range_cmnd" id="input_date_range_cmnd"
@@ -185,7 +186,7 @@
                                                 <span class="material-input"></span></div>
                                         </div>
                                         <div class="col-md-4">
-                                            <div class="form-group label-floating is-empty">
+                                            <div class="form-group label-floating ">
                                                 <label>Nơi cấp</label>
                                                 <input type="text" class="form-control valid" name="issued_by_cmnd"
                                                        id="input_issued_by_cmnd" value="{issued_by_cmnd}">
@@ -195,21 +196,21 @@
 
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <div class="form-group label-floating is-empty">
+                                            <div class="form-group label-floating ">
                                                 <label>Số tài khoản</label>
                                                 <input type="text" class="form-control valid" name="account_number_bank"
                                                        id="input_account_number_bank" value="{account_number_bank}">
                                                 <span class="material-input error-color  error-color-size"></span></div>
                                         </div>
                                         <div class="col-md-4">
-                                            <div class="form-group label-floating is-empty">
+                                            <div class="form-group label-floating ">
                                                 <label>Ngân hàng</label>
                                                 <input type="text" class="form-control valid" name="bank"
                                                        id="input_bank" value="{bank}">
                                                 <span class="material-input"></span></div>
                                         </div>
                                         <div class="col-md-4">
-                                            <div class="form-group label-floating is-empty">
+                                            <div class="form-group label-floating ">
                                                 <label>Chi nhánh</label>
                                                 <input type="text" class="form-control valid" name="open_bank"
                                                        id="input_open_bank" value="{open_bank}">
@@ -222,7 +223,7 @@
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label>Mô tả bản thân</label>
-                                                <div class="form-group label-floating is-empty">
+                                                <div class="form-group label-floating ">
                                                     <textarea class="form-control valid" rows="5" name="note"
                                                               id="input_note"></textarea>
                                                     <span class="material-input"></span></div>
@@ -239,44 +240,48 @@
                         </div>
                         <div id="menu1" class="tab-pane fade">
                             <div class="" style="float: left;width: 100%; padding-bottom: 20px">
-                                <div class="col-md-3 com-sm-3 col-xs-12 hidden-xs"></div>
-                                <div class="col-xs-12 col-md-6 col-sm-6">
+                                <div class="col-md-2 com-sm-2 col-xs-12 hidden-xs"></div>
+                                <div class="col-xs-12 col-md-8 col-sm-8">
                                     <h3>Thay đổi ảnh đại diện</h3>
-                                    <form id="form_avatar">
+                                    <form id="form_avatar" enctype="multipart/form-data">
+                                        {div_noti}
                                         <div class="input-group">
                                         <span class="input-group-btn" style="padding-left: 0px; padding-right: 0px;">
                                             <span class="btn btn-default btn-file" style="background-color: #0091ea">
                                                 Browse… <input accept=".jepg,.png,.svg,.gif,.jpg,.PNG,.JPG,.JEPG"
-                                                               type="file" name="avatar"
+                                                               type="file" name="avatar" style="padding-right: 100px"
                                                                id="imgInp">
                                             </span>
                                         </span>
+
                                             <input style="background-color: #eee;background-image: inherit; height: 37px;padding-left: 10px"
                                                    type="text" class="form-control" readonly>
                                         </div>
+                                        <button style="position: absolute; right: 14px;top: 58px; z-index: 111;" type="button" class="btn btn-primary" id="submit_form_avatar">Cập
+                                            nhật</button>
                                         <img id='img-upload' class="img_border" src="{avatar}" title="">
                                     </form>
                                 </div>
-                                <div class="col-md-3 com-sm-3 col-xs-12 hidden-xs"></div>
+                                <div class="col-md-2 com-sm-2 col-xs-12 hidden-xs"></div>
                             </div>
                         </div>
                         <div id="menu2" class="tab-pane fade">
                             <div class="col-xs-12 col-sm-12 col-md-12">
                                 <h3>Đổi mật khẩu</h3>
                                 <form id="submit_chang_pass">
-                                    <div class="form-group label-floating is-empty"><label>Mật khẩu hiện tại <span
+                                    <div class="form-group label-floating "><label>Mật khẩu hiện tại <span
                                                     class="required_label">*</span></label>
                                         <input name="password_old" type="password" id="input_password_old"
                                                class="form-control" required="">
                                          <span class="material-input error-color  error-color-size"
                                                id="error_password_old">Bạn vui lòng kiểm tra mật khẩu cũ</span></div>
-                                    <div style="margin-top: 20px" class="form-group label-floating is-empty"><label>Mật khẩu mới <span
+                                    <div style="margin-top: 20px" class="form-group label-floating "><label>Mật khẩu mới <span
                                                     class="required_label">*</span></label>
                                         <input name="password" type="password" id="input_password"
                                                class="form-control" required="">
                                          <span class="material-input error-color  error-color-size"
                                                id="error_password">Bạn vui lòng kiểm tra mật khẩu mới</span></div>
-                                    <div style="margin-top: 20px" class="form-group label-floating is-empty"><label>Mật khẩu mới <span
+                                    <div style="margin-top: 20px" class="form-group label-floating "><label>Mật khẩu mới <span
                                                     class="required_label">*</span></label>
                                         <input name="password_confirm" type="password"
                                                id="input_password_confirm" class="form-control" required="">

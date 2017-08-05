@@ -510,4 +510,31 @@ $('body').on("click",'#submit_form_password', function () {
     }
 
 });
+$('body').on("click",'#submit_form_avatar', function () {
+    var file_img=$('#imgInp').val();
+    if(file_img!=''){
+        var link = $('#site_name_manage').val() + '/az-update-avatar.html';
+        var fd = new FormData(document.getElementById("form_avatar"));
+        fd.append("label", "WEBUPLOAD");
+        $.ajax({
+            method: "POST",
+            url: link,
+            data :fd,
+            processData: false,  // tell jQuery not to process the data
+            contentType: false,  // tell jQuery not to set contentType
+            success: function (response) {
+                response = $.parseJSON(response);
+                if(response.success==1){
+                    showNotification('top','right',2,'Upload ảnh đại diện thành công');
+                    $('.nav-user-photo').attr('src', response.avatar)
+                    window.location.href = $('#site_name').val()+'/tiep-thi-lien-ket/ho-so/?code='+response.avatar_code;
+                }else{
+                    showNotification('top','right',4,response.mess);
+                }
+            }
+        });
+    }else{
+        showNotification('top','right',4,'Bạn vui lòng chọn ảnh đại diện');
+    }
+});
 
