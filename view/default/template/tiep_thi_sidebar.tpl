@@ -20,7 +20,7 @@
                     </a>
                 </li>
                 <li class="active">
-                    <a rel="tooltip" data-original-title="Tiền hoa hồng bạn đang có" href="" style="background-color: #ffffff; box-shadow: none !important;">
+                    <a  rel="tooltip" data-original-title="Tiền hoa hồng bạn đang có" href="{SITE-NAME}/tiep-thi-lien-ket/rut-tien/" style="background-color: #ffffff; box-shadow: none !important;">
                         <p style=" font-size: 18px;font-weight: bold;; color: #e53935"> <img style="width: 60px" src="{SITE-NAME}/view/default/themes/assets/img/hoa_hong.png"> {hoa_hong}</p>
                     </a>
                 </li>

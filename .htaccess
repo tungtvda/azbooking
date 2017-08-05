@@ -102,4 +102,5 @@ RewriteRule ^tiep-thi-lien-ket/don-hang$ tiepthi/manage/donhang.php
 RewriteRule ^tiep-thi-lien-ket/don-hang/chi-tiet tiepthi/manage/donhang_chitiet.php
 RewriteRule ^tiep-thi-lien-ket/thong-bao tiepthi/manage/thongbao.php
 RewriteRule ^tiep-thi-lien-ket/ho-so/ tiepthi/manage/hoso.php
+RewriteRule ^tiep-thi-lien-ket/rut-tien/ tiepthi/manage/ruttien.php
 RewriteRule ^tiep-thi-lien-ket/update-avatar/ tiepthi/manage/update_avatar.php

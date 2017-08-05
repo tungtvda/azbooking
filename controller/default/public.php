@@ -154,6 +154,7 @@ function show_footer($data1=array())
 function show_footer_tiep_thi($data1=array())
 {
     $data=array();
+    $data=$data1;
     view_footer_tiep_thi($data);
 }
 function  show_left_danhmuc($data1=array())
