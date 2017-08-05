@@ -210,5 +210,24 @@
     $('body').on('click','.close', function () {
        $('.')
     });
+    $('body').on("input", '#input_price', function () {
+        var price = $(this).val();
+        var price_check = {hoa_hong_check};
+        var numberRegex = /^[+-]?\d+(\.\d+)?([eE][+-]?\d+)?$/;
+        if (numberRegex.test(price)) {
+            if(price<=price_check){
+                var price_format = price.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.") + ' vnđ';
+                $('#price_format_rut').html('('+price_format+')');
+                $('#error_price').hide().html('');
+            }else{
+                $('#error_price').show().html('Số tiền bạn rút đã vượt quá số tiền hoa hồng');
+            }
+
+        }
+        else {
+            $('#price_format_rut').html('');
+            $('#error_price').show().html('Bạn vui lòng nhập số tiền cần rút');
+        }
+    });
 </script>
 </html>

@@ -5,60 +5,45 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="card card-profile">
-                    <!--<div class="card-avatar">
-                        <img title="{name}" alt="{name}" class="img" src="{avatar}">
-                    </div>-->
+
                     <input hidden id="link_avatar" value="{avatar}">
                     <input hidden id="site_name_manage" value="{site_name_manage}">
                     <input hidden id="site_name" value="{site_name}">
-                        <span class="profile-picture">
-													<img id="show_avatar"
-                                                         title="{name}" alt="{name}" src="{avatar}">
-												</span>
-                    <div class="content">
-                        <!--<h6 class="category text-gray">CEO / Co-Founder</h6>-->
-                        <h4 class="card-title name_profile">{name} - <span style="color: red">{user_code}</span></h4>
-                        <div class="col-xs-12" style="text-align: left">
-                            <table class="table table-responsive">
-                                <tr>
-                                    <td>Email</td>
-                                    <td>{email}</td>
-                                </tr>
-                                <tr>
-                                    <td>Điện thoại</td>
-                                    <td>{phone}</td>
-                                </tr>
-                                <tr>
-                                    <td>Di động</td>
-                                    <td>{mobi}</td>
-                                </tr>
-                                <tr>
-                                    <td>Số tài khoản</td>
-                                    <td>{account_number_bank}</td>
-                                </tr>
-                                <tr>
-                                    <td>Ngân hàng</td>
-                                    <td>{bank}</td>
-                                </tr>
-                                <tr>
-                                    <td>Chi nhánh</td>
-                                    <td>{open_bank}</td>
-                                </tr>
-                            </table>
-                        </div>
 
+                    <div class="content">
+                        <div class="card-header" data-background-color="purple">
+                            <h4 class="title">Tiền hoa hồng</h4>
+                        </div>
                         <p class="card-content">
                             <a rel="tooltip" data-original-title="Tiền hoa hồng bạn đang có" href=""
                                style="background-color: #ffffff; box-shadow: none !important;">
                                 <b style=" font-size: 18px;font-weight: bold;; color: #e53935">
-                                    <h3>Tiền hoa hồng</h3>
                                     <img style="width: 60px"
                                          src="{SITE-NAME}/view/default/themes/assets/img/hoa_hong.png">
                                     {hoa_hong}
                                 </b>
                             </a>
                         </p>
-                        <a href="{SITE-NAME}/tiep-thi-lien-ket/rut-tien/" class="btn btn-primary btn-round">Rút tiền</a>
+                        <form id="form_rut_tien" style="text-align: left">
+                            <div class="col-xs-12">
+                                <div class="form-group label-floating "><label>Số tiền cần rút <span
+                                                class="required_label">*</span> <b><span style="    color: #e53935;font-size: 15px" id="price_format_rut"></span></b></label>
+                                    <input placeholder="Số tiền rút tối đa của bạn là {hoa_hong}" style="padding-right: 10px" type="number" class="form-control" name="price" id="input_price"
+                                           value="">
+                                    <span class="material-input error-color error-color-size" id="error_price">Bạn vui lòng kiểm tra số tiền cần rút</span>
+                                </div>
+                            </div>
+                            <div class="col-xs-12" style="padding-left: 15px;">
+                                <div class="form-group"><label>Yêu cầu</label>
+                                    <div class="form-group label-floating">
+                                    <textarea class="form-control valid" placeholder="Bàn có yêu cầu gì không?"
+                                              rows="3" name="yeu_cau"
+                                              id="input_yeu_cau"></textarea><span
+                                                class="material-input"></span><span class="material-input"></span></div>
+                                </div>
+                            </div>
+                        </form>
+                        <a href="#pablo" class="btn btn-primary ">Rút tiền</a>
                     </div>
                 </div>
             </div>
@@ -257,8 +242,10 @@
                                             <input style="background-color: #eee;background-image: inherit; height: 37px;padding-left: 10px"
                                                    type="text" class="form-control" readonly>
                                         </div>
-                                        <button style="position: absolute; right: 14px;top: 58px; z-index: 111;" type="button" class="btn btn-primary" id="submit_form_avatar">Cập
-                                            nhật</button>
+                                        <button style="position: absolute; right: 14px;top: 58px; z-index: 111;"
+                                                type="button" class="btn btn-primary" id="submit_form_avatar">Cập
+                                            nhật
+                                        </button>
                                         <img id='img-upload' class="img_border" src="{avatar}" title="">
                                     </form>
                                 </div>
@@ -286,9 +273,12 @@
                                         <input name="password_confirm" type="password"
                                                id="input_password_confirm" class="form-control" required="">
                                          <span class="material-input error-color  error-color-size"
-                                               id="error_password_confirm">Bạn vui lòng xác nhận mật khẩu mới</span></div>
-                                    <button type="button" class="btn btn-primary pull-right" id="submit_form_password">Cập
-                                        nhật</button>
+                                               id="error_password_confirm">Bạn vui lòng xác nhận mật khẩu mới</span>
+                                    </div>
+                                    <button type="button" class="btn btn-primary pull-right" id="submit_form_password">
+                                        Cập
+                                        nhật
+                                    </button>
                                 </form>
 
                             </div>
@@ -302,7 +292,7 @@
                                 </div>
                                 <div class="well">
                                     <p><label>Mỗi khi bạn đăng nhập vào Tài khoản AZBOOKING.VN của mình, bạn sẽ cần mật
-                                        khẩu và mã xác minh.</label></p>
+                                            khẩu và mã xác minh.</label></p>
                                     <div class="space-8"></div>
                                     <div class="media search-media">
                                         <div class="media-left">
@@ -320,7 +310,7 @@
                                                 </h4>
                                             </div>
                                             <p><label>Nhập mật khẩu và mã xác minh duy nhất được gửi đến email đăng ký
-                                                của bạn.</label></p>
+                                                    của bạn.</label></p>
                                         </div>
                                     </div>
                                     <div class="space-6"></div>
@@ -340,7 +330,7 @@
                                                 </h4>
                                             </div>
                                             <p><label>Kể cả nếu ai đó lấy được mật khẩu của bạn thì cũng sẽ không đủ để
-                                                đăng nhập vào tài khoản của bạn.</label></p>
+                                                    đăng nhập vào tài khoản của bạn.</label></p>
                                         </div>
                                     </div>
                                 </div>
