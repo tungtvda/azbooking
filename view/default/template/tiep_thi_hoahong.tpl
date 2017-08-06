@@ -43,7 +43,7 @@
                                 </div>
                             </div>
                         </form>
-                        <a href="#pablo" class="btn btn-primary ">Rút tiền</a>
+                        <button type="button" class="btn btn-primary" id="submit_form_rut_tien">Rút tiền</button>
                     </div>
                 </div>
             </div>
