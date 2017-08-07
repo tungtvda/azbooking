@@ -66,10 +66,10 @@
 <script src="{SITE-NAME}/view/default/themes/assets/js/myjs.js"></script>
 <script src="{SITE-NAME}/view/default/themes/calendar/dist/moment.min.js"></script>
 <script>
-    $( ".notification_menu" ).click(function() {
+    $(".notification_menu").click(function () {
         link = '{site_name_manage}/update-notification.html';
-        var count_noti=$('#count_notification').html();
-        if(count_noti!=''){
+        var count_noti = $('#count_notification').html();
+        if (count_noti != '') {
             $.ajax({
                 method: "POST",
                 url: link,
@@ -92,10 +92,10 @@
             });
         }
     });
-    $('body').on('click','.copy_link_list', function () {
-        var id=$(this).attr('countId');
-        copyToClipboard(document.getElementById('value_key_'+id));
-        showNotification('top','right',2,'Link tiếp thị liên kết đã được copy');
+    $('body').on('click', '.copy_link_list', function () {
+        var id = $(this).attr('countId');
+        copyToClipboard(document.getElementById('value_key_' + id));
+        showNotification('top', 'right', 2, 'Link tiếp thị liên kết đã được copy');
     });
     function copyToClipboard(elem) {
         // create hidden text element, if it doesn't already exist
@@ -129,7 +129,7 @@
         var succeed;
         try {
             succeed = document.execCommand("copy");
-        } catch(e) {
+        } catch (e) {
             succeed = false;
         }
         // restore original focus
@@ -147,14 +147,14 @@
         return succeed;
     }
 
-    function showNotification(from, align,color,mess){
+    function showNotification(from, align, color, mess) {
 //        color = Math.floor((Math.random() * 4) + 1);
         console.log(color);
         $.notify({
             icon: "notifications",
             message: mess
 
-        },{
+        }, {
             type: type[color],
             timer: 4000,
             placement: {
@@ -197,39 +197,75 @@
                 $('#show_avatar').attr('src', e.target.result);
             };
             reader.readAsDataURL(input.files[0]);
-        }else{
-            var link_avatar=$('#link_avatar').val();
+        } else {
+            var link_avatar = $('#link_avatar').val();
             $('#img-upload').attr('src', link_avatar);
-            $('#show_avatar').attr('src',link_avatar);
+            $('#show_avatar').attr('src', link_avatar);
         }
     }
 
     $("#imgInp").change(function () {
         readURL(this);
     });
-    $('body').on('click','.close', function () {
-       $('.')
+    $('body').on('click', '.close', function () {
+        $('.')
     });
     $('body').on("input", '#input_price', function () {
         returnCheckPrice('');
     });
-    $('body').on('click','#submit_form_rut_tien', function () {
-        if(returnCheckPrice(1)==1){
-            console.log('asdfasdf');
+    $('body').on('click', '#submit_form_rut_tien', function () {
+        if (returnCheckPrice(1) == 1) {
+            $(this).html('Đang gửi...');
+            var link = '{site_name_manage}/az-rut-tien.html';
+            $.ajax({
+                method: "POST",
+                url: link,
+                data: { // Danh sách các thuộc tính sẽ gửi đi
+                    price: $('#input_price').val(),
+                    input_yeu_cau: $('#input_yeu_cau').val(),
+                    form_noti: $('#form_noti').serializeArray()
+                },
+                success: function (response) {
+                    response = $.parseJSON(response);
+                    console.log(response);
+                    if (response.success == 1) {
+                        showNotification('top', 'right', 2, 'Gửi yêu cầu rút tiền thành công, bạn vui lòng đợi AZBOOKING.VN xác nhận');
+                        $('#input_price').val('');
+                        $('#input_yeu_cau').val('');
+//
+//                        var yeu_cau='';
+//                        if(response.data.yeu_cau!=''){
+//                            var yeu_cau='<a href="javascrip:void(0)" rel="tooltip" data-original-title="'+response.data.yeu_cau+'">Xem yêu cầu</a>';
+//                        }
+//                        var html = '<tr><td>1</td>' +
+//                                '<td>300.000 vnđ</td>' +
+//                                '<td></td>' +
+//                                '<td><a class="btn btn-warning">Đang chờ</a></td>' +
+//                                '<td>07-08-2017 07:18:34</td>' +
+//                                '<td></td>' +
+//                                '<td> '+yeu_cau+'' +
+//                                '</td><td> </td></tr>';
+                    } else {
+                        showNotification('top', 'right', 4, response.mess);
+                        $(this).html('Rút tiền');
+                    }
+                    $(this).html('Rút tiền');
+                }
+            });
         }
     });
-    function returnCheckPrice(value){
-        var success=1;
+    function returnCheckPrice(value) {
+        var success = 1;
         var price = $('#input_price').val();
         var price_check = {hoa_hong_check};
         var numberRegex = /^[+-]?\d+(\.\d+)?([eE][+-]?\d+)?$/;
         if (numberRegex.test(price)) {
-            if(price<=price_check){
-                success=1;
+            if (price <= price_check) {
+                success = 1;
                 var price_format = price.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.") + ' vnđ';
-                $('#price_format_rut').html('('+price_format+')');
+                $('#price_format_rut').html('(' + price_format + ')');
                 $('#error_price').hide().html('');
-            }else{
+            } else {
                 $('#error_price').show().html('Số tiền bạn rút đã vượt quá số tiền hoa hồng');
             }
         }
@@ -237,7 +273,7 @@
             $('#price_format_rut').html('');
             $('#error_price').show().html('Bạn vui lòng nhập số tiền cần rút');
         }
-        if(value!=''){
+        if (value != '') {
             return success;
         }
     }
