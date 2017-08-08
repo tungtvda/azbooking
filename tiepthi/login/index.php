@@ -61,6 +61,12 @@ $data_tour_sales = tour_getByTop(4, 'price_sales!="" ', 'id desc');
 $tour_string = '';
 
 // checklogin
+if(isset($_GET['type'])&&$_GET['type']=='error'){
+    $check_login='';
+    if(isset($_GET['mess'])&&$_GET['mess']!=''){
+        $check_login=$_GET['mess'];
+    }
+}
 if(isset($_POST['username_login'])&&isset($_POST['password_login'])){
    $check_login=json_decode(_returnLogin(),true);
     if($check_login['success']==1||$check_login['success']==2){
@@ -478,7 +484,7 @@ $message_dangky=_return_mc_encrypt($message_dangky,'','');
                 <span class="separator-text-bottom">Hoặc đăng nhập bằng</span>
             </div>
             <div class="socmed-login">
-                <a href="#facebook" class="socmed-btn facebook-btn">
+                <a href="<?php echo SITE_NAME?>/tiep-thi-lien-ket/facebook/" class="socmed-btn facebook-btn">
                     <i class="fa fa-facebook"></i>
                     <span> Facebook</span>
                 </a>
