@@ -222,11 +222,6 @@ if(isset($user['id'])&&isset($user['name'])&&isset($user['email'])){
   redict(SITE_NAME.'/tiep-thi-lien-ket/thanh-vien/?type=error&mess='.$mess);
 }
 
-echo '<br />Faceook ID: ' . $user['id'];
-echo '<br />Faceook Name: ' . $user['name'];
-echo '<br />Faceook Email: ' . $user['email'];
-
-
 function link_tourdetail_ajax($app, $name_url = '', $name2_url = '')
 {
   if ($app->tour_quoc_te == 0) {

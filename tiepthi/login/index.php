@@ -488,7 +488,7 @@ $message_dangky=_return_mc_encrypt($message_dangky,'','');
                     <i class="fa fa-facebook"></i>
                     <span> Facebook</span>
                 </a>
-                <a href="#g-plus" class="socmed-btn google-btn">
+                <a href="<?php echo SITE_NAME?>/tiep-thi-lien-ket/google/" class="socmed-btn google-btn">
                     <i class="fa fa-google"></i>
                     <span> Google</span>
                 </a>
