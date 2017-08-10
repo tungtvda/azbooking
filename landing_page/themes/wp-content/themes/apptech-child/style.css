@@ -372,6 +372,7 @@ body{
     font-weight: 800;
     margin-bottom: 2px;
     text-transform: uppercase;
+    line-height: 40px;
 }
 .at-slider-wrap .section-title .heading.slider-subtitle span{
   display: block;
