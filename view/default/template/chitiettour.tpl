@@ -16,6 +16,7 @@
                         <div class="summary entry-summary col-md-6 col-sm-12">
                             <!--<h1 itemprop="name" class="product_title entry-title">Bora Bora</h1>-->
                             <div itemprop="offers" class="detail_font">
+                                {code_user}
                                 <p class="price"><i class="icon-dollar"></i> Giá:
                                     <ins><span class="amount"> {price_format}</span> {vnd}</ins>
                                 </p>
