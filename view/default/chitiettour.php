@@ -215,7 +215,11 @@ function show_chitiet_tour($data = array())
     if(isset($_GET['key'])){
         $asign['id_user']='&key='._returnGetParamSecurity('key');
     }
+    $asign['code_user']='';
     if(count($data_session)>0 && $asign['price_tiep_thi']!='' && $asign['price_tiep_thi']>0){
+        $asign['code_user']='  <p class="price"><i class="icon-dollar"></i> Mã booking:
+                                    <ins><span class="amount"> '.$data_session['user_code'].'</span></ins>
+                                </p>';
         $link_tiep_thi=$asign['link'].'/'._return_mc_encrypt($data_session['id']);
         $asign['div_tiep_thi']='<div class="link_tiep_thi_lien_ket package-details-content">
                         <h3 class="title "><b>Tiếp thị liên kết</b>    <b style="color: red">(Tiền hoa hồng '.number_format($asign['price_tiep_thi'],0,",",".").' vnđ)</b></h3>

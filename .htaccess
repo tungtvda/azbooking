@@ -105,3 +105,4 @@ RewriteRule ^tiep-thi-lien-ket/thong-bao tiepthi/manage/thongbao.php
 RewriteRule ^tiep-thi-lien-ket/ho-so/ tiepthi/manage/hoso.php
 RewriteRule ^tiep-thi-lien-ket/rut-tien/ tiepthi/manage/ruttien.php
 RewriteRule ^tiep-thi-lien-ket/update-avatar/ tiepthi/manage/update_avatar.php
+RewriteRule ^tiep-thi-lien-ket-info/([a-zA-Z0-9_-]+).html controller/default/info_tiepthi.php?Id=$1
