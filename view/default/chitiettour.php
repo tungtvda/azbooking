@@ -212,14 +212,24 @@ function show_chitiet_tour($data = array())
     $data_session=checkSession('', 1);
     $asign['div_tiep_thi']='';
     $asign['id_user']='';
+    $asign['code_user']='';
     if(isset($_GET['key'])){
         $asign['id_user']='&key='._returnGetParamSecurity('key');
-    }
-    $asign['code_user']='';
-    if(count($data_session)>0 && $asign['price_tiep_thi']!='' && $asign['price_tiep_thi']>0){
-        $asign['code_user']='  <p class="price"><i class="icon-dollar"></i> Mã booking:
-                                    <ins><span class="amount"> '.$data_session['user_code'].'</span></ins>
+        $array_user_share_noti = array(
+            'id'=>_returnGetParamSecurity('key'),
+        );
+        $list_noti= returnCURL($array_user_share_noti, SITE_NAME_MANAGE.'/azbooking-hoso.html');
+        $data_list_noti=json_decode($list_noti,true);
+       if(isset($data_list_noti['user']['code']) && $data_list_noti['user']['code']!=''){
+           $asign['code_user']='  <p class="price"><i class="icon-dollar"></i> Mã booking:
+                                    <ins><span class="amount"> '.$data_list_noti['user']['code'].'</span></ins>
                                 </p>';
+       }
+
+    }
+
+    if(count($data_session)>0 && $asign['price_tiep_thi']!='' && $asign['price_tiep_thi']>0){
+
         $link_tiep_thi=$asign['link'].'/'._return_mc_encrypt($data_session['id']);
         $asign['div_tiep_thi']='<div class="link_tiep_thi_lien_ket package-details-content">
                         <h3 class="title "><b>Tiếp thị liên kết</b>    <b style="color: red">(Tiền hoa hồng '.number_format($asign['price_tiep_thi'],0,",",".").' vnđ)</b></h3>
