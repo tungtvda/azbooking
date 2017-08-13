@@ -142,15 +142,15 @@
           href="http://bestcareerbd.com/themes/apptech/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fbestcareerbd.com%2Fthemes%2Fapptech%2Fhome-two%2F&amp;format=xml"/>
     <style type="text/css" id="layers-inline-styles-header">
         body {
-            font-family: "Lato", Helvetica, sans-serif;
+            font-family: "Open Sans", sans-serif;
         }
 
         h1, h2, h3, h4, h5, h6, .heading {
-            font-family: "Raleway", Helvetica, sans-serif;
+            font-family: "Open Sans", sans-serif;
         }
 
         button, .button, input[type=submit] {
-            font-family: "Raleway", Helvetica, sans-serif;
+            font-family: "Open Sans", sans-serif;
         }
 
         .header-site.invert .nav-horizontal > ul > li > a, .header-site .nav-horizontal > ul > li > a, .header-search a {

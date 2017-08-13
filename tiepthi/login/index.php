@@ -497,7 +497,7 @@ $message_dangky=_return_mc_encrypt($message_dangky,'','');
                 <div><a href="<?php echo SITE_NAME?>/tiep-thi-lien-ket/thanh-vien/?type=quen-mat-khau" class="forgot-password-link"> <i
                             class="ace-icon fa fa-arrow-left"></i> Quên mật khẩu </a></div>
                 <div style="float: right;text-align: right;"><a href="<?php echo SITE_NAME?>/tiep-thi-lien-ket/thanh-vien/?type=dang-ky" class="user-signup-link">
-                        Đăng ký tài khoản <i
+                        Đăng ký <i
                             class="ace-icon fa fa-arrow-right"></i> </a>
                 </div>
             </div>

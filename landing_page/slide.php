@@ -84,9 +84,9 @@
                         </div>
                     </div>
                     <div class="image-container ">
-                        <img width="297" height="570" src="themes/wp-content/uploads/2016/11/new-phone.png"
+                        <img width="297" height="570" src="themes/images/login.png"
                              class="attachment-large size-large" alt=""
-                             srcset="http://bestcareerbd.com/themes/apptech/wp-content/uploads/2016/11/new-phone.png 297w, http://bestcareerbd.com/themes/apptech/wp-content/uploads/2016/11/new-phone-156x300.png 156w"
+                             srcset="themes/images/login.png"
                              sizes="(max-width: 297px) 100vw, 297px"/></div>
                 </div> <!-- .container -->
             </div> <!-- .overlay -->
@@ -138,7 +138,7 @@
                             <div class="button-set at-slider-btn-grp">
 
 
-                                <a class="button active " href="#" target="_self" data-swiper-parallax="-400">
+                                <a class="button active " href="http://azbooking.vn/tiep-thi-lien-ket/facebook/" target="_self" data-swiper-parallax="-400">
                                     <i class="zmdi zmdi-facebook-box"></i>
 			                                                        <span>
 			                                                           &nbsp;		                                                            <span
@@ -147,7 +147,7 @@
                                 </a>
 
 
-                                <a class="button active " href="#" target="_self" data-swiper-parallax="-500">
+                                <a class="button active " href="http://azbooking.vn/tiep-thi-lien-ket/google/" target="_self" data-swiper-parallax="-500">
                                     <i class="zmdi zmdi-google-plus-box"></i>
 			                                                        <span>
 			                                                            &nbsp;			                                                            <span
@@ -161,82 +161,10 @@
                         </div>
                     </div>
                     <div class="image-container ">
-                        <img width="297" height="570" src="themes/wp-content/uploads/2016/11/new-phone.png"
+                        <img width="297" height="570" src="themes/images/login.png"
                              class="attachment-large size-large" alt=""
-                             srcset="http://bestcareerbd.com/themes/apptech/wp-content/uploads/2016/11/new-phone.png 297w, http://bestcareerbd.com/themes/apptech/wp-content/uploads/2016/11/new-phone-156x300.png 156w"
+                             srcset="themes/images/login.png"
                              sizes="(max-width: 297px) 100vw, 297px"/></div>
-                </div> <!-- .container -->
-            </div> <!-- .overlay -->
-
-
-        </div>
-
-        <div class="swiper-slide invert image-bottom text-center " id="layers-widget-apptech_new_slider-41-136"
-             style="float: left; ">
-
-
-            <!-- Start video bg area -->
-
-
-            <!-- End video bg area -->
-
-            <!-- End apptech bg video  -->
-            <style>
-                #layers-widget-apptech_new_slider-41-136 [data-overlay]:before {
-                    background: #1879fd;
-                }
-            </style>
-            <div class="overlay content" data-overlay="8">
-
-                <div class="container clearfix">
-                    <div class="copy-container">
-                        <div class="section-title  large">
-
-                            <h3
-                                data-swiper-parallax="-100" style="font-size:72px"
-                                class="heading apptech-ani-heading wow" data-in-effect="none"
-                                data-out-effect="none"> Apptech
-
-                            </h3>
-
-                            <h3
-                                data-swiper-parallax="-200" style="font-size:72px"
-                                class="heading slider-subtitle wow" data-in-effect="none"
-                                data-out-effect="none"> Makes your dost </h3>
-
-                            <div data-swiper-parallax="-300" class="excerpt" style="font-size:16px"><p>Lorem
-                                    ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel volutpat
-                                    felis, eu condimentum massa. Pellentesque mollis eros vel mattis tempor. Aliquam
-                                    eu efficitur enim, vitae fermentum orci. Sed et feugiat nulla.</p></div>
-                            <style>
-
-                            </style>
-                            <!-- Start slider button -->
-                            <div class="button-set at-slider-btn-grp">
-
-
-                                <a class="button active " href="#" target="_self" data-swiper-parallax="-400">
-                                    <i class="zmdi zmdi-apple"></i>
-			                                                        <span>
-			                                                            Available on the			                                                            <span
-                                                                            class="large-text">App Store</span>
-			                                                        </span>
-                                </a>
-
-
-                                <a class="button active " href="#" target="_self" data-swiper-parallax="-500">
-                                    <i class="zmdi zmdi-google-play"></i>
-			                                                        <span>
-			                                                            Available on the			                                                            <span
-                                                                            class="large-text">Play Store</span>
-			                                                        </span>
-                                </a>
-
-
-                            </div>
-                            <!-- End Slider Button -->
-                        </div>
-                    </div>
                 </div> <!-- .container -->
             </div> <!-- .overlay -->
 
