@@ -49,6 +49,12 @@
                         <p>Thông báo</p>
                     </a>
                 </li>
+                <li cl>
+                    <a href="{SITE-NAME}/tiep-thi-lien-ket/dang-xuat/">
+                        <i class="fa fa-sign-out "></i>
+                        <p>Đăng xuất</p>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>

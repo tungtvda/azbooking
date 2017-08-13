@@ -3,23 +3,33 @@
         <nav class="pull-left">
             <ul>
                 <li>
-                    <a href="#">
-                        Home
+                    <a href="{SITE-NAME}/tiep-thi-lien-ket-info/gioi-thieu.html">
+                        Giới thiệu tiếp thị liên kết
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        Company
+                    <a href="{SITE-NAME}/tiep-thi-lien-ket-info/cac-buoc-tham-gia.html">
+                       Các bước tham gia
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        Portfolio
+                    <a href="{SITE-NAME}/tiep-thi-lien-ket-info/cam-ket.html">
+                       Cam kết
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        Blog
+                    <a href="{SITE-NAME}/tiep-thi-lien-ket-info/hoi-dap.html">
+                       Hỏi và đáp
+                    </a>
+                </li>
+                <li>
+                    <a href="{SITE-NAME}/tiep-thi-lien-ket-info/dieu-khoan-chinh-sach.html">
+                        Điều khoản chính sách
+                    </a>
+                </li>
+                <li>
+                    <a href="{SITE-NAME}/tiep-thi-lien-ket-info/hop-dong-cong-tac-vien.html">
+                        Hợp đồng cộng tác viên
                     </a>
                 </li>
             </ul>
