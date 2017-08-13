@@ -516,6 +516,7 @@ $('body').on("click",'#submit_form_avatar', function () {
         var link = $('#site_name_manage').val() + '/az-update-avatar.html';
         var fd = new FormData(document.getElementById("form_avatar"));
         fd.append("label", "WEBUPLOAD");
+        $(this).html('Loading...');
         $.ajax({
             method: "POST",
             url: link,
@@ -531,6 +532,7 @@ $('body').on("click",'#submit_form_avatar', function () {
                 }else{
                     showNotification('top','right',4,response.mess);
                 }
+                $(this).html('Cập nhật');
             }
         });
     }else{

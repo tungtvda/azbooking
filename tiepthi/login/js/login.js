@@ -418,6 +418,19 @@ jQuery(function ($) {
         $('#mess_password_login').hide();
     });
     $('body').on("click",'#login_btn', function () {
+        checkLogin();
+    });
+    $('#email_login').keypress(function (e) {
+        if (e.which == 13) {
+            checkLogin();
+        }
+    });
+    $('#password_login').keypress(function (e) {
+        if (e.which == 13) {
+            checkLogin();
+        }
+    });
+    function checkLogin(){
         var email_login=$('#email_login').val();
         var password_login=$('#password_login').val();
         if(email_login!=''&&password_login!=''){
@@ -441,7 +454,7 @@ jQuery(function ($) {
                 $('#mess_password_login').show();
             }
         }
-    });
+    }
     $('body').on("input",'#email_login', function () {
         check_email_login(0);
     });
