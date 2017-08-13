@@ -357,11 +357,11 @@ body{
 }
 .page .at-slider-btn-grp  a.button:hover i,
 .page .at-slider-btn-grp  a.button:hover span.large-text {
-    color: #666;
+    color: #1879fd;
     transition: all 0.3s ease 0s;
 }
 .page .at-slider-btn-grp  a.button:hover span {
-    color: #7a7a7a;
+    color: #1879fd;
     transition: all 0.3s ease 0s;
 }
 .page .at-slider-btn-grp.button-set {
@@ -372,7 +372,7 @@ body{
     font-weight: 800;
     margin-bottom: 2px;
     text-transform: uppercase;
-    line-height: 40px;
+    /*line-height: 40px;*/
     font-family: Tahoma, Arial, Helvetica, sans-serif;
 }
 .at-slider-wrap .section-title .heading.slider-subtitle span{
@@ -416,7 +416,7 @@ body{
     text-align: center;
 }
 .single-item .heading.ht-pt{
-    color: #666666;
+    color: #1879fd;
     font-size: 28px;
     font-weight: 600;
 }
@@ -441,8 +441,8 @@ body{
   7. About area
 ========================================*/
 .about-bottom-left h1.heading {
-    color: #535353;
-    font-size: 36px;
+    color: #1879fd;
+    font-size: 30px;
     font-weight: normal;
     margin-bottom: 13px;
     text-transform: uppercase;
@@ -567,10 +567,12 @@ body{
 }
 .feature-list-text > h3,
 .feature-list-text2 > h3 {
-    color: #666666;
-    font-size: 28px;
+    color: #1879fd;
+    font-size: 18px;
     font-weight: 600;
     margin-bottom: 14px;
+    padding-top: 25px;
+    height: 60px;
 }
 .title-pb {
     padding-bottom: 74px;
@@ -638,8 +640,8 @@ body{
   9. Section title
 ========================================*/
 .section-title .heading {
-    color: #535353;
-    font-size: 36px;
+    color: #1879fd;
+    font-size: 30px;
     font-weight: normal;
     line-height: 30px;
     margin-bottom: 17px;

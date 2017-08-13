@@ -31,7 +31,8 @@ a {
 	top: 50%;
     left: 50%;
 	margin-left: -200px;
-	margin-top: -286px;  
+	margin-top: -316px;
+	/*margin-top: -286px;*/
 }
 .login-form-container a{
 	text-decoration:none;
@@ -214,11 +215,12 @@ a {
 	background: #CCCCCC;
 	border: 0;
 	color: #676464;
-	padding: 9px;
+	/*padding: 9px;*/
+	padding: 9px 0px;
 	font-size: 15px;
 	display: inline-block;
 	text-align: center;
-	width: 44%;
+	width: 50%;
 }
 .login-form p{
 	padding: 5px 10px 5px 0px;
@@ -349,6 +351,7 @@ a {
 		margin-top: 0 !important;
 		top: 10px !important;
 	}
+
 }
 @media screen and (max-width: 400px) {
 	.login-form-container {
@@ -363,7 +366,21 @@ a {
 		width: 140px;
 	}
 	.socmed-login .socmed-btn i {
-		margin-right: 5px;
-		width: 19px;
+		/*margin-right: 5px;*/
+		/*width: 19px;*/
+	}
+	.socmed-login .socmed-btn {
+		width: 49%;
+		padding: 9px 0px;
+	}
+	.login-form .register {
+		width:49.5%;
+		padding: 9px 0px;
+	}
+	.btn_action .login{
+		width: 43%;
+	}
+	.socmed-login .socmed-btn {
+		padding: 10px 0px;
 	}
 }
