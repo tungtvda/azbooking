@@ -237,7 +237,6 @@
                 },
                 success: function (response) {
                     response = $.parseJSON(response);
-                    console.log(response);
                     if (response.success == 1) {
                         showNotification('top', 'right', 2, 'Gửi yêu cầu rút tiền thành công, bạn vui lòng đợi AZBOOKING.VN xác nhận');
                         $('#input_price').val('');
