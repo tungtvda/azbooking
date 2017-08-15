@@ -22,10 +22,6 @@
     </section>
 
 
-    <!-- Start footer top area -->
-
-
-    <!-- End footer top area -->
 
 
     <section id="footer" class="footer-site invert" style="background-color: #2b2b2b" data-foo-overlay=5>
@@ -42,8 +38,8 @@
                     <div class="column span-12">
 
                         <div class="footer-logo footer-logo-large">
-                            <a href="http://bestcareerbd.com/themes/apptech/">
-                                <img src="themes/wp-content/uploads/2016/11/2.png" alt="">
+                            <a href="">
+                                <img src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/cauhinh/logoazbooking.vn.png" alt="">
                             </a>
                         </div>
 
