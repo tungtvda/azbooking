@@ -6,7 +6,7 @@
     <div class="container clearfix">
         <div class="section-title clearfix medium text-center ">
             <h3 class="heading">
-                Our <span>Client loves</span></h3>
+                Ý kiến <span style="color: #f70000;">Khách hàng</span></h3>
             <div class="excerpt"><p>There are many variations of passages of Lorem Ipsum available, but the
                     majorityhave suffered alteration in some form, by injected humour, available</p></div>
         </div>

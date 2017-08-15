@@ -5,7 +5,7 @@
     <div class="container clearfix">
         <div class="section-title clearfix medium text-center ">
             <h3 class="heading">
-                View <span>Screenshots</span></h3>
+                Hình ảnh hệ thống tiếp thị liên kết <span style="color: #f70000;">AZBOOKING.VN</span></h3>
             <div class="excerpt"><p>There are many variations of passages of Lorem Ipsum available, but the
                     majorityhave suffered alteration in some form, by injected humour, available</p></div>
         </div>
