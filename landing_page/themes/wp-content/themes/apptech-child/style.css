@@ -1323,6 +1323,8 @@ div.wpcf7-response-output {
 }
 .single-contact-info {
   display: flex;
+    float: left;
+    width: 33%;
 }
 .contact-text {
   text-align: left;

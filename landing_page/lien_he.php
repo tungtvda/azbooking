@@ -74,41 +74,38 @@
                         <div class="company-location">
                             <div class="conatct-info">
                                 <!-- single start -->
-                                <div class="single-contact-info">
+                                <div class="single-contact-info col-xs-12">
                                     <div class="contact-icon">
                                         <i class="zmdi zmdi-phone"></i>
                                     </div>
                                     <div class="contact-text">
-														<span>
-																													+012 345 678 102
+														<span><a href="tel:0943 838 222">0943 838 222</a>
 															<br>
-																													+012 345 678 102 																												</span>
+															<a href="tel:0975 820 479">0975 820 479</a>																									</span>
                                     </div>
                                 </div>
                                 <!-- single end -->
                                 <!-- single start -->
-                                <div class="single-contact-info">
+                                <div class="single-contact-info col-xs-12">
                                     <div class="contact-icon">
                                         <i class="zmdi zmdi-globe-alt"></i>
                                     </div>
                                     <div class="contact-text">
 														<span>
-																													urname@email.com 																												<br>
-																													urname@email.com 																												</span>
+																													<a href="mailto:info@azbooking.vn">info@azbooking.vn</a>																												<br>
+																												<a href="mailto:info@azbooking.vn">info@azbooking.vn</a>																										</span>
                                     </div>
                                 </div>
                                 <!-- single end -->
                                 <!-- single start -->
-                                <div class="single-contact-info">
+                                <div class="single-contact-info col-xs-12">
 
                                     <div class="contact-icon">
                                         <i class="zmdi zmdi-pin"></i>
                                     </div>
 
                                     <div class="contact-text">
-														<span>
-																													ur address goes here, 																												<br>
-																													street,Crossroad123. 																												</span>
+														<span>Phòng 2001, tầng 20, tòa nhà 137 Nguyễn Ngọc Vũ, Cầu Giấy, Hà Nội</span>																												</span>
 
                                     </div>
                                 </div>
