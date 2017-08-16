@@ -16,7 +16,9 @@
         <?php include('cau_hoi.php')?>
         <?php include('man_hinh.php')?>
         <?php include('y_kien.php')?>
+        <?php include('thu_hang.php')?>
         <?php include('lien_he.php')?>
+
 
 
     </section>
