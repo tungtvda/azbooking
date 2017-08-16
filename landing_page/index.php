@@ -70,7 +70,7 @@
                         </div>
                         <!-- End Footer social icons -->
 
-                        <p class="site-text">Copyright © 2016 Bootexperts all rights reserved. </p>
+                        <p class="site-text">Copyright © 2017 <a href="http://azbooking.vn/">AZBOOKING.VN</a> </p>
 
                     </div>
                     <div class="column span-12 clearfix">
