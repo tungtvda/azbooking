@@ -23,43 +23,33 @@
                         <div class="contact-form-area">
                             <div role="form" class="wpcf7" id="wpcf7-f423-o1" lang="en-US" dir="ltr">
                                 <div class="screen-reader-response"></div>
-                                <form action="http://bestcareerbd.com/themes/apptech/home-two/#wpcf7-f423-o1"
-                                      method="post" class="wpcf7-form" novalidate="novalidate">
-                                    <div style="display: none;">
-                                        <input type="hidden" name="_wpcf7" value="423"/>
-                                        <input type="hidden" name="_wpcf7_version" value="4.7"/>
-                                        <input type="hidden" name="_wpcf7_locale" value="en_US"/>
-                                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f423-o1"/>
-                                        <input type="hidden" name="_wpnonce" value="3ee24b4107"/>
-                                    </div>
+                                <form  class="wpcf7-form" novalidate="novalidate">
                                     <div class="contact-form">
                                         <div class="form-group">
                                                     <span class="wpcf7-form-control-wrap text-264"><input type="text"
-                                                                                                          name="text-264"
-                                                                                                          value=""
-                                                                                                          size="40"
+                                                                                                          name="name"
                                                                                                           class="wpcf7-form-control wpcf7-text"
-                                                                                                          aria-invalid="false"
-                                                                                                          placeholder="Name"/></span>
+                                                                                                          placeholder="Họ tên *"/></span>
                                         </div>
                                         <div class="form-group">
                                                     <span class="wpcf7-form-control-wrap your-email"><input type="email"
-                                                                                                            name="your-email"
-                                                                                                            value=""
-                                                                                                            size="40"
+                                                                                                            name="email"
                                                                                                             class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control"
-                                                                                                            aria-required="true"
-                                                                                                            aria-invalid="false"
-                                                                                                            placeholder="Email"/></span>
+                                                                                                            placeholder="Email *"/></span>
+                                        </div>
+                                        <div class="form-group">
+                                                    <span class="wpcf7-form-control-wrap your-email"><input type="text"
+                                                                                                            name="phone"
+                                                                                                            class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control"
+                                                                                                            placeholder="Điện thoại *"/></span>
                                         </div>
                                         <div class="form-group">
                                                     <span class="wpcf7-form-control-wrap textarea-219"><textarea
                                                             name="textarea-219" cols="40" rows="10"
-                                                            class="wpcf7-form-control wpcf7-textarea"
-                                                            aria-invalid="false" placeholder="Your Massage"></textarea></span>
+                                                            class="wpcf7-form-control wpcf7-textarea" " placeholder="Nội dung"></textarea></span>
                                         </div>
-                                        <div class="submit-form">
-                                            <input type="submit" value="Submit"
+                                        <div class="submit-form" style="text-align: center">
+                                            <input type="button" value="Gửi liên hệ" style="border-radius:4px"
                                                    class="wpcf7-form-control wpcf7-submit button"/>
                                         </div>
                                     </div>

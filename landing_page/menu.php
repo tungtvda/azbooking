@@ -114,23 +114,20 @@
             <nav class="nav nav-horizontal">
 
                 <ul id="menu-primary-menu-1" class="menu">
-                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39"><a href="#home">Home</a>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39"><a href="#home">Trang chủ</a>
                     </li>
-                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40"><a href="#about">About</a>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40"><a href="#about">Giới thiệu</a>
                     </li>
                     <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41"><a
-                            href="#features">Features</a></li>
+                            href="#features">Tính năng</a></li>
                     <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-42"><a
-                            href="#screenshots">Screenshots</a></li>
-                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43"><a href="#reviews">Reviews</a>
+                            href="#screenshots">Hình ảnh</a></li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43"><a href="#reviews">Ý kiến khách hàng</a>
                     </li>
-                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-44"><a href="#pricing">Pricing</a>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-44"><a href="#pricing">Thứ hạng</a>
                     </li>
-                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-45"><a href="#support">Support</a>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-45"><a href="#support">Liên hệ</a>
                     </li>
-                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1450"><a
-                            href="https://themeforest.net/item/apptech-wordpress-landing-page-theme/19323624?ref=AslamHasib">Buy
-                            Now</a></li>
                 </ul>
                 <div class="header-search">
                     <a href="#">
