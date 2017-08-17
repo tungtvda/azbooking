@@ -49,10 +49,9 @@
                                 class="heading slider-subtitle wow" data-in-effect="none"
                                 data-out-effect="none"> TIẾP THỊ LIÊN KẾT </h3>
 
-                            <div data-swiper-parallax="-300" class="excerpt" style="font-size:16px"><p>Lorem
-                                    ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel volutpat
-                                    felis, eu condimentum massa. Pellentesque mollis eros vel mattis tempor. Aliquam
-                                    eu efficitur enim, vitae fermentum orci. Sed et feugiat nulla.</p></div>
+                            <div data-swiper-parallax="-300" class="excerpt" style="font-size:16px"><p>Bạn đã có tài khoản AZBOOKING.VN chưa?</p>
+                                    <p>Chỉ cần vài bước đơn giản, bãn đã có thể trở thành, thành viên của AZBOOKING.VN</p>
+                            </div>
                             <style>
 
                             </style>
@@ -127,10 +126,8 @@
                                 class="heading slider-subtitle wow" data-in-effect="none"
                                 data-out-effect="none"> Mạng xã hội </h3>
 
-                            <div data-swiper-parallax="-300" class="excerpt" style="font-size:16px"><p>Lorem
-                                    ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel volutpat
-                                    felis, eu condimentum massa. Pellentesque mollis eros vel mattis tempor. Aliquam
-                                    eu efficitur enim, vitae fermentum orci. Sed et feugiat nulla.</p></div>
+                            <div data-swiper-parallax="-300" class="excerpt" style="font-size:16px"><p>Bạn đã có tài khoản AZBOOKING.VN chưa?
+                                    hãy đăng ký ngay nào. Chỉ cần vài bước đơn giản, bãn đã có thể trở thành, thành viên của AZBOOKING.VN</p></div>
                             <style>
 
                             </style>
