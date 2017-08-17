@@ -15,8 +15,8 @@
         <div class="container">
             <div class="grid">
                 <div class="span-7 column">
-                    <div class="choose-img">
-                        <img src="themes/wp-content/uploads/2016/11/3.png" alt="img"/>
+                    <div class="choose-img" style="text-align: center">
+                        <img src="themes/images/why.png" alt="img"/>
                     </div>
                 </div>
                 <div class="span-5 column">

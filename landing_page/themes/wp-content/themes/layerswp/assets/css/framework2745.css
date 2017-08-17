@@ -603,7 +603,7 @@ object{
 		z-index: 100;
 	}
 	.header-overlay-no-push .header-overlay:not(.is_stuck){
-		background: transparent;
+		background: #ffffff;
 	}
 
 	/*---------------------------*/
@@ -2692,10 +2692,10 @@ object{
 	/*---------------------------*/
 	/*- HEADER INVERT -----------*/
 	.header-site.invert .nav-horizontal > ul > li > a{
-		color: rgba(255, 255, 255, 1);
+		color: #1879fd
 	}
 	.header-site.invert .nav-horizontal > ul > li > a:hover{
-		color: rgba(255, 255, 255, 0.7);
+		color: #f70000;
 	}
 	.header-site.invert .responsive-nav .l-menu{
 		color: rgba(255, 255, 255, 1);

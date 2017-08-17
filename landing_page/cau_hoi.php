@@ -79,9 +79,9 @@
 
                 <div class="media image-top medium">
                     <div class="media-image ">
-                        <img width="450" height="372" src="themes/wp-content/uploads/2016/11/app4.png"
+                        <img width="450" height="372" src="themes/images/qa.jpg"
                              class="attachment-full size-full" alt=""
-                             srcset="http://bestcareerbd.com/themes/apptech/wp-content/uploads/2016/11/app4.png 450w, http://bestcareerbd.com/themes/apptech/wp-content/uploads/2016/11/app4-300x248.png 300w"
+                             srcset="themes/images/qa.jpg"
                              sizes="(max-width: 450px) 100vw, 450px"/></div>
 
                 </div>
