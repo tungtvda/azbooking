@@ -23,43 +23,33 @@
                         <div class="contact-form-area">
                             <div role="form" class="wpcf7" id="wpcf7-f423-o1" lang="en-US" dir="ltr">
                                 <div class="screen-reader-response"></div>
-                                <form action="http://bestcareerbd.com/themes/apptech/home-two/#wpcf7-f423-o1"
-                                      method="post" class="wpcf7-form" novalidate="novalidate">
-                                    <div style="display: none;">
-                                        <input type="hidden" name="_wpcf7" value="423"/>
-                                        <input type="hidden" name="_wpcf7_version" value="4.7"/>
-                                        <input type="hidden" name="_wpcf7_locale" value="en_US"/>
-                                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f423-o1"/>
-                                        <input type="hidden" name="_wpnonce" value="3ee24b4107"/>
-                                    </div>
+                                <form  class="wpcf7-form" novalidate="novalidate">
                                     <div class="contact-form">
                                         <div class="form-group">
                                                     <span class="wpcf7-form-control-wrap text-264"><input type="text"
-                                                                                                          name="text-264"
-                                                                                                          value=""
-                                                                                                          size="40"
+                                                                                                          name="name"
                                                                                                           class="wpcf7-form-control wpcf7-text"
-                                                                                                          aria-invalid="false"
-                                                                                                          placeholder="Name"/></span>
+                                                                                                          placeholder="Họ tên *"/></span>
                                         </div>
                                         <div class="form-group">
                                                     <span class="wpcf7-form-control-wrap your-email"><input type="email"
-                                                                                                            name="your-email"
-                                                                                                            value=""
-                                                                                                            size="40"
+                                                                                                            name="email"
                                                                                                             class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control"
-                                                                                                            aria-required="true"
-                                                                                                            aria-invalid="false"
-                                                                                                            placeholder="Email"/></span>
+                                                                                                            placeholder="Email *"/></span>
+                                        </div>
+                                        <div class="form-group">
+                                                    <span class="wpcf7-form-control-wrap your-email"><input type="text"
+                                                                                                            name="phone"
+                                                                                                            class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control"
+                                                                                                            placeholder="Điện thoại *"/></span>
                                         </div>
                                         <div class="form-group">
                                                     <span class="wpcf7-form-control-wrap textarea-219"><textarea
                                                             name="textarea-219" cols="40" rows="10"
-                                                            class="wpcf7-form-control wpcf7-textarea"
-                                                            aria-invalid="false" placeholder="Your Massage"></textarea></span>
+                                                            class="wpcf7-form-control wpcf7-textarea" " placeholder="Nội dung"></textarea></span>
                                         </div>
-                                        <div class="submit-form">
-                                            <input type="submit" value="Submit"
+                                        <div class="submit-form" style="text-align: center">
+                                            <input type="button" value="Gửi liên hệ" style="border-radius:4px"
                                                    class="wpcf7-form-control wpcf7-submit button"/>
                                         </div>
                                     </div>
@@ -74,41 +64,38 @@
                         <div class="company-location">
                             <div class="conatct-info">
                                 <!-- single start -->
-                                <div class="single-contact-info">
+                                <div class="single-contact-info col-xs-12">
                                     <div class="contact-icon">
                                         <i class="zmdi zmdi-phone"></i>
                                     </div>
                                     <div class="contact-text">
-														<span>
-																													+012 345 678 102
+														<span><a href="tel:0943 838 222">0943 838 222</a>
 															<br>
-																													+012 345 678 102 																												</span>
+															<a href="tel:0975 820 479">0975 820 479</a>																									</span>
                                     </div>
                                 </div>
                                 <!-- single end -->
                                 <!-- single start -->
-                                <div class="single-contact-info">
+                                <div class="single-contact-info col-xs-12">
                                     <div class="contact-icon">
                                         <i class="zmdi zmdi-globe-alt"></i>
                                     </div>
                                     <div class="contact-text">
 														<span>
-																													urname@email.com 																												<br>
-																													urname@email.com 																												</span>
+																													<a href="mailto:info@azbooking.vn">info@azbooking.vn</a>																												<br>
+																												<a href="mailto:info@azbooking.vn">info@azbooking.vn</a>																										</span>
                                     </div>
                                 </div>
                                 <!-- single end -->
                                 <!-- single start -->
-                                <div class="single-contact-info">
+                                <div class="single-contact-info col-xs-12">
 
                                     <div class="contact-icon">
                                         <i class="zmdi zmdi-pin"></i>
                                     </div>
 
                                     <div class="contact-text">
-														<span>
-																													ur address goes here, 																												<br>
-																													street,Crossroad123. 																												</span>
+														<span>Phòng 2001, tầng 20, tòa nhà 137 Nguyễn Ngọc Vũ, Cầu Giấy, Hà Nội</span>																												</span>
 
                                     </div>
                                 </div>
