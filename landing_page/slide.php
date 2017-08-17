@@ -37,24 +37,13 @@
                     <div class="copy-container">
                         <div class="section-title  large">
 
-                            <h3
-                                data-swiper-parallax="-100" style="font-size:72px"
-                                class="heading apptech-ani-heading wow" data-in-effect="none"
-                                data-out-effect="none"> TÀI KHOẢN
+                            <h3 class="heading apptech-ani-heading wow" > TÀI KHOẢN </h3>
 
-                            </h3>
+                            <h3 class="heading slider-subtitle wow"> TIẾP THỊ LIÊN KẾT </h3>
 
-                            <h3
-                                data-swiper-parallax="-200" style="font-size:72px"
-                                class="heading slider-subtitle wow" data-in-effect="none"
-                                data-out-effect="none"> TIẾP THỊ LIÊN KẾT </h3>
-
-                            <div data-swiper-parallax="-300" class="excerpt" style="font-size:16px"><p>Bạn đã có tài khoản AZBOOKING.VN chưa?</p>
-                                    <p>Chỉ cần vài bước đơn giản, bãn đã có thể trở thành, thành viên của AZBOOKING.VN</p>
+                            <div  class="excerpt" style="font-size:16px"><p>Bạn đã có tài khoản AZBOOKING.VN chưa?</p>
+                                    <p>Chỉ cần vài bước đơn giản, bạn đã có thể trở thành, thành viên của AZBOOKING.VN</p>
                             </div>
-                            <style>
-
-                            </style>
                             <!-- Start slider button -->
                             <div class="button-set at-slider-btn-grp">
 
@@ -114,20 +103,13 @@
                     <div class="copy-container">
                         <div class="section-title  large">
 
-                            <h3
-                                data-swiper-parallax="-100" style="font-size:72px"
-                                class="heading apptech-ani-heading wow" data-in-effect="none"
-                                data-out-effect="none"> TÀI KHOẢN
+                            <h3 class="heading apptech-ani-heading wow" > TÀI KHOẢN
 
                             </h3>
 
-                            <h3
-                                data-swiper-parallax="-200" style="font-size:72px"
-                                class="heading slider-subtitle wow" data-in-effect="none"
-                                data-out-effect="none"> Mạng xã hội </h3>
+                            <h3 class="heading slider-subtitle wow"> Mạng xã hội </h3>
 
-                            <div data-swiper-parallax="-300" class="excerpt" style="font-size:16px"><p>Bạn đã có tài khoản AZBOOKING.VN chưa?
-                                    hãy đăng ký ngay nào. Chỉ cần vài bước đơn giản, bãn đã có thể trở thành, thành viên của AZBOOKING.VN</p></div>
+                            <div  class="excerpt" style="font-size:16px"><p>Nếu bạn đã có tài khoản FACEBOOK hoặc GOOGLE, việc của bạn chỉ đơn giản là CLICK và XÁC NHẬN để trở thành thành viên của AZBOOKING.VN</p></div>
                             <style>
 
                             </style>

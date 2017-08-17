@@ -237,13 +237,14 @@ body{
 }
 .header-site .nav-horizontal > ul > li > a {
   display: block;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.425;
   padding: 0;
   position: relative;
   text-transform: uppercase;
   transition: all 0.3s ease 0s;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
 }
 .header-site .nav-horizontal > ul > li > a::before {
   background: #ffffff none repeat scroll 0 0;
@@ -286,7 +287,7 @@ body{
     margin-right: 0;
 }
 .header-site.invert .nav-horizontal > ul > li > a:hover {
-  color: rgba(255, 255, 255, 1);
+  color: #1879fd;
 }
 .header-side-wrapper .header-site .nav-horizontal li.menu-item {
   padding: 10px 0;
@@ -368,7 +369,7 @@ body{
   margin-top: 30px;
 }
 .at-slider-wrap .section-title .heading{
-    font-size: 72px;
+    /*font-size: 72px;*/
     font-weight: 800;
     margin-bottom: 2px;
     text-transform: uppercase;
@@ -695,9 +696,10 @@ body{
   11. Choose area
 ========================================*/
 .choose-img > img {
-    float: right;
-    margin-right: -80px;
+    /*float: right;*/
+    /*margin-right: -80px;*/
     max-width: none;
+    width: 80%;
 }
 .choose-area .feature-list-text2 {
     overflow: hidden;
