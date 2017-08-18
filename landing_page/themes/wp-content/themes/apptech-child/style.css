@@ -633,9 +633,10 @@ body{
     width: 505px;
 }
 .feature-img img {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+    position: relative;
+    top: 53%;
+    transform: translateY(-50%);
+    width: 80%;
 }
 /*======================================
   9. Section title

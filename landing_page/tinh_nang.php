@@ -53,7 +53,7 @@
                 <div class="span-4 column">
                     <div class="feature-top text-center">
                         <div class="feature-img">
-                            <img src="themes/wp-content/uploads/2016/11/mobile-3.png" alt="img"/>
+                            <img src="themes/images/tinh_nang.png" alt="img"/>
                         </div>
                     </div>
                 </div>
