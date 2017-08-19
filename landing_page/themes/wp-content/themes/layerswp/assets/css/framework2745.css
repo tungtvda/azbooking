@@ -1755,9 +1755,9 @@ object{
 	.custom-logo-link img,
 	.mark img{
 		display: inline-block;
-		max-height: 40px;
+		/* max-height: 40px; */
 		margin: auto;
-		width: auto;
+		width: 60%;
 	}
 	.site-description{
 		display: inline-block;
@@ -2698,7 +2698,8 @@ object{
 		color: #f70000;
 	}
 	.header-site.invert .responsive-nav .l-menu{
-		color: rgba(255, 255, 255, 1);
+		/*color: rgba(255, 255, 255, 1);*/
+		color: #1879fd;
 	}
 
 	/*---------------------------*/

@@ -1,6 +1,9 @@
 #php_value upload_max_filesize 40M
 #php_value post_max_size 42M
 #Options +FollowSymLinks
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin *
+</IfModule>
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^.kzone.vn
 ErrorDocument 404 /404.php
@@ -106,3 +109,6 @@ RewriteRule ^tiep-thi-lien-ket/ho-so/ tiepthi/manage/hoso.php
 RewriteRule ^tiep-thi-lien-ket/rut-tien/ tiepthi/manage/ruttien.php
 RewriteRule ^tiep-thi-lien-ket/update-avatar/ tiepthi/manage/update_avatar.php
 RewriteRule ^tiep-thi-lien-ket-info/([a-zA-Z0-9_-]+).html controller/default/info_tiepthi.php?Id=$1
+
+RewriteRule ^mail-content.html$ controller/default/content_email.php
+RewriteRule ^contact-tiep-thi-lien-ket.html$ controller/default/contact_tiepthi.php

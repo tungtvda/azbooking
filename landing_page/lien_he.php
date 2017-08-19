@@ -1,3 +1,26 @@
+<?php
+if(isset($_POST['name'])){
+    $string_info_booking = "name=" . $_POST['name'];
+    $string_info_booking .= "&email=" . $_POST['email'];
+    $string_info_booking .= "&phone=" . $_POST['phone'];
+    $string_info_booking .= "&title=" . $_POST['title'];
+    $string_info_booking .= "&content=" . $_POST['content'];
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, "http://localhost/azbooking/contact-tiep-thi-lien-ket.html");
+    curl_setopt($ch, CURLOPT_POST, 1);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $string_info_booking);
+
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    $res = curl_exec($ch);
+    curl_close($ch);
+    if ($res == 1) {
+        echo "<script>alert('Azbooking.vn cảm ơn quý khách đã gửi liên hệ đến chúng tôi, Azbooking.vn sẽ liên hệ với bạn sớm nhất, xin cảm ơn!')</script>";
+    }else{
+        echo "<script>alert('Liên hệ thất bại, bạn vui lòng thử lại')</script>";
+    }
+}
+
+?>
 <a name="support"></a>
 <div id="layers-widget-contactus-10"
      class="widget content-vertical-massive apptech-contactus    block-lg block-md block-sm block-xs  ">
@@ -21,39 +44,43 @@
 
                     <div class="column  span-8 middled">
                         <div class="contact-form-area">
-                            <div role="form" class="wpcf7" id="wpcf7-f423-o1" lang="en-US" dir="ltr">
-                                <div class="screen-reader-response"></div>
-                                <form  class="wpcf7-form" novalidate="novalidate">
+                            <div>
+                                <form  method="post" action="">
                                     <div class="contact-form">
                                         <div class="form-group">
-                                                    <span class="wpcf7-form-control-wrap text-264"><input type="text"
+                                                    <span class=""><input type="text" required
                                                                                                           name="name"
-                                                                                                          class="wpcf7-form-control wpcf7-text"
+                                                                                                          class=""
                                                                                                           placeholder="Họ tên *"/></span>
                                         </div>
                                         <div class="form-group">
-                                                    <span class="wpcf7-form-control-wrap your-email"><input type="email"
+                                                    <span class=""><input type="email" required
                                                                                                             name="email"
-                                                                                                            class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control"
+                                                                                                            class=""
                                                                                                             placeholder="Email *"/></span>
                                         </div>
                                         <div class="form-group">
-                                                    <span class="wpcf7-form-control-wrap your-email"><input type="text"
+                                                    <span class=""><input type="text" required
                                                                                                             name="phone"
-                                                                                                            class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control"
+                                                                                                            class=""
                                                                                                             placeholder="Điện thoại *"/></span>
                                         </div>
                                         <div class="form-group">
-                                                    <span class="wpcf7-form-control-wrap textarea-219"><textarea
-                                                            name="textarea-219" cols="40" rows="10"
-                                                            class="wpcf7-form-control wpcf7-textarea" " placeholder="Nội dung"></textarea></span>
+                                                    <span class=""><input type="text" required
+                                                                                                            name="title"
+                                                                                                            class=""
+                                                                                                            placeholder="Tiêu đề *"/></span>
+                                        </div>
+                                        <div class="form-group">
+                                                    <span class=""><textarea
+                                                            name="content" cols="40" rows="10"
+                                                            class="wpcf7-form-control wpcf7-textarea" placeholder="Nội dung"></textarea></span>
                                         </div>
                                         <div class="submit-form" style="text-align: center">
-                                            <input type="button" value="Gửi liên hệ" style="border-radius:4px"
-                                                   class="wpcf7-form-control wpcf7-submit button"/>
+                                            <input id="submit_contact" type="submit" value="Gửi liên hệ" style="border-radius:4px"
+                                                   class=" "/>
                                         </div>
                                     </div>
-                                    <div class="wpcf7-response-output wpcf7-display-none"></div>
                                 </form>
                             </div>
                         </div>
@@ -83,7 +110,7 @@
                                     <div class="contact-text">
 														<span>
 																													<a href="mailto:info@azbooking.vn">info@azbooking.vn</a>																												<br>
-																												<a href="mailto:info@azbooking.vn">info@azbooking.vn</a>																										</span>
+																												<a href="mailto:info@azbooking.vn">thanhtuyen@mixmedia.vn</a>																										</span>
                                     </div>
                                 </div>
                                 <!-- single end -->
@@ -114,6 +141,20 @@
             background-color: #f1f1f1;
             background-repeat: no-repeat;
             background-position: center;
+        }
+        #submit_contact{
+            background: rgba(24, 121, 253, 1) none repeat scroll 0 0;
+            border: 1px solid transparent;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 400;
+            height: 40px;
+            line-height: 38px;
+            margin-top: 20px;
+            padding: 0 15px;
+            text-transform: none;
+            border-radius: 0px;
+            width: inherit;
         }
     </style>
 </div>

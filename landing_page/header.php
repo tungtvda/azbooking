@@ -108,10 +108,6 @@
             src='themes/wp-content/plugins/layers-pro-extension/assets/js/layers-pro8233.js?ver=1.6.8'></script>
     <script type='text/javascript'
             src='themes/wp-content/plugins/layers-pro-extension/assets/js/jquery.plugins.min8233.js?ver=1.6.8'></script>
-    <link rel='https://api.w.org/' href='http://bestcareerbd.com/themes/apptech/wp-json/'/>
-    <meta name="generator" content="WordPress 4.7.1"/>
-    <link rel="canonical" href="index.html"/>
-    <link rel='shortlink' href='http://bestcareerbd.com/themes/apptech/?p=1212'/>
     <!-- Custom Logo: hide header text -->
     <style id="custom-logo-css" type="text/css">
         .sitetitle, .tagline {
@@ -305,19 +301,9 @@
         .about-icon li a:hover i, .page:not(.home) input[type="button"]:hover, .page:not(.home) input[type="submit"]:not(.wpcf7-submit):hover, .page:not(.home) button:hover:not(.btn-hover), .page:not(.home) .form-submit input[type="submit"]:not(.wpcf7-submit):hover, .page:not(.home) .invert input[type="button"]:hover, .page:not(.home) .invert input[type="submit"]:hover, .page:not(.home) .invert button:hover, .page:not(.home) .invert .button:hover {
             color: #1879fd;
         } </style>
-    <meta property="og:title" content="Home Two"/>
-    <meta property="og:description"
-          content="Apptech Makes your dost Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel volutpat felis, eu condimentum massa. Pellentesque mollis eros vel mattis tempor. Aliquam eu efficitur enim, vitae fermentum orci. Sed et feugiat nulla. Available on the App Store Available on the Play Store Apptech Makes your dost Lorem ipsum dolor sit amet, [&hellip;]"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="http://bestcareerbd.com/themes/apptech/home-two/"/>
     <style type="text/css">.recentcomments a {
             display: inline !important;
             padding: 0 !important;
             margin: 0 !important;
         }</style>
-    <link rel="icon" href="themes/wp-content/uploads/2016/11/hastechfavicon.png" sizes="32x32"/>
-    <link rel="icon" href="themes/wp-content/uploads/2016/11/hastechfavicon.png" sizes="192x192"/>
-    <link rel="apple-touch-icon-precomposed" href="themes/wp-content/uploads/2016/11/hastechfavicon.png"/>
-    <meta name="msapplication-TileImage"
-          content="http://bestcareerbd.com/themes/apptech/wp-content/uploads/2016/11/hastechfavicon.png"/>
 </head>
