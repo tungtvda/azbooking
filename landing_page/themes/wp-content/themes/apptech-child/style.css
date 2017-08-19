@@ -226,7 +226,7 @@ body{
     transition: 0.3s;
 }
 .header-site .container {
-  padding: 30px 20px;
+    padding: 5px 20px;
 }
 .header-left .logo .custom-logo {
   display: block;
@@ -237,7 +237,7 @@ body{
 }
 .header-site .nav-horizontal > ul > li > a {
   display: block;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
   line-height: 1.425;
   padding: 0;
@@ -2141,7 +2141,7 @@ button, .button, input[type="submit"] {
 .page input[type="button"], 
 .page input[type="submit"], 
 .page button, 
-.page .button, 
+.page .button,
 .page .form-submit input[type="submit"], 
 .page .invert input[type="button"], 
 .page .invert input[type="submit"], 
@@ -2160,6 +2160,7 @@ button, .button, input[type="submit"] {
   text-transform: none;
   border-radius: 0px;
 }
+
 
 .page input[type="button"]:hover, 
 .page input[type="submit"]:hover, 

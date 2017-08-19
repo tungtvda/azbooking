@@ -1,3 +1,4 @@
+<a name="features"></a>
 <div class="features-area">
     <div id="layers-widget-awesome_feature_id-10"
          class="widget layers-post-widget apptech-feature-widget clearfix  block-lg block-md block-sm block-xs  ">

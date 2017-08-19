@@ -6,17 +6,15 @@
 
     <section id="wrapper-content" class="wrapper-content">
         <?php include('slide.php')?>
-
-        <?php include('cach_thuc_tao.php')?>
         <?php include('gioi_thieu.php')?>
+        <?php include('cach_thuc_tao.php')?>
         <?php include('tinh_nang.php')?>
         <?php include('video.php')?>
-
         <?php include('tai_sao.php')?>
         <?php include('cau_hoi.php')?>
         <?php include('man_hinh.php')?>
         <?php include('y_kien.php')?>
-        <?php include('thu_hang.php')?>
+<!--        --><?php //include('thu_hang.php')?>
         <?php include('lien_he.php')?>
 
 
@@ -87,7 +85,7 @@
 
     <div class="search-interface-overlay">
         <form role="search" method="get" class="search-interface-holder"
-              action="http://bestcareerbd.com/themes/apptech/">
+              action="">
             <label class="search-text">
                 Search: </label>
             <input
@@ -173,11 +171,11 @@
     var mc4wp_forms_config = [];
     /* ]]> */
 </script>
-<script type='text/javascript'
-        src='themes/wp-content/plugins/mailchimp-for-wp/assets/js/forms-api.minbfce.js?ver=4.1.0'></script>
+<!--<script type='text/javascript'-->
+<!--        src='themes/wp-content/plugins/mailchimp-for-wp/assets/js/forms-api.minbfce.js?ver=4.1.0'></script>-->
 <!--[if lte IE 9]>
-<script type='text/javascript'
-        src='http://bestcareerbd.com/themes/apptech/wp-content/plugins/mailchimp-for-wp/assets/js/third-party/placeholders.min.js?ver=4.1.0'></script>
-<![endif]-->
+<!--<script type='text/javascript'-->
+        <!--src='http://bestcareerbd.com/themes/apptech/wp-content/plugins/mailchimp-for-wp/assets/js/third-party/placeholders.min.js?ver=4.1.0'></script>-->
+<!--<![endif]-->
 </body>
 </html>

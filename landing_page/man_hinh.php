@@ -3,7 +3,7 @@
 
 
     <div class="container clearfix">
-        <div class="section-title clearfix medium text-center ">
+        <div class="section-title clearfix medium text-center " style="margin-bottom: 0px">
             <h3 class="heading">
                 Hình ảnh hệ thống tiếp thị liên kết <span style="color: #f70000;">AZBOOKING.VN</span></h3>
             <div class="excerpt"><p>There are many variations of passages of Lorem Ipsum available, but the
@@ -18,67 +18,111 @@
                 <div class="single-screenshot">
                     <div class="image">
                         <a class="venobox" data-gall="myGallery"
-                           href="themes/wp-content/uploads/2016/11/sereenshort-1.jpg"><img width="295" height="517"
-                                                                                           src="themes/wp-content/uploads/2016/11/sereenshort-1.jpg"
+                           href="themes/images/register.png">
+                            <img width="295" height="517" src="themes/images/register.png"
                                                                                            class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
-                                                                                           alt=""
-                                                                                           srcset="http://bestcareerbd.com/themes/apptech/wp-content/uploads/2016/11/sereenshort-1.jpg 295w, http://bestcareerbd.com/themes/apptech/wp-content/uploads/2016/11/sereenshort-1-171x300.jpg 171w"
+                                                                                           alt="Màn hình đăng ký" title="Màn hình đăng ký"
+                                                                                           srcset="themes/images/register.png"
                                                                                            sizes="(max-width: 295px) 100vw, 295px"/></a>
                     </div>
                 </div>
                 <div class="single-screenshot">
                     <div class="image">
                         <a class="venobox" data-gall="myGallery"
-                           href="themes/wp-content/uploads/2016/11/sereenshort-2.jpg"><img width="295" height="517"
-                                                                                           src="themes/wp-content/uploads/2016/11/sereenshort-2.jpg"
+                           href="themes/images/login_img.png"><img width="295" height="517"
+                                                                                           src="themes/images/login_img.png"
                                                                                            class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                                                                            alt=""
-                                                                                           srcset="http://bestcareerbd.com/themes/apptech/wp-content/uploads/2016/11/sereenshort-2.jpg 295w, http://bestcareerbd.com/themes/apptech/wp-content/uploads/2016/11/sereenshort-2-171x300.jpg 171w"
+                                                                                           srcset="themes/images/login_img.png"
                                                                                            sizes="(max-width: 295px) 100vw, 295px"/></a>
                     </div>
                 </div>
                 <div class="single-screenshot">
                     <div class="image">
                         <a class="venobox" data-gall="myGallery"
-                           href="themes/wp-content/uploads/2016/11/sereenshort-1.jpg"><img width="295" height="517"
-                                                                                           src="themes/wp-content/uploads/2016/11/sereenshort-1.jpg"
+                           href="themes/images/index.png"><img width="295" height="517"
+                                                                                           src="themes/images/index.png"
                                                                                            class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                                                                            alt=""
-                                                                                           srcset="http://bestcareerbd.com/themes/apptech/wp-content/uploads/2016/11/sereenshort-1.jpg 295w, http://bestcareerbd.com/themes/apptech/wp-content/uploads/2016/11/sereenshort-1-171x300.jpg 171w"
+                                                                                           srcset="themes/images/index.png"
                                                                                            sizes="(max-width: 295px) 100vw, 295px"/></a>
                     </div>
                 </div>
                 <div class="single-screenshot">
                     <div class="image">
                         <a class="venobox" data-gall="myGallery"
-                           href="themes/wp-content/uploads/2016/11/sereenshort-2.jpg"><img width="295" height="517"
-                                                                                           src="themes/wp-content/uploads/2016/11/sereenshort-2.jpg"
+                           href="themes/images/hoso_1.png"><img width="295" height="517"
+                                                                                           src="themes/images/hoso_1.png"
                                                                                            class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                                                                            alt=""
-                                                                                           srcset="http://bestcareerbd.com/themes/apptech/wp-content/uploads/2016/11/sereenshort-2.jpg 295w, http://bestcareerbd.com/themes/apptech/wp-content/uploads/2016/11/sereenshort-2-171x300.jpg 171w"
+                                                                                           srcset="themes/images/hoso_1.png"
                                                                                            sizes="(max-width: 295px) 100vw, 295px"/></a>
                     </div>
                 </div>
                 <div class="single-screenshot">
                     <div class="image">
                         <a class="venobox" data-gall="myGallery"
-                           href="themes/wp-content/uploads/2016/11/sereenshort-1.jpg"><img width="295" height="517"
-                                                                                           src="themes/wp-content/uploads/2016/11/sereenshort-1.jpg"
+                           href="themes/images/avatar.png"><img width="295" height="517"
+                                                                                           src="themes/images/avatar.png"
                                                                                            class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                                                                            alt=""
-                                                                                           srcset="http://bestcareerbd.com/themes/apptech/wp-content/uploads/2016/11/sereenshort-1.jpg 295w, http://bestcareerbd.com/themes/apptech/wp-content/uploads/2016/11/sereenshort-1-171x300.jpg 171w"
+                                                                                           srcset="themes/images/avatar.png"
                                                                                            sizes="(max-width: 295px) 100vw, 295px"/></a>
                     </div>
                 </div>
                 <div class="single-screenshot">
                     <div class="image">
                         <a class="venobox" data-gall="myGallery"
-                           href="themes/wp-content/uploads/2016/11/sereenshort-2.jpg"><img width="295" height="517"
-                                                                                           src="themes/wp-content/uploads/2016/11/sereenshort-2.jpg"
-                                                                                           class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
-                                                                                           alt=""
-                                                                                           srcset="http://bestcareerbd.com/themes/apptech/wp-content/uploads/2016/11/sereenshort-2.jpg 295w, http://bestcareerbd.com/themes/apptech/wp-content/uploads/2016/11/sereenshort-2-171x300.jpg 171w"
-                                                                                           sizes="(max-width: 295px) 100vw, 295px"/></a>
+                           href="themes/images/matkhau.png"><img width="295" height="517"
+                                                                src="themes/images/matkhau.png"
+                                                                class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                                                                alt=""
+                                                                srcset="themes/images/matkhau.png"
+                                                                sizes="(max-width: 295px) 100vw, 295px"/></a>
+                    </div>
+                </div>
+                <div class="single-screenshot">
+                    <div class="image">
+                        <a class="venobox" data-gall="myGallery"
+                           href="themes/images/tour.png"><img width="295" height="517"
+                                                                 src="themes/images/tour.png"
+                                                                 class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                                                                 alt=""
+                                                                 srcset="themes/images/tour.png"
+                                                                 sizes="(max-width: 295px) 100vw, 295px"/></a>
+                    </div>
+                </div>
+                <div class="single-screenshot">
+                    <div class="image">
+                        <a class="venobox" data-gall="myGallery"
+                           href="themes/images/donhang.png"><img width="295" height="517"
+                                                              src="themes/images/donhang.png"
+                                                              class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                                                              alt=""
+                                                              srcset="themes/images/donhang.png"
+                                                              sizes="(max-width: 295px) 100vw, 295px"/></a>
+                    </div>
+                </div>
+                <div class="single-screenshot">
+                    <div class="image">
+                        <a class="venobox" data-gall="myGallery"
+                           href="themes/images/thongbao.png"><img width="295" height="517"
+                                                                 src="themes/images/thongbao.png"
+                                                                 class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                                                                 alt=""
+                                                                 srcset="themes/images/thongbao.png"
+                                                                 sizes="(max-width: 295px) 100vw, 295px"/></a>
+                    </div>
+                </div>
+                <div class="single-screenshot">
+                    <div class="image">
+                        <a class="venobox" data-gall="myGallery"
+                           href="themes/images/rut_tien.png"><img width="295" height="517"
+                                                                  src="themes/images/rut_tien.png"
+                                                                  class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                                                                  alt=""
+                                                                  srcset="themes/images/rut_tien.png"
+                                                                  sizes="(max-width: 295px) 100vw, 295px"/></a>
                     </div>
                 </div>
             </div>
@@ -91,6 +135,9 @@
             background-color: #f1f1f1;
             background-repeat: no-repeat;
             background-position: center;
+        }
+        .slick-dots{
+            margin-top: 0px;
         }
     </style>
 </div>
