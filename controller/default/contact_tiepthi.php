@@ -35,6 +35,7 @@ if (isset($_POST['name'])) {
         $new->phone=$dienthoai;
         $new->address='';
         $new->content=$noidung;
+        $new->title=$title;
         $new->status=0;
         $new->created=date(DATETIME_FORMAT);
         contact_insert($new);
@@ -48,11 +49,13 @@ if (isset($_POST['name'])) {
                             <p>Số điện thoại: <span style="color: #132fff; font-weight: bold">'.$dienthoai.'</span>,</p>
 
                             <p>Ngày gửi: <span style="color: #132fff; font-weight: bold">'.date(DATETIME_FORMAT).'</span>,</p>
+                            <p>Tiêu đề: '.$title.'</p>
                             <p>'.$noidung.'</p>
 
 
                         </div>';
-        SendMail('tungtv.soict@gmail.com', $message, $subject);
+        SendMail(SEND_EMAIL, $message, $subject);
+//        SendMail('tungtv.soict@gmail.com', $message, $subject);
         echo 1;
         exit;
 //        echo "<script>alert('Azbooking.vn cảm ơn quý khách đã gửi liên hệ đến chúng tôi, Azbooking.vn sẽ liên hệ với bạn sớm nhất, xin cảm ơn!')</script>";

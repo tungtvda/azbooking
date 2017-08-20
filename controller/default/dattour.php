@@ -701,7 +701,7 @@ if (isset($_POST['name_customer'])) {
 </html>';
                 $message .= $thongtin_dh;
                 $message_tiepthi .= $thongtin_dh;
-//                SendMail('info@mixtourist.com.vn', $message, $subject);
+                SendMail(SEND_EMAIL, $message, $subject);
 //                SendMail('tungtv.soict@gmail.com', $message, 'Azbooking.vn – Xác nhận đặt tour');
                 if(isset($array_res['user']['user_email'])&&$array_res['user']['user_email']!=''){
                     SendMail($array_res['user']['user_email'], $message_tiepthi, 'Azbooking.vn – Thông báo đơn hàng tiếp thị liên kết');
