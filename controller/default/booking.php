@@ -406,7 +406,7 @@ if (count($data_tour) > 0) {
 </div>
 </body>
 </html>';
-    SendMail('info@mixtourist.com.vn', $message, $subject);
+    SendMail(SEND_EMAIL, $message, $subject);
 //    SendMail('hoangthuy@mixtourist.com.vn', $message, $subject);
 //    SendMail('tungtv.soict@gmail.com', $message, 'Azbooking.vn – Xác nhận đặt tour');
     SendMail($email, $message, 'Azbooking.vn – Xác nhận đặt tour');

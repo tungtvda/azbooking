@@ -6,7 +6,7 @@ if(isset($_POST['name'])){
     $string_info_booking .= "&title=" . $_POST['title'];
     $string_info_booking .= "&content=" . $_POST['content'];
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, "http://localhost/azbooking/contact-tiep-thi-lien-ket.html");
+    curl_setopt($ch, CURLOPT_URL, "http://azbooking.vn/contact-tiep-thi-lien-ket.html");
     curl_setopt($ch, CURLOPT_POST, 1);
     curl_setopt($ch, CURLOPT_POSTFIELDS, $string_info_booking);
 

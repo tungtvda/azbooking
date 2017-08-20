@@ -111,7 +111,7 @@ if (isset($_POST['name_contact'])) {
 
 
                         </div>';
-        SendMail('tungtv.soict@gmail.com', $message, $subject);
+        SendMail(SEND_EMAIL, $message, $subject);
         echo "<script>alert('Azbooking.vn cảm ơn quý khách đã gửi liên hệ đến chúng tôi, Azbooking.vn sẽ liên hệ với bạn sớm nhất, xin cảm ơn!')</script>";
 
         echo "<script>window.location.href='$link_web';</script>";
