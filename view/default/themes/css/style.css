@@ -11855,3 +11855,18 @@ caption, th, td {
     line-height: 14px;
     z-index: 1111;
 }
+.title-box_primary {
+    line-height: 45px;
+    color: #0091ea;
+    margin: 0 0 27px 0;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.item_dich_vu img{
+    width: 80%;
+}
+.item_dich_vu h5{
+    color: #d15b47;
+    text-transform: uppercase;
+}

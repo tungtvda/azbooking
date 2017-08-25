@@ -10783,3 +10783,321 @@ update tour set tour_quoc_te='1',DanhMuc1Id='10',DanhMuc2Id='59',danhmuc_multi='
 <p>
 	&nbsp;</p>
 ',updated='17-07-05 02:25:09' where id=201;
+update tour set tour_quoc_te='1',DanhMuc1Id='10',DanhMuc2Id='26',danhmuc_multi='',promotion='1',packages='1',name='Tour du lịch Singapore 3 ngày 2 đêm siêu khuyến mại',name_url='tour-du-lich-singapore-3-ngay-2-dem-sieu-khuyen-mai',count_down='2017-12-30 1:10:00',code='',img='http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/tour-quoc-te/sing-ma/Marrina-Barrage-dap-nuoc-lon-nhat-singapore-azbooking.jpg',price_tiep_thi='100000',price_sales='8590000',price='7590000',price_2='',price_3='',price_4='',price_5='',price_6='',price_number='',price_number_2='',price_number_3='',price_number_4='',price_number_5='',price_number_6='',name_price='',name_price_2='',name_price_3='',name_price_4='',name_price_5='',name_price_6='',so_cho='',durations='3 Ngày 2 Đêm',departure='2',departure_time='Thứ 6 Hàng tuần',destination='Singapore',vehicle='Máy bay',hotel='3',summary='<p style="text-align: justify;">
+	<span style="color:#ff0000;"><strong>Tour du lịch Singapore 3 Ng&agrave;y 2 Đ&ecirc;m</strong> </span>sẽ đưa bạn qua những điểm đến v&ocirc; c&ugrave;ng hấp dẫn:&nbsp;</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="height: 15px; width: 15px;" />&nbsp;Kh&aacute;m ph&aacute; Garden by the Bay: nổi tiếng với những si&ecirc;u c&acirc;y khổng lồ.</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="height: 15px; width: 15px;" />&nbsp;Vui chơi tại Đảo Sentosa</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="height: 15px; width: 15px;" />&nbsp;Ngao du tại Madame Tussauds</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="height: 15px; width: 15px;" />&nbsp;Kh&aacute;m ph&aacute; Bảo t&agrave;ng tượng s&aacute;p v&agrave; bảo t&agrave;ng lịch sử.</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="height: 15px; width: 15px;" />&nbsp;Tham gia city tour Singapore chụp h&igrave;nh lưu niệm c&ugrave;ng tượng Sư Tử Biển tượng trưng của đất nước Singapore&hellip;</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="height: 15px; width: 15px;" />&nbsp;Bữa ăn đầy đủ, độc đ&aacute;o, mới lạ đảm bảo sức khỏe suốt h&agrave;nh tr&igrave;nh cho Qu&yacute; kh&aacute;ch.</p>
+<p style="text-align: justify;">
+	&nbsp;</p>
+<p style="text-align: center;">
+	<iframe frameborder="0" height="400" scrolling="no" src="https://www.youtube.com/embed/d78F-1rt2FQ" width="714.391px"></iframe></p>
+',highlights='<p background-color:="" font-size:="" open="" style="box-sizing: border-box; margin: 0px 0px 10px 40px; line-height: 1.7em; color: rgb(51, 51, 51); text-align: center;" text-align:="">
+	<span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box;"><span style="box-sizing: border-box; font-weight: 700;">DỊCH VỤ K&Egrave;M THEO HẤP DẪN C&Ugrave;NG CHƯƠNG TR&Igrave;NH</span></span></span></p>
+<table border="0" cellpadding="1" cellspacing="1" style="width: 800px">
+	<tbody>
+		<tr>
+			<td>
+				<p style="text-align: center;">
+					<img alt="Bảo hiểm du lịch" src="https://yolotravel.com.vn/images/tour/icon/bao-hiem569df39f32c48.png" style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px; box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; vertical-align: middle;" width="65px;" /></p>
+				<p style="text-align: center;">
+					<span style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px;">Bảo hiểm du lịch</span></p>
+			</td>
+			<td>
+				<p style="text-align: center;">
+					<img alt="Bữa ăn theo chương trình" src="https://yolotravel.com.vn/images/tour/icon/bua-an569df3b14d910.png" style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px; box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; vertical-align: middle;" width="65px;" /></p>
+				<p style="text-align: center;">
+					<span style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px;">Bữa ăn theo chương tr&igrave;nh</span></p>
+			</td>
+			<td style="text-align: center;">
+				<p>
+					<img alt="Hướng dẫn viên suốt tuyến" src="https://yolotravel.com.vn/images/tour/icon/huong-dan-vien569df3c66a160.png" style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px; box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; vertical-align: middle;" width="65px;" /></p>
+				<p>
+					<span style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px;">Hướng dẫn vi&ecirc;n suốt tuyến</span></p>
+			</td>
+			<td style="text-align: center;">
+				<p>
+					<img alt="Vé tham quan theo chương trình" src="https://yolotravel.com.vn/images/tour/icon/ve-tham-quan569df3e0144b7.png" style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px; box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; vertical-align: middle;" width="65px;" /></p>
+				<p>
+					<span style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px;">V&eacute; tham quan theo chương tr&igrave;nh</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">
+				<p>
+					<img alt="Xe đưa đón theo chương trình" src="https://yolotravel.com.vn/images/tour/icon/xe-dua-don569df3f45d550.png" style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px; box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; vertical-align: middle;" width="65px;" /></p>
+				<p>
+					<span style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px;">Xe đưa đ&oacute;n theo chương tr&igrave;nh</span></p>
+			</td>
+			<td style="text-align: center;">
+				<p>
+					<img alt="Khách sạn tiêu chuẩn" src="https://yolotravel.com.vn/images/tour/icon/hotel569f45bebdf63.png" style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px; box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; vertical-align: middle;" width="65px;" /></p>
+				<p>
+					<span style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px;">Kh&aacute;ch sạn ti&ecirc;u chuẩn</span></p>
+			</td>
+			<td style="text-align: center;">
+				<p>
+					<img alt="Vé máy bay" src="https://yolotravel.com.vn/images/tour/icon/may-bay569f585bb2eb9.png" style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px; box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; vertical-align: middle;" width="65px;" /></p>
+				<p>
+					<span style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px;">V&eacute; m&aacute;y bay</span></p>
+			</td>
+			<td style="text-align: center;">
+				<p>
+					<img alt="Quà tặng kèm" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/icon-hop-qua.png" style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px; box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; vertical-align: middle; width: 60px;" /></p>
+				<p>
+					<span style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px;">Qu&agrave; tặng k&egrave;m 500K</span></p>
+				<div>
+					&nbsp;</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="margin: 0px; line-height: 23px; color: rgb(51, 51, 51); font-family: arial, Verdana, Helvetica, sans-serif; font-size: 13px; text-align: center;">
+	&nbsp;</p>
+<p style="text-align: center;">
+	<span style="color: rgb(255, 0, 0);"><strong>==&gt;&gt; ĐĂNG K&Yacute; TRƯỚC&nbsp;<span style="background-color: rgb(255, 255, 0);">30 NG&Agrave;Y</span>&nbsp;GIẢM NGAY&nbsp;<span style="background-color: rgb(255, 255, 0);">1 TRIỆU ĐỒNG</span></strong></span></p>
+<p style="text-align: center;">
+	<span style="color: rgb(255, 0, 0);"><strong><img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/hotline.png" style="width: 300px; height: 90px;" /></strong></span></p>
+<p style="text-align: center;">
+	<span style="color: rgb(255, 0, 0);"><strong>HOẶC</strong></span></p>
+<p style="text-align: center;">
+	<span style="font-size: 16px;"><span style="color: rgb(255, 0, 0);"><strong><span style="background-color: rgb(255, 255, 0);">CHAT ONLINE NGAY</span></strong></span></span></p>
+',schedule='<h2 style="text-align: justify;">
+	<span style="color:#ff0000;"><span style="font-size:16px;">NG&Agrave;Y 1 : TP.HCM &nbsp;-&nbsp;SINGAPORE - GARDEN BY THE BAY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Ăn tối)</span></span></h2>
+<p style="text-align: justify;">
+	<strong>S&aacute;ng: 07h00</strong> HDV đ&oacute;n Qu&yacute; kh&aacute;ch tại S&acirc;n Bay T&acirc;n Sơn Nhất l&agrave;m thủ tục đ&aacute;p chuyến bay của Vietjet Air khởi h&agrave;nh đi <strong>Singapore </strong>cất c&aacute;nh l&uacute;c 09h00.</p>
+<p style="text-align: justify;">
+	<strong>Trưa: 12h00</strong> M&aacute;y bay hạ c&aacute;nh xuống <strong>phi trường Changi &ndash; Singapore</strong>, qu&yacute; kh&aacute;ch l&agrave;m thủ tục nhập cảnh.</p>
+<p style="text-align: justify;">
+	Xe v&agrave; hướng dẫn vi&ecirc;n địa phương đ&oacute;n đo&agrave;n bắt đầu tham quan Singapore:</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="text-align: justify; height: 15px; width: 15px;" />&nbsp;<strong>Marina Barrage</strong>&nbsp;&ndash; l&agrave; đập nước đầu ti&ecirc;n được x&acirc;y dựng ở ngay khu vực trung t&acirc;m th&agrave;nh phố Singapore, ngăn nước ngọt đổ ra biển. Từ đ&acirc;y, qu&yacute; kh&aacute;ch c&oacute; thể thoải m&aacute;i ngắm nh&igrave;n những c&ocirc;ng tr&igrave;nh nổi tiếng như Marina Bay Sands hay V&ograve;ng xoay Singapore Flyer.</p>
+<p style="text-align: center;">
+	<img alt="Marrina-Barrage-dap-nuoc-lon-nhat-singapore-azbooking" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/tour-quoc-te/sing-ma/Marrina-Barrage-dap-nuoc-lon-nhat-singapore-azbooking.jpg" style="width: 70%;" /></p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="text-align: justify; height: 15px; width: 15px;" />&nbsp;Khu vườn sinh th&aacute;i đặc biệt mang t&ecirc;n <strong>Bay South Garden</strong> với hệ thống &ldquo;Si&ecirc;u c&acirc;y&rdquo; khổng lồ lấy năng lượng mặt trời v&agrave;o ban ng&agrave;y v&agrave; tự tỏa s&aacute;ng v&agrave;o ban đ&ecirc;m.</p>
+<p style="text-align: center;">
+	<img alt="cong-vien-cay-khong-lo-o-singapore-2" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/tour-quoc-te/sing-ma/cong-vien-cay-khong-lo-o-singapore-2.jpg" style="width: 70%;" /></p>
+<p style="text-align: justify;">
+	Khu vườn nằm trong dự &aacute;n Gardens by the Bay, dự &aacute;n c&ocirc;ng vi&ecirc;n sinh th&aacute;i lớn nhất Singapore nhằm n&acirc;ng cao chất lượng cuộc sống, giữ được m&agrave;u xanh cho đ&ocirc; thị sầm uất. To&agrave;n bộ dự &aacute;n c&oacute; tổng diện t&iacute;ch 101 ha, với hơn 250.000 lo&agrave;i thực vật qu&yacute; hiếm.</p>
+<p style="text-align: justify;">
+	<strong>Tối:&nbsp;</strong>Ăn tối tại nh&agrave; h&agrave;ng địa phương.</p>
+<p style="text-align: justify;">
+	Về kh&aacute;ch sạn nhận ph&ograve;ng, nghỉ ngơi. &nbsp;Qu&yacute; kh&aacute;ch tự do dạo phố Singapore hoặc cũng c&oacute; thể đăng k&yacute; chương tr&igrave;nh tour:&nbsp;</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="text-align: justify; height: 15px; width: 15px;" />&nbsp;Dạo thuyền tr&ecirc;n s&ocirc;ng Singapore</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="text-align: justify; height: 15px; width: 15px;" />&nbsp;Kh&aacute;m ph&aacute; hệ thống t&agrave;u điện ngầm hoặc tham quan <strong>th&agrave;nh phố phong thủy marina</strong> (Chi ph&iacute; tự t&uacute;c).</p>
+<div>
+	<h2 style="text-align: justify;">
+		<span style="color:#ff0000;"><span style="font-size:16px;">NG&Agrave;Y 2 : SINGAPORE - ĐẢO SENTOSA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Ăn ba bữa)</span></span></h2>
+</div>
+<p style="text-align: justify;">
+	<strong>S&aacute;ng: </strong>Ăn s&aacute;ng Buffet tại kh&aacute;ch sạn. Xe đưa đo&agrave;n tham quan:</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="height: 15px; width: 15px;" />&nbsp;<strong>C&ocirc;ng vi&ecirc;n Sư Tử Biển - &ldquo;Merlion Park&rdquo;</strong>- chụp h&igrave;nh lưu niệm với&nbsp;tượng sư tử m&igrave;nh c&aacute;&nbsp;(biểu tượng của Singapore)</p>
+<p style="text-align: center;">
+	<img alt="Công viên Sư Tử Biển - “Merlion Park”" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/tour-quoc-te/sing-ma/banner-du-lich-singapore(1).jpg" style="width: 70%;" /></p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="height: 15px; width: 15px;" />&nbsp;Chụp ảnh b&ecirc;n ngo&agrave;i Nh&agrave; H&aacute;t &ldquo;Victoria&rdquo;</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="height: 15px; width: 15px;" />&nbsp;T&ograve;a Nh&agrave; Quốc Hội</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="height: 15px; width: 15px;" />&nbsp;T&ograve;a Thị Ch&iacute;nh</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="height: 15px; width: 15px;" />&nbsp;Tượng Sir Stamford Raffles</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="height: 15px; width: 15px;" />&nbsp;Nh&agrave; h&aacute;t Esplanade&nbsp;với kiến tr&uacute;c độc đ&aacute;o h&igrave;nh tr&aacute;i sầu ri&ecirc;ng.</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="height: 15px; width: 15px;" />&nbsp; Mua sắm tại cửa h&agrave;ng trưng b&agrave;y đ&aacute; qu&yacute; v&agrave; cửa h&agrave;ng dầu gi&oacute; xanh Eagle Oil&nbsp;nổi tiếng của Singapore</p>
+<p style="text-align: justify;">
+	<strong>Trưa: </strong>Ăn trưa&nbsp; Buffet nướng H&agrave;n Quốc (Korean BBQ)&nbsp; với c&aacute;c loại Hải Sản v&agrave; c&aacute;c m&oacute;n thịt nướng.</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="text-align: justify; height: 15px; width: 15px;" />&nbsp;Viếng <strong>Ch&ugrave;a Răng Phật</strong>&nbsp;(nơi lưu trữ X&aacute; Lợi răng của Đức Phật Th&iacute;ch Ca) với 10 ng&agrave;n pho tượng Phật.</p>
+<p style="text-align: center;">
+	<img alt="chua-rang-phat-o-singapore-azbooking" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/tour-quoc-te/sing-ma/chua-rang-phat-o-singapore-azbooking.jpg" style="width: 70%;" /></p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="text-align: justify; height: 15px; width: 15px;" />&nbsp;Tiếp tục di chuyển đến <strong>Đảo Sentosa</strong> -&nbsp; điểm tham quan nổi tiếng của Singapore bao gồm quần thể khu vui chơi giải tr&iacute;, mua sắm, nghỉ dưỡng phức hợp. Sentosa c&oacute; đủ c&aacute;c loại h&igrave;nh giải tr&iacute; phục vụ mọi y&ecirc;u cầu, sở th&iacute;ch của mọi người từ gia đ&igrave;nh đến những đ&ocirc;i đi hưởng tuần trăng mật v&agrave; những du kh&aacute;ch say m&ecirc; lịch sử đến những người y&ecirc;u th&iacute;ch thi&ecirc;n nhi&ecirc;n.</p>
+<p style="text-align: center;">
+	<img alt="dao-sentosa-singapore-azbooking" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/tour-quoc-te/sing-ma/dao-sentosa-singapore-azbooking.jpg" style="width: 70%;" /></p>
+<p style="text-align: justify;">
+	Tham quan (v&eacute; đ&atilde; bao gồm trong tour):</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="text-align: justify; height: 15px; width: 15px;" />&nbsp;<strong>Khu đại dương nh&acirc;n tạo S.E.A Aquarium</strong> lớn nhất thế giới với hơn 100.000 lo&agrave;i sinh vật biển thuộc 800 lo&agrave;i được tập hợp trong khu đại dương nh&acirc;n tạo v&agrave; c&ograve;n c&oacute; đến 20.000 lo&agrave;i san h&ocirc; c&oacute; sức chứa 45 triệu l&iacute;t nước n&agrave;y. C&oacute; thể kể đến như c&aacute; đuối, c&aacute; mập, c&aacute; heo Th&aacute;i B&igrave;nh Dương&hellip;</p>
+<p style="text-align: center;">
+	<img alt="S.E.A-Aquarium-Singapore-azbooking" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/tour-quoc-te/sing-ma/S.E.A-Aquarium-Singapore-azbooking.jpg" style="width: 70%;" /></p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="text-align: justify; height: 15px; width: 15px;" />&nbsp;<strong>Bảo t&agrave;ng H&agrave;ng Hải (Maritime Museum)</strong> giới thiệu về lịch sử ng&agrave;nh h&agrave;ng hải ở Đ&ocirc;ng Nam &Aacute; &hellip;</p>
+<p style="text-align: justify;">
+	<strong>Trưa: </strong>Qu&yacute; kh&aacute;ch tự t&uacute;c ăn trưa&nbsp;tại khu ẩm thực đa dạng phong ph&uacute; tại <strong>Sentosa&nbsp;</strong>c&ugrave;ng với người d&acirc;n <strong>Singapore</strong>.</p>
+<p style="text-align: justify;">
+	<strong>Tối: 18h00</strong> Xe đ&oacute;n đo&agrave;n đưa đi ăn tối tại nh&agrave; h&agrave;ng.</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="text-align: justify; height: 15px; width: 15px;" />&nbsp;Thưởng thức <strong>chương tr&igrave;nh Nhạc Nước</strong> kỳ ảo ho&agrave;n to&agrave;n mới <strong>Wonder Full </strong>được tr&igrave;nh diễn h&agrave;ng đ&ecirc;m tại Marina Bay Sands, ho&agrave;nh tr&aacute;ng v&agrave; hiện đại, phối hợp giữa những tia nước nhảy m&uacute;a với hiệu ứng của &aacute;nh s&aacute;ng, &acirc;m thanh v&agrave; những tia Laser.&nbsp;</p>
+<p style="text-align: center;">
+	<img alt="chuong-trinh-nhac-nuoc-Wonder-Full-azbooking" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/tour-quoc-te/sing-ma/chuong-trinh-nhac-nuoc-Wonder-Full-azbooking.jpg" style="width: 70%;" /></p>
+<p style="text-align: justify;">
+	Xe đưa đo&agrave;n trở về kh&aacute;ch sạn nghỉ ngơi. Nghỉ đ&ecirc;m tại Singapore.</p>
+<div>
+	<h2 style="text-align: justify;">
+		<span style="color:#ff0000;"><span style="font-size:16px;">NG&Agrave;Y 3 : SINGAPORE - SHOPPING - TP. HỒ CH&Iacute; MINH&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Ăn s&aacute;ng)</span></span></h2>
+</div>
+<p style="text-align: justify;">
+	<strong>S&aacute;ng: </strong>Ăn s&aacute;ng tại kh&aacute;ch sạn Xe đưa đo&agrave;n tham quan:</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="text-align: justify; height: 15px; width: 15px;" />&nbsp;Tham quan&nbsp;<strong>China Town</strong> &ndash; Khu phố người Hoa -&nbsp;Nằm n&eacute;p m&igrave;nh b&ecirc;n những t&ograve;a nh&agrave; chọc trời. Du kh&aacute;ch sẽ c&oacute; cơ hội được mua sắm c&aacute;c m&oacute;n đồ được b&agrave;y b&aacute;n bởi người gốc Hoa.&nbsp;</p>
+<p style="text-align: center;">
+	<img alt="khu-pho-nguoi-hoa-China-Town-singapore-azbooking" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/tour-quoc-te/sing-ma/khu-pho-nguoi-hoa-China-Town-singapore-azbooking.jpg" style="width: 70%;" /></p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="text-align: justify; height: 15px; width: 15px;" />&nbsp;Xe đưa đo&agrave;n đến quận mua sắm <strong>Orchard Road</strong>, Qu&yacute; kh&aacute;ch tự do mua sắm h&agrave;ng hiệu giảm gi&aacute;</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="text-align: justify; height: 15px; width: 15px;" />&nbsp;Qu&yacute; kh&aacute;ch trải nghiệm ẩm thực của d&acirc;n địa phương Singapore ( ăn trưa tự t&uacute;c)</p>
+<p style="text-align: justify;">
+	<strong>14h30</strong> xe đưa Đo&agrave;n ra s&acirc;n bay Changi l&agrave;m thủ tục về TP.HCM tr&ecirc;n chuyến bay Vietjet cất c&aacute;nh l&uacute;c <strong>17h15</strong>.</p>
+<p style="text-align: justify;">
+	<strong>18h20</strong> Đến s&acirc;n bay TSN, Hướng dẫn vi&ecirc;n trợ gi&uacute;p h&agrave;nh kh&aacute;ch l&agrave;m thủ tục nhập cảnh v&agrave; lấy h&agrave;nh l&yacute;.</p>
+<p style="text-align: justify;">
+	Tạm biệt qu&yacute; kh&aacute;ch v&agrave; hẹn gặp lại trong những h&agrave;nh tr&igrave;nh tiếp theo. Home Sweet Home!</p>
+<p style="text-align: center;">
+	<span style="color:#0000ff;"><em>(Thứ tự c&aacute;c điểm tham quan trong chương tr&igrave;nh c&oacute; thể thay đổi tuỳ theo t&igrave;nh h&igrave;nh thực tế)</em></span></p>
+',price_list='<table align="left" border="1" cellpadding="0" cellspacing="0" style="width: 800px" width="672">
+	<tbody>
+		<tr>
+			<td rowspan="3" style="width:140px;height:36px;">
+				<br clear="all" />
+				<p align="center">
+					<strong>THỜI GIAN</strong></p>
+			</td>
+			<td colspan="4" style="width:532px;height:36px;">
+				<h2 align="center">
+					<span style="font-size:16px;"><span style="color:#ff0000;"><strong>GI&Aacute; TOUR (VNĐ/ kh&aacute;ch)</strong></span></span></h2>
+			</td>
+		</tr>
+		<tr>
+			<td rowspan="2" style="width:119px;height:24px;">
+				<p align="center">
+					<strong>Người Lớn</strong></p>
+			</td>
+			<td colspan="2" style="width:270px;height:24px;">
+				<p align="center">
+					<strong>Trẻ em</strong></p>
+			</td>
+			<td rowspan="2" style="width:143px;height:24px;">
+				<p align="center">
+					<strong>Phụ thu ph&ograve;ng đơn</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:144px;height:62px;">
+				<p align="center">
+					<strong>Từ 2 tuổi &ndash; 11 tuổi</strong></p>
+			</td>
+			<td style="width:126px;height:62px;">
+				<p align="center">
+					<strong>Dưới 2 tuổi</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:140px;height:34px;">
+				<p align="center">
+					<strong>Thứ 6 hằng tuần</strong></p>
+			</td>
+			<td style="width:119px;height:34px;">
+				<p align="center">
+					<strong>7.590.000</strong></p>
+			</td>
+			<td style="width:144px;height:34px;">
+				<p align="center">
+					<strong>6.590.000</strong></p>
+			</td>
+			<td style="width:126px;height:34px;">
+				<p align="center">
+					<strong>2.590.000</strong></p>
+			</td>
+			<td style="width:143px;height:34px;">
+				<p align="center">
+					<strong>2.590.000/2 đ&ecirc;m</strong></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<h3>
+	&nbsp;</h3>
+<h3>
+	<span style="color:#0000ff;"><span style="font-size:14px;">QUY ĐỊNH HỦY TOUR :</span></span></h3>
+<p>
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="text-align: justify; height: 15px; width: 15px;" />&nbsp;Khi đăng k&yacute; tour, qu&yacute; kh&aacute;ch vui l&ograve;ng đ&oacute;ng tiền cọc 50% &nbsp;tiền tour. Hủy tour sau khi đăng k&yacute;, qu&yacute; kh&aacute;ch sẽ bị mất cọc 100%.</p>
+<p>
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="text-align: justify; height: 15px; width: 15px;" />&nbsp;Hủy trước 10 ng&agrave;y khởi h&agrave;nh : phạt 50% gi&aacute; tour .</p>
+<p>
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="text-align: justify; height: 15px; width: 15px;" />&nbsp;Hủy trước 7 ng&agrave;y khởi h&agrave;nh : phạt 80% gi&aacute; tour .</p>
+<p>
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="text-align: justify; height: 15px; width: 15px;" />&nbsp;Hủy sau 3 ng&agrave;y khởi h&agrave;nh : phạt 100% gi&aacute; tour .</p>
+<p>
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="text-align: justify; height: 15px; width: 15px;" />&nbsp;C&aacute;c ng&agrave;y tr&ecirc;n chỉ t&iacute;nh theo ng&agrave;y l&agrave;m việc.</p>
+<p>
+	&nbsp;</p>
+<p style="text-align: justify;">
+	<em><u><strong>Ghi ch&uacute;:</strong></u></em>&nbsp; <em>Trong những trường hợp bất khả kh&aacute;ng như: đ&igrave;nh c&ocirc;ng, khủng bố, bệnh dịch, thi&ecirc;n tai&hellip;hoặc do c&oacute; sự cố, c&oacute; sự thay đổi lịch tr&igrave;nh của c&aacute;c phương tiện vận chuyển c&ocirc;ng cộng như : m&aacute;y bay, t&agrave;u hỏa&hellip;th&igrave; C&ocirc;ng ty sẽ giữ quyền thay đổi lộ tr&igrave;nh hoặc hủy bỏ chuyến đi du lịch v&igrave; sự an to&agrave;n cho Qu&yacute; kh&aacute;ch. C&ocirc;ng ty sẽ được miễn trừ tr&aacute;ch nhiệm bồi thường những thiệt hại ph&aacute;t sinh (nếu c&oacute;)</em></p>
+',content='',list_img='',title='Tour du lịch Singapore 3 ngày 2 đêm siêu khuyến mại',keyword='du lịch singapore 3 ngày, tour du lịch singapore 3 ngày, du lịch singapore 3 ngày 2 đêm, tour du lịch singapore 3 ngày 2 đêm',description='Tour du lịch Singapore 3 Ngày 2 Đêm sẽ đưa bạn qua những điểm đến vô cùng hấp dẫn.',inclusion='<p>
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="text-align: justify; height: 15px; width: 15px;" />&nbsp;V&eacute; m&aacute;y bay khứ hồi TPHCM - Singapore &nbsp;&ndash; TPHCM (H&agrave;ng kh&ocirc;ng Vietjet Air )</p>
+<p>
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="text-align: justify; height: 15px; width: 15px;" />&nbsp;Thuế phi trường 2 nước, thuế an ninh, phụ ph&iacute; xăng dầu.&nbsp; &nbsp;</p>
+<p>
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="text-align: justify; height: 15px; width: 15px;" />&nbsp;Xe du lịch chất lượng cao c&oacute; m&aacute;y lạnh đưa đ&oacute;n tham quan suốt tuyến.</p>
+<p>
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="text-align: justify; height: 15px; width: 15px;" />&nbsp;Kh&aacute;ch sạn theo ti&ecirc;u chuẩn 3 sao, loại ph&ograve;ng 02 kh&aacute;ch người lớn (ph&ograve;ng 3 kh&aacute;ch được bố tr&iacute; khi cần thiết)</p>
+<p>
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="text-align: justify; height: 15px; width: 15px;" />&nbsp;C&aacute;c bữa ăn theo chương tr&igrave;nh.&nbsp;</p>
+<p>
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="text-align: justify; height: 15px; width: 15px;" />&nbsp;V&eacute; tham quan theo chương tr&igrave;nh.</p>
+<p>
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="text-align: justify; height: 15px; width: 15px;" />&nbsp;Hướng dẫn vi&ecirc;n tiếng Việt suốt tuyến.</p>
+<p>
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="text-align: justify; height: 15px; width: 15px;" />&nbsp;Qu&agrave; tặng: n&oacute;n du lịch, Bảo hiểm du lịch với mức bồi thường tối đa 210.000.000 VNĐ/kh&aacute;ch/Vụ</p>
+',exclusion='<p>
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="text-align: justify; height: 15px; width: 15px;" />&nbsp;Xe đ&oacute;n tiễn s&acirc;n bay T&acirc;n Sơn Nhất.</p>
+<p>
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="text-align: justify; height: 15px; width: 15px;" />&nbsp;Hộ chiếu (c&ograve;n thời hạn tr&ecirc;n 06 th&aacute;ng t&iacute;nh đến ng&agrave;y về).</p>
+<p>
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="text-align: justify; height: 15px; width: 15px;" />&nbsp;H&agrave;nh l&yacute; qu&aacute; cước qui định (mức tối đa cho ph&eacute;p: 20kg/h&agrave;nh l&yacute; k&yacute; gửi, 7kg/h&agrave;nh l&yacute; x&aacute;ch tay)</p>
+<p>
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="text-align: justify; height: 15px; width: 15px;" />&nbsp;Xe vận chuyển ngo&agrave;i chương tr&igrave;nh + c&aacute;c show về đ&ecirc;m.</p>
+<p>
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="text-align: justify; height: 15px; width: 15px;" />&nbsp;Chi ph&iacute; điện thoại, giặt ủi, nước uống trong ph&ograve;ng kh&aacute;ch sạn v&agrave; c&aacute;c chi ph&iacute; c&aacute; nh&acirc;n kh&aacute;c.</p>
+<p>
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="text-align: justify; height: 15px; width: 15px;" />&nbsp;Tiền bồi dưỡng cho HDV, t&agrave;i xế (mức đề nghị: 3usd/kh&aacute;ch/ng&agrave;y).</p>
+<p style="text-align: center;">
+	<span style="color: rgb(255, 0, 0);"><strong>==&gt;&gt; ĐĂNG K&Yacute; TRƯỚC&nbsp;<span style="background-color: rgb(255, 255, 0);">30 NG&Agrave;Y</span>&nbsp;GIẢM NGAY&nbsp;<span style="background-color: rgb(255, 255, 0);">1 TRIỆU ĐỒNG</span></strong></span></p>
+<p style="text-align: center;">
+	<span style="color: rgb(255, 0, 0);"><strong><img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/hotline.png" style="width: 300px; height: 90px;" /></strong></span></p>
+<p style="text-align: center;">
+	<span style="color: rgb(255, 0, 0);"><strong>HOẶC</strong></span></p>
+<p style="text-align: center;">
+	<span style="font-size: 16px;"><span style="color: rgb(255, 0, 0);"><strong><span style="background-color: rgb(255, 255, 0);">CHAT ONLINE NGAY</span></strong></span></span></p>
+',updated='17-08-25 05:06:33' where id=204;
