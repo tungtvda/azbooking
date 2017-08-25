@@ -32,9 +32,9 @@
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
         <meta name="format-detection" content="telephone=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
-        <link href="http://fonts.googleapis.com/css?family=Open+Sans:700,600,400,300" rel="stylesheet" type="text/css">
+        <!--<link href="http://fonts.googleapis.com/css?family=Open+Sans:700,600,400,300" rel="stylesheet" type="text/css">
         <link href="http://fonts.googleapis.com/css?family=Oswald:400" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">-->
         <link rel="stylesheet" type="text/css" href="{SITE-NAME}/view/default/themes/css/lib/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="{SITE-NAME}/view/default/themes/css/lib/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="{SITE-NAME}/view/default/themes/css/lib/awe-booking-font.css">
@@ -47,7 +47,7 @@
         <link rel="stylesheet" type="text/css" href="{SITE-NAME}/view/default/themes/css/demo.css">
         <link rel="stylesheet" type="text/css" href="{SITE-NAME}/view/default/themes/css/messenger.css">
         <link id="colorreplace" rel="stylesheet" type="text/css" href="{SITE-NAME}/view/default/themes/css/colors/blue.css">
-        <script>
+        <!--<script>
             !function (f, b, e, v, n, t, s) {
                 if (f.fbq)return;
                 n = f.fbq = function () {
@@ -71,9 +71,9 @@
             fbq('track', "PageView");</script>
         <noscript><img height="1" width="1" style="display:none"
                        src="https://www.facebook.com/tr?id=1031554816897182&amp;ev=PageView&amp;noscript=1"
-            /></noscript>
+            /></noscript>-->
         <script type="text/javascript" src="{SITE-NAME}/view/default/themes/js/lib/jquery-1.11.2.min.js"></script>
-        <script src="//load.sumome.com/" data-sumo-site-id="e0ac176c5b8e65a2948988f7990fd6a49b91f26d7a674b7a191e39b057e6f7de" async="async"></script>
+        <!--<script src="//load.sumome.com/" data-sumo-site-id="e0ac176c5b8e65a2948988f7990fd6a49b91f26d7a674b7a191e39b057e6f7de" async="async"></script>-->
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

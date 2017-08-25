@@ -4,12 +4,12 @@
  * @author vdbkpro
  * @copyright 2013
  */
-//define("SITE_NAME", "http://localhost/azbooking");
-define("SITE_NAME", "http://azbooking.vn");
-//define("SITE_NAME_MANAGE", "http://localhost/manage_mix");
-define("SITE_NAME_MANAGE", "http://manage.mixmedia.vn");
-define("SITE_NAME_MOBILE", "http://m.azbooking.vn");
-//define("SITE_NAME_MOBILE", "http://localhost/azbooking_mobi");
+define("SITE_NAME", "http://localhost/azbooking");
+//define("SITE_NAME", "http://azbooking.vn");
+define("SITE_NAME_MANAGE", "http://localhost/manage_mix");
+//define("SITE_NAME_MANAGE", "http://manage.mixmedia.vn");
+//define("SITE_NAME_MOBILE", "http://m.azbooking.vn");
+define("SITE_NAME_MOBILE", "http://localhost/azbooking_mobi");
 define("SEND_EMAIL", 'info@mixtourist.com.vn');
 //define("SEND_EMAIL", 'tungtv.soict@gmail.com');
 define("DIR", dirname(__FILE__));
