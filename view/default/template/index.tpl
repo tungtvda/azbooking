@@ -6,23 +6,23 @@
                 <a href="">
                     <img src="{SITE-NAME}/view/default/themes/images/icon_dichvu/tour.png">
                     <h5>Đặt tour du lịch</h5>
-                    <p>AZbooking.vn là trang bán dịch vụ du lịch ( tour du lịch, phòng khách sạn, vé máy bay…)</p>
+                    <p hidden>AZbooking.vn là trang bán dịch vụ du lịch ( tour du lịch, phòng khách sạn, vé máy bay…)</p>
                 </a>
 
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12 item_dich_vu">
-                <a href="">
+                <a href="{SITE-NAME}/khach-san/">
                     <img src="{SITE-NAME}/view/default/themes/images/icon_dichvu/hotel.png">
                     <h5>Đặt phòng khách sạn</h5>
-                    <p>AZbooking.vn là trang bán dịch vụ du lịch ( tour du lịch, phòng khách sạn, vé máy bay…)</p>
+                    <p hidden>AZbooking.vn là trang bán dịch vụ du lịch ( tour du lịch, phòng khách sạn, vé máy bay…)</p>
                 </a>
 
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12 item_dich_vu">
-                <a href="">
+                <a target="_blank" href="http://vemaybay.azbooking.vn/">
                     <img src="{SITE-NAME}/view/default/themes/images/icon_dichvu/maybay.png">
                     <h5>Đặt vé máy bay</h5>
-                    <p>AZbooking.vn là trang bán dịch vụ du lịch ( tour du lịch, phòng khách sạn, vé máy bay…)</p>
+                    <p hidden>AZbooking.vn là trang bán dịch vụ du lịch ( tour du lịch, phòng khách sạn, vé máy bay…)</p>
                 </a>
 
             </div>
@@ -30,7 +30,7 @@
                 <a href="">
                     <img src="{SITE-NAME}/view/default/themes/images/icon_dichvu/car.png">
                     <h5>Thuê xe du lịch</h5>
-                    <p>AZbooking.vn là trang bán dịch vụ du lịch ( tour du lịch, phòng khách sạn, vé máy bay…)</p>
+                    <p hidden>AZbooking.vn là trang bán dịch vụ du lịch ( tour du lịch, phòng khách sạn, vé máy bay…)</p>
                 </a>
 
             </div>
@@ -38,7 +38,7 @@
     </div>
 </section>
 
-<section hidden {hidden_count_down} >
+<section {hidden_count_down} >
     <div class="container">
         <div class=" col-sm-12 col-md-12 " style="padding: 0px">
             <h3 class="title_index">tour giờ chót <a style="float: right; margin-top: 10px; color: red; font-weight: bold;font-size: 14px;" href="{SITE-NAME}/tour-gio-chot/">Xem thêm...</a></h3>
@@ -72,7 +72,7 @@
         </div>
     </div>
 </section>-->
-<section hidden class="sale-flights-section-demo">
+<section  class="sale-flights-section-demo">
     <div class="container">
         <div class="row">
             <div class="col-md-8">
