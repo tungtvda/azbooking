@@ -1,0 +1,78 @@
+/* If you want to add your own CSS code, please do it in this file */
+
+/* font awesome */
+.the-icons .span3 { float:left; width: 25%; font-size: 13px; line-height:18px; padding-bottom:10px;}
+.the-icons .span3 .muted { color:#ccc;}
+.the-icons .span3 [class^="icon-"], .span3 [class*=" icon-"] { color: #3E3E3E; font-size: 18px; width:23px; display:inline-block;}
+
+@media only screen and (min-width: 768px) and (max-width: 959px){
+	.the-icons .span3 { width:33.333%;}
+}
+@media only screen and (min-width: 480px) and (max-width: 767px){
+	.the-icons .span3 { width:50%;}
+}
+@media only screen and (max-width: 479px){
+	.the-icons .span3 { width:100%;}
+}
+
+/* #configurator */
+#configurator { color:#213442 !important; background:#f9f9f9; width: 190px; position: fixed; left: -192px; top: 150px; z-index: 9000; color: #515E6C; line-height: 21px; font-size: 12px; text-transform:uppercase;}
+#configurator form { margin-bottom:0; text-align:center;}
+#configurator select { background:none; box-shadow:0 0 0; margin-bottom:10px; padding: 3px; color:#213442;}
+#configurator .control { display:block; width:51px; height:51px; position:absolute; top:37px; right:-51px; background:#f9f9f9 url(../images/configurator/ico.png) no-repeat center; text-indent:-9999px;}
+#configurator .inside { padding:10px;}
+#configurator .header { text-align:center; padding-bottom:5px; margin-bottom:5px; border-bottom:1px solid #eee; font-size:18px;}
+
+#configurator ul.image-select { margin-bottom:5px;}
+#configurator ul.image-select li { display:block; float:left; }
+#configurator ul.image-select li a { display:block; width:32px; height:32px; float:left; margin:5px;}
+#configurator ul.image-select li:hover { border-color:#ccc;}
+
+#configurator ul.select-color li a { text-indent:-9999px;}
+
+#configurator ul.text-select { margin-bottom:15px; }
+#configurator ul.text-select li { float:left; width:50%; font-size:14px; }
+#configurator ul.text-select li:not(.active) a { color:#515E6C; }
+
+#configurator p { line-height:16px; margin-bottom:5px;}
+
+/* mobile only */
+@media only screen and (max-width: 768px){
+	#configurator { display:none;}
+}
+
+/* demo skins */
+.color-blue .call-to-action 	{ background-color:#4095C9 !important;}
+.color-orange .call-to-action	{ background-color:#E67E22 !important;}
+.color-red .call-to-action		{ background-color:#EF5443 !important;}
+
+/* Custom */
+.help_section .faq h3 { font-size: 22px; line-height: 31px; margin-bottom: 25px; }
+.homepage-faq .faq h3 { font-size: 26px; line-height: 30px; text-align: center; }
+.section_ncm .one-second { margin-bottom: 0 !important; }
+.center-icon-box { text-align: center; }
+.center-icon-box .icon_box .icon_image i { display: inline-block; }
+.border-call-to-action { border: 1px solid #262932; }
+
+/* styles for slider in section */
+.full-width-section .section_wrapper { width: 100% !important; }
+.full-width-section .section_wrapper .one.column { width: 100% !important; margin-left: 0 !important; margin-right: 0 !important; }
+
+/* Styles for fancy heading when no icon */
+.padding-bottom { padding-bottom: 40px !important;}
+
+#gallery-1 {
+	margin: auto;
+}
+#gallery-1 .gallery-item {
+	float: left;
+	margin-top: 10px;
+	text-align: center;
+	width: 33%;
+}
+#gallery-1 img {
+	border: 2px solid #cfcfcf;
+}
+#gallery-1 .gallery-caption {
+	margin-left: 0;
+}
