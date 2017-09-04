@@ -1,97 +1,104 @@
 
 /******************* Background ********************/
 
-		
-	html { 
-		background-color:#f7f8f8;
-	}
+@font-face {
+	font-family: "roboto-re";
+	src: url("../fonts/RobotoCondensed-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-stretch:normal;
+}
+
+html {
+	background-color:#f7f8f8;
+}
 
 
 /********************** Fonts **********************/
 
- 	body, button, input[type="submit"], input[type="reset"], input[type="button"],
-	input[type="text"], input[type="password"], input[type="email"], textarea, select {
-		font-family: Exo, Arial, Tahoma, sans-serif;
-		font-weight: normal;
-	}
-	
-	#menu > ul > li > a {
-		font-family: Exo, Arial, Tahoma, sans-serif;
-		font-weight: normal;
-	}
-	
-	h1 {
-		font-family: Exo, Arial, Tahoma, sans-serif;
-		font-weight: 300;
-	}
-	
-	h2 {
-		font-family: Exo, Arial, Tahoma, sans-serif;
-		font-weight: 300;
-	}
-	
-	h3 {
-		font-family: Exo, Arial, Tahoma, sans-serif;
-		font-weight: 300;
-	}
-	
-	h4 {
-		font-family: Exo, Arial, Tahoma, sans-serif;
-		font-weight: 300;
-	}
-	
-	h5 {
-		font-family: Exo, Arial, Tahoma, sans-serif;
-		font-weight: 300;
-	}
-	
-	h6 {
-		font-family: Exo, Arial, Tahoma, sans-serif;
-		font-weight: 300;
-	}
+body, button, input[type="submit"], input[type="reset"], input[type="button"],
+input[type="text"], input[type="password"], input[type="email"], textarea, select {
+	font-family: Exo, Arial, Tahoma, sans-serif;
+	font-weight: normal;
+}
+
+#menu > ul > li > a {
+	font-family: roboto-re;
+	font-weight: normal;
+}
+
+h1 {
+	font-family: roboto-re;
+	font-weight: 300;
+}
+
+h2 {
+	font-family: roboto-re;
+	font-weight: 300;
+}
+
+h3 {
+	font-family: "roboto-re";
+	font-weight: 300;
+}
+
+h4 {
+	font-family: "roboto-re";
+	font-weight: 300;
+}
+
+h5 {
+	font-family: "roboto-re";
+	font-weight: 300;
+}
+
+h6 {
+	font-family: "roboto-re";
+	font-weight: 300;
+}
 
 
 /********************** Font sizes **********************/
 
 /* Body */
 
-	body {
-		font-size: 13px;
-				line-height: 20px;		
-	}
-	
-	#menu > ul > li > a {	
-		font-size: 14px;
-	}
-	
+body {
+	font-size: 13px;
+	line-height: 20px;
+}
+
+#menu > ul > li > a {
+	font-size: 14px;
+}
+
 /* Headings */
 
-	h1 { 
-		font-size: 45px;
-				line-height: 45px;
-	}
-	
-	h2 { 
-		font-size: 40px;
-				line-height: 40px;
-	}
-	
-	h3 {
-		font-size: 35px;
-				line-height: 37px;
-	}
-	
-	h4 {
-		font-size: 26px;
-				line-height: 30px;
-	}
-	
-	h5 {
-		font-size: 19px;
-				line-height: 24px;
-	}
-	
-	h6 {
-		font-size: 17px;
-				line-height: 20px;
-	}
+h1 {
+	font-size: 45px;
+	line-height: 45px;
+}
+
+h2 {
+	font-size: 40px;
+	line-height: 40px;
+}
+
+h3 {
+	font-size: 35px;
+	line-height: 37px;
+}
+
+h4 {
+	font-size: 26px;
+	line-height: 30px;
+}
+
+h5 {
+	font-size: 19px;
+	line-height: 24px;
+}
+
+h6 {
+	font-size: 17px;
+	line-height: 20px;
+}

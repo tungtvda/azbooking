@@ -3,7 +3,9 @@
 .testimonials ul.photos:after { background: url("images/blockquote.png") no-repeat right top; }
 
 /* Accordion */
-.accordion .question h5 span.icon { background: url("images/accordion_controls.png") no-repeat left top; }
+.accordion .question h5 span.icon {
+    /*background: url("images/accordion_controls.png") no-repeat left top;*/
+}
 .accordion .question.active h5 span.icon { background: url("images/accordion_controls.png") no-repeat left bottom; }
 
 /* FAQ */

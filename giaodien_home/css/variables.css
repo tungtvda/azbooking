@@ -20,9 +20,11 @@
 		background: rgba(0, 0, 0, .02);
 	}
 	.accordion .question.active, .faq .question.active {
-		border-color: rgba(0, 0, 0, .35);
+		border-color:#ffffff;
 	}
-	
+	.question h5 i{
+		color: #0091EA;
+	}
 /* Reply button */
 	#comments .commentlist > li .reply a.comment-reply-link {
 		background-color: #787878;

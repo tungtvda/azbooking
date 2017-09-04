@@ -198,7 +198,7 @@
 			.children(".answer")
 				.show();
 		
-		$(".mfn-acc .question > h5").append('<span class="icon"></span>');
+		//$(".mfn-acc .question > h5").append('<span class="icon"></span>');
 		$(".mfn-acc .question > h5").click(function(){
 			if($(this).parent().hasClass("active")) {
 				$(this).parent().removeClass("active").children(".answer").slideToggle(200);
