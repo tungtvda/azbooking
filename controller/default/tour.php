@@ -32,5 +32,8 @@ $keyword=$data['menu'][0]->keyword;
 $title=($title)?$title:'Azbooking.vn';
 $description=($description)?$description:'Azbooking.vn';
 $keywords=($keyword)?$keyword:'Azbooking.vn';
-show_index($data);
-
+show_header($title,$description,$keywords,$data);
+show_menu($data,'trangchu');
+show_slide($data);
+show_tour($data);
+show_footer($data);

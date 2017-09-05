@@ -1,0 +1,21 @@
+/*
+Theme Name: Falco
+Theme URI: http://themes.muffingroup.com/falco
+Author: Muffin group
+Author URI: http://muffingroup.com
+Description: Falco - Premium WordPress Theme.
+License: GNU General Public License version 3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags: one-column, two-columns, left-sidebar, right-sidebar, fixed-width, custom-background, custom-header, custom-menu, editor-style, featured-image-header, featured-images, post-formats, theme-options, translation-ready
+Version: 1.2.12
+*/
+
+@import url("base.css");
+@import url("buttons.css");
+@import url("grid.css");
+@import url("layout.css");
+@import url("variables.css");
+@import url("shortcodes.css");
+@import url("animations.css");
+
+/* If you want to add your own css code, please do it in css/custom.css */
