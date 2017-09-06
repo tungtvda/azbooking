@@ -451,7 +451,7 @@
                             </div>
                             <div class="column one-third contact_box">
                                 <div class="article_box_wrapper">
-                                    <h4 class="title">Vp.Hồ Chí Minh</h4>
+                                    <h4 class="title">VP Hồ Chí Minh</h4>
                                     <div class="google-map">
                                         {map_hcm}
                                     </div>
@@ -474,8 +474,8 @@
                                         </li>
                                     </ul>
                                     <div class="buttons_wrapper">
-                                        <a class="button button_about" href="#">About us</a><a
-                                                class="button button_form" href="#">Contact page</a>
+                                        <a class="button button_about" href="#">Giới thiệu</a><a
+                                                class="button button_form" href="http://azbooking.vn/info/lien-he.html">Liên hệ</a>
                                     </div>
                                 </div>
                             </div>

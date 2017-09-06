@@ -139,10 +139,10 @@
 /* Contact box */
 	.contact_box a.button_about,
 	.contact_box .buttons_wrapper .button_about:before {
-		background: #353f4c;
+		background: #0091EA;
 	}
 	.contact_box a.button_form {
-		background: #516175;
+		background: #05a7ea
 	}
 	.contact_box a.button_about, .contact_box a.button_form,
 	.contact_box .buttons_wrapper .button_about:before {
