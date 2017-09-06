@@ -31,6 +31,8 @@ function show_index($data = array())
     $asign['Fax_hcm'] = $data['config'][0]->fax_hcm;
     $asign['Email_hcm'] = $data['config'][0]->Email_hcm;
 
+    $asign['map_hn'] = $data['config'][0]->Map;
+    $asign['map_hcm'] = $data['config'][0]->Map_hcm;
 
     $data['link_anh']=SITE_NAME.$data['config'][0]->Logo;
     if(strstr($data['link_anh'],SITE_NAME)!=''){

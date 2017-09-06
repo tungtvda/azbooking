@@ -27,12 +27,12 @@
     <meta itemprop='image' content='{link_anh}'>
 
     <!--<meta property="og:locale" content="" />-->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="{Title}" />
-    <meta property="og:description" content="{description}" />
-    <meta property="og:url" content="{link_url}" />
-    <meta property="og:site_name" content="azbooking.vn" />
-    <meta property="fb:app_id" content="487430091415856" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="{Title}"/>
+    <meta property="og:description" content="{description}"/>
+    <meta property="og:url" content="{link_url}"/>
+    <meta property="og:site_name" content="azbooking.vn"/>
+    <meta property="fb:app_id" content="487430091415856"/>
 
 
     <!--<link rel='stylesheet' href='{SITE-NAME}/view/default/themes/css/css_index/cform.css' type='text/css' media='all'/>
@@ -41,15 +41,21 @@
     <!--<link rel='stylesheet' href='{SITE-NAME}/view/default/themes/css/css_index/prettyPhoto.css' type='text/css' media='all'/>
     <link rel='stylesheet' href='{SITE-NAME}/view/default/themes/css/css_index/owl.carousel.css' type='text/css' media='all'/>
     <link rel='stylesheet' href='{SITE-NAME}/view/default/themes/css/css_index/owl.theme.css' type='text/css' media='all'/>-->
-    <link rel='stylesheet' href='{SITE-NAME}/view/default/themes/css/css_index/jquery.ui.all.css' type='text/css' media='all'/>
-    <link rel='stylesheet' href='{SITE-NAME}/view/default/themes/css/css_index/responsive.css' type='text/css' media='all'/>
-    <link rel='stylesheet' href='{SITE-NAME}/view/default/themes/css/css_index/skins/green/images.css' type='text/css' media='all'/>
-    <link rel='stylesheet' href='{SITE-NAME}/view/default/themes/css/css_index/style-colors.css' type='text/css' media='all'/>
-    <link rel='stylesheet' href='{SITE-NAME}/view/default/themes/css/css_index/style-2.css' type='text/css' media='all'/>
+    <link rel='stylesheet' href='{SITE-NAME}/view/default/themes/css/css_index/jquery.ui.all.css' type='text/css'
+          media='all'/>
+    <link rel='stylesheet' href='{SITE-NAME}/view/default/themes/css/css_index/responsive.css' type='text/css'
+          media='all'/>
+    <link rel='stylesheet' href='{SITE-NAME}/view/default/themes/css/css_index/skins/green/images.css' type='text/css'
+          media='all'/>
+    <link rel='stylesheet' href='{SITE-NAME}/view/default/themes/css/css_index/style-colors.css' type='text/css'
+          media='all'/>
+    <link rel='stylesheet' href='{SITE-NAME}/view/default/themes/css/css_index/style-2.css' type='text/css'
+          media='all'/>
     <!--<link rel='stylesheet' href='{SITE-NAME}/view/default/themes/css/css_index/exo.css' type='text/css' media='all'/>-->
-    <link rel='stylesheet' href='{SITE-NAME}/view/default/themes/css/css_index/fontawesome.css' type='text/css' media='all'/>
+    <link rel='stylesheet' href='{SITE-NAME}/view/default/themes/css/css_index/fontawesome.css' type='text/css'
+          media='all'/>
 
-   <!-- <link rel="stylesheet" href="{SITE-NAME}/view/default/themes/css/css_index/custom.css" media="all"/>-->
+    <!-- <link rel="stylesheet" href="{SITE-NAME}/view/default/themes/css/css_index/custom.css" media="all"/>-->
 
 
     <!--[if lt IE 9]>
@@ -58,11 +64,11 @@
 
     <!--Start of Zopim Live Chat Script-->
     <script type="text/javascript">
-        window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+        window.$zopim || (function (d, s){var z=$zopim=function(c){z._.push(c)},$=z.s=
                 d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
         _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
                 $.src="//v2.zopim.com/?1yvBi4MFQSLLbInvbhBpu2sLFfBiJZRE";z.t=+new Date;$.
-                type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+                type="text/javascript";e.parentNode.insertBefore($,e)})(document, "script");
     </script>
 
 
@@ -70,7 +76,21 @@
 
 <!-- body -->
 <body class="homepage-parent page-template-default template-slider  layout-full-width header-mt header-white-mod sticky-header">
-
+<div id="fb-root"></div>
+<script>window.fbAsyncInit = function () {
+        FB.init({
+            appId: '487430091415856',
+            status: true, // check login status
+            cookie: true, // enable cookies to allow the server to access the session
+            xfbml: true // parse XFBML
+        });
+    };
+    (function () {
+        var e = document.createElement('script');
+        e.src = document.location.protocol + '//connect.facebook.net/vi_VN/all.js';
+        e.async = true;
+        document.getElementById('fb-root').appendChild(e);
+    }());</script>
 <!-- #Wrapper -->
 <div id="Wrapper">
     <!-- .header_placeholder 4sticky  -->
@@ -150,18 +170,22 @@
                         <li class="menu-item current-menu-item page_item current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children ">
                             <a href="{SITE-NAME}/tour/">Tour du lịch</a>
                         </li>
-                        <li class="menu-item menu-item-has-children "><a href="{SITE-NAME}/khach-san/">Đặt phòng khách sạn</a>
+                        <li class="menu-item menu-item-has-children "><a href="{SITE-NAME}/khach-san/">Đặt phòng khách
+                                sạn</a>
 
                         </li>
-                        <li class="menu-item menu-item-has-children "><a href="http://vemaybay.azbooking.vn">Đặt vé máy bay</a>
+                        <li class="menu-item menu-item-has-children "><a href="http://vemaybay.azbooking.vn">Đặt vé máy
+                                bay</a>
                         </li>
-                        <li class="menu-item menu-item-has-children "><a >Thuê xe du lịch</a>
+                        <li class="menu-item menu-item-has-children "><a>Thuê xe du lịch</a>
                         </li>
-                        <li class="menu-item menu-item-has-children "><a href="{SITE-NAME}/cam-nang/">Cẩm nang du lịch</a>
+                        <li class="menu-item menu-item-has-children "><a href="{SITE-NAME}/cam-nang/">Cẩm nang du
+                                lịch</a>
                         </li>
                     </ul>
                     <ul hidden style="float: right" class="menu">
-                        <li class="menu-item menu-item-has-children "><a href="#"><i class="fa fa-user" aria-hidden="true"></i> Đăng ký</a>
+                        <li class="menu-item menu-item-has-children "><a href="#"><i class="fa fa-user"
+                                                                                     aria-hidden="true"></i> Đăng ký</a>
                             <ul class="sub-menu">
                                 <li class="menu-item"><a href="">Cài đặt tài khoản</a></li>
                                 <li class="menu-item"><a href="">Tiếp thị liên kết </a></li>
@@ -223,7 +247,8 @@
                                 <div class="feature_box_wrapper">
                                     <a href="#">
                                         <div class="photo">
-                                            <img class="scale-with-grid" src="{SITE-NAME}/view/default/themes/images/img_new/tour.png"
+                                            <img class="scale-with-grid"
+                                                 src="{SITE-NAME}/view/default/themes/images/img_new/tour.png"
                                                  alt="Muffin Builder"/>
                                         </div>
                                         <div class="desc">
@@ -241,7 +266,8 @@
                                 <div class="feature_box_wrapper">
                                     <a href="#">
                                         <div class="photo">
-                                            <img class="scale-with-grid" src="{SITE-NAME}/view/default/themes/images/img_new/maybay.png"
+                                            <img class="scale-with-grid"
+                                                 src="{SITE-NAME}/view/default/themes/images/img_new/maybay.png"
                                                  alt="Muffin Options"/>
                                         </div>
                                         <div class="desc">
@@ -259,7 +285,8 @@
                                 <div class="feature_box_wrapper">
                                     <a href="#">
                                         <div class="photo">
-                                            <img class="scale-with-grid" src="{SITE-NAME}/view/default/themes/images/img_new/hotel.png"
+                                            <img class="scale-with-grid"
+                                                 src="{SITE-NAME}/view/default/themes/images/img_new/hotel.png"
                                                  alt="Muffin Options"/>
                                         </div>
                                         <div class="desc">
@@ -279,7 +306,8 @@
                                 <div class="feature_box_wrapper">
                                     <a href="#">
                                         <div class="photo">
-                                            <img class="scale-with-grid" src="{SITE-NAME}/view/default/themes/images/img_new/car.png"
+                                            <img class="scale-with-grid"
+                                                 src="{SITE-NAME}/view/default/themes/images/img_new/car.png"
                                                  alt="Muffin Options"/>
                                         </div>
                                         <div class="desc">
@@ -380,85 +408,68 @@
                             <div class="column one-third accordion">
                                 <h4 class="title">FANPAGE</h4>
                                 <div class="mfn-acc  ">
-                                    <!--<div class="question">-->
-                                    <!--<h5><i class="fa fa-check"></i> Top công ty du lịch hàng đầu Việt Nam</h5>-->
-                                    <!--</div>-->
-                                    <!--<div class="question">-->
-                                    <!--<h5><i class="fa fa-check"></i> Thanh toán an toàn & Linh hoạt</h5>-->
-                                    <!--</div>-->
-                                    <!--<div class="question">-->
-                                    <!--<h5><i class="fa fa-check"></i> Luôn có mức giá tốt nhất thị trường</h5>-->
-                                    <!--</div>-->
-                                    <!--<div class="question">-->
-                                    <!--<h5><i class="fa fa-check "></i> Đặt tour dễ dàng & nhanh chóng</h5>-->
-                                    <!--</div>-->
-                                    <!--<div class="question">-->
-                                    <!--<h5><i class="fa fa-check"></i> Sản phẩm đa dạng & chất lượng</h5>-->
-                                    <!--</div>-->
-                                    <!--<div class="question">-->
-                                    <!--<h5><i class="fa fa-check "></i> Hỗ trợ 24/7</h5>-->
-                                    <!--</div>-->
-                                    <div class="fb-page" data-href="https://www.facebook.com/azbooking.vietnam/" style="width: 100% !important;"
-                                         data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+                                    <div style="width: 100% !important;" class="fb-page" data-href="https://www.facebook.com/azbooking.vietnam/"
+                                         data-tabs="timeline" data-height="470" data-small-header="false" data-width="500"
+                                         data-adapt-container-width="true" data-hide-cover="false"
                                          data-show-facepile="true">
-                                        <blockquote cite="https://www.facebook.com/azbooking.vietnam/" class="fb-xfbml-parse-ignore"><a
-                                                    href="https://www.facebook.com/azbooking.vietnam/">AZBOOKING.VN</a></blockquote>
+                                        <blockquote cite="https://www.facebook.com/azbooking.vietnam/"
+                                                    class="fb-xfbml-parse-ignore"><a
+                                                    href="https://www.facebook.com/azbooking.vietnam/">AZbooking.vn</a>
+                                        </blockquote>
                                     </div>
                                 </div>
                             </div>
                             <div class="column one-third contact_box">
                                 <div class="contact_box_wrapper">
                                     <h4 class="title">VP Hà Nội</h4>
-                                    <div class="google-map" >
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14898.154073336636!2d105.80916900000001!3d21.011128!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc80373d869d2a03!2zVHJ1bmcgdMOibSBs4buvIGjDoG5oIEFaYm9va2luZw!5e0!3m2!1sen!2sus!4v1504497836080"
-                                                width="100%" height="150" frameborder="0" style="border:0"
-                                                allowfullscreen></iframe>
+                                    <div class="google-map">
+                                        {map_hn}
                                     </div>
                                     <ul>
                                         <li class="address">
                                             <p>
-                                                Phòng 2001, tầng 20, tòa nhà 137 Nguyễn Ngọc Vũ, Cầu Giấy, Hà Nội
+                                               {Address}
                                             </p>
                                         </li>
                                         <li class="phone">
                                             <p>
-                                                <a href="#"><i class="fa fa-phone"></i> 024 6281 4341</a> | <a href="#"> <i class="fa fa-mobile"></i> 0943 838 222</a>
+                                                <a href="tel:{Phone}"><i class="fa fa-phone"></i> {Phone}</a> | <a href="tel:{Hotline}">
+                                                    <i class="fa fa-mobile"></i> {Hotline}</a>
                                             </p>
                                         </li>
                                         <li class="mail"><i class="fa fa-envelope"></i>
                                             <p>
-                                                <a href="#">info@azbooking.vn</a>
+                                                <a href="emailto:{Email}">{Email}</a>
                                             </p>
                                         </li>
                                     </ul>
                                     <div class="buttons_wrapper">
-                                        <a class="button button_about" href="#">About us</a><a
-                                                class="button button_form" href="#">Contact page</a>
+                                        <a class="button button_about" href="#">Giới thiệu</a><a
+                                                class="button button_form" href="http://azbooking.vn/info/lien-he.html">Liên hệ</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="column one-third contact_box">
                                 <div class="article_box_wrapper">
                                     <h4 class="title">Vp.Hồ Chí Minh</h4>
-                                    <div class="google-map" >
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14898.154073336636!2d105.80916900000001!3d21.011128!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc80373d869d2a03!2zVHJ1bmcgdMOibSBs4buvIGjDoG5oIEFaYm9va2luZw!5e0!3m2!1sen!2sus!4v1504497836080"
-                                                width="100%" height="150" frameborder="0" style="border:0"
-                                                allowfullscreen></iframe>
+                                    <div class="google-map">
+                                        {map_hcm}
                                     </div>
                                     <ul>
                                         <li class="address">
                                             <p>
-                                                Phòng 2001, tầng 20, tòa nhà 137 Nguyễn Ngọc Vũ, Cầu Giấy, Hà Nội
+                                                {Address_hcm}
                                             </p>
                                         </li>
                                         <li class="phone">
                                             <p>
-                                                <a href="#"><i class="fa fa-phone"></i> 024 6281 4341</a> | <a href="#"> <i class="fa fa-mobile"></i> 0943 838 222</a>
+                                                <a href="tel:{Phone_hcm}"><i class="fa fa-phone"></i> {Phone_hcm}</a> | <a href="tel:{Hotline_hcm}">
+                                                    <i class="fa fa-mobile"></i> {Hotline_hcm}</a>
                                             </p>
                                         </li>
                                         <li class="mail"><i class="fa fa-envelope"></i>
                                             <p>
-                                                <a href="#">info@azbooking.vn</a>
+                                                <a href="emailto:{Email_hcm}">{Email_hcm}</a>
                                             </p>
                                         </li>
                                     </ul>
@@ -505,7 +516,8 @@
 <script type='text/javascript' src='{SITE-NAME}/view/default/themes/js/js_index/jquery/ui/sortable.min.js'></script>
 <script type='text/javascript' src='{SITE-NAME}/view/default/themes/js/js_index/jquery/ui/tabs.min.js'></script>
 <script type='text/javascript' src='{SITE-NAME}/view/default/themes/js/js_index/jquery/ui/accordion.min.js'></script>
-<script type='text/javascript' src='{SITE-NAME}/view/default/themes/js/js_index/owl-carousel/owl.carousel.min.js'></script>
+<script type='text/javascript'
+        src='{SITE-NAME}/view/default/themes/js/js_index/owl-carousel/owl.carousel.min.js'></script>
 <script type='text/javascript' src='{SITE-NAME}/view/default/themes/js/js_index/jquery.swiper.min.js'></script>
 <script type='text/javascript' src='{SITE-NAME}/view/default/themes/js/js_index/jquery.plugins.js'></script>
 <script type='text/javascript' src='{SITE-NAME}/view/default/themes/js/js_index/mfn.menu.js'></script>
