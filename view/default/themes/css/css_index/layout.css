@@ -13,7 +13,7 @@
 .post_navigation a.post_control { -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s;}
 .tp-leftarrow.default, .tp-rightarrow.default { -moz-transition: all 0.3s;}
 
-.tp-leftarrow.default, .post_navigation a.prev_post { background-image: url("../images/slider_controls.png"); bacground-repeat: no-repeat; background-position: 0px 0px; float: left; }
+.tp-leftarrow.default, .post_navigation a.prev_post { background-image: url("../../images/img_new/slider_controls.png"); bacground-repeat: no-repeat; background-position: 0px 0px; float: left; }
 .tp-leftarrow.default:hover, .post_navigation a:hover.prev_post { background-position: -5px 0; }
 
 .tp-rightarrow.default, .post_navigation a.next_post { background-image: url("../images/slider_controls.png"); bacground-repeat: no-repeat; background-position: -50px 0px; float: left; }
@@ -168,9 +168,9 @@ a.button_image:hover:after, .gallery span.button_image:hover:after {
 #mfn-slider .swiper-counter { height:60px; width:60px; display:block; text-align:center; line-height:60px; }
 #mfn-slider .swiper-sep { opacity:.5; filter: alpha(opacity = 5); margin: 0 4px; }
 #mfn-slider a.swiper-control { height:60px; width:60px; display:block; text-indent:-9999px; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
-#mfn-slider a.swiper-prev { background-image: url("../images/muffin_slider_arrows.png"); bacground-repeat: no-repeat; background-position: 0px 0px; }
+#mfn-slider a.swiper-prev { background-image: url("../../images/img_new/muffin_slider_arrows.png"); bacground-repeat: no-repeat; background-position: 0px 0px; }
 #mfn-slider a:hover.swiper-prev { background-position: 0 -5px; }
-#mfn-slider a.swiper-next { background-image: url("../images/muffin_slider_arrows.png"); bacground-repeat: no-repeat; background-position: 0px 60px; }
+#mfn-slider a.swiper-next { background-image: url("../../images/img_new/muffin_slider_arrows.png"); bacground-repeat: no-repeat; background-position: 0px 60px; }
 #mfn-slider a:hover.swiper-next { background-position: 0 65px; }
 
 #mfn-slider .swiper-wp8-horizontal { -ms-touch-action: pan-y;}	/* IE10 Windows Phone 8 Fixes */
