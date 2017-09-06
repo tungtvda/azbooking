@@ -13,32 +13,58 @@
     <!-- meta -->
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Falco | Max Themes</title>
-    <meta name="description" content="Just another WordPress site"/>
+    <title>{title}</title>
+    <meta name="description" content="{description}"/>
+    <meta name="keywords" content="{keyword}"/>
+    <!--FAVICONS-->
+    <link rel="shortcut icon" href="{icon}">
+    <link rel="apple-touch-icon" href="{icon}">
+    <link rel="apple-touch-icon" sizes="72x72"
+          href="{icon}">
+    <link rel="apple-touch-icon" sizes="114x114"
+          href="{icon}">
+    <meta property='og:image' content='{link_anh}'>
+    <meta itemprop='image' content='{link_anh}'>
 
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+    <!--<meta property="og:locale" content="" />-->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{Title}" />
+    <meta property="og:description" content="{description}" />
+    <meta property="og:url" content="{link_url}" />
+    <meta property="og:site_name" content="azbooking.vn" />
+    <meta property="fb:app_id" content="487430091415856" />
 
 
-    <link rel='stylesheet' href='{SITE-NAME}/view/default/themes/css/css_index/cform.css' type='text/css' media='all'/>
-    <link rel='stylesheet' href='{SITE-NAME}/view/default/themes/css/css_index/tp_twitter_plugin.css' type='text/css' media='screen'/>
+    <!--<link rel='stylesheet' href='{SITE-NAME}/view/default/themes/css/css_index/cform.css' type='text/css' media='all'/>
+    <link rel='stylesheet' href='{SITE-NAME}/view/default/themes/css/css_index/tp_twitter_plugin.css' type='text/css' media='screen'/>-->
     <link rel='stylesheet' href='{SITE-NAME}/view/default/themes/css/css_index/style.css' type='text/css' media='all'/>
-    <link rel='stylesheet' href='{SITE-NAME}/view/default/themes/css/css_index/prettyPhoto.css' type='text/css' media='all'/>
+    <!--<link rel='stylesheet' href='{SITE-NAME}/view/default/themes/css/css_index/prettyPhoto.css' type='text/css' media='all'/>
     <link rel='stylesheet' href='{SITE-NAME}/view/default/themes/css/css_index/owl.carousel.css' type='text/css' media='all'/>
-    <link rel='stylesheet' href='{SITE-NAME}/view/default/themes/css/css_index/owl.theme.css' type='text/css' media='all'/>
+    <link rel='stylesheet' href='{SITE-NAME}/view/default/themes/css/css_index/owl.theme.css' type='text/css' media='all'/>-->
     <link rel='stylesheet' href='{SITE-NAME}/view/default/themes/css/css_index/jquery.ui.all.css' type='text/css' media='all'/>
     <link rel='stylesheet' href='{SITE-NAME}/view/default/themes/css/css_index/responsive.css' type='text/css' media='all'/>
     <link rel='stylesheet' href='{SITE-NAME}/view/default/themes/css/css_index/skins/green/images.css' type='text/css' media='all'/>
     <link rel='stylesheet' href='{SITE-NAME}/view/default/themes/css/css_index/style-colors.css' type='text/css' media='all'/>
     <link rel='stylesheet' href='{SITE-NAME}/view/default/themes/css/css_index/style-2.css' type='text/css' media='all'/>
-    <link rel='stylesheet' href='{SITE-NAME}/view/default/themes/css/css_index/exo.css' type='text/css' media='all'/>
+    <!--<link rel='stylesheet' href='{SITE-NAME}/view/default/themes/css/css_index/exo.css' type='text/css' media='all'/>-->
     <link rel='stylesheet' href='{SITE-NAME}/view/default/themes/css/css_index/fontawesome.css' type='text/css' media='all'/>
 
-    <link rel="stylesheet" href="{SITE-NAME}/view/default/themes/css/css_index/custom.css" media="all"/>
+   <!-- <link rel="stylesheet" href="{SITE-NAME}/view/default/themes/css/css_index/custom.css" media="all"/>-->
 
 
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <!--Start of Zopim Live Chat Script-->
+    <script type="text/javascript">
+        window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+                d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+        _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+                $.src="//v2.zopim.com/?1yvBi4MFQSLLbInvbhBpu2sLFfBiJZRE";z.t=+new Date;$.
+                type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+    </script>
+
 
 </head>
 
@@ -66,10 +92,10 @@
             <div class="column one">
                 <!-- .logo -->
                 <div class="logo">
-                    <h1><a id="logo" href="index.html" title="Falco">
+                    <h1><a id="logo" href="{SITE-NAME}" title="Falco">
                             <img class="scale-with-grid"
-                                 src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/cauhinh/logoazbooking.vn.png"
-                                 alt="DEV Falco"/>
+                                 src="{logo}" title="{Name}"
+                                 alt="{Name}"/>
                         </a>
                     </h1>
                 </div>
@@ -85,9 +111,9 @@
                 <!--</div>-->
 
                 <div class="addons">
-                    <form method="get" id="searchform" action="#">
+                    <form method="get" id="searchform" action="{SITE-NAME}/tim-kiem/">
                         <a class="icon" href="#"><i class="fa fa-search"></i></a>
-                        <input type="text" class="field" name="s" id="s" placeholder="Nhập từ khóa tìm kiếm"/>
+                        <input type="text" class="field" name="value" placeholder="Nhập từ khóa tìm kiếm"/>
                         <input type="submit" class="submit" value="" style="display:none;"/>
                     </form>
 
@@ -105,14 +131,14 @@
                     <div class="mail expand">
                         <i class="fa fa-envelope"></i>
                         <p class="label">
-                            <a href="mailto:info@azbooking.vn">info@azbooking.vn</a>
+                            <a href="mailto:{Email}">{Email}</a>
                         </p>
                     </div>
 
                     <div class="phone expand">
                         <i class="fa fa-phone"></i>
                         <p class="label">
-                            <a href="tel:0943 838 222">0943 838 222</a>
+                            <a href="tel:{Hotline}">{Hotline}</a>
                         </p>
                     </div>
 
@@ -122,19 +148,19 @@
                 <nav id="menu" class="menu-main-menu-container">
                     <ul id="menu-main-menu" class="menu">
                         <li class="menu-item current-menu-item page_item current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children ">
-                            <a href="index.html">Tour du lịch</a>
+                            <a href="{SITE-NAME}/tour/">Tour du lịch</a>
                         </li>
-                        <li class="menu-item menu-item-has-children "><a>Đặt phòng khách sạn</a>
+                        <li class="menu-item menu-item-has-children "><a href="{SITE-NAME}/khach-san/">Đặt phòng khách sạn</a>
 
                         </li>
                         <li class="menu-item menu-item-has-children "><a href="http://vemaybay.azbooking.vn">Đặt vé máy bay</a>
                         </li>
                         <li class="menu-item menu-item-has-children "><a >Thuê xe du lịch</a>
                         </li>
-                        <li class="menu-item menu-item-has-children "><a href="http://azbooking.vn/cam-nang/">Cẩm nang du lịch</a>
+                        <li class="menu-item menu-item-has-children "><a href="{SITE-NAME}/cam-nang/">Cẩm nang du lịch</a>
                         </li>
                     </ul>
-                    <ul style="float: right" class="menu">
+                    <ul hidden style="float: right" class="menu">
                         <li class="menu-item menu-item-has-children "><a href="#"><i class="fa fa-user" aria-hidden="true"></i> Đăng ký</a>
                             <ul class="sub-menu">
                                 <li class="menu-item"><a href="">Cài đặt tài khoản</a></li>
@@ -159,51 +185,13 @@
     <div id="mfn-slider" class="mfn-slider-vertical">
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide dark">
-                    <div class="swiper-background" style="background-image:url(http://mixtourist.com.vn/view/admin/Themes/kcfinder/upload/images/slide/slide-du-lich-2-9-mixtourist.jpg);">
-                        <div class="vertical-align-middle container">
-                            <h2 class="swiper-title">Clean & business<br/>
-                                HTML Theme</h2>
-                            <div class="swiper-desc">
-                                Perfect choice for everyone. Lot`s of great features &<br/>
-                                many fresh and well done pages layouts.<br/>See what you can do with Falco.
-                            </div>
-                            <a class="button button_large swiper-button" href="#">Take a tour</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide dark">
-                    <div class="swiper-background" style="background-image:url(http://mixtourist.com.vn/view/admin/Themes/kcfinder/upload/images/slide/slide-du-lich-2-9-mixtourist.jpg);">
-                        <div class="vertical-align-middle container">
-                            <h2 class="swiper-title">Slide 2<br/>
-                                HTML Theme</h2>
-                            <div class="swiper-desc">
-                                Perfect choice for everyone. Lot`s of great features &<br/>
-                                many fresh and well done pages layouts.<br/>See what you can do with Falco.
-                            </div>
-                            <a class="button button_large swiper-button" href="#">Take a tour</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide dark">
-                    <div class="swiper-background" style="background-image:url(http://mixtourist.com.vn/view/admin/Themes/kcfinder/upload/images/slide/slide-du-lich-2-9-mixtourist.jpg);">
-                        <div class="vertical-align-middle container">
-                            <h2 class="swiper-title">Slide 3<br/>
-                                HTML Theme</h2>
-                            <div class="swiper-desc">
-                                Perfect choice for everyone. Lot`s of great features &<br/>
-                                many fresh and well done pages layouts.<br/>See what you can do with Falco.
-                            </div>
-                            <a class="button button_large swiper-button" href="#">Take a tour</a>
-                        </div>
-                    </div>
-                </div>
+                {slide}
             </div>
             <div class="swiper-controls">
                 <a class="swiper-control swiper-prev" href="#">prev</a>
                 <div class="swiper-counter">
                     <span class="swiper-current">1</span><span class="swiper-sep">/</span><span
-                            class="swiper-count">3</span>
+                            class="swiper-count">{count_slide}</span>
                 </div>
                 <a class="swiper-control swiper-next" href="#">next</a>
             </div>
@@ -326,78 +314,14 @@
                             <div class="column one offer">
                                 <div class="offer_wrapper">
                                     <ul class="offer-slider">
-                                        <!--<li>-->
-                                        <!--<div class="image">-->
-                                        <!--<img width="776" height="438" src="upload/homepage_offer_1-776x438.jpg" class="scale-with-grid wp-post-image" alt="homepage_offer_1"/>-->
-                                        <!--</div>-->
-                                        <!--<div class="desc">-->
-                                        <!--<h3 class="title">HTML Themes</h3>-->
-                                        <!--<div class="inside">-->
-                                        <!--We provide best HTML solutions for your business. Thanks to our framework you will get more happy customers.-->
-                                        <!--<div class="icon_list">-->
-                                        <!--<div class="icon">-->
-                                        <!--<i class="fa fa-trophy"></i>-->
-                                        <!--</div>-->
-                                        <!--<div class="il-desc">-->
-                                        <!--<h5>Advanced technology</h5>-->
-                                        <!--<p>-->
-                                        <!--New Muffin Framework 2.0 has everything what you need in one place. Really have.-->
-                                        <!--</p>-->
-                                        <!--</div>-->
-                                        <!--</div>-->
-                                        <!--<div class="icon_list">-->
-                                        <!--<div class="icon">-->
-                                        <!--<i class="fa fa-comments"></i>-->
-                                        <!--</div>-->
-                                        <!--<div class="il-desc">-->
-                                        <!--<h5>Outstanding support</h5>-->
-                                        <!--<p>-->
-                                        <!--We provide private &amp; public support. Support team reply on questions within 24 hours.-->
-                                        <!--</p>-->
-                                        <!--</div>-->
-                                        <!--</div>-->
-                                        <!--</div>-->
-                                        <!--</div>-->
-                                        <!--</li>-->
-                                        <!--<li>-->
-                                        <!--<div class="image">-->
-                                        <!--<img width="776" height="435" src="upload/homepage_offer.png" class="scale-with-grid wp-post-image" alt="homepage_offer"/>-->
-                                        <!--</div>-->
-                                        <!--<div class="desc">-->
-                                        <!--<h3 class="title">SEO &#038; SEM</h3>-->
-                                        <!--<div class="inside">-->
-                                        <!--We build traffic for our customers and then we help with monetize it. People love our solutions and are happy with that.-->
-                                        <!--<div class="icon_list">-->
-                                        <!--<div class="icon">-->
-                                        <!--<i class="fa fa-signal"></i>-->
-                                        <!--</div>-->
-                                        <!--<div class="il-desc">-->
-                                        <!--<h5>Search Engine Optimization</h5>-->
-                                        <!--<p>-->
-                                        <!--We do everything to put the most important keywords at the top of search engine ranking.-->
-                                        <!--</p>-->
-                                        <!--</div>-->
-                                        <!--</div>-->
-                                        <!--<div class="icon_list">-->
-                                        <!--<div class="icon">-->
-                                        <!--<i class="fa fa-usd"></i>-->
-                                        <!--</div>-->
-                                        <!--<div class="il-desc">-->
-                                        <!--<h5>AdWords campaigns</h5>-->
-                                        <!--<p>-->
-                                        <!--We create Google AdWords campaigns, optimize them and we cut the cost of clicks.-->
-                                        <!--</p>-->
-                                        <!--</div>-->
-                                        <!--</div>-->
-                                        <!--</div>-->
-                                        <!--</div>-->
-                                        <!--</li>-->
                                         <li>
                                             <div class="image">
-                                                <iframe class="scale-with-grid"
+                                                <!--<iframe class="scale-with-grid"
                                                         src="http://www.youtube.com/embed/WoJhnRczeNg?wmode=opaque"
                                                         allowfullscreen>
-                                                </iframe>
+                                                </iframe>-->
+                                                <iframe class="embed-responsive-item"
+                                                        src="{link_video}" frameborder="0" allowfullscreen></iframe>
                                             </div>
                                             <div class="desc">
                                                 <h3 class="title"></h3>
@@ -572,8 +496,6 @@
 </div>
 <script type='text/javascript' src='{SITE-NAME}/view/default/themes/js/js_index/jquery/jquery.js'></script>
 <script type='text/javascript' src='{SITE-NAME}/view/default/themes/js/js_index/jquery/jquery-migrate.min.js'></script>
-<script type='text/javascript' src='rs-plugin/js/jquery.themepunch.tools.min.js'></script>
-<script type='text/javascript' src='rs-plugin/js/jquery.themepunch.revolution.min.js'></script>
 <script type='text/javascript' src='{SITE-NAME}/view/default/themes/js/js_index/jquery.form.min.js'></script>
 
 <script type='text/javascript' src='{SITE-NAME}/view/default/themes/js/js_index/contact-form.js'></script>
@@ -663,7 +585,7 @@
 
 <script>
     //<![CDATA[
-    window.mfn_slider_vertical = {autoplay: 0};
+    window.mfn_slider_vertical = {autoplay: 7000};
     window.mfn_slider_offer = {autoPlay: 0};
     window.mfn_slider_portfolio = {autoPlay: 0};
     //]]>

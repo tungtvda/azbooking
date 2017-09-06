@@ -21,6 +21,9 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
 	font-family: Exo, Arial, Tahoma, sans-serif;
 	font-weight: normal;
 }
+a{
+	text-decoration: none !important;
+}
 
 #menu > ul > li > a {
 	font-family: roboto-re;
@@ -101,4 +104,7 @@ h5 {
 h6 {
 	font-size: 17px;
 	line-height: 20px;
+}
+.fancy_heading_wrapper h2{
+	color: #0091EA;
 }
