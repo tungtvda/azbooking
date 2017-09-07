@@ -254,24 +254,24 @@ function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberfor
             {
                 $ft->assign('link',link_news($item));
             }
-            if(get_class($item)=='dichvu')
-            {
-                $content=$item->content;
-                if (strlen($content) > 210) {
-                    $ten1=strip_tags($content);
-
-                    $ten = substr($ten1, 0, 210);
-                    $name = substr($ten, 0, strrpos($ten, ' ')) . "...";
-                    $ft->assign('content',$name);
-                } else {
-                    $ft->assign('content',strip_tags($content));
-                }
-                $data_dm=danhmuc_dichvu_getById($item->danhmuc_id);
-                if(count($data_dm)==0){
-                    redict(SITE_NAME);
-                }
-                $ft->assign('link',link_dichvu($item,$data_dm[0]->name_url));
-            }
+//            if(get_class($item)=='dichvu')
+//            {
+//                $content=$item->content;
+//                if (strlen($content) > 210) {
+//                    $ten1=strip_tags($content);
+//
+//                    $ten = substr($ten1, 0, 210);
+//                    $name = substr($ten, 0, strrpos($ten, ' ')) . "...";
+//                    $ft->assign('content',$name);
+//                } else {
+//                    $ft->assign('content',strip_tags($content));
+//                }
+//                $data_dm=danhmuc_dichvu_getById($item->danhmuc_id);
+//                if(count($data_dm)==0){
+//                    redict(SITE_NAME);
+//                }
+//                $ft->assign('link',link_dichvu($item,$data_dm[0]->name_url));
+//            }
             if(get_class($item)=='danhmuc_khachsan')
             {
                 $ft->assign('link',link_danhmuc_khachsan($item));
