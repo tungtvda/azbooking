@@ -1,0 +1,4 @@
+insert into dichvu (name,img,icon,phone,email,link,position) values ('Tour du lịch','/azbooking/view/admin/Themes/kcfinder/upload/images/dichvu/tour.png','fa-plane','0943 838 222','info@azbooking.vn','http://azbooking.vn/tour/','1');
+insert into dichvu (name,img,icon,phone,email,link,position) values ('Đặt vé máy bay','/azbooking/view/admin/Themes/kcfinder/upload/images/dichvu/maybay.png','fa-ticket','0943 838 222','info@azbooking.vn','http://vemaybay.azbooking.vn/','2');
+insert into dichvu (name,img,icon,phone,email,link,position) values ('Đặt phòng khách sạn','/azbooking/view/admin/Themes/kcfinder/upload/images/dichvu/hotel.png','fa-home','0943 838 222','info@azbooking.vn','http://azbooking.vn/khach-san/','3');
+insert into dichvu (name,img,icon,phone,email,link,position) values ('Thuê xe du lịch','/azbooking/view/admin/Themes/kcfinder/upload/images/dichvu/car.png','fa-car','0943 838 222','info@azbooking.vn','','4');

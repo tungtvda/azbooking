@@ -53,6 +53,12 @@ function show_index($data = array())
     {
         $asign['link_video'] = $data['video_index'][0]->link_video;
     }
+
+    $asign['dichvu'] ='';
+    if(count($data['dichvu'])>0)
+    {
+        $asign['dichvu'] = print_item('dichvu', $data['dichvu']);
+    }
     print_template($asign, 'index');
 }
 

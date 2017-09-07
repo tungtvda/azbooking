@@ -16,7 +16,8 @@ $data['config']=config_getByTop(1,'','');
 ////
 
 $data['video_index']=video_getByTop(1,'','id desc');
-$data['slide']=slide_getByTop('','','Id desc');
+$data['slide']=slide_index_getByTop('','','position asc');
+$data['dichvu']=dichvu_getByTop('','','position asc');
 $title=$data['menu'][0]->title;
 $description=$data['menu'][0]->description;
 $keyword=$data['menu'][0]->keyword;
