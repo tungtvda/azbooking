@@ -444,8 +444,8 @@
                                         </li>
                                     </ul>
                                     <div class="buttons_wrapper">
-                                        <a class="button button_about" href="#">Giới thiệu</a><a
-                                                class="button button_form" href="http://azbooking.vn/info/lien-he.html">Liên hệ</a>
+                                        <a class="button button_about" href="{SITE-NAME}/info/gioi-thieu.html">Giới thiệu</a><a
+                                                class="button button_form" href="{SITE-NAME}/info/lien-he.html">Liên hệ</a>
                                     </div>
                                 </div>
                             </div>
@@ -474,8 +474,8 @@
                                         </li>
                                     </ul>
                                     <div class="buttons_wrapper">
-                                        <a class="button button_about" href="#">Giới thiệu</a><a
-                                                class="button button_form" href="http://azbooking.vn/info/lien-he.html">Liên hệ</a>
+                                        <a class="button button_about" href="{SITE-NAME}/info/gioi-thieu.html">Giới thiệu</a><a
+                                                class="button button_form" href="{SITE-NAME}/info/lien-he.html">Liên hệ</a>
                                     </div>
                                 </div>
                             </div>
