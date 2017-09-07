@@ -236,7 +236,7 @@
                             <div class="column one fancy_heading">
                                 <div class="fancy_heading_wrapper " style="">
                                     <h2>DỊCH VỤ CỦA CHÚNG TÔI</h2>
-                                    <div class="inside">
+                                    <div hidden class="inside">
                                         This item can present your offer. Choose background color/image/pattern for
                                         section, select items or do anything you need.
                                     </div>
@@ -245,18 +245,17 @@
                             </div>
                             <div class="column one-second feature_box">
                                 <div class="feature_box_wrapper">
-                                    <a href="#">
+                                    <a href="{SITE-NAME}/tour/">
                                         <div class="photo">
                                             <img class="scale-with-grid"
                                                  src="{SITE-NAME}/view/default/themes/images/img_new/tour.png"
-                                                 alt="Muffin Builder"/>
+                                                 alt="Đặt tour du lịch"/>
                                         </div>
                                         <div class="desc">
                                             <span class="icon"><i class="fa fa-plane"></i></span>
                                             <h3 class="title">Tour du lịch</h3>
                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea est ex
-                                                minima, debitisluptate impedit.
+                                                <span><i class="fa fa-phone "></i> 0943 838 222</span>  &nbsp; | &nbsp; <span><i class="fa fa-envelope"></i> info@azbooking.vn</span>
                                             </p>
                                         </div>
                                     </a>
@@ -264,18 +263,17 @@
                             </div>
                             <div class="column one-second feature_box">
                                 <div class="feature_box_wrapper">
-                                    <a href="#">
+                                    <a href="http://vemaybay.azbooking.vn">
                                         <div class="photo">
                                             <img class="scale-with-grid"
                                                  src="{SITE-NAME}/view/default/themes/images/img_new/maybay.png"
-                                                 alt="Muffin Options"/>
+                                                 alt="Đặt vé máy bay"/>
                                         </div>
                                         <div class="desc">
                                             <span class="icon"><i class="fa fa-ticket "></i></span>
                                             <h3 class="title">Đặt vé máy bay</h3>
                                             <p>
-                                                All necessary options in one place. Change colors, fonts, layouts and
-                                                much more with one click.
+                                                <span><i class="fa fa-phone "></i> 0943 838 222</span>  &nbsp; | &nbsp; <span><i class="fa fa-envelope"></i> info@azbooking.vn</span>
                                             </p>
                                         </div>
                                     </a>
@@ -283,11 +281,11 @@
                             </div>
                             <div class="column one-second feature_box">
                                 <div class="feature_box_wrapper">
-                                    <a href="#">
+                                    <a href="{SITE-NAME}/khach-san/">
                                         <div class="photo">
                                             <img class="scale-with-grid"
                                                  src="{SITE-NAME}/view/default/themes/images/img_new/hotel.png"
-                                                 alt="Muffin Options"/>
+                                                 alt="Đặt phòng khách sạn"/>
                                         </div>
                                         <div class="desc">
                                             <span class="icon">
@@ -295,8 +293,7 @@
                                             </span>
                                             <h3 class="title">Đặt phòng khách sạn</h3>
                                             <p>
-                                                All necessary options in one place. Change colors, fonts, layouts and
-                                                much more with one click.
+                                                <span><i class="fa fa-phone "></i> 0943 838 222</span>  &nbsp; | &nbsp; <span><i class="fa fa-envelope"></i> info@azbooking.vn</span>
                                             </p>
                                         </div>
                                     </a>
@@ -308,14 +305,13 @@
                                         <div class="photo">
                                             <img class="scale-with-grid"
                                                  src="{SITE-NAME}/view/default/themes/images/img_new/car.png"
-                                                 alt="Muffin Options"/>
+                                                 alt="Thuê xe du lịch"/>
                                         </div>
                                         <div class="desc">
                                             <span class="icon"><i class="fa fa-car"></i></span>
                                             <h3 class="title">Thuê xe du lịch</h3>
                                             <p>
-                                                All necessary options in one place. Change colors, fonts, layouts and
-                                                much more with one click.
+                                                <span><i class="fa fa-phone "></i> 0943 838 222</span>  &nbsp; | &nbsp; <span><i class="fa fa-envelope"></i> info@azbooking.vn</span>
                                             </p>
                                         </div>
                                     </a>
@@ -332,7 +328,7 @@
                             <div class="column one fancy_heading">
                                 <div class="fancy_heading_wrapper " style="">
                                     <h2>VIDEO AZBOOKING.VN</h2>
-                                    <div class="inside">
+                                    <div hidden class="inside">
                                         This item can present your offer. Choose background color/image/pattern for
                                         section, select items or do anything you need.
                                     </div>
@@ -356,11 +352,11 @@
                                                 <div class="inside">
                                                     <div class="icon_list">
                                                         <div class="icon">
-                                                            <i class="fa fa-youtube"></i>
+                                                            <i class="fa fa-plane"></i>
                                                         </div>
                                                         <div class="il-desc">
-                                                            <h5>Videos support</h5>
-                                                            <p>
+                                                            <h5>Hướng dẫn đặt tour</h5>
+                                                            <p hidden>
                                                                 Praesent feugiat commodo ullamcorper. Integer vulputate
                                                                 magna ut mi tempus.
                                                             </p>
@@ -368,11 +364,11 @@
                                                     </div>
                                                     <div class="icon_list">
                                                         <div class="icon">
-                                                            <i class="fa fa-music"></i>
+                                                            <i class="fa fa-ticket "></i>
                                                         </div>
                                                         <div class="il-desc">
-                                                            <h5>Music support</h5>
-                                                            <p>
+                                                            <h5>Hướng dẫn đặt vé máy bay</h5>
+                                                            <p hidden>
                                                                 Praesent feugiat commodo ullamcorper. Integer vulputate
                                                                 magna ut mi tempus.
                                                             </p>
@@ -380,11 +376,23 @@
                                                     </div>
                                                     <div class="icon_list">
                                                         <div class="icon">
-                                                            <i class="fa fa-image"></i>
+                                                            <i class="fa fa-home"></i>
                                                         </div>
                                                         <div class="il-desc">
-                                                            <h5>Images support</h5>
-                                                            <p>
+                                                            <h5>Hướng dẫn đặt phòng khách sạn</h5>
+                                                            <p hidden>
+                                                                Praesent feugiat commodo ullamcorper. Integer vulputate
+                                                                magna ut mi tempus.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="icon_list">
+                                                        <div class="icon">
+                                                            <i class="fa fa-car"></i>
+                                                        </div>
+                                                        <div class="il-desc">
+                                                            <h5>Hướng dẫn thuê xe du lịch</h5>
+                                                            <p hidden>
                                                                 Praesent feugiat commodo ullamcorper. Integer vulputate
                                                                 magna ut mi tempus.
                                                             </p>
