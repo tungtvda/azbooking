@@ -112,7 +112,7 @@ a.button_image:hover:after, .gallery span.button_image:hover:after {
 
 /* main menu 2nd level */
 #Header .menu li ul { position: absolute; left: 0px; top: 100%; z-index: 205; margin: 0; padding: 10px 0; display: none; text-align: center; }
-#Header .menu li ul li { padding: 0 0; width: 180px; position: relative; font-weight: normal; }
+#Header .menu li ul li { padding: 0 0; width: 100%; position: relative; font-weight: normal; }
 #Header .menu li ul li a { padding: 5px 20px 5px 15px; margin: 0 10px; display: block; border-width: 1px; border-style: solid; border-color: transparent; }
 #Header .menu li ul li a:hover { text-decoration: none; }
 #Header .menu li ul li a .menu-arrow { display: block; position: absolute; right: 20px; top: 6px; font-size: 7px; }

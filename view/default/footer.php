@@ -81,8 +81,9 @@ function view_footer($data = array())
         $list_noti= returnCURL($array_check_noti, SITE_NAME_MANAGE.'/return-list-notification.html');
         $data_list_noti=json_decode($list_noti,true);
         $count_noti=0;
+        $count_noti=count($data_list_noti['data_noti']);
         if(isset($data_list_noti['count_active'])&& $data_list_noti['count_active']>0){
-            $count_noti=count($data_list_noti['data_noti']);
+
             if($data_list_noti['count_active']>100){
                 $data_list_noti['count_active']='100+';
             }
@@ -114,7 +115,7 @@ function view_footer($data = array())
                 $date_noti =timeAgo($row_noti['created']);
                 $list_notification.='
                             <li style="'.$row_color.'">
-                                <a href="'.SITE_NAME.'/'.$row_noti['link'].'">
+                                <a href="'.SITE_NAME.'/'.$row_noti['link'].'&id_noti='._return_mc_encrypt($row_noti['id']).'">
 												<span class="msg-body">
 													<span class="msg-title">
 														'.$row_noti['name'].'
@@ -125,7 +126,7 @@ function view_footer($data = array())
 												</span>
                                 </a>
                                 <a title="Chi tiết thông báo"
-                                   href="'.SITE_NAME.'/'.$row_noti['link'].'"
+                                   href="'.SITE_NAME.'/'.$row_noti['link'].'&id_noti='._return_mc_encrypt($row_noti['id']).'"
                                    style="position: absolute;right: 0%;bottom: 5%; "><i
                                             style="color:#4a96d9 !important;"
                                             class="ace-icon fa fa-hand-o-right"></i></a>

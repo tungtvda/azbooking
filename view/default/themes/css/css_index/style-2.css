@@ -1,110 +1,259 @@
-
 /******************* Background ********************/
 
 @font-face {
-	font-family: "roboto-re";
-	src: url("../fonts/RobotoCondensed-Regular.ttf") format("truetype");
-	font-weight: normal;
-	font-style: normal;
-	font-stretch:normal;
+    font-family: "roboto-re";
+    src: url("../fonts/RobotoCondensed-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
 }
 
 html {
-	background-color:#f7f8f8;
+    background-color: #f7f8f8;
 }
-
 
 /********************** Fonts **********************/
 
 body, button, input[type="submit"], input[type="reset"], input[type="button"],
 input[type="text"], input[type="password"], input[type="email"], textarea, select {
-	font-family: Exo, Arial, Tahoma, sans-serif;
-	font-weight: normal;
+    font-family: Exo, Arial, Tahoma, sans-serif;
+    font-weight: normal;
 }
-a{
-	text-decoration: none !important;
+
+a {
+    text-decoration: none !important;
 }
 
 #menu > ul > li > a {
-	font-family: roboto-re;
-	font-weight: normal;
+    font-family: roboto-re;
+    font-weight: normal;
 }
 
 h1 {
-	font-family: roboto-re;
-	font-weight: 300;
+    font-family: roboto-re;
+    font-weight: 300;
 }
 
 h2 {
-	font-family: roboto-re;
-	font-weight: 300;
+    font-family: roboto-re;
+    font-weight: 300;
 }
 
 h3 {
-	font-family: "roboto-re";
-	font-weight: 300;
+    font-family: "roboto-re";
+    font-weight: 300;
 }
 
 h4 {
-	font-family: "roboto-re";
-	font-weight: 300;
+    font-family: "roboto-re";
+    font-weight: 300;
 }
 
 h5 {
-	font-family: "roboto-re";
-	font-weight: 300;
+    font-family: "roboto-re";
+    font-weight: 300;
 }
 
 h6 {
-	font-family: "roboto-re";
-	font-weight: 300;
+    font-family: "roboto-re";
+    font-weight: 300;
 }
-
 
 /********************** Font sizes **********************/
 
 /* Body */
 
 body {
-	font-size: 13px;
-	line-height: 20px;
+    font-size: 13px;
+    line-height: 20px;
 }
 
 #menu > ul > li > a {
-	font-size: 14px;
+    font-size: 14px;
 }
 
 /* Headings */
 
 h1 {
-	font-size: 45px;
-	line-height: 45px;
+    font-size: 45px;
+    line-height: 45px;
 }
 
 h2 {
-	font-size: 40px;
-	line-height: 40px;
+    font-size: 40px;
+    line-height: 40px;
 }
 
 h3 {
-	font-size: 35px;
-	line-height: 37px;
+    font-size: 35px;
+    line-height: 37px;
 }
 
 h4 {
-	font-size: 26px;
-	line-height: 30px;
+    font-size: 26px;
+    line-height: 30px;
 }
 
 h5 {
-	font-size: 19px;
-	line-height: 24px;
+    font-size: 19px;
+    line-height: 24px;
 }
 
 h6 {
-	font-size: 17px;
-	line-height: 20px;
+    font-size: 17px;
+    line-height: 20px;
 }
-.fancy_heading_wrapper h2{
-	color: #0091EA;
+
+.fancy_heading_wrapper h2 {
+    color: #0091EA;
+}
+
+.nav-user-photo {
+    margin: -0px 8px 0 0;
+    border-radius: 100%;
+    border: 2px solid #FFF;
+    /* max-width: 40px; */
+    height: 40px;
+    width: 40px;
+}
+
+.user-info {
+    max-width: 100px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+    vertical-align: top;
+    line-height: 15px;
+    position: relative;
+    top: 6px;
+}
+
+.user-info small {
+    display: block;
+}
+
+.badge {
+    font-size: 10px;
+    padding: 1px 5px;
+    background-color: #d15b47;
+    border-radius: 4px;
+    position: absolute;
+    text-align: center;
+    /* height: 18px; */
+    line-height: 14px;
+    color: #ffffff;
+    top: 8px;
+    left: 33px;
+}
+
+.msg-title {
+    display: inline-block;
+    line-height: 20px;
+}
+
+.dropdown-content-noti {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    width: 335px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 11;
+    /*margin-top: 13px;*/
+}
+
+/* Show the dropdown menu on hover */
+.dropdown-noti:hover .dropdown-content-noti {
+    display: block;
+}
+
+.dropdown-header {
+    background-color: #f7ecf2;
+    color: #b471a0;
+    text-shadow: none;
+    line-height: 34px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: none;
+    border-bottom: 1px solid #e5bcd4;
+    text-align: left;
+    padding: 5px 15px;
+    margin-bottom: 0px;
+}
+
+.content_ul_li {
+
+}
+
+.scroll_noti {
+    overflow: scroll;
+    height: 232px;
+}
+
+.ul_noti {
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+.ul_noti li {
+    position: relative;
+    border-bottom: 1px solid #dddfe2;
+}
+
+.ul_noti li a {
+    padding: 10px 15px;
+}
+
+.msg-photo {
+    max-width: 42px;
+    float: left;
+    margin-top: 2px;
+}
+
+.msg-body {
+    display: block;
+    line-height: 20px;
+    white-space: normal;
+    vertical-align: middle;
+    /*margin-left: 50px;*/
+}
+
+.msg-title {
+    display: inline-block;
+    line-height: 20px;
+}
+
+.msg-time {
+    display: block;
+    font-size: 11px;
+    color: #777;
+}
+
+.dropdown-footer > a {
+    color: #4F99C6 !important;
+    text-align: center;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.icon_right_noti {
+    position: absolute;
+    right: 0%;
+    bottom: 5%;
+}
+
+.icon_glo_noti {
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}
+
+.sub-menu-noti {
+    text-align: left !important;
+    margin-left: 0px !important;
+    width: 100%;
+    display: block !important;
+    position: relative !important;
+    top: 0px !important;
 }
