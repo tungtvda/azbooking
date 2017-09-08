@@ -108,7 +108,7 @@
 	}
 
 	#Header .menu > li ul li a:hover, #Header .menu > li ul li.hover > a {
-		color: #dbf5be;
+		/*color: #ff0909;*/
 	}	
 			
 	#Header .menu > li ul {

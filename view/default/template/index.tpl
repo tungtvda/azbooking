@@ -183,23 +183,11 @@
                                 lịch</a>
                         </li>
                     </ul>
-                    <ul hidden style="float: right" class="menu">
-                        <li class="menu-item menu-item-has-children "><a href="#"><i class="fa fa-user"
-                                                                                     aria-hidden="true"></i> Đăng ký</a>
-                            <ul class="sub-menu">
-                                <li class="menu-item"><a href="">Cài đặt tài khoản</a></li>
-                                <li class="menu-item"><a href="">Tiếp thị liên kết </a></li>
-                                <li class="menu-item"><a href="">Đăng xuất</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item menu-item-has-children ">
-                            <a href="#"> <i class="fa fa-sign-in" aria-hidden="true"></i> Đăng nhập</a>
-                        </li>
-                        <li class="menu-item menu-item-has-children ">
-                            <a href="#"> <i class="fa fa-globe" aria-hidden="true"></i></a>
-                        </li>
+                    <ul style="float: right" class="menu">
+                        {content_noti_user}
                     </ul>
                 </nav>
+                {form_}
                 <a class="responsive-menu-toggle" href="#"><i class='fa fa-reorder'></i></a>
             </div>
         </div>
@@ -343,8 +331,10 @@
                             <div class="column one-third accordion">
                                 <h4 class="title">FANPAGE</h4>
                                 <div class="mfn-acc  ">
-                                    <div style="width: 100% !important;" class="fb-page" data-href="https://www.facebook.com/azbooking.vietnam/"
-                                         data-tabs="timeline" data-height="470" data-small-header="false" data-width="500"
+                                    <div style="width: 100% !important;" class="fb-page"
+                                         data-href="https://www.facebook.com/azbooking.vietnam/"
+                                         data-tabs="timeline" data-height="470" data-small-header="false"
+                                         data-width="500"
                                          data-adapt-container-width="true" data-hide-cover="false"
                                          data-show-facepile="true">
                                         <blockquote cite="https://www.facebook.com/azbooking.vietnam/"
@@ -363,12 +353,13 @@
                                     <ul>
                                         <li class="address">
                                             <p>
-                                               {Address}
+                                                {Address}
                                             </p>
                                         </li>
                                         <li class="phone">
                                             <p>
-                                                <a href="tel:{Phone}"><i class="fa fa-phone"></i> {Phone}</a> | <a href="tel:{Hotline}">
+                                                <a href="tel:{Phone}"><i class="fa fa-phone"></i> {Phone}</a> | <a
+                                                        href="tel:{Hotline}">
                                                     <i class="fa fa-mobile"></i> {Hotline}</a>
                                             </p>
                                         </li>
@@ -379,8 +370,10 @@
                                         </li>
                                     </ul>
                                     <div class="buttons_wrapper">
-                                        <a class="button button_about" href="{SITE-NAME}/info/gioi-thieu.html">Giới thiệu</a><a
-                                                class="button button_form" href="{SITE-NAME}/info/lien-he.html">Liên hệ</a>
+                                        <a class="button button_about" href="{SITE-NAME}/info/gioi-thieu.html">Giới
+                                            thiệu</a><a
+                                                class="button button_form" href="{SITE-NAME}/info/lien-he.html">Liên
+                                            hệ</a>
                                     </div>
                                 </div>
                             </div>
@@ -398,7 +391,8 @@
                                         </li>
                                         <li class="phone">
                                             <p>
-                                                <a href="tel:{Phone_hcm}"><i class="fa fa-phone"></i> {Phone_hcm}</a> | <a href="tel:{Hotline_hcm}">
+                                                <a href="tel:{Phone_hcm}"><i class="fa fa-phone"></i> {Phone_hcm}</a> |
+                                                <a href="tel:{Hotline_hcm}">
                                                     <i class="fa fa-mobile"></i> {Hotline_hcm}</a>
                                             </p>
                                         </li>
@@ -409,8 +403,10 @@
                                         </li>
                                     </ul>
                                     <div class="buttons_wrapper">
-                                        <a class="button button_about" href="{SITE-NAME}/info/gioi-thieu.html">Giới thiệu</a><a
-                                                class="button button_form" href="{SITE-NAME}/info/lien-he.html">Liên hệ</a>
+                                        <a class="button button_about" href="{SITE-NAME}/info/gioi-thieu.html">Giới
+                                            thiệu</a><a
+                                                class="button button_form" href="{SITE-NAME}/info/lien-he.html">Liên
+                                            hệ</a>
                                     </div>
                                 </div>
                             </div>
@@ -458,6 +454,9 @@
 <script type='text/javascript' src='{SITE-NAME}/view/default/themes/js/js_index/mfn.menu.js'></script>
 <script type='text/javascript' src='{SITE-NAME}/view/default/themes/js/js_index/mfn.fsa.js'></script>
 <script type='text/javascript' src='{SITE-NAME}/view/default/themes/js/js_index/scripts.js'></script>
+<script src="{SITE-NAME}/view/default/themes/calendar/dist/moment.min.js"></script>
+<script type="text/javascript"
+        src="{SITE-NAME}/view/default/themes/js/jquery.timeago.js"></script>
 <script>
     jQuery(document).ready(function ($) {
 
@@ -526,6 +525,84 @@
             $('#config').submit();
         });
 
+        $( ".notification_menu" ).hover(function() {
+            link = '{site_name_manage}/update-notification.html';
+            var count_noti=$('#count_notification').html();
+            if(count_noti!=''){
+                $.ajax({
+                    method: "POST",
+                    url: link,
+                    data: $("#form_noti").serialize(),
+                    success: function (response) {
+                        response = $.parseJSON(response);
+                        if (response.success == 1) {
+                            $('#count_notification').hide();
+                            $('#count_notification').html('');
+                            $('#count_mes_noti').hide();
+                            $('#count_mes_noti').html('');
+                            if(response.count_un_read>0){
+                                $('#count_un_read').html(response.count_un_read+' Thông báo chưa đọc');
+                            }else{
+                                $('#count_un_read').html('Tất cả thông báo đã được đọc');
+                            }
+
+                        }
+                    }
+                });
+            }
+        });
+
+        $contentLoadTriggered = false;
+        $(".content_ul_li").scroll(
+                function()
+                {
+                    if($(".content_ul_li").scrollTop() >= ($(".content_ul_li").height() - $(".ul_noti").height()) && $contentLoadTriggered == false)
+                    {
+                        $contentLoadTriggered = true;
+                        var page=$('#page_noti').val();
+                        if(page==1){
+                            $('#page_noti').val(2);
+                        }
+                        link = '{site_name_manage}/return-list-notification.html';
+                        $.ajax({
+                            method: "POST",
+                            url: link,
+                            data: $("#form_noti").serialize(),
+                            success: function (response) {
+                                response = $.parseJSON(response);
+                                if(response.success==1){
+                                    response.data_noti.forEach(function(value) {
+                                        var row_color='';
+                                        if(value.status!=1){
+                                            row_color='background-color: #edf2fa;';
+                                        }
+                                        var time_show=moment(value.created).format('DD-MM-YYYY HH:mm:ss');
+                                        var time_format=jQuery.timeago(value.created);
+                                        var item_noti=' <li  style="'+row_color+'">' +
+                                                '<a style="color: #4F99C6!important" href="{SITE-NAME}/'+value.link+'"><span class="msg-body"><span class="msg-title">'+value.name+'</span>' +
+                                                '<span class="msg-time"><i class="ace-icon fa fa-clock-o"></i> ' +
+                                                '<span title="'+time_show+'" class="timeago">'+time_format+'</span></span></span> </a>' +
+                                                '<a title="Chi tiết thông báo" href="{SITE-NAME}/'+value.link+'"  style="position: absolute;right: 0%;bottom: 5%; "> <i style="color:#4a96d9 !important;" class="ace-icon fa fa-hand-o-right"></i>' +
+                                                '</a></li>';
+                                        $( ".ul_noti" ).append(item_noti);
+                                    });
+                                    $('#page_noti').val(response.current);
+                                    if(response.data_noti.length>0){
+                                        $contentLoadTriggered =false;
+                                    }else{
+                                        $contentLoadTriggered =true;
+                                    }
+
+                                }else{
+                                    $contentLoadTriggered = true;
+                                }
+                            }
+                        });
+
+
+                    }
+                }
+        );
     });
 </script>
 
