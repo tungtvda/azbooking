@@ -152,17 +152,25 @@
 /* Feature box */
 	.feature_box_wrapper .desc {
 		/*background: #0091EA;*/
-		background:rgba(0, 145, 234, 0.83);
+		/*background:rgba(0, 145, 234, 0.83);*/
 	}
 	.feature_box_wrapper .desc .icon { 
 		background: #ffffff;
 	}
 	.feature_box_wrapper .desc,
 	.feature_box_wrapper .desc .title {
-		color: #ffffff;
+		/*color: #ffffff;*/
+		color: #0091EA;
 	}
+.feature_box_wrapper .desc h3{
+	text-transform: uppercase;
+}
+.feature_box_wrapper .desc p{
+	color:#ff0909;
+}
 .feature_box_wrapper .desc .icon {
 	color: #ff0909;
+	display: none;
 }
 	
 /* Icon box */
@@ -173,7 +181,7 @@
 	
 /* Icon list */
 	.icon_list .icon{
-		color: #39464e;
+		color: #ff0909;
 	}
 	
 /* Tabs */

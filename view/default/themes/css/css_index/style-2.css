@@ -169,14 +169,14 @@ h6 {
 }
 
 .dropdown-header {
-    background-color: #f7ecf2;
-    color: #b471a0;
+    background-color: #0091EA;
+    color: #ffffff;
     text-shadow: none;
     line-height: 34px;
     font-size: 13px;
     font-weight: 700;
     text-transform: none;
-    border-bottom: 1px solid #e5bcd4;
+    /* border-bottom: 1px solid #e5bcd4; */
     text-align: left;
     padding: 5px 15px;
     margin-bottom: 0px;

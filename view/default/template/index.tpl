@@ -70,7 +70,16 @@
                 $.src="//v2.zopim.com/?1yvBi4MFQSLLbInvbhBpu2sLFfBiJZRE";z.t=+new Date;$.
                 type="text/javascript";e.parentNode.insertBefore($,e)})(document, "script");
     </script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+        ga('create', 'UA-93468700-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
 
 </head>
 
@@ -168,6 +177,9 @@
                 <nav id="menu" class="menu-main-menu-container">
                     <ul id="menu-main-menu" class="menu">
                         <li class="menu-item current-menu-item page_item current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children ">
+                            <a href="{SITE-NAME}">Trang chủ</a>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
                             <a href="{SITE-NAME}/tour/">Tour du lịch</a>
                         </li>
                         <li class="menu-item menu-item-has-children "><a href="{SITE-NAME}/khach-san/">Đặt phòng khách
@@ -240,8 +252,8 @@
                 <div class="section " style="padding:0px 0 0px; background-color:#F6F6F6">
                     <div class="section_wrapper clearfix">
                         <div class="items_group clearfix">
-                            <div class="column one fancy_heading">
-                                <div class="fancy_heading_wrapper " style="">
+                            <div class="column one fancy_heading" style="    margin-bottom: 10px;">
+                                <div class="fancy_heading_wrapper " >
                                     <h2>VIDEO AZBOOKING.VN</h2>
                                     <div hidden class="inside">
                                         This item can present your offer. Choose background color/image/pattern for
@@ -266,7 +278,7 @@
                                                 <h3 class="title"></h3>
                                                 <div class="inside">
                                                     <div class="icon_list">
-                                                        <div class="icon">
+                                                        <div class="icon icon_video">
                                                             <i class="fa fa-plane"></i>
                                                         </div>
                                                         <div class="il-desc">
@@ -278,7 +290,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="icon_list">
-                                                        <div class="icon">
+                                                        <div class="icon icon_video">
                                                             <i class="fa fa-ticket "></i>
                                                         </div>
                                                         <div class="il-desc">
@@ -290,7 +302,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="icon_list">
-                                                        <div class="icon">
+                                                        <div class="icon icon_video">
                                                             <i class="fa fa-home"></i>
                                                         </div>
                                                         <div class="il-desc">
@@ -302,11 +314,23 @@
                                                         </div>
                                                     </div>
                                                     <div class="icon_list">
-                                                        <div class="icon">
+                                                        <div class="icon icon_video">
                                                             <i class="fa fa-car"></i>
                                                         </div>
                                                         <div class="il-desc">
                                                             <h5>Hướng dẫn thuê xe du lịch</h5>
+                                                            <p hidden>
+                                                                Praesent feugiat commodo ullamcorper. Integer vulputate
+                                                                magna ut mi tempus.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="icon_list">
+                                                        <div class="icon icon_video">
+                                                            <i class="fa fa-share-alt"></i>
+                                                        </div>
+                                                        <div class="il-desc">
+                                                            <h5>Hướng dẫn tiếp thị liên kết</h5>
                                                             <p hidden>
                                                                 Praesent feugiat commodo ullamcorper. Integer vulputate
                                                                 magna ut mi tempus.
