@@ -7,7 +7,7 @@
                      alt="{name}" title="{name}"/>
             </div>
             <div class="desc">
-                <span class="icon"><i class="fa fa-car"></i></span>
+                <span class="icon"><i class="fa {icon}"></i></span>
                 <h3 class="title">{name}</h3>
                 <p>
                     <span><i class="fa fa-phone "></i> {phone}</span>  &nbsp; | &nbsp; <span><i class="fa fa-envelope"></i> {email}</span>

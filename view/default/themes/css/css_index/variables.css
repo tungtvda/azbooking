@@ -48,7 +48,11 @@
 	.article_box .desc, .clients ul li .client_wrapper, .fancy_heading .fancy_heading_wrapper, .icon_list .icon, .contact_box ul li, #Subheader .one,
 	.post .date_wrapper .date, code, pre, .widget, .Recent_posts ul li .desc p, table td, table th {
 		border-color: rgba(0, 0, 0, 0.07);
-	}	
+	}
+	.icon_list .icon_video{
+		background: #ffffff;
+		border-color:#1477B4;
+	}
 	
 /* Grey notes */
 	.testimonials ul.tm-content li .author a, .post .meta, .post .meta .tags a, .post .desc a .date_grid, .wp-caption .wp-caption-text, 

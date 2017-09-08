@@ -249,6 +249,10 @@
 
 /* Feature box */
 .feature_box {
+    border: 1px solid #dedada;
+    width: 46% !important;
+    padding: 10px;
+    border-radius: 4px;
 }
 
 .feature_box a {
@@ -269,10 +273,10 @@
 }
 
 .feature_box .desc {
-    position: absolute;
+    /*position: absolute;*/
     left: 0px;
     bottom: 0px;
-    width: 55%;
+    width: 100%;
     text-align: center;
 }
 
@@ -293,7 +297,7 @@
 
 .feature_box .desc .title {
     margin: 0px 20px;
-    padding: 40px 0 15px;
+    padding: 25px 0 0px;
     font-size: 25px;
     line-height: 28px;
     display: block;
@@ -477,13 +481,14 @@
     width: 31%;
     margin: 0 2% 0 1%;
     float: left;
-    padding-bottom: 70px;
+    /*padding-bottom: 70px;*/
 }
 
 .offer ul.offer-slider li .image {
     width: 66%;
     float: right;
     line-height: 0;
+    padding-top: 30px;
 }
 
 .offer ul.offer-slider li .image iframe {
