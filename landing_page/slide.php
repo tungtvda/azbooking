@@ -38,12 +38,12 @@
                     <div class="copy-container">
                         <div class="section-title  large">
 
-                            <h3 class="heading apptech-ani-heading wow" > TÀI KHOẢN </h3>
+                            <h3 class="heading apptech-ani-heading wow" > HỆ THỐNG </h3>
 
                             <h3 class="heading slider-subtitle wow"> TIẾP THỊ LIÊN KẾT </h3>
 
-                            <div  class="excerpt" style="font-size:16px"><p>Bạn đã có tài khoản AZBOOKING.VN chưa?</p>
-                                    <p>Chỉ cần vài bước đơn giản, bạn đã có thể trở thành, thành viên của AZBOOKING.VN</p>
+                            <div  class="excerpt" style="font-size:20px"><p>Các sản phẩm và dịch vụ du lịch đầu tiên tại Việt Nam</p>
+                                    <p>Được xây dựng và phát triển bởi Trung tâm lữ hành AZBOOKING</p>
                             </div>
                             <!-- Start slider button -->
                             <div class="button-set at-slider-btn-grp">
@@ -53,10 +53,10 @@
                                     <i class="zmdi zmdi-account"></i>
 			                                                        <span>
 			                                                            &nbsp;			                                                            <span
-                                                                            class="large-text">Đăng ký</span>
+                                                                            class="large-text">Đăng ký thành viên</span>
 			                                                        </span>
                                 </a>
-
+<br>
 
                                 <a class="button active " href="http://azbooking.vn/tiep-thi-lien-ket/thanh-vien/" target="_self" data-swiper-parallax="-500">
 
@@ -104,13 +104,16 @@
                     <div class="copy-container">
                         <div class="section-title  large">
 
-                            <h3 class="heading apptech-ani-heading wow" > TÀI KHOẢN
+                            <h3 class="heading apptech-ani-heading wow" > HỆ THỐNG
 
                             </h3>
 
-                            <h3 class="heading slider-subtitle wow"> Mạng xã hội </h3>
+                            <h3 class="heading slider-subtitle wow"> TIẾP THỊ LIÊN KẾT CỦA AZBOOKING </h3>
 
-                            <div  class="excerpt" style="font-size:16px"><p>Nếu bạn đã có tài khoản FACEBOOK hoặc GOOGLE, việc của bạn chỉ đơn giản là CLICK và XÁC NHẬN để trở thành thành viên của AZBOOKING.VN</p></div>
+                            <div  class="excerpt" style="font-size:20px"><p>Giúp bạn tăng thu nhập ít nhất 500$/tháng chỉ với 3 tiếng online/ngày</p>
+							<p>Đăng ký đơn giản qua MẠNG XÃ HỘI</p>
+							</div>
+
                             <style>
 
                             </style>
@@ -179,7 +182,7 @@
     </style>
     <style type="text/css">
         #layers-widget-apptech_new_slider-41-136 .excerpt p {
-            font-size: 16px;
+            font-size: 20px;
             line-height: 24px;
         }
     </style>

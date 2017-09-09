@@ -30,8 +30,7 @@ if(isset($_POST['name'])){
         <div class="section-title clearfix medium text-center ">
             <h3 class="heading">
                Liên hệ với <span style="color: #f70000;">AZBOOKING.VN</span></h3>
-            <div class="excerpt"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel
-                    volutpat felis, eu condimentum massa. Pellentesque mollis eros vel mattis tempor. Aliquam</p>
+            <div class="excerpt"><p>Bất cứ lúc nào bạn cần hỗ trợ hãy liên hệ ngay với chúng tôi</p>
             </div>
         </div>
     </div>

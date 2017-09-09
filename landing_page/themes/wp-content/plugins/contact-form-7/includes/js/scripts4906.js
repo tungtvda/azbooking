@@ -40,7 +40,7 @@
 
 		this.wpcf7ToggleSubmit();
 
-		//this.find( '.wpcf7-submit' ).wpcf7AjaxLoader();
+		this.find( '.wpcf7-submit' ).wpcf7AjaxLoader();
 
 		this.find( '.wpcf7-acceptance' ).click( function() {
 			$( this ).closest( 'form' ).wpcf7ToggleSubmit();

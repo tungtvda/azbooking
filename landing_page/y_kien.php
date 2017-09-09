@@ -1,14 +1,13 @@
 
-<div id="layers-widget-apptechtestimonialid-4"
+<div hidden id="layers-widget-apptechtestimonialid-4"
      class="widget layers-post-widget apptech-gallery-area content-vertical-massive clearfix  block-lg block-md block-sm block-xs  ">
 
 
     <div class="container clearfix">
         <div class="section-title clearfix medium text-center ">
             <h3 class="heading">
-                Ý kiến <span style="color: #f70000;">Khách hàng</span></h3>
-            <div class="excerpt"><p>There are many variations of passages of Lorem Ipsum available, but the
-                    majorityhave suffered alteration in some form, by injected humour, available</p></div>
+                Đánh giá của <span style="color: #f70000;">Publisher</span></h3>
+            <div class="excerpt"><p>Hãy xem các Publisher nói gì về chúng tôi</p></div>
         </div>
     </div>
 
@@ -27,11 +26,9 @@
                                              alt=""/></div>
                                 </div>
 
-                                <h3>BM Rafiq</h3>
+                                <h3>Hoàng Thị Thu Thủy</h3>
                                 <div class="team-social fix">
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the
-                                        majorityhave suffered alteration in some form, by injected humour,
-                                        available</p>
+                                    <p>Nhờ có hệ thống Tiếp thị liên kết của AZbooking mà tôi đã có thể tăng thu nhập hơn 20 triệu mỗi tháng chỉ với 3 tiếng mỗi ngày. Cảm ơn các bạn!</p>
                                 </div>
                                 <div class="reating-icon">
 
@@ -53,7 +50,7 @@
                                              sizes="(max-width: 164px) 100vw, 164px"/></div>
                                 </div>
 
-                                <h3>Ashim Vai</h3>
+                                <h3>Trần Ngọc Hà</h3>
                                 <div class="team-social fix">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel
                                         volutpat felis, eu condimentum ma Pellentesque mollis eros vel.</p>
@@ -79,7 +76,7 @@
                                              sizes="(max-width: 299px) 100vw, 299px"/></div>
                                 </div>
 
-                                <h3>Tarek Aziz</h3>
+                                <h3>Nguyễn Văn Cường</h3>
                                 <div class="team-social fix">
                                     <p>There are many variations of passages of Lorem Ipsum available, but the
                                         majorityhave suffered alteration in some form, by injected humour,
@@ -141,6 +138,7 @@
                             </div>
                         </div>
                         <div class="single-team text-center">
+						
                             <div class="team-details">
                                 <div class="team-image-wrap clearfix">
                                     <div class="team-image">
@@ -165,8 +163,20 @@
                                     <i class="zmdi zmdi-star"></i></div>
                             </div>
                         </div>
-                    </div>
+                   
+					</div>
+					<div style="margin-left: 290px;margin-top: 50px;">
+					<a class="button active " href="http://azbooking.vn/tiep-thi-lien-ket/thanh-vien/?type=dang-ky" target="_self" data-swiper-parallax="-400">
+                                    <i class="zmdi zmdi-account"></i>
+			                                                        <span>
+			                                                            &nbsp;			                                                            <span
+                                                                            class="large-text">Đăng ký thành viên</span>
+			                                                        </span>
+                                </a>
+								</div>
+					
                 </div>
+				
             </div>
         </div>
     </div>

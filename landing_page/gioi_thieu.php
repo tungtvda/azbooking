@@ -17,13 +17,9 @@
                         <h1 class="heading">
                             GIỚI THIỆU <span style="color: #f70000;">AZBOOKING.VN</span></h1>
 
-                        <div class="excerpt about-pb"><p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit. Donec aliquet dolor libero, eget venenatis mauris finibus dictum. Vestibulum
-                                quis elit eget neque porttitor congue non sit amet dolor. Proin pretium purus a
-                                lorem ornare</p>
-                            <p>sed lobortis pulvinar. Integer laoreet mi id eros porta euismod. Suspendisse
-                                potenti. Nulla eros mauris, convallis et sem tempus, viverra hendrerit
-                                sapien</p></div>
+                        <div class="excerpt about-pb"><p>AZbooking là công ty lữ hành đầu tiên tại Việt Nam xây dựng và phát triển hệ thống Tiếp thị liên kết riêng về các sản phẩm và dịch vụ ngành du lịch.
+</p>
+                            <p>Hệ thống tiếp thị liên kết của AZbooking giúp bạn kiếm tiền online đơn giản nhất mà vẫn có hoa hồng cao nhất. </p></div>
 
                         <div class="about-icon">
                             <ul>
@@ -37,6 +33,13 @@
 
                             </ul>
                         </div>
+						<a class="button active " href="http://azbooking.vn/tiep-thi-lien-ket/thanh-vien/?type=dang-ky" target="_self" data-swiper-parallax="-400">
+                                    <i class="zmdi zmdi-account"></i>
+			                                                        <span>
+			                                                            &nbsp;			                                                            <span
+                                                                            class="large-text">Đăng ký thành viên</span>
+			                                                        </span>
+                                </a>
 
                     </div>
 

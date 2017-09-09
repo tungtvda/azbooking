@@ -42,7 +42,7 @@
             <nav class="nav nav-horizontal">
 
                 <ul id="menu-primary-menu-1" class="menu">
-                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39"><a href="#home">Trang chủ</a> </li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39"><a href="http://azbooking.vn">Trang chủ</a> </li>
                     <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40"><a href="#about">Giới thiệu</a></li>
                     <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41"><a href="#cachthuc">Cách thức</a></li>
                     <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-42"><a

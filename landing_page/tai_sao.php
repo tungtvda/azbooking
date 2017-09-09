@@ -8,9 +8,14 @@
             <div class="section-title clearfix medium text-center ">
                 <h1 class="heading">
                     tại sao lựa chọn <span style="color: #f70000;">AZBOOKING.VN</span></h1>
-                <div class="excerpt"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-                        vel volutpat felis, eu condimentum massa. Pellentesqfue mollis eros vel mattis tempor.
-                        Aliquam</p></div>
+                <div class="excerpt"><p>Nhằm hướng tới sự hợp tác và phát triển lâu dài, AZbooking cam kết:</p></div>
+				<a class="button active " href="http://azbooking.vn/tiep-thi-lien-ket/thanh-vien/?type=dang-ky" target="_self" data-swiper-parallax="-400">
+                                    <i class="zmdi zmdi-account"></i>
+			                                                        <span>
+			                                                            &nbsp;			                                                            <span
+                                                                            class="large-text">Đăng ký thành viên</span>
+			                                                        </span>
+                                </a>
             </div>
         </div>
         <div class="container">
@@ -35,7 +40,7 @@
                                 <i class="zmdi zmdi-badge-check"></i>
                             </div>
                             <div class="feature-list-text2">
-                                <h3>Không áp đặt doanh số, thanh toán đảm bảo</h3>
+                                <h3>Không áp đặt doanh số, thanh toán linh hoạt</h3>
                             </div>
                         </div>
                         <div class="single-features-list2 mb-52">
