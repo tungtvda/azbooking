@@ -8,9 +8,15 @@
             <div class="section-title clearfix medium text-center ">
                 <h1 class="heading">
                     TÍNH NĂNG <span style="color: #f70000;">AZBOOKING.VN</span></h1>
-                <div class="excerpt"><p>There are many variations of passages of Lorem Ipsum available, but the
-                        majorityhave suffered alteration in some form, by injected humour,available</p></div>
-            </div>
+                <div class="excerpt"><p>Trang quản trị hệ thống Tiếp thị liên kết của AZbooking thể hiện rõ ràng và minh bạch các tính năng cần thiết</p></div>
+            <a class="button active " href="http://azbooking.vn/tiep-thi-lien-ket/thanh-vien/?type=dang-ky" target="_self" data-swiper-parallax="-400">
+                                    <i class="zmdi zmdi-account"></i>
+			                                                        <span>
+			                                                            &nbsp;			                                                            <span
+                                                                            class="large-text">Đăng ký thành viên</span>
+			                                                        </span>
+                                </a>
+			</div>
         </div>
 
 
@@ -24,8 +30,7 @@
                             </div>
                             <div class="feature-list-text text-right">
                                 <h3>Đăng ký - Đăng nhập</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel
-                                    volutpat felis, eu condimentum ma Pellentesque mollis eros vel. </p>
+                                <p>Đơn giản</p>
                             </div>
                         </div>
                         <div class="single-features-list normal-device">
@@ -34,8 +39,7 @@
                             </div>
                             <div class="feature-list-text text-right">
                                 <h3>Tour - Link tiếp thị</h3>
-                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel
-                                    volutpat felis, eu condimentum ma Pellentesque mollis eros vel.
+                                <p> Đa dạng
                                 </p>
                             </div>
                         </div>
@@ -45,8 +49,7 @@
                             </div>
                             <div class="feature-list-text text-right">
                                 <h3>Thông báo</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel
-                                    volutpat felis, eu condimentum ma Pellentesque mollis eros vel. </p>
+                                <p>Tức thời </p>
                             </div>
                         </div>
                     </div>
@@ -69,8 +72,7 @@
                                 </div>
                                 <div class="feature-list-text2 res1">
                                     <h3>Cập nhật hồ sơ</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel
-                                        volutpat felis, eu condimentum ma Pellentesque mollis eros vel. </p>
+                                    <p>Đầy đủ</p>
                                 </div>
                             </div>
 
@@ -80,8 +82,7 @@
                                 </div>
                                 <div class="feature-list-text2 res1">
                                     <h3>Theo dõi đơn hàng</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel
-                                        volutpat felis, eu condimentum ma Pellentesque mollis eros vel. </p>
+                                    <p>Chi tiết</p>
                                 </div>
                             </div>
 
@@ -91,8 +92,7 @@
                                 </div>
                                 <div class="feature-list-text2 res1">
                                     <h3>Hoa hồng</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel
-                                        volutpat felis, eu condimentum ma Pellentesque mollis eros vel. </p>
+                                    <p>Chính xác</p>
                                 </div>
                             </div>
                         </div>

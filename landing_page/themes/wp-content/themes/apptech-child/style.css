@@ -561,7 +561,9 @@ body{
 }
 .single-features-list,
 .sfl-lsft {
-    margin-bottom: 143px;
+    /*margin-bottom: 143px;*/
+    margin-bottom: 165px;
+    margin-left: 10px;
 }
 .single-features-list {
     padding-left: 50px;
@@ -572,8 +574,8 @@ body{
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 14px;
-    padding-top: 25px;
-    height: 60px;
+    padding-top: 15px;
+    /* height: 60px; */
 }
 .title-pb {
     padding-bottom: 74px;
@@ -599,14 +601,16 @@ body{
 }
 .feature-list .single-features-list:first-child,
 .feature-list .single-features-list:last-child {
-    margin-right: -131px;
+    /*margin-right: -131px;*/
+    margin-right: -68px;
     padding-left: 177px;
     position: relative;
     z-index: 99;
 }
 .feature-list .sfl-lsft:first-child,
 .feature-list .sfl-lsft:last-child {
-    margin-left: -131px;
+    /*margin-left: -131px;*/
+    margin-left: -63px;
     padding-right: 115px;
     position: relative;
     z-index: 99;
@@ -2141,7 +2145,7 @@ button, .button, input[type="submit"] {
 .page input[type="button"], 
 .page input[type="submit"], 
 .page button, 
-.page .button,
+.page .button, 
 .page .form-submit input[type="submit"], 
 .page .invert input[type="button"], 
 .page .invert input[type="submit"], 
@@ -2160,7 +2164,6 @@ button, .button, input[type="submit"] {
   text-transform: none;
   border-radius: 0px;
 }
-
 
 .page input[type="button"]:hover, 
 .page input[type="submit"]:hover, 
@@ -2311,14 +2314,15 @@ thead th {
     font-size: 18px;
 }
 .feature-img > img {
-    width: 175px;
+    /*width: 175px;*/
 }
 .feature-list .sfl-lsft:first-child, .feature-list .sfl-lsft:last-child {
     margin-left: -80px;
     padding-right: 0;
 }
 .single-features-list, .sfl-lsft {
-    margin-bottom: 95px;
+    /*margin-bottom: 95px;*/
+    margin-bottom: 135px;
 }
 .feature-list .single-features-list:first-child, .feature-list .single-features-list:last-child {
     margin-right: -80px;

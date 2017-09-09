@@ -1,4 +1,4 @@
-<div id="layers-widget-apptechvideo-28"
+<div hidden id="layers-widget-apptechvideo-28"
      class="widget apptech-video-widget content-vertical-massive  block-lg block-md block-sm block-xs   no-inset-top no-inset-bottom "
      data-black-overlay="5">
 
@@ -16,7 +16,7 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            background-image: url('themes/wp-content/uploads/2016/11/video.jpg');
+            background-image: url('http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tintuc/video1.png');
         }
     </style>
 </div>

@@ -6,9 +6,17 @@
             <h1 class="heading">
                 CÁCH THỨC TẠO THU NHẬP VỚI <span style="color: #f70000;">AZBOOKING.VN</span></h1>
             <div class="excerpt"><p>Cho dù chỉ là Bloger - Facebooker vẫn có thể tạo nguồn thu nhập không giới hạn nhờ online với Azbooking.vn qua 3 bước đơn giản.</p></div>
-        </div>
+        <a class="button active " href="http://azbooking.vn/tiep-thi-lien-ket/thanh-vien/?type=dang-ky" target="_self" data-swiper-parallax="-400">
+                                    <i class="zmdi zmdi-account"></i>
+			                                                        <span>
+			                                                            &nbsp;			                                                            <span
+                                                                            class="large-text">Đăng ký thành viên</span>
+			                                                        </span>
+                                </a>
+		</div>
         <div class="grid">
 
+		
             <div id="layers-widget-apptech-service-id-6-270"
                  class="layers-masonry-column layers-widget-apptech-service-id-270 span-4  first  column ">
 
@@ -23,8 +31,7 @@
                         <h2 class="heading ht-pt">
                             ĐĂNG KÝ THÀNH VIÊN </h2>
 
-                        <div class="excerpt"><p>Lorem ipsum dolor sit amet, consectetur adipising elit.
-                                Pellentesque vel volutpat felis, eu condimtum ma Pellentesque mollis eros vel. </p>
+                        <div class="excerpt"><p>Bạn chỉ cần điền email là có thể trở thành thành viên. Hãy cung cấp thêm tài khoản để NHẬN TIỀN nhé!</p>
                         </div>
 
                     </div>
@@ -46,8 +53,7 @@
                         <h2 class="heading ht-pt">
                             LẤY LINK TIẾP THỊ </h2>
 
-                        <div class="excerpt"><p>Lorem ipsum dolor sit amet, consectetur adipising elit.
-                                Pellentesque vel volutpat felis, eu condimtum ma Pellentesque mollis eros vel.</p>
+                        <div class="excerpt"><p>Các sản phẩm khủng đã có sẵn trên hệ thống, hãy lựa chọn một sản phẩm bạn muốn và lấy link tiếp thị.</p>
                         </div>
 
                     </div>
@@ -69,8 +75,7 @@
                         <h2 class="heading ht-pt">
                             NHẬN HOA HỒNG </h2>
 
-                        <div class="excerpt"><p>Lorem ipsum dolor sit amet, consectetur adipising elit.
-                                Pellentesque vel volutpat felis, eu condimtum ma Pellentesque mollis eros vel.</p>
+                        <div class="excerpt"><p>Bất cứ ai thực hiện đặt tour đủ điều kiện thành công, bạn sẽ được ghi nhận hoa hồng ngay lập tức</p>
                         </div>
 
                     </div>
@@ -78,6 +83,7 @@
                 </div>
             </div>
         </div><!-- /row -->
+		
     </div>
     <style type="text/css"> /* INLINE WIDGET CSS */
         #layers-widget-apptech-service-id-6 {

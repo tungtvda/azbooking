@@ -5,9 +5,8 @@
     <div class="container clearfix">
         <div class="section-title clearfix medium text-center ">
             <h3 class="heading">
-                Câu hỏi <span style="color: #f70000;">AZBOOKING.VN</span> </h3>
-            <div class="excerpt"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel
-                    volutpat felis, eu condimentum massa. Pellentesque mollis eros vel mattis tempor. Aliquam</p>
+                Q&A <span style="color: #f70000;">AZBOOKING.VN</span> </h3>
+            <div class="excerpt"><p>Hỏi và đáp về hệ thống Tiếp thị liên kết của AZbooking</p>
             </div>
         </div>
     </div>
@@ -25,46 +24,51 @@
                                 <h3 id="291" class="panel-title">Tiếp thị liên kết của AZBOOKING.VN là gì?</h3>
                                 <div>
                                     <p id="291">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-                                        vel volutpat felis, eu condimentum massa. Pellentesque mollis eros vel
-                                        mattis tempor. Aliquam
+                                        Hệ thống Tiếp thị liên kết của AZbooking là hệ thống giúp Publisher kiếm tiền Online thông qua cách quảng bá sản phẩm của AZbooking.
+Nếu bạn muốn kiếm thêm thu nhập hoặc đơn giản là có thời gian rảnh rỗi hãy trở thành Publisher của AZbooking để kiếm tiền online dễ dàng với doanh thu khủng và nhận được sự hỗ trợ chuyên nghiệp từ chúng tôi
                                         ... <a target="_blank" style="color: #1879fd" href="http://azbooking.vn/tiep-thi-lien-ket-info/gioi-thieu.html">Chi tiết <i class="fa fa-angle-double-right "></i></a>
                                     </p>
                                 </div>
                                 <h3 id="292" class="panel-title">Làm thế nào để tham gia vào AZBOOKING.VN?</h3>
                                 <div>
                                     <p id="292">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-                                        vel volutpat felis, eu condimentum massa. Pellentesque mollis eros vel
-                                        mattis tempor. Aliquam.
-                                        ... <a target="_blank" style="color: #1879fd" href="http://azbooking.vn/tiep-thi-lien-ket-info/cac-buoc-tham-gia.html">Chi tiết <i class="fa fa-angle-double-right "></i></a>
+                                        Bạn chỉ cần có tài khoản email là đã có thể đăng ký làm thành viên của AZbooking <a target="_blank" style="color: #1879fd" href="http://azbooking.vn/tiep-thi-lien-ket-info/cac-buoc-tham-gia.html">Chi tiết <i class="fa fa-angle-double-right "></i></a>
                                     </p>
                                 </div>
                                 <h3 id="293" class="panel-title">AZBOOKING.VN cam kết những gì?</h3>
                                 <div>
                                     <p id="293">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-                                        vel volutpat felis, eu condimentum massa. Pellentesque mollis eros vel
-                                        mattis tempor. Aliquam
-                                        ... <a target="_blank" style="color: #1879fd" href="http://azbooking.vn/tiep-thi-lien-ket-info/cam-ket.html">Chi tiết <i class="fa fa-angle-double-right "></i></a>
+                                        1. Lợi nhuận cao nhất: 
+AZbooking luôn đặt lợi ích của CTV lên hàng đầu chính vì vậy chúng tôi cam kết lợi nhuận cao nhất cho từng sản phẩm, dịch vụ...
+
+<a target="_blank" style="color: #1879fd" href="http://azbooking.vn/tiep-thi-lien-ket-info/cam-ket.html">Chi tiết <i class="fa fa-angle-double-right "></i></a>
                                     </p>
                                 </div>
                                 <h3 id="294" class="panel-title">Điều khoản & chính sách của AZBOOKING.VN là gì?</h3>
                                 <div>
                                     <p id="294">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-                                        vel volutpat felis, eu condimentum massa. Pellentesque mollis eros vel
-                                        mattis tempor. Aliquam
+                                        ĐIỀU 1: MỤC ĐÍCH: 
+Điều khoản bên trên căn cứ theo quy định của pháp lệnh về lệnh thi hành đạo luật và luật kinh doanh thông tin truyền thông nhằm mục tiêu thông báo trình tự và điều kiện sử dụng dịch vụ tiếp thị liên kết (goi là dịch vụ) do AZbooking (Trung tâm lữ hành) (dưới đây gọi là người điều hành)
                                         ... <a target="_blank" style="color: #1879fd" href="http://azbooking.vn/tiep-thi-lien-ket-info/cam-ket.html">Chi tiết <i class="fa fa-angle-double-right "></i></a>
                                     </p>
                                 </div>
                                 <h3 id="294" class="panel-title">AZBOOKING.VN có hợp đồng không?</h3>
                                 <div>
                                     <p id="295">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-                                        vel volutpat felis, eu condimentum massa. Pellentesque mollis eros vel
-                                        mattis tempor. Aliquam
-                                        ... <a target="_blank" style="color: #1879fd" href="http://azbooking.vn/tiep-thi-lien-ket-info/hop-dong-cong-tac-vien.html">Chi tiết <i class="fa fa-angle-double-right "></i></a>
+                                        AZbooking có đầy đủ hợp đồng để bảo vệ quyền lợi của cả hai bên...<a target="_blank" style="color: #1879fd" href="http://azbooking.vn/tiep-thi-lien-ket-info/hop-dong-cong-tac-vien.html">Chi tiết <i class="fa fa-angle-double-right "></i></a>
+                                    </p>
+                                </div>
+								<h3 id="294" class="panel-title">Nếu đạt doanh số cao, hoa hồng của Publisher có thay đổi gì không?</h3>
+                                <div>
+                                    <p id="295">
+                                        AZbooking luôn muốn Publisher đạt được lợi nhuận cao nhất. Vì vậy chúng tôi đã quy định ra 5 mức doanh số ứng với 5 mức sao của Publisher. Doanh số càng nhiều, sao càng cao thì hoa hồng càng lớn
+                                        </br><a target="_blank" style="color: #1879fd" href="http://azbooking.vn/tiep-thi-lien-ket-info/hoi-dap.html">Chi tiết <i class="fa fa-angle-double-right "></i></a>
+                                    </p>
+                                </div>
+								<h3 id="294" class="panel-title">Giới thiệu thêm thành viên, Publisher được hưởng quyền lợi gì?</h3>
+                                <div>
+                                    <p id="295">
+                                        Với mỗi thành viên được giới thiệu tham gia thành công thì Publisher sẽ được hưởng 1% doanh số của thành viên đó </br><a target="_blank" style="color: #1879fd" href="http://azbooking.vn/tiep-thi-lien-ket-info/hoi-dap.html">Chi tiết <i class="fa fa-angle-double-right "></i></a>
                                     </p>
                                 </div>
                             </div>
