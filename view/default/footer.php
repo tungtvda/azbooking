@@ -165,7 +165,7 @@ function view_footer($data = array())
                             <div class="dropdown-content">
                             <a href="' . SITE_NAME . '/tiep-thi-lien-ket/ho-so/"><i class="fa fa-cogs "></i> Cài đặt tài khoản</a>
                             <a href="' . SITE_NAME . '/tiep-thi-lien-ket/"><i class="fa fa-share-alt "></i> Tiếp thị liên kết</a>
-
+<a target="_blank" href="'.SITE_NAME.'/tiep-thi-lien-ket/thanh-vien/?type=dang-ky&key_id='._return_mc_encrypt($data_session['id']).'"><i class="fa fa-link "></i> Link đăng ký </a>
                              <a target="_blank"  href="https://www.facebook.com/sharer/sharer.php?u=' . SITE_NAME . '/tiep-thi-lien-ket/thanh-vien/?type=dang-ky&key_id=' . _return_mc_encrypt($data_session['id']) . '" ><i style="    background-color: #ffffff;" class="fa fa-facebook "></i> Chia sẻ đăng ký <i>(Facebook)</i> </a></a>
                                 <a target="_blank"  href="https://twitter.com/intent/tweet?source=webclient&text=' . SITE_NAME . '/tiep-thi-lien-ket/thanh-vien/?type=dang-ky&key_id=' . _return_mc_encrypt($data_session['id']) . ' + ' . $data_session['name'] . '" ><i style="    background-color: #ffffff;" class="fa fa fa-twitter "></i> Chia sẻ đăng ký <i>(Twitter)</i> </a></a>
                                 <a target="_blank"  href="https://plus.google.com/share?url=' . SITE_NAME . '/tiep-thi-lien-ket/thanh-vien/?type=dang-ky&key_id=' . _return_mc_encrypt($data_session['id']) . '" ><i style="    background-color: #ffffff;" class="fa fa fa fa-google-plus"></i> Chia sẻ đăng ký <i>(Google)</i> </a></a>
