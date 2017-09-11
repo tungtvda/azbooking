@@ -350,7 +350,12 @@ $message_dangky=_return_mc_encrypt($message_dangky,'','');
 <html>
 <head>
     <title><?php echo $title ?></title>
+
     <meta charset="utf-8"/>
+    <meta property='og:image' content='<?php echo SITE_NAME ?>/tiepthi/login/img/register.png'>
+    <meta itemprop='image' content='<?php echo SITE_NAME ?>/tiepthi/login/img/register.png'>
+    <meta property="og:title" content="ĐĂNG KÝ THÀNH VIÊN - HỆ THỐNG TIẾP THỊ LIÊN KẾT AZBOOKING.VN"/>
+    <meta property="og:description" content="Hệ thống tiếp thị liên kết của AZbooking giúp bạn kiếm tiền online đơn giản nhất mà vẫn có hoa hồng cao nhất. Đăng ký thành viên ngay!"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="shortcut icon" href="<?php echo $data['config'][0]->Icon; ?>">
     <link rel="apple-touch-icon" href="<?php echo $data['config'][0]->Icon ?>">
@@ -534,8 +539,17 @@ $message_dangky=_return_mc_encrypt($message_dangky,'','');
             <div class="required_create">
                 <span>(Bạn vui lòng điền đầy đủ thông tin đăng ký)</span>
             </div>
+            <?php
+            $key_id='';
+            $id_tiep_thi='';
+            if(isset($_GET['key_id'])&&$_GET['key_id']!=''){
+                $key_id='?key_id='.$_GET['key_id'];
+                $id_tiep_thi=$_GET['key_id'];
+            }
+            ?>
             <form method="post" action="" id="signup-form" class="login-form" style="margin-bottom: 0px">
                 <input type="password" hidden name="mail_create" value="<?php echo $message_dangky?>">
+                <input type="password" hidden name="user_tiep_thi" value="<?php echo $id_tiep_thi?>">
                 <div class="input-container">
                     <i class="fa fa-envelope"></i>
                     <input maxlength="100" type="email" id="email_dangky" class="input"
@@ -589,6 +603,19 @@ $message_dangky=_return_mc_encrypt($message_dangky,'','');
                         class="ace-icon fa fa-sign-in"></i> Đăng ký</a>
                 <a href="javascript:void(0)" class="register cancel_btn" id="cancel_create"> <i
                         class="ace-icon fa fa-refresh"></i> Hủy</a>
+            </div>
+            <div class="separator" style=" margin-bottom: 20px;display: inline-block;width: 100%;">
+                <span class="separator-text-bottom">Hoặc đăng ký</span>
+            </div>
+            <div class="socmed-login">
+                <a href="<?php echo SITE_NAME?>/tiep-thi-lien-ket/facebook/<?php echo $key_id?>" class="socmed-btn facebook-btn">
+                    <i class="fa fa-facebook"></i>
+                    <span> Facebook</span>
+                </a>
+                <a href="<?php echo SITE_NAME?>/tiep-thi-lien-ket/google/<?php echo $key_id?>" class="socmed-btn google-btn">
+                    <i class="fa fa-google"></i>
+                    <span> Google</span>
+                </a>
             </div>
             <div class="toolbar clearfix " id="toolbar_create">
                 <div><a href="<?php echo SITE_NAME?>/tiep-thi-lien-ket/thanh-vien/" class="login-password-link"> <i

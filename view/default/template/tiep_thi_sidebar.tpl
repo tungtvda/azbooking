@@ -24,6 +24,12 @@
                         <p style=" font-size: 18px;font-weight: bold;; color: #e53935"> <img style="width: 60px" src="{SITE-NAME}/view/default/themes/assets/img/hoa_hong.png"> {hoa_hong}</p>
                     </a>
                 </li>
+                <li>
+                    <a target="_blank" href="{SITE-NAME}/tiep-thi-lien-ket/thanh-vien/?type=dang-ky&key_id={key_id}">
+                        <i class="fa fa-share-alt "></i>
+                        <p>Chia sẻ link đăng ký</p>
+                    </a>
+                </li>
                 <li class="{hoso_mn}">
                     <a href="{SITE-NAME}/tiep-thi-lien-ket/ho-so/">
                         <i class="fa fa-cogs "></i>
@@ -43,13 +49,16 @@
                     </a>
                 </li>
 
-                <li cl>
+                <li class="{thongbao_mn}">
                     <a href="{SITE-NAME}/tiep-thi-lien-ket/thong-bao">
                         <i class="material-icons text-gray">notifications</i>
                         <p>Thông báo</p>
                     </a>
                 </li>
-                <li cl>
+                <li ><a target="_blank"  href="https://www.facebook.com/sharer/sharer.php?u={SITE-NAME}/tiep-thi-lien-ket/thanh-vien/?type=dang-ky&key_id={key_id}" ><i class="fa fa-facebook "></i> Chia sẻ đăng ký (Facebook) </a> </li>
+                <li ><a target="_blank"  href="https://twitter.com/intent/tweet?source=webclient&text={SITE-NAME}/tiep-thi-lien-ket/thanh-vien/?type=dang-ky&key_id={key_id} + {name_share}" ><i class="fa fa fa-twitter "></i> Chia sẻ đăng ký (Twitter) </a> </li>
+                <li ><a target="_blank"  href="https://plus.google.com/share?url={SITE-NAME}/tiep-thi-lien-ket/thanh-vien/?type=dang-ky&key_id={key_id}" ><i class="fa fa fa fa-google-plus"></i> Chia sẻ đăng ký (Google) </a> </li>
+                <li >
                     <a href="{SITE-NAME}/tiep-thi-lien-ket/dang-xuat/">
                         <i class="fa fa-sign-out "></i>
                         <p>Đăng xuất</p>
