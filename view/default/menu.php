@@ -107,7 +107,7 @@ function view_sidebar_tiep_thi($data = array())
     $asign['hoso_mn'] = ($data['active'] == 'hoso') ? 'active' : '';
     $asign['donhang_mn'] = ($data['active'] == 'donhang') ? 'active' : '';
     $asign['tour_mn'] = ($data['active'] == 'tour') ? 'active' : '';
-    $asign['tintuc_mn'] = ($data['active'] == 'tintuc') ? 'active' : '';
+    $asign['thongbao_mn'] = ($data['active'] == 'thongbao') ? 'active' : '';
     $asign['lienhe_mn'] = ($data['active'] == 'lienhe') ? 'active' : '';
     $data_session=checkSession('', 1);
     $array_check_noti = array(
@@ -121,6 +121,8 @@ function view_sidebar_tiep_thi($data = array())
         'time_token'=>_return_mc_encrypt($data_session['time_token']),
         'top_5'=>1,
     );
+    $asign['key_id']=_return_mc_encrypt($data_session['id']);
+    $asign['name_share']=_return_mc_encrypt($data_session['name']);
     $list_noti= returnCURL($array_check_noti, SITE_NAME_MANAGE.'/return-hoa-hong.html');
     $data_list_hoahong=json_decode($list_noti,true);
     if(isset($data_list_hoahong['success'])&&$data_list_hoahong['success']==1){
