@@ -151,7 +151,6 @@ $message_dangky = '<!DOCTYPE html>
 </html>';
 $message_dangky=_return_mc_encrypt($message_dangky,'','');
 
-
 require_once 'Facebook/autoload.php';
 $fb = new Facebook\Facebook ([
   'app_id' => '487430091415856',
@@ -172,10 +171,16 @@ try {
   echo 'Facebook SDK returned an error: ' . $e->getMessage();
   exit;
 }
-
+$key_id_1='';
+$key_id_2='';
+if(isset($_GET['key_id']) && $_GET['key_id']!=''){
+  $string_info_booking.="&key_id=".$_GET['key_id'];
+  $key_id_1='?key_id='.$_GET['key_id'];
+  $key_id_2='&key_id='.$_GET['key_id'];
+}
 if (! isset($accessToken)) {
     $permissions = array('public_profile','email'); // Optional permissions
-    $loginUrl = $helper->getLoginUrl(SITE_NAME.'/tiep-thi-lien-ket/facebook/', $permissions);
+    $loginUrl = $helper->getLoginUrl(SITE_NAME.'/tiep-thi-lien-ket/facebook/'.$key_id_1, $permissions);
     header("Location: ".$loginUrl);
   exit;
 }
@@ -186,10 +191,10 @@ try {
   $response = $fb->get('/me?fields='.implode(',', $fields).'', $accessToken);
 } catch(Facebook\Exceptions\FacebookResponseException $e) {
   $mess='Graph returned an error: ' . $e->getMessage();
-  redict(SITE_NAME.'/tiep-thi-lien-ket/thanh-vien/?type=error&mess='.$mess);
+  redict(SITE_NAME.'/tiep-thi-lien-ket/thanh-vien/?type=error&mess='.$mess.$key_id_2);
 } catch(Facebook\Exceptions\FacebookSDKException $e) {
   $mess= 'Facebook SDK returned an error: ' . $e->getMessage();
-  redict(SITE_NAME.'/tiep-thi-lien-ket/thanh-vien/?type=error&mess='.$mess);
+  redict(SITE_NAME.'/tiep-thi-lien-ket/thanh-vien/?type=error&mess='.$mess.$key_id_2);
 }
 
 $user = $response->getGraphUser();
@@ -199,6 +204,9 @@ if(isset($user['id'])&&isset($user['name'])&&isset($user['email'])){
     $string_info_booking.="&email=".$user['email'];
     $string_info_booking.="&name=".$user['name'];
     $string_info_booking.="&mail_create=".$message_dangky;
+    if(isset($_GET['key_id']) && $_GET['key_id']!=''){
+      $string_info_booking.="&key_id=".$_GET['key_id'];
+    }
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, SITE_NAME_MANAGE."/azbooking-login-facebook.html");
     curl_setopt($ch, CURLOPT_POST, 1);

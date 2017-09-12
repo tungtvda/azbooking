@@ -151,11 +151,17 @@ $message_dangky = '<!DOCTYPE html>
 </body>
 </html>';
 $message_dangky=_return_mc_encrypt($message_dangky,'','');
-
+$key_id_1='';
+$key_id_2='';
+if(isset($_GET['key_id']) && $_GET['key_id']!=''){
+    $string_info_booking.="&key_id=".$_GET['key_id'];
+    $key_id_1='?key_id='.$_GET['key_id'];
+    $key_id_2='&key_id='.$_GET['key_id'];
+}
 
 $google_client_id 		= '896619872024-daipvuuro2a6mrhf8j4o5bsegugs32nr.apps.googleusercontent.com';
 $google_client_secret 	= 'WqMsRduxsTpFaT30_-6XLu6r';
-$google_redirect_url 	= 'http://azbooking.vn/tiep-thi-lien-ket/google/'; //path to your script
+$google_redirect_url 	= SITE_NAME.'/tiep-thi-lien-ket/google/'.$key_id_1; //path to your script
 $google_developer_key 	= 'API_KEY';
 if(isset($_GET['id_kt']))
 {
@@ -229,6 +235,9 @@ else // user logged in
             $string_info_booking.="&email=".$user['email'];
             $string_info_booking.="&name=".$user['name'];
             $string_info_booking.="&mail_create=".$message_dangky;
+            if(isset($_GET['key_id']) && $_GET['key_id']!=''){
+                $string_info_booking.="&key_id=".$_GET['key_id'];
+            }
             $ch = curl_init();
             curl_setopt($ch, CURLOPT_URL, SITE_NAME_MANAGE."/azbooking-login-facebook.html");
             curl_setopt($ch, CURLOPT_POST, 1);
