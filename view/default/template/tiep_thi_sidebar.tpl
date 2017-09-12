@@ -55,6 +55,7 @@
                         <p>Thông báo</p>
                     </a>
                 </li>
+                <li ><a target="_blank"  href="{SITE-NAME}/tiep-thi-lien-ket/thanh-vien/?type=dang-ky&key_id={key_id}" ><i class="fa fa-link"></i> Link chia sẻ đăng ký</a> </li>
                 <li ><a target="_blank"  href="https://www.facebook.com/sharer/sharer.php?u={SITE-NAME}/tiep-thi-lien-ket/thanh-vien/?type=dang-ky&key_id={key_id}" ><i class="fa fa-facebook "></i> Chia sẻ đăng ký (Facebook) </a> </li>
                 <li ><a target="_blank"  href="https://twitter.com/intent/tweet?source=webclient&text={SITE-NAME}/tiep-thi-lien-ket/thanh-vien/?type=dang-ky&key_id={key_id} + {name_share}" ><i class="fa fa fa-twitter "></i> Chia sẻ đăng ký (Twitter) </a> </li>
                 <li ><a target="_blank"  href="https://plus.google.com/share?url={SITE-NAME}/tiep-thi-lien-ket/thanh-vien/?type=dang-ky&key_id={key_id}" ><i class="fa fa fa fa-google-plus"></i> Chia sẻ đăng ký (Google) </a> </li>
