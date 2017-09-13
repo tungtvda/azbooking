@@ -171,7 +171,7 @@ require_once 'Google/Google_Client.php';
 require_once 'Google/contrib/Google_Oauth2Service.php';
 
 $gClient = new Google_Client();
-$gClient->setApplicationName('Login to acemallvn.com');
+$gClient->setApplicationName('Login to azbooking.vn');
 $gClient->setClientId($google_client_id);
 $gClient->setClientSecret($google_client_secret);
 $gClient->setRedirectUri($google_redirect_url);
