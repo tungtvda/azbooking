@@ -229,43 +229,66 @@ function show_chitiet_tour($data = array())
     }
 
     if(count($data_session)>0 && $asign['price_tiep_thi']!='' && $asign['price_tiep_thi']>0){
-
-        $link_tiep_thi=$asign['link'].'/'._return_mc_encrypt($data_session['id']);
-        $asign['div_tiep_thi']='<div class="link_tiep_thi_lien_ket package-details-content">
-                        <h3 class="title "><b>Tiếp thị liên kết</b>    <b style="color: red">(Tiền hoa hồng '.number_format($asign['price_tiep_thi'],0,",",".").' vnđ)</b></h3>
-                        <p>Bạn hãy kích <span></span> hoặc copy nội dung trong ô textbox hoặc bạn có thể kích vào các biểu tượng mạng xã hội để chia sẻ liên kết</p>
-                        <div class="col-xs-12">
-                            <div class="col-md-3 col-sm-6 col-xs-6" style="text-align: center">
-                                <p><i style="color: red" class="fa fa-hand-o-down fa-2x"></i></p>
-                                <button type="button" class="btn btn-primary" id="copy_link_tiep_thi"><i class="fa fa-share-alt "></i> Link tiếp thị</button>
-                            </div>
-                            <div class="col-md-5 col-sm-6 col-xs-6" style="text-align: center">
-                                <p><i style="color: #357ebd" class="fa fa-link fa-2x"></i></p>
-                                <input style="height: 34px;    width: 100%;" id="check_link_tiep_thi" class="form-control"  value="'.$link_tiep_thi.'">
-                                <input hidden  id="link_old" type="password" value="'.$link_tiep_thi.'">
-                            </div>
-                            <div class="col-md-4 col-sm-6 col-xs-6" style="text-align: center">
-                                <p><i style="color: #eea236" class="fa fa-globe fa-2x"></i></p>
-                                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u='.$link_tiep_thi.'" style="margin-right: 5px;"  class="btn btn-primary"><i style="background:none" class="fa  fa-facebook"></i></a>
-                                <a target="_blank" href="https://twitter.com/intent/tweet?source=webclient&text='.$link_tiep_thi.'+'.$asign['name'].'" style="margin-right: 5px;"  class="btn btn-info"><i style="background:none" class="fa  fa-twitter"></i></a>
-                                <a target="_blank" href="https://plus.google.com/share?url='.$link_tiep_thi.'" style="margin-right: 5px;" class="btn btn-danger"><i style="background:none" class="fa  fa-google-plus"></i></a>
-                                <a target="_blank" href="mailto:?Subject='.$asign['title'].'&body='.$asign['description'].'%0D%0A%0D%0A'.$link_tiep_thi.'" class="btn btn-warning"><i style="background:none" class="fa  fa-envelope"></i></a>
-                            </div>
-                            <div class="col-md-12 col-xs-12 col-sm-12" style="margin-top: 20px; display: none" id="box_alert">
-                                <div class="col-xs-12">
-                                    <div class="alert alert-block alert-success">
-                                        <button type="button" class="close" id="close_alert">
-                                            <i class="ace-icon fa fa-times"></i>
-                                        </button>
-
-                                        <i class="ace-icon fa fa-check green"></i> Link tiếp thị liên kết đã được copy
-                                    </div>
+        $array_user_share_noti = array(
+            'id'=>_return_mc_encrypt($data_session['id']),
+            'all'=>1,
+        );
+        $user_detail_pro= returnCURL($array_user_share_noti, SITE_NAME_MANAGE.'/azbooking-hoso.html');
+        $user_detail_pro=json_decode($user_detail_pro,true);
+        if(count($user_detail_pro)>0 && isset($user_detail_pro['user'])){
+            $link_tiep_thi=$asign['link'].'/'._return_mc_encrypt($data_session['id']);
+            switch($user_detail_pro['user']['type_tiep_thi']){
+                case '1':
+                    $sao='4 sao';
+                    $price_tiep_thi = round(($asign['price_tiep_thi'] * 50) / 100);
+                    break;
+                case '2':
+                    $sao='5 sao';
+                    $price_tiep_thi = round(($asign['price_tiep_thi'] * 70) / 100);
+                    break;
+                case '3':
+                    $sao='đại lý';
+                    $price_tiep_thi = $asign['price_tiep_thi'];
+                    break;
+                default;
+                    $sao='3 sao';
+                    $price_tiep_thi = round(($asign['price_tiep_thi'] * 30) / 100);
+            }
+            $asign['div_tiep_thi']='<div class="link_tiep_thi_lien_ket package-details-content">
+                            <h3 class="title "><b>Tiếp thị liên kết</b>    <b style="color: red">(Hoa hồng '.number_format($price_tiep_thi,0,",",".").' vnđ - '.$sao.')</b></h3>
+                            <p>Bạn hãy kích <span></span> hoặc copy nội dung trong ô textbox hoặc bạn có thể kích vào các biểu tượng mạng xã hội để chia sẻ liên kết</p>
+                            <div class="col-xs-12">
+                                <div class="col-md-3 col-sm-6 col-xs-6" style="text-align: center">
+                                    <p><i style="color: red" class="fa fa-hand-o-down fa-2x"></i></p>
+                                    <button type="button" class="btn btn-primary" id="copy_link_tiep_thi"><i class="fa fa-share-alt "></i> Link tiếp thị</button>
                                 </div>
+                                <div class="col-md-5 col-sm-6 col-xs-6" style="text-align: center">
+                                    <p><i style="color: #357ebd" class="fa fa-link fa-2x"></i></p>
+                                    <input style="height: 34px;    width: 100%;" id="check_link_tiep_thi" class="form-control"  value="'.$link_tiep_thi.'">
+                                    <input hidden  id="link_old" type="password" value="'.$link_tiep_thi.'">
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-6" style="text-align: center">
+                                    <p><i style="color: #eea236" class="fa fa-globe fa-2x"></i></p>
+                                    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u='.$link_tiep_thi.'" style="margin-right: 5px;"  class="btn btn-primary"><i style="background:none" class="fa  fa-facebook"></i></a>
+                                    <a target="_blank" href="https://twitter.com/intent/tweet?source=webclient&text='.$link_tiep_thi.'+'.$asign['name'].'" style="margin-right: 5px;"  class="btn btn-info"><i style="background:none" class="fa  fa-twitter"></i></a>
+                                    <a target="_blank" href="https://plus.google.com/share?url='.$link_tiep_thi.'" style="margin-right: 5px;" class="btn btn-danger"><i style="background:none" class="fa  fa-google-plus"></i></a>
+                                    <a target="_blank" href="mailto:?Subject='.$asign['title'].'&body='.$asign['description'].'%0D%0A%0D%0A'.$link_tiep_thi.'" class="btn btn-warning"><i style="background:none" class="fa  fa-envelope"></i></a>
+                                </div>
+                                <div class="col-md-12 col-xs-12 col-sm-12" style="margin-top: 20px; display: none" id="box_alert">
+                                    <div class="col-xs-12">
+                                        <div class="alert alert-block alert-success">
+                                            <button type="button" class="close" id="close_alert">
+                                                <i class="ace-icon fa fa-times"></i>
+                                            </button>
 
+                                            <i class="ace-icon fa fa-check green"></i> Link tiếp thị liên kết đã được copy
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
-                        </div>
-                    </div>';
-
+                        </div>';
+        }
     }
     print_template($asign, 'chitiettour');
 }
