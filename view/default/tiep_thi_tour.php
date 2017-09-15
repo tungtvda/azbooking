@@ -13,11 +13,20 @@ function show_tiepthi_tour($data = array())
     $asign['title_table']=$data['title_table'];
     $asign['danhsach']='';
     $asign['mess_null']='';
-    if(count($data['danhsach'])>0)
-    {
-        $asign['danhsach'] = print_item('tiep_thi_list', $data['danhsach']);
-    }else{
-        $asign['mess_null'] ='Danh sách tour rỗng';
+    $data_session=checkSession('', 1);
+    $array_user_share_noti = array(
+        'id'=>_return_mc_encrypt($data_session['id']),
+        'all'=>1,
+    );
+    $user_detail_pro= returnCURL($array_user_share_noti, SITE_NAME_MANAGE.'/azbooking-hoso.html');
+    $user_detail_pro=json_decode($user_detail_pro,true);
+    if(count($user_detail_pro)>0 && isset($user_detail_pro['user'])) {
+        if(count($data['danhsach'])>0)
+        {
+            $asign['danhsach'] = print_item('tiep_thi_list', $data['danhsach'],0,0,0,$user_detail_pro['user']['type_tiep_thi']);
+        }else{
+            $asign['mess_null'] ='Danh sách tour rỗng';
+        }
     }
     $asign['PAGING']=$data['PAGING'];
     // active menu
