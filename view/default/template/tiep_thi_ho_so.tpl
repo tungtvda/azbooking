@@ -21,6 +21,10 @@
                         <div class="col-xs-12" style="text-align: left">
                             <table class="table table-responsive">
                                 <tr>
+                                    <td>Level</td>
+                                    <td><b><span style="color: red">{sao}</span></b></td>
+                                </tr>
+                                <tr>
                                     <td>Email</td>
                                     <td>{email}</td>
                                 </tr>
