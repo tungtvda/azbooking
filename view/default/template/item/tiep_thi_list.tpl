@@ -5,7 +5,7 @@
     <td class="hidden-xs"><a target="_blank" href="{link}">{code}</a></td>
     <td><a target="_blank" href="{link}">{name}</a></td>
     <td>{price_format}</td>
-    <td>{price_tiep_thi}</td>
+    <td><b><span style="color: red">{price_tiep_thi_giam_gia}</span></b></td>
     <td>
         <input style="position: absolute; left: 0px; z-index: -111" class="input_link" id="value_key_{id}" countid="{id}" type="text" value="{link_tiep_thi}">
         <a href="javascript:void(0);" countid="{id}" rel="tooltip" data-original-title="Copy link tiếp thị" class="btn btn-primary copy_link_list"><i class="fa fa-link"></i> Copy Link</a>

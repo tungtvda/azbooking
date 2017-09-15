@@ -26,7 +26,7 @@ function print_template($data=array(),$tem)
     print $ft->parse_and_return($tem);
 }
 
-function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberformat=false)
+function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberformat=false,$userType='')
 {
     $id_user='';
     if(isset($_SESSION['user_token'])){
@@ -122,12 +122,6 @@ function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberfor
                     $ft->assign('price_format',number_format((int)$item->price,0,",",".").' vnđ');
                 }
 
-                if($item->price_tiep_thi==0||$item->price_tiep_thi==''){
-                    $ft->assign('price_tiep_thi','');
-                }
-                else{
-                    $ft->assign('price_tiep_thi',number_format((int)$item->price_tiep_thi,0,",",".").' vnđ');
-                }
 
                 if($item->price==0||$item->price==''){
                     $ft->assign('price_format_sales','');
@@ -208,6 +202,39 @@ function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberfor
                     }
 
                 }
+
+                switch($userType){
+                    case '1':
+                        $sao='4 sao';
+                        $price_tiep_thi = round(($item->price_tiep_thi * 50) / 100);
+                        break;
+                    case '2':
+                        $sao='5 sao';
+                        $price_tiep_thi = round(($item->price_tiep_thi * 70) / 100);
+                        break;
+                    case '3':
+                        $sao='đại lý';
+                        $price_tiep_thi = $item->price_tiep_thi;
+                        break;
+                    default;
+                        $sao='3 sao';
+                        $price_tiep_thi = round(($item->price_tiep_thi * 30) / 100);
+                }
+                if($item->price_tiep_thi==0||$item->price_tiep_thi==''){
+                    $ft->assign('price_tiep_thi','');
+                }
+                else{
+                    $ft->assign('price_tiep_thi',number_format((int)$item->price_tiep_thi,0,",",".").' vnđ');
+                }
+
+                if($price_tiep_thi==0||$price_tiep_thi==''){
+                    $ft->assign('price_tiep_thi_giam_gia','');
+                }
+                else{
+                    $ft->assign('price_tiep_thi_giam_gia',number_format((int)$price_tiep_thi,0,",",".").' vnđ');
+                }
+
+
                 $ft->assign('khoihanh',$string_khoihanh);
             }
             if(get_class($item)=='tour_img') {

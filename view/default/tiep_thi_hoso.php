@@ -11,6 +11,20 @@ function show_hoso($data = array())
 {
     $asign = array();
     $asign['avatar']=$data['user']['avatar'];
+    switch($data['user']['type_tiep_thi']){
+        case '1':
+            $sao='4 sao';
+            break;
+        case '2':
+            $sao='5 sao';
+            break;
+        case '3':
+            $sao='đại lý';
+            break;
+        default;
+            $sao='3 sao';
+    }
+    $asign['sao']=$sao;
     $asign['name']=$data['user']['name'];
     if($asign['name']!=''){
         $asign['name_valid']='valid';
