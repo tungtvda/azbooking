@@ -62,7 +62,18 @@ function show_tiepthi_donhang($data = array())
             $dem++;
         }
     } else {
-        $asign['mess_null'] = 'Danh sách đơn hàng rỗng';
+        $asign['mess_null'] = 'Bạn không có đơn hàng nào';
+        switch($data['active_tab']){
+            case 'dang_giao_dich':
+                $asign['mess_null'] = 'Bạn không có đơn hàng đang giao dịch nào';
+                break;
+            case 'da_giao_dich':
+                $asign['mess_null'] = 'Bạn không có đơn hàng đã giao dịch nào';
+                break;
+            case 'da_huy':
+                $asign['mess_null'] = 'Bạn không có đơn hàng đã hủy nào';
+                break;
+        }
     }
     $asign['PAGING'] = $data['PAGING'];
     $asign['all'] = ($data['active_tab'] == 'all') ? 'active' : '';

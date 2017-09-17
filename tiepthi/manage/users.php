@@ -56,7 +56,7 @@ switch($type){
 }
 $data['danhsach']=array();
 $data['PAGING'] ='';
-$list_noti= returnCURL($array_check_noti, SITE_NAME_MANAGE.'/azbooking-get-list-booking.html');
+$list_noti= returnCURL($array_check_noti, SITE_NAME_MANAGE.'/azbooking-get-list-thanhvien.html');
 $data_list_noti=json_decode($list_noti,true);
 //print_r($data_list_noti);
 //exit;
@@ -82,5 +82,5 @@ $data['title_table']=$name_module;
 show_header_tiep_thi($title,$description,$keyword,$data);
 show_sidebar_tiep_thi($data,'thanhvien');
 show_navbar_tiep_thi($data);
-show_tiepthi_donhang($data);
+show_tiepthi_thanhvien($data);
 show_footer_tiep_thi($data);
