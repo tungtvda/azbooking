@@ -58,38 +58,20 @@ function show_tiepthi($data = array())
      $start_date = date('Y-m-d', strtotime('-3 months', strtotime($created_user)));
     $array_check_noti['start_date']=$start_date;
     $array_check_noti['end_date']=$today_user;
+    $asign['start_date_format']=date("d-m-Y", strtotime($start_date));
+    $asign['end_date_format']=date("d-m-Y", strtotime($today_user));
     $list_chart= returnCURL($array_check_noti, SITE_NAME_MANAGE.'/azbooking-get-list-chart.html');
     $data_list_chart=json_decode($list_chart,true);
-     print_r($list_chart);
-    exit;
-//    exit;
+    $asign['list_chart']='';
     $asign['hight']='500px';
-    $asign['item']='{
-                                                "year": "11-11-2017",
-                                                "donhang": 0,
-                                                "thanhvien": 0,
-
-                                            },
-                                            {
-                                                "year": "02-01-2017",
-                                                "donhang": 26.2,
-                                                "thanhvien": 22.8
-                                            },
-                                            {
-                                                "year": 2007,
-                                                "donhang": 30.1,
-                                                "thanhvien": 23.9
-                                            },
-                                            {
-                                                "year": 2007,
-                                                "donhang": 30.1,
-                                                "thanhvien": 23.9
-                                            },
-                                            {
-                                                "year": 2009,
-                                                "donhang": 24.6,
-                                                "thanhvien": 25
-                                            }';
+    $asign['count_total_booking']='0';
+    $asign['count_total_user']='0';
+    if(isset($data_list_chart['list_chart'])&&isset($data_list_chart['count_chart'])&&isset($data_list_chart['count_total_booking'])&&isset($data_list_chart['count_total_user'])){
+        $asign['list_chart']=$data_list_chart['list_chart'];
+        $asign['hight']=$data_list_chart['count_chart'].'00px';
+        $asign['count_total_booking']=$data_list_chart['count_total_booking'];
+        $asign['count_total_user']=$data_list_chart['count_total_user'];
+    }
     print_template($asign, 'tiep_thi');
 }
 
