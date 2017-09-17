@@ -130,7 +130,89 @@
 
 
 
+                        <div class="col-md-12">
+                            <div class="card">
+                                <!-- Styles -->
+                                <style>
+                                    #chartdiv {
+                                        width		: 100%;
+                                        height		: {hight};
+                                        font-size	: 11px;
+                                    }
+                                    .amcharts-chart-div a{
+                                        display: none !important;
+                                    }
+                                </style>
 
+                                <!-- Resources -->
+                                <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+                                <script src="https://www.amcharts.com/lib/3/serial.js"></script>
+                                <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+                                <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+                                <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+
+                                <!-- Chart code -->
+                                <script>
+                                    var chart = AmCharts.makeChart("chartdiv", {
+                                        "type": "serial",
+                                        "theme": "light",
+                                        "categoryField": "year",
+                                        "rotate": true,
+                                        "startDuration": 1,
+                                        "categoryAxis": {
+                                            "gridPosition": "start",
+                                            "position": "left"
+                                        },
+                                        "trendLines": [],
+                                        "graphs": [
+                                            {
+                                                "balloonText": "Đơn hàng:[[value]]",
+                                                "fillAlphas": 0.8,
+                                                "id": "AmGraph-1",
+                                                "lineAlpha": 0.2,
+                                                "title": "Đơn hàng",
+                                                "type": "column",
+                                                "valueField": "donhang",
+                                            },
+                                            {
+                                                "balloonText": "Thành viên:[[value]]",
+                                                "fillAlphas": 0.8,
+                                                "id": "AmGraph-2",
+                                                "lineAlpha": 0.2,
+                                                "title": "Thành viên",
+                                                "type": "column",
+                                                "valueField": "thanhvien"
+                                            }
+                                        ],
+                                        "depth3D": 20,
+                                        "angle": 30,
+                                        "guides": [],
+                                        "valueAxes": [
+                                            {
+                                                "id": "ValueAxis-1",
+                                                "position": "top",
+                                                "axisAlpha": 0
+                                            }
+                                        ],
+                                        "allLabels": [],
+                                        "balloon": {},
+                                        "titles": [],
+                                        "dataProvider": [
+                                            {item}
+                                        ],
+                                        "export": {
+                                            "enabled": true
+                                        }
+
+                                    });
+                                </script>
+
+                                <!-- HTML -->
+                                <div id="chartdiv"></div>
+                            </div>
+
+
+                    </div>
 
 
 

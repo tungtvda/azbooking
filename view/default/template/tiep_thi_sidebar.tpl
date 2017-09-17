@@ -24,12 +24,6 @@
                         <p style=" font-size: 18px;font-weight: bold;; color: #e53935"> <img style="width: 60px" src="{SITE-NAME}/view/default/themes/assets/img/hoa_hong.png"> {hoa_hong}</p>
                     </a>
                 </li>
-                <li>
-                    <a target="_blank" href="{SITE-NAME}/tiep-thi-lien-ket/thanh-vien/?type=dang-ky&key_id={key_id}">
-                        <i class="fa fa-share-alt "></i>
-                        <p>Chia sẻ link đăng ký</p>
-                    </a>
-                </li>
                 <li class="{hoso_mn}">
                     <a href="{SITE-NAME}/tiep-thi-lien-ket/ho-so/">
                         <i class="fa fa-cogs "></i>

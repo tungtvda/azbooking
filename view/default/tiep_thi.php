@@ -41,6 +41,55 @@ function show_tiepthi($data = array())
     $asign['count_giangia']=$data['count_giangia'];
     $asign['count_trongnuoc']=$data['count_trongnuoc'];
     $asign['count_quocte']=$data['count_quocte'];
+
+    $created_user = date("Y-m-d", strtotime($data_session['created']));
+    $today_user = date("Y-m-d");
+    $first_date = strtotime($created_user);
+    $second_date = strtotime($today_user);
+    $datediff = abs($first_date - $second_date);
+    $count_day = floor($datediff / (60 * 60 * 24));
+    $count_day = round($count_day / 30) + 1;
+    for ($i = 1; $i <= $count_day; $i++) {
+        $created_user = date('Y-m-d', strtotime('+3 months', strtotime($created_user)));
+        if (strtotime($created_user) >= strtotime($today_user)) {
+            break;
+        }
+    }
+     $start_date = date('Y-m-d', strtotime('-3 months', strtotime($created_user)));
+    $array_check_noti['start_date']=$start_date;
+    $array_check_noti['end_date']=$today_user;
+    $list_chart= returnCURL($array_check_noti, SITE_NAME_MANAGE.'/azbooking-get-list-chart.html');
+    $data_list_chart=json_decode($list_chart,true);
+     print_r($list_chart);
+    exit;
+//    exit;
+    $asign['hight']='500px';
+    $asign['item']='{
+                                                "year": "11-11-2017",
+                                                "donhang": 0,
+                                                "thanhvien": 0,
+
+                                            },
+                                            {
+                                                "year": "02-01-2017",
+                                                "donhang": 26.2,
+                                                "thanhvien": 22.8
+                                            },
+                                            {
+                                                "year": 2007,
+                                                "donhang": 30.1,
+                                                "thanhvien": 23.9
+                                            },
+                                            {
+                                                "year": 2007,
+                                                "donhang": 30.1,
+                                                "thanhvien": 23.9
+                                            },
+                                            {
+                                                "year": 2009,
+                                                "donhang": 24.6,
+                                                "thanhvien": 25
+                                            }';
     print_template($asign, 'tiep_thi');
 }
 
