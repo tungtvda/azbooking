@@ -129,8 +129,34 @@
                     </div>
 
 
-
-                        <div class="col-md-12">
+                    <div class="col-md-12">
+                        <div class="card" style="margin-bottom: 0px">
+                            <div class="card-footer">
+                                <div class="stats" style="text-align: center">
+                                    <h4 class="title" style="color: #e53935;"><i class=" fa fa-bar-chart fa-2x"></i> BẢN ĐỒ THỐNG KÊ ĐƠN HÀNG - THÀNH VIÊN</h4>
+                                    <h4 class="title"><i class=" fa fa-bar-chart"></i> ( Từ {start_date_format} đến {end_date_format})</h4>
+                                    <h4 class="title" style="font-weight: normal;font-size: 13px;color: #fb8c00">(Những thống kê này giúp bạn theo dõi dễ dàng hơn trong việc tăng giảm thứ hạng 3 sao, 4 sao hoặc 5 sao, <a target="_blank" href="{SITE-NAME}/tiep-thi-lien-ket-info/hoi-dap.html">Chi tiết thứ hạng bạn xem tại đây <i class="fa fa-hand-o-right "></i></a>  )</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <div class="card-footer">
+                                    <div class="stats">
+                                        <a href="{SITE-NAME}/tiep-thi-lien-ket/don-hang?type=2"> <h4 class="title" style="color: #5997b3"><i class="fa fa-check-square-o "></i> Đơn hàng giao dịch thành công
+                                                <span class="count_right" style="color: #ffffff;background: #5997b3;padding: 2px 15px;">{count_total_booking}</span>
+                                            </h4></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <div class="card-footer">
+                                    <div class="stats">
+                                        <a href="{SITE-NAME}/tiep-thi-lien-ket/users"> <h4 class="title" style="color: #f5cf0a"><i class="fa fa-user-plus"></i> Thành viên đã được tạo
+                                                <span class="count_right" style="color: #ffffff;background: #f5cf0a;padding: 2px 15px;">{count_total_user}</span>
+                                            </h4></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                             <div class="card">
                                 <!-- Styles -->
                                 <style>
@@ -198,7 +224,7 @@
                                         "balloon": {},
                                         "titles": [],
                                         "dataProvider": [
-                                            {item}
+                                            {list_chart}
                                         ],
                                         "export": {
                                             "enabled": true
@@ -208,7 +234,7 @@
                                 </script>
 
                                 <!-- HTML -->
-                                <div id="chartdiv"></div>
+                                    <div id="chartdiv"></div>
                             </div>
 
 

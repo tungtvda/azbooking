@@ -108,6 +108,7 @@ function view_sidebar_tiep_thi($data = array())
     $asign['donhang_mn'] = ($data['active'] == 'donhang') ? 'active' : '';
     $asign['tour_mn'] = ($data['active'] == 'tour') ? 'active' : '';
     $asign['thongbao_mn'] = ($data['active'] == 'thongbao') ? 'active' : '';
+    $asign['thanhvien_mn'] = ($data['active'] == 'thanhvien') ? 'active' : '';
     $asign['lienhe_mn'] = ($data['active'] == 'lienhe') ? 'active' : '';
     $data_session=checkSession('', 1);
     $array_check_noti = array(
