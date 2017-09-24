@@ -38,9 +38,28 @@ function show_tiepthi_donhang_chitiet($data = array())
     }
     $asign['status']=$status;
     $asign['price_tiep_thi']='';
+    $data_session=checkSession('', 1);
+    if($data['detail']['level_gioi_thieu_tiep_thi_4']==$data_session['id']){
+        if($data['detail']['hoa_hong_gioi_thieu_4']){
+            $asign['price_tiep_thi']=number_format((int)$data['detail']['hoa_hong_gioi_thieu_4'],0,",",".").' vnđ';
+        }
+    }else{
+        if($data['detail']['level_gioi_thieu_tiep_thi_5']==$data_session['id']){
+            if($data['detail']['hoa_hong_gioi_thieu_5']){
+                $asign['price_tiep_thi']=number_format((int)$data['detail']['hoa_hong_gioi_thieu_5'],0,",",".").' vnđ';
+            }
+        }else{
+            if($data['detail']['user_tiep_thi_id']==$data_session['id']){
+                if($data['detail']['price_tiep_thi']){
+                    $asign['price_tiep_thi']=number_format((int)$data['detail']['price_tiep_thi'],0,",",".").' vnđ';
+                }
+            }else{
+                redict(SITE_NAME.'/tiep-thi-lien-ket/');
+            }
+        }
+    }
     $xacnhan_tiep_thi='';
     if($data['detail']['price_tiep_thi']!=''){
-        $asign['price_tiep_thi']=number_format((int)$data['detail']['price_tiep_thi'],0,",",".").' vnđ';
         if($data['detail']['status_tiep_thi']==1 && $data['detail']['confirm_admin_tiep_thi']!=0){
             $xacnhan_tiep_thi='<buttona class="btn btn-success">Đã xác nhận</buttona>';
         }else{
