@@ -94,6 +94,15 @@
                 travel_totalvalue: 'REPLACE_WITH_VALUE',
             };
         </script>
+        <!-- Global Site Tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-43672538-22"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments)};
+            gtag('js', new Date());
+
+            gtag('config', 'UA-43672538-22');
+        </script>
 
     </head>
 
