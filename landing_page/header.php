@@ -6,11 +6,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <title>Tiếp thị liên kết AZBOOKING.VN</title>
+    <title>Affiliate AZbooking | Hệ thống tiếp thị liên kết</title>
     <meta name="description"
-          content="Bạn muốn tìm tour du lịch giá rẻ, khách sạn giá rẻ, vé máy bay giá rẻ,... Hãy chọn AZbooking - Giá rẻ và sẽ luôn như vậy. Hotline: 04 6281 4340. Địa chỉ: 137, Nguyễn Ngọc"/>
+          content="Hệ thống Tiếp thị liên kết AZbooking | Hệ thống kiếm tiền online dành cho CTV đam mê du lịch. Hotline 094 3838 222"/>
     <meta name="keywords"
-          content="azbooking, tour du lịch giá rẻ, tour du lịch trong nước giá rẻ, tour du lịch nước ngoài giá rẻ, khách sạn miền bắc giá rẻ, khách sạn miền nam giá rẻ, khách sạn miền trung giá rẻ, vé máy bay giá rẻ"/>
+          content="Hệ thống Tiếp thị liên kết AZbooking | Hệ thống kiếm tiền online dành cho CTV đam mê du lịch. Hotline 094 3838 222"/>
     <!--FAVICONS-->
     <link rel="shortcut icon" href="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/cauhinh/favicon.png">
     <link rel="apple-touch-icon"
@@ -20,16 +20,16 @@
     <link rel="apple-touch-icon" sizes="114x114"
           href="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/cauhinh/favicon.png">
     <meta property='og:image'
-          content='http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/cauhinh/logoazbooking.vn.png'>
+          content='http://tiepthilienket.azbooking.vn/themes/images/tinh_nang.png'>
     <meta itemprop='image'
-          content='http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/cauhinh/logoazbooking.vn.png'>
+          content='http://tiepthilienket.azbooking.vn/themes/images/tinh_nang.png'>
     <!--<meta property="og:locale" content="" />-->
     <meta property="og:type" content="website"/>
-    <meta property="og:title" content="AZbooking | Chuyên tour du lịch, khách sạn, vé máy bay giá rẻ"/>
+    <meta property="og:title" content="Affiliate AZbooking | Hệ thống tiếp thị liên kết"/>
     <meta property="og:description"
-          content="Bạn muốn tìm tour du lịch giá rẻ, khách sạn giá rẻ, vé máy bay giá rẻ,... Hãy chọn AZbooking - Giá rẻ và sẽ luôn như vậy. Hotline: 04 6281 4340. Địa chỉ: 137, Nguyễn Ngọc"/>
-    <meta property="og:url" content="http://azbooking.vn/"/>
-    <meta property="og:site_name" content="azbooking.vn"/>
+          content="Hệ thống Tiếp thị liên kết AZbooking | Hệ thống kiếm tiền online dành cho CTV đam mê du lịch. Hotline 094 3838 222"/>
+    <meta property="og:url" content="http://tiepthilienket.azbooking.vn/"/>
+    <meta property="og:site_name" content="tiepthilienket.azbooking.vn"/>
     <link rel='dns-prefetch' href='http://fonts.googleapis.com/'/>
     <link rel='dns-prefetch' href='http://s.w.org/'/>
     <link rel="alternate" type="application/rss+xml" title="Tiếp thị liên kết AZBOOKING.VN"
