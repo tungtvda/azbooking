@@ -49,7 +49,7 @@
                                 <ul id="menu-footer-social-menu" class="menu">
                                     <li id="menu-item-1085"
                                         class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1085">
-                                        <a href="http://facebook.com/"><i class='fa fa-facebook'></i></a></li>
+                                        <a href="https://www.facebook.com/tiepthilienket.azbooking.vn/"><i class='fa fa-facebook'></i></a></li>
                                     <li id="menu-item-1086"
                                         class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1086">
                                         <a href="http://twitter.com/"><i class='fa fa-twitter'></i></a></li>
