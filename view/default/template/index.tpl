@@ -81,13 +81,7 @@
 
     </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-43672538-22"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments)};
-        gtag('js', new Date());
 
-        gtag('config', 'UA-43672538-22');
-    </script>
     <!-- Google Code dành cho Th? ti?p th? l?i -->
     <!--------------------------------------------------
     Không th? liên k?t th? ti?p th? l?i v?i thông tin nh?n d?ng cá nhân hay d?t th? ti?p th? l?i trên các trang có liên quan d?n danh m?c nh?y c?m. Xem thêm thông tin và hu?ng d?n v? cách thi?t l?p th? trên: http://google.com/ads/remarketingsetup
