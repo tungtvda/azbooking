@@ -16,6 +16,10 @@ if(isset($_SESSION["Admin"]))
             $new_obj= new danhmuc_1();
             $new_obj->id=$_GET["id"];
             danhmuc_1_delete($new_obj);
+            $array_send_manage['code_check_send_email']=_return_mc_encrypt('tungtv_az_mix_12345');
+            $array_send_manage['action']="delete";
+            $array_send_manage['id']=$_GET["id"];
+            $list_noti= returnCURL($array_send_manage, SITE_NAME_MANAGE.'/controller/admin/danhmuc_1_az.php');
             header('Location: '.SITE_NAME.'/controller/admin/danhmuc_1.php');
         }
         else if($_GET["action"]=="edit")
@@ -76,16 +80,21 @@ if(isset($_SESSION["Admin"]))
        $array['keyword']='0';
        if(!isset($array['description']))
        $array['description']='0';
+        $array_send_manage=$array;
+        $array_send_manage['code_check_send_email']=_return_mc_encrypt('tungtv_az_mix_12345');
       $new_obj=new danhmuc_1($array);
         if($insert)
         {
             danhmuc_1_insert($new_obj);
+            $list_noti= returnCURL($array_send_manage, SITE_NAME_MANAGE.'/controller/admin/danhmuc_1_az.php');
             header('Location: '.SITE_NAME.'/controller/admin/danhmuc_1.php');
         }
         else
         {
             $new_obj->id=$_GET["id"];
             danhmuc_1_update($new_obj);
+            $array_send_manage['id']=$_GET["id"];
+            $list_noti= returnCURL($array_send_manage, SITE_NAME_MANAGE.'/controller/admin/danhmuc_1_az.php');
             $insert=false;
             header('Location: '.SITE_NAME.'/controller/admin/danhmuc_1.php');
         }

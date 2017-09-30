@@ -11,3 +11,16 @@ update danhmuc_1 set name='Tour du lịch quốc tế',name_url='tour-du-lich-qu
 delete from danhmuc_1 where id=6;
 delete from danhmuc_1 where id=5;
 delete from danhmuc_1 where id=4;
+update danhmuc_1 set name='Du lịch Xuyên Việta',tour_quoc_te='',name_url='du-lich-xuyen-vieta',img='http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/tour-trong-nuoc/banner-du-lich-xuyen-viet-mixtourist.jpg',position='5',title='Du lịch Xuyên Việt',keyword='Du lịch Xuyên Việt',description='Du lịch Xuyên Việt' where id=12;
+update danhmuc_1 set name='Du lịch Xuyên Việta',tour_quoc_te='',name_url='du-lich-xuyen-vieta',img='http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/tour-trong-nuoc/banner-du-lich-xuyen-viet-mixtourist.jpg',position='5',title='Du lịch Xuyên Việt',keyword='Du lịch Xuyên Việt',description='Du lịch Xuyên Việt' where id=12;
+insert into danhmuc_1 (tour_quoc_te,name,name_url,img,position,title,keyword,description) values ('','sadfasdfas','sadfasdfas','','','','','');
+delete from danhmuc_1 where id=13;
+insert into danhmuc_1 (tour_quoc_te,name,name_url,img,position,title,keyword,description) values ('','sdfgsdfgdsfg','sdfgsdfgdsfg','','','','','');
+delete from danhmuc_1 where id=14;
+update danhmuc_1 set name='Du lịch Xuyên Việta',tour_quoc_te='',name_url='du-lich-xuyen-vieta',img='http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/tour-trong-nuoc/banner-du-lich-xuyen-viet-mixtourist.jpg',position='5',title='Du lịch Xuyên Việt',keyword='Du lịch Xuyên Việt',description='Du lịch Xuyên Việt' where id=12;
+update danhmuc_1 set name='Du lịch Xuyên Việta',tour_quoc_te='',name_url='du-lich-xuyen-vieta',img='http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/tour-trong-nuoc/banner-du-lich-xuyen-viet-mixtourist.jpg',position='5',title='Du lịch Xuyên Việt',keyword='Du lịch Xuyên Việt',description='Du lịch Xuyên Việt' where id=12;
+update danhmuc_1 set name='Du lịch Xuyên Việt',tour_quoc_te='',name_url='du-lich-xuyen-viet',img='http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/tour-trong-nuoc/banner-du-lich-xuyen-viet-mixtourist.jpg',position='5',title='Du lịch Xuyên Việt',keyword='Du lịch Xuyên Việt',description='Du lịch Xuyên Việt' where id=12;
+update danhmuc_1 set name='Du lịch Xuyên Việta',tour_quoc_te='',name_url='du-lich-xuyen-vieta',img='http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/tour-trong-nuoc/banner-du-lich-xuyen-viet-mixtourist.jpg',position='5',title='Du lịch Xuyên Việt',keyword='Du lịch Xuyên Việt',description='Du lịch Xuyên Việt' where id=12;
+update danhmuc_1 set name='Du lịch Xuyên Việt',tour_quoc_te='',name_url='du-lich-xuyen-viet',img='http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/tour-trong-nuoc/banner-du-lich-xuyen-viet-mixtourist.jpg',position='5',title='Du lịch Xuyên Việt',keyword='Du lịch Xuyên Việt',description='Du lịch Xuyên Việt' where id=12;
+insert into danhmuc_1 (tour_quoc_te,name,name_url,img,position,title,keyword,description) values ('1','sdgsdfgdsfg','sdgsdfgdsfg','','','','','');
+delete from danhmuc_1 where id=13;

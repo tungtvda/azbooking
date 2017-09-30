@@ -28,3 +28,6 @@ delete from danhmuc_2 where id=17;
 delete from danhmuc_2 where id=18;
 delete from danhmuc_2 where id=19;
 delete from danhmuc_2 where id=20;
+update danhmuc_2 set danhmuc1_id='5',name='Du lịch Miền Tâya',name_url='du-lich-mien-taya',img='http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/tour-trong-nuoc/mien-tay/du-lich-mien-tay-cung-mixtourist.jpg',position='0', content_short='',title='Du lịch Miền Tây',keyword='du lịch miền tây, tour du lịch miền tây, du lịch mỹ tho, du lịch bến tre',description='Du lịch Miền Tây cùng MixTourist' where id=84;
+update danhmuc_2 set danhmuc1_id='5',name='Du lịch Miền Tây',name_url='du-lich-mien-tay',img='http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/tour-trong-nuoc/mien-tay/du-lich-mien-tay-cung-mixtourist.jpg',position='0', content_short='',title='Du lịch Miền Tây',keyword='du lịch miền tây, tour du lịch miền tây, du lịch mỹ tho, du lịch bến tre',description='Du lịch Miền Tây cùng MixTourist' where id=84;
+insert into danhmuc_2 (danhmuc1_id,name,name_url,img,position,content_short,title,keyword,description) values ('3','asdf','asdf','','','','','','');
