@@ -28,6 +28,10 @@ if(isset($_SESSION["Admin"]))
             $new_obj= new tour();
             $new_obj->id=$_GET["id"];
             tour_delete($new_obj);
+            $array_send_manage['code_check_send_email']=_return_mc_encrypt('tungtv_az_mix_12345');
+            $array_send_manage['action']="delete";
+            $array_send_manage['id']=$_GET["id"];
+            $list_noti= returnCURL($array_send_manage, SITE_NAME_MANAGE.'/controller/admin/tour_az.php');
             header('Location: '.SITE_NAME.'/controller/admin/tour.php'.$danhmuc_id_get);
         }
         else if($_GET["action"]=="edit")
@@ -68,11 +72,17 @@ if(isset($_SESSION["Admin"]))
             {
                 if(isset($_GET["check_".$tour->id])) tour_delete($tour);
             }
+//            $array_send_manage['code_check_send_email']=_return_mc_encrypt('tungtv_az_mix_12345');
+//            $array_send_manage['action']="delete";
+//            $array_send_manage['list_tour']=$List_tour;
+//            $list_noti= returnCURL($array_send_manage, SITE_NAME_MANAGE.'/controller/admin/tour_az.php');
             header('Location: '.SITE_NAME.'/controller/admin/tour.php');
         }
     }
+    $array_send_manage=[];
     if(isset($_POST["DanhMuc1Id"])&&isset($_POST["DanhMuc2Id"])&&isset($_POST["name"])&&isset($_POST["name_url"])&&isset($_POST["count_down"])&&isset($_POST["code"])&&isset($_POST["img"])&&isset($_POST["price_tiep_thi"])&&isset($_POST["price_sales"])&&isset($_POST["price"])&&isset($_POST["price_2"])&&isset($_POST["price_3"])&&isset($_POST["price_4"])&&isset($_POST["price_5"])&&isset($_POST["price_6"])&&isset($_POST["durations"])&&isset($_POST["departure"])&&isset($_POST["departure_time"])&&isset($_POST["destination"])&&isset($_POST["vehicle"])&&isset($_POST["hotel"])&&isset($_POST["summary"])&&isset($_POST["highlights"])&&isset($_POST["schedule"])&&isset($_POST["price_list"])&&isset($_POST["content"])&&isset($_POST["list_img"])&&isset($_POST["title"])&&isset($_POST["keyword"])&&isset($_POST["description"])&&isset($_POST["inclusion"])&&isset($_POST["exclusion"]))
     {
+
        $array=$_POST;
        if(!isset($array['id']))
        $array['id']='0';
@@ -151,14 +161,26 @@ if(isset($_SESSION["Admin"]))
        if(!isset($array['exclusion']))
        $array['exclusion']='0';
         $array['updated']=date(DATETIME_FORMAT);
+        $array_send_manage=$array;
+        $array_send_manage['summary']='';
+        $array_send_manage['highlights']='';
+        $array_send_manage['schedule']='';
+        $array_send_manage['price_list']='';
+        $array_send_manage['content']='';
+        $array_send_manage['inclusion']='';
+        $array_send_manage['exclusion']='';
+        $array_send_manage['code_check_send_email']=_return_mc_encrypt('tungtv_az_mix_12345');
       $new_obj=new tour($array);
         if($insert)
         {
             tour_insert($new_obj);
+            $list_noti= returnCURL($array_send_manage, SITE_NAME_MANAGE.'/controller/admin/tour_az.php');
             header('Location: '.SITE_NAME.'/controller/admin/tour.php'.$danhmuc_id_get);
         }
         else
         {
+            $array_send_manage['id']=$_GET["id"];
+            $list_noti= returnCURL($array_send_manage, SITE_NAME_MANAGE.'/controller/admin/tour_az.php');
             $new_obj->id=$_GET["id"];
             tour_update($new_obj);
             $insert=false;
