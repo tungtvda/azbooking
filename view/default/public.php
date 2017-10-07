@@ -233,7 +233,31 @@ function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberfor
                 else{
                     $ft->assign('price_tiep_thi_giam_gia',number_format((int)$price_tiep_thi,0,",",".").' vnđ');
                 }
+                $string_departure_time='';
 
+                $year_current=date("Y");
+                $full_date=date("d-m-Y");
+                if($item->departure_time!=''){
+                    $array_item=explode(',',$item->departure_time);
+                    if(count($array_item)>0){
+                        foreach($array_item as $key=>$value){
+                            $value=$value.'-'.$year_current;
+                            $value=str_replace('/','-',$value);
+                            if(checkmydate($value) && strtotime($value)>=strtotime($full_date)){
+                                if($string_departure_time==''){
+                                    $string_departure_time=  $value;
+                                }else{
+                                    $string_departure_time.= ' ,'.$value;
+                                }
+                            }
+                        }
+                    }
+                }
+                if($string_departure_time==''){
+                    $ft->assign('departure_time','Liên hệ');
+                }else{
+                    $ft->assign('departure_time', $string_departure_time);
+                }
 
                 $ft->assign('khoihanh',$string_khoihanh);
             }
@@ -526,3 +550,19 @@ function sao($app)
     return $sao;
 }
 
+function checkmydate($date) {
+    $tempDate = explode('-', $date);
+    if(count($tempDate)==3){
+        // checkdate(month, day, year)
+        if(is_numeric($tempDate[0])&&is_numeric($tempDate[1]) && is_numeric($tempDate[2]))
+        {
+            return checkdate($tempDate[1], $tempDate[1], $tempDate[2]);
+        }else{
+            return 0;
+        }
+
+    }else{
+        return 0;
+    }
+
+}

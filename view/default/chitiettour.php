@@ -134,36 +134,71 @@ function show_chitiet_tour($data = array())
     $asign['date_select']='';
     $now = getdate();
     $year_current=$now["year"];
-    if($data['detail'][0]->departure_time!=''&&$data['detail'][0]->departure_time!='Theo yêu cầu'&&$data['detail'][0]->departure_time!='theo yêu cầu'){
-        $asign['hidden_date']='hidden';
-        $arr_explode=explode(',',$data['detail'][0]->departure_time);
-        if(count($arr_explode)>0){
-            if(strlen($arr_explode[0])>=8){
-                $time_explode_0=$arr_explode[0];
-            }else{
-                $time_explode_0=$arr_explode[0].'-'.$year_current;
-            }
-            $asign['date_now']=date('Y-m-d', strtotime(trim($time_explode_0)));
-            $asign['date_now_vn'] =trim($time_explode_0);
-            $asign['hidden_date_select']='';
-            foreach($arr_explode as $row){
-                $date=trim($row);
-                if(strlen($date)>=8){
-                    $time_format=$date;
-                }else{
-                    $time_format=$date.'-'.$year_current;
+
+    $string_departure_time='';
+    $full_date=date("d-m-Y");
+    if($data['detail'][0]->departure_time!=''){
+        $array_item=explode(',',$data['detail'][0]->departure_time);
+        if(count($array_item)>0){
+            foreach($array_item as $key=>$value){
+                $value=$value.'-'.$year_current;
+                $value=str_replace('/','-',$value);
+                if(checkmydate($value) && strtotime($value)>=strtotime($full_date)){
+                    $date_en=date('Y-m-d', strtotime(trim($value)));
+                    $asign['date_select'].='<option value="'.$date_en.'">'.$value.'</option>';
+                    if($string_departure_time==''){
+                        $string_departure_time=  $value;
+                        $asign['date_now']=date('Y-m-d', strtotime(trim($value)));
+                        $asign['date_now_vn'] =trim($value);
+                    }else{
+                        $string_departure_time.= ' ,'.$value;
+                    }
                 }
-                $validate= validateDate($time_format);
-                if($validate==false){
-                    $asign['hidden_date']='';
-                    $asign['hidden_date_select']='hidden';
-                    break;
-                }
-                $date_en=date('Y-m-d', strtotime(trim($time_format)));
-                $asign['date_select'].='<option value="'.$date_en.'">'.$time_format.'</option>';
             }
         }
     }
+
+    if($string_departure_time==''){
+        $asign['departure_time']='Liên hệ';
+        $asign['hidden_date']='';
+        $asign['hidden_date_select']='hidden';
+    }else{
+        $asign['departure_time']=$string_departure_time;
+        $asign['hidden_date']='hidden';
+        $asign['hidden_date_select']='';
+
+    }
+
+//    if($data['detail'][0]->departure_time!=''&&$data['detail'][0]->departure_time!='Theo yêu cầu'&&$data['detail'][0]->departure_time!='theo yêu cầu'){
+//        $asign['hidden_date']='hidden';
+//        $arr_explode=explode(',',$data['detail'][0]->departure_time);
+//        if(count($arr_explode)>0){
+//            if(strlen($arr_explode[0])>=8){
+//                $time_explode_0=$arr_explode[0];
+//            }else{
+//                $time_explode_0=$arr_explode[0].'-'.$year_current;
+//            }
+//            $asign['date_now']=date('Y-m-d', strtotime(trim($time_explode_0)));
+//            $asign['date_now_vn'] =trim($time_explode_0);
+//            $asign['hidden_date_select']='';
+//            foreach($arr_explode as $row){
+//                $date=trim($row);
+//                if(strlen($date)>=8){
+//                    $time_format=$date;
+//                }else{
+//                    $time_format=$date.'-'.$year_current;
+//                }
+//                $validate= validateDate($time_format);
+//                if($validate==false){
+//                    $asign['hidden_date']='';
+//                    $asign['hidden_date_select']='hidden';
+//                    break;
+//                }
+//                $date_en=date('Y-m-d', strtotime(trim($time_format)));
+//                $asign['date_select'].='<option value="'.$date_en.'">'.$time_format.'</option>';
+//            }
+//        }
+//    }
 
     $asign['quocgia']='';
     $arr=explode(',',trim($data['detail'][0]->danhmuc_multi));
