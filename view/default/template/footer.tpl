@@ -1347,6 +1347,7 @@
 
     $('body').on("click", '#submit_form_action', function () {
         var form_data = $("#submit_form").serializeArray();
+        $('#submit_form_action').hide();
         var error_free = true;
         for (var input in form_data) {
             var name_input = form_data[input]['name'];
@@ -1385,6 +1386,7 @@
             $('#loading').show();
             $("#submit_form").submit();
         } else {
+            $('#submit_form_action').show();
             alert('Bạn vui lòng nhập đầy đủ thông tin đặt tour');
         }
 
@@ -1449,10 +1451,10 @@
         $('.datepicker').datepicker({
             format: 'dd/mm/yyyy',
             minDate: '0',
-            startDate: '-3d'
+            startDate: '-3d',
         });
     }
-
+    $('.datepicker').datepicker('setDate', new Date());
     $('body').on("click", '#close_alert', function () {
         $('#box_alert').slideDown();
     });

@@ -134,7 +134,6 @@ function show_chitiet_tour($data = array())
     $asign['date_select']='';
     $now = getdate();
     $year_current=$now["year"];
-
     $string_departure_time='';
     $full_date=date("d-m-Y");
     if($data['detail'][0]->departure_time!=''){
@@ -168,37 +167,6 @@ function show_chitiet_tour($data = array())
         $asign['hidden_date_select']='';
 
     }
-
-//    if($data['detail'][0]->departure_time!=''&&$data['detail'][0]->departure_time!='Theo yêu cầu'&&$data['detail'][0]->departure_time!='theo yêu cầu'){
-//        $asign['hidden_date']='hidden';
-//        $arr_explode=explode(',',$data['detail'][0]->departure_time);
-//        if(count($arr_explode)>0){
-//            if(strlen($arr_explode[0])>=8){
-//                $time_explode_0=$arr_explode[0];
-//            }else{
-//                $time_explode_0=$arr_explode[0].'-'.$year_current;
-//            }
-//            $asign['date_now']=date('Y-m-d', strtotime(trim($time_explode_0)));
-//            $asign['date_now_vn'] =trim($time_explode_0);
-//            $asign['hidden_date_select']='';
-//            foreach($arr_explode as $row){
-//                $date=trim($row);
-//                if(strlen($date)>=8){
-//                    $time_format=$date;
-//                }else{
-//                    $time_format=$date.'-'.$year_current;
-//                }
-//                $validate= validateDate($time_format);
-//                if($validate==false){
-//                    $asign['hidden_date']='';
-//                    $asign['hidden_date_select']='hidden';
-//                    break;
-//                }
-//                $date_en=date('Y-m-d', strtotime(trim($time_format)));
-//                $asign['date_select'].='<option value="'.$date_en.'">'.$time_format.'</option>';
-//            }
-//        }
-//    }
 
     $asign['quocgia']='';
     $arr=explode(',',trim($data['detail'][0]->danhmuc_multi));
