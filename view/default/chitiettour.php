@@ -217,19 +217,28 @@ function show_chitiet_tour($data = array())
     $asign['id_user']='';
     $asign['code_user']='';
     if(isset($_GET['key'])){
-        $asign['id_user']='&key='._returnGetParamSecurity('key');
+        $_SESSION['id_tour_'.$data['detail'][0]->id]=_returnGetParamSecurity('key');
+    }
+    if(isset($_SESSION['id_tour_'.$data['detail'][0]->id])){
+        $asign['id_user']='&key='.$_SESSION['id_tour_'.$data['detail'][0]->id];
         $array_user_share_noti = array(
-            'id'=>_returnGetParamSecurity('key'),
+            'id'=>$_SESSION['id_tour_'.$data['detail'][0]->id],
         );
         $list_noti= returnCURL($array_user_share_noti, SITE_NAME_MANAGE.'/azbooking-hoso.html');
         $data_list_noti=json_decode($list_noti,true);
-       if(isset($data_list_noti['user']['code']) && $data_list_noti['user']['code']!=''){
-           $asign['code_user']='  <p class="price"><i class="icon-dollar"></i> Mã booking:
+        if(isset($data_list_noti['user']['code']) && $data_list_noti['user']['code']!=''){
+            $asign['code_user']='  <p class="price"><i class="icon-dollar"></i> Mã sản phẩm:
                                     <ins><span class="amount"> '.$data_list_noti['user']['code'].'</span></ins>
                                 </p>';
-       }
-
+        }
+    }else{
+        if($data['detail'][0]->code!=''){
+            $asign['code_user']='  <p class="price ma_san_pham_tiep_thi"><i class="icon-dollar"></i> <span style="color: #4692e7">Mã sản phẩm:</span>
+                                    <span style="font-size: 20px" class="amount"> '.$data['detail'][0]->code.'</span>
+                                </p>';
+        }
     }
+
 
     if(count($data_session)>0 && $asign['price_tiep_thi']!='' && $asign['price_tiep_thi']>0){
         $array_user_share_noti = array(

@@ -580,7 +580,7 @@
         $( ".notification_menu" ).hover(function() {
             link = '{site_name_manage}/update-notification.html';
             var count_noti=$('#count_notification').html();
-            if(count_noti!=''){
+            if(count_noti){
                 $.ajax({
                     method: "POST",
                     url: link,

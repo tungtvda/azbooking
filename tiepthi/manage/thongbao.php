@@ -54,6 +54,9 @@ $data['danhsach']=array();
 $data['PAGING'] ='';
 $list_noti= returnCURL($array_check_noti, SITE_NAME_MANAGE.'/return-list-notification.html');
 $data_list_noti=json_decode($list_noti,true);
+if($data_list_noti['success']==0){
+    redict(SITE_NAME.'/tiep-thi-lien-ket/dang-xuat/');
+}
 if(isset($data_list_noti['danhsach'])){
     $data['danhsach']=$data_list_noti['danhsach'];
 }

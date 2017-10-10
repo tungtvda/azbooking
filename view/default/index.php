@@ -64,6 +64,7 @@ function show_index($data = array())
     $asign['form_']='';
     $count_un_read=0;
     $asign['coutn_mes_noti']='';
+    $asign['content_noti_user']='';
     if(count($data_session)>0) {
         $array_check_noti = array(
             'id' => _return_mc_encrypt($data_session['id']),
@@ -91,6 +92,9 @@ function show_index($data = array())
         </form>';
         $list_noti= returnCURL($array_check_noti, SITE_NAME_MANAGE.'/return-list-notification.html');
         $data_list_noti=json_decode($list_noti,true);
+        if($data_list_noti['success']==0){
+            redict(SITE_NAME.'/tiep-thi-lien-ket/dang-xuat/');
+        }
         $count_noti_string='';
         $count_noti=count($data_list_noti['data_noti']);
         if(isset($data_list_noti['count_active'])&& $data_list_noti['count_active']>0){
@@ -114,7 +118,7 @@ function show_index($data = array())
             $hidden_div='hidden';
         }
 
-        if($count_noti>0){
+
             $list_notification='<div class="dropdown-content-noti">
                         <p class="dropdown-header">
                            '.$count_un_read.'
@@ -162,7 +166,7 @@ function show_index($data = array())
                     </li>';
             $avatar='<img class="nav-user-photo" title="'.$data_session['name'].'" alt="'.$data_session['name'].'"  src="'.$data_session['avatar'].'">';
             $asign['content_noti_user'].='
-                        <li class="menu-item menu-item-has-children "><a href="#" style="padding: 0px 15px;   ">
+                        <li class="menu-item menu-item-has-children "><a href="javascript:void(0)" style="padding: 0px 15px;   ">
                                 '.$avatar.'
                                 <span class="user-info"><small>Xin chào,</small>'.$data_session['name'].'</span>
                                 <i class="ace-icon fa fa-caret-down color_white"
@@ -179,7 +183,7 @@ function show_index($data = array())
                                 <li class="menu-item"><a href="'.SITE_NAME.'/tiep-thi-lien-ket/dang-xuat/"><i class="fa fa-sign-out "></i> Đăng xuất</a></li>
                             </ul>
                         </li>';
-        }
+
 
     }else{
         $asign['content_noti_user']='

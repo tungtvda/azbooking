@@ -174,6 +174,9 @@ function view_navbar_tiep_thi($data = array())
         </form>';
         $list_noti= returnCURL($array_check_noti, SITE_NAME_MANAGE.'/return-list-notification.html');
         $data_list_noti=json_decode($list_noti,true);
+        if($data_list_noti['success']==0){
+            redict(SITE_NAME.'/tiep-thi-lien-ket/dang-xuat/');
+        }
         $count_noti=count($data_list_noti['data_noti']);
         if(isset($data_list_noti['count_active'])&& $data_list_noti['count_active']>0){
             if($data_list_noti['count_active']>100){
