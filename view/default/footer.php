@@ -176,20 +176,25 @@ function view_footer($data = array())
     } else {
         $asign['avatar'] = '<img title="Tài khoản tiếp thị liên kết" alt="Tài khoản tiếp thị liên kết" class="facebook-messenger-avatar" src="' . SITE_NAME . '/view/default/themes/images/tiepthi/tiepthi3.png">';
         $asign['content_user'] = '
-                    <p>
+
+                     <p><a>Trở thành Cộng tác viên của AZbooking</a></p>
+                     <p><a>Cơ hội kiếm 500$/tháng</a></p>
+                     <p><a href="' . SITE_NAME . '/tiep-thi-lien-ket-info/gioi-thieu.html">Xem chi tiết</a></p>
+                      <p>
                         <a  href="' . SITE_NAME . '/tiep-thi-lien-ket/thanh-vien/?type=dang-ky"><i class="fa fa-user"></i> Đăng ký</a>
                         <span style="color: #2b2b2b"> | </span>
                         <a href="' . SITE_NAME . '/tiep-thi-lien-ket/thanh-vien/"><i class="fa fa-sign-in"></i> Đăng nhập</a>
                     </p>
-                     <p><a href="' . SITE_NAME . '/tiep-thi-lien-ket-info/gioi-thieu.html">Giới thiệu tiếp thị liên kết</a></p>
-                     <p><a href="' . SITE_NAME . '/tiep-thi-lien-ket-info/cac-buoc-tham-gia.html">Các bước tham gia</a></p>
-                     <p><a href="' . SITE_NAME . '/tiep-thi-lien-ket-info/cam-ket.html">Cam kết</a></p>
-                     <p><a href="' . SITE_NAME . '/tiep-thi-lien-ket-info/hoi-dap.html">Hỏi và đáp</a></p>
-                     <p><a href="' . SITE_NAME . '/tiep-thi-lien-ket-info/dieu-khoan-chinh-sach.html">Điều khoản và chính sách</a></p>
-                     <p><a href="' . SITE_NAME . '/tiep-thi-lien-ket-info/hop-dong-cong-tac-vien.html">Hợp đồng với CTV</a></p>
+
         ';
     }
 
+//    <p><a href="' . SITE_NAME . '/tiep-thi-lien-ket-info/gioi-thieu.html">Giới thiệu tiếp thị liên kết</a></p>
+//                     <p><a href="' . SITE_NAME . '/tiep-thi-lien-ket-info/cac-buoc-tham-gia.html">Các bước tham gia</a></p>
+//                     <p><a href="' . SITE_NAME . '/tiep-thi-lien-ket-info/cam-ket.html">Cam kết</a></p>
+//                     <p><a href="' . SITE_NAME . '/tiep-thi-lien-ket-info/hoi-dap.html">Hỏi và đáp</a></p>
+//                     <p><a href="' . SITE_NAME . '/tiep-thi-lien-ket-info/dieu-khoan-chinh-sach.html">Điều khoản và chính sách</a></p>
+//                     <p><a href="' . SITE_NAME . '/tiep-thi-lien-ket-info/hop-dong-cong-tac-vien.html">Hợp đồng với CTV</a></p>
 
     print_template($asign, 'footer');
 }

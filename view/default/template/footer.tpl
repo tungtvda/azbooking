@@ -98,7 +98,7 @@
                 <!--http://itsolutionstuff.com/post/php-jquery-ajax-crop-image-before-upload-using-croppie-pluginexample.html
                 http://demo.itsolutionstuff.com/demo/demo-php-jquery-ajax-crop-image-before-upload-using-croppie-pluginexample.html-->
             </div>
-            <div class="content">
+            <div class="content" style=" text-align: center;">
                 <div class="inside">
                     {content_user}
                     <div style="float: left; width: 100%; margin-top: 10px">
