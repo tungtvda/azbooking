@@ -355,10 +355,10 @@
                                                     </div>
                                                     <div class="icon_list">
                                                         <div class="icon icon_video">
-                                                            <i class="fa fa-share-alt"></i>
+                                                            <a target="_blank" href="https://www.youtube.com/watch?v=E6d6K9c7t-Q"><i class="fa fa-share-alt"></i></a>
                                                         </div>
                                                         <div class="il-desc">
-                                                            <h5>Hướng dẫn tiếp thị liên kết</h5>
+                                                            <h5><a target="_blank" href="https://www.youtube.com/watch?v=E6d6K9c7t-Q">Hướng dẫn tiếp thị liên kết </a></h5>
                                                             <p hidden>
                                                                 Praesent feugiat commodo ullamcorper. Integer vulputate
                                                                 magna ut mi tempus.
