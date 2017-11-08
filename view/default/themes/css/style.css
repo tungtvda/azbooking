@@ -11871,7 +11871,12 @@ caption, th, td {
     text-transform: uppercase;
 }
 .div-share{
-    position: absolute; top: -20px; right: -41%;
+    position: absolute;
+    top: -10px;
+    left: 5%;
+}
+.div-share img{
+    width: 70%;
 }
 .div-div-share{
     float: left;margin-top: 10px;margin-left: 10px; position: relative
