@@ -25,6 +25,7 @@ function show_dattour($data = array())
     $asign['price_4']= $data['detail'][0]->price_4;
     $asign['price_5']= $data['detail'][0]->price_5;
     $asign['price_6']= $data['detail'][0]->price_6;
+    $asign['dieuhanh_id']= $data['detail'][0]->dieuhanh_id;
     if($data['detail'][0]->price==0||$data['detail'][0]->price==''){
         $asign['price_format']='Liên hệ';
         $asign['price']='Liên hệ';
