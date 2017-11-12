@@ -58,6 +58,14 @@ if(isset($_SESSION["Admin"]))
     $data['listfkey']['DanhMuc1Id']=danhmuc_1_getByAll();
     $data['listfkey']['DanhMuc2Id']=danhmuc_2_getByAll();
     $data['listfkey']['departure']=departure_getByTop('','','position asc');
+    $array_check_noti = array(
+        'id'=>_return_mc_encrypt($_SESSION["Admin"]),
+        'user_email'=>_return_mc_encrypt('tungtv.soict@gmail.com'),
+        'main'=>_return_mc_encrypt('azbooking.vn'),
+        'module'=>_return_mc_encrypt('tour'),
+    );
+    $list_user= returnCURL($array_check_noti, SITE_NAME_MANAGE.'/azbooking-list-dieu-hanh.html');
+    $data['listfkey']['list_user']=json_decode($list_user,true);
     if(isset($_GET["action_all"]))
     {
         if($_GET["action_all"]=="ThemMoi")

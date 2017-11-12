@@ -34,7 +34,7 @@ function view_tour($data)
 //
 function showTableHeader()
 {
-    return '<th>id</th><th>Quốc tế</th><th>DanhMuc1Id</th><th>DanhMuc2Id</th><th>promotion</th><th>packages</th><th>name</th><th>code</th><th>img</th><th>Hoa hồng</th><th>price_sales</th><th>price</th>';
+    return '<th>id</th><th>Điều hành</th><th>Quốc tế</th><th>DanhMuc1Id</th><th>DanhMuc2Id</th><th>promotion</th><th>packages</th><th>name</th><th>code</th><th>img</th><th>Hoa hồng</th><th>price_sales</th><th>price</th>';
 }
 //
 function showTableBody($data)
@@ -53,6 +53,7 @@ function showTableBody($data)
     {
         $TableBody.="<tr><td><input type=\"checkbox\" name=\"check_".$obj->id."\"/></td>";
         $TableBody.="<td>".$obj->id."</td>";
+        $TableBody.="<td>".$obj->dieuhanh_id."</td>";
         $TableBody.="<td>".$obj->tour_quoc_te."</td>";
         $TableBody.="<td>".$obj->DanhMuc1Id."</td>";
         $TableBody.="<td>".$obj->DanhMuc2Id."</td>";
@@ -75,6 +76,17 @@ function showTableBody($data)
 function showFrom($form,$ListKey=array())
 {
     $str_from='';
+    $str_from.='<p><label>Điều hành</label>';
+    $str_from.='<select name="dieuhanh_id">';
+    $str_from .= '<option value="0">Chọn người điều hành</option>';
+    if(isset($ListKey['list_user']))
+    {
+        foreach($ListKey['list_user'] as $key_dieu_hanh)
+        {
+            $str_from.='<option value="'.$key_dieu_hanh['id'].'" '.(($form!=false)?(($form->dieuhanh_id==$key_dieu_hanh['id'])?'selected':''):'').'>'.$key_dieu_hanh['name'].'</option>';
+        }
+    }
+    $str_from.='</select></p>';
     $str_from.='<p><label>tour_quoc_te</label><input  type="checkbox"  name="tour_quoc_te" value="1" '.(($form!=false)?(($form->tour_quoc_te=='1')?'checked':''):'').' /></p>';
     $str_from.='<p><label>Chọn danh mục cấp 1</label>';
     $str_from.='<select name="DanhMuc1Id" id="DanhMuc1Id">';

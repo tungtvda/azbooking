@@ -133,6 +133,7 @@ if (isset($_POST['name_customer'])) {
         $name_tour_mahoa = _return_mc_encrypt($data['detail'][0]->name);
         $code_tour_mahoa = _return_mc_encrypt($data['detail'][0]->code);
         $id_tour_mahoa = _return_mc_encrypt($data['detail'][0]->id);
+        $dieuhanh_id_mahoa = _return_mc_encrypt($data['detail'][0]->dieuhanh_id);
         $phuong_tien = _return_mc_encrypt($data['detail'][0]->vehicle);
 
         $name_price_mahoa = _return_mc_encrypt($name_price);
@@ -239,6 +240,7 @@ if (isset($_POST['name_customer'])) {
         $string_info_booking .= "&ngay_khoi_hanh=" . _return_mc_encrypt($ngay_khoi_hanh);
 
         $string_info_booking .= "&id_tour=" . $id_tour_mahoa;
+        $string_info_booking .= "&dieuhanh_id=" . $dieuhanh_id_mahoa;
         $string_info_booking .= "&name_tour=" . $name_tour_mahoa;
         $string_info_booking .= "&code_tour=" . $code_tour_mahoa;
         $string_info_booking .= "&price_tiep_thi=" . $price_tiep_thi_mahoa;

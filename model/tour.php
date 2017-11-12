@@ -2,11 +2,12 @@
 
 class tour
 {
-    public $id, $tour_quoc_te, $DanhMuc1Id, $DanhMuc2Id, $danhmuc_multi, $promotion, $packages, $name, $name_url, $count_down, $code, $img,$price_tiep_thi, $price_sales, $price, $price_2, $price_3, $price_4, $price_5, $price_6, $price_number, $price_number_2, $price_number_3, $price_number_4, $price_number_5, $price_number_6, $name_price, $name_price_2, $name_price_3, $name_price_4, $name_price_5, $name_price_6, $so_cho, $durations, $departure, $departure_time, $destination, $vehicle, $hotel, $summary, $highlights, $schedule, $price_list, $content, $list_img, $title, $keyword, $description, $inclusion, $exclusion, $updated;
+    public $id,$dieuhanh_id, $tour_quoc_te, $DanhMuc1Id, $DanhMuc2Id, $danhmuc_multi, $promotion, $packages, $name, $name_url, $count_down, $code, $img,$price_tiep_thi, $price_sales, $price, $price_2, $price_3, $price_4, $price_5, $price_6, $price_number, $price_number_2, $price_number_3, $price_number_4, $price_number_5, $price_number_6, $name_price, $name_price_2, $name_price_3, $name_price_4, $name_price_5, $name_price_6, $so_cho, $durations, $departure, $departure_time, $destination, $vehicle, $hotel, $summary, $highlights, $schedule, $price_list, $content, $list_img, $title, $keyword, $description, $inclusion, $exclusion, $updated;
 
     public function tour($data = array())
     {
         $this->id = isset($data['id']) ? $data['id'] : '';
+        $this->dieuhanh_id = isset($data['dieuhanh_id']) ? $data['dieuhanh_id'] : '';
         $this->tour_quoc_te = isset($data['tour_quoc_te']) ? $data['tour_quoc_te'] : '';
         $this->DanhMuc1Id = isset($data['DanhMuc1Id']) ? $data['DanhMuc1Id'] : '';
         $this->DanhMuc2Id = isset($data['DanhMuc2Id']) ? $data['DanhMuc2Id'] : '';
@@ -63,6 +64,7 @@ class tour
     public function encode()
     {
         $this->id = addslashes($this->id);
+        $this->dieuhanh_id = addslashes($this->dieuhanh_id);
         $this->tour_quoc_te = addslashes($this->tour_quoc_te);
         $this->DanhMuc1Id = addslashes($this->DanhMuc1Id);
         $this->DanhMuc2Id = addslashes($this->DanhMuc2Id);
@@ -118,6 +120,7 @@ class tour
     public function decode()
     {
         $this->id = stripslashes($this->id);
+        $this->dieuhanh_id = stripslashes($this->dieuhanh_id);
         $this->tour_quoc_te = stripslashes($this->tour_quoc_te);
         $this->DanhMuc1Id = stripslashes($this->DanhMuc1Id);
         $this->DanhMuc2Id = stripslashes($this->DanhMuc2Id);

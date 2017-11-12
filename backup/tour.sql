@@ -12682,3 +12682,1882 @@ update tour set tour_quoc_te='1',DanhMuc1Id='10',DanhMuc2Id='58',danhmuc_multi='
 		VAT&nbsp; &nbsp; &nbsp;</li>
 </ul>
 ',updated='2017-09-21 09:16:40' where id=223;
+update tour set dieuhanh_id='14', tour_quoc_te='1',DanhMuc1Id='10',DanhMuc2Id='58',danhmuc_multi='',promotion='1',packages='0',name='TOUR DU LỊCH TRUNG QUỐC:TPHCM -  HÀ NỘI – CÔN MINH – LỆ GIANG – SHANGRI-LA',name_url='tour-du-lich-trung-quoctphcm--ha-noi-con-minh-le-giang-shangri-la',count_down='',code='',img='/view/admin/Themes/kcfinder/upload/images/du-lich-trung-quoc-6-ngay-5-dem-azbooking.jpg',price_tiep_thi='800000',price_sales='',price='18790000',price_2='',price_3='',price_4='',price_5='',price_6='',price_number='',price_number_2='',price_number_3='',price_number_4='',price_number_5='',price_number_6='',name_price='',name_price_2='',name_price_3='',name_price_4='',name_price_5='',name_price_6='',so_cho='',durations='6 Ngày 5 Đêm ',departure='1',departure_time='24/10',destination='Côn Minh, Lệ Giang, Shangrila',vehicle='Máy bay, oto, tàu cao tốc',hotel='3',summary='<p style="text-align: justify;">
+	<em><strong>Lệ Giang</strong>&nbsp;l&agrave; cố đ&ocirc; của vương quốc Naxi, cao 2.410 m&eacute;t so với mực nước biển v&agrave; nằm tr&ecirc;n Cao nguy&ecirc;n T&acirc;y Bắc V&acirc;n Nam ở miền T&acirc;y Nam Trung Hoa. Tọa lạc dọc theo tuyến thương mại quan trọng m&agrave; trước đ&acirc;y l&agrave; một phần của Con đường Tơ lụa từ V&acirc;n Nam qua T&acirc;y Tạng,&nbsp;</em><em><strong>C&ocirc;n Minh</strong>&nbsp;- th&agrave;nh phố m&ugrave;a xu&acirc;n bạt ng&agrave;n hoa nở.&nbsp;</em><em>Th&agrave;nh cổ&nbsp;<strong>Đại L&yacute;</strong>&nbsp;cổ k&iacute;nh, ki&ecirc;n cố v&agrave; r&ecirc;u phong - nơi quay bộ phim Thi&ecirc;n Long B&aacute;t Bộ nổi tiếng.&nbsp;</em></p>
+<p style="text-align: justify;">
+	<em>Thần b&iacute;&nbsp;<a href="http://tourdulichtrungquoc.net/tin-tuc/van-nam/den-shangri-la-ban-se-nhan-ra-rang-thung-lung-bat-tu-la-co-that.html">t<strong>hung lũng &quot;bất tử&quot; Shangri-La</strong></a>:&nbsp;<strong>Shangri-La</strong>&nbsp;nằm trong một cao nguy&ecirc;n cao hơn 3.300m so với mực nước biển, bao quanh bởi những ngọn đồi xanh tươi tốt, hồ nước tuyệt đẹp, kh&ocirc;ng kh&iacute; trong l&agrave;nh. Đ&acirc;y l&agrave; nơi sinh sống chủ yếu của một bộ phận kh&ocirc;ng nhỏ những người T&acirc;y Tạng, nơi tọa lạc của rất nhiều danh thắng, đền ch&ugrave;a, tu viện Phật gi&aacute;o&hellip; Shangri-La c&ograve;n nổi tiếng với c&ocirc;ng vi&ecirc;n quốc gia Pudacuo.&nbsp;Đ&acirc;y l&agrave; khu vực rộng khoảng 1.300km2 v&agrave; l&agrave; c&ocirc;ng vi&ecirc;n quốc gia đầu ti&ecirc;n ở Trung Quốc.</em></p>
+<p style="text-align: justify;">
+	<span style="box-sizing: border-box; font-family: Tahoma; font-size: 14px; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;">Tour du lịch Trung Quốc: TPHCM - H&Agrave; NỘI &ndash; C&Ocirc;N MINH &ndash; LỆ GIANG &ndash; SHANGRI-LA 6 Ng&agrave;y 5 Đ&ecirc;m</span></span><span style="box-sizing: border-box; font-family: Tahoma; font-size: 14px; color: rgb(255, 0, 0);">&nbsp;</span><span style="color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px;">sẽ đưa bạn qua những điểm đến v&ocirc; c&ugrave;ng hấp dẫn:&nbsp;</span></p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; height: 15px; width: 15px;" />&nbsp;Ch&igrave;m đắm trong&nbsp;<strong>Th&agrave;nh cổ Lệ Giang</strong>&nbsp;- được mệnh danh l&agrave; &quot;Venice của Phương Đ&ocirc;ng&quot;</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; height: 15px; width: 15px;" />&nbsp;Cho&aacute;ng ngợp với vẻ đẹp h&ugrave;ng vĩ của&nbsp;<strong>KHE HỒ NHẢY</strong></p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; height: 15px; width: 15px;" />&nbsp;Kh&aacute;m ph&aacute;&nbsp;<a href="http://tourdulichtrungquoc.net/tin-tuc/van-nam/den-shangri-la-ban-se-nhan-ra-rang-thung-lung-bat-tu-la-co-that.html"><strong>thung lũng Shangrila</strong></a>&nbsp;- chốn ti&ecirc;n cảnh của V&acirc;n Nam</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; height: 15px; width: 15px;" />&nbsp;Dạo quanh&nbsp;<strong>th&agrave;nh phố C&ocirc;n Minh</strong>&nbsp;với &quot;T&acirc;y Sơn Long M&ocirc;n&quot;,&nbsp;&quot;Tam Th&agrave;nh C&aacute;t&quot;</p>
+<p style="text-align: justify;">
+	V&agrave; c&ograve;n rất nhiều những điểm đến hấp dẫn kh&aacute;c. Đăng k&yacute; ngay tour du lịch n&agrave;y của&nbsp;<strong>AZbooking&nbsp;</strong>để c&oacute; cơ hội kh&aacute;m ph&aacute; nhiều hơn c&aacute;c điểm đến nh&eacute;!</p>
+',highlights='<p background-color:="" font-size:="" open="" style="box-sizing: border-box; margin: 0px 0px 10px 40px; font-family: Tahoma; font-size: 14px; line-height: 1.7em; color: rgb(51, 51, 51); text-align: center;" text-align:="">
+	<span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box;"><span style="box-sizing: border-box; font-weight: 700;">DỊCH VỤ K&Egrave;M THEO HẤP DẪN C&Ugrave;NG CHƯƠNG TR&Igrave;NH</span></span></span></p>
+<table border="1" cellpadding="0" cellspacing="0" style="width: 891px;">
+	<tbody style="box-sizing: border-box;">
+		<tr style="box-sizing: border-box;">
+			<td style="box-sizing: border-box; padding: 12px 10px; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px; text-align: center;">
+					<img alt="Bảo hiểm du lịch" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/icon-bao-hiem.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 60px; height: 60px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px; text-align: center;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">Bảo hiểm du lịch</span></p>
+			</td>
+			<td style="box-sizing: border-box; padding: 12px 10px; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px; text-align: center;">
+					<img alt="Bữa ăn theo chương trình" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/icon-bua-an.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 60px; height: 60px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px; text-align: center;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">Bữa ăn theo chương tr&igrave;nh</span></p>
+			</td>
+			<td style="box-sizing: border-box; padding: 12px 10px; text-align: center; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<img alt="Hướng dẫn viên suốt tuyến" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/icon-hdv.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 60px; height: 60px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">Hướng dẫn vi&ecirc;n suốt tuyến</span></p>
+			</td>
+			<td style="box-sizing: border-box; padding: 12px 10px; text-align: center; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<img alt="Vé tham quan theo chương trình" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/icon-ve-tham-quan.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 60px; height: 60px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">V&eacute; tham quan theo chương tr&igrave;nh</span></p>
+			</td>
+		</tr>
+		<tr style="box-sizing: border-box;">
+			<td style="box-sizing: border-box; padding: 12px 10px; text-align: center; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<img alt="Xe đưa đón theo chương trình" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/icon-xe-dua-don.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 60px; height: 60px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">Xe đưa đ&oacute;n theo chương tr&igrave;nh</span></p>
+			</td>
+			<td style="box-sizing: border-box; padding: 12px 10px; text-align: center; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<img alt="Khách sạn tiêu chuẩn" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/icon-hotel.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 60px; height: 60px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">Kh&aacute;ch sạn ti&ecirc;u chuẩn</span></p>
+			</td>
+			<td style="box-sizing: border-box; padding: 12px 10px; text-align: center; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<img alt="Vé máy bay" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/icon-ve-may-bay.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 60px; height: 60px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">V&eacute; m&aacute;y bay</span></p>
+			</td>
+			<td style="box-sizing: border-box; padding: 12px 10px; text-align: center; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<img alt="Quà tặng kèm" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/icon-hop-qua.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 50px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">Qu&agrave; tặng k&egrave;m 500K</span></p>
+				<div style="box-sizing: border-box;">
+					&nbsp;</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; text-align: center;">
+	<br style="box-sizing: border-box;" />
+	<span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;"><img alt="" src="/view/admin/Themes/kcfinder/upload/images/icon/hotline.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; width: 510px; height: 153px;" /></span></span></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; text-align: center;">
+	<span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;">HOẶC</span></span></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; text-align: center;">
+	<span style="box-sizing: border-box; font-size: 16px;"><span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; background-color: rgb(255, 255, 0);">CHAT ONLINE NGAY</span></span></span></span></p>
+',schedule='<h2 style="text-align: justify;">
+	<span style="font-size: 16px;"><span style="color: rgb(255, 0, 0);">NG&Agrave;Y 01: TPHCM - H&Agrave; NỘI &ndash; C&Ocirc;N MINH &nbsp; &nbsp; &nbsp; &nbsp; (Ăn tối)&nbsp;</span></span></h2>
+<p style="text-align: justify;">
+	Xe v&agrave; HDV đ&oacute;n đo&agrave;n tại điểm hẹn, &nbsp;đưa đo&agrave;n l&ecirc;n s&acirc;n Bay , khỏi h&agrave;nh chuyến bay MU2576 l&uacute;c 16h25 &ndash; 18h50 .</p>
+<p style="text-align: justify;">
+	18h50 Xe v&agrave; HDV đ&oacute;n đo&agrave;n tại&nbsp;<strong>s&acirc;n bay C&ocirc;n Minh</strong>, sau bữa tối, HDV đưa đo&agrave;n ra ga t&agrave;u hoả, l&ecirc;n chuyến t&agrave;u hoả C&ocirc;n Minh - Lệ Giang&nbsp; K9602&nbsp;</p>
+<p style="text-align: justify;">
+	22h23 - 08h35: Nghỉ đ&ecirc;m tr&ecirc;n t&agrave;u hoả (giường nằm khoảng 6 )&nbsp;</p>
+<p style="text-align: center;">
+	&nbsp;</p>
+<h2 style="text-align: justify;">
+	<span style="font-size: 16px;"><span style="color: rgb(255, 0, 0);">NG&Agrave;Y 02: LỆ GIANG &nbsp; &nbsp; &nbsp;( Ăn s&aacute;ng, trưa, tối)</span></span></h2>
+<p style="text-align: justify;">
+	<strong>S&aacute;ng</strong>: 08h35 t&agrave;u đến Lệ Giang, HDV đưa đo&agrave;n đi ăn s&aacute;ng, Q&uacute;y kh&aacute;ch thăm quan:</p>
+<ul>
+	<li style="text-align: justify;">
+		<p>
+			C&ocirc;ng Vi&ecirc;n Hắc Long Đ&agrave;m &ndash; nơi d&ograve;ng nước từ n&uacute;i băng Ngọc Long đổ về nu&ocirc;i sống v&ugrave;ng đất Lệ Giang. Từ c&ocirc;ng vi&ecirc;n Hắc Long c&oacute; thể ngắm sự h&ugrave;ng vĩ của n&uacute;i tuyết ng&agrave;n năm, trong khung cảnh thanh b&igrave;nh của nước hồ phẳng lặng.</p>
+	</li>
+</ul>
+<p style="text-align: center;">
+	<img alt="Kết quả hình ảnh cho công viên hắc long đàm" src="https://s3-ap-southeast-1.amazonaws.com/mytour-static-file/upload_images/Image/Location/22_9_2016/7/du-lich-thanh-co-le-giang-trung-quoc-mytour-9.jpg" /></p>
+<ul>
+	<li style="text-align: justify;">
+		<p>
+			Qu&yacute; kh&aacute;ch gh&eacute; thăm Mộc Phủ, Vạn Cổ Lầu một c&ocirc;ng tr&igrave;nh được coi l&agrave; ti&ecirc;u biểu cho lịch sử v&agrave; văn h&oacute;a nơi đ&acirc;y. Mộc phủ được v&iacute; như Tử Cấm th&agrave;nh của phương nam. Trước cổng, d&ograve;ng nước chảy từ hướng bắc xuống được bắc ngang bởi c&acirc;y cầu đ&aacute; rộng kh&ocirc;ng c&oacute; th&agrave;nh. Đối diện b&igrave;nh phong ngo&agrave;i l&agrave; t&ograve;a cổng ch&agrave;o bằng đ&aacute;. Xưa kia t&ograve;a cổng ch&agrave;o n&agrave;y l&agrave; c&ocirc;ng tr&igrave;nh kỳ vĩ nhất đất Lệ Giang, l&agrave;m bằng đ&aacute; ngọc trắng</p>
+	</li>
+</ul>
+<p style="text-align: center;">
+	<img alt="Hình ảnh có liên quan" src="https://c1.staticflickr.com/3/2799/4272647979_b84c293e0b_z.jpg?zz=1" /></p>
+<ul>
+	<li style="text-align: justify;">
+		<p>
+			Tham quan Th&agrave;nh cổ Lệ Giang - x&acirc;y dựng c&aacute;ch đ&acirc;y hơn 800 năm, được Unessco c&ocirc;ng nhận l&agrave; di sản văn ho&aacute; thế giới năm 1997- một di sản văn h&oacute;a thế giới với phong cảnh đẹp đẽ xứ nước, được mệnh danh l&agrave; &quot;Venice của Phương Đ&ocirc;ng&quot;, nơi đ&acirc;y nh&agrave; nh&agrave; đều c&oacute; suối chảy qua, những c&acirc;y liễu bu&ocirc;ng xuống c&aacute;c bậc cửa v&agrave; những c&acirc;y cầu nhỏ xinh xắn. Dạo Phố Tứ Phương ở trung t&acirc;m th&agrave;nh cổ</p>
+	</li>
+</ul>
+<p style="text-align: justify;">
+	<strong>Sau khi d&ugrave;ng bữa tối</strong>, Qu&yacute; kh&aacute;ch tự do ngắm sắc m&agrave;u Lệ Giang về đ&ecirc;m. Tự do thưởng thức được &acirc;m nhạc v&agrave; c&aacute;c điệu d&acirc;n vũ. Phố cổ Lệ Giang c&ograve;n c&oacute; thể gọi l&agrave; phố của &acirc;m nhạc d&acirc;n tộc v&agrave; d&acirc;n vũ m&agrave; bạn chẳng cần tốn một xu tiền v&eacute; lại c&oacute; thể trở th&agrave;nh diễn vi&ecirc;n ngay nếu th&iacute;ch..</p>
+<p style="text-align: justify;">
+	Nghỉ đ&ecirc;m tại Lệ Giang</p>
+<p style="text-align: center;">
+	<img alt="Kết quả hình ảnh cho thành cổ lệ giang" src="https://haivanxanh.com/wp-content/uploads/thanh-co-Le-Giang-2.jpg" /></p>
+<h2 style="text-align: justify;">
+	<span style="font-size: 16px;"><span style="color: rgb(255, 0, 0);">NG&Agrave;Y 03: LỆ GIANG &ndash; SHANGRI-LA &nbsp; &nbsp; &nbsp; &nbsp;(Ăn s&aacute;ng, trưa, tối)</span></span></h2>
+<p style="text-align: justify;">
+	<strong>Sau bữa s&aacute;ng</strong>, đo&agrave;n đi&nbsp;<strong>Shangrila</strong>.</p>
+<p style="text-align: justify;">
+	Tr&ecirc;n đường gh&eacute; thăm&nbsp;<strong>khe Hổ Nhảy</strong>, được xem l&agrave; hẻm n&uacute;i s&acirc;u nhất Thế Giới. Đ&acirc;y l&agrave; một hẻm n&uacute;i d&agrave;i hơn 15 km nằm kẹp giữa hai&nbsp;<strong>d&atilde;y n&uacute;i Ngọc Long Tuyết Sơn</strong>&nbsp;(cao 5.596 m) v&agrave;&nbsp;<strong>Ha Ba Tuyết Sơn</strong>&nbsp;(cao 5.396 m). Nơi đ&acirc;y cảnh tượng v&ocirc; c&ugrave;ng h&ugrave;ng vĩ với d&ograve;ng s&ocirc;ng Kim Sa c&agrave;ng về ph&iacute;a hạ nguồn c&agrave;ng gập ghềnh v&agrave; chảy xiết.</p>
+<p style="text-align: justify;">
+	Tương truyền khi xưa một ch&uacute; hổ đ&atilde; chạy tho&aacute;t trong một lần bị thợ săn rượt đuổi bằng c&aacute;ch nhảy băng qua hẻm n&uacute;i tại điểm l&ograve;ng s&ocirc;ng hẹp nhất.</p>
+<p style="text-align: justify;">
+	<img alt="Kết quả hình ảnh cho khe hổ nhảy" src="http://static.kienthucdoday.com/content/images/thumbs/0011675_thot-tim-khi-dung-duoi-khe-ho-nhay-mua-lu.jpeg" /></p>
+<p style="text-align: justify;">
+	Đến&nbsp;<strong>Shangrila&nbsp;</strong>&ndash; một c&aacute;i t&ecirc;n kh&ocirc;ng hề xa lạ nếu ai đ&atilde; từng đọc qua&nbsp;<strong>tiểu thuyết Lost Horizon</strong>&nbsp;(Đường ch&acirc;n trời đ&atilde; mất) của nh&agrave; văn James Hilton, n&oacute; l&agrave; một thung lũng nằm ở T&acirc;y Bắc tỉnh V&acirc;n Nam, Trung Quốc, gần với T&acirc;y Tạng.</p>
+<p style="text-align: justify;">
+	Thăm&nbsp;<strong>ch&ugrave;a Songzanlin&nbsp;</strong>l&agrave;&nbsp;<strong>tu viện Phật gi&aacute;o Mật T&ocirc;ng T&acirc;y Tạng</strong>&nbsp;quan trọng v&agrave; lớn nhất ở V&acirc;n Nam, Trung Quốc.&nbsp;<strong>Songzanlin&nbsp;</strong>được đặt trong một cảnh quan tuyệt đẹp ở độ cao hơn 3.300m c&aacute;ch Shangrila 5km. Tu viện n&agrave;y do vị Đạt Lai Lạt Ma thứ 5 x&acirc;y dựng năm 1679 theo nguy&ecirc;n mẫu thu nhỏ của cung điện Potala (T&acirc;y Tạng) v&agrave; được ho&agrave;n th&agrave;nh sau 2 năm x&acirc;y dựng. V&agrave;o thời thịnh vượng nhất, nơi đ&acirc;y tập trung đến cả ng&agrave;n tăng sĩ.</p>
+<p style="text-align: center;">
+	<img alt="Kết quả hình ảnh cho chùa Songzanlin" src="https://cdn02.static-adayroi.com/resize/608_430/100/0/2017/08/07/1502096518122_9260606.jpg" /></p>
+<p style="text-align: justify;">
+	Ăn tối tại nh&agrave; h&agrave;ng v&agrave; nghỉ đ&ecirc;m tại kh&aacute;ch sạn tại&nbsp;<strong>Shangrila</strong>.</p>
+<h2 style="text-align: justify;">
+	<span style="font-size: 16px;"><span style="color: rgb(255, 0, 0);">NG&Agrave;Y&nbsp; 04: SHANGRI-LA &ndash; LỆ GIANG &nbsp; (Ăn s&aacute;ng, trưa, tối)</span></span></h2>
+<p style="text-align: justify;">
+	<strong>Sau bữa s&aacute;ng</strong>, đo&agrave;n đi thăm:</p>
+<p style="text-align: justify;">
+	<strong>Vườn c&ocirc;ng vi&ecirc;n Quốc gia PuDaCuo (Phổ Đạt Thố)</strong>: Thi&ecirc;n nhi&ecirc;n ở Shangri-La xứng đ&aacute;ng được mệnh danh l&agrave; chốn ti&ecirc;n cảnh với những cảnh quan n&uacute;i cao tuyết trắng, rừng xanh nắng v&agrave;ng, thi thoảng lại ẩn hiện trong sương kh&oacute;i với một hệ động thực vật v&ocirc; c&ugrave;ng phong ph&uacute;.</p>
+<p style="text-align: justify;">
+	<strong>Pudacuo&nbsp;</strong>l&agrave; c&ocirc;ng vi&ecirc;n quốc gia đầu ti&ecirc;n ở Trung Quốc đ&aacute;p ứng đủ c&aacute;c ti&ecirc;u chuẩn được thiết lập bởi Tổ chức Bảo tồn Thi&ecirc;n nhi&ecirc;n Quốc tế (IUCN). Một trong 40 thắng cảnh đẹp của Trung Quốc.&nbsp;<strong>Pudacuo&nbsp;</strong>l&agrave; thi&ecirc;n đường cho những người y&ecirc;u th&iacute;ch chụp ảnh.</p>
+<p style="text-align: justify;">
+	Bốn m&ugrave;a ở đ&acirc;y cảnh sắc đều kh&ocirc;ng giống nhau:</p>
+<ul>
+	<li style="text-align: justify;">
+		<p>
+			M&ugrave;a xu&acirc;n ở đ&acirc;y trăm hoa đua nở.</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			M&ugrave;a h&egrave; l&agrave; một m&agrave;u xanh biếc phủ đầy khắp n&uacute;i.</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			M&ugrave;a thu l&agrave; cảnh rừng rậm tầng tầng v&ocirc; c&ugrave;ng lộng lẫy.</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			M&ugrave;a đ&ocirc;ng du kh&aacute;ch c&oacute; thể thưởng thức cảnh lớp tuyết trắng dưới mặt hồ nước xanh.</p>
+	</li>
+</ul>
+<p style="text-align: justify;">
+	Chiều tự do tham quan&nbsp;<strong>Th&agrave;nh cổ DuKeZong</strong>. Sau đ&oacute; di chuyển về&nbsp;<strong>Lệ Giang</strong>. Nghỉ tại Lệ Giang</p>
+<p style="text-align: justify;">
+	<img alt="Hình ảnh có liên quan" src="http://znews-photo-td.zadn.vn/w1024/Uploaded/djsim/2014_12_10/t1.jpg" /></p>
+<h2 style="text-align: justify;">
+	<span style="font-size: 16px;"><span style="color: rgb(255, 0, 0);">NG&Agrave;Y&nbsp; 05: LỆ GIANG &ndash; C&Ocirc;N MINH &nbsp; (Ăn s&aacute;ng, trưa, tối)</span></span></h2>
+<p style="text-align: justify;">
+	<strong>Ăn s&aacute;ng</strong>&nbsp;tại kh&aacute;ch sạn, sau đ&oacute; đo&agrave;n khởi h&agrave;nh đi&nbsp;<strong>Khu khu lịch N&uacute;i Tuyết Ngọc Long</strong>:</p>
+<ul>
+	<li style="text-align: justify;">
+		<p>
+			Qu&yacute; kh&aacute;ch đi c&aacute;p treo nhỏ l&ecirc;n thăm&nbsp;<strong>V&acirc;n Tam B&igrave;nh</strong>&nbsp;&ndash; độ cao 3200 m ngắm cảnh đẹp&nbsp;<strong>N&uacute;i tuyết Ngọc Long</strong>&nbsp;- ngọn n&uacute;i cao 5596 m tuyết phủ quanh năm. Phần băng vĩnh cửu &aacute;nh l&ecirc;n một m&agrave;u xanh như ngọc. Lại gọi đ&acirc;y l&agrave; n&uacute;i trinh nữ v&igrave; cho đến nay con người chưa một lần chinh phục được n&oacute;. Nhiều nh&agrave; leo n&uacute;i đ&atilde; bỏ mạng hoặc ngậm ng&ugrave;i r&uacute;t lui, bất lực trước sự trinh nguy&ecirc;n b&iacute; ẩn của v&ugrave;ng n&uacute;i v&agrave;o loại đẹp nhất tỉnh V&acirc;n Nam n&agrave;y.</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			Tham quan&nbsp;<strong>Bạch Thủy H&agrave;</strong>&nbsp;được tạo th&agrave;nh bởi băng tan từ n&uacute;i tuyết Ngọc Long,</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			<strong>Thảo nguy&ecirc;n Cam Hải Tử</strong></p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			Thăm&nbsp;<strong>Ngọc Thủy Trại&nbsp;</strong>&ndash; nơi c&oacute; cảnh đẹp v&agrave; thể hiện tập tục, t&iacute;n ngưỡng của d&acirc;n Na Xi v&agrave; nền văn h&oacute;a Đ&ocirc;ng Ba</p>
+	</li>
+</ul>
+<p style="text-align: center;">
+	<img alt="Hình ảnh có liên quan" src="http://thesmartlocal.com/images/easyblog_images/1851/jadedragon1.jpg" /></p>
+<p style="text-align: justify;">
+	<strong>Tối&nbsp;</strong>: Sau bữa tối, di chuyển về C&ocirc;n Minh, ra ga l&ecirc;n t&agrave;u hoả tuyến Lệ Giang &ndash; C&ocirc;n Minh , K9684&nbsp; 21h50/06h41 &nbsp;, nghỉ đ&ecirc;m tr&ecirc;n t&agrave;u hoả ( giường nằm khoang 6 ) .</p>
+<h2 style="text-align: justify;">
+	<span style="font-size: 16px;"><span style="color: rgb(255, 0, 0);">NG&Agrave;Y&nbsp; 06: C&Ocirc;N MINH &ndash; &nbsp;H&Agrave; NỘI - TPHCM (Ăn s&aacute;ng, trưa)&nbsp;</span></span></h2>
+<p style="text-align: justify;">
+	<strong>S&aacute;ng 06h41&nbsp;</strong>t&agrave;u đến C&ocirc;n Minh, đưa đo&agrave;n ăn s&aacute;ng, Sau đ&oacute; Qu&yacute; kh&aacute;ch bắt đầu kh&aacute;m ph&aacute; th&agrave;nh phố C&ocirc;n Minh:</p>
+<ul>
+	<li style="text-align: justify;">
+		<p>
+			Thăm cảnh T&acirc;y Sơn Long M&ocirc;n,</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			Tam Th&agrave;nh C&aacute;t với c&aacute;c điểm Long M&ocirc;n C&aacute; Ch&eacute;p h&oacute;a rồng,</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			Cầu Ph&uacute;c, Lộc, Thọ.</p>
+	</li>
+</ul>
+<p style="text-align: justify;">
+	Ăn trưa xong, Qu&yacute; kh&aacute;ch ra s&acirc;n bay khởi h&agrave;nh về H&agrave; Nội tr&ecirc;n chuyến bay MU2575 l&uacute;c 15h05.</p>
+<p style="text-align: center;">
+	<img alt="Kết quả hình ảnh cho tây sơn long môn" src="http://www.tourchaua.net/images/diadiem/hang-da-lam-mon-2.jpg" /></p>
+<p style="text-align: justify;">
+	<strong>15h35:&nbsp;</strong>Về tới s&acirc;n bay nội b&agrave;i, qu&yacute; kh&aacute;ch l&agrave;m thủ tục chuyến bay về TP.HCM. Kết th&uacute;c chương tr&igrave;nh</p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; text-align: center;">
+	<span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;"><img alt="" src="/view/admin/Themes/kcfinder/upload/images/icon/hotline.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; width: 510px; height: 153px;" /></span></span></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; text-align: center;">
+	<span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;">HOẶC</span></span></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; text-align: center;">
+	<span style="box-sizing: border-box; font-size: 16px;"><span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; background-color: rgb(255, 255, 0);">CHAT ONLINE NGAY</span></span></span></span></p>
+',price_list='<h2 style="text-align: center;">
+	<span style="font-size: 16px;"><span style="color: rgb(255, 0, 0);">GI&Aacute; TOUR CHƯA BAO GỒM V&Eacute; BAY KHỨ HỒI TPHCM - H&Agrave; NỘI</span></span></h2>
+<h2 style="text-align: center;">
+	<span style="font-size: 16px;"><span style="color: rgb(255, 0, 0);">&nbsp;18.790.000VNĐ/KH&Aacute;CH</span></span></h2>
+<p style="text-align: center;">
+	<strong><span style="color: rgb(255, 0, 0);">(GI&Aacute; &Aacute;P DỤNG CHO ĐO&Agrave;N​ 10 KH&Aacute;CH TRỞ L&Ecirc;N )</span></strong></p>
+<p>
+	CH&Uacute; &Yacute;: Gi&aacute; tr&ecirc;n c&oacute; thể thay đổi theo thời điểm</p>
+',content='',list_img='',title='Tour du lịch Trung Quốc:TPHCM - HÀ NỘI – CÔN MINH – LỆ GIANG – SHANGRI',keyword='tour du lịch côn minh đại lý lệ giang shangrila',description='Tham gia tour du lịch Côn Minh - Lệ Giang - Shangrila 6 ngày, AZbooking sẽ đưa bạn chìm đắm trong Thành cổ Lệ Giang ',inclusion='<ul>
+	<li>
+		Xe thăm quan điều ho&agrave; theo chương tr&igrave;nh.</li>
+	<li>
+		C&aacute;c bữa ăn theo chương tr&igrave;nh 5 bữa s&aacute;ng, 10 bữa ch&iacute;nh (bữa ch&iacute;nh: 8 m&oacute;n + 1 canh).</li>
+	<li>
+		Trong chương tr&igrave;nh c&oacute; 1 bữa thưởng thức đặc sản lẩu nấm rừng</li>
+	<li>
+		Hướng dẫn vi&ecirc;n nhiệt t&igrave;nh, chu đ&aacute;o suốt tuyến</li>
+	<li>
+		Kh&aacute;ch sạn ti&ecirc;u chuẩn 3 sao (2 người/ph&ograve;ng. Trường hợp lẻ nam lẻ nữ &aacute;p dụng ph&ograve;ng 3).</li>
+	<li>
+		V&eacute; 1 lượt c&aacute;c điểm thăm quan.</li>
+	<li>
+		Bảo hiểm du lịch theo qui định mức 15.000USD/người/vụ.</li>
+	<li>
+		Nước uống 01 chai/ng&agrave;y/người.</li>
+	<li>
+		Visa xuất nhập cảnh Trung Quốc</li>
+	<li>
+		V&eacute; t&agrave;u hoả&nbsp; khứ hồi giường nằm khoang 6 C&ocirc;n Minh - Lệ Giang &ndash; C&ocirc;n Minh</li>
+</ul>
+',exclusion='<ul>
+	<li>
+		Hộ chiếu c&ograve;n hạn &iacute;t nhất tr&ecirc;n 6 th&aacute;ng</li>
+	<li>
+		Chi ph&iacute; c&aacute; nh&acirc;n</li>
+	<li>
+		Ph&ograve;ng đơn kh&aacute;ch sạn</li>
+	<li>
+		Đồ uống trong c&aacute;c bữa ăn.</li>
+	<li>
+		Tip cho HDV v&agrave; l&aacute;i xe (5usd/người/ng&agrave;y)</li>
+	<li>
+		VAT</li>
+	<li>
+		V&eacute; bay khứ hồi TPHCM - H&agrave; Nội</li>
+</ul>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; text-align: center;">
+	<span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;"><img alt="" src="/view/admin/Themes/kcfinder/upload/images/icon/hotline.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; width: 510px; height: 153px;" /></span></span></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; text-align: center;">
+	<span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;">HOẶC</span></span></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; text-align: center;">
+	<span style="box-sizing: border-box; font-size: 16px;"><span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; background-color: rgb(255, 255, 0);">CHAT ONLINE NGAY</span></span></span></span></p>
+',updated='17-11-12 03:29:22' where id=224;
+insert into tour (dieuhanh_id,tour_quoc_te,DanhMuc1Id,DanhMuc2Id,danhmuc_multi,promotion,packages,name,name_url,count_down,code,img,price_tiep_thi,price_sales,price,price_2,price_3,price_4,price_5,price_6,price_number,price_number_2,price_number_3,price_number_4,price_number_5,price_number_6,name_price,name_price_2,name_price_3,name_price_4,name_price_5,name_price_6,so_cho,durations,departure,departure_time,destination,vehicle,hotel,summary,highlights,schedule,price_list,content,list_img,title,keyword,description,inclusion,exclusion,updated) values ('1','1','2','4','','0','1','test','test','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','', '17-11-12 03:29:55');
+delete from tour where id=225;
+update tour set dieuhanh_id='14', tour_quoc_te='1',DanhMuc1Id='10',DanhMuc2Id='58',danhmuc_multi='',promotion='1',packages='0',name='Tour du lịch Trung Quốc: HÀ NỘI – CÔN MINH – LỆ GIANG – SHANGRI-LA đường bộ',name_url='tour-du-lich-trung-quoc-ha-noi-con-minh-le-giang-shangri-la-duong-bo',count_down='',code='',img='/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/du-lich-trung-quoc-6-ngay-5-dem-azbooking.jpg',price_tiep_thi='700000',price_sales='17390000',price='16390000',price_2='',price_3='',price_4='',price_5='',price_6='',price_number='',price_number_2='',price_number_3='',price_number_4='',price_number_5='',price_number_6='',name_price='',name_price_2='',name_price_3='',name_price_4='',name_price_5='',name_price_6='',so_cho='3',durations='6 Ngày 5 Đêm',departure='1',departure_time='21/10, 21/11',destination='Côn Minh, Lệ Giang, Shangrila, Thạch Lâm',vehicle='Tàu hỏa, ô tô',hotel='3',summary='<p style="text-align: justify;">
+	<em><strong>Lệ Giang</strong>&nbsp;l&agrave; cố đ&ocirc; của vương quốc Naxi, cao 2.410 m&eacute;t so với mực nước biển v&agrave; nằm tr&ecirc;n Cao nguy&ecirc;n T&acirc;y Bắc V&acirc;n Nam ở miền T&acirc;y Nam Trung Hoa. Tọa lạc dọc theo tuyến thương mại quan trọng m&agrave; trước đ&acirc;y l&agrave; một phần của Con đường Tơ lụa từ V&acirc;n Nam qua T&acirc;y Tạng,&nbsp;</em><em><strong>C&ocirc;n Minh</strong>&nbsp;- th&agrave;nh phố m&ugrave;a xu&acirc;n bạt ng&agrave;n hoa nở.&nbsp;</em><em>Th&agrave;nh cổ&nbsp;<strong>Đại L&yacute;</strong>&nbsp;cổ k&iacute;nh, ki&ecirc;n cố v&agrave; r&ecirc;u phong - nơi quay bộ phim Thi&ecirc;n Long B&aacute;t Bộ nổi tiếng.&nbsp;</em></p>
+<p style="text-align: justify;">
+	<em>Thần b&iacute;&nbsp;<a href="http://tourdulichtrungquoc.net/tin-tuc/van-nam/den-shangri-la-ban-se-nhan-ra-rang-thung-lung-bat-tu-la-co-that.html">t<strong>hung lũng &quot;bất tử&quot; Shangri-La</strong></a>:&nbsp;<strong>Shangri-La</strong>&nbsp;nằm trong một cao nguy&ecirc;n cao hơn 3.300m so với mực nước biển, bao quanh bởi những ngọn đồi xanh tươi tốt, hồ nước tuyệt đẹp, kh&ocirc;ng kh&iacute; trong l&agrave;nh. Đ&acirc;y l&agrave; nơi sinh sống chủ yếu của một bộ phận kh&ocirc;ng nhỏ những người T&acirc;y Tạng, nơi tọa lạc của rất nhiều danh thắng, đền ch&ugrave;a, tu viện Phật gi&aacute;o&hellip; Shangri-La c&ograve;n nổi tiếng với c&ocirc;ng vi&ecirc;n quốc gia Pudacuo.&nbsp;Đ&acirc;y l&agrave; khu vực rộng khoảng 1.300km2 v&agrave; l&agrave; c&ocirc;ng vi&ecirc;n quốc gia đầu ti&ecirc;n ở Trung Quốc.</em></p>
+<p style="text-align: justify;">
+	<span style="box-sizing: border-box; font-family: Tahoma; font-size: 14px; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;">Tour du lịch Trung Quốc: H&Agrave; NỘI &ndash; C&Ocirc;N MINH &ndash; LỆ GIANG &ndash; SHANGRI-LA 6 Ng&agrave;y 5 Đ&ecirc;m</span></span><span style="box-sizing: border-box; font-family: Tahoma; font-size: 14px; color: rgb(255, 0, 0);">&nbsp;</span><span style="color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px;">sẽ đưa bạn qua những điểm đến v&ocirc; c&ugrave;ng hấp dẫn:&nbsp;</span></p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; height: 15px; width: 15px;" />&nbsp;Ch&igrave;m đắm trong&nbsp;<strong>Th&agrave;nh cổ Lệ Giang</strong>&nbsp;- được mệnh danh l&agrave; &quot;Venice của Phương Đ&ocirc;ng&quot;</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; height: 15px; width: 15px;" />&nbsp;Cho&aacute;ng ngợp với vẻ đẹp h&ugrave;ng vĩ của&nbsp;<strong>KHE HỒ NHẢY</strong></p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; height: 15px; width: 15px;" />&nbsp;Kh&aacute;m ph&aacute;&nbsp;<a href="http://tourdulichtrungquoc.net/tin-tuc/van-nam/den-shangri-la-ban-se-nhan-ra-rang-thung-lung-bat-tu-la-co-that.html"><strong>thung lũng Shangrila</strong></a>&nbsp;- chốn ti&ecirc;n cảnh của V&acirc;n Nam</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; height: 15px; width: 15px;" />&nbsp;Dạo quanh&nbsp;<strong>th&agrave;nh phố C&ocirc;n Minh</strong>&nbsp;với &quot;T&acirc;y Sơn Long M&ocirc;n&quot;,&nbsp;&quot;Tam Th&agrave;nh C&aacute;t&quot;</p>
+<p style="text-align: justify;">
+	V&agrave; c&ograve;n rất nhiều những điểm đến hấp dẫn kh&aacute;c. Đăng k&yacute; ngay tour du lịch n&agrave;y của <strong>AZbooking&nbsp;</strong>để c&oacute; cơ hội kh&aacute;m ph&aacute; nhiều hơn c&aacute;c điểm đến nh&eacute;!</p>
+',highlights='<p background-color:="" font-size:="" open="" style="box-sizing: border-box; margin: 0px 0px 10px 40px; font-family: Tahoma; font-size: 14px; line-height: 1.7em; color: rgb(51, 51, 51); text-align: center;" text-align:="">
+	<span style="color:#000080;">CHƯƠNG TR&Igrave;NH KH&Ocirc;NG V&Agrave;O C&Aacute;C ĐIỂM SHOPPING</span></p>
+<p background-color:="" font-size:="" open="" style="box-sizing: border-box; margin: 0px 0px 10px 40px; font-family: Tahoma; font-size: 14px; line-height: 1.7em; color: rgb(51, 51, 51); text-align: center;" text-align:="">
+	<span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box;"><span style="box-sizing: border-box; font-weight: 700;">DỊCH VỤ K&Egrave;M THEO HẤP DẪN C&Ugrave;NG CHƯƠNG TR&Igrave;NH</span></span></span></p>
+<table border="1" cellpadding="0" cellspacing="0" style="width: 891px;">
+	<tbody style="box-sizing: border-box;">
+		<tr style="box-sizing: border-box;">
+			<td style="box-sizing: border-box; padding: 12px 10px; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px; text-align: center;">
+					<img alt="Bảo hiểm du lịch" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/icon-bao-hiem.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 60px; height: 60px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px; text-align: center;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">Bảo hiểm du lịch</span></p>
+			</td>
+			<td style="box-sizing: border-box; padding: 12px 10px; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px; text-align: center;">
+					<img alt="Bữa ăn theo chương trình" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/icon-bua-an.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 60px; height: 60px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px; text-align: center;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">Bữa ăn theo chương tr&igrave;nh</span></p>
+			</td>
+			<td style="box-sizing: border-box; padding: 12px 10px; text-align: center; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<img alt="Hướng dẫn viên suốt tuyến" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/icon-hdv.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 60px; height: 60px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">Hướng dẫn vi&ecirc;n suốt tuyến</span></p>
+			</td>
+			<td style="box-sizing: border-box; padding: 12px 10px; text-align: center; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<img alt="Vé tham quan theo chương trình" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/icon-ve-tham-quan.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 60px; height: 60px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">V&eacute; tham quan theo chương tr&igrave;nh</span></p>
+			</td>
+		</tr>
+		<tr style="box-sizing: border-box;">
+			<td style="box-sizing: border-box; padding: 12px 10px; text-align: center; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<img alt="Xe đưa đón theo chương trình" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/icon-xe-dua-don.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 60px; height: 60px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">Xe đưa đ&oacute;n theo chương tr&igrave;nh</span></p>
+			</td>
+			<td style="box-sizing: border-box; padding: 12px 10px; text-align: center; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<img alt="Khách sạn tiêu chuẩn" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/icon-hotel.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 60px; height: 60px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">Kh&aacute;ch sạn ti&ecirc;u chuẩn</span></p>
+			</td>
+			<td style="box-sizing: border-box; padding: 12px 10px; text-align: center; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<img alt="Quà tặng kèm" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/icon-hop-qua.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 50px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">Qu&agrave; tặng k&egrave;m 500K</span></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					&nbsp;</p>
+			</td>
+			<td style="box-sizing: border-box; padding: 12px 10px; text-align: center; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; text-align: center;">
+	<br style="box-sizing: border-box;" />
+	<span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;"><img alt="" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/hotline.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; width: 300px; height: 90px;" /></span></span></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; text-align: center;">
+	<span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;">HOẶC</span></span></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; text-align: center;">
+	<span style="box-sizing: border-box; font-size: 16px;"><span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; background-color: rgb(255, 255, 0);">CHAT ONLINE NGAY</span></span></span></span></p>
+<p style="text-align: center; box-sizing: border-box; margin: 0px 0px 10px;">
+	<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">Qu&agrave; tặng k&egrave;m 500K</span></p>
+<div>
+	&nbsp;</div>
+',schedule='<h2>
+	<span style="font-size:16px;"><span style="color:#ff0000;"><strong>NG&Agrave;Y 01: H&Agrave; NỘI &ndash; H&Agrave; KHẨU &ndash; C&Ocirc;N MINH&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(Ăn trưa, tối)</strong></span></span></h2>
+<p>
+	<strong>05h00</strong>: Xe v&agrave; HDV đ&oacute;n đo&agrave;n tại điểm hẹn (Rạp Xiếc) đưa đo&agrave;n l&ecirc;n cửa khẩu <strong>H&agrave; Khẩu</strong>, ăn s&aacute;ng tr&ecirc;n đường ( tự t&uacute;c). Đo&agrave;n tiếp tục khởi h&agrave;nh đi <strong>H&agrave; Khẩu</strong>. Sau khi l&agrave;m thủ tục nhập cảnh, đo&agrave;n l&ecirc;n &ocirc; t&ocirc; đi <strong>C&ocirc;n Minh.</strong></p>
+<p>
+	Khoảng <strong>19h00 </strong>tới C&ocirc;n Minh Qu&yacute; kh&aacute;ch d&ugrave;ng bữa tại nh&agrave; h&agrave;ng</p>
+<p>
+	<strong>21h30:</strong> Đo&agrave;n khởi h&agrave;nh ra ga t&agrave;u hoả l&ecirc;n chuyến t&agrave;u hoả <strong>C&ocirc;n Minh - Lệ Giang&nbsp; K9602&nbsp; 22h23/08h35</strong> ,Nghỉ đ&ecirc;m tr&ecirc;n t&agrave;u hoả (giường nằm khoang 6)</p>
+<h2>
+	<span style="font-size:16px;"><span style="color:#ff0000;"><strong>NG&Agrave;Y 02: LỆ GIANG&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;( Ăn s&aacute;ng, trưa, tối)</strong></span></span></h2>
+<p>
+	<strong>S&aacute;ng:</strong> 08h35 t&agrave;u đến Lệ Giang, HDV đưa đo&agrave;n đi ăn s&aacute;ng, Q&uacute;y kh&aacute;ch thăm quan <strong><em>C&ocirc;ng Vi&ecirc;n Hắc Long Đ&agrave;m</em></strong> &ndash; nơi D&ograve;ng nước từ <strong><em>n&uacute;i băng Ngọc Long</em></strong> đổ về nu&ocirc;i sống v&ugrave;ng đất Lệ Giang. Từ c&ocirc;ng vi&ecirc;n Hắc Long c&oacute; thể ngắm sự h&ugrave;ng vĩ của n&uacute;i tuyết ng&agrave;n năm, trong khung cảnh thanh b&igrave;nh của nước hồ phẳng lặng.. Qu&yacute; kh&aacute;ch gh&eacute; thăm <strong><em>Mộc Phủ</em></strong>, <strong><em>Vạn Cổ Lầu </em></strong>một c&ocirc;ng tr&igrave;nh được coi l&agrave; ti&ecirc;u biểu cho lịch sử v&agrave; văn h&oacute;a nơi đ&acirc;y. <strong><em>Mộc phủ</em></strong> được v&iacute; như Tử Cấm th&agrave;nh của phương nam. Trước cổng, d&ograve;ng nước chảy từ hướng bắc xuống được bắc ngang bởi c&acirc;y cầu đ&aacute; rộng kh&ocirc;ng c&oacute; th&agrave;nh. Đối diện b&igrave;nh phong ngo&agrave;i l&agrave; t&ograve;a cổng ch&agrave;o bằng đ&aacute;. Xưa kia t&ograve;a cổng ch&agrave;o n&agrave;y l&agrave; c&ocirc;ng tr&igrave;nh kỳ vĩ nhất đất Lệ Giang, l&agrave;m bằng đ&aacute; ngọc trắng,</p>
+<p>
+	Tham quan <strong><em>Th&agrave;nh cổ Lệ Giang</em></strong> - x&acirc;y dựng c&aacute;ch đ&acirc;y hơn 800 năm, được <strong><em>Unessco</em></strong> c&ocirc;ng nhận l&agrave; di sản văn ho&aacute; thế giới năm 1997- một di sản văn h&oacute;a thế giới với phong cảnh đẹp đẽ xứ nước, được mệnh danh l&agrave; &quot;Venice của Phương Đ&ocirc;ng&quot;, nơi đ&acirc;y nh&agrave; nh&agrave; đều c&oacute; suối chảy qua, những c&acirc;y liễu bu&ocirc;ng xuống c&aacute;c bậc cửa v&agrave; những c&acirc;y cầu nhỏ xinh xắn. Dạo <strong><em>Phố Tứ Phương</em></strong> ở trung t&acirc;m th&agrave;nh cổ.</p>
+<p>
+	Sau khi d&ugrave;ng bữa tối, Qu&yacute; kh&aacute;ch tự do ngắm sắc m&agrave;u <strong><em>Lệ Giang</em></strong> về đ&ecirc;m. Tự do thưởng thức được &acirc;m nhạc v&agrave; c&aacute;c điệu d&acirc;n vũ. Phố cổ Lệ Giang c&ograve;n c&oacute; thể gọi l&agrave; phố của &acirc;m nhạc d&acirc;n tộc v&agrave; d&acirc;n vũ m&agrave; bạn chẳng cần tốn một xu tiền v&eacute; lại c&oacute; thể trở th&agrave;nh diễn vi&ecirc;n ngay nếu th&iacute;ch.. Nghỉ đ&ecirc;m tại <strong><em>Lệ Giang</em></strong></p>
+<p>
+	<span style="font-size:16px;"><span style="color:#ff0000;"><strong>NG&Agrave;Y 03: LỆ GIANG &ndash; SHANGRI-LA&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(Ăn s&aacute;ng, trưa, tối)&nbsp;</strong></span></span></p>
+<p>
+	Sau bữa s&aacute;ng, đo&agrave;n đi <strong>Shangrila</strong>. Tr&ecirc;n đường gh&eacute; thăm <strong>khe Hổ Nhảy</strong>, được xem l&agrave; hẻm n&uacute;i s&acirc;u nhất Thế Giới. Đ&acirc;y l&agrave; một hẻm n&uacute;i d&agrave;i hơn 15 km nằm kẹp giữa hai <strong>d&atilde;y n&uacute;i Ngọc Long Tuyết Sơn</strong> (cao 5.596 m) v&agrave; <strong>Ha Ba Tuyết Sơn</strong> (cao 5.396 m). Thăm ch&ugrave;a&nbsp; <strong>Songzanlin</strong> l&agrave; tu viện Phật gi&aacute;o Mật T&ocirc;ng T&acirc;y Tạng quan trọng v&agrave; lớn nhất ở V&acirc;n Nam, Trung Quốc. Songzanlin được đặt trong một cảnh quan tuyệt đẹp ở độ cao hơn 3.300m c&aacute;ch Shangrila 5km.&nbsp;</p>
+<h2>
+	<span style="font-size:16px;"><span style="color:#ff0000;"><strong>NG&Agrave;Y&nbsp; 04: SHANGRI-LA &ndash; LỆ GIANG&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(Ăn s&aacute;ng, trưa, tối)</strong></span></span></h2>
+<p>
+	Sau bữa s&aacute;ng, đo&agrave;n đi thăm vườn <strong>c&ocirc;ng vi&ecirc;n Quốc gia PuDaCuo</strong> (Phổ Đạt Thố) , <strong>Vườn quốc gia Pudacuo</strong>, <strong>Shangri-la</strong>, V&acirc;n Nam: Thi&ecirc;n nhi&ecirc;n ở <strong>Shangri-La</strong> xứng đ&aacute;ng được mệnh danh l&agrave; chốn ti&ecirc;n cảnh với những cảnh quan n&uacute;i cao tuyết trắng, rừng xanh nắng v&agrave;ng, thi thoảng lại ẩn hiện trong sương kh&oacute;i với một hệ động thực vật v&ocirc; c&ugrave;ng phong ph&uacute;. <strong>Pudacuo</strong> l&agrave; c&ocirc;ng vi&ecirc;n quốc gia đầu ti&ecirc;n ở Trung Quốc đ&aacute;p ứng đủ c&aacute;c ti&ecirc;u chuẩn được thiết lập bởi Tổ chức Bảo tồn Thi&ecirc;n nhi&ecirc;n Quốc tế (IUCN). Một trong 40 thắng cảnh đẹp của Trung Quốc.Pudacuo l&agrave; thi&ecirc;n đường cho những người y&ecirc;u th&iacute;ch chụp ảnh. Bốn m&ugrave;a ở đ&acirc;y cảnh sắc đều kh&ocirc;ng giống nhau. M&ugrave;a xu&acirc;n ở đ&acirc;y trăm hoa đua nở. M&ugrave;a h&egrave; l&agrave; một m&agrave;u xanh biếc phủ đầy khắp n&uacute;i. M&ugrave;a thu l&agrave; cảnh rừng rậm tầng tầng v&ocirc; c&ugrave;ng lộng lẫy. M&ugrave;a đ&ocirc;ng du kh&aacute;ch c&oacute; thể thưởng thức cảnh lớp tuyết trắng dưới mặt hồ nước xanh.</p>
+<p>
+	Chiều tự do tham quan Th&agrave;nh cổ DuKeZong. Sau đ&oacute; di chuyển về <strong>Lệ Giang</strong>. Nghỉ tại <strong>Lệ Giang</strong></p>
+<h2>
+	<span style="font-size:16px;"><span style="color:#ff0000;"><strong>NG&Agrave;Y&nbsp; 05: LỆ GIANG &ndash; C&Ocirc;N MINH&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(Ăn s&aacute;ng, trưa, tối)</strong></span></span></h2>
+<p>
+	Ăn s&aacute;ng tại kh&aacute;ch sạn, đưa đo&agrave;n đi ăn s&aacute;ng, sau đ&oacute; đo&agrave;n khởi h&agrave;nh đi tới khu khu lịch <strong>N&uacute;i Tuyết Ngọc Long.</strong> Qu&yacute; kh&aacute;ch đi c&aacute;p treo nhỏ l&ecirc;n thăm <strong>V&acirc;n Tam B&igrave;nh</strong> &ndash; độ cao 3200 m ngắm cảnh đẹp <strong>N&uacute;i tuyết Ngọc Long</strong> - ngọn n&uacute;i cao 5596 m tuyết phủ quanh năm. Phần băng vĩnh cửu &aacute;nh l&ecirc;n một m&agrave;u xanh như ngọc. Lại gọi đ&acirc;y l&agrave; n&uacute;i trinh nữ v&igrave; cho đến nay con người chưa một lần chinh phục được n&oacute;. Nhiều nh&agrave; leo n&uacute;i đ&atilde; bỏ mạng hoặc ngậm ng&ugrave;i r&uacute;t lui, bất lực trước sự trinh nguy&ecirc;n b&iacute; ẩn của v&ugrave;ng n&uacute;i v&agrave;o loại đẹp nhất tỉnh V&acirc;n Nam n&agrave;y. Tham quan <strong>Bạch Thủy H&agrave;</strong> được tạo th&agrave;nh bởi băng tan từ n&uacute;i tuyết Ngọc Long, <strong>thảo nguy&ecirc;n Cam Hải Tử</strong>, thăm <strong>Ngọc Thủy Trại</strong> &ndash; nơi c&oacute; cảnh đẹp v&agrave; thể hiện tập tục, t&iacute;n ngưỡng của d&acirc;n Na Xi v&agrave; nền văn h&oacute;a Đ&ocirc;ng Ba</p>
+<p>
+	Tối : Sau bữa tối, ra ga l&ecirc;n t&agrave;u hoả tuyến <strong>Lệ Giang &ndash; C&ocirc;n Minh , K9684&nbsp; 21h50/06h41</strong> &nbsp;, nghỉ đ&ecirc;m tr&ecirc;n t&agrave;u hoả ( <strong><em>giường nằm khoang 6</em></strong> ) .</p>
+<h2>
+	<span style="font-size:16px;"><span style="color:#ff0000;"><strong>NG&Agrave;Y&nbsp; 06: C&Ocirc;N MINH &ndash; THẠCH L&Acirc;M - H&Agrave; KHẨU &ndash; H&Agrave; NỘI&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (Ăn s&aacute;ng, trưa, tối)</strong></span></span></h2>
+<p>
+	S&aacute;ng 06h41 t&agrave;u đến <strong>C&ocirc;n Minh</strong>, đưa đo&agrave;n ăn s&aacute;ng, sau đ&oacute; đo&agrave;n khởi h&agrave;nh đi thăm <strong>Rừng &ETH;&aacute; Thạch L&acirc;m</strong> - kỳ quan c&oacute; một kh&ocirc;ng hai của Trung Quốc v&agrave; Thế Giới, c&oacute; nhiều cảnh quay trong bộ phim truyền h&igrave;nh nổi tiếng của Trung Quốc &ldquo; <strong>T&acirc;y Du K&yacute;</strong>&rdquo;, Sau do , đo&agrave;n đ&aacute;p &ocirc; t&ocirc; Thạch L&acirc;m- H&agrave; Khẩu, khoảng 18 giờ tới H&agrave; Khẩu, tiến đo&agrave;n ra cửa khẩu l&agrave;m thủ tục xuất cảnh.</p>
+<p>
+	Đo&agrave;n ăn tối tại L&agrave;o Cai, sau đ&oacute; tiếp tục l&ecirc;n xe về H&agrave; Nội</p>
+<p>
+	&nbsp;</p>
+',price_list='<h2 align="center">
+	<span style="font-size:16px;"><span style="color:#ff0000;"><strong>GI&Aacute; TRỌN G&Oacute;I : 16.390.000VNĐ/KH&Aacute;CH</strong></span></span></h2>
+<p align="center">
+	<span style="color:#000000;"><strong>(GI&Aacute; &Aacute;P DỤNG CHO ĐO&Agrave;N 10 KH&Aacute;CH TRỞ LỂN)</strong></span></p>
+<p>
+	&nbsp;</p>
+',content='',list_img='',title='Tour du lịch Trung Quốc: HÀ NỘI – CÔN MINH – LỆ GIANG – SHANGRI-LA 6 N',keyword='du lịch Shangrila, tour du lịch côn minh đại lý lệ giang, tour du lịch trung quốc mới, điểm mới của trung quốc, du lịch khám phá trung quốc',description='Tham gia tour du lịch Côn Minh - Lệ Giang - Shangrila 6 ngày, AZbooking sẽ đưa bạn chìm đắm trong Thành cổ Lệ Giang - được mệnh danh là ',inclusion='<ul>
+	<li>
+		Xe thăm quan điều ho&agrave; theo chương tr&igrave;nh.</li>
+	<li>
+		C&aacute;c bữa ăn theo chương tr&igrave;nh 5 bữa s&aacute;ng, 12 bữa ch&iacute;nh (bữa ch&iacute;nh: 8 m&oacute;n + 1 canh).</li>
+	<li>
+		Hướng dẫn vi&ecirc;n nhiệt t&igrave;nh, chu đ&aacute;o suốt tuyến</li>
+	<li>
+		Kh&aacute;ch sạn ti&ecirc;u chuẩn 3 sao (2 người/ph&ograve;ng. Trường hợp lẻ nam lẻ nữ &aacute;p dụng ph&ograve;ng 3).</li>
+	<li>
+		V&eacute; 1 lượt c&aacute;c điểm thăm quan.</li>
+	<li>
+		Bảo hiểm du lịch theo qui định mức 15.000USD/người/vụ.</li>
+	<li>
+		Nước uống 01 chai/ng&agrave;y/người.</li>
+	<li>
+		Visa xuất nhập cảnh Trung Quốc</li>
+	<li>
+		V&eacute; t&agrave;u hoả khứ hồi giường nằm khoang 6 C&ocirc;n Minh - &nbsp;Lệ Giang &ndash; C&ocirc;n Minh</li>
+</ul>
+',exclusion='<ul>
+	<li>
+		Hộ chiếu c&ograve;n hạn &iacute;t nhất tr&ecirc;n 6 th&aacute;ng</li>
+	<li>
+		Chi ph&iacute; c&aacute; nh&acirc;n</li>
+	<li>
+		Ph&ograve;ng đơn kh&aacute;ch sạn</li>
+	<li>
+		&nbsp;Đồ uống trong c&aacute;c bữa ăn.</li>
+	<li>
+		Tip cho HDV v&agrave; l&aacute;i xe (5usd/người/ng&agrave;y)</li>
+	<li>
+		VAT&nbsp; &nbsp; &nbsp;</li>
+</ul>
+',updated='17-11-12 03:32:11' where id=223;
+update tour set dieuhanh_id='1', tour_quoc_te='1',DanhMuc1Id='10',DanhMuc2Id='58',danhmuc_multi='',promotion='1',packages='0',name='TOUR DU LỊCH TRUNG QUỐC: HÀ NỘI – CÔN MINH – LỆ GIANG – SHANGRI-LA',name_url='tour-du-lich-trung-quoc-ha-noi-con-minh-le-giang-shangri-la',count_down='2017-09-30 14:10:00',code='',img='/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/du-lich-trung-quoc-6-ngay-5-dem-azbooking.jpg',price_tiep_thi='800000',price_sales='19790000',price='18790000',price_2='',price_3='',price_4='',price_5='',price_6='',price_number='',price_number_2='',price_number_3='',price_number_4='',price_number_5='',price_number_6='',name_price='',name_price_2='',name_price_3='',name_price_4='',name_price_5='',name_price_6='',so_cho='',durations='6 Ngày 5 Đêm',departure='1',departure_time='24/10',destination='Côn Minh, Lệ Giang, Shangrila',vehicle='Máy bay, oto, tàu cao tốc',hotel='3',summary='<p style="text-align: justify;">
+	<em><strong>Lệ Giang</strong>&nbsp;l&agrave; cố đ&ocirc; của vương quốc Naxi, cao 2.410 m&eacute;t so với mực nước biển v&agrave; nằm tr&ecirc;n Cao nguy&ecirc;n T&acirc;y Bắc V&acirc;n Nam ở miền T&acirc;y Nam Trung Hoa. Tọa lạc dọc theo tuyến thương mại quan trọng m&agrave; trước đ&acirc;y l&agrave; một phần của Con đường Tơ lụa từ V&acirc;n Nam qua T&acirc;y Tạng,&nbsp;</em><em><strong>C&ocirc;n Minh</strong>&nbsp;- th&agrave;nh phố m&ugrave;a xu&acirc;n bạt ng&agrave;n hoa nở.&nbsp;</em><em>Th&agrave;nh cổ&nbsp;<strong>Đại L&yacute;</strong>&nbsp;cổ k&iacute;nh, ki&ecirc;n cố v&agrave; r&ecirc;u phong - nơi quay bộ phim Thi&ecirc;n Long B&aacute;t Bộ nổi tiếng.&nbsp;</em></p>
+<p style="text-align: justify;">
+	<em>Thần b&iacute;&nbsp;<a href="http://tourdulichtrungquoc.net/tin-tuc/van-nam/den-shangri-la-ban-se-nhan-ra-rang-thung-lung-bat-tu-la-co-that.html">t<strong>hung lũng &quot;bất tử&quot; Shangri-La</strong></a>:&nbsp;<strong>Shangri-La</strong>&nbsp;nằm trong một cao nguy&ecirc;n cao hơn 3.300m so với mực nước biển, bao quanh bởi những ngọn đồi xanh tươi tốt, hồ nước tuyệt đẹp, kh&ocirc;ng kh&iacute; trong l&agrave;nh. Đ&acirc;y l&agrave; nơi sinh sống chủ yếu của một bộ phận kh&ocirc;ng nhỏ những người T&acirc;y Tạng, nơi tọa lạc của rất nhiều danh thắng, đền ch&ugrave;a, tu viện Phật gi&aacute;o&hellip; Shangri-La c&ograve;n nổi tiếng với c&ocirc;ng vi&ecirc;n quốc gia Pudacuo.&nbsp;Đ&acirc;y l&agrave; khu vực rộng khoảng 1.300km2 v&agrave; l&agrave; c&ocirc;ng vi&ecirc;n quốc gia đầu ti&ecirc;n ở Trung Quốc.</em></p>
+<p style="text-align: justify;">
+	<span style="box-sizing: border-box; font-family: Tahoma; font-size: 14px; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;">Tour du lịch Trung Quốc: H&Agrave; NỘI &ndash; C&Ocirc;N MINH &ndash; LỆ GIANG &ndash; SHANGRI-LA 6 Ng&agrave;y 5 Đ&ecirc;m</span></span><span style="box-sizing: border-box; font-family: Tahoma; font-size: 14px; color: rgb(255, 0, 0);">&nbsp;</span><span style="color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px;">sẽ đưa bạn qua những điểm đến v&ocirc; c&ugrave;ng hấp dẫn:&nbsp;</span></p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; height: 15px; width: 15px;" />&nbsp;Ch&igrave;m đắm trong&nbsp;<strong>Th&agrave;nh cổ Lệ Giang</strong>&nbsp;- được mệnh danh l&agrave; &quot;Venice của Phương Đ&ocirc;ng&quot;</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; height: 15px; width: 15px;" />&nbsp;Cho&aacute;ng ngợp với vẻ đẹp h&ugrave;ng vĩ của&nbsp;<strong>KHE HỒ NHẢY</strong></p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; height: 15px; width: 15px;" />&nbsp;Kh&aacute;m ph&aacute;&nbsp;<a href="http://tourdulichtrungquoc.net/tin-tuc/van-nam/den-shangri-la-ban-se-nhan-ra-rang-thung-lung-bat-tu-la-co-that.html"><strong>thung lũng Shangrila</strong></a>&nbsp;- chốn ti&ecirc;n cảnh của V&acirc;n Nam</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; height: 15px; width: 15px;" />&nbsp;Dạo quanh&nbsp;<strong>th&agrave;nh phố C&ocirc;n Minh</strong>&nbsp;với &quot;T&acirc;y Sơn Long M&ocirc;n&quot;,&nbsp;&quot;Tam Th&agrave;nh C&aacute;t&quot;</p>
+<p style="text-align: justify;">
+	V&agrave; c&ograve;n rất nhiều những điểm đến hấp dẫn kh&aacute;c. Đăng k&yacute; ngay tour du lịch n&agrave;y của <strong>AZbooking </strong>để c&oacute; cơ hội kh&aacute;m ph&aacute; nhiều hơn c&aacute;c điểm đến nh&eacute;!</p>
+',highlights='<p background-color:="" font-size:="" open="" style="box-sizing: border-box; margin: 0px 0px 10px 40px; font-family: Tahoma; font-size: 14px; line-height: 1.7em; color: rgb(51, 51, 51); text-align: center;" text-align:="">
+	<span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box;"><span style="box-sizing: border-box; font-weight: 700;">DỊCH VỤ K&Egrave;M THEO HẤP DẪN C&Ugrave;NG CHƯƠNG TR&Igrave;NH</span></span></span></p>
+<table border="1" cellpadding="0" cellspacing="0" style="width: 891px;">
+	<tbody style="box-sizing: border-box;">
+		<tr style="box-sizing: border-box;">
+			<td style="box-sizing: border-box; padding: 12px 10px; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px; text-align: center;">
+					<img alt="Bảo hiểm du lịch" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/icon-bao-hiem.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 60px; height: 60px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px; text-align: center;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">Bảo hiểm du lịch</span></p>
+			</td>
+			<td style="box-sizing: border-box; padding: 12px 10px; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px; text-align: center;">
+					<img alt="Bữa ăn theo chương trình" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/icon-bua-an.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 60px; height: 60px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px; text-align: center;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">Bữa ăn theo chương tr&igrave;nh</span></p>
+			</td>
+			<td style="box-sizing: border-box; padding: 12px 10px; text-align: center; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<img alt="Hướng dẫn viên suốt tuyến" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/icon-hdv.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 60px; height: 60px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">Hướng dẫn vi&ecirc;n suốt tuyến</span></p>
+			</td>
+			<td style="box-sizing: border-box; padding: 12px 10px; text-align: center; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<img alt="Vé tham quan theo chương trình" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/icon-ve-tham-quan.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 60px; height: 60px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">V&eacute; tham quan theo chương tr&igrave;nh</span></p>
+			</td>
+		</tr>
+		<tr style="box-sizing: border-box;">
+			<td style="box-sizing: border-box; padding: 12px 10px; text-align: center; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<img alt="Xe đưa đón theo chương trình" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/icon-xe-dua-don.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 60px; height: 60px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">Xe đưa đ&oacute;n theo chương tr&igrave;nh</span></p>
+			</td>
+			<td style="box-sizing: border-box; padding: 12px 10px; text-align: center; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<img alt="Khách sạn tiêu chuẩn" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/icon-hotel.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 60px; height: 60px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">Kh&aacute;ch sạn ti&ecirc;u chuẩn</span></p>
+			</td>
+			<td style="box-sizing: border-box; padding: 12px 10px; text-align: center; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<img alt="Vé máy bay" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/icon-ve-may-bay.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 60px; height: 60px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">V&eacute; m&aacute;y bay</span></p>
+			</td>
+			<td style="box-sizing: border-box; padding: 12px 10px; text-align: center; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<img alt="Quà tặng kèm" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/icon-hop-qua.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 50px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">Qu&agrave; tặng k&egrave;m 500K</span></p>
+				<div style="box-sizing: border-box;">
+					&nbsp;</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; text-align: center;">
+	<br style="box-sizing: border-box;" />
+	<span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;"><img alt="" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/hotline.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; width: 300px; height: 90px;" /></span></span></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; text-align: center;">
+	<span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;">HOẶC</span></span></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; text-align: center;">
+	<span style="box-sizing: border-box; font-size: 16px;"><span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; background-color: rgb(255, 255, 0);">CHAT ONLINE NGAY</span></span></span></span></p>
+',schedule='<h2 style="text-align: justify;">
+	<span style="font-size: 16px;"><span style="color: rgb(255, 0, 0);">NG&Agrave;Y 01: H&Agrave; NỘI &ndash; C&Ocirc;N MINH &nbsp; &nbsp; &nbsp; &nbsp; (Ăn tối)&nbsp;</span></span></h2>
+<p style="text-align: justify;">
+	Xe v&agrave; HDV đ&oacute;n đo&agrave;n tại điểm hẹn, &nbsp;đưa đo&agrave;n l&ecirc;n s&acirc;n Bay , khỏi h&agrave;nh chuyến bay MU2576 l&uacute;c 16h25 &ndash; 18h50 .</p>
+<p style="text-align: justify;">
+	18h50 Xe v&agrave; HDV đ&oacute;n đo&agrave;n tại&nbsp;<strong>s&acirc;n bay C&ocirc;n Minh</strong>, sau bữa tối, HDV đưa đo&agrave;n ra ga t&agrave;u hoả, l&ecirc;n chuyến t&agrave;u hoả C&ocirc;n Minh - Lệ Giang&nbsp; K9602&nbsp;</p>
+<p style="text-align: justify;">
+	22h23 - 08h35: Nghỉ đ&ecirc;m tr&ecirc;n t&agrave;u hoả (giường nằm khoảng 6 )&nbsp;</p>
+<p style="text-align: center;">
+	&nbsp;</p>
+<h2 style="text-align: justify;">
+	<span style="font-size: 16px;"><span style="color: rgb(255, 0, 0);">NG&Agrave;Y 02: LỆ GIANG &nbsp; &nbsp; &nbsp;( Ăn s&aacute;ng, trưa, tối)</span></span></h2>
+<p style="text-align: justify;">
+	<strong>S&aacute;ng</strong>: 08h35 t&agrave;u đến Lệ Giang, HDV đưa đo&agrave;n đi ăn s&aacute;ng, Q&uacute;y kh&aacute;ch thăm quan:</p>
+<ul>
+	<li style="text-align: justify;">
+		<p>
+			C&ocirc;ng Vi&ecirc;n Hắc Long Đ&agrave;m &ndash; nơi d&ograve;ng nước từ n&uacute;i băng Ngọc Long đổ về nu&ocirc;i sống v&ugrave;ng đất Lệ Giang. Từ c&ocirc;ng vi&ecirc;n Hắc Long c&oacute; thể ngắm sự h&ugrave;ng vĩ của n&uacute;i tuyết ng&agrave;n năm, trong khung cảnh thanh b&igrave;nh của nước hồ phẳng lặng.</p>
+	</li>
+</ul>
+<p style="text-align: center;">
+	<img alt="Kết quả hình ảnh cho công viên hắc long đàm" src="https://s3-ap-southeast-1.amazonaws.com/mytour-static-file/upload_images/Image/Location/22_9_2016/7/du-lich-thanh-co-le-giang-trung-quoc-mytour-9.jpg" /></p>
+<ul>
+	<li style="text-align: justify;">
+		<p>
+			Qu&yacute; kh&aacute;ch gh&eacute; thăm Mộc Phủ, Vạn Cổ Lầu một c&ocirc;ng tr&igrave;nh được coi l&agrave; ti&ecirc;u biểu cho lịch sử v&agrave; văn h&oacute;a nơi đ&acirc;y. Mộc phủ được v&iacute; như Tử Cấm th&agrave;nh của phương nam. Trước cổng, d&ograve;ng nước chảy từ hướng bắc xuống được bắc ngang bởi c&acirc;y cầu đ&aacute; rộng kh&ocirc;ng c&oacute; th&agrave;nh. Đối diện b&igrave;nh phong ngo&agrave;i l&agrave; t&ograve;a cổng ch&agrave;o bằng đ&aacute;. Xưa kia t&ograve;a cổng ch&agrave;o n&agrave;y l&agrave; c&ocirc;ng tr&igrave;nh kỳ vĩ nhất đất Lệ Giang, l&agrave;m bằng đ&aacute; ngọc trắng</p>
+	</li>
+</ul>
+<p style="text-align: center;">
+	<img alt="Hình ảnh có liên quan" src="https://c1.staticflickr.com/3/2799/4272647979_b84c293e0b_z.jpg?zz=1" /></p>
+<ul>
+	<li style="text-align: justify;">
+		<p>
+			Tham quan Th&agrave;nh cổ Lệ Giang - x&acirc;y dựng c&aacute;ch đ&acirc;y hơn 800 năm, được Unessco c&ocirc;ng nhận l&agrave; di sản văn ho&aacute; thế giới năm 1997- một di sản văn h&oacute;a thế giới với phong cảnh đẹp đẽ xứ nước, được mệnh danh l&agrave; &quot;Venice của Phương Đ&ocirc;ng&quot;, nơi đ&acirc;y nh&agrave; nh&agrave; đều c&oacute; suối chảy qua, những c&acirc;y liễu bu&ocirc;ng xuống c&aacute;c bậc cửa v&agrave; những c&acirc;y cầu nhỏ xinh xắn. Dạo Phố Tứ Phương ở trung t&acirc;m th&agrave;nh cổ</p>
+	</li>
+</ul>
+<p style="text-align: justify;">
+	<strong>Sau khi d&ugrave;ng bữa tối</strong>, Qu&yacute; kh&aacute;ch tự do ngắm sắc m&agrave;u Lệ Giang về đ&ecirc;m. Tự do thưởng thức được &acirc;m nhạc v&agrave; c&aacute;c điệu d&acirc;n vũ. Phố cổ Lệ Giang c&ograve;n c&oacute; thể gọi l&agrave; phố của &acirc;m nhạc d&acirc;n tộc v&agrave; d&acirc;n vũ m&agrave; bạn chẳng cần tốn một xu tiền v&eacute; lại c&oacute; thể trở th&agrave;nh diễn vi&ecirc;n ngay nếu th&iacute;ch..</p>
+<p style="text-align: justify;">
+	Nghỉ đ&ecirc;m tại Lệ Giang</p>
+<p style="text-align: center;">
+	<img alt="Kết quả hình ảnh cho thành cổ lệ giang" src="https://haivanxanh.com/wp-content/uploads/thanh-co-Le-Giang-2.jpg" /></p>
+<h2 style="text-align: justify;">
+	<span style="font-size: 16px;"><span style="color: rgb(255, 0, 0);">NG&Agrave;Y 03: LỆ GIANG &ndash; SHANGRI-LA &nbsp; &nbsp; &nbsp; &nbsp;(Ăn s&aacute;ng, trưa, tối)</span></span></h2>
+<p style="text-align: justify;">
+	<strong>Sau bữa s&aacute;ng</strong>, đo&agrave;n đi&nbsp;<strong>Shangrila</strong>.</p>
+<p style="text-align: justify;">
+	Tr&ecirc;n đường gh&eacute; thăm&nbsp;<strong>khe Hổ Nhảy</strong>, được xem l&agrave; hẻm n&uacute;i s&acirc;u nhất Thế Giới. Đ&acirc;y l&agrave; một hẻm n&uacute;i d&agrave;i hơn 15 km nằm kẹp giữa hai&nbsp;<strong>d&atilde;y n&uacute;i Ngọc Long Tuyết Sơn</strong>&nbsp;(cao 5.596 m) v&agrave;&nbsp;<strong>Ha Ba Tuyết Sơn</strong>&nbsp;(cao 5.396 m). Nơi đ&acirc;y cảnh tượng v&ocirc; c&ugrave;ng h&ugrave;ng vĩ với d&ograve;ng s&ocirc;ng Kim Sa c&agrave;ng về ph&iacute;a hạ nguồn c&agrave;ng gập ghềnh v&agrave; chảy xiết.</p>
+<p style="text-align: justify;">
+	Tương truyền khi xưa một ch&uacute; hổ đ&atilde; chạy tho&aacute;t trong một lần bị thợ săn rượt đuổi bằng c&aacute;ch nhảy băng qua hẻm n&uacute;i tại điểm l&ograve;ng s&ocirc;ng hẹp nhất.</p>
+<p style="text-align: justify;">
+	<img alt="Kết quả hình ảnh cho khe hổ nhảy" src="http://static.kienthucdoday.com/content/images/thumbs/0011675_thot-tim-khi-dung-duoi-khe-ho-nhay-mua-lu.jpeg" /></p>
+<p style="text-align: justify;">
+	Đến&nbsp;<strong>Shangrila&nbsp;</strong>&ndash; một c&aacute;i t&ecirc;n kh&ocirc;ng hề xa lạ nếu ai đ&atilde; từng đọc qua&nbsp;<strong>tiểu thuyết Lost Horizon</strong>&nbsp;(Đường ch&acirc;n trời đ&atilde; mất) của nh&agrave; văn James Hilton, n&oacute; l&agrave; một thung lũng nằm ở T&acirc;y Bắc tỉnh V&acirc;n Nam, Trung Quốc, gần với T&acirc;y Tạng.</p>
+<p style="text-align: justify;">
+	Thăm&nbsp;<strong>ch&ugrave;a Songzanlin&nbsp;</strong>l&agrave;&nbsp;<strong>tu viện Phật gi&aacute;o Mật T&ocirc;ng T&acirc;y Tạng</strong>&nbsp;quan trọng v&agrave; lớn nhất ở V&acirc;n Nam, Trung Quốc.&nbsp;<strong>Songzanlin&nbsp;</strong>được đặt trong một cảnh quan tuyệt đẹp ở độ cao hơn 3.300m c&aacute;ch Shangrila 5km. Tu viện n&agrave;y do vị Đạt Lai Lạt Ma thứ 5 x&acirc;y dựng năm 1679 theo nguy&ecirc;n mẫu thu nhỏ của cung điện Potala (T&acirc;y Tạng) v&agrave; được ho&agrave;n th&agrave;nh sau 2 năm x&acirc;y dựng. V&agrave;o thời thịnh vượng nhất, nơi đ&acirc;y tập trung đến cả ng&agrave;n tăng sĩ.</p>
+<p style="text-align: center;">
+	<img alt="Kết quả hình ảnh cho chùa Songzanlin" src="https://cdn02.static-adayroi.com/resize/608_430/100/0/2017/08/07/1502096518122_9260606.jpg" /></p>
+<p style="text-align: justify;">
+	Ăn tối tại nh&agrave; h&agrave;ng v&agrave; nghỉ đ&ecirc;m tại kh&aacute;ch sạn tại&nbsp;<strong>Shangrila</strong>.</p>
+<h2 style="text-align: justify;">
+	<span style="font-size: 16px;"><span style="color: rgb(255, 0, 0);">NG&Agrave;Y&nbsp; 04: SHANGRI-LA &ndash; LỆ GIANG &nbsp; (Ăn s&aacute;ng, trưa, tối)</span></span></h2>
+<p style="text-align: justify;">
+	<strong>Sau bữa s&aacute;ng</strong>, đo&agrave;n đi thăm:</p>
+<p style="text-align: justify;">
+	<strong>Vườn c&ocirc;ng vi&ecirc;n Quốc gia PuDaCuo (Phổ Đạt Thố)</strong>: Thi&ecirc;n nhi&ecirc;n ở Shangri-La xứng đ&aacute;ng được mệnh danh l&agrave; chốn ti&ecirc;n cảnh với những cảnh quan n&uacute;i cao tuyết trắng, rừng xanh nắng v&agrave;ng, thi thoảng lại ẩn hiện trong sương kh&oacute;i với một hệ động thực vật v&ocirc; c&ugrave;ng phong ph&uacute;.</p>
+<p style="text-align: justify;">
+	<strong>Pudacuo&nbsp;</strong>l&agrave; c&ocirc;ng vi&ecirc;n quốc gia đầu ti&ecirc;n ở Trung Quốc đ&aacute;p ứng đủ c&aacute;c ti&ecirc;u chuẩn được thiết lập bởi Tổ chức Bảo tồn Thi&ecirc;n nhi&ecirc;n Quốc tế (IUCN). Một trong 40 thắng cảnh đẹp của Trung Quốc.&nbsp;<strong>Pudacuo&nbsp;</strong>l&agrave; thi&ecirc;n đường cho những người y&ecirc;u th&iacute;ch chụp ảnh.</p>
+<p style="text-align: justify;">
+	Bốn m&ugrave;a ở đ&acirc;y cảnh sắc đều kh&ocirc;ng giống nhau:</p>
+<ul>
+	<li style="text-align: justify;">
+		<p>
+			M&ugrave;a xu&acirc;n ở đ&acirc;y trăm hoa đua nở.</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			M&ugrave;a h&egrave; l&agrave; một m&agrave;u xanh biếc phủ đầy khắp n&uacute;i.</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			M&ugrave;a thu l&agrave; cảnh rừng rậm tầng tầng v&ocirc; c&ugrave;ng lộng lẫy.</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			M&ugrave;a đ&ocirc;ng du kh&aacute;ch c&oacute; thể thưởng thức cảnh lớp tuyết trắng dưới mặt hồ nước xanh.</p>
+	</li>
+</ul>
+<p style="text-align: justify;">
+	Chiều tự do tham quan&nbsp;<strong>Th&agrave;nh cổ DuKeZong</strong>. Sau đ&oacute; di chuyển về&nbsp;<strong>Lệ Giang</strong>. Nghỉ tại Lệ Giang</p>
+<p style="text-align: justify;">
+	<img alt="Hình ảnh có liên quan" src="http://znews-photo-td.zadn.vn/w1024/Uploaded/djsim/2014_12_10/t1.jpg" /></p>
+<h2 style="text-align: justify;">
+	<span style="font-size: 16px;"><span style="color: rgb(255, 0, 0);">NG&Agrave;Y&nbsp; 05: LỆ GIANG &ndash; C&Ocirc;N MINH &nbsp; (Ăn s&aacute;ng, trưa, tối)</span></span></h2>
+<p style="text-align: justify;">
+	<strong>Ăn s&aacute;ng</strong>&nbsp;tại kh&aacute;ch sạn, sau đ&oacute; đo&agrave;n khởi h&agrave;nh đi&nbsp;<strong>Khu khu lịch N&uacute;i Tuyết Ngọc Long</strong>:</p>
+<ul>
+	<li style="text-align: justify;">
+		<p>
+			Qu&yacute; kh&aacute;ch đi c&aacute;p treo nhỏ l&ecirc;n thăm&nbsp;<strong>V&acirc;n Tam B&igrave;nh</strong>&nbsp;&ndash; độ cao 3200 m ngắm cảnh đẹp&nbsp;<strong>N&uacute;i tuyết Ngọc Long</strong>&nbsp;- ngọn n&uacute;i cao 5596 m tuyết phủ quanh năm. Phần băng vĩnh cửu &aacute;nh l&ecirc;n một m&agrave;u xanh như ngọc. Lại gọi đ&acirc;y l&agrave; n&uacute;i trinh nữ v&igrave; cho đến nay con người chưa một lần chinh phục được n&oacute;. Nhiều nh&agrave; leo n&uacute;i đ&atilde; bỏ mạng hoặc ngậm ng&ugrave;i r&uacute;t lui, bất lực trước sự trinh nguy&ecirc;n b&iacute; ẩn của v&ugrave;ng n&uacute;i v&agrave;o loại đẹp nhất tỉnh V&acirc;n Nam n&agrave;y.</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			Tham quan&nbsp;<strong>Bạch Thủy H&agrave;</strong>&nbsp;được tạo th&agrave;nh bởi băng tan từ n&uacute;i tuyết Ngọc Long,</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			<strong>Thảo nguy&ecirc;n Cam Hải Tử</strong></p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			Thăm&nbsp;<strong>Ngọc Thủy Trại&nbsp;</strong>&ndash; nơi c&oacute; cảnh đẹp v&agrave; thể hiện tập tục, t&iacute;n ngưỡng của d&acirc;n Na Xi v&agrave; nền văn h&oacute;a Đ&ocirc;ng Ba</p>
+	</li>
+</ul>
+<p style="text-align: center;">
+	<img alt="Hình ảnh có liên quan" src="http://thesmartlocal.com/images/easyblog_images/1851/jadedragon1.jpg" /></p>
+<p style="text-align: justify;">
+	<strong>Tối&nbsp;</strong>: Sau bữa tối, di chuyển về C&ocirc;n Minh, ra ga l&ecirc;n t&agrave;u hoả tuyến Lệ Giang &ndash; C&ocirc;n Minh , K9684&nbsp; 21h50/06h41 &nbsp;, nghỉ đ&ecirc;m tr&ecirc;n t&agrave;u hoả ( giường nằm khoang 6 ) .</p>
+<h2 style="text-align: justify;">
+	<span style="font-size: 16px;"><span style="color: rgb(255, 0, 0);">NG&Agrave;Y&nbsp; 06: C&Ocirc;N MINH &ndash; &nbsp;H&Agrave; NỘI &nbsp;(Ăn s&aacute;ng, trưa)&nbsp;</span></span></h2>
+<p style="text-align: justify;">
+	<strong>S&aacute;ng 06h41&nbsp;</strong>t&agrave;u đến C&ocirc;n Minh, đưa đo&agrave;n ăn s&aacute;ng, Sau đ&oacute; Qu&yacute; kh&aacute;ch bắt đầu kh&aacute;m ph&aacute; th&agrave;nh phố C&ocirc;n Minh:</p>
+<ul>
+	<li style="text-align: justify;">
+		<p>
+			Thăm cảnh T&acirc;y Sơn Long M&ocirc;n,</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			Tam Th&agrave;nh C&aacute;t với c&aacute;c điểm Long M&ocirc;n C&aacute; Ch&eacute;p h&oacute;a rồng,</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			Cầu Ph&uacute;c, Lộc, Thọ.</p>
+	</li>
+</ul>
+<p style="text-align: justify;">
+	Ăn trưa xong, Qu&yacute; kh&aacute;ch ra s&acirc;n bay khởi h&agrave;nh về H&agrave; Nội tr&ecirc;n chuyến bay MU2575 l&uacute;c 15h05.</p>
+<p style="text-align: center;">
+	<img alt="Kết quả hình ảnh cho tây sơn long môn" src="http://www.tourchaua.net/images/diadiem/hang-da-lam-mon-2.jpg" /></p>
+<p style="text-align: justify;">
+	<strong>15h35:&nbsp;</strong>Về tới s&acirc;n bay nội b&agrave;i, xe đưa đo&agrave;n về trung&nbsp; t&acirc;m th&agrave;nh phố. Kết th&uacute;c chương tr&igrave;nh</p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; text-align: center;">
+	<span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;"><img alt="" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/hotline.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; width: 300px; height: 90px;" /></span></span></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; text-align: center;">
+	<span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;">HOẶC</span></span></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; text-align: center;">
+	<span style="box-sizing: border-box; font-size: 16px;"><span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; background-color: rgb(255, 255, 0);">CHAT ONLINE NGAY</span></span></span></span></p>
+',price_list='<h2 style="text-align: center;">
+	<span style="font-size: 16px;"><span style="color: rgb(255, 0, 0);">GI&Aacute; TRỌN G&Oacute;I : 18.790.000VNĐ/KH&Aacute;CH</span></span></h2>
+<p style="text-align: center;">
+	<strong><span style="color: rgb(255, 0, 0);">(GI&Aacute; &Aacute;P DỤNG CHO ĐO&Agrave;N​ 10 KH&Aacute;CH TRỞ L&Ecirc;N )</span></strong></p>
+<p>
+	CH&Uacute; &Yacute;: Gi&aacute; tr&ecirc;n c&oacute; thể thay đổi theo thời điểm</p>
+',content='',list_img='',title='Tour du lịch Trung Quốc: HÀ NỘI – CÔN MINH – LỆ GIANG – SHANGRI-LA 6 N',keyword='du lịch Shangrila, tour du lịch côn minh đại lý lệ giang shangrila, tour du lịch trung quốc mới, tour du lịch shangrila 6 ngày',description='Tham gia tour du lịch Côn Minh - Lệ Giang - Shangrila 6 ngày, AZbooking sẽ đưa bạn chìm đắm trong Thành cổ Lệ Giang - được mệnh danh là ',inclusion='<ul>
+	<li>
+		Xe thăm quan điều ho&agrave; theo chương tr&igrave;nh.</li>
+	<li>
+		C&aacute;c bữa ăn theo chương tr&igrave;nh 5 bữa s&aacute;ng, 10 bữa ch&iacute;nh (bữa ch&iacute;nh: 8 m&oacute;n + 1 canh).</li>
+	<li>
+		Trong chương tr&igrave;nh c&oacute; 1 bữa thưởng thức đặc sản lẩu nấm rừng</li>
+	<li>
+		Hướng dẫn vi&ecirc;n nhiệt t&igrave;nh, chu đ&aacute;o suốt tuyến</li>
+	<li>
+		Kh&aacute;ch sạn ti&ecirc;u chuẩn 3 sao (2 người/ph&ograve;ng. Trường hợp lẻ nam lẻ nữ &aacute;p dụng ph&ograve;ng 3).</li>
+	<li>
+		V&eacute; 1 lượt c&aacute;c điểm thăm quan.</li>
+	<li>
+		Bảo hiểm du lịch theo qui định mức 15.000USD/người/vụ.</li>
+	<li>
+		Nước uống 01 chai/ng&agrave;y/người.</li>
+	<li>
+		Visa xuất nhập cảnh Trung Quốc</li>
+	<li>
+		V&eacute; t&agrave;u hoả&nbsp; khứ hồi giường nằm khoang 6 C&ocirc;n Minh - Lệ Giang &ndash; C&ocirc;n Minh</li>
+</ul>
+',exclusion='<ul>
+	<li>
+		Hộ chiếu c&ograve;n hạn &iacute;t nhất tr&ecirc;n 6 th&aacute;ng</li>
+	<li>
+		Chi ph&iacute; c&aacute; nh&acirc;n</li>
+	<li>
+		Ph&ograve;ng đơn kh&aacute;ch sạn</li>
+	<li>
+		Đồ uống trong c&aacute;c bữa ăn.</li>
+	<li>
+		Tip cho HDV v&agrave; l&aacute;i xe (5usd/người/ng&agrave;y)</li>
+	<li>
+		VAT</li>
+</ul>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; text-align: center;">
+	<span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;"><img alt="" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/hotline.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; width: 300px; height: 90px;" /></span></span></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; text-align: center;">
+	<span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;">HOẶC</span></span></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; text-align: center;">
+	<span style="box-sizing: border-box; font-size: 16px;"><span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; background-color: rgb(255, 255, 0);">CHAT ONLINE NGAY</span></span></span></span></p>
+',updated='17-11-12 03:39:34' where id=222;
+update tour set dieuhanh_id='14', tour_quoc_te='1',DanhMuc1Id='10',DanhMuc2Id='58',danhmuc_multi='',promotion='1',packages='0',name='TOUR DU LỊCH TRUNG QUỐC: HÀ NỘI – CÔN MINH – LỆ GIANG – SHANGRI-LA',name_url='tour-du-lich-trung-quoc-ha-noi-con-minh-le-giang-shangri-la',count_down='2017-09-30 14:10:00',code='',img='/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/du-lich-trung-quoc-6-ngay-5-dem-azbooking.jpg',price_tiep_thi='800000',price_sales='19790000',price='18790000',price_2='',price_3='',price_4='',price_5='',price_6='',price_number='',price_number_2='',price_number_3='',price_number_4='',price_number_5='',price_number_6='',name_price='',name_price_2='',name_price_3='',name_price_4='',name_price_5='',name_price_6='',so_cho='',durations='6 Ngày 5 Đêm',departure='1',departure_time='24/10',destination='Côn Minh, Lệ Giang, Shangrila',vehicle='Máy bay, oto, tàu cao tốc',hotel='3',summary='<p style="text-align: justify;">
+	<em><strong>Lệ Giang</strong>&nbsp;l&agrave; cố đ&ocirc; của vương quốc Naxi, cao 2.410 m&eacute;t so với mực nước biển v&agrave; nằm tr&ecirc;n Cao nguy&ecirc;n T&acirc;y Bắc V&acirc;n Nam ở miền T&acirc;y Nam Trung Hoa. Tọa lạc dọc theo tuyến thương mại quan trọng m&agrave; trước đ&acirc;y l&agrave; một phần của Con đường Tơ lụa từ V&acirc;n Nam qua T&acirc;y Tạng,&nbsp;</em><em><strong>C&ocirc;n Minh</strong>&nbsp;- th&agrave;nh phố m&ugrave;a xu&acirc;n bạt ng&agrave;n hoa nở.&nbsp;</em><em>Th&agrave;nh cổ&nbsp;<strong>Đại L&yacute;</strong>&nbsp;cổ k&iacute;nh, ki&ecirc;n cố v&agrave; r&ecirc;u phong - nơi quay bộ phim Thi&ecirc;n Long B&aacute;t Bộ nổi tiếng.&nbsp;</em></p>
+<p style="text-align: justify;">
+	<em>Thần b&iacute;&nbsp;<a href="http://tourdulichtrungquoc.net/tin-tuc/van-nam/den-shangri-la-ban-se-nhan-ra-rang-thung-lung-bat-tu-la-co-that.html">t<strong>hung lũng &quot;bất tử&quot; Shangri-La</strong></a>:&nbsp;<strong>Shangri-La</strong>&nbsp;nằm trong một cao nguy&ecirc;n cao hơn 3.300m so với mực nước biển, bao quanh bởi những ngọn đồi xanh tươi tốt, hồ nước tuyệt đẹp, kh&ocirc;ng kh&iacute; trong l&agrave;nh. Đ&acirc;y l&agrave; nơi sinh sống chủ yếu của một bộ phận kh&ocirc;ng nhỏ những người T&acirc;y Tạng, nơi tọa lạc của rất nhiều danh thắng, đền ch&ugrave;a, tu viện Phật gi&aacute;o&hellip; Shangri-La c&ograve;n nổi tiếng với c&ocirc;ng vi&ecirc;n quốc gia Pudacuo.&nbsp;Đ&acirc;y l&agrave; khu vực rộng khoảng 1.300km2 v&agrave; l&agrave; c&ocirc;ng vi&ecirc;n quốc gia đầu ti&ecirc;n ở Trung Quốc.</em></p>
+<p style="text-align: justify;">
+	<span style="box-sizing: border-box; font-family: Tahoma; font-size: 14px; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;">Tour du lịch Trung Quốc: H&Agrave; NỘI &ndash; C&Ocirc;N MINH &ndash; LỆ GIANG &ndash; SHANGRI-LA 6 Ng&agrave;y 5 Đ&ecirc;m</span></span><span style="box-sizing: border-box; font-family: Tahoma; font-size: 14px; color: rgb(255, 0, 0);">&nbsp;</span><span style="color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px;">sẽ đưa bạn qua những điểm đến v&ocirc; c&ugrave;ng hấp dẫn:&nbsp;</span></p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; height: 15px; width: 15px;" />&nbsp;Ch&igrave;m đắm trong&nbsp;<strong>Th&agrave;nh cổ Lệ Giang</strong>&nbsp;- được mệnh danh l&agrave; &quot;Venice của Phương Đ&ocirc;ng&quot;</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; height: 15px; width: 15px;" />&nbsp;Cho&aacute;ng ngợp với vẻ đẹp h&ugrave;ng vĩ của&nbsp;<strong>KHE HỒ NHẢY</strong></p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; height: 15px; width: 15px;" />&nbsp;Kh&aacute;m ph&aacute;&nbsp;<a href="http://tourdulichtrungquoc.net/tin-tuc/van-nam/den-shangri-la-ban-se-nhan-ra-rang-thung-lung-bat-tu-la-co-that.html"><strong>thung lũng Shangrila</strong></a>&nbsp;- chốn ti&ecirc;n cảnh của V&acirc;n Nam</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; height: 15px; width: 15px;" />&nbsp;Dạo quanh&nbsp;<strong>th&agrave;nh phố C&ocirc;n Minh</strong>&nbsp;với &quot;T&acirc;y Sơn Long M&ocirc;n&quot;,&nbsp;&quot;Tam Th&agrave;nh C&aacute;t&quot;</p>
+<p style="text-align: justify;">
+	V&agrave; c&ograve;n rất nhiều những điểm đến hấp dẫn kh&aacute;c. Đăng k&yacute; ngay tour du lịch n&agrave;y của <strong>AZbooking </strong>để c&oacute; cơ hội kh&aacute;m ph&aacute; nhiều hơn c&aacute;c điểm đến nh&eacute;!</p>
+',highlights='<p background-color:="" font-size:="" open="" style="box-sizing: border-box; margin: 0px 0px 10px 40px; font-family: Tahoma; font-size: 14px; line-height: 1.7em; color: rgb(51, 51, 51); text-align: center;" text-align:="">
+	<span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box;"><span style="box-sizing: border-box; font-weight: 700;">DỊCH VỤ K&Egrave;M THEO HẤP DẪN C&Ugrave;NG CHƯƠNG TR&Igrave;NH</span></span></span></p>
+<table border="1" cellpadding="0" cellspacing="0" style="width: 891px;">
+	<tbody style="box-sizing: border-box;">
+		<tr style="box-sizing: border-box;">
+			<td style="box-sizing: border-box; padding: 12px 10px; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px; text-align: center;">
+					<img alt="Bảo hiểm du lịch" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/icon-bao-hiem.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 60px; height: 60px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px; text-align: center;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">Bảo hiểm du lịch</span></p>
+			</td>
+			<td style="box-sizing: border-box; padding: 12px 10px; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px; text-align: center;">
+					<img alt="Bữa ăn theo chương trình" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/icon-bua-an.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 60px; height: 60px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px; text-align: center;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">Bữa ăn theo chương tr&igrave;nh</span></p>
+			</td>
+			<td style="box-sizing: border-box; padding: 12px 10px; text-align: center; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<img alt="Hướng dẫn viên suốt tuyến" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/icon-hdv.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 60px; height: 60px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">Hướng dẫn vi&ecirc;n suốt tuyến</span></p>
+			</td>
+			<td style="box-sizing: border-box; padding: 12px 10px; text-align: center; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<img alt="Vé tham quan theo chương trình" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/icon-ve-tham-quan.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 60px; height: 60px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">V&eacute; tham quan theo chương tr&igrave;nh</span></p>
+			</td>
+		</tr>
+		<tr style="box-sizing: border-box;">
+			<td style="box-sizing: border-box; padding: 12px 10px; text-align: center; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<img alt="Xe đưa đón theo chương trình" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/icon-xe-dua-don.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 60px; height: 60px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">Xe đưa đ&oacute;n theo chương tr&igrave;nh</span></p>
+			</td>
+			<td style="box-sizing: border-box; padding: 12px 10px; text-align: center; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<img alt="Khách sạn tiêu chuẩn" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/icon-hotel.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 60px; height: 60px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">Kh&aacute;ch sạn ti&ecirc;u chuẩn</span></p>
+			</td>
+			<td style="box-sizing: border-box; padding: 12px 10px; text-align: center; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<img alt="Vé máy bay" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/icon-ve-may-bay.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 60px; height: 60px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">V&eacute; m&aacute;y bay</span></p>
+			</td>
+			<td style="box-sizing: border-box; padding: 12px 10px; text-align: center; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<img alt="Quà tặng kèm" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/icon-hop-qua.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 50px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">Qu&agrave; tặng k&egrave;m 500K</span></p>
+				<div style="box-sizing: border-box;">
+					&nbsp;</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; text-align: center;">
+	<br style="box-sizing: border-box;" />
+	<span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;"><img alt="" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/hotline.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; width: 300px; height: 90px;" /></span></span></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; text-align: center;">
+	<span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;">HOẶC</span></span></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; text-align: center;">
+	<span style="box-sizing: border-box; font-size: 16px;"><span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; background-color: rgb(255, 255, 0);">CHAT ONLINE NGAY</span></span></span></span></p>
+',schedule='<h2 style="text-align: justify;">
+	<span style="font-size: 16px;"><span style="color: rgb(255, 0, 0);">NG&Agrave;Y 01: H&Agrave; NỘI &ndash; C&Ocirc;N MINH &nbsp; &nbsp; &nbsp; &nbsp; (Ăn tối)&nbsp;</span></span></h2>
+<p style="text-align: justify;">
+	Xe v&agrave; HDV đ&oacute;n đo&agrave;n tại điểm hẹn, &nbsp;đưa đo&agrave;n l&ecirc;n s&acirc;n Bay , khỏi h&agrave;nh chuyến bay MU2576 l&uacute;c 16h25 &ndash; 18h50 .</p>
+<p style="text-align: justify;">
+	18h50 Xe v&agrave; HDV đ&oacute;n đo&agrave;n tại&nbsp;<strong>s&acirc;n bay C&ocirc;n Minh</strong>, sau bữa tối, HDV đưa đo&agrave;n ra ga t&agrave;u hoả, l&ecirc;n chuyến t&agrave;u hoả C&ocirc;n Minh - Lệ Giang&nbsp; K9602&nbsp;</p>
+<p style="text-align: justify;">
+	22h23 - 08h35: Nghỉ đ&ecirc;m tr&ecirc;n t&agrave;u hoả (giường nằm khoảng 6 )&nbsp;</p>
+<p style="text-align: center;">
+	&nbsp;</p>
+<h2 style="text-align: justify;">
+	<span style="font-size: 16px;"><span style="color: rgb(255, 0, 0);">NG&Agrave;Y 02: LỆ GIANG &nbsp; &nbsp; &nbsp;( Ăn s&aacute;ng, trưa, tối)</span></span></h2>
+<p style="text-align: justify;">
+	<strong>S&aacute;ng</strong>: 08h35 t&agrave;u đến Lệ Giang, HDV đưa đo&agrave;n đi ăn s&aacute;ng, Q&uacute;y kh&aacute;ch thăm quan:</p>
+<ul>
+	<li style="text-align: justify;">
+		<p>
+			C&ocirc;ng Vi&ecirc;n Hắc Long Đ&agrave;m &ndash; nơi d&ograve;ng nước từ n&uacute;i băng Ngọc Long đổ về nu&ocirc;i sống v&ugrave;ng đất Lệ Giang. Từ c&ocirc;ng vi&ecirc;n Hắc Long c&oacute; thể ngắm sự h&ugrave;ng vĩ của n&uacute;i tuyết ng&agrave;n năm, trong khung cảnh thanh b&igrave;nh của nước hồ phẳng lặng.</p>
+	</li>
+</ul>
+<p style="text-align: center;">
+	<img alt="Kết quả hình ảnh cho công viên hắc long đàm" src="https://s3-ap-southeast-1.amazonaws.com/mytour-static-file/upload_images/Image/Location/22_9_2016/7/du-lich-thanh-co-le-giang-trung-quoc-mytour-9.jpg" /></p>
+<ul>
+	<li style="text-align: justify;">
+		<p>
+			Qu&yacute; kh&aacute;ch gh&eacute; thăm Mộc Phủ, Vạn Cổ Lầu một c&ocirc;ng tr&igrave;nh được coi l&agrave; ti&ecirc;u biểu cho lịch sử v&agrave; văn h&oacute;a nơi đ&acirc;y. Mộc phủ được v&iacute; như Tử Cấm th&agrave;nh của phương nam. Trước cổng, d&ograve;ng nước chảy từ hướng bắc xuống được bắc ngang bởi c&acirc;y cầu đ&aacute; rộng kh&ocirc;ng c&oacute; th&agrave;nh. Đối diện b&igrave;nh phong ngo&agrave;i l&agrave; t&ograve;a cổng ch&agrave;o bằng đ&aacute;. Xưa kia t&ograve;a cổng ch&agrave;o n&agrave;y l&agrave; c&ocirc;ng tr&igrave;nh kỳ vĩ nhất đất Lệ Giang, l&agrave;m bằng đ&aacute; ngọc trắng</p>
+	</li>
+</ul>
+<p style="text-align: center;">
+	<img alt="Hình ảnh có liên quan" src="https://c1.staticflickr.com/3/2799/4272647979_b84c293e0b_z.jpg?zz=1" /></p>
+<ul>
+	<li style="text-align: justify;">
+		<p>
+			Tham quan Th&agrave;nh cổ Lệ Giang - x&acirc;y dựng c&aacute;ch đ&acirc;y hơn 800 năm, được Unessco c&ocirc;ng nhận l&agrave; di sản văn ho&aacute; thế giới năm 1997- một di sản văn h&oacute;a thế giới với phong cảnh đẹp đẽ xứ nước, được mệnh danh l&agrave; &quot;Venice của Phương Đ&ocirc;ng&quot;, nơi đ&acirc;y nh&agrave; nh&agrave; đều c&oacute; suối chảy qua, những c&acirc;y liễu bu&ocirc;ng xuống c&aacute;c bậc cửa v&agrave; những c&acirc;y cầu nhỏ xinh xắn. Dạo Phố Tứ Phương ở trung t&acirc;m th&agrave;nh cổ</p>
+	</li>
+</ul>
+<p style="text-align: justify;">
+	<strong>Sau khi d&ugrave;ng bữa tối</strong>, Qu&yacute; kh&aacute;ch tự do ngắm sắc m&agrave;u Lệ Giang về đ&ecirc;m. Tự do thưởng thức được &acirc;m nhạc v&agrave; c&aacute;c điệu d&acirc;n vũ. Phố cổ Lệ Giang c&ograve;n c&oacute; thể gọi l&agrave; phố của &acirc;m nhạc d&acirc;n tộc v&agrave; d&acirc;n vũ m&agrave; bạn chẳng cần tốn một xu tiền v&eacute; lại c&oacute; thể trở th&agrave;nh diễn vi&ecirc;n ngay nếu th&iacute;ch..</p>
+<p style="text-align: justify;">
+	Nghỉ đ&ecirc;m tại Lệ Giang</p>
+<p style="text-align: center;">
+	<img alt="Kết quả hình ảnh cho thành cổ lệ giang" src="https://haivanxanh.com/wp-content/uploads/thanh-co-Le-Giang-2.jpg" /></p>
+<h2 style="text-align: justify;">
+	<span style="font-size: 16px;"><span style="color: rgb(255, 0, 0);">NG&Agrave;Y 03: LỆ GIANG &ndash; SHANGRI-LA &nbsp; &nbsp; &nbsp; &nbsp;(Ăn s&aacute;ng, trưa, tối)</span></span></h2>
+<p style="text-align: justify;">
+	<strong>Sau bữa s&aacute;ng</strong>, đo&agrave;n đi&nbsp;<strong>Shangrila</strong>.</p>
+<p style="text-align: justify;">
+	Tr&ecirc;n đường gh&eacute; thăm&nbsp;<strong>khe Hổ Nhảy</strong>, được xem l&agrave; hẻm n&uacute;i s&acirc;u nhất Thế Giới. Đ&acirc;y l&agrave; một hẻm n&uacute;i d&agrave;i hơn 15 km nằm kẹp giữa hai&nbsp;<strong>d&atilde;y n&uacute;i Ngọc Long Tuyết Sơn</strong>&nbsp;(cao 5.596 m) v&agrave;&nbsp;<strong>Ha Ba Tuyết Sơn</strong>&nbsp;(cao 5.396 m). Nơi đ&acirc;y cảnh tượng v&ocirc; c&ugrave;ng h&ugrave;ng vĩ với d&ograve;ng s&ocirc;ng Kim Sa c&agrave;ng về ph&iacute;a hạ nguồn c&agrave;ng gập ghềnh v&agrave; chảy xiết.</p>
+<p style="text-align: justify;">
+	Tương truyền khi xưa một ch&uacute; hổ đ&atilde; chạy tho&aacute;t trong một lần bị thợ săn rượt đuổi bằng c&aacute;ch nhảy băng qua hẻm n&uacute;i tại điểm l&ograve;ng s&ocirc;ng hẹp nhất.</p>
+<p style="text-align: justify;">
+	<img alt="Kết quả hình ảnh cho khe hổ nhảy" src="http://static.kienthucdoday.com/content/images/thumbs/0011675_thot-tim-khi-dung-duoi-khe-ho-nhay-mua-lu.jpeg" /></p>
+<p style="text-align: justify;">
+	Đến&nbsp;<strong>Shangrila&nbsp;</strong>&ndash; một c&aacute;i t&ecirc;n kh&ocirc;ng hề xa lạ nếu ai đ&atilde; từng đọc qua&nbsp;<strong>tiểu thuyết Lost Horizon</strong>&nbsp;(Đường ch&acirc;n trời đ&atilde; mất) của nh&agrave; văn James Hilton, n&oacute; l&agrave; một thung lũng nằm ở T&acirc;y Bắc tỉnh V&acirc;n Nam, Trung Quốc, gần với T&acirc;y Tạng.</p>
+<p style="text-align: justify;">
+	Thăm&nbsp;<strong>ch&ugrave;a Songzanlin&nbsp;</strong>l&agrave;&nbsp;<strong>tu viện Phật gi&aacute;o Mật T&ocirc;ng T&acirc;y Tạng</strong>&nbsp;quan trọng v&agrave; lớn nhất ở V&acirc;n Nam, Trung Quốc.&nbsp;<strong>Songzanlin&nbsp;</strong>được đặt trong một cảnh quan tuyệt đẹp ở độ cao hơn 3.300m c&aacute;ch Shangrila 5km. Tu viện n&agrave;y do vị Đạt Lai Lạt Ma thứ 5 x&acirc;y dựng năm 1679 theo nguy&ecirc;n mẫu thu nhỏ của cung điện Potala (T&acirc;y Tạng) v&agrave; được ho&agrave;n th&agrave;nh sau 2 năm x&acirc;y dựng. V&agrave;o thời thịnh vượng nhất, nơi đ&acirc;y tập trung đến cả ng&agrave;n tăng sĩ.</p>
+<p style="text-align: center;">
+	<img alt="Kết quả hình ảnh cho chùa Songzanlin" src="https://cdn02.static-adayroi.com/resize/608_430/100/0/2017/08/07/1502096518122_9260606.jpg" /></p>
+<p style="text-align: justify;">
+	Ăn tối tại nh&agrave; h&agrave;ng v&agrave; nghỉ đ&ecirc;m tại kh&aacute;ch sạn tại&nbsp;<strong>Shangrila</strong>.</p>
+<h2 style="text-align: justify;">
+	<span style="font-size: 16px;"><span style="color: rgb(255, 0, 0);">NG&Agrave;Y&nbsp; 04: SHANGRI-LA &ndash; LỆ GIANG &nbsp; (Ăn s&aacute;ng, trưa, tối)</span></span></h2>
+<p style="text-align: justify;">
+	<strong>Sau bữa s&aacute;ng</strong>, đo&agrave;n đi thăm:</p>
+<p style="text-align: justify;">
+	<strong>Vườn c&ocirc;ng vi&ecirc;n Quốc gia PuDaCuo (Phổ Đạt Thố)</strong>: Thi&ecirc;n nhi&ecirc;n ở Shangri-La xứng đ&aacute;ng được mệnh danh l&agrave; chốn ti&ecirc;n cảnh với những cảnh quan n&uacute;i cao tuyết trắng, rừng xanh nắng v&agrave;ng, thi thoảng lại ẩn hiện trong sương kh&oacute;i với một hệ động thực vật v&ocirc; c&ugrave;ng phong ph&uacute;.</p>
+<p style="text-align: justify;">
+	<strong>Pudacuo&nbsp;</strong>l&agrave; c&ocirc;ng vi&ecirc;n quốc gia đầu ti&ecirc;n ở Trung Quốc đ&aacute;p ứng đủ c&aacute;c ti&ecirc;u chuẩn được thiết lập bởi Tổ chức Bảo tồn Thi&ecirc;n nhi&ecirc;n Quốc tế (IUCN). Một trong 40 thắng cảnh đẹp của Trung Quốc.&nbsp;<strong>Pudacuo&nbsp;</strong>l&agrave; thi&ecirc;n đường cho những người y&ecirc;u th&iacute;ch chụp ảnh.</p>
+<p style="text-align: justify;">
+	Bốn m&ugrave;a ở đ&acirc;y cảnh sắc đều kh&ocirc;ng giống nhau:</p>
+<ul>
+	<li style="text-align: justify;">
+		<p>
+			M&ugrave;a xu&acirc;n ở đ&acirc;y trăm hoa đua nở.</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			M&ugrave;a h&egrave; l&agrave; một m&agrave;u xanh biếc phủ đầy khắp n&uacute;i.</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			M&ugrave;a thu l&agrave; cảnh rừng rậm tầng tầng v&ocirc; c&ugrave;ng lộng lẫy.</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			M&ugrave;a đ&ocirc;ng du kh&aacute;ch c&oacute; thể thưởng thức cảnh lớp tuyết trắng dưới mặt hồ nước xanh.</p>
+	</li>
+</ul>
+<p style="text-align: justify;">
+	Chiều tự do tham quan&nbsp;<strong>Th&agrave;nh cổ DuKeZong</strong>. Sau đ&oacute; di chuyển về&nbsp;<strong>Lệ Giang</strong>. Nghỉ tại Lệ Giang</p>
+<p style="text-align: justify;">
+	<img alt="Hình ảnh có liên quan" src="http://znews-photo-td.zadn.vn/w1024/Uploaded/djsim/2014_12_10/t1.jpg" /></p>
+<h2 style="text-align: justify;">
+	<span style="font-size: 16px;"><span style="color: rgb(255, 0, 0);">NG&Agrave;Y&nbsp; 05: LỆ GIANG &ndash; C&Ocirc;N MINH &nbsp; (Ăn s&aacute;ng, trưa, tối)</span></span></h2>
+<p style="text-align: justify;">
+	<strong>Ăn s&aacute;ng</strong>&nbsp;tại kh&aacute;ch sạn, sau đ&oacute; đo&agrave;n khởi h&agrave;nh đi&nbsp;<strong>Khu khu lịch N&uacute;i Tuyết Ngọc Long</strong>:</p>
+<ul>
+	<li style="text-align: justify;">
+		<p>
+			Qu&yacute; kh&aacute;ch đi c&aacute;p treo nhỏ l&ecirc;n thăm&nbsp;<strong>V&acirc;n Tam B&igrave;nh</strong>&nbsp;&ndash; độ cao 3200 m ngắm cảnh đẹp&nbsp;<strong>N&uacute;i tuyết Ngọc Long</strong>&nbsp;- ngọn n&uacute;i cao 5596 m tuyết phủ quanh năm. Phần băng vĩnh cửu &aacute;nh l&ecirc;n một m&agrave;u xanh như ngọc. Lại gọi đ&acirc;y l&agrave; n&uacute;i trinh nữ v&igrave; cho đến nay con người chưa một lần chinh phục được n&oacute;. Nhiều nh&agrave; leo n&uacute;i đ&atilde; bỏ mạng hoặc ngậm ng&ugrave;i r&uacute;t lui, bất lực trước sự trinh nguy&ecirc;n b&iacute; ẩn của v&ugrave;ng n&uacute;i v&agrave;o loại đẹp nhất tỉnh V&acirc;n Nam n&agrave;y.</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			Tham quan&nbsp;<strong>Bạch Thủy H&agrave;</strong>&nbsp;được tạo th&agrave;nh bởi băng tan từ n&uacute;i tuyết Ngọc Long,</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			<strong>Thảo nguy&ecirc;n Cam Hải Tử</strong></p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			Thăm&nbsp;<strong>Ngọc Thủy Trại&nbsp;</strong>&ndash; nơi c&oacute; cảnh đẹp v&agrave; thể hiện tập tục, t&iacute;n ngưỡng của d&acirc;n Na Xi v&agrave; nền văn h&oacute;a Đ&ocirc;ng Ba</p>
+	</li>
+</ul>
+<p style="text-align: center;">
+	<img alt="Hình ảnh có liên quan" src="http://thesmartlocal.com/images/easyblog_images/1851/jadedragon1.jpg" /></p>
+<p style="text-align: justify;">
+	<strong>Tối&nbsp;</strong>: Sau bữa tối, di chuyển về C&ocirc;n Minh, ra ga l&ecirc;n t&agrave;u hoả tuyến Lệ Giang &ndash; C&ocirc;n Minh , K9684&nbsp; 21h50/06h41 &nbsp;, nghỉ đ&ecirc;m tr&ecirc;n t&agrave;u hoả ( giường nằm khoang 6 ) .</p>
+<h2 style="text-align: justify;">
+	<span style="font-size: 16px;"><span style="color: rgb(255, 0, 0);">NG&Agrave;Y&nbsp; 06: C&Ocirc;N MINH &ndash; &nbsp;H&Agrave; NỘI &nbsp;(Ăn s&aacute;ng, trưa)&nbsp;</span></span></h2>
+<p style="text-align: justify;">
+	<strong>S&aacute;ng 06h41&nbsp;</strong>t&agrave;u đến C&ocirc;n Minh, đưa đo&agrave;n ăn s&aacute;ng, Sau đ&oacute; Qu&yacute; kh&aacute;ch bắt đầu kh&aacute;m ph&aacute; th&agrave;nh phố C&ocirc;n Minh:</p>
+<ul>
+	<li style="text-align: justify;">
+		<p>
+			Thăm cảnh T&acirc;y Sơn Long M&ocirc;n,</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			Tam Th&agrave;nh C&aacute;t với c&aacute;c điểm Long M&ocirc;n C&aacute; Ch&eacute;p h&oacute;a rồng,</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			Cầu Ph&uacute;c, Lộc, Thọ.</p>
+	</li>
+</ul>
+<p style="text-align: justify;">
+	Ăn trưa xong, Qu&yacute; kh&aacute;ch ra s&acirc;n bay khởi h&agrave;nh về H&agrave; Nội tr&ecirc;n chuyến bay MU2575 l&uacute;c 15h05.</p>
+<p style="text-align: center;">
+	<img alt="Kết quả hình ảnh cho tây sơn long môn" src="http://www.tourchaua.net/images/diadiem/hang-da-lam-mon-2.jpg" /></p>
+<p style="text-align: justify;">
+	<strong>15h35:&nbsp;</strong>Về tới s&acirc;n bay nội b&agrave;i, xe đưa đo&agrave;n về trung&nbsp; t&acirc;m th&agrave;nh phố. Kết th&uacute;c chương tr&igrave;nh</p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; text-align: center;">
+	<span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;"><img alt="" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/hotline.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; width: 300px; height: 90px;" /></span></span></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; text-align: center;">
+	<span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;">HOẶC</span></span></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; text-align: center;">
+	<span style="box-sizing: border-box; font-size: 16px;"><span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; background-color: rgb(255, 255, 0);">CHAT ONLINE NGAY</span></span></span></span></p>
+',price_list='<h2 style="text-align: center;">
+	<span style="font-size: 16px;"><span style="color: rgb(255, 0, 0);">GI&Aacute; TRỌN G&Oacute;I : 18.790.000VNĐ/KH&Aacute;CH</span></span></h2>
+<p style="text-align: center;">
+	<strong><span style="color: rgb(255, 0, 0);">(GI&Aacute; &Aacute;P DỤNG CHO ĐO&Agrave;N​ 10 KH&Aacute;CH TRỞ L&Ecirc;N )</span></strong></p>
+<p>
+	CH&Uacute; &Yacute;: Gi&aacute; tr&ecirc;n c&oacute; thể thay đổi theo thời điểm</p>
+',content='',list_img='',title='Tour du lịch Trung Quốc: HÀ NỘI – CÔN MINH – LỆ GIANG – SHANGRI-LA 6 N',keyword='du lịch Shangrila, tour du lịch côn minh đại lý lệ giang shangrila, tour du lịch trung quốc mới, tour du lịch shangrila 6 ngày',description='Tham gia tour du lịch Côn Minh - Lệ Giang - Shangrila 6 ngày, AZbooking sẽ đưa bạn chìm đắm trong Thành cổ Lệ Giang - được mệnh danh là ',inclusion='<ul>
+	<li>
+		Xe thăm quan điều ho&agrave; theo chương tr&igrave;nh.</li>
+	<li>
+		C&aacute;c bữa ăn theo chương tr&igrave;nh 5 bữa s&aacute;ng, 10 bữa ch&iacute;nh (bữa ch&iacute;nh: 8 m&oacute;n + 1 canh).</li>
+	<li>
+		Trong chương tr&igrave;nh c&oacute; 1 bữa thưởng thức đặc sản lẩu nấm rừng</li>
+	<li>
+		Hướng dẫn vi&ecirc;n nhiệt t&igrave;nh, chu đ&aacute;o suốt tuyến</li>
+	<li>
+		Kh&aacute;ch sạn ti&ecirc;u chuẩn 3 sao (2 người/ph&ograve;ng. Trường hợp lẻ nam lẻ nữ &aacute;p dụng ph&ograve;ng 3).</li>
+	<li>
+		V&eacute; 1 lượt c&aacute;c điểm thăm quan.</li>
+	<li>
+		Bảo hiểm du lịch theo qui định mức 15.000USD/người/vụ.</li>
+	<li>
+		Nước uống 01 chai/ng&agrave;y/người.</li>
+	<li>
+		Visa xuất nhập cảnh Trung Quốc</li>
+	<li>
+		V&eacute; t&agrave;u hoả&nbsp; khứ hồi giường nằm khoang 6 C&ocirc;n Minh - Lệ Giang &ndash; C&ocirc;n Minh</li>
+</ul>
+',exclusion='<ul>
+	<li>
+		Hộ chiếu c&ograve;n hạn &iacute;t nhất tr&ecirc;n 6 th&aacute;ng</li>
+	<li>
+		Chi ph&iacute; c&aacute; nh&acirc;n</li>
+	<li>
+		Ph&ograve;ng đơn kh&aacute;ch sạn</li>
+	<li>
+		Đồ uống trong c&aacute;c bữa ăn.</li>
+	<li>
+		Tip cho HDV v&agrave; l&aacute;i xe (5usd/người/ng&agrave;y)</li>
+	<li>
+		VAT</li>
+</ul>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; text-align: center;">
+	<span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;"><img alt="" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/hotline.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; width: 300px; height: 90px;" /></span></span></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; text-align: center;">
+	<span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;">HOẶC</span></span></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; text-align: center;">
+	<span style="box-sizing: border-box; font-size: 16px;"><span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; background-color: rgb(255, 255, 0);">CHAT ONLINE NGAY</span></span></span></span></p>
+',updated='17-11-12 03:39:49' where id=222;
+update tour set dieuhanh_id='14', tour_quoc_te='1',DanhMuc1Id='10',DanhMuc2Id='26',danhmuc_multi='',promotion='1',packages='0',name='Tour du lịch Malaysia - Singapore 5 Ngày 4 đêm',name_url='tour-du-lich-malaysia-singapore-5-ngay-4-dem',count_down='',code='',img='/view/admin/Themes/kcfinder/upload/images/du-lich-singapore-malaysia-6%20-AZbooking.png',price_tiep_thi='700000',price_sales='',price='11600000',price_2='',price_3='',price_4='',price_5='',price_6='',price_number='',price_number_2='',price_number_3='',price_number_4='',price_number_5='',price_number_6='',name_price='',name_price_2='',name_price_3='',name_price_4='',name_price_5='',name_price_6='',so_cho='16',durations='5 NGÀY 4 ĐÊM',departure='1',departure_time='Hàng tuần',destination='Singapore, Malaysia',vehicle='Máy bay Vietnam Airline',hotel='4',summary='<p style="text-align: justify;">
+	<span style="color: rgb(255, 0, 0);"><strong>Tour du lịch Malaysia - Singapore 5 Ng&agrave;y 4 Đ&ecirc;m</strong></span>sẽ đưa bạn qua những điểm đến v&ocirc; c&ugrave;ng hấp dẫn:&nbsp;</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="height: 15px; width: 15px;" />&nbsp;Kh&aacute;m ph&aacute; Garden by the Bay: nổi tiếng với những si&ecirc;u c&acirc;y khổng lồ.</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="height: 15px; width: 15px;" />&nbsp;Vui chơi tại Đảo Sentosa</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="height: 15px; width: 15px;" />&nbsp;Kh&aacute;m ph&aacute; Bảo t&agrave;ng tượng s&aacute;p v&agrave; bảo t&agrave;ng lịch sử.</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="height: 15px; width: 15px;" />&nbsp;Tham gia city tour Singapore chụp h&igrave;nh lưu niệm c&ugrave;ng tượng Sư Tử Biển tượng trưng của đất nước Singapore&hellip;</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="height: 15px; width: 15px;" />&nbsp;Bữa ăn đầy đủ, độc đ&aacute;o, mới lạ đảm bảo sức khỏe suốt h&agrave;nh tr&igrave;nh cho Qu&yacute; kh&aacute;ch.</p>
+<p style="text-align: justify;">
+	&nbsp;</p>
+<p style="text-align: center;">
+	<iframe frameborder="0" height="350" scrolling="no" src="https://www.youtube.com/embed/d78F-1rt2FQ" width="648.295px"></iframe></p>
+<p style="text-align: justify;">
+	&nbsp;</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="height: 15px; width: 15px;" />&nbsp;Tại đất nước hồi gi&aacute;o Malaysia: vui chơi giải tr&iacute; Cao nguy&ecirc;n Genting -1 quần thể Casino nổi tiếng thế giới.</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="height: 15px; width: 15px;" />&nbsp;Tham quan động Batu.</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="height: 15px; width: 15px;" />&nbsp;Chi&ecirc;m ngữ th&agrave;nh phố Malacca v&agrave; t&ograve;a nh&agrave; cao nhất Malaysia Twin Tower (niềm tự h&agrave;o nhất của d&acirc;n Malaysia).</p>
+<p>
+	&nbsp;</p>
+<p style="text-align: center;">
+	<iframe frameborder="0" height="350" scrolling="no" src="https://www.youtube.com/embed/NBt5091cHkI" width="648.295px"></iframe></p>
+',highlights='<p background-color:="" font-size:="" open="" style="box-sizing: border-box; margin: 0px 0px 10px 40px; line-height: 1.7em; color: rgb(51, 51, 51); text-align: center;" text-align:="">
+	<span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box;"><span style="box-sizing: border-box; font-weight: 700;">DỊCH VỤ K&Egrave;M THEO HẤP DẪN C&Ugrave;NG CHƯƠNG TR&Igrave;NH</span></span></span></p>
+<table border="0" cellpadding="1" cellspacing="1" style="width: 100%">
+	<tbody>
+		<tr>
+			<td>
+				<p style="text-align: center;">
+					<img alt="Bảo hiểm du lịch" src="https://yolotravel.com.vn/images/tour/icon/bao-hiem569df39f32c48.png" style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px; box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; vertical-align: middle; width: 61.5767px;" /></p>
+				<p style="text-align: center;">
+					<span style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px;">Bảo hiểm du lịch</span></p>
+			</td>
+			<td>
+				<p style="text-align: center;">
+					<img alt="Bữa ăn theo chương trình" src="https://yolotravel.com.vn/images/tour/icon/bua-an569df3b14d910.png" style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px; box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; vertical-align: middle; width: 52.8551px;" /></p>
+				<p style="text-align: center;">
+					<span style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px;">Bữa ăn theo chương tr&igrave;nh</span></p>
+			</td>
+			<td style="text-align: center;">
+				<p>
+					<img alt="Hướng dẫn viên suốt tuyến" src="https://yolotravel.com.vn/images/tour/icon/huong-dan-vien569df3c66a160.png" style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px; box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; vertical-align: middle; width: 55.3125px;" /></p>
+				<p>
+					<span style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px;">Hướng dẫn vi&ecirc;n suốt tuyến</span></p>
+			</td>
+			<td style="text-align: center;">
+				<p>
+					<img alt="Vé tham quan theo chương trình" src="https://yolotravel.com.vn/images/tour/icon/ve-tham-quan569df3e0144b7.png" style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px; box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; vertical-align: middle; width: 66.7614px;" /></p>
+				<p>
+					<span style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px;">V&eacute; tham quan theo chương tr&igrave;nh</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">
+				<p>
+					<img alt="Xe đưa đón theo chương trình" src="https://yolotravel.com.vn/images/tour/icon/xe-dua-don569df3f45d550.png" style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px; box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; vertical-align: middle; width: 61.5767px;" /></p>
+				<p>
+					<span style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px;">Xe đưa đ&oacute;n theo chương tr&igrave;nh</span></p>
+			</td>
+			<td style="text-align: center;">
+				<p>
+					<img alt="Khách sạn tiêu chuẩn" src="https://yolotravel.com.vn/images/tour/icon/hotel569f45bebdf63.png" style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px; box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; vertical-align: middle; width: 52.8551px;" /></p>
+				<p>
+					<span style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px;">Kh&aacute;ch sạn ti&ecirc;u chuẩn</span></p>
+			</td>
+			<td style="text-align: center;">
+				<p>
+					<img alt="Vé máy bay" src="https://yolotravel.com.vn/images/tour/icon/may-bay569f585bb2eb9.png" style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px; box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; vertical-align: middle; width: 55.3125px;" /></p>
+				<p>
+					<span style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px;">V&eacute; m&aacute;y bay</span></p>
+			</td>
+			<td style="text-align: center;">
+				<p>
+					<img alt="Quà tặng kèm" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/icon-hop-qua.png" style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px; box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; vertical-align: middle; width: 44.5028px;" /></p>
+				<p>
+					<span style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px;">Qu&agrave; tặng k&egrave;m 500K</span></p>
+				<div>
+					&nbsp;</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="margin: 0px; line-height: 23px; color: rgb(51, 51, 51); font-family: arial, Verdana, Helvetica, sans-serif; font-size: 13px; text-align: center;">
+	&nbsp;</p>
+<p style="text-align: center;">
+	<strong style="color: rgb(255, 0, 0);"><img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/hotline.png" style="width: 300px; height: 90px;" /></strong></p>
+<p style="text-align: center;">
+	&nbsp;</p>
+<p style="text-align: center;">
+	<span style="color: rgb(255, 0, 0);"><strong>HOẶC</strong></span></p>
+<p style="text-align: center;">
+	<span style="font-size: 16px;"><span style="color: rgb(255, 0, 0);"><strong><span style="background-color: rgb(255, 255, 0);">CHAT ONLINE NGAY</span></strong></span></span></p>
+',schedule='<p>
+	<strong>NG&Agrave;Y 01: H&Agrave; NỘI &ndash; SINGAPORE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Ăn tối)</strong></p>
+<p>
+	<strong>S&aacute;ng:</strong> &nbsp;Xe v&agrave; HDV đ&oacute;n Q&uacute;y kh&aacute;ch tại điển hẹn, khởi h&agrave;nh ra s&acirc;n bay Nội B&agrave;i đ&aacute;p chuyến bay <strong>VN663 (08:05 &ndash; 12:25)</strong> hoặc<strong> VN661 (10:40 &ndash; 14:50).</strong></p>
+<p>
+	<strong>Chiều:</strong>&nbsp; Đến s&acirc;n bay quốc tế Changi &ndash; Singapore, xe v&agrave; hướng dẫn đ&oacute;n qu&yacute; kh&aacute;ch đi thăm quan:</p>
+<p>
+	<strong>Parliament House</strong> &ndash; T&ograve;a nh&agrave; Quốc hội</p>
+<p>
+	<strong>Merlion Park</strong> &ndash; C&ocirc;ng vi&ecirc;n sư tử biển</p>
+<p style="text-align: center;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/cong-vien-s%C6%B0-t%C6%B0-bien.jpeg" style="text-align: center; width: 648.295px;" /></p>
+<p>
+	<strong>Nh&agrave; h&aacute;t Victoria</strong> &ndash; Nh&agrave; h&aacute;t cổ k&iacute;nh nhất Singapore. Nơi đ&acirc;y c&ograve;n l&agrave; t&acirc;m điểm cho nghệ thuật biểu diễn của đảo quốc sư tử ngay từ thời thuộc địa</p>
+<p>
+	<strong>Nh&agrave; h&aacute;t Esplanade</strong> &ndash; Nh&agrave; h&aacute;t hiện đại v&agrave;o bậc nhất của Singapore. Đ&acirc;y l&agrave; biểu tượng kiến tr&uacute;c v&agrave; trung t&acirc;m biểu diễn văn h&oacute;a nghệ thuật tầm cỡ thế giới</p>
+<p>
+	<strong>Đảo </strong><strong>Sentosa</strong> &ndash; Đảo nghỉ dưỡng h&agrave;ng đầu, thăm quan khu giải tr&iacute; phức hợp <strong>Resort World</strong> &ndash; một phức hợp du lịch ấn tượng kết hợp h&agrave;i ho&agrave; giữa c&ocirc;ng vi&ecirc;n thi&ecirc;n nhi&ecirc;n, di sản văn ho&aacute;, khu ẩm thực, trung t&acirc;m mua sắm v&agrave; khu vui chơi giải tr&iacute;. Tr&ecirc;n Sentosa Q&uacute;y kh&aacute;ch tham quan:</p>
+<p>
+	<strong>S.E.A Aquarium</strong> &ndash; thủy cung c&aacute; Hải Dương học lớn nhất Đ&ocirc;ng Nam &Aacute;. Đ&acirc;y được xem l&agrave; thủy cung lớn nhất thế giới trưng b&agrave;y hơn 100.000 sinh vật biển thuộc 800 lo&agrave;i. Ngo&agrave;i ra c&ograve;n c&oacute; tới 20.000 loại san h&ocirc;. Nơi đ&acirc;y cũng c&oacute; d&ograve;ng s&ocirc;ng lười d&agrave;i nhất thế giới, khoảng 620 m&eacute;t</p>
+<p>
+	Qu&yacute; kh&aacute;ch cũng c&oacute; thể thử vận may tại <strong>Casino</strong>.</p>
+<p>
+	Sau bữa tối nếu thời gian cho ph&eacute;p, Qu&yacute; kh&aacute;ch c&oacute; thể đăng k&yacute; tour tự chọn Singapore by Night &ndash; kh&aacute;m ph&aacute; Singapore về đ&ecirc;m<strong><em> (CHI PH&Iacute; TỰ T&Uacute;C)</em></strong></p>
+<p>
+	Trải nghiệm hệ thống t&agrave;u điện ngầm MRT kh&ocirc;ng người l&aacute;i nhưng cực kỳ an to&agrave;n</p>
+<p style="margin-left:36.0pt;">
+	Ngồi thuyền du ngoạn tr&ecirc;n s&ocirc;ng, vừa chi&ecirc;m ngưỡng &aacute;nh đ&egrave;n m&agrave;u rực rỡ của tập hợp c&aacute;c qu&aacute;n bar, trung t&acirc;m mua sắm hai b&ecirc;n bờ song, vừa lắng nghe c&acirc;u chuyện kỳ b&iacute; về lịch sử đảo quốc.</p>
+<p style="margin-left:36.0pt;">
+	Một lần đến với khu phức hợp Suntec City để hiểu r&otilde; hơn về sự tuyệt vời của nghệ thuật phong thủy Singapore</p>
+<p>
+	<strong>Tối:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Q&uacute;y kh&aacute;ch ăn tối tại nh&agrave; h&agrave;ng v&agrave; nghỉ đ&ecirc;m tại kh&aacute;ch sạn 3- 4* trong trung t&acirc;m th&agrave;nh phố</p>
+<p>
+	<img height="1" src="file:///C:/Users/ASUS/AppData/Local/Temp/OICE_0820B3E2-1D97-4EFC-8BA6-F77DD6F96348.0/msohtmlclip1/01/clip_image006.gif" width="1" /><strong>NG&Agrave;Y 02: </strong><strong>SINGAPORE &ndash; JOHOR BAHRU&nbsp;&nbsp;&nbsp; </strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>(</strong><strong>Ăn s&aacute;ng, trưa, tối</strong><strong> )</strong></p>
+<p>
+	<strong>S&aacute;ng:</strong>&nbsp;&nbsp;&nbsp; Sau bữa s&aacute;ng tại kh&aacute;ch sạn, Xe V&agrave; HDV đ&oacute;n Q&uacute;y kh&aacute;ch tham quan:</p>
+<p>
+	<strong>Vườn thực vật Garden b</strong><strong>y </strong><strong>the Bay &ndash; </strong>khu vườn c&acirc;y nh&acirc;n tạo với hệ thống si&ecirc;u c&acirc;y c&oacute; khả năng tổng hợp năng lượng mặt trời v&agrave; lọc sạch kh&ocirc;ng kh&iacute;. Thăm quan hai khu nh&agrave; vườn trong nh&agrave; k&iacute;nh m&aacute;i v&ograve;m (Flower Dome &amp; Cloud Forest) để t&igrave;m hiểu về h&agrave;ng ngh&igrave;n loại c&acirc;y lạ tr&ecirc;n thế giới v&agrave; đặc biệt tận mắt chứng kiến c&aacute;c loại nước thải v&agrave; r&aacute;c thải của hai nh&agrave; k&iacute;nh n&agrave;y được t&aacute;i sử dụng để trở th&agrave;nh năng lượng quay tua bin hơi nước nhằm cung cấp điện cho khu vườn<strong> (CHI PH&Iacute; TỰ T&Uacute;C). </strong></p>
+<p style="text-align: center;">
+	<img alt="Kỳ quan Gardens by the Bay" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/tour-quoc-te/sing-ma/cong-vien-cay-khong-lo-o-singapore-2.jpg" style="text-align: center; width: 648.295px;" /></p>
+<p>
+	Q&uacute;y kh&aacute;ch tự do tham quan, mua sắm tại cửa h&agrave;ng v&agrave;ng bạc đ&aacute; qu&yacute;; cửa h&agrave;ng dầu&nbsp; gi&oacute; &ndash; sản phẩm truyền thống nổi tiếng của Quốc đảo Sư tử.</p>
+<p>
+	Sau đ&oacute; Q&uacute;y kh&aacute;ch khởi h&agrave;nh đi Johor Bahru</p>
+<p>
+	<strong>Trưa:</strong>&nbsp; Q&uacute;y kh&aacute;ch dừng ch&acirc;n ăn trưa tại Johor &ndash; l&agrave; th&agrave;nh phố bi&ecirc;n giới giữa Singapore&nbsp; v&agrave; Malaysia. <strong>Chiều:</strong>&nbsp; Sau bữa ăn trưa tại nh&agrave; h&agrave;ng, đo&agrave;n khởi h&agrave;nh đi <strong>Johor Premium Outlets </strong>l&agrave; địa chỉ săn h&agrave;ng thời trang gi&aacute; rẻ d&agrave;nh cho giới trẻ, m&agrave; ngay cả cư d&acirc;n Singapore cũng l&agrave; t&iacute;n đồ của khu mua sắm n&agrave;y. Ở đ&acirc;y du kh&aacute;ch c&oacute; thể săn h&agrave;ng hiệu với gi&aacute; rẻ kh&ocirc;ng tưởng, thương xuy&ecirc;n giảm 25 &ndash; 65% tại 80 cửa h&agrave;ng với c&aacute;c nh&atilde;n hiệu lớn như <strong>Gap, Nike,...</strong></p>
+<p style="text-align: center;">
+	<img alt="mages-of-Singapore-Live-azbooking" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/tour-quoc-te/sing-ma/mages-of-Singapore-Live-azbooking.JPG" style="text-align: center; width: 648.295px;" /></p>
+<p>
+	<strong>Tối:</strong> &nbsp;&nbsp;&nbsp; Q&uacute;y kh&aacute;ch ăn tối tại nh&agrave; h&agrave;ng v&agrave; nghỉ đ&ecirc;m tại kh&aacute;ch sạn 3 sao ở Johor.</p>
+<p>
+	<strong>NG&Agrave;Y 0</strong><strong>3</strong><strong>:</strong><strong> JOHOR BAHRU -&nbsp; KUALALUMPUR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong><strong>(</strong><strong>Ăn s&aacute;ng, trưa, tối</strong><strong> )</strong></p>
+<p>
+	&nbsp;</p>
+<p>
+	<strong>S&aacute;ng:</strong>&nbsp; Sau khi d&ugrave;ng bữa s&aacute;ng buffet tại kh&aacute;ch sạn, Xe v&agrave; HDV đ&oacute;n Q&uacute;y kh&aacute;ch tới Kualalumpur. <strong><em>Twin Tower</em></strong>: l&agrave; niềm ki&ecirc;u h&atilde;nh của nh&acirc;n d&acirc;n Malaysia ngay từ khi n&oacute; xuất hiện. T&ograve;a th&aacute;p cao 88 tầng, do tập đo&agrave;n dầu kh&iacute; h&ugrave;ng mạnh nhất Malaysia x&acirc;y dựng n&agrave;y đ&atilde; từng được coi l&agrave; t&ograve;a th&aacute;p cao nhất thế giới.&nbsp; <strong>Cung điện Ho&agrave;ng Gia, Đ&agrave;i tưởng niệm, Quảng trường độc lập, ch&ugrave;a Thi&ecirc;n Hậu.</strong></p>
+<p>
+	Thưởng thức v&agrave; mua sắm Socola tại Cửa h&agrave;ng<strong> Socola &ndash; Bery&rsquo;s </strong>nổi tiếng của Malaysia</p>
+<p>
+	<strong>Tối:</strong>&nbsp;&nbsp;&nbsp; Q&uacute;y kh&aacute;ch ăn tối tại nh&agrave; h&agrave;ng v&agrave; Nghỉ đ&ecirc;m tại kh&aacute;ch sạn ti&ecirc;u chuẩn &nbsp;3-4* tại Kualalumpur</p>
+<p>
+	<img height="1" src="file:///C:/Users/ASUS/AppData/Local/Temp/OICE_0820B3E2-1D97-4EFC-8BA6-F77DD6F96348.0/msohtmlclip1/01/clip_image006.gif" width="1" /><strong>NG&Agrave;Y 04: BATU - GENTING&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong><strong>( Ăn s&aacute;ng, trưa, tối)</strong></p>
+<p>
+	<strong>S&aacute;ng:</strong> Sau bữa ăn s&aacute;ng tại kh&aacute;ch sạn, xe v&agrave; hướng dẫn đ&oacute;n đo&agrave;n đi thăm quan:</p>
+<p>
+	<strong><em>Động Batu</em></strong> &ndash; Nơi thờ đạo Hinđu linh thi&ecirc;ng của người Ấn Độ cổ với 272 bậc thang dẫn đến đền thờ trong động.</p>
+<p style="text-align: center;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/Malacca%20-%20azbooking.jpg" style="text-align: center; width: 648.295px;" /></p>
+<p>
+	Mua sắm tại cửa h&agrave;ng đặc sản địa phương, cửa h&agrave;ng miễn thuế.</p>
+<p>
+	Cửa h&agrave;ng v&agrave;ng bạc đ&aacute; qu&yacute;, đặc biệt t&igrave;m hiểu về quốc bảo của Malaysia,</p>
+<p>
+	<strong>Trưa:</strong>&nbsp;&nbsp;&nbsp; Q&uacute;y kh&aacute;ch ăn trưa tại nh&agrave; h&agrave;ng</p>
+<p>
+	<strong>Chiều:</strong> Sau bữa trưa đo&agrave;n khởi h&agrave;nh l&ecirc;n <strong><em>cao nguy&ecirc;n Genting</em></strong>. <strong><em>Đến cao nguy&ecirc;n Genting xe c&aacute;p treo đưa qu&yacute; kh&aacute;ch l&ecirc;n đỉnh cao nguy&ecirc;n với độ cao 2.000m so với mặt nước biển, qu&yacute; kh&aacute;ch </em></strong>&nbsp;bắt đầu kh&aacute;m ph&aacute;m thế giới sống động tại đ&acirc;y. &nbsp;Mua sắm, thử vận may <strong>tại <em>s&ograve;ng bạc Genting Casino nổi tiếng Đ&ocirc;ng Nam &Aacute;, thưởng thức Magic Show</em></strong><em>, </em>tham gia c&aacute;c tr&ograve; chơi như: <strong>l&aacute;i xe m&ocirc; t&ocirc;, đi t&agrave;u cao tốc tr&ecirc;n kh&ocirc;ng, vui chơi chụp h&igrave;nh trong nh&agrave; tuyết&hellip;(CHI PH&Iacute; TỰ T&Uacute;C)</strong><strong>. </strong>Sau đ&oacute; đo&agrave;n khởi h&agrave;nh về Kualalumpur ăn tối v&agrave; nhận ph&ograve;ng kh&aacute;ch sạn nghỉ ngơi.</p>
+<p>
+	<strong>Tối:</strong>&nbsp;&nbsp; Q&uacute;y kh&aacute;ch ăn tối tại nh&agrave; h&agrave;ng v&agrave; nghỉ đ&ecirc;m tại kh&aacute;ch sạn 3-4* trong trung t&acirc;m th&agrave;nh phố</p>
+<p>
+	<strong>NG&Agrave;Y 0</strong><strong>5</strong><strong>: KUALA LUMPUR -&nbsp; H&Agrave; NỘI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>( </strong><strong>Ăn s&aacute;ng</strong><strong> )</strong></p>
+<p>
+	<strong>S&aacute;ng:&nbsp;&nbsp; </strong><strong>S</strong>au bữa s&aacute;ng tại kh&aacute;ch sạn, Qu&yacute; kh&aacute;ch trả ph&ograve;ng kh&aacute;ch sạn, tự do mua sắm. Đến giờ hẹn xe v&agrave; hướng dẫn vi&ecirc;n đ&oacute;n đo&agrave;n đi tham quan, th&agrave;nh phố mới <strong>New trajaya</strong> &ndash; Một trong những th&agrave;nh phố th&ocirc;ng minh v&agrave; hiện đại bậc nhất tr&ecirc;n thế giới, tham quan Th&aacute;nh đường hồi gi&aacute;o.</p>
+<p>
+	<strong>Trưa:</strong>&nbsp;&nbsp; Q&uacute;y kh&aacute;ch tự t&uacute;c ăn trưa</p>
+<p>
+	Sau đ&oacute; Q&uacute;y kh&aacute;ch l&agrave;m thủ tục xuất cảnh về Việt Nam bằng chuyến bay <strong>VN680(19:10 &ndash; 21:15),</strong> xe &ocirc;t&ocirc; đ&oacute;n Qu&yacute; kh&aacute;ch về điểm hẹn ban đầu.</p>
+<p>
+	&nbsp;Về tới H&agrave; Nội, chuyến đi kết th&uacute;c. Chia tay v&agrave; hẹn gặp lại Qu&yacute; kh&aacute;ch trong những chuyến đi lần sau.</p>
+<p>
+	<strong><em>Lưu &yacute;: </em></strong><strong><em>Lịch tr&igrave;nh c&oacute; thể thay đổi linh hoạt cho ph&ugrave; hợp với thời gian trong chương tr&igrave;nh thăm quan v&agrave; kh&ocirc;ng cắt giảm c&aacute;c điểm nếu kh&aacute;ch kh&ocirc;ng y&ecirc;u cầu!.)</em></strong></p>
+',price_list='<h2 align="center">
+	<span style="font-size: 16px;"><span style="color: rgb(255, 0, 0);">GI&Aacute; TRỌN G&Oacute;I: 11.600.000đ/kh&aacute;ch</span></span></h2>
+<p style="text-align: center;">
+	<strong>( &Aacute;p dụng cho đo&agrave;n 16 kh&aacute;ch trở l&ecirc;n )</strong></p>
+',content='',list_img='',title='Du lịch Singapore - Malaysia 5 ngày 4 đêm',keyword='du lịch Singapore - Malaysia 5 ngày 4 đêm, du lịch tiết kiệm, du lịch Sing mã tiết kiệm, du lịch Sing tiết kiệm',description='',inclusion='<ul>
+	<li>
+		V&eacute; m&aacute;y bay khứ hồi HAN &ndash; SIN/KUL - HAN, Lệ ph&iacute; s&acirc;n bay quốc tế, phụ thu nhi&ecirc;n liệu HK ( &Aacute;p dụng cho kh&aacute;ch gh&eacute;p đo&agrave;n mua tour trọn g&oacute;i )</li>
+	<li>
+		Kh&aacute;ch sạn 3- 4 sao tại Singapore, Malaysia, 3* tại Joho (02 ng&shy;&shy;ười/ph&ograve;ng, trường hợp lẻ nam, nữ 3 ng&shy;&shy;ười/ph&ograve;ng.</li>
+	<li>
+		C&aacute;c bữa ăn theo ch&shy;ư&shy;ơng tr&igrave;nh, v&eacute; thắng cảnh v&agrave;o cửa lần một.</li>
+	<li>
+		Ph&shy;&shy;&shy;ương tiện vận chuyển trong v&agrave; ngo&agrave;i nước: xe du lịch m&aacute;y lạnh đời mới.</li>
+	<li>
+		H&shy;&shy;&shy;ướng dẫn vi&ecirc;n suốt tuyến( đo&agrave;n đủ 15 kh&aacute;ch) v&agrave; hướng dẫn vi&ecirc;n địa phương</li>
+	<li>
+		Qu&agrave; tặng: Mũ du lịch, Nước, khăn lạnh.</li>
+	<li>
+		Bảo hiểm du lịch quốc tế</li>
+</ul>
+',exclusion='<ul>
+	<li>
+		Ph&iacute; l&agrave;m hộ chiếu, h&agrave;nh l&yacute; qu&aacute; cước.</li>
+	<li>
+		Visa t&aacute;i nhập lại Việt Nam đối với kh&aacute;ch nước ngo&agrave;i, Việt kiều.</li>
+	<li>
+		Chi ti&ecirc;u c&aacute; nh&acirc;n, đồ uống, chi ph&iacute; điện thoại, giặt l&agrave; trong kh&aacute;ch sạn, ph&ograve;ng đơn, thuế VAT&hellip;</li>
+	<li>
+		Tiền T&iacute;p cho Hướng dẫn vi&ecirc;n v&agrave; l&aacute;i xe 3USD/kh&aacute;ch/ng&agrave;y.</li>
+</ul>
+',updated='17-11-12 03:39:57' where id=221;
+update tour set dieuhanh_id='0', tour_quoc_te='',DanhMuc1Id='2',DanhMuc2Id='3',danhmuc_multi='',promotion='1',packages='1',name='Tour du lịch Hà Giang 3 ngày 2 đêm tháng 10 KHUYẾN MẠI HẤP DẪN',name_url='tour-du-lich-ha-giang-3-ngay-2-dem-thang-10-khuyen-mai-hap-dan',count_down='',code='',img='/view/admin/Themes/kcfinder/upload/images/tour/ha-giang/mua-hoa-tam-giac-mach-dong-van-ha-giang-banner.png',price_tiep_thi='300000',price_sales='2550000',price='2350000',price_2='',price_3='',price_4='',price_5='',price_6='',price_number='',price_number_2='',price_number_3='',price_number_4='',price_number_5='',price_number_6='',name_price='',name_price_2='',name_price_3='',name_price_4='',name_price_5='',name_price_6='',so_cho='8',durations='3 ngày 2 đêm',departure='1',departure_time='Thứ 6 hàng tuần',destination='Yên Viên, Đồng Văn, Lũng Cú',vehicle='Ô tô',hotel='2',summary='<p style="text-align: center;">
+	<span style="color:#ff0000;"><strong><span style="font-size:16px;">Rực rỡ Đồng Văn, H&agrave; Giang - M&ugrave;a hoa tam gi&aacute;c mạch th&aacute;ng 10</span></strong></span></p>
+<p style="text-align: justify;">
+	Đồng Văn &ndash; Điểm dừng ch&acirc;n tuyệt vời cho chuyến du lịch m&ugrave;a thu! Bạn đ&atilde; c&oacute; kế hoạch du lịch, kh&aacute;m ph&aacute; g&igrave; trong m&ugrave;a thu n&agrave;y? Chuyến du h&iacute; Đồng Văn được coi l&agrave; gợi &yacute; kh&aacute; tuyệt vời!</p>
+<p style="text-align: justify;">
+	Tại đ&acirc;y, du kh&aacute;ch c&oacute; thể mặc sức &ldquo;săn&rdquo; những shoot ảnh ấn tượng, chi&ecirc;m ngưỡng từng c&aacute;nh đồng hoa tam gi&aacute;c mạch khoe sắc hồng t&iacute;m ng&aacute;t, quyện quanh m&ugrave;i sương n&uacute;i c&ugrave;ng hương hoa thơm ng&aacute;t.</p>
+<p style="text-align: center;">
+	<img alt="mua-hoa-tam-giac-mach-dong-van-ha-giang" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/ha-giang/mua-hoa-tam-giac-mach-dong-van-ha-giang222.jpg" style="width: 80%;" /></p>
+<p style="text-align: justify;">
+	Những c&aacute;nh hoa mỏng manh, tựa sương m&acirc;y khẽ đung đưa theo chiều gi&oacute;! Đồng Văn m&ugrave;a thu rực rỡ, quyến rũ hệt như n&agrave;ng c&ocirc;ng ch&uacute;a tỉnh giấc sau giấc mộng d&agrave;i. C&oacute; đ&ocirc;i ch&uacute;t thơ ng&acirc;y, quyến rũ m&agrave; tr&agrave;n đầy sức sống tươi mới đến lạ kỳ!</p>
+<p style="text-align: justify;">
+	<em><strong>M&ugrave;a hoa tam gi&aacute;c mạch bắt đầu từ th&aacute;ng 10 v&agrave; kết th&uacute;c v&agrave;o khoảng th&aacute;ng 12</strong></em>. Tuy vậy, sẽ kh&ocirc;ng mất qu&aacute; nhiều thời gian, chỉ cần khoảng 3-5 ng&agrave;y l&agrave; đủ để bạn thăm th&uacute; những địa danh nổi tiếng, nh&igrave;n ngắm sắc hoa rực rỡ, h&ograve;a m&igrave;nh v&agrave;o lễ hội hoa tam gi&aacute;c mạch độc đ&aacute;o, v&ocirc; c&ugrave;ng th&uacute; vị.</p>
+<p style="text-align: center;">
+	<img alt="mua-hoa-tam-giac-mach-dong-van-ha-giang" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/ha-giang/mua-hoa-tam-giac-mach-dong-van-ha-giang11.jpg" style="width: 80%;" /></p>
+<p style="text-align: justify;">
+	M&ugrave;a hoa Tam gi&aacute;c mạch ở Đồng Văn kh&ocirc;ng chỉ g&acirc;y xao xuyến, m&agrave; c&ograve;n g&acirc;y thương nhớ cho bất cứ ai đ&atilde; từng đặt ch&acirc;n tới nơi đ&acirc;y đều muốn quay trở lại. Đừng bỏ lỡ cơ hội quay trở lại mảnh đất hiền h&ograve;a, b&igrave;nh dị nhưng v&ocirc; c&ugrave;ng đẹp đẽ n&agrave;y với AZbooking.</p>
+<p style="text-align: justify;">
+	<em>Tham khảo ngay chương tr&igrave;nh dưới đ&acirc;y nh&eacute;!</em></p>
+<p style="text-align: justify;">
+	Đăng k&yacute; <span style="color:#ff0000;"><strong><span style="background-color:#ffff00;">TOUR CHO DOANH NGHIỆP</span></strong></span> vui l&ograve;ng li&ecirc;n hệ: <strong>094.3838.222</strong> để nhận gi&aacute; ưu đ&atilde;i</p>
+<p style="text-align: center;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/ha-giang/hotline-hong.png" style="width: 300px;" /></p>
+<p style="text-align: center;">
+	<strong>Hoặc</strong></p>
+<p style="text-align: center;">
+	<span style="font-size: 16px;"><span style="color: rgb(255, 0, 0);"><strong><span style="background-color: rgb(255, 255, 0);">CHAT ONLINE NGAY</span></strong></span></span></p>
+',highlights='<h2 background-color:="" font-size:="" open="" style="box-sizing: border-box; margin: 0px 0px 10px 40px; line-height: 1.7em; color: rgb(51, 51, 51); text-align: center;" text-align:="">
+	<span style="font-size:16px;"><span style="color:#ff0000;"><span style="box-sizing: border-box;"><span style="box-sizing: border-box;"><span style="box-sizing: border-box; font-weight: 700;">DỊCH VỤ K&Egrave;M THEO HẤP DẪN C&Ugrave;NG CHƯƠNG TR&Igrave;NH</span></span></span></span></span></h2>
+<table border="1" cellpadding="0" cellspacing="0" style="width: 100%">
+	<tbody>
+		<tr>
+			<td>
+				<p style="text-align: center;">
+					<img alt="Bảo hiểm du lịch" src="https://yolotravel.com.vn/images/tour/icon/bao-hiem569df39f32c48.png" style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px; box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; vertical-align: middle;" /></p>
+				<p style="text-align: center;">
+					<span style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px;">Bảo hiểm du lịch</span></p>
+			</td>
+			<td>
+				<p style="text-align: center;">
+					<img alt="Bữa ăn theo chương trình" src="https://yolotravel.com.vn/images/tour/icon/bua-an569df3b14d910.png" style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px; box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; vertical-align: middle; width: 59.0938px;" /></p>
+				<p style="text-align: center;">
+					<span style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px;">Bữa ăn theo chương tr&igrave;nh</span></p>
+			</td>
+			<td style="text-align: center;">
+				<p>
+					<img alt="Hướng dẫn viên suốt tuyến" src="https://yolotravel.com.vn/images/tour/icon/huong-dan-vien569df3c66a160.png" style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px; box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; vertical-align: middle; width: 61.7969px;" /></p>
+				<p>
+					<span style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px;">Hướng dẫn vi&ecirc;n suốt tuyến</span></p>
+			</td>
+			<td style="text-align: center;">
+				<p>
+					<img alt="Vé tham quan theo chương trình" src="https://yolotravel.com.vn/images/tour/icon/ve-tham-quan569df3e0144b7.png" style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px; box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; vertical-align: middle; width: 74.6875px;" /></p>
+				<p>
+					<span style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px;">V&eacute; tham quan theo chương tr&igrave;nh</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">
+				<p>
+					<img alt="Xe đưa đón theo chương trình" src="https://yolotravel.com.vn/images/tour/icon/xe-dua-don569df3f45d550.png" style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px; box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; vertical-align: middle; width: 69.2969px;" /></p>
+				<p>
+					<span style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px;">Xe đưa đ&oacute;n theo chương tr&igrave;nh</span></p>
+			</td>
+			<td style="text-align: center;">
+				<p>
+					<img alt="Khách sạn tiêu chuẩn" src="https://yolotravel.com.vn/images/tour/icon/hotel569f45bebdf63.png" style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px; box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; vertical-align: middle; width: 59.0938px;" /></p>
+				<p>
+					<span style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px;">Kh&aacute;ch sạn ti&ecirc;u chuẩn</span></p>
+			</td>
+			<td style="text-align: center;">
+				<p>
+					&nbsp;</p>
+			</td>
+			<td style="text-align: center;">
+				<p>
+					&nbsp;</p>
+				<div>
+					&nbsp;</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+',schedule='<h2 style="text-align: justify;">
+	<span style="color:#ff0000;"><span style="font-size:16px;">NG&Agrave;Y 01 : H&Agrave; NỘI - QUẢN BẠ - Y&Ecirc;N MINH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( Ăn trưa,tối )</span></span></h2>
+<p style="text-align: justify;">
+	<strong>05h00: </strong>Xe v&agrave; Hướng dẫn vi&ecirc;n đ&oacute;n Qu&yacute; kh&aacute;ch tại Nh&agrave; H&aacute;t Lớn H&agrave; Nội khởi h&agrave;nh đi H&agrave; Giang - v&ugrave;ng đất c&oacute; ch&egrave; san, rượu mật ong v&agrave; thắng cố, xứ sở của đ&agrave;o phai, hoa l&ecirc;, truyền thống v&agrave; n&aacute;o nhiệt trong buổi chợ phi&ecirc;n&hellip; Tr&ecirc;n đường, Qu&yacute; kh&aacute;ch&nbsp; ngắm cảnh rừng n&uacute;i Đ&ocirc;ng bắc v&ocirc; c&ugrave;ng h&ugrave;ng vĩ v&agrave; hoang sơ .&nbsp; &nbsp;</p>
+<p style="text-align: justify;">
+	<strong>Trưa:</strong> Dừng ch&acirc;n tại <strong>Bắc Quang</strong> để d&ugrave;ng bữa trưa tại nh&agrave; h&agrave;ng với c&aacute;c m&oacute;n ăn đặc sản địa phương.</p>
+<p style="text-align: justify;">
+	<strong>Chiều:</strong> Qu&yacute; kh&aacute;ch l&ecirc;n đường đi <strong>Quản Bạ</strong> - Du kh&aacute;ch đến đ&acirc;y đều c&oacute; dịp chi&ecirc;m ngưỡng <strong>N&uacute;i Đ&ocirc;i C&ocirc; Ti&ecirc;n</strong> - &ldquo;t&aacute;c phẩm nghệ thuật&rdquo; của tạo ho&aacute; ban tặng cho v&ugrave;ng đất n&agrave;y, ngo&agrave;i ra Qu&yacute; kh&aacute;ch c&ograve;n c&oacute; dịp nghe kể về truyền thuyết của ngọn n&uacute;i n&agrave;y, v&ocirc; v&ugrave;ng hấp dẫn v&agrave; th&uacute; vị.</p>
+<p style="text-align: center;">
+	<img alt="nui-doi-co-tien-ha-giang-azbooking" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/ha-giang/nui-doi-co-tien-ha-giang-azbooking.jpg" style="width: 80%;" /></p>
+<p style="text-align: center;">
+	<em>H&igrave;nh ảnh N&uacute;i Đ&ocirc;i C&ocirc; Ti&ecirc;n, Quản Bạ, H&agrave; Giang</em></p>
+<p style="text-align: justify;">
+	Sau đ&oacute;, Qu&yacute; kh&aacute;ch sẽ đi qua rừng th&ocirc;ng bạt ng&agrave;n đẹp nhất Việt Nam trải d&agrave;i tr&ecirc;n c&aacute;c sườn n&uacute;i cao để đến với đến thị trấn <strong>Y&ecirc;n Minh</strong>. Qu&yacute; kh&aacute;ch đến kh&aacute;ch sạn nhận ph&ograve;ng nghỉ ngơi.</p>
+<p style="text-align: justify;">
+	<strong>Tối: </strong>Qu&yacute; kh&aacute;ch d&ugrave;ng bữa tối tại nh&agrave; h&agrave;ng.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p style="text-align: justify;">
+	Sau bữa ăn, Tự do dạo chơi ngắm cảnh phố n&uacute;i về đ&ecirc;m. Nghỉ đ&ecirc;m tại kh&aacute;ch sạn.</p>
+<h2 style="text-align: justify;">
+	<span style="color:#ff0000;"><span style="font-size:16px;">NG&Agrave;Y 02 : Y&Ecirc;N MINH &nbsp;&ndash; ĐỒNG VĂN &ndash; LŨNG C&Uacute;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Ăn s&aacute;ng, trưa, tối)</span></span></h2>
+<p style="text-align: justify;">
+	<strong>S&aacute;ng:</strong> Qu&yacute; kh&aacute;ch thức dậy ăn s&aacute;ng v&agrave; l&agrave;m thủ tục trả ph&ograve;ng.</p>
+<p style="text-align: justify;">
+	<strong>7h00 :&nbsp; </strong>Xe v&agrave; Hướng dẫn vi&ecirc;n đưa Qu&yacute; kh&aacute;ch đi <strong>Cao nguy&ecirc;n Đồng Văn</strong> - l&agrave; một cao nguy&ecirc;n đ&aacute; trải rộng tr&ecirc;n bốn huyện Quản Bạ, Y&ecirc;n Minh, Đồng Văn, M&egrave;o Vạc.</p>
+<p style="text-align: center;">
+	<img alt="cao-nguyen-da-dong-van-ha-giang-azbooking.vn" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/ha-giang/cao-nguyen-da-dong-van-ha-giang-azbooking.vn.jpg" style="width: 80%;" /></p>
+<p style="text-align: center;">
+	<em>Cao nguy&ecirc;n đ&aacute; Đồng Văn, H&agrave; Giang</em></p>
+<p style="text-align: justify;">
+	Qu&yacute; kh&aacute;ch dừng ch&acirc;n thăm quan ở <strong>Phố C&aacute;o, Sủng L&agrave;, v&agrave;o l&agrave;ng văn h&oacute;a Lũng Cẩm</strong> nơi lấy bối cảnh những thước phim nổi tiếng &ldquo;Chuyện của Pao&rdquo; &ndash; v&agrave;o m&ugrave;a đ&ocirc;ng, m&ugrave;a xu&acirc;n nở rộ những đồng hoa cải v&agrave;ng hoặc hoa đ&agrave;o tết,&nbsp; th&iacute;ch hợp cho những thước h&igrave;nh l&atilde;ng mạn m&agrave; đậm n&eacute;t văn h&oacute;a&hellip;</p>
+<p style="text-align: justify;">
+	Qu&yacute; kh&aacute;ch cũng sẽ gh&eacute; thăm <strong>dinh thự vua M&egrave;o Vương Ch&iacute; S&igrave;nh</strong> với kiến tr&uacute;c độc đ&aacute;o v&agrave; những c&acirc;u chuyện đặc sắc.</p>
+<p style="text-align: justify;">
+	Qu&yacute; kh&aacute;ch đến <strong>Lũng C&uacute;</strong> - Nơi địa đầu Tổ Quốc, hay c&ograve;n được mi&ecirc;u tả l&agrave;: &ldquo;Nơi c&uacute;i mặt s&aacute;t đất, ngẩng mặt đụng trời&rdquo;. Qu&yacute; kh&aacute;ch thăm quan <strong>Cột cờ Tổ Quốc</strong> v&agrave; chụp h&igrave;nh lưu niệm.</p>
+<p style="text-align: center;">
+	<img alt="cot-co-lung-cu-ha-giang-azbooking.vn" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/ha-giang/cot-co-lung-cu-ha-giang-azbooking.vn.jpg" style="width: 80%;" /></p>
+<p style="text-align: center;">
+	<em>Cột cờ Lũng C&uacute;</em></p>
+<p style="text-align: justify;">
+	Từ cột cờ Lũng C&uacute;, Qu&yacute; kh&aacute;ch c&oacute; thể ngắm phong cảnh ruộng bậc thang đẹp mắt xen kẽ những nh&agrave; tr&igrave;nh tường của d&acirc;n tộc L&ocirc; L&ocirc; trong bản S&eacute;o Lủng b&ecirc;n dưới.</p>
+<p style="text-align: justify;">
+	<strong>Trưa : </strong>Qu&yacute; kh&aacute;ch d&ugrave;ng bữa trưa tại nh&agrave; h&agrave;ng Lũng C&uacute;.</p>
+<p style="text-align: justify;">
+	Sau h&agrave;nh tr&igrave;nh tr&igrave;nh tham quan qu&yacute; kh&aacute;ch về kh&aacute;ch sạn nhận ph&ograve;ng nghỉ ngơi.</p>
+<p style="text-align: justify;">
+	<strong>Chiều :</strong> Xe v&agrave; Hướng dẫn vi&ecirc;n sẽ đưa Qu&yacute; kh&aacute;ch đi thăm quan <strong>M&atilde; P&igrave; L&egrave;ng</strong> - Nơi được mệnh danh l&agrave; đệ nhất h&ugrave;ng quan của Việt Nam.</p>
+<p style="text-align: center;">
+	<img alt="cung-duong-deo-ma-pi-leng-ha-giang-azbooking" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/ha-giang/cung-duong-deo-ma-pi-leng-ha-giang-azbooking.png" style="width: 80%;" /></p>
+<p style="text-align: center;">
+	Cung đường đ&egrave;o M&atilde; P&igrave; L&egrave;ng, H&agrave; Giang</p>
+<p style="text-align: justify;">
+	<strong>Tối: </strong>Qu&yacute; kh&aacute;ch d&ugrave;ng bữa tối tại nh&agrave; h&agrave;ng.Sau bữa tối, Qu&yacute; kh&aacute;ch tự do tản bộ v&agrave; thăm khu phố cổ Đồng Văn - khu phố cổ mang đậm dấu ấn kiến tr&uacute;c của người Hoa với những ng&ocirc;i nh&agrave; hai tầng lợp ng&oacute;i &acirc;m dương, những chiếc đ&egrave;n lồng đỏ cao cao...Nghỉ đ&ecirc;m tại Đồng Văn</p>
+<h2 style="text-align: justify;">
+	<span style="color:#ff0000;"><span style="font-size:16px;">NG&Agrave;Y 03 : H&Agrave; GIANG &ndash; H&Agrave; NỘI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( Ăn s&aacute;ng,trưa)</span></span></h2>
+<p style="text-align: justify;">
+	<strong>06h00 S&aacute;ng: </strong>Qu&yacute; kh&aacute;ch d&ugrave;ng bữa s&aacute;ng v&agrave; tự do tham gia <strong>chợ phi&ecirc;n Đồng Văn</strong> đậm n&eacute;t văn h&oacute;a d&acirc;n tộc với nhiều đồ d&acirc;n tộc đặc sắc. Sau đ&oacute; qu&yacute; kh&aacute;ch về kh&aacute;ch sạn l&agrave;m thủ tục trả ph&ograve;ng.Xe v&agrave; Hướng dẫn vi&ecirc;n đưa Qu&yacute; kh&aacute;ch trở về H&agrave; Nội.</p>
+<p style="text-align: justify;">
+	<strong>Trưa: </strong>Qu&yacute; kh&aacute;ch ăn trưa tại nh&agrave; h&agrave;ng tr&ecirc;n đường đi.</p>
+<p style="text-align: justify;">
+	Qu&yacute; kh&aacute;ch tập trung l&ecirc;n xe trở về H&agrave; Nội.</p>
+<p style="text-align: justify;">
+	<strong>20h00: </strong>Qu&yacute; kh&aacute;ch về tới H&agrave; Nội.Kết th&uacute;c chương tr&igrave;nh tham quan,th&acirc;n &aacute;i v&agrave; hẹn gặp lại qu&yacute; kh&aacute;ch.</p>
+<p style="text-align: center;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/ha-giang/hotline-hong.png" style="width: 300px;" /></p>
+<p style="text-align: center;">
+	<strong>Hoặc</strong></p>
+<p style="text-align: center;">
+	<span style="font-size: 16px;"><span style="color: rgb(255, 0, 0);"><strong><span style="background-color: rgb(255, 255, 0);">CHAT ONLINE NGAY</span></strong></span></span></p>
+',price_list='<h2 style="text-align: center;">
+	<span style="color:#ff0000;"><span style="font-size:16px;">GI&Aacute; TOUR 01 KH&Aacute;CH : 2.350.000 VNĐ</span></span></h2>
+<p style="text-align: center;">
+	<strong><span style="color:#ff0000;"><span style="font-size:16px;">( &Aacute;p dụng cho đo&agrave;n gh&eacute;p kh&aacute;ch lẻ )</span></span></strong></p>
+<h3 style="text-align: justify;">
+	<span style="color:#0000ff;"><span style="font-size:14px;">QUY ĐỊNH PHỤ THU</span></span></h3>
+<ul>
+	<li style="text-align: justify;">
+		<p>
+			Phụ thu ph&ograve;ng đơn 550.000đ/ kh&aacute;ch/ 2 đ&ecirc;m (&Aacute;p dụng trong trường hợp kh&aacute;ch muốn ở 01 m&igrave;nh 01 ph&ograve;ng trong suốt h&agrave;nh tr&igrave;nh)</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			Trẻ em từ 10 tuổi trở l&ecirc;n: t&iacute;nh 100% gi&aacute; tour.</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			Trẻ em từ 05 &ndash; 9 tuổi: t&iacute;nh 50 % gi&aacute; trị tour &ndash; Ngủ chung với bố mẹ.</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			Trẻ em dưới 05 tuổi: miễn ph&iacute; (Ăn ngủ c&ugrave;ng bố mẹ, ngồi l&ograve;ng bố hoặc mẹ)</p>
+	</li>
+</ul>
+',content='',list_img='',title='Tour du lịch Hà Giang 3 ngày 2 đêm tháng 10 KHUYẾN MẠI HẤP DẪN chỉ 2.3',keyword='tour du lịch hà giang 3 ngày 2 đêm, tour du lịch hà giang tháng 10, du lịch hà giang 3 ngày',description='Nếu Hà Giang được ví như bản tình ca da diết, mị hoặc thì Đồng Văn như những nốt nhạc du dương khi cao vút lúc lại trầm lắng. Hãy cùng AZbooking tham gia hành trình khám ',inclusion='<ul>
+	<li style="text-align: justify;">
+		<p>
+			Xe &ocirc;t&ocirc; 16c,29c tham quan theo chương tr&igrave;nh</p>
+	</li>
+	<li>
+		<p>
+			Ăn c&aacute;c bữa theo chương tr&igrave;nh:</p>
+		<ul>
+			<li style="margin-left: 40px;">
+				<p>
+					&nbsp;05 bữa chính 120.000/su&acirc;́t.</p>
+			</li>
+			<li style="margin-left: 40px;">
+				<p>
+					&nbsp;Ăn s&aacute;ng tại kh&aacute;ch sạn + Nh&agrave; h&agrave;ng : 40.000/suất</p>
+			</li>
+		</ul>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			Kh&aacute;ch sạn ti&ecirc;u chuẩn sạch sẽ đầy đủ tiện nghi: ngủ 02-03 kh&aacute;ch/ ph&ograve;ng.</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			Hướng dẫn vi&ecirc;n phục vụ su&ocirc;́t tuy&ecirc;́n</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			V&eacute; v&agrave;o cửa 1 lần c&aacute;c thắng cảnh trong chương tr&igrave;nh.</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			Nước u&ocirc;́ng tr&ecirc;n đường</p>
+	</li>
+	<li>
+		Bảo hi&ecirc;̉m du lịch mức tối đa: 20.000.000 VND</li>
+</ul>
+',exclusion='<ul>
+	<li style="text-align: justify;">
+		<p>
+			Thuế VAT 10%</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			Đồ uống, điện thoại, chi ph&iacute; giặt l&agrave; hoặc chi ph&iacute; c&aacute; nh&acirc;n kh&aacute;c</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			Ăn uống ngo&agrave;i chương tr&igrave;nh.</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			Phụ thu người nước ngo&agrave;i 10 USD/ 1 người/ 1 ng&agrave;y</p>
+	</li>
+</ul>
+<p style="text-align: center;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/ha-giang/hotline-hong.png" style="width: 300px;" /></p>
+<p style="text-align: center;">
+	<strong>Hoặc</strong></p>
+<p style="text-align: center;">
+	<span style="font-size: 16px;"><span style="color: rgb(255, 0, 0);"><strong><span style="background-color: rgb(255, 255, 0);">CHAT ONLINE NGAY</span></strong></span></span></p>
+',updated='17-11-12 03:40:04' where id=220;
+update tour set dieuhanh_id='14', tour_quoc_te='',DanhMuc1Id='2',DanhMuc2Id='3',danhmuc_multi='',promotion='1',packages='1',name='Tour du lịch Hà Giang 3 ngày 2 đêm tháng 10 KHUYẾN MẠI HẤP DẪN',name_url='tour-du-lich-ha-giang-3-ngay-2-dem-thang-10-khuyen-mai-hap-dan',count_down='',code='',img='/view/admin/Themes/kcfinder/upload/images/tour/ha-giang/mua-hoa-tam-giac-mach-dong-van-ha-giang-banner.png',price_tiep_thi='300000',price_sales='2550000',price='2350000',price_2='',price_3='',price_4='',price_5='',price_6='',price_number='',price_number_2='',price_number_3='',price_number_4='',price_number_5='',price_number_6='',name_price='',name_price_2='',name_price_3='',name_price_4='',name_price_5='',name_price_6='',so_cho='8',durations='3 ngày 2 đêm',departure='1',departure_time='Thứ 6 hàng tuần',destination='Yên Viên, Đồng Văn, Lũng Cú',vehicle='Ô tô',hotel='2',summary='<p style="text-align: center;">
+	<span style="color:#ff0000;"><strong><span style="font-size:16px;">Rực rỡ Đồng Văn, H&agrave; Giang - M&ugrave;a hoa tam gi&aacute;c mạch th&aacute;ng 10</span></strong></span></p>
+<p style="text-align: justify;">
+	Đồng Văn &ndash; Điểm dừng ch&acirc;n tuyệt vời cho chuyến du lịch m&ugrave;a thu! Bạn đ&atilde; c&oacute; kế hoạch du lịch, kh&aacute;m ph&aacute; g&igrave; trong m&ugrave;a thu n&agrave;y? Chuyến du h&iacute; Đồng Văn được coi l&agrave; gợi &yacute; kh&aacute; tuyệt vời!</p>
+<p style="text-align: justify;">
+	Tại đ&acirc;y, du kh&aacute;ch c&oacute; thể mặc sức &ldquo;săn&rdquo; những shoot ảnh ấn tượng, chi&ecirc;m ngưỡng từng c&aacute;nh đồng hoa tam gi&aacute;c mạch khoe sắc hồng t&iacute;m ng&aacute;t, quyện quanh m&ugrave;i sương n&uacute;i c&ugrave;ng hương hoa thơm ng&aacute;t.</p>
+<p style="text-align: center;">
+	<img alt="mua-hoa-tam-giac-mach-dong-van-ha-giang" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/ha-giang/mua-hoa-tam-giac-mach-dong-van-ha-giang222.jpg" style="width: 80%;" /></p>
+<p style="text-align: justify;">
+	Những c&aacute;nh hoa mỏng manh, tựa sương m&acirc;y khẽ đung đưa theo chiều gi&oacute;! Đồng Văn m&ugrave;a thu rực rỡ, quyến rũ hệt như n&agrave;ng c&ocirc;ng ch&uacute;a tỉnh giấc sau giấc mộng d&agrave;i. C&oacute; đ&ocirc;i ch&uacute;t thơ ng&acirc;y, quyến rũ m&agrave; tr&agrave;n đầy sức sống tươi mới đến lạ kỳ!</p>
+<p style="text-align: justify;">
+	<em><strong>M&ugrave;a hoa tam gi&aacute;c mạch bắt đầu từ th&aacute;ng 10 v&agrave; kết th&uacute;c v&agrave;o khoảng th&aacute;ng 12</strong></em>. Tuy vậy, sẽ kh&ocirc;ng mất qu&aacute; nhiều thời gian, chỉ cần khoảng 3-5 ng&agrave;y l&agrave; đủ để bạn thăm th&uacute; những địa danh nổi tiếng, nh&igrave;n ngắm sắc hoa rực rỡ, h&ograve;a m&igrave;nh v&agrave;o lễ hội hoa tam gi&aacute;c mạch độc đ&aacute;o, v&ocirc; c&ugrave;ng th&uacute; vị.</p>
+<p style="text-align: center;">
+	<img alt="mua-hoa-tam-giac-mach-dong-van-ha-giang" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/ha-giang/mua-hoa-tam-giac-mach-dong-van-ha-giang11.jpg" style="width: 80%;" /></p>
+<p style="text-align: justify;">
+	M&ugrave;a hoa Tam gi&aacute;c mạch ở Đồng Văn kh&ocirc;ng chỉ g&acirc;y xao xuyến, m&agrave; c&ograve;n g&acirc;y thương nhớ cho bất cứ ai đ&atilde; từng đặt ch&acirc;n tới nơi đ&acirc;y đều muốn quay trở lại. Đừng bỏ lỡ cơ hội quay trở lại mảnh đất hiền h&ograve;a, b&igrave;nh dị nhưng v&ocirc; c&ugrave;ng đẹp đẽ n&agrave;y với AZbooking.</p>
+<p style="text-align: justify;">
+	<em>Tham khảo ngay chương tr&igrave;nh dưới đ&acirc;y nh&eacute;!</em></p>
+<p style="text-align: justify;">
+	Đăng k&yacute; <span style="color:#ff0000;"><strong><span style="background-color:#ffff00;">TOUR CHO DOANH NGHIỆP</span></strong></span> vui l&ograve;ng li&ecirc;n hệ: <strong>094.3838.222</strong> để nhận gi&aacute; ưu đ&atilde;i</p>
+<p style="text-align: center;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/ha-giang/hotline-hong.png" style="width: 300px;" /></p>
+<p style="text-align: center;">
+	<strong>Hoặc</strong></p>
+<p style="text-align: center;">
+	<span style="font-size: 16px;"><span style="color: rgb(255, 0, 0);"><strong><span style="background-color: rgb(255, 255, 0);">CHAT ONLINE NGAY</span></strong></span></span></p>
+',highlights='<h2 background-color:="" font-size:="" open="" style="box-sizing: border-box; margin: 0px 0px 10px 40px; line-height: 1.7em; color: rgb(51, 51, 51); text-align: center;" text-align:="">
+	<span style="font-size:16px;"><span style="color:#ff0000;"><span style="box-sizing: border-box;"><span style="box-sizing: border-box;"><span style="box-sizing: border-box; font-weight: 700;">DỊCH VỤ K&Egrave;M THEO HẤP DẪN C&Ugrave;NG CHƯƠNG TR&Igrave;NH</span></span></span></span></span></h2>
+<table border="1" cellpadding="0" cellspacing="0" style="width: 100%">
+	<tbody>
+		<tr>
+			<td>
+				<p style="text-align: center;">
+					<img alt="Bảo hiểm du lịch" src="https://yolotravel.com.vn/images/tour/icon/bao-hiem569df39f32c48.png" style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px; box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; vertical-align: middle;" /></p>
+				<p style="text-align: center;">
+					<span style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px;">Bảo hiểm du lịch</span></p>
+			</td>
+			<td>
+				<p style="text-align: center;">
+					<img alt="Bữa ăn theo chương trình" src="https://yolotravel.com.vn/images/tour/icon/bua-an569df3b14d910.png" style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px; box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; vertical-align: middle; width: 59.0938px;" /></p>
+				<p style="text-align: center;">
+					<span style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px;">Bữa ăn theo chương tr&igrave;nh</span></p>
+			</td>
+			<td style="text-align: center;">
+				<p>
+					<img alt="Hướng dẫn viên suốt tuyến" src="https://yolotravel.com.vn/images/tour/icon/huong-dan-vien569df3c66a160.png" style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px; box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; vertical-align: middle; width: 61.7969px;" /></p>
+				<p>
+					<span style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px;">Hướng dẫn vi&ecirc;n suốt tuyến</span></p>
+			</td>
+			<td style="text-align: center;">
+				<p>
+					<img alt="Vé tham quan theo chương trình" src="https://yolotravel.com.vn/images/tour/icon/ve-tham-quan569df3e0144b7.png" style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px; box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; vertical-align: middle; width: 74.6875px;" /></p>
+				<p>
+					<span style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px;">V&eacute; tham quan theo chương tr&igrave;nh</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">
+				<p>
+					<img alt="Xe đưa đón theo chương trình" src="https://yolotravel.com.vn/images/tour/icon/xe-dua-don569df3f45d550.png" style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px; box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; vertical-align: middle; width: 69.2969px;" /></p>
+				<p>
+					<span style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px;">Xe đưa đ&oacute;n theo chương tr&igrave;nh</span></p>
+			</td>
+			<td style="text-align: center;">
+				<p>
+					<img alt="Khách sạn tiêu chuẩn" src="https://yolotravel.com.vn/images/tour/icon/hotel569f45bebdf63.png" style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px; box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; vertical-align: middle; width: 59.0938px;" /></p>
+				<p>
+					<span style="color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px;">Kh&aacute;ch sạn ti&ecirc;u chuẩn</span></p>
+			</td>
+			<td style="text-align: center;">
+				<p>
+					&nbsp;</p>
+			</td>
+			<td style="text-align: center;">
+				<p>
+					&nbsp;</p>
+				<div>
+					&nbsp;</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+',schedule='<h2 style="text-align: justify;">
+	<span style="color:#ff0000;"><span style="font-size:16px;">NG&Agrave;Y 01 : H&Agrave; NỘI - QUẢN BẠ - Y&Ecirc;N MINH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( Ăn trưa,tối )</span></span></h2>
+<p style="text-align: justify;">
+	<strong>05h00: </strong>Xe v&agrave; Hướng dẫn vi&ecirc;n đ&oacute;n Qu&yacute; kh&aacute;ch tại Nh&agrave; H&aacute;t Lớn H&agrave; Nội khởi h&agrave;nh đi H&agrave; Giang - v&ugrave;ng đất c&oacute; ch&egrave; san, rượu mật ong v&agrave; thắng cố, xứ sở của đ&agrave;o phai, hoa l&ecirc;, truyền thống v&agrave; n&aacute;o nhiệt trong buổi chợ phi&ecirc;n&hellip; Tr&ecirc;n đường, Qu&yacute; kh&aacute;ch&nbsp; ngắm cảnh rừng n&uacute;i Đ&ocirc;ng bắc v&ocirc; c&ugrave;ng h&ugrave;ng vĩ v&agrave; hoang sơ .&nbsp; &nbsp;</p>
+<p style="text-align: justify;">
+	<strong>Trưa:</strong> Dừng ch&acirc;n tại <strong>Bắc Quang</strong> để d&ugrave;ng bữa trưa tại nh&agrave; h&agrave;ng với c&aacute;c m&oacute;n ăn đặc sản địa phương.</p>
+<p style="text-align: justify;">
+	<strong>Chiều:</strong> Qu&yacute; kh&aacute;ch l&ecirc;n đường đi <strong>Quản Bạ</strong> - Du kh&aacute;ch đến đ&acirc;y đều c&oacute; dịp chi&ecirc;m ngưỡng <strong>N&uacute;i Đ&ocirc;i C&ocirc; Ti&ecirc;n</strong> - &ldquo;t&aacute;c phẩm nghệ thuật&rdquo; của tạo ho&aacute; ban tặng cho v&ugrave;ng đất n&agrave;y, ngo&agrave;i ra Qu&yacute; kh&aacute;ch c&ograve;n c&oacute; dịp nghe kể về truyền thuyết của ngọn n&uacute;i n&agrave;y, v&ocirc; v&ugrave;ng hấp dẫn v&agrave; th&uacute; vị.</p>
+<p style="text-align: center;">
+	<img alt="nui-doi-co-tien-ha-giang-azbooking" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/ha-giang/nui-doi-co-tien-ha-giang-azbooking.jpg" style="width: 80%;" /></p>
+<p style="text-align: center;">
+	<em>H&igrave;nh ảnh N&uacute;i Đ&ocirc;i C&ocirc; Ti&ecirc;n, Quản Bạ, H&agrave; Giang</em></p>
+<p style="text-align: justify;">
+	Sau đ&oacute;, Qu&yacute; kh&aacute;ch sẽ đi qua rừng th&ocirc;ng bạt ng&agrave;n đẹp nhất Việt Nam trải d&agrave;i tr&ecirc;n c&aacute;c sườn n&uacute;i cao để đến với đến thị trấn <strong>Y&ecirc;n Minh</strong>. Qu&yacute; kh&aacute;ch đến kh&aacute;ch sạn nhận ph&ograve;ng nghỉ ngơi.</p>
+<p style="text-align: justify;">
+	<strong>Tối: </strong>Qu&yacute; kh&aacute;ch d&ugrave;ng bữa tối tại nh&agrave; h&agrave;ng.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p style="text-align: justify;">
+	Sau bữa ăn, Tự do dạo chơi ngắm cảnh phố n&uacute;i về đ&ecirc;m. Nghỉ đ&ecirc;m tại kh&aacute;ch sạn.</p>
+<h2 style="text-align: justify;">
+	<span style="color:#ff0000;"><span style="font-size:16px;">NG&Agrave;Y 02 : Y&Ecirc;N MINH &nbsp;&ndash; ĐỒNG VĂN &ndash; LŨNG C&Uacute;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Ăn s&aacute;ng, trưa, tối)</span></span></h2>
+<p style="text-align: justify;">
+	<strong>S&aacute;ng:</strong> Qu&yacute; kh&aacute;ch thức dậy ăn s&aacute;ng v&agrave; l&agrave;m thủ tục trả ph&ograve;ng.</p>
+<p style="text-align: justify;">
+	<strong>7h00 :&nbsp; </strong>Xe v&agrave; Hướng dẫn vi&ecirc;n đưa Qu&yacute; kh&aacute;ch đi <strong>Cao nguy&ecirc;n Đồng Văn</strong> - l&agrave; một cao nguy&ecirc;n đ&aacute; trải rộng tr&ecirc;n bốn huyện Quản Bạ, Y&ecirc;n Minh, Đồng Văn, M&egrave;o Vạc.</p>
+<p style="text-align: center;">
+	<img alt="cao-nguyen-da-dong-van-ha-giang-azbooking.vn" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/ha-giang/cao-nguyen-da-dong-van-ha-giang-azbooking.vn.jpg" style="width: 80%;" /></p>
+<p style="text-align: center;">
+	<em>Cao nguy&ecirc;n đ&aacute; Đồng Văn, H&agrave; Giang</em></p>
+<p style="text-align: justify;">
+	Qu&yacute; kh&aacute;ch dừng ch&acirc;n thăm quan ở <strong>Phố C&aacute;o, Sủng L&agrave;, v&agrave;o l&agrave;ng văn h&oacute;a Lũng Cẩm</strong> nơi lấy bối cảnh những thước phim nổi tiếng &ldquo;Chuyện của Pao&rdquo; &ndash; v&agrave;o m&ugrave;a đ&ocirc;ng, m&ugrave;a xu&acirc;n nở rộ những đồng hoa cải v&agrave;ng hoặc hoa đ&agrave;o tết,&nbsp; th&iacute;ch hợp cho những thước h&igrave;nh l&atilde;ng mạn m&agrave; đậm n&eacute;t văn h&oacute;a&hellip;</p>
+<p style="text-align: justify;">
+	Qu&yacute; kh&aacute;ch cũng sẽ gh&eacute; thăm <strong>dinh thự vua M&egrave;o Vương Ch&iacute; S&igrave;nh</strong> với kiến tr&uacute;c độc đ&aacute;o v&agrave; những c&acirc;u chuyện đặc sắc.</p>
+<p style="text-align: justify;">
+	Qu&yacute; kh&aacute;ch đến <strong>Lũng C&uacute;</strong> - Nơi địa đầu Tổ Quốc, hay c&ograve;n được mi&ecirc;u tả l&agrave;: &ldquo;Nơi c&uacute;i mặt s&aacute;t đất, ngẩng mặt đụng trời&rdquo;. Qu&yacute; kh&aacute;ch thăm quan <strong>Cột cờ Tổ Quốc</strong> v&agrave; chụp h&igrave;nh lưu niệm.</p>
+<p style="text-align: center;">
+	<img alt="cot-co-lung-cu-ha-giang-azbooking.vn" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/ha-giang/cot-co-lung-cu-ha-giang-azbooking.vn.jpg" style="width: 80%;" /></p>
+<p style="text-align: center;">
+	<em>Cột cờ Lũng C&uacute;</em></p>
+<p style="text-align: justify;">
+	Từ cột cờ Lũng C&uacute;, Qu&yacute; kh&aacute;ch c&oacute; thể ngắm phong cảnh ruộng bậc thang đẹp mắt xen kẽ những nh&agrave; tr&igrave;nh tường của d&acirc;n tộc L&ocirc; L&ocirc; trong bản S&eacute;o Lủng b&ecirc;n dưới.</p>
+<p style="text-align: justify;">
+	<strong>Trưa : </strong>Qu&yacute; kh&aacute;ch d&ugrave;ng bữa trưa tại nh&agrave; h&agrave;ng Lũng C&uacute;.</p>
+<p style="text-align: justify;">
+	Sau h&agrave;nh tr&igrave;nh tr&igrave;nh tham quan qu&yacute; kh&aacute;ch về kh&aacute;ch sạn nhận ph&ograve;ng nghỉ ngơi.</p>
+<p style="text-align: justify;">
+	<strong>Chiều :</strong> Xe v&agrave; Hướng dẫn vi&ecirc;n sẽ đưa Qu&yacute; kh&aacute;ch đi thăm quan <strong>M&atilde; P&igrave; L&egrave;ng</strong> - Nơi được mệnh danh l&agrave; đệ nhất h&ugrave;ng quan của Việt Nam.</p>
+<p style="text-align: center;">
+	<img alt="cung-duong-deo-ma-pi-leng-ha-giang-azbooking" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/ha-giang/cung-duong-deo-ma-pi-leng-ha-giang-azbooking.png" style="width: 80%;" /></p>
+<p style="text-align: center;">
+	Cung đường đ&egrave;o M&atilde; P&igrave; L&egrave;ng, H&agrave; Giang</p>
+<p style="text-align: justify;">
+	<strong>Tối: </strong>Qu&yacute; kh&aacute;ch d&ugrave;ng bữa tối tại nh&agrave; h&agrave;ng.Sau bữa tối, Qu&yacute; kh&aacute;ch tự do tản bộ v&agrave; thăm khu phố cổ Đồng Văn - khu phố cổ mang đậm dấu ấn kiến tr&uacute;c của người Hoa với những ng&ocirc;i nh&agrave; hai tầng lợp ng&oacute;i &acirc;m dương, những chiếc đ&egrave;n lồng đỏ cao cao...Nghỉ đ&ecirc;m tại Đồng Văn</p>
+<h2 style="text-align: justify;">
+	<span style="color:#ff0000;"><span style="font-size:16px;">NG&Agrave;Y 03 : H&Agrave; GIANG &ndash; H&Agrave; NỘI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( Ăn s&aacute;ng,trưa)</span></span></h2>
+<p style="text-align: justify;">
+	<strong>06h00 S&aacute;ng: </strong>Qu&yacute; kh&aacute;ch d&ugrave;ng bữa s&aacute;ng v&agrave; tự do tham gia <strong>chợ phi&ecirc;n Đồng Văn</strong> đậm n&eacute;t văn h&oacute;a d&acirc;n tộc với nhiều đồ d&acirc;n tộc đặc sắc. Sau đ&oacute; qu&yacute; kh&aacute;ch về kh&aacute;ch sạn l&agrave;m thủ tục trả ph&ograve;ng.Xe v&agrave; Hướng dẫn vi&ecirc;n đưa Qu&yacute; kh&aacute;ch trở về H&agrave; Nội.</p>
+<p style="text-align: justify;">
+	<strong>Trưa: </strong>Qu&yacute; kh&aacute;ch ăn trưa tại nh&agrave; h&agrave;ng tr&ecirc;n đường đi.</p>
+<p style="text-align: justify;">
+	Qu&yacute; kh&aacute;ch tập trung l&ecirc;n xe trở về H&agrave; Nội.</p>
+<p style="text-align: justify;">
+	<strong>20h00: </strong>Qu&yacute; kh&aacute;ch về tới H&agrave; Nội.Kết th&uacute;c chương tr&igrave;nh tham quan,th&acirc;n &aacute;i v&agrave; hẹn gặp lại qu&yacute; kh&aacute;ch.</p>
+<p style="text-align: center;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/ha-giang/hotline-hong.png" style="width: 300px;" /></p>
+<p style="text-align: center;">
+	<strong>Hoặc</strong></p>
+<p style="text-align: center;">
+	<span style="font-size: 16px;"><span style="color: rgb(255, 0, 0);"><strong><span style="background-color: rgb(255, 255, 0);">CHAT ONLINE NGAY</span></strong></span></span></p>
+',price_list='<h2 style="text-align: center;">
+	<span style="color:#ff0000;"><span style="font-size:16px;">GI&Aacute; TOUR 01 KH&Aacute;CH : 2.350.000 VNĐ</span></span></h2>
+<p style="text-align: center;">
+	<strong><span style="color:#ff0000;"><span style="font-size:16px;">( &Aacute;p dụng cho đo&agrave;n gh&eacute;p kh&aacute;ch lẻ )</span></span></strong></p>
+<h3 style="text-align: justify;">
+	<span style="color:#0000ff;"><span style="font-size:14px;">QUY ĐỊNH PHỤ THU</span></span></h3>
+<ul>
+	<li style="text-align: justify;">
+		<p>
+			Phụ thu ph&ograve;ng đơn 550.000đ/ kh&aacute;ch/ 2 đ&ecirc;m (&Aacute;p dụng trong trường hợp kh&aacute;ch muốn ở 01 m&igrave;nh 01 ph&ograve;ng trong suốt h&agrave;nh tr&igrave;nh)</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			Trẻ em từ 10 tuổi trở l&ecirc;n: t&iacute;nh 100% gi&aacute; tour.</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			Trẻ em từ 05 &ndash; 9 tuổi: t&iacute;nh 50 % gi&aacute; trị tour &ndash; Ngủ chung với bố mẹ.</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			Trẻ em dưới 05 tuổi: miễn ph&iacute; (Ăn ngủ c&ugrave;ng bố mẹ, ngồi l&ograve;ng bố hoặc mẹ)</p>
+	</li>
+</ul>
+',content='',list_img='',title='Tour du lịch Hà Giang 3 ngày 2 đêm tháng 10 KHUYẾN MẠI HẤP DẪN chỉ 2.3',keyword='tour du lịch hà giang 3 ngày 2 đêm, tour du lịch hà giang tháng 10, du lịch hà giang 3 ngày',description='Nếu Hà Giang được ví như bản tình ca da diết, mị hoặc thì Đồng Văn như những nốt nhạc du dương khi cao vút lúc lại trầm lắng. Hãy cùng AZbooking tham gia hành trình khám ',inclusion='<ul>
+	<li style="text-align: justify;">
+		<p>
+			Xe &ocirc;t&ocirc; 16c,29c tham quan theo chương tr&igrave;nh</p>
+	</li>
+	<li>
+		<p>
+			Ăn c&aacute;c bữa theo chương tr&igrave;nh:</p>
+		<ul>
+			<li style="margin-left: 40px;">
+				<p>
+					&nbsp;05 bữa chính 120.000/su&acirc;́t.</p>
+			</li>
+			<li style="margin-left: 40px;">
+				<p>
+					&nbsp;Ăn s&aacute;ng tại kh&aacute;ch sạn + Nh&agrave; h&agrave;ng : 40.000/suất</p>
+			</li>
+		</ul>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			Kh&aacute;ch sạn ti&ecirc;u chuẩn sạch sẽ đầy đủ tiện nghi: ngủ 02-03 kh&aacute;ch/ ph&ograve;ng.</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			Hướng dẫn vi&ecirc;n phục vụ su&ocirc;́t tuy&ecirc;́n</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			V&eacute; v&agrave;o cửa 1 lần c&aacute;c thắng cảnh trong chương tr&igrave;nh.</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			Nước u&ocirc;́ng tr&ecirc;n đường</p>
+	</li>
+	<li>
+		Bảo hi&ecirc;̉m du lịch mức tối đa: 20.000.000 VND</li>
+</ul>
+',exclusion='<ul>
+	<li style="text-align: justify;">
+		<p>
+			Thuế VAT 10%</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			Đồ uống, điện thoại, chi ph&iacute; giặt l&agrave; hoặc chi ph&iacute; c&aacute; nh&acirc;n kh&aacute;c</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			Ăn uống ngo&agrave;i chương tr&igrave;nh.</p>
+	</li>
+	<li style="text-align: justify;">
+		<p>
+			Phụ thu người nước ngo&agrave;i 10 USD/ 1 người/ 1 ng&agrave;y</p>
+	</li>
+</ul>
+<p style="text-align: center;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/ha-giang/hotline-hong.png" style="width: 300px;" /></p>
+<p style="text-align: center;">
+	<strong>Hoặc</strong></p>
+<p style="text-align: center;">
+	<span style="font-size: 16px;"><span style="color: rgb(255, 0, 0);"><strong><span style="background-color: rgb(255, 255, 0);">CHAT ONLINE NGAY</span></strong></span></span></p>
+',updated='17-11-12 03:40:14' where id=220;
+update tour set dieuhanh_id='14', tour_quoc_te='1',DanhMuc1Id='10',DanhMuc2Id='58',danhmuc_multi='',promotion='1',packages='0',name='Tour du lịch Trung Quốc: HÀ NỘI – CÔN MINH – LỆ GIANG – SHANGRI-LA đường bộ',name_url='tour-du-lich-trung-quoc-ha-noi-con-minh-le-giang-shangri-la-duong-bo',count_down='',code='',img='/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/du-lich-trung-quoc-6-ngay-5-dem-azbooking.jpg',price_tiep_thi='700000',price_sales='17390000',price='16390000',price_2='',price_3='',price_4='',price_5='',price_6='',price_number='',price_number_2='',price_number_3='',price_number_4='',price_number_5='',price_number_6='',name_price='',name_price_2='',name_price_3='',name_price_4='',name_price_5='',name_price_6='',so_cho='2',durations='6 Ngày 5 Đêm',departure='1',departure_time='21/10, 21/11',destination='Côn Minh, Lệ Giang, Shangrila, Thạch Lâm',vehicle='Tàu hỏa, ô tô',hotel='3',summary='<p style="text-align: justify;">
+	<em><strong>Lệ Giang</strong>&nbsp;l&agrave; cố đ&ocirc; của vương quốc Naxi, cao 2.410 m&eacute;t so với mực nước biển v&agrave; nằm tr&ecirc;n Cao nguy&ecirc;n T&acirc;y Bắc V&acirc;n Nam ở miền T&acirc;y Nam Trung Hoa. Tọa lạc dọc theo tuyến thương mại quan trọng m&agrave; trước đ&acirc;y l&agrave; một phần của Con đường Tơ lụa từ V&acirc;n Nam qua T&acirc;y Tạng,&nbsp;</em><em><strong>C&ocirc;n Minh</strong>&nbsp;- th&agrave;nh phố m&ugrave;a xu&acirc;n bạt ng&agrave;n hoa nở.&nbsp;</em><em>Th&agrave;nh cổ&nbsp;<strong>Đại L&yacute;</strong>&nbsp;cổ k&iacute;nh, ki&ecirc;n cố v&agrave; r&ecirc;u phong - nơi quay bộ phim Thi&ecirc;n Long B&aacute;t Bộ nổi tiếng.&nbsp;</em></p>
+<p style="text-align: justify;">
+	<em>Thần b&iacute;&nbsp;<a href="http://tourdulichtrungquoc.net/tin-tuc/van-nam/den-shangri-la-ban-se-nhan-ra-rang-thung-lung-bat-tu-la-co-that.html">t<strong>hung lũng &quot;bất tử&quot; Shangri-La</strong></a>:&nbsp;<strong>Shangri-La</strong>&nbsp;nằm trong một cao nguy&ecirc;n cao hơn 3.300m so với mực nước biển, bao quanh bởi những ngọn đồi xanh tươi tốt, hồ nước tuyệt đẹp, kh&ocirc;ng kh&iacute; trong l&agrave;nh. Đ&acirc;y l&agrave; nơi sinh sống chủ yếu của một bộ phận kh&ocirc;ng nhỏ những người T&acirc;y Tạng, nơi tọa lạc của rất nhiều danh thắng, đền ch&ugrave;a, tu viện Phật gi&aacute;o&hellip; Shangri-La c&ograve;n nổi tiếng với c&ocirc;ng vi&ecirc;n quốc gia Pudacuo.&nbsp;Đ&acirc;y l&agrave; khu vực rộng khoảng 1.300km2 v&agrave; l&agrave; c&ocirc;ng vi&ecirc;n quốc gia đầu ti&ecirc;n ở Trung Quốc.</em></p>
+<p style="text-align: justify;">
+	<span style="box-sizing: border-box; font-family: Tahoma; font-size: 14px; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;">Tour du lịch Trung Quốc: H&Agrave; NỘI &ndash; C&Ocirc;N MINH &ndash; LỆ GIANG &ndash; SHANGRI-LA 6 Ng&agrave;y 5 Đ&ecirc;m</span></span><span style="box-sizing: border-box; font-family: Tahoma; font-size: 14px; color: rgb(255, 0, 0);">&nbsp;</span><span style="color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px;">sẽ đưa bạn qua những điểm đến v&ocirc; c&ugrave;ng hấp dẫn:&nbsp;</span></p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; height: 15px; width: 15px;" />&nbsp;Ch&igrave;m đắm trong&nbsp;<strong>Th&agrave;nh cổ Lệ Giang</strong>&nbsp;- được mệnh danh l&agrave; &quot;Venice của Phương Đ&ocirc;ng&quot;</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; height: 15px; width: 15px;" />&nbsp;Cho&aacute;ng ngợp với vẻ đẹp h&ugrave;ng vĩ của&nbsp;<strong>KHE HỒ NHẢY</strong></p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; height: 15px; width: 15px;" />&nbsp;Kh&aacute;m ph&aacute;&nbsp;<a href="http://tourdulichtrungquoc.net/tin-tuc/van-nam/den-shangri-la-ban-se-nhan-ra-rang-thung-lung-bat-tu-la-co-that.html"><strong>thung lũng Shangrila</strong></a>&nbsp;- chốn ti&ecirc;n cảnh của V&acirc;n Nam</p>
+<p style="text-align: justify;">
+	<img alt="" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/icon-dau-dong.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; height: 15px; width: 15px;" />&nbsp;Dạo quanh&nbsp;<strong>th&agrave;nh phố C&ocirc;n Minh</strong>&nbsp;với &quot;T&acirc;y Sơn Long M&ocirc;n&quot;,&nbsp;&quot;Tam Th&agrave;nh C&aacute;t&quot;</p>
+<p style="text-align: justify;">
+	V&agrave; c&ograve;n rất nhiều những điểm đến hấp dẫn kh&aacute;c. Đăng k&yacute; ngay tour du lịch n&agrave;y của <strong>AZbooking&nbsp;</strong>để c&oacute; cơ hội kh&aacute;m ph&aacute; nhiều hơn c&aacute;c điểm đến nh&eacute;!</p>
+',highlights='<p background-color:="" font-size:="" open="" style="box-sizing: border-box; margin: 0px 0px 10px 40px; font-family: Tahoma; font-size: 14px; line-height: 1.7em; color: rgb(51, 51, 51); text-align: center;" text-align:="">
+	<span style="color:#000080;">CHƯƠNG TR&Igrave;NH KH&Ocirc;NG V&Agrave;O C&Aacute;C ĐIỂM SHOPPING</span></p>
+<p background-color:="" font-size:="" open="" style="box-sizing: border-box; margin: 0px 0px 10px 40px; font-family: Tahoma; font-size: 14px; line-height: 1.7em; color: rgb(51, 51, 51); text-align: center;" text-align:="">
+	<span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box;"><span style="box-sizing: border-box; font-weight: 700;">DỊCH VỤ K&Egrave;M THEO HẤP DẪN C&Ugrave;NG CHƯƠNG TR&Igrave;NH</span></span></span></p>
+<table border="1" cellpadding="0" cellspacing="0" style="width: 891px;">
+	<tbody style="box-sizing: border-box;">
+		<tr style="box-sizing: border-box;">
+			<td style="box-sizing: border-box; padding: 12px 10px; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px; text-align: center;">
+					<img alt="Bảo hiểm du lịch" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/icon-bao-hiem.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 60px; height: 60px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px; text-align: center;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">Bảo hiểm du lịch</span></p>
+			</td>
+			<td style="box-sizing: border-box; padding: 12px 10px; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px; text-align: center;">
+					<img alt="Bữa ăn theo chương trình" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/icon-bua-an.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 60px; height: 60px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px; text-align: center;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">Bữa ăn theo chương tr&igrave;nh</span></p>
+			</td>
+			<td style="box-sizing: border-box; padding: 12px 10px; text-align: center; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<img alt="Hướng dẫn viên suốt tuyến" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/icon-hdv.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 60px; height: 60px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">Hướng dẫn vi&ecirc;n suốt tuyến</span></p>
+			</td>
+			<td style="box-sizing: border-box; padding: 12px 10px; text-align: center; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<img alt="Vé tham quan theo chương trình" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/icon-ve-tham-quan.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 60px; height: 60px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">V&eacute; tham quan theo chương tr&igrave;nh</span></p>
+			</td>
+		</tr>
+		<tr style="box-sizing: border-box;">
+			<td style="box-sizing: border-box; padding: 12px 10px; text-align: center; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<img alt="Xe đưa đón theo chương trình" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/icon-xe-dua-don.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 60px; height: 60px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">Xe đưa đ&oacute;n theo chương tr&igrave;nh</span></p>
+			</td>
+			<td style="box-sizing: border-box; padding: 12px 10px; text-align: center; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<img alt="Khách sạn tiêu chuẩn" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/icon-hotel.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 60px; height: 60px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">Kh&aacute;ch sạn ti&ecirc;u chuẩn</span></p>
+			</td>
+			<td style="box-sizing: border-box; padding: 12px 10px; text-align: center; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<img alt="Quà tặng kèm" src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/icon-hop-qua.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; font-family: Roboto, sans-serif; padding: 0px; margin: 0px; width: 50px;" /></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">Qu&agrave; tặng k&egrave;m 500K</span></p>
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					&nbsp;</p>
+			</td>
+			<td style="box-sizing: border-box; padding: 12px 10px; text-align: center; border-top: 1px solid rgb(239, 239, 239);">
+				<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+					&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; text-align: center;">
+	<br style="box-sizing: border-box;" />
+	<span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;"><img alt="" src="http://tourdulichtrungquoc.net/view/admin/Themes/kcfinder/upload/images/icon/hotline.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; width: 300px; height: 90px;" /></span></span></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; text-align: center;">
+	<span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;">HOẶC</span></span></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 14px; text-align: center;">
+	<span style="box-sizing: border-box; font-size: 16px;"><span style="box-sizing: border-box; color: rgb(255, 0, 0);"><span style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; background-color: rgb(255, 255, 0);">CHAT ONLINE NGAY</span></span></span></span></p>
+<p style="text-align: center; box-sizing: border-box; margin: 0px 0px 10px;">
+	<span style="box-sizing: border-box; font-family: Roboto, sans-serif;">Qu&agrave; tặng k&egrave;m 500K</span></p>
+<div>
+	&nbsp;</div>
+',schedule='<h2>
+	<span style="font-size:16px;"><span style="color:#ff0000;"><strong>NG&Agrave;Y 01: H&Agrave; NỘI &ndash; H&Agrave; KHẨU &ndash; C&Ocirc;N MINH&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(Ăn trưa, tối)</strong></span></span></h2>
+<p>
+	<strong>05h00</strong>: Xe v&agrave; HDV đ&oacute;n đo&agrave;n tại điểm hẹn (Rạp Xiếc) đưa đo&agrave;n l&ecirc;n cửa khẩu <strong>H&agrave; Khẩu</strong>, ăn s&aacute;ng tr&ecirc;n đường ( tự t&uacute;c). Đo&agrave;n tiếp tục khởi h&agrave;nh đi <strong>H&agrave; Khẩu</strong>. Sau khi l&agrave;m thủ tục nhập cảnh, đo&agrave;n l&ecirc;n &ocirc; t&ocirc; đi <strong>C&ocirc;n Minh.</strong></p>
+<p>
+	Khoảng <strong>19h00 </strong>tới C&ocirc;n Minh Qu&yacute; kh&aacute;ch d&ugrave;ng bữa tại nh&agrave; h&agrave;ng</p>
+<p>
+	<strong>21h30:</strong> Đo&agrave;n khởi h&agrave;nh ra ga t&agrave;u hoả l&ecirc;n chuyến t&agrave;u hoả <strong>C&ocirc;n Minh - Lệ Giang&nbsp; K9602&nbsp; 22h23/08h35</strong> ,Nghỉ đ&ecirc;m tr&ecirc;n t&agrave;u hoả (giường nằm khoang 6)</p>
+<h2>
+	<span style="font-size:16px;"><span style="color:#ff0000;"><strong>NG&Agrave;Y 02: LỆ GIANG&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;( Ăn s&aacute;ng, trưa, tối)</strong></span></span></h2>
+<p>
+	<strong>S&aacute;ng:</strong> 08h35 t&agrave;u đến Lệ Giang, HDV đưa đo&agrave;n đi ăn s&aacute;ng, Q&uacute;y kh&aacute;ch thăm quan <strong><em>C&ocirc;ng Vi&ecirc;n Hắc Long Đ&agrave;m</em></strong> &ndash; nơi D&ograve;ng nước từ <strong><em>n&uacute;i băng Ngọc Long</em></strong> đổ về nu&ocirc;i sống v&ugrave;ng đất Lệ Giang. Từ c&ocirc;ng vi&ecirc;n Hắc Long c&oacute; thể ngắm sự h&ugrave;ng vĩ của n&uacute;i tuyết ng&agrave;n năm, trong khung cảnh thanh b&igrave;nh của nước hồ phẳng lặng.. Qu&yacute; kh&aacute;ch gh&eacute; thăm <strong><em>Mộc Phủ</em></strong>, <strong><em>Vạn Cổ Lầu </em></strong>một c&ocirc;ng tr&igrave;nh được coi l&agrave; ti&ecirc;u biểu cho lịch sử v&agrave; văn h&oacute;a nơi đ&acirc;y. <strong><em>Mộc phủ</em></strong> được v&iacute; như Tử Cấm th&agrave;nh của phương nam. Trước cổng, d&ograve;ng nước chảy từ hướng bắc xuống được bắc ngang bởi c&acirc;y cầu đ&aacute; rộng kh&ocirc;ng c&oacute; th&agrave;nh. Đối diện b&igrave;nh phong ngo&agrave;i l&agrave; t&ograve;a cổng ch&agrave;o bằng đ&aacute;. Xưa kia t&ograve;a cổng ch&agrave;o n&agrave;y l&agrave; c&ocirc;ng tr&igrave;nh kỳ vĩ nhất đất Lệ Giang, l&agrave;m bằng đ&aacute; ngọc trắng,</p>
+<p>
+	Tham quan <strong><em>Th&agrave;nh cổ Lệ Giang</em></strong> - x&acirc;y dựng c&aacute;ch đ&acirc;y hơn 800 năm, được <strong><em>Unessco</em></strong> c&ocirc;ng nhận l&agrave; di sản văn ho&aacute; thế giới năm 1997- một di sản văn h&oacute;a thế giới với phong cảnh đẹp đẽ xứ nước, được mệnh danh l&agrave; &quot;Venice của Phương Đ&ocirc;ng&quot;, nơi đ&acirc;y nh&agrave; nh&agrave; đều c&oacute; suối chảy qua, những c&acirc;y liễu bu&ocirc;ng xuống c&aacute;c bậc cửa v&agrave; những c&acirc;y cầu nhỏ xinh xắn. Dạo <strong><em>Phố Tứ Phương</em></strong> ở trung t&acirc;m th&agrave;nh cổ.</p>
+<p>
+	Sau khi d&ugrave;ng bữa tối, Qu&yacute; kh&aacute;ch tự do ngắm sắc m&agrave;u <strong><em>Lệ Giang</em></strong> về đ&ecirc;m. Tự do thưởng thức được &acirc;m nhạc v&agrave; c&aacute;c điệu d&acirc;n vũ. Phố cổ Lệ Giang c&ograve;n c&oacute; thể gọi l&agrave; phố của &acirc;m nhạc d&acirc;n tộc v&agrave; d&acirc;n vũ m&agrave; bạn chẳng cần tốn một xu tiền v&eacute; lại c&oacute; thể trở th&agrave;nh diễn vi&ecirc;n ngay nếu th&iacute;ch.. Nghỉ đ&ecirc;m tại <strong><em>Lệ Giang</em></strong></p>
+<p>
+	<span style="font-size:16px;"><span style="color:#ff0000;"><strong>NG&Agrave;Y 03: LỆ GIANG &ndash; SHANGRI-LA&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(Ăn s&aacute;ng, trưa, tối)&nbsp;</strong></span></span></p>
+<p>
+	Sau bữa s&aacute;ng, đo&agrave;n đi <strong>Shangrila</strong>. Tr&ecirc;n đường gh&eacute; thăm <strong>khe Hổ Nhảy</strong>, được xem l&agrave; hẻm n&uacute;i s&acirc;u nhất Thế Giới. Đ&acirc;y l&agrave; một hẻm n&uacute;i d&agrave;i hơn 15 km nằm kẹp giữa hai <strong>d&atilde;y n&uacute;i Ngọc Long Tuyết Sơn</strong> (cao 5.596 m) v&agrave; <strong>Ha Ba Tuyết Sơn</strong> (cao 5.396 m). Thăm ch&ugrave;a&nbsp; <strong>Songzanlin</strong> l&agrave; tu viện Phật gi&aacute;o Mật T&ocirc;ng T&acirc;y Tạng quan trọng v&agrave; lớn nhất ở V&acirc;n Nam, Trung Quốc. Songzanlin được đặt trong một cảnh quan tuyệt đẹp ở độ cao hơn 3.300m c&aacute;ch Shangrila 5km.&nbsp;</p>
+<h2>
+	<span style="font-size:16px;"><span style="color:#ff0000;"><strong>NG&Agrave;Y&nbsp; 04: SHANGRI-LA &ndash; LỆ GIANG&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(Ăn s&aacute;ng, trưa, tối)</strong></span></span></h2>
+<p>
+	Sau bữa s&aacute;ng, đo&agrave;n đi thăm vườn <strong>c&ocirc;ng vi&ecirc;n Quốc gia PuDaCuo</strong> (Phổ Đạt Thố) , <strong>Vườn quốc gia Pudacuo</strong>, <strong>Shangri-la</strong>, V&acirc;n Nam: Thi&ecirc;n nhi&ecirc;n ở <strong>Shangri-La</strong> xứng đ&aacute;ng được mệnh danh l&agrave; chốn ti&ecirc;n cảnh với những cảnh quan n&uacute;i cao tuyết trắng, rừng xanh nắng v&agrave;ng, thi thoảng lại ẩn hiện trong sương kh&oacute;i với một hệ động thực vật v&ocirc; c&ugrave;ng phong ph&uacute;. <strong>Pudacuo</strong> l&agrave; c&ocirc;ng vi&ecirc;n quốc gia đầu ti&ecirc;n ở Trung Quốc đ&aacute;p ứng đủ c&aacute;c ti&ecirc;u chuẩn được thiết lập bởi Tổ chức Bảo tồn Thi&ecirc;n nhi&ecirc;n Quốc tế (IUCN). Một trong 40 thắng cảnh đẹp của Trung Quốc.Pudacuo l&agrave; thi&ecirc;n đường cho những người y&ecirc;u th&iacute;ch chụp ảnh. Bốn m&ugrave;a ở đ&acirc;y cảnh sắc đều kh&ocirc;ng giống nhau. M&ugrave;a xu&acirc;n ở đ&acirc;y trăm hoa đua nở. M&ugrave;a h&egrave; l&agrave; một m&agrave;u xanh biếc phủ đầy khắp n&uacute;i. M&ugrave;a thu l&agrave; cảnh rừng rậm tầng tầng v&ocirc; c&ugrave;ng lộng lẫy. M&ugrave;a đ&ocirc;ng du kh&aacute;ch c&oacute; thể thưởng thức cảnh lớp tuyết trắng dưới mặt hồ nước xanh.</p>
+<p>
+	Chiều tự do tham quan Th&agrave;nh cổ DuKeZong. Sau đ&oacute; di chuyển về <strong>Lệ Giang</strong>. Nghỉ tại <strong>Lệ Giang</strong></p>
+<h2>
+	<span style="font-size:16px;"><span style="color:#ff0000;"><strong>NG&Agrave;Y&nbsp; 05: LỆ GIANG &ndash; C&Ocirc;N MINH&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(Ăn s&aacute;ng, trưa, tối)</strong></span></span></h2>
+<p>
+	Ăn s&aacute;ng tại kh&aacute;ch sạn, đưa đo&agrave;n đi ăn s&aacute;ng, sau đ&oacute; đo&agrave;n khởi h&agrave;nh đi tới khu khu lịch <strong>N&uacute;i Tuyết Ngọc Long.</strong> Qu&yacute; kh&aacute;ch đi c&aacute;p treo nhỏ l&ecirc;n thăm <strong>V&acirc;n Tam B&igrave;nh</strong> &ndash; độ cao 3200 m ngắm cảnh đẹp <strong>N&uacute;i tuyết Ngọc Long</strong> - ngọn n&uacute;i cao 5596 m tuyết phủ quanh năm. Phần băng vĩnh cửu &aacute;nh l&ecirc;n một m&agrave;u xanh như ngọc. Lại gọi đ&acirc;y l&agrave; n&uacute;i trinh nữ v&igrave; cho đến nay con người chưa một lần chinh phục được n&oacute;. Nhiều nh&agrave; leo n&uacute;i đ&atilde; bỏ mạng hoặc ngậm ng&ugrave;i r&uacute;t lui, bất lực trước sự trinh nguy&ecirc;n b&iacute; ẩn của v&ugrave;ng n&uacute;i v&agrave;o loại đẹp nhất tỉnh V&acirc;n Nam n&agrave;y. Tham quan <strong>Bạch Thủy H&agrave;</strong> được tạo th&agrave;nh bởi băng tan từ n&uacute;i tuyết Ngọc Long, <strong>thảo nguy&ecirc;n Cam Hải Tử</strong>, thăm <strong>Ngọc Thủy Trại</strong> &ndash; nơi c&oacute; cảnh đẹp v&agrave; thể hiện tập tục, t&iacute;n ngưỡng của d&acirc;n Na Xi v&agrave; nền văn h&oacute;a Đ&ocirc;ng Ba</p>
+<p>
+	Tối : Sau bữa tối, ra ga l&ecirc;n t&agrave;u hoả tuyến <strong>Lệ Giang &ndash; C&ocirc;n Minh , K9684&nbsp; 21h50/06h41</strong> &nbsp;, nghỉ đ&ecirc;m tr&ecirc;n t&agrave;u hoả ( <strong><em>giường nằm khoang 6</em></strong> ) .</p>
+<h2>
+	<span style="font-size:16px;"><span style="color:#ff0000;"><strong>NG&Agrave;Y&nbsp; 06: C&Ocirc;N MINH &ndash; THẠCH L&Acirc;M - H&Agrave; KHẨU &ndash; H&Agrave; NỘI&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (Ăn s&aacute;ng, trưa, tối)</strong></span></span></h2>
+<p>
+	S&aacute;ng 06h41 t&agrave;u đến <strong>C&ocirc;n Minh</strong>, đưa đo&agrave;n ăn s&aacute;ng, sau đ&oacute; đo&agrave;n khởi h&agrave;nh đi thăm <strong>Rừng &ETH;&aacute; Thạch L&acirc;m</strong> - kỳ quan c&oacute; một kh&ocirc;ng hai của Trung Quốc v&agrave; Thế Giới, c&oacute; nhiều cảnh quay trong bộ phim truyền h&igrave;nh nổi tiếng của Trung Quốc &ldquo; <strong>T&acirc;y Du K&yacute;</strong>&rdquo;, Sau do , đo&agrave;n đ&aacute;p &ocirc; t&ocirc; Thạch L&acirc;m- H&agrave; Khẩu, khoảng 18 giờ tới H&agrave; Khẩu, tiến đo&agrave;n ra cửa khẩu l&agrave;m thủ tục xuất cảnh.</p>
+<p>
+	Đo&agrave;n ăn tối tại L&agrave;o Cai, sau đ&oacute; tiếp tục l&ecirc;n xe về H&agrave; Nội</p>
+<p>
+	&nbsp;</p>
+',price_list='<h2 align="center">
+	<span style="font-size:16px;"><span style="color:#ff0000;"><strong>GI&Aacute; TRỌN G&Oacute;I : 16.390.000VNĐ/KH&Aacute;CH</strong></span></span></h2>
+<p align="center">
+	<span style="color:#000000;"><strong>(GI&Aacute; &Aacute;P DỤNG CHO ĐO&Agrave;N 10 KH&Aacute;CH TRỞ LỂN)</strong></span></p>
+<p>
+	&nbsp;</p>
+',content='',list_img='',title='Tour du lịch Trung Quốc: HÀ NỘI – CÔN MINH – LỆ GIANG – SHANGRI-LA 6 N',keyword='du lịch Shangrila, tour du lịch côn minh đại lý lệ giang, tour du lịch trung quốc mới, điểm mới của trung quốc, du lịch khám phá trung quốc',description='Tham gia tour du lịch Côn Minh - Lệ Giang - Shangrila 6 ngày, AZbooking sẽ đưa bạn chìm đắm trong Thành cổ Lệ Giang - được mệnh danh là ',inclusion='<ul>
+	<li>
+		Xe thăm quan điều ho&agrave; theo chương tr&igrave;nh.</li>
+	<li>
+		C&aacute;c bữa ăn theo chương tr&igrave;nh 5 bữa s&aacute;ng, 12 bữa ch&iacute;nh (bữa ch&iacute;nh: 8 m&oacute;n + 1 canh).</li>
+	<li>
+		Hướng dẫn vi&ecirc;n nhiệt t&igrave;nh, chu đ&aacute;o suốt tuyến</li>
+	<li>
+		Kh&aacute;ch sạn ti&ecirc;u chuẩn 3 sao (2 người/ph&ograve;ng. Trường hợp lẻ nam lẻ nữ &aacute;p dụng ph&ograve;ng 3).</li>
+	<li>
+		V&eacute; 1 lượt c&aacute;c điểm thăm quan.</li>
+	<li>
+		Bảo hiểm du lịch theo qui định mức 15.000USD/người/vụ.</li>
+	<li>
+		Nước uống 01 chai/ng&agrave;y/người.</li>
+	<li>
+		Visa xuất nhập cảnh Trung Quốc</li>
+	<li>
+		V&eacute; t&agrave;u hoả khứ hồi giường nằm khoang 6 C&ocirc;n Minh - &nbsp;Lệ Giang &ndash; C&ocirc;n Minh</li>
+</ul>
+',exclusion='<ul>
+	<li>
+		Hộ chiếu c&ograve;n hạn &iacute;t nhất tr&ecirc;n 6 th&aacute;ng</li>
+	<li>
+		Chi ph&iacute; c&aacute; nh&acirc;n</li>
+	<li>
+		Ph&ograve;ng đơn kh&aacute;ch sạn</li>
+	<li>
+		&nbsp;Đồ uống trong c&aacute;c bữa ăn.</li>
+	<li>
+		Tip cho HDV v&agrave; l&aacute;i xe (5usd/người/ng&agrave;y)</li>
+	<li>
+		VAT&nbsp; &nbsp; &nbsp;</li>
+</ul>
+',updated='2017-11-12 03:32:11' where id=223;
