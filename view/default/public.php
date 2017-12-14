@@ -235,7 +235,8 @@ function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberfor
                 }
                 $string_departure_time='';
 
-                $year_current=date("Y");
+//                $year_current=date("Y");
+                $year_current='2018';
                 $full_date=date("d-m-Y");
                 if($item->departure_time!=''){
                     $array_item=explode(',',$item->departure_time);
@@ -247,7 +248,7 @@ function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberfor
                                 if($string_departure_time==''){
                                     $string_departure_time=  $value;
                                 }else{
-                                    $string_departure_time.= ' ,'.$value;
+                                    $string_departure_time.= ', '.$value;
                                 }
                             }
                         }

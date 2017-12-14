@@ -133,7 +133,8 @@ function show_chitiet_tour($data = array())
     $asign['hidden_date_select']='hidden';
     $asign['date_select']='';
     $now = getdate();
-    $year_current=$now["year"];
+//    $year_current=$now["year"];
+    $year_current='2018';
     $string_departure_time='';
     $full_date=date("d-m-Y");
     if($data['detail'][0]->departure_time!=''){
@@ -150,7 +151,7 @@ function show_chitiet_tour($data = array())
                         $asign['date_now']=date('Y-m-d', strtotime(trim($value)));
                         $asign['date_now_vn'] =trim($value);
                     }else{
-                        $string_departure_time.= ' ,'.$value;
+                        $string_departure_time.= ', '.$value;
                     }
                 }
             }
