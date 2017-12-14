@@ -97,9 +97,9 @@
         <!-- Global Site Tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-43672538-22"></script>
 
-        <!-- Google Code dành cho Th? ti?p th? l?i -->
+        <!-- Google Code dành cho Thẻ tiếp thị lại -->
         <!--------------------------------------------------
-        Không th? liên k?t th? ti?p th? l?i v?i thông tin nh?n d?ng cá nhân hay d?t th? ti?p th? l?i trên các trang có liên quan d?n danh m?c nh?y c?m. Xem thêm thông tin và hu?ng d?n v? cách thi?t l?p th? trên: http://google.com/ads/remarketingsetup
+        Không thể liên kết thẻ tiếp thị lại với thông tin nhận dạng cá nhân hay đặt thẻ tiếp thị lại trên các trang có liên quan đến danh mục nhạy cảm. Xem thêm thông tin và hướng dẫn về cách thiết lập thẻ trên: http://google.com/ads/remarketingsetup
         --------------------------------------------------->
         <script type="text/javascript">
             var google_tag_params = {
@@ -123,7 +123,7 @@
                 <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/937465177/?guid=ON&amp;script=0"/>
             </div>
         </noscript>
-
+        <link href="https://plus.google.com/103170739933034879752" rel="author">
 
     </head>
 
