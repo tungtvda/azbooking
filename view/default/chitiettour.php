@@ -141,6 +141,12 @@ function show_chitiet_tour($data = array())
         $array_item=explode(',',$data['detail'][0]->departure_time);
         if(count($array_item)>0){
             foreach($array_item as $key=>$value){
+                $array_check_year=explode('/',$value);
+                if(isset($array_check_year[1])&&$array_check_year[1]==12){
+                    $year_current=date("Y");
+                }else{
+                    $year_current='2018';
+                }
                 $value=$value.'-'.$year_current;
                 $value=str_replace('/','-',$value);
                 if(checkmydate($value) && strtotime($value)>=strtotime($full_date)){
