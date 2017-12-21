@@ -589,10 +589,8 @@ $message_dangky=_return_mc_encrypt($message_dangky,'','');
                 <div class="rememberme-container">
                     <input value="1" type="checkbox" name="confirm_res" id="confirm_res"/>
                     <label for="confirm_res" class="rememberme"><span>Tôi đã đọc và đồng ý  <a
-                                href="<?php echo SITE_NAME ?>/tiep-thi-lien-ket/dieu-khoan-dich-vu.html"
-                                target="_blank">Điều khoản</a> -- <a
-                                href="<?php echo SITE_NAME ?>/tiep-thi-lien-ket/chinh-sach.html" target="_blank"> Chính
-                                sách </a></span></label>
+                                href="<?php echo SITE_NAME ?>/tiep-thi-lien-ket-info/dieu-khoan-chinh-sach.html"
+                                target="_blank">Điều khoản -- Chính sách</a></span></label>
                 </div>
 
             </form>
