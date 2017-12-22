@@ -198,42 +198,43 @@ function view_navbar_tiep_thi($data = array())
 
             }
         }
+        $asign['count_un_read']=$count_un_read;
         $hidden_div='';
+        $asign['view_all']='';
         $list_notification='';
+        $asign['list_notifications']='';
         if($count_noti>0){
             foreach($data_list_noti['data_noti'] as $row_noti){
                 $row_color='';
+                $row_title_status='Đã đọc';
+                $row_icon_status='fa-check';
                 if($row_noti['status']!=1){
                     $row_color='background-color: #edf2fa;';
+                    $row_icon_status='fa-sun-o';
+                    $row_title_status='Chưa đọc';
                 }
                 $date_show = date("d-m-Y H:i:s", strtotime($row_noti['created']));
                 $date_noti =timeAgo($row_noti['created']);
-                $list_notification.=' <li style="'.$row_color.'" class="item_list_noti" style="">
-                                    <a href="'.SITE_NAME.'/'.$row_noti['link'].'&id_noti='._return_mc_encrypt($row_noti['id']).'">
-												<span class="msg-body">
-													<span class="msg-title">
-														'.$row_noti['name'].'
-													</span>
-													<span title="'.$date_show.'" class="msg-time timeago">
-														<i class="ace-icon fa fa-clock-o"></i> <span> '.$date_noti.' </span>
-													</span>
-                                                    <span class="msg_right_icon">
-                                                        <i class="ace-icon fa fa-hand-o-right"></i>
-                                                    </span></span>
-                                    </a>
-                                </li>';
+                $list_notification.='<li class="menu-item" style="'.$row_color.'"><a
+                                                        style="color: #4F99C6!important;"
+                                                       href="'.SITE_NAME.'/'.$row_noti['link'].'&id_noti='._return_mc_encrypt($row_noti['id']).'"
+                                                        class="clearfix"><span class="msg-body"><span
+                                                                class="msg-title">'.$row_noti['name'].'</span><span
+                                                                 class="msg-time"><i
+                                                                    class="ace-icon fa fa-clock-o"></i> <span title="'.$date_show.'"> '.$date_noti.' </span><span
+                                                                    style="float: right;color: #4F99C6!important;"><i title="'.$row_title_status.'" class="ace-icon fa '.$row_icon_status.'"></i> </span></span></span></a>
+                                            </li>';
             }
-            if($count_noti>=5){
-                $list_notification.=' <li class="item_list_noti">
-                                    <a style="text-align: center" href="'.SITE_NAME.'/tiep-thi-lien-ket/thong-bao">Xem tất cả <i class="ace-icon fa fa-arrow-right"></i></a>
-                                </li>';
+            if($count_noti>=1){
+                $asign['view_all'].=' <p class="dropdown-footer" style="margin-bottom: 0px; padding: 10px; text-align: center;"><a style="color: #0091ea;" class="view_all_noti"
+                                                href="'.SITE_NAME.'/tiep-thi-lien-ket/thong-bao"> Xem tất cả <i class="ace-icon fa fa-arrow-right"></i></a></p>';
             }
         }else{
             $list_notification=' <li class="item_list_noti" style="">
                                     <a >Bạn không có thông báo nào</a>
                                 </li>';
         }
-        $asign['list_notification']=$list_notification;
+        $asign['list_notifications']=$list_notification;
         $scroll='';
         if($count_noti>=3){
             $scroll='scroll_noti';

@@ -2,6 +2,7 @@
 $('body').on("input", '#input_full_name', function () {
     checkNameUser();
 });
+
 function checkNameUser() {
     var value = $("#input_full_name").val();
     if (value == '') {
@@ -12,6 +13,7 @@ function checkNameUser() {
         showHiddenNameUser(1, mess);
     }
 }
+
 function showHiddenNameUser(res, mess) {
     var name_user_error = $("#error_full_name");
     if (res == 1) {
@@ -31,6 +33,7 @@ function showHiddenNameUser(res, mess) {
         name_user_error.show();
     }
 }
+
 // check name
 $('body').on("input", '#input_birthday', function () {
     checkBirthdayUser();
@@ -38,6 +41,7 @@ $('body').on("input", '#input_birthday', function () {
 $('body').on("change", '#input_birthday', function () {
     checkBirthdayUser();
 });
+
 // check ngày sinh
 function checkBirthdayUser() {
     var value = $("#input_birthday").val();
@@ -66,6 +70,7 @@ function checkBirthdayUser() {
         showHiddenBirthdayUser(res, mess);
     }
 }
+
 function showHiddenBirthdayUser(res, mess) {
     var birthday_user_error = $("#error_birthday");
     if (res == 1) {
@@ -93,6 +98,7 @@ $('body').on("input", '#input_user_phone', function () {
 $('body').on("keyup", '#input_user_phone', function () {
     checkPhoneUser();
 });
+
 function checkPhoneUser() {
     var value = $("#input_user_phone").val();
     if (value == '') {
@@ -103,6 +109,7 @@ function checkPhoneUser() {
         showHiddenPhoneUser(1, mess);
     }
 }
+
 function showHiddenPhoneUser(res, mess) {
     var error_user_phone = $("#error_user_phone");
     if (res == 1) {
@@ -130,6 +137,7 @@ $('body').on("input", '#input_address_user', function () {
 $('body').on("keyup", '#input_address_user', function () {
     checkAddressUser();
 });
+
 //check địa chỉ nhân viên
 function checkAddressUser() {
     var value = $("#input_address_user").val();
@@ -141,6 +149,7 @@ function checkAddressUser() {
         showHiddenAddressUser(1, mess);
     }
 }
+
 function showHiddenAddressUser(res, mess) {
     var error_address_user = $("#error_address_user");
     if (res == 1) {
@@ -186,36 +195,125 @@ $('body').on("click", '#submit_form_hoso', function () {
     }
     if (error_free != false) {
         var link = $('#site_name_manage').val() + '/azbooking-update-hoso.html';
-        if(link!=''){
+        if (link != '') {
             $.ajax({
                 method: "POST",
                 url: link,
-                data : { // Danh sách các thuộc tính sẽ gửi đi
+                data: { // Danh sách các thuộc tính sẽ gửi đi
                     user: $('#form_hoso').serializeArray(),
                     form_noti: $('#form_noti').serializeArray()
                 },
                 success: function (response) {
                     response = $.parseJSON(response);
-                    if(response.success==1){
-                        showNotification('top','right',2,'Cập nhật hồ sơ thành công');
-                    }else{
-                        showNotification('top','right',4,response.mess);
+                    if (response.success == 1) {
+                        showNotification('top', 'right', 2, 'Cập nhật hồ sơ thành công');
+                    } else {
+                        showNotification('top', 'right', 4, response.mess);
                     }
                 }
             });
-        }else{
+        } else {
             $('error_submit_hoso').show().html('Lỗi! bạn vui lòng F5 và thử lại');
         }
     }
 
 });
-function showNotification(from, align,color,mess){
+$('body').on("input", '.valid-input', function () {
+    var name = $(this).attr('name');
+    var valid = $('#input_' + name).attr('data-valid');
+    var success = 0;
+    if (valid == 'required') {
+        var value = $('#input_' + name).val();
+        if (value && name) {
+            $('#error_' + name).hide();
+            $('#input_' + name).addClass('valid');
+            $('#input_' + name).removeClass('input-error');
+            success = 1;
+        } else {
+            $('#error_' + name).show();
+            $('#input_' + name).removeClass('valid').addClass('input-error');
+            if (name == 'email') {
+                $('#error_' + name).show().html('Bạn vui lòng nhập email');
+            }
+        }
+    }
+
+    if (success) {
+        switch (name) {
+            case 'email':
+                var re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+                var is_email = re.test(value);
+                if (is_email) {
+                    var link = $('#site_name_manage_all').val() + '/check-login.html';
+
+                    var key = "user_email";
+                    $.ajax({
+                        method: "GET",
+                        url: link,
+                        data: "value=" + value + '&key=' + key,
+                        success: function (response) {
+                            if (response == 1) {
+                                $('#input_' + name).addClass('valid');
+                                $('#input_' + name).removeClass('input-error');
+                                $('#error_' + name).hide().html('Bạn vui lòng nhập email');
+                            }
+                            else {
+                                $('#error_' + name).show().html('Email đã tồn tại trong hệ thống');
+                                $('#input_' + name).removeClass('valid').addClass('input-error');
+                            }
+                        }
+                    });
+                }
+                else {
+                    $('#error_' + name).show().html('Email không đúng định dạng');
+                    $('#input_' + name).removeClass('valid');
+                }
+                break;
+        }
+    }
+
+});
+$('body').on("click", '#create_user', function () {
+    $('#input_name').val('').removeClass('input-error').removeClass('valid');
+    $('#input_email').val('').removeClass('input-error').removeClass('valid');
+    $('#input_phone').val('').removeClass('input-error').removeClass('valid');
+    $('#input_address').val('').removeClass('input-error').removeClass('valid');
+    $('#error_name').hide().html('Bạn vui lòng nhập tên thành viên');
+    $('#error_email').hide().html('Bạn vui lòng nhập email');
+    $('#error_phone').hide().html('Bạn vui lòng nhập số điện thoại');
+    $('#error_address').hide().html('Bạn vui lòng nhập địa chỉ');
+});
+
+$('body').on("click", '#save_dangky', function () {
+    var form_data = $("#signup-form").serializeArray();
+    var error_free = true;
+    for (var input in form_data) {
+        var name_input = form_data[input]['name'];
+        var element = $("#input_" + name_input);
+        var error = $("#error_" + name_input);
+        var valid = element.hasClass("valid");
+        if (valid === false) {
+            element.addClass("input-error").removeClass("valid");
+            error.show();
+            error_free = false;
+
+        }
+
+    }
+    if (error_free != false) {
+        console.log('asdf');
+    }
+
+});
+
+
+function showNotification(from, align, color, mess) {
 //        color = Math.floor((Math.random() * 4) + 1);
     $.notify({
         icon: "notifications",
         message: mess
 
-    },{
+    }, {
         type: type[color],
         timer: 4000,
         placement: {
@@ -224,78 +322,80 @@ function showNotification(from, align,color,mess){
         }
     });
 }
-$('body').on('click','.xac_minh_2_buoc', function () {
+
+$('body').on('click', '.xac_minh_2_buoc', function () {
     var status = 0;
     if ($('#xacminh_2b').is(":checked")) {
         status = 1;
     }
-    if(status==1)
-    {
-        var mess_lable=' Chức năng đăng nhập 2 bước đã được kích hoạt';
+    if (status == 1) {
+        var mess_lable = ' Chức năng đăng nhập 2 bước đã được kích hoạt';
     }
-    else{
-        var mess_lable=' Hủy bỏ đăng nhập 2 bước thành công';
+    else {
+        var mess_lable = ' Hủy bỏ đăng nhập 2 bước thành công';
     }
     var link = $('#site_name_manage').val() + '/azbooking-update-2buoc.html';
-    if(link!=''){
+    if (link != '') {
         $.ajax({
             method: "POST",
             url: link,
-            data : { // Danh sách các thuộc tính sẽ gửi đi
+            data: { // Danh sách các thuộc tính sẽ gửi đi
                 status: status,
                 form_noti: $('#form_noti').serializeArray()
             },
             success: function (response) {
                 response = $.parseJSON(response);
-                if(response.success==1){
-                    showNotification('top','right',2,mess_lable);
-                }else{
-                    showNotification('top','right',4,response.mess);
+                if (response.success == 1) {
+                    showNotification('top', 'right', 2, mess_lable);
+                } else {
+                    showNotification('top', 'right', 4, response.mess);
                 }
             }
         });
-    }else{
-        showNotification('top','right',4,'Lỗi! bạn vui lòng F5 và thử lại');
+    } else {
+        showNotification('top', 'right', 4, 'Lỗi! bạn vui lòng F5 và thử lại');
     }
 });
-$('body').on("blur",'#input_password_old', function () {
+$('body').on("blur", '#input_password_old', function () {
     checkUserPasswordOldConfirm();
 });
-$('body').on("input",'#input_password_old', function () {
-   $('#error_password_old').hide();
+$('body').on("input", '#input_password_old', function () {
+    $('#error_password_old').hide();
 });
-function checkUserPasswordOldConfirm(){
+
+function checkUserPasswordOldConfirm() {
     var value = $("#input_password_old").val();
     var link = $('#site_name_manage').val() + '/az-check-pass-old.html';
-    if(value!=''){
+    if (value != '') {
         $.ajax({
             method: "POST",
             url: link,
-            data : { // Danh sách các thuộc tính sẽ gửi đi
+            data: { // Danh sách các thuộc tính sẽ gửi đi
                 value: value,
                 form_noti: $('#form_noti').serializeArray()
             },
             success: function (response) {
                 response = $.parseJSON(response);
                 if (response.success == 1) {
-                    var mess="";
-                    showHiddenPasswordOldUser(1,mess)
+                    var mess = "";
+                    showHiddenPasswordOldUser(1, mess)
                 }
-                else{
-                    var mess="Mật khẩu cũ không chính xác";
-                    showHiddenPasswordOldUser(0,mess)
+                else {
+                    var mess = "Mật khẩu cũ không chính xác";
+                    showHiddenPasswordOldUser(0, mess)
                 }
             }
         });
     }
-    else{
-        var mess="Bạn vui lòng nhập mật khẩu cũ";
-        showHiddenPasswordOldUser(0,mess)
+    else {
+        var mess = "Bạn vui lòng nhập mật khẩu cũ";
+        showHiddenPasswordOldUser(0, mess)
     }
 
 }
-function showHiddenPasswordOldUser(res,mess){
-    var error_password_old=$("#error_password_old" );
+
+function showHiddenPasswordOldUser(res, mess) {
+    var error_password_old = $("#error_password_old");
     if (res == 1) {
         error_password_old.hide();
         $('#error_icon_user_password_old').hide();
@@ -303,9 +403,8 @@ function showHiddenPasswordOldUser(res,mess){
         $('#input_password_old').removeClass("input-error").addClass("valid");
     }
     else {
-        if(res!=0)
-        {
-            mess=res;
+        if (res != 0) {
+            mess = res;
         }
         $('#error_icon_user_password_old').show();
         $('#user_password_old_success_icon').hide();
@@ -316,37 +415,37 @@ function showHiddenPasswordOldUser(res,mess){
         error_password_old.show();
     }
 }
+
 // check pass
-$('body').on("input",'#input_password', function () {
+$('body').on("input", '#input_password', function () {
     checkUserPassword();
 });
-$('body').on("keyup",'#input_password', function () {
+$('body').on("keyup", '#input_password', function () {
     checkUserPassword();
 });
 // check pass confirm
-$('body').on("input",'#input_password_confirm', function () {
+$('body').on("input", '#input_password_confirm', function () {
     checkUserPasswordConfirm();
 });
-$('body').on("keyup",'#input_password_confirm', function () {
+$('body').on("keyup", '#input_password_confirm', function () {
     checkUserPasswordConfirm();
 });
 
 // check password
-function checkUserPassword(){
-    var error_password_confirm=$("#error_password_confirm" );
+function checkUserPassword() {
+    var error_password_confirm = $("#error_password_confirm");
     var value = $("#input_password").val();
     var confirm_password_dangky = $('#input_password_confirm').val();
-    if(value==''){
-        var mess='Bạn vui lòng nhập mật khẩu';
-        showHiddenPasswordUser(0,mess);
-    }else{
-        if(confirm_password_dangky!=""){
-            if(value==confirm_password_dangky)
-            {
+    if (value == '') {
+        var mess = 'Bạn vui lòng nhập mật khẩu';
+        showHiddenPasswordUser(0, mess);
+    } else {
+        if (confirm_password_dangky != "") {
+            if (value == confirm_password_dangky) {
                 error_password_confirm.hide();
                 error_password_confirm.html('');
                 $('#input_password_confirm').removeClass("input-error").addClass("valid");
-            }else{
+            } else {
                 error_password_confirm.show();
                 error_password_confirm.html('Hai mật khẩu không khớp');
                 $('#input_password_confirm').addClass("input-error").removeClass("valid");
@@ -369,15 +468,15 @@ function checkUserPassword(){
 
         } else if (strongRegex.test(value)) {
             // If reg ex matches strong password
-            showHiddenPasswordValidUser('success_pass','Mật khẩu mạnh!');
+            showHiddenPasswordValidUser('success_pass', 'Mật khẩu mạnh!');
             //$('#power_pass').removeClass().addClass('success_pass').html('Mật khẩu mạnh!');
         } else if (mediumRegex.test(value)) {
             // If medium password matches the reg ex
-            showHiddenPasswordValidUser('medium_pass','Hãy khiến mật khẩu mạnh hơn với chữ in hoa, số, ký tự đặc biệt!');
+            showHiddenPasswordValidUser('medium_pass', 'Hãy khiến mật khẩu mạnh hơn với chữ in hoa, số, ký tự đặc biệt!');
             //$('#power_pass').removeClass().addClass('medium_pass').html('Hãy khiến mật khẩu mạnh hơn với chữ in hoa, số, ký tự đặc biệt!');
         } else {
             // If password is ok
-            showHiddenPasswordValidUser('weak_pass','Mật khẩu yếu, hãy sử dụng số và chữ hoa!');
+            showHiddenPasswordValidUser('weak_pass', 'Mật khẩu yếu, hãy sử dụng số và chữ hoa!');
             //$('#power_pass').removeClass().addClass('weak_pass').html('Mật khẩu yếu, hãy sử dụng số và chữ hoa.');
         }
 
@@ -385,23 +484,24 @@ function checkUserPassword(){
         //showHiddenPasswordUser(1,mess);
     }
 }
-function  showHiddenPasswordValidUser(res,mess){
+
+function showHiddenPasswordValidUser(res, mess) {
     $('#error_password').removeClass().addClass(res).html(mess);
     $('#input_password').removeClass("input-error").addClass("valid");
     $('#error_password').addClass('error-color-size');
     $('#error_icon_user_pass').hide();
 }
-function showHiddenPasswordUser(res,mess){
-    var error_password=$("#error_password" );
+
+function showHiddenPasswordUser(res, mess) {
+    var error_password = $("#error_password");
     if (res == 1) {
         error_password.hide();
         $('#error_icon_user_pass').hide();
         $('#input_password').removeClass("input-error").addClass("valid");
     }
     else {
-        if(res!=0)
-        {
-            mess=res;
+        if (res != 0) {
+            mess = res;
         }
         $('#error_icon_user_pass').show();
         $('#input_password').addClass("input-error").removeClass("valid");
@@ -413,20 +513,20 @@ function showHiddenPasswordUser(res,mess){
 }
 
 // check pass confirm
-function checkUserPasswordConfirm(){
-    var error_password_confirm=$("#error_password_confirm" );
+function checkUserPasswordConfirm() {
+    var error_password_confirm = $("#error_password_confirm");
     var value = $("#input_password_confirm").val();
-    if(value==''){
-        var mess='Bạn vui lòng xác nhận mật khẩu';
-        showHiddenPasswordConfirmUser(0,mess);
-    }else{
-        var password_dangky=$('#input_password').val();
-        if(value==password_dangky){
+    if (value == '') {
+        var mess = 'Bạn vui lòng xác nhận mật khẩu';
+        showHiddenPasswordConfirmUser(0, mess);
+    } else {
+        var password_dangky = $('#input_password').val();
+        if (value == password_dangky) {
             error_password_confirm.hide();
             error_password_confirm.html('');
             $('#error_icon_user_pass_con').hide();
             $('#input_password_confirm').removeClass("input-error").addClass("valid");
-        }else{
+        } else {
             error_password_confirm.show();
             error_password_confirm.html('Hai mật khẩu không khớp');
             $('#error_icon_user_pass_con').show();
@@ -435,17 +535,16 @@ function checkUserPasswordConfirm(){
     }
 }
 
-function showHiddenPasswordConfirmUser(res,mess){
-    var error_password_confirm=$("#error_password_confirm" );
+function showHiddenPasswordConfirmUser(res, mess) {
+    var error_password_confirm = $("#error_password_confirm");
     if (res == 1) {
         error_password_confirm.hide();
         $('#error_icon_user_pass_con').hide();
         $('#input_password_confirm').removeClass("input-error").addClass("valid");
     }
     else {
-        if(res!=0)
-        {
-            mess=res;
+        if (res != 0) {
+            mess = res;
         }
         $('#error_icon_user_pass_con').show();
         $('#input_password_confirm').addClass("input-error").removeClass("valid");
@@ -456,63 +555,63 @@ function showHiddenPasswordConfirmUser(res,mess){
     }
 }
 
-$('body').on("click",'#submit_form_password', function () {
-    var form_data=$("#submit_chang_pass").serializeArray();
-    var error_free=true;
-    for (var input in form_data){
-        var element=$("#input_"+form_data[input]['name']);
-        var error=$("#error_"+form_data[input]['name']);
-        var valid=element.hasClass("valid");
-        if (valid==false){
+$('body').on("click", '#submit_form_password', function () {
+    var form_data = $("#submit_chang_pass").serializeArray();
+    var error_free = true;
+    for (var input in form_data) {
+        var element = $("#input_" + form_data[input]['name']);
+        var error = $("#error_" + form_data[input]['name']);
+        var valid = element.hasClass("valid");
+        if (valid == false) {
             element.addClass("input-error").removeClass("valid");
             error.show();
-            error_free=false
+            error_free = false
         }
     }
-    if (error_free!=false){
-        var pass_old=$("#input_password_old").val();
-        var pass=$("#input_password").val();
-        var pass_confirm=$("#input_password_confirm").val();
-        if(pass_old!=''&&pass!=""&&pass_confirm!=""){
+    if (error_free != false) {
+        var pass_old = $("#input_password_old").val();
+        var pass = $("#input_password").val();
+        var pass_confirm = $("#input_password_confirm").val();
+        if (pass_old != '' && pass != "" && pass_confirm != "") {
             var link = $('#site_name_manage').val() + '/az-update-pass.html';
             $.ajax({
                 method: "POST",
                 url: link,
-                data : { // Danh sách các thuộc tính sẽ gửi đi
-                    pass_old : pass_old,
+                data: { // Danh sách các thuộc tính sẽ gửi đi
+                    pass_old: pass_old,
                     pass: pass,
                     pass_confirm: pass_confirm,
                     form_noti: $('#form_noti').serializeArray()
                 },
                 success: function (response) {
                     response = $.parseJSON(response);
-                    if(response.success==1){
-                        showNotification('top','right',2,'Cập nhật mật khẩu thành công');
+                    if (response.success == 1) {
+                        showNotification('top', 'right', 2, 'Cập nhật mật khẩu thành công');
                         $('#input_password_old').val('');
                         $('#input_password').val('');
                         $('#input_password_confirm').val('');
-                    }else{
-                        showNotification('top','right',4,response.mess);
+                    } else {
+                        showNotification('top', 'right', 4, response.mess);
                     }
                 }
             });
-        }else{
-            if(pass_old==''){
-                showNotification('top','right',4,'Bạn vui lòng nhập mật khẩu cũ');
+        } else {
+            if (pass_old == '') {
+                showNotification('top', 'right', 4, 'Bạn vui lòng nhập mật khẩu cũ');
             }
-            if(pass==''){
-                showNotification('top','right',4,'Bạn vui lòng nhập mật khẩu mới');
+            if (pass == '') {
+                showNotification('top', 'right', 4, 'Bạn vui lòng nhập mật khẩu mới');
             }
-            if(pass_confirm==''){
-                showNotification('top','right',4,'Bạn vui lòng xác nhận mật khẩu');
+            if (pass_confirm == '') {
+                showNotification('top', 'right', 4, 'Bạn vui lòng xác nhận mật khẩu');
             }
         }
     }
 
 });
-$('body').on("click",'#submit_form_avatar', function () {
-    var file_img=$('#imgInp').val();
-    if(file_img!=''){
+$('body').on("click", '#submit_form_avatar', function () {
+    var file_img = $('#imgInp').val();
+    if (file_img != '') {
         var link = $('#site_name_manage').val() + '/az-update-avatar.html';
         var fd = new FormData(document.getElementById("form_avatar"));
         fd.append("label", "WEBUPLOAD");
@@ -520,23 +619,23 @@ $('body').on("click",'#submit_form_avatar', function () {
         $.ajax({
             method: "POST",
             url: link,
-            data :fd,
+            data: fd,
             processData: false,  // tell jQuery not to process the data
             contentType: false,  // tell jQuery not to set contentType
             success: function (response) {
                 response = $.parseJSON(response);
-                if(response.success==1){
-                    showNotification('top','right',2,'Upload ảnh đại diện thành công');
+                if (response.success == 1) {
+                    showNotification('top', 'right', 2, 'Upload ảnh đại diện thành công');
                     $('.nav-user-photo').attr('src', response.avatar)
-                    window.location.href = $('#site_name').val()+'/tiep-thi-lien-ket/ho-so/?code='+response.avatar_code;
-                }else{
-                    showNotification('top','right',4,response.mess);
+                    window.location.href = $('#site_name').val() + '/tiep-thi-lien-ket/ho-so/?code=' + response.avatar_code;
+                } else {
+                    showNotification('top', 'right', 4, response.mess);
                 }
                 $(this).html('Cập nhật');
             }
         });
-    }else{
-        showNotification('top','right',4,'Bạn vui lòng chọn ảnh đại diện');
+    } else {
+        showNotification('top', 'right', 4, 'Bạn vui lòng chọn ảnh đại diện');
     }
 });
 

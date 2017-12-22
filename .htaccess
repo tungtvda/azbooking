@@ -102,14 +102,14 @@ RewriteRule ^tiep-thi-lien-ket/google/$ tiepthi/login/social/login_google/index.
 
 RewriteRule ^tiep-thi-lien-ket/$ tiepthi/manage/index.php
 RewriteRule ^tiep-thi-lien-ket/tour$ tiepthi/manage/tour.php
-RewriteRule ^tiep-thi-lien-ket/users tiepthi/manage/users.php
+RewriteRule ^tiep-thi-lien-ket/users$ tiepthi/manage/users.php
 RewriteRule ^tiep-thi-lien-ket/don-hang$ tiepthi/manage/donhang.php
-RewriteRule ^tiep-thi-lien-ket/don-hang/chi-tiet tiepthi/manage/donhang_chitiet.php
-RewriteRule ^tiep-thi-lien-ket/thong-bao tiepthi/manage/thongbao.php
-RewriteRule ^tiep-thi-lien-ket/ho-so/ tiepthi/manage/hoso.php
-RewriteRule ^tiep-thi-lien-ket/rut-tien/ tiepthi/manage/ruttien.php
-RewriteRule ^tiep-thi-lien-ket/update-avatar/ tiepthi/manage/update_avatar.php
-RewriteRule ^tiep-thi-lien-ket-info/([a-zA-Z0-9_-]+).html controller/default/info_tiepthi.php?Id=$1
+RewriteRule ^tiep-thi-lien-ket/don-hang/chi-tiet$ tiepthi/manage/donhang_chitiet.php
+RewriteRule ^tiep-thi-lien-ket/thong-bao$ tiepthi/manage/thongbao.php
+RewriteRule ^tiep-thi-lien-ket/ho-so/$ tiepthi/manage/hoso.php
+RewriteRule ^tiep-thi-lien-ket/rut-tien/$ tiepthi/manage/ruttien.php
+RewriteRule ^tiep-thi-lien-ket/update-avatar/$ tiepthi/manage/update_avatar.php
+RewriteRule ^tiep-thi-lien-ket-info/([a-zA-Z0-9_-]+).html$ controller/default/info_tiepthi.php?Id=$1
 
 RewriteRule ^mail-content.html$ controller/default/content_email.php
 RewriteRule ^contact-tiep-thi-lien-ket.html$ controller/default/contact_tiepthi.php

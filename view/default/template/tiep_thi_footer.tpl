@@ -35,6 +35,7 @@
             </ul>
         </nav>
         <p class="copyright pull-right">
+            <input hidden value="{site_name_manage}" id="site_name_manage_all">
             &copy;
             <a href="http://azbooking.vn/">AZBOOKING.VN</a>
         </p>
@@ -75,7 +76,66 @@
 
 <script src="{SITE-NAME}/view/default/themes/assets/js/myjs.js"></script>
 <script src="{SITE-NAME}/view/default/themes/calendar/dist/moment.min.js"></script>
+<script type="text/javascript"
+        src="{SITE-NAME}/view/default/themes/js/jquery.timeago.js"></script>
 <script>
+    $contentLoadTriggered = false;
+    $(".content_ul_li").scroll(
+        function()
+        {
+            if($(".content_ul_li").scrollTop() >= ($(".content_ul_li").height() - $(".ul_noti").height()) && $contentLoadTriggered == false)
+            {
+                $contentLoadTriggered = true;
+                var page=$('#page_noti').val();
+                if(page==1){
+                    $('#page_noti').val(2);
+                }
+                link = '{site_name_manage}/return-list-notification.html';
+                $.ajax({
+                    method: "POST",
+                    url: link,
+                    data: $("#form_noti").serialize(),
+                    success: function (response) {
+                        response = $.parseJSON(response);
+
+                        if(response.success==1){
+                            response.data_noti.forEach(function(value) {
+                                var row_color='';
+                                var row_title_status='Đã đọc';
+                                var row_icon_status='fa-check';
+                                if(value.status!=1){
+                                    row_color='background-color: #edf2fa;';
+                                    row_icon_status='fa-sun-o';
+                                    row_title_status='Chưa đọc';
+                                }
+                                var time_show=moment(value.created).format('DD-MM-YYYY HH:mm:ss');
+                                var time_format=jQuery.timeago(value.created);
+
+                                var item_noti='  <li class="menu-item" style="'+row_color+'"><a  style="color: #4F99C6!important;" href="{SITE-NAME}/'+value.link+'" class="clearfix">' +
+                                    '<span class="msg-body"><span class="msg-title">'+value.name+'</span>' +
+                                    '<span  class="msg-time"><i title="'+time_show+'" class="ace-icon fa fa-clock-o"></i> <span title="'+time_show+'">'+time_format+'</span>' +
+                                    '<span  style="float: right;color: #4F99C6!important;"> <i title="'+row_title_status+'" class="ace-icon fa '+row_icon_status+'"></i> </span></span></span></a></li>';
+
+                                $( ".ul_noti" ).append(item_noti);
+                            });
+                            $('#page_noti').val(response.current);
+                            if(response.data_noti.length>0){
+                                $contentLoadTriggered =false;
+                            }else{
+                                $contentLoadTriggered =true;
+                            }
+
+                        }else{
+                            $contentLoadTriggered = true;
+                        }
+                    }
+                });
+
+
+            }
+        }
+    );
+
     $(".notification_menu").click(function () {
         link = '{site_name_manage}/update-notification.html';
         var count_noti = $('#count_notification').html();

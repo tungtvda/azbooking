@@ -36,7 +36,7 @@
                                         <th class="hidden-xs">Mã tour</th>
                                         <th>Tên tour</th>
                                         <th>Đơn giá</th>
-                                        <th>Tiền tiếp thị</th>
+                                        <th>Hoa hồng</th>
                                         <th>Chia sẻ</th>
                                     </tr></thead>
                                     <tbody>

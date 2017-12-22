@@ -5,6 +5,7 @@
  * Date: 11/10/14
  * Time: 2:40 PM
  */
+
 if(!defined('SITE_NAME'))
 {
     require_once '../../config.php';
@@ -13,6 +14,7 @@ if(!defined('SITE_NAME'))
 require_once DIR.'/controller/default/public.php';
 require_once DIR . '/common/paging.php';
 require_once DIR . '/common/redict.php';
+
 $data['config']=config_getByTop(1,'','');
 $current=isset($_GET['page'])?$_GET['page']:'1';
 $data_session=checkSession('', 1);
