@@ -39,7 +39,7 @@
                                 <th>Ngày tạo</th>
                             </tr>
                             </thead>
-                            <tbody>
+                            <tbody id="list-user">
                             {danhsach}
                             </tbody>
                         </table>
@@ -67,7 +67,8 @@
 </style>
 <div id="myModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
-
+        <input type="password" hidden  id="mail_create" name="mail_create" value="{message_dangky}>">
+        <input type="password" hidden  id="user_tiep_thi" name="user_tiep_thie" value="{user_tiep_thi}>">
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
@@ -108,11 +109,19 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <small id="error_submit" class="hidden_error form-text text-muted red_color">Đăng ký thất bạn, bạn vui lòng Ctrl+f5 và thử lại</small>
+                        </div>
+
+                    </div>
                 </form>
 
             </div>
             <div class="modal-footer" >
-                <button style="background-color: #337ab7;border-color: #2e6da4;" type="button" class="btn btn-info" id="save_dangky">Lưu</button>
+                <button style="background-color: #337ab7;border-color: #2e6da4;" type="button" class="btn btn-info save_dangky" data-value="0">Lưu</button>
+                <button style="background-color: #337ab7;border-color: #2e6da4;" type="button" class="btn btn-info save_dangky" data-value="1">Lưu & tạo mới</button>
+                <button style="background-color: #337ab7;border-color: #2e6da4;display: none" type="button" class="btn btn-info" id="loading_save">Đang gửi ...</button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Hủy</button>
             </div>
         </div>
