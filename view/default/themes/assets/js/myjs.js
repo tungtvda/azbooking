@@ -274,17 +274,26 @@ $('body').on("input", '.valid-input', function () {
 
 });
 $('body').on("click", '#create_user', function () {
+    returnDefail()
+});
+function returnDefail(){
+    $("#input_name").focus();
     $('#input_name').val('').removeClass('input-error').removeClass('valid');
     $('#input_email').val('').removeClass('input-error').removeClass('valid');
     $('#input_phone').val('').removeClass('input-error').removeClass('valid');
     $('#input_address').val('').removeClass('input-error').removeClass('valid');
+
     $('#error_name').hide().html('Bạn vui lòng nhập tên thành viên');
     $('#error_email').hide().html('Bạn vui lòng nhập email');
     $('#error_phone').hide().html('Bạn vui lòng nhập số điện thoại');
     $('#error_address').hide().html('Bạn vui lòng nhập địa chỉ');
-});
+    $('#error_submit').hide().html('Tạo tài khoản thất bại, bạn vui lòng nhấn Ctrl+f5 và thử lại');
+    $("#input_name").focus();
+    $('.save_dangky').show();
+    $('#loading_save').hide();
+}
 
-$('body').on("click", '#save_dangky', function () {
+$('body').on("click", '.save_dangky', function () {
     var form_data = $("#signup-form").serializeArray();
     var error_free = true;
     for (var input in form_data) {
@@ -296,12 +305,69 @@ $('body').on("click", '#save_dangky', function () {
             element.addClass("input-error").removeClass("valid");
             error.show();
             error_free = false;
-
         }
 
     }
     if (error_free != false) {
-        console.log('asdf');
+        var email_dangky=$('#input_email').val();
+        var username_dangky=$('#input_name').val();
+        var phone=$('#input_phone').val();
+        var address=$('#input_address').val();
+        var password_dangky='12345';
+        var confirm_password_dangky='12345';
+        var mail_create=$('#mail_create').val();
+        var user_tiep_thi=$('#user_tiep_thi').val();
+        var link=$('#site_name_manage_all').val() + '/azbooking-dang-ky.html';
+
+        if(user_tiep_thi && mail_create){
+            $('#loading_save').show();
+            $('.save_dangky').hide();
+            $.ajax({
+                method: "POST",
+                url: link,
+                data:{
+                    email_dangky:email_dangky,
+                    username_dangky:username_dangky,
+                    phone:phone,
+                    address:address,
+                    password_dangky:password_dangky,
+                    confirm_password_dangky:confirm_password_dangky,
+                    type:1,
+                    user_tiep_thi:user_tiep_thi,
+                    confirm_res:1,
+                    mail_create:mail_create
+                },
+                success: function (response) {
+                    try {
+                        var response = $.parseJSON(response);
+                        //
+                        if (response.success == 1) {
+                            if(response.danhsach){
+                                $('#list-user').prepend(response.danhsach);
+                            }
+                            var close=$('.save_dangky').attr('data-value');
+                            if(!close){
+                                $('#myModal').modal('hide');
+                            }
+                            returnDefail()
+                        }
+                        else {
+                            $('#error_submit').show().html(response.mess);
+                            $('.save_dangky').show();
+                            $('#loading_save').hide();
+                        }
+                    }
+                    catch (err) {
+                        $('#error_submit').show().html('Tạo tài khoản thất bại, bạn vui lòng nhấn Ctrl+f5 và thử lại');
+                        $('.save_dangky').show();
+                        $('#loading_save').hide();
+                    }
+                }
+            });
+        }else{
+            $('#error_submit').show().html('Tạo tài khoản thất bại, bạn vui lòng nhấn Ctrl+f5 và thử lại');
+        }
+
     }
 
 });

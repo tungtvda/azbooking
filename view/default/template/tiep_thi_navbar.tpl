@@ -24,12 +24,12 @@
                             <li class="menu-item menu-item-has-children dropdown-noti submenu hover">
                                 <div class="dropdown-content-noti" >
                                     <p class="dropdown-header">{count_un_read}</p>
-                                    <div class="content_ul_li scroll_noti">
+                                    <div {hidden_noti} class="content_ul_li scroll_noti">
                                         <ul style="background:#ffffff" class="sub-menu sub-menu-noti ul_noti">
-                                         {list_notifications}
+                                            {list_notifications}
                                         </ul>
                                     </div>
-                                   {view_all}
+                                    {view_all}
                                 </div>
                                 <span class="menu-toggle"></span><span class="menu-arr-bottom"></span><span
                                         class="menu-arr-top"></span></li>

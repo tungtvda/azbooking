@@ -1,7 +1,7 @@
 <?php
 require_once DIR . '/view/default/public.php';
 require_once DIR . '/common/locdautiengviet.php';
-require_once DIR . '/common/redict.php';
+
 function view_menu($data = array())
 {
     $asign = array();
@@ -202,6 +202,7 @@ function view_navbar_tiep_thi($data = array())
         $hidden_div='';
         $asign['view_all']='';
         $list_notification='';
+        $hidden_noti='';
         $asign['list_notifications']='';
         if($count_noti>0){
             foreach($data_list_noti['data_noti'] as $row_noti){
@@ -230,11 +231,13 @@ function view_navbar_tiep_thi($data = array())
                                                 href="'.SITE_NAME.'/tiep-thi-lien-ket/thong-bao"> Xem tất cả <i class="ace-icon fa fa-arrow-right"></i></a></p>';
             }
         }else{
-            $list_notification=' <li class="item_list_noti" style="">
-                                    <a >Bạn không có thông báo nào</a>
-                                </li>';
+            $hidden_noti='hidden';
+//            $list_notification=' <li class="item_list_noti" style="">
+//                                    <a >Bạn không có thông báo nào</a>
+//                                </li>';
         }
         $asign['list_notifications']=$list_notification;
+        $asign['hidden_noti']=$hidden_noti;
         $scroll='';
         if($count_noti>=3){
             $scroll='scroll_noti';
