@@ -294,6 +294,7 @@ function returnDefail(){
 }
 
 $('body').on("click", '.save_dangky', function () {
+    var close=$(this).attr('data-value');
     var form_data = $("#signup-form").serializeArray();
     var error_free = true;
     for (var input in form_data) {
@@ -345,8 +346,8 @@ $('body').on("click", '.save_dangky', function () {
                             if(response.danhsach){
                                 $('#list-user').prepend(response.danhsach);
                             }
-                            var close=$('.save_dangky').attr('data-value');
-                            if(!close){
+                            console.log(close);
+                            if(close==0){
                                 $('#myModal').modal('hide');
                             }
                             returnDefail()
