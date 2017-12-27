@@ -22,7 +22,6 @@ jQuery(function ($) {
                 $.ajax({
                     method: "GET",
                     url: link,
-                    headers: {"Access-Control-Allow-Origin":"*"},
                     data: "value=" + value + '&key=' + key,
                     success: function (response) {
                         if (response == 1) {

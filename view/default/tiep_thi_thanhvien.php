@@ -152,7 +152,7 @@ function show_tiepthi_thanhvien($data = array())
   text-align: center;" class="title_index">XÁC THỰC TÀI KHOẢN</h3>
                 <div style="float: left;width: 100%;" class="col-xs-12 row">
                 <p>Chào bạn, <b>' . $name_customer . '</b></p>
-                <p>Thành viên '.$data_session['name'].' - '.$data_session['user_email'].' đã thêm bạn vào hệ thống tiếp thị liên kết <span style="color: #0091ea;">AZBOOKING.VN</span>. Để kích hoạt tài khoản, bạn vui lòng truy cập đường dẫn bên dưới để xác nhận tài khoả.</p>
+                <p>Thành viên '.$data_session['name'].' - '.$data_session['user_email'].' đã thêm bạn vào hệ thống tiếp thị liên kết <span style="color: #0091ea;">AZBOOKING.VN</span>. Để kích hoạt tài khoản, bạn vui lòng truy cập đường dẫn bên dưới để xác nhận tài khoản.</p>
 
                 <p style="color: #0091ea;"><a href="' .SITE_NAME.'/'.$link_dangky . '">' .SITE_NAME.'/'.$link_dangky . '</a></p>
                 <p>Nếu nhấp vào đường dẫn không được, bạn có thể sao chéo đường dẫn vào cửa sổ trình duyệt hoặc gõ lại trực tiếp trong đó</p>
