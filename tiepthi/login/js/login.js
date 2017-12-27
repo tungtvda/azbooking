@@ -22,6 +22,7 @@ jQuery(function ($) {
                 $.ajax({
                     method: "GET",
                     url: link,
+                    headers: {"Access-Control-Allow-Origin":"*"},
                     data: "value=" + value + '&key=' + key,
                     success: function (response) {
                         if (response == 1) {
@@ -239,22 +240,40 @@ jQuery(function ($) {
                     url: link,
                     data: $("#signup-form").serialize(),
                     success: function (response) {
-                        response=$.parseJSON(response);
-                        if (response.success == 1) {
-                            $('#action_register').removeClass('action_register');
-                            $('#toolbar_create').show();
-                            $('#loading_create').hide();
-                            lnv.alert({
-                                title: 'Đăng ký thành công',
-                                content: response.mess,
-                                alertBtnText: 'Ok',
-                                iconBtnText:'<i style="color: green;" class="ace-icon fa fa-check green"></i>',
-                                alertHandler: function () {
-                                    window.location.href=site_name+'/tiep-thi-lien-ket/thanh-vien/';
-                                }
-                            });
+                        try {
+                            var response = $.parseJSON(response);
+                            //
+                            if (response.success == 1) {
+                                $('#action_register').removeClass('action_register');
+                                $('#toolbar_create').show();
+                                $('#loading_create').hide();
+                                lnv.alert({
+                                    title: 'Đăng ký thành công',
+                                    content: response.mess,
+                                    alertBtnText: 'Ok',
+                                    iconBtnText:'<i style="color: green;" class="ace-icon fa fa-check green"></i>',
+                                    alertHandler: function () {
+                                        window.location.href=site_name+'/tiep-thi-lien-ket/thanh-vien/';
+                                    }
+                                });
+                            }
+                            else {
+                                $('#action_register').removeClass('action_register');
+                                $('#dangky_name').show();
+                                $('#cancel_create').show();
+                                $('#toolbar_create').show();
+                                $('#loading_create').hide();
+                                lnv.alert({
+                                    title: 'Lỗi',
+                                    content: response.mess,
+                                    alertBtnText: 'Ok',
+                                    iconBtnText:'<i style="color: red;" class="ace-icon fa fa-exclamation-triangle red"></i>',
+                                    alertHandler: function () {
+                                    }
+                                });
+                            }
                         }
-                        else {
+                        catch (err) {
                             $('#action_register').removeClass('action_register');
                             $('#dangky_name').show();
                             $('#cancel_create').show();
@@ -262,7 +281,7 @@ jQuery(function ($) {
                             $('#loading_create').hide();
                             lnv.alert({
                                 title: 'Lỗi',
-                                content: response.mess,
+                                content: 'Đăng ký thất bại, bạn vui lòng Ctrl+F5 và thử lại!',
                                 alertBtnText: 'Ok',
                                 iconBtnText:'<i style="color: red;" class="ace-icon fa fa-exclamation-triangle red"></i>',
                                 alertHandler: function () {

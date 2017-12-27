@@ -346,7 +346,6 @@ $('body').on("click", '.save_dangky', function () {
                             if(response.danhsach){
                                 $('#list-user').prepend(response.danhsach);
                             }
-                            console.log(close);
                             if(close==0){
                                 $('#myModal').modal('hide');
                             }
