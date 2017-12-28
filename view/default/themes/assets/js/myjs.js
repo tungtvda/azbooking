@@ -650,15 +650,22 @@ $('body').on("click", '#submit_form_password', function () {
                     form_noti: $('#form_noti').serializeArray()
                 },
                 success: function (response) {
-                    response = $.parseJSON(response);
-                    if (response.success == 1) {
-                        showNotification('top', 'right', 2, 'Cập nhật mật khẩu thành công');
-                        $('#input_password_old').val('');
-                        $('#input_password').val('');
-                        $('#input_password_confirm').val('');
-                    } else {
-                        showNotification('top', 'right', 4, response.mess);
+                    try {
+                        response = $.parseJSON(response);
+                        if (response.success == 1) {
+                            showNotification('top', 'right', 2, 'Cập nhật mật khẩu thành công');
+                            $('#input_password_old').val('');
+                            $('#input_password').val('');
+                            $('#input_password_confirm').val('');
+                            $('#error_password').hide().html('Bạn vui lòng kiểm tra mật khẩu mới');
+                        } else {
+                            showNotification('top', 'right', 4, response.mess);
+                        }
                     }
+                    catch (err) {
+                        showNotification('top', 'right', 4,'Cập nhật mật khẩu thất bại');
+                    }
+
                 }
             });
         } else {
@@ -689,15 +696,21 @@ $('body').on("click", '#submit_form_avatar', function () {
             processData: false,  // tell jQuery not to process the data
             contentType: false,  // tell jQuery not to set contentType
             success: function (response) {
-                response = $.parseJSON(response);
-                if (response.success == 1) {
-                    showNotification('top', 'right', 2, 'Upload ảnh đại diện thành công');
-                    $('.nav-user-photo').attr('src', response.avatar)
-                    window.location.href = $('#site_name').val() + '/tiep-thi-lien-ket/ho-so/?code=' + response.avatar_code;
-                } else {
-                    showNotification('top', 'right', 4, response.mess);
+                try {
+                    response = $.parseJSON(response);
+                    if (response.success == 1) {
+                        showNotification('top', 'right', 2, 'Upload ảnh đại diện thành công');
+                        $('.nav-user-photo').attr('src', response.avatar)
+                        window.location.href = $('#site_name').val() + '/tiep-thi-lien-ket/ho-so/?code=' + response.avatar_code;
+                    } else {
+                        showNotification('top', 'right', 4, response.mess);
+                    }
+                    $('#submit_form_avatar').html('Cập nhật');
                 }
-                $(this).html('Cập nhật');
+                catch (err) {
+                    $('#submit_form_avatar').html('Cập nhật');
+                }
+
             }
         });
     } else {

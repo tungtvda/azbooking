@@ -285,8 +285,8 @@
     });
     $('body').on('click', '#submit_form_rut_tien', function () {
         if (returnCheckPrice(1) == 1) {
-            $(this).html('Đang gửi...');
             var link = '{site_name_manage}/az-rut-tien.html';
+            $(this).html('Đang gửi...');
             $.ajax({
                 method: "POST",
                 url: link,
@@ -296,29 +296,22 @@
                     form_noti: $('#form_noti').serializeArray()
                 },
                 success: function (response) {
-                    response = $.parseJSON(response);
-                    if (response.success == 1) {
-                        showNotification('top', 'right', 2, 'Gửi yêu cầu rút tiền thành công, bạn vui lòng đợi AZBOOKING.VN xác nhận');
-                        $('#input_price').val('');
-                        $('#input_yeu_cau').val('');
-//
-//                        var yeu_cau='';
-//                        if(response.data.yeu_cau!=''){
-//                            var yeu_cau='<a href="javascrip:void(0)" rel="tooltip" data-original-title="'+response.data.yeu_cau+'">Xem yêu cầu</a>';
-//                        }
-//                        var html = '<tr><td>1</td>' +
-//                                '<td>300.000 vnđ</td>' +
-//                                '<td></td>' +
-//                                '<td><a class="btn btn-warning">Đang chờ</a></td>' +
-//                                '<td>07-08-2017 07:18:34</td>' +
-//                                '<td></td>' +
-//                                '<td> '+yeu_cau+'' +
-//                                '</td><td> </td></tr>';
-                    } else {
-                        showNotification('top', 'right', 4, response.mess);
-                        $(this).html('Rút tiền');
+                    try {
+                        response = $.parseJSON(response);
+                        if (response.success == 1) {
+                            showNotification('top', 'right', 2, 'Gửi yêu cầu rút tiền thành công, bạn vui lòng đợi AZBOOKING.VN xác nhận');
+                            $('#input_price').val('');
+                            $('#input_yeu_cau').val('');
+                        } else {
+                            showNotification('top', 'right', 4, response.mess);
+                            $('#submit_form_rut_tien').html('Rút tiền');
+                        }
+                        $('#submit_form_rut_tien').html('Rút tiền');
+                    } catch (e) {
+                        showNotification('top', 'right', 4, 'Rút tiền không thành công, bạn vui lòng Ctrl+F5 và thử lại');
+                        $('#submit_form_rut_tien').html('Rút tiền');
                     }
-                    $(this).html('Rút tiền');
+
                 }
             });
         }

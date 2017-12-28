@@ -58,7 +58,7 @@ function show_hoso($data = array())
 
     }else{
         $asign['date_range_cmnd']=date('d-m-Y', strtotime($asign['date_range_cmnd']));
-        $asign['date_valid']='valid';
+
     }
     $asign['issued_by_cmnd']=$data['user']['issued_by_cmnd'];
     $asign['birthday']=$data['user']['birthday'];
@@ -66,6 +66,7 @@ function show_hoso($data = array())
         $asign['birthday']='';
     }else{
         $asign['birthday']=date('d-m-Y', strtotime($asign['birthday']));
+        $asign['date_valid']='valid';
     }
     if($data['user']['hoa_hong']!='' &&$data['user']['hoa_hong']!=0){
         $asign['hoa_hong']=number_format((int)$data['user']['hoa_hong'],0,",",".").' vnđ';
@@ -112,8 +113,6 @@ function show_hoso($data = array())
         <input name="avatar" value="'._return_mc_encrypt($data_session['avatar']).'">
         <input name="token_code" value="'._return_mc_encrypt($data_session['token_code']).'">
         <input name="time_token" value="'._return_mc_encrypt($data_session['time_token']).'">
-        <input id="top_5" name="top_5" value="1">
-        <input id="page_noti" name="page" value="1">
         </div>';
     print_template($asign, 'tiep_thi_ho_so');
 }
