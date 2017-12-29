@@ -25,12 +25,17 @@
                                 </tr>
                                 <tr>
                                     <td>Hoa hồng</td>
-                                    <td>{price_tiep_thi}</td>
+                                    <td style=" font-size: 18px;font-weight: bold;; color: #e53935">{price_tiep_thi}</td>
+                                </tr>
+                                <tr>
+                                    <td>Hình thức hoa hồng</td>
+                                    <td style=" font-weight: bold;; color: #e53935">{type_hoahong}</td>
                                 </tr>
                                 <tr>
                                     <td>Trạng thái đơn hàng</td>
                                     <td>{status}</td>
                                 </tr>
+
                                 <tr>
                                     <td>Xác nhận hoa hồng</td>
                                     <td>{xac_nhan_tiep_thi}</td>
@@ -49,8 +54,6 @@
                                     <td>Ngày đặt</td>
                                     <td >{created}</td>
                                 </tr>
-
-
                                 <!--<tr>
                                     <td class="text-center"></td>
                                     <td class="text-center">

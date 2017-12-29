@@ -80,6 +80,8 @@ function view_footer($data = array())
         </form>';
         $list_noti = returnCURL($array_check_noti, SITE_NAME_MANAGE . '/return-list-notification.html');
         $data_list_noti = json_decode($list_noti, true);
+
+
         $count_noti = 0;
         $count_noti = count($data_list_noti['data_noti']);
         if (isset($data_list_noti['count_active']) && $data_list_noti['count_active'] > 0) {

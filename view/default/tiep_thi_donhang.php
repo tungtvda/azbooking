@@ -13,6 +13,7 @@ function show_tiepthi_donhang($data = array())
     $asign['title_table'] = $data['title_table'];
     $asign['danhsach'] = '';
     $asign['mess_null'] = '';
+    $data_session=checkSession('', 1);
     if (count($data['danhsach']) > 0) {
         $dem=1;
         foreach ($data['danhsach'] as $row) {
@@ -37,21 +38,50 @@ function show_tiepthi_donhang($data = array())
 
             }
             $price_tiep_thi='';
-            $xacnhan_tiep_thi='';
-            if($row['price_tiep_thi']!=''){
-                $price_tiep_thi=number_format((int)$row['price_tiep_thi'],0,",",".").' vnđ';
-                if($row['status_tiep_thi']==1 && $row['confirm_admin_tiep_thi']!=0){
-                    $xacnhan_tiep_thi='<a class="btn btn-success">Đã xác nhận</a>';
-                }else{
-                    $xacnhan_tiep_thi='<a class="btn btn-warning">Đang chờ...</a>';
+            $type_hoahong='Chia sẻ tour';
+            if($row['user_gioi_thieu_c1']==$data_session['id']){
+                if($row['price_gioi_thieu_c1']){
+                    $price_tiep_thi=number_format((int)$row['price_gioi_thieu_c1'],0,",",".").' vnđ';
+                    $type_hoahong='Giới thiệu cấp 1';
                 }
+            }else{
+                if($row['user_gioi_thieu_c2']==$data_session['id']){
+                    if($row['price_gioi_thieu_c2']){
+                        $price_tiep_thi=number_format((int)$row['price_gioi_thieu_c2'],0,",",".").' vnđ';
+                        $type_hoahong='Giới thiệu cấp 2';
+                    }
+                }else{
+                    if($row['user_gioi_thieu_c3']==$data_session['id']){
+                        if($row['price_gioi_thieu_c3']){
+                            $price_tiep_thi=number_format((int)$row['price_gioi_thieu_c3'],0,",",".").' vnđ';
+                            $type_hoahong='Giới thiệu cấp 3';
+                        }
+                    }else{
+                        if($row['user_tiep_thi_id']==$data_session['id']){
+                            if($row['price_tiep_thi']){
+                                $price_tiep_thi=number_format((int)$row['price_tiep_thi'],0,",",".").' vnđ';
+                            }
+                        }else{
+                            redict(SITE_NAME.'/tiep-thi-lien-ket/');
+                        }
+                    }
+                }
+            }
+//            if($row['price_tiep_thi']!=''){
+//                $price_tiep_thi=number_format((int)$row['price_tiep_thi'],0,",",".").' vnđ';
+//            }
+            if($row['status_tiep_thi']==1 && $row['confirm_admin_tiep_thi']!=0){
+                $xacnhan_tiep_thi='<a class="btn btn-success">Đã xác nhận</a>';
+            }else{
+                $xacnhan_tiep_thi='<a class="btn btn-warning">Đang chờ...</a>';
             }
 
             $asign['danhsach'] .= '<tr>
             <td >'.$dem.'</td>
             <td ><a href="'.SITE_NAME.'/tiep-thi-lien-ket/don-hang/chi-tiet?id='._return_mc_encrypt($row['id'], ENCRYPTION_KEY).'">'.$row['code_booking'].'</a></td>
-            <td><a target="_blank" href="{link}">'.$row['name_tour'].'</a></td>
-            <td>'.$price_tiep_thi.'</td>
+            <td><a target="_blank" href="'.SITE_NAME.'/tiep-thi-lien-ket/don-hang/chi-tiet?id='._return_mc_encrypt($row['id'], ENCRYPTION_KEY).'">'.$row['name_tour'].'</a></td>
+            <td style=" font-weight: bold;; color: #e53935">'.$price_tiep_thi.'</td>
+            <td style=" font-weight: bold;; color: #e53935">'.$type_hoahong.'</td>
             <td>'.$xacnhan_tiep_thi.'</td>
             <td>'.$status.'</td>
             <td>'._returnDateFormatConvert($row['created']).'</td>

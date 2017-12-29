@@ -28,8 +28,9 @@
                                 <th >Mã đơn hàng</th>
                                 <th >Tên tour</th>
                                 <th >Hoa hồng</th>
-                                <th >Xác nhận hoa hồng</th>
-                                <th>Tình trạng đơn hàng</th>
+                                <th >Hình thức hoa hồng</th>
+                                <th >Xác nhận</th>
+                                <th>Tình trạng</th>
                                 <th>Ngày đặt</th>
                                 <th>Chi tiết</th>
 

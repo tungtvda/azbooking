@@ -58,6 +58,7 @@ $data['danhsach']=array();
 $data['PAGING'] ='';
 $list_noti= returnCURL($array_check_noti, SITE_NAME_MANAGE.'/azbooking-get-list-thanhvien.html');
 $data_list_noti=json_decode($list_noti,true);
+
 //print_r($data_list_noti);
 //exit;
 if(isset($data_list_noti['danhsach'])){
