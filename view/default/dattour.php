@@ -155,8 +155,8 @@ function show_dattour($data = array())
     $asign['hidden_date_select']='hidden';
     $date_option='';
     $now = getdate();
-//    $year_current=$now["year"];
-    $year_current='2018';
+    $year_current=$now["year"];
+//    $year_current='2018';
     $string_departure_time='';
     $full_date=date("d-m-Y");
     if($data['detail'][0]->departure_time!=''){
@@ -167,7 +167,7 @@ function show_dattour($data = array())
                 if(isset($array_check_year[1])&&$array_check_year[1]==12){
                     $year_current=date("Y");
                 }else{
-                    $year_current='2018';
+                    $year_current=$now["year"];
                 }
                 $value=$value.'-'.$year_current;
                 $value=str_replace('/','-',$value);
