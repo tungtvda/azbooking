@@ -62,7 +62,7 @@ function tour_list_dichvu_getByPaging($CurrentPage, $PageSize,$Order,$where)
 //
 function tour_list_dichvu_getByPagingReplace($CurrentPage, $PageSize,$Order,$where)
 {
-   return tour_list_dichvu_Get("SELECT tour_list_dichvu.id, tour_list_dichvu.tour_id, tour_list_dichvu.name, tour_list_dichvu.type, tour_list_dichvu.price, tour_list_dichvu.number, tour_list_dichvu.total, tour_list_dichvu.note FROM  tour_list_dichvu ".(($where!='')?(' where '.$where):'')." Order By ".$Order." Limit ".(($CurrentPage-1)*$PageSize)." , ".$PageSize);
+   return tour_list_dichvu_Get("SELECT tour_list_dichvu.id, tour.name as tour_id, tour_list_dichvu.name, tour_list_dichvu.type, tour_list_dichvu.price, tour_list_dichvu.number, tour_list_dichvu.total, tour_list_dichvu.note FROM  tour_list_dichvu, tour where tour.id=tour_list_dichvu.tour_id  ".(($where!='')?(' and '.$where):'')." Order By ".$Order." Limit ".(($CurrentPage-1)*$PageSize)." , ".$PageSize);
 }
 //
 function tour_list_dichvu_insert($obj)

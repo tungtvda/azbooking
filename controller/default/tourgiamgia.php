@@ -16,7 +16,7 @@ require_once DIR . '/common/redict.php';
 $data['menu']=menu_getByTop('','','');
 $data['config']=config_getByTop(1,'','');
 $active='';
-$dk='price_sales!=""';
+$dk='price_sales!="" and status=1';
 $data_menu=$data['menu'][13];
 $link='/tour-giam-gia/';
 $data['current']=isset($_GET['page'])?$_GET['page']:'1';;

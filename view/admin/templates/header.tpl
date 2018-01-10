@@ -48,6 +48,37 @@
                 $(field).slideDown();
             });
 
+            $('body').on('input', '#price_dichvu', function () {
+                tinh_tien();
+            });
+            $('body').on('input', '#number_dichvu', function () {
+                tinh_tien();
+            });
+
+            function tinh_tien() {
+                var price = $('#price_dichvu').val();
+                var numberRegex = /^[+-]?\d+(\.\d+)?([eE][+-]?\d+)?$/;
+                if (numberRegex.test(price)) {
+                    var price_format = price.replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.') + ' vnđ';
+                } else {
+                    var price_format ='0 vnđ';
+                    $('#price_dichvu').val(0);
+                    price=0;
+                }
+                if(price<=0)
+                {
+                    $('#price_dichvu').val(0);
+                }
+                $('#price_dv_format').html('('+price_format+')');
+                var number=$('#number_dichvu').val();
+                if(number<=0){
+                    number=1;
+                }
+                var total=number*price;
+                var total_format = total.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.') + ' vnđ';
+                $('#total_dv').val(total_format);
+            }
+
         });
 
         //
@@ -119,6 +150,7 @@
                         <li><a href="{SITE-NAME}/controller/admin/danhmuc_1.php">Danh mục cấp 1</a></li>
                         <li><a href="{SITE-NAME}/controller/admin/danhmuc_2.php">Danh mục cấp 2</a></li>
                         <li><a href="{SITE-NAME}/controller/admin/tour.php">Danh sách tour</a></li>
+                        <li><a href="{SITE-NAME}/controller/admin/tour_list_dichvu.php">Bảng giá dịch vụ</a></li>
                         <li><a href="{SITE-NAME}/controller/admin/price_timkiem.php">Giá tìm kiếm tour</a></li>
                         <li><a href="{SITE-NAME}/controller/admin/departure.php">Điểm khởi hành</a></li>
                     </ul>

@@ -48,16 +48,20 @@ if (isset($_POST['name_customer'])) {
     if ($num_nguoi_lon == 0) {
         $num_nguoi_lon = 1;
     }
-    $num_tre_em = _returnPostParamSecurity('num_tre_em');
-    if ($num_tre_em == '') {
-        $num_tre_em = 0;
+    $num_tre_em_m1 = _returnPostParamSecurity('num_tre_em_m1');
+    if ($num_tre_em_m1 == '') {
+        $num_tre_em_m1 = 0;
     }
-    $num_tre_em_5 = _returnPostParamSecurity('num_tre_em_5');
-    if ($num_tre_em_5 == '') {
-        $num_tre_em_5 = 0;
+    $num_tre_em_m2 = _returnPostParamSecurity('num_tre_em_m2');
+    if ($num_tre_em_m2 == '') {
+        $num_tre_em_m2 = 0;
+    }
+    $num_tre_em_m3 = _returnPostParamSecurity('num_tre_em_m3');
+    if ($num_tre_em_m3 == '') {
+        $num_tre_em_m3 = 0;
     }
     $insert = true;
-    $total_num_nguoi = $num_tre_em_5 + $num_tre_em + $num_nguoi_lon;
+    $total_num_nguoi = $num_nguoi_lon + $num_tre_em_m1 + $num_tre_em_m2+$num_tre_em_m3;
 
     if ($data['detail'][0]->so_cho != 0 && $data['detail'][0]->so_cho != '') {
         if ($total_num_nguoi > $data['detail'][0]->so_cho) {
@@ -78,6 +82,7 @@ if (isset($_POST['name_customer'])) {
     $price = $data['detail'][0]->price;
     $price_2 = $data['detail'][0]->price_2;
     $price_3 = $data['detail'][0]->price_3;
+    $price_4 = $data['detail'][0]->price_4;
     if ($price == 0 || $price == '') {
         $price = 'Liên hệ';
     }
@@ -87,10 +92,14 @@ if (isset($_POST['name_customer'])) {
     if ($price_3 == 0 || $price_3 == '') {
         $price_3 = $price;
     }
+    if ($price_4 == 0 || $price_4 == '') {
+        $price_4 = $price;
+    }
 
     $price_new = $price;
     $price_new_2 = $price_2;
     $price_new_3 = $price_3;
+    $price_new_4 = $price_4;
 
 
     if ($name_customer != '' && $email != '' && $phone != '' && $num_nguoi_lon != '' && $httt != '' && $dieu_khoan != '' && $ngay_khoi_hanh != '' && $insert == true) {
@@ -100,10 +109,12 @@ if (isset($_POST['name_customer'])) {
         $price_number = $data['detail'][0]->price_number;
         $price_number_2 = $data['detail'][0]->price_number_2;
         $price_number_3 = $data['detail'][0]->price_number_3;
+        $price_number_4 = $data['detail'][0]->price_number_4;
 
-        $name_price = 'người lớn';
-        $name_price_2 = 'trẻ em 5-11 tuổi';
-        $name_price_3 = 'trẻ em dưới 5 tuổi';
+        $name_price='';
+        $name_price_2='10-12 tuổi';
+        $name_price_3='2-10 tuổi';
+        $name_price_4='dưới 2 tuổi';
         if ($data['detail'][0]->name_price != '') {
             $name_price = $data['detail'][0]->name_price;
         }
@@ -113,11 +124,15 @@ if (isset($_POST['name_customer'])) {
         if ($data['detail'][0]->name_price_3 != '') {
             $name_price_3 = $data['detail'][0]->name_price_3;
         }
+        if ($data['detail'][0]->name_price_4 != '') {
+            $name_price_4 = $data['detail'][0]->name_price_4;
+        }
 
         $total = 0;
         $total_nguoi_lon = 0;
-        $total_tre_em = 0;
-        $total_tre_em_5 = 0;
+        $total_tre_em_m1 = 0;
+        $total_tre_em_m2 = 0;
+        $total_tre_em_m3 = 0;
 
 
         $name_customer_mahoa = _return_mc_encrypt($name_customer);
@@ -125,8 +140,9 @@ if (isset($_POST['name_customer'])) {
         $phone_mahoa = _return_mc_encrypt($phone);
         $address_mahoa = _return_mc_encrypt($address);
         $num_nguoi_lon_mahoa = _return_mc_encrypt($num_nguoi_lon);
-        $num_tre_em_mahoa = _return_mc_encrypt($num_tre_em);
-        $num_tre_em_5_mahoa = _return_mc_encrypt($num_tre_em_5);
+        $num_tre_em_m1_mahoa = _return_mc_encrypt($num_tre_em_m1);
+        $num_tre_em_m2_mahoa = _return_mc_encrypt($num_tre_em_m2);
+        $num_tre_em_m3_mahoa = _return_mc_encrypt($num_tre_em_m3);
         $httt_mahoa = _return_mc_encrypt($httt);
         $note_mahoa = _return_mc_encrypt($note);
         $nguontour_mahoa = _return_mc_encrypt($_SERVER['HTTP_HOST']);
@@ -139,10 +155,12 @@ if (isset($_POST['name_customer'])) {
         $name_price_mahoa = _return_mc_encrypt($name_price);
         $name_price_2_mahoa = _return_mc_encrypt($name_price_2);
         $name_price_3_mahoa = _return_mc_encrypt($name_price_3);
+        $name_price_4_mahoa = _return_mc_encrypt($name_price_4);
 
         $price_mahoa = _return_mc_encrypt($data['detail'][0]->price);
         $price_2_mahoa = _return_mc_encrypt($data['detail'][0]->price_2);
         $price_3_mahoa = _return_mc_encrypt($data['detail'][0]->price_3);
+        $price_4_mahoa = _return_mc_encrypt($data['detail'][0]->price_4);
 
         $name_customer_sub_mahoa = _return_mc_encrypt(json_encode($name_customer_sub));
         $email_customer_sub_mahoa = _return_mc_encrypt(json_encode($email_customer_sub));
@@ -163,55 +181,74 @@ if (isset($_POST['name_customer'])) {
 
         $check_total = 1;
         if ($num_nguoi_lon > 1 && $price != 'Liên hệ') {
-            $array_price_so_nguoi = returnArray_price($price_number, $array_price = array());
-            if (count($array_price_so_nguoi) > 0) {
-                $price_new = price_new($num_nguoi_lon, $array_price_so_nguoi, $price_new);
-                $total_nguoi_lon = $num_nguoi_lon * $price_new;
-            }
+//            $array_price_so_nguoi = returnArray_price($price_number, $array_price = array());
+//            if (count($array_price_so_nguoi) > 0) {
+//                $price_new = price_new($num_nguoi_lon, $array_price_so_nguoi, $price_new);
+//                $total_nguoi_lon = $num_nguoi_lon * $price_new;
+//            }
+            $total_nguoi_lon = $num_nguoi_lon * $price_new;
         } else {
             if ($price == 'Liên hệ') {
                 $total_nguoi_lon = 'Liên hệ';
                 $check_total = 0;
             }
         }
-        if ($num_tre_em > 1 && $price_2 != 'Liên hệ') {
-            $array_price_so_nguoi_lon = returnArray_price($price_number_2, $array_price = array());
-            if (count($array_price_so_nguoi_lon) > 0) {
-                $price_new_2 = price_new($num_tre_em, $array_price_so_nguoi_lon, $price_new_2);
-                $total_tre_em = $num_tre_em * $price_new_2;
-            }
+        if ($num_tre_em_m1 > 1 && $price_2 != 'Liên hệ') {
+            $total_tre_em = $num_tre_em * $num_tre_em_m1;
+//            $array_price_so_nguoi_lon = returnArray_price($price_number_2, $array_price = array());
+//            if (count($array_price_so_nguoi_lon) > 0) {
+//                $price_new_2 = price_new($num_tre_em, $array_price_so_nguoi_lon, $price_new_2);
+//                $total_tre_em = $num_tre_em * $price_new_2;
+//            }
         } else {
-            if ($num_tre_em == 0) {
-                $total_tre_em = 0;
+            if ($num_tre_em_m1 == 0) {
+                $total_tre_em_m1 = 0;
             } else {
-                if ($num_tre_em == 1) {
+                if ($num_tre_em_m1 == 1) {
                     if ($price_2 == 'Liên hệ') {
-                        $total_tre_em = 'Liên hệ';
+                        $total_tre_em_m1 = 'Liên hệ';
                         $check_total = 0;
                     }
-                    $total_tre_em = $price_2;
+                    $total_tre_em_m1 = $price_2;
                 }
 
             }
 
         }
 
-        if ($num_tre_em_5 > 1 && $price_3 != 'Liên hệ') {
-            $array_price_so_nguoi_lon = returnArray_price($price_number_3, $array_price = array());
-            if (count($array_price_so_nguoi_lon) > 0) {
-                $price_new_3 = price_new($num_tre_em_5, $array_price_so_nguoi_lon, $price_new_3);
-                $total_tre_em_5 = $price_new_3 * $num_tre_em_5;
-            }
+        if ($num_tre_em_m2 > 1 && $price_3 != 'Liên hệ') {
+            $total_tre_em_m2 = $price_new_3 * $num_tre_em_m2;
+//            $array_price_so_nguoi_lon = returnArray_price($price_number_3, $array_price = array());
+//            if (count($array_price_so_nguoi_lon) > 0) {
+//                $price_new_3 = price_new($num_tre_em_5, $array_price_so_nguoi_lon, $price_new_3);
+//                $total_tre_em_5 = $price_new_3 * $num_tre_em_5;
+//            }
         } else {
-            if ($num_tre_em_5 == 0) {
-                $total_tre_em_5 = 0;
+            if ($num_tre_em_m2 == 0) {
+                $total_tre_em_m2 = 0;
             } else {
-                if ($num_tre_em_5 == 1) {
+                if ($num_tre_em_m2 == 1) {
                     if ($price_3 == 'Liên hệ') {
-                        $total_tre_em_5 = 'Liên hệ';
+                        $total_tre_em_m3 = 'Liên hệ';
                         $check_total = 0;
                     }
-                    $total_tre_em_5 = $price_3;
+                    $total_tre_em_m2 = $price_3;
+                }
+            }
+
+        }
+        if ($num_tre_em_m3> 1 && $price_4 != 'Liên hệ') {
+            $total_tre_em_m3 = $price_new_4 * $num_tre_em_m3;
+        } else {
+            if ($num_tre_em_m3 == 0) {
+                $total_tre_em_m3 = 0;
+            } else {
+                if ($num_tre_em_m3 == 1) {
+                    if ($price_4 == 'Liên hệ') {
+                        $total_tre_em_m3 = 'Liên hệ';
+                        $check_total = 0;
+                    }
+                    $total_tre_em_m3 = $price_3;
                 }
 
             }
@@ -220,15 +257,17 @@ if (isset($_POST['name_customer'])) {
         if ($check_total == 0) {
             $total = 'Liên hệ';
         } else {
-            $total = $total_nguoi_lon + $total_tre_em + $total_tre_em_5;
+            $total = $total_nguoi_lon + $total_tre_em_m1 + $total_tre_em_m2+ $total_tre_em_m3;
         }
         $price_new_mahoa = _return_mc_encrypt($price_new);
         $price_new_2_mahoa = _return_mc_encrypt($price_new_2);
         $price_new_3_mahoa = _return_mc_encrypt($price_new_3);
+        $price_new_4_mahoa = _return_mc_encrypt($price_new_4);
 
         $name_price_mahoa = _return_mc_encrypt($name_price);
         $name_price_2_mahoa = _return_mc_encrypt($name_price_2);
         $name_price_3_mahoa = _return_mc_encrypt($name_price_3);
+        $name_price_4_mahoa = _return_mc_encrypt($name_price_4);
 
         $price_tiep_thi_mahoa = _return_mc_encrypt($data['detail'][0]->price_tiep_thi);
 
@@ -247,14 +286,17 @@ if (isset($_POST['name_customer'])) {
         $string_info_booking .= "&ng_tour=" . $nguontour_mahoa;
         $string_info_booking .= "&phuong_tien=" . $phuong_tien;
         $string_info_booking .= "&n1=" . $num_nguoi_lon_mahoa;
-        $string_info_booking .= "&n2=" . $num_tre_em_mahoa;
-        $string_info_booking .= "&n3=" . $num_tre_em_5_mahoa;
+        $string_info_booking .= "&n2=" . $num_tre_em_m1_mahoa;
+        $string_info_booking .= "&n3=" . $num_tre_em_m2_mahoa;
+        $string_info_booking .= "&n4=" . $num_tre_em_m3_mahoa;
         $string_info_booking .= "&po1=" . $price_mahoa;
         $string_info_booking .= "&po2=" . $price_2_mahoa;
         $string_info_booking .= "&po3=" . $price_3_mahoa;
+        $string_info_booking .= "&po4=" . $price_4_mahoa;
         $string_info_booking .= "&pn1=" . $price_new_mahoa;
         $string_info_booking .= "&pn2=" . $price_new_2_mahoa;
         $string_info_booking .= "&pn3=" . $price_new_3_mahoa;
+        $string_info_booking .= "&pn4=" . $price_new_4_mahoa;
         $string_info_booking .= "&httt=" . $httt_mahoa;
         $string_info_booking .= "&note=" . $note_mahoa;
 
@@ -272,10 +314,12 @@ if (isset($_POST['name_customer'])) {
         $string_info_booking .= "&name_price=" . $name_price_mahoa;
         $string_info_booking .= "&name_price_2=" . $name_price_2_mahoa;
         $string_info_booking .= "&name_price_3=" . $name_price_3_mahoa;
+        $string_info_booking .= "&name_price_4=" . $name_price_4_mahoa;
 
         $string_info_booking .= "&number=" . _return_mc_encrypt($price_number);
         $string_info_booking .= "&number_2=" . _return_mc_encrypt($price_number_2);
         $string_info_booking .= "&number_3=" . _return_mc_encrypt($price_number_3);
+        $string_info_booking .= "&number_4=" . _return_mc_encrypt($price_number_4);
         $string_info_booking .= "&gen=" . _return_mc_encrypt(rand(1, 9) . '-tungtv');
 
 
@@ -294,6 +338,8 @@ if (isset($_POST['name_customer'])) {
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $res = curl_exec($ch);
         curl_close($ch);
+        print_r($res);
+        exit;
         if ($res === 0) {
             echo "<script>alert('Đặt tour thất bại, bạn vui lòng thử lại')</script>";
         } else {
@@ -317,12 +363,14 @@ if (isset($_POST['name_customer'])) {
             $new->email = $email;
             $new->address = $address;
             $new->departure_day = date("Y-m-d", strtotime($ngay_khoi_hanh));
-            $new->adults = $num_nguoi_lon;
-            $new->children_5_10 = $num_tre_em;
-            $new->children_5 = $num_tre_em_5;
+            $new->num_nguoi_lon = $num_nguoi_lon;
+            $new->num_tre_em_m1 = $num_tre_em_m1;
+            $new->num_tre_em_m2 = $num_tre_em_m2;
+            $new->num_tre_em_m3 = $num_tre_em_m3;
             $new->price = $price_new;
-            $new->price_children = $price_new_2;
-            $new->price_children_under_5 = $price_new_3;
+            $new->price_2 = $price_new_2;
+            $new->price_3 = $price_new_3;
+            $new->price_4 = $price_new_4;
             $new->total_price = $total;
             $new->request = $note;
             $new->status = 0;

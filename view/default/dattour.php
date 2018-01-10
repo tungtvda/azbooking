@@ -76,9 +76,10 @@ function show_dattour($data = array())
     $asign['list_price_tre_em_5']=returnInput_price($asign['price_number_3'],'price_tre_em_5_');
 
 
-    $asign['name_price']='người lớn';
-    $asign['name_price_2']='trẻ em 5-11 tuổi';
-    $asign['name_price_3']='trẻ em dưới 5 tuổi';
+    $asign['name_price']='';
+    $asign['name_price_2']='10-12 tuổi';
+    $asign['name_price_3']='2-10 tuổi';
+    $asign['name_price_4']='dưới 2 tuổi';
     if($data['detail'][0]->name_price!=''){
         $asign['name_price']=$data['detail'][0]->name_price;
     }
@@ -88,9 +89,10 @@ function show_dattour($data = array())
     if($data['detail'][0]->name_price_3!=''){
         $asign['name_price_3']=$data['detail'][0]->name_price_3;
     }
+    if($data['detail'][0]->name_price_4!=''){
+        $asign['name_price_4']=$data['detail'][0]->name_price_4;
+    }
 
-
-    $asign['name_price_4']=$data['detail'][0]->name_price_4;
     $asign['name_price_5']=$data['detail'][0]->name_price_5;
     $asign['name_price_6']=$data['detail'][0]->name_price_6;
 

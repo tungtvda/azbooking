@@ -17,7 +17,7 @@ $data['menu']=menu_getByTop('','','');
 $data['config']=config_getByTop(1,'','');
 $active='';
 $date_now=_returnGetDateTime();
-$dk='count_down!="" and count_down>"'.$date_now.'"';
+$dk='count_down!="" and status=1 and count_down>"'.$date_now.'"';
 $data_menu=$data['menu'][12];
 $link='/tour-gio-chot/';
 $data['current']=isset($_GET['page'])?$_GET['page']:'1';;

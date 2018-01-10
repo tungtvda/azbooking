@@ -16,7 +16,7 @@ require_once DIR . '/common/redict.php';
 $data['menu']=menu_getByTop('','','');
 $data['config']=config_getByTop(1,'','');
 $active='';
-$dk='promotion=1';
+$dk='promotion=1 and status=1';
 $data_menu=$data['menu'][14];
 $link='/tour-noi-bat/';
 $data['current']=isset($_GET['page'])?$_GET['page']:'1';;
