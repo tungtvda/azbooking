@@ -103,8 +103,6 @@ if (isset($_POST['name_customer'])) {
 
 
     if ($name_customer != '' && $email != '' && $phone != '' && $num_nguoi_lon != '' && $httt != '' && $dieu_khoan != '' && $ngay_khoi_hanh != '' && $insert == true) {
-
-
         $string_info_booking = '';
         $price_number = $data['detail'][0]->price_number;
         $price_number_2 = $data['detail'][0]->price_number_2;
@@ -134,7 +132,11 @@ if (isset($_POST['name_customer'])) {
         $total_tre_em_m2 = 0;
         $total_tre_em_m3 = 0;
 
-
+        $data_list_dichvu=tour_list_dichvu_getByTop('','tour_id='.$id,'id asc');
+        $tring_list_dich_vu='';
+        if($data_list_dichvu){
+            $tring_list_dich_vu=json_encode($data_list_dichvu);
+        }
         $name_customer_mahoa = _return_mc_encrypt($name_customer);
         $email_mahoa = _return_mc_encrypt($email);
         $phone_mahoa = _return_mc_encrypt($phone);
@@ -321,6 +323,7 @@ if (isset($_POST['name_customer'])) {
         $string_info_booking .= "&number_3=" . _return_mc_encrypt($price_number_3);
         $string_info_booking .= "&number_4=" . _return_mc_encrypt($price_number_4);
         $string_info_booking .= "&gen=" . _return_mc_encrypt(rand(1, 9) . '-tungtv');
+        $string_info_booking .= "&list_dich_vu=" ._return_mc_encrypt($tring_list_dich_vu);
 
 
         $string_info_booking .= "&tol=" . _return_mc_encrypt($total);
@@ -338,8 +341,6 @@ if (isset($_POST['name_customer'])) {
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $res = curl_exec($ch);
         curl_close($ch);
-        print_r($res);
-        exit;
         if ($res === 0) {
             echo "<script>alert('Đặt tour thất bại, bạn vui lòng thử lại')</script>";
         } else {
