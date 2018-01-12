@@ -28,11 +28,14 @@ if(isset($_SESSION["Admin"]))
         {
             $new_obj= new tour();
             $new_obj->id=$_GET["id"];
-            tour_delete($new_obj);
+
             $array_send_manage['code_check_send_email']=_return_mc_encrypt('tungtv_az_mix_12345');
             $array_send_manage['action']="delete";
             $array_send_manage['id']=$_GET["id"];
             $list_noti= returnCURL($array_send_manage, SITE_NAME_MANAGE.'/controller/admin/tour_az.php');
+            if($list_noti){
+                tour_delete($new_obj);
+            }
             header('Location: '.SITE_NAME.'/controller/admin/tour.php'.$danhmuc_id_get);
         }
         else if($_GET["action"]=="edit")
@@ -80,7 +83,7 @@ if(isset($_SESSION["Admin"]))
             $List_tour=tour_getByAll();
             foreach($List_tour as $tour)
             {
-                if(isset($_GET["check_".$tour->id])) tour_delete($tour);
+//                if(isset($_GET["check_".$tour->id])) tour_delete($tour);
             }
 //            $array_send_manage['code_check_send_email']=_return_mc_encrypt('tungtv_az_mix_12345');
 //            $array_send_manage['action']="delete";
@@ -180,19 +183,30 @@ if(isset($_SESSION["Admin"]))
         $array_send_manage['inclusion']='';
         $array_send_manage['exclusion']='';
         $array_send_manage['code_check_send_email']=_return_mc_encrypt('tungtv_az_mix_12345');
-      $new_obj=new tour($array);
+        $code_az_mix = _randomBooking('az', 'tour_count', 'code_az_mix');
+        $new_obj=new tour($array);
         if($insert)
         {
-            tour_insert($new_obj);
+            $new_obj->code_az_mix=$code_az_mix;
+            $array_send_manage['code_az_mix']=$code_az_mix;
             $list_noti= returnCURL($array_send_manage, SITE_NAME_MANAGE.'/controller/admin/tour_az.php');
+            if($list_noti){
+                tour_insert($new_obj);
+            }
             header('Location: '.SITE_NAME.'/controller/admin/tour.php'.$danhmuc_id_get);
         }
         else
         {
+            if($new_obj->code_az_mix==''){
+                $new_obj->code_az_mix=$code_az_mix;
+                $array_send_manage['code_az_mix']=$code_az_mix;
+            }
             $array_send_manage['id']=$_GET["id"];
             $list_noti= returnCURL($array_send_manage, SITE_NAME_MANAGE.'/controller/admin/tour_az.php');
-            $new_obj->id=$_GET["id"];
-            tour_update($new_obj);
+            if($list_noti){
+                $new_obj->id=$_GET["id"];
+                tour_update($new_obj);
+            }
             $insert=false;
             header('Location: '.SITE_NAME.'/controller/admin/tour.php'.$danhmuc_id_get);
         }
@@ -241,4 +255,43 @@ if(isset($_SESSION["Admin"]))
 else
 {
      header('location: '.SITE_NAME);
+}
+
+
+function _randomBooking($code_module, $function_count, $field = 'code_booking')
+{
+    $rand_number = rand(1, 5);
+    $user_id = '';
+    if (isset($_SESSION['user_id'])) {
+        $user_id = $_SESSION['user_id'];
+    }
+    if ($code_module == 'az') {
+        $code = implode('', _getRandomNumbers(1, 1000, $rand_number));
+        if (strlen($code) <= 3) {
+            $code = $code . rand(1000, 10000);
+        }
+        $key = array("68", "86", "69", "99", "66", '88', '66', '55', '26', '28', '83', '39', '79', '456', '486', '456', '569', '686', '868', '656', '1618', '8888', '6666');
+        $code = substr($code, rand(2, 3), rand(3, 4));
+        $code = $code . $key[array_rand($key)];;
+        $rand = $code_module . '_' . $code;
+    } else {
+        $rand = $code_module . '_' . (implode('', _getRandomNumbers(1, 99, $rand_number))) . $user_id;
+    }
+    $rand=$rand.'_'.date("Y-m-d").'_'.date("h:i:sa");
+    $data_booking = $function_count($field . '="' . $rand . '"');
+    if ($data_booking > 0) {
+        _randomBooking($code_module, $function_count, $field);
+    } else {
+        return $rand;
+    }
+
+}
+function _getRandomNumbers($min, $max, $count)
+{
+    if ($count > (($max - $min) + 1)) {
+        return false;
+    }
+    $values = range($min, $max);
+    shuffle($values);
+    return array_slice($values, 0, $count);
 }

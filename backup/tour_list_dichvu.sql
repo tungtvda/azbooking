@@ -10,3 +10,13 @@ update tour_list_dichvu set tour_id='224',name='Thuê xe',type='1',price='200000
 update tour_list_dichvu set tour_id='224',name='Thuê xe',type='1',price='2000000',number='4',total='8.000.000 vnđ',note='test' where id=5;
 update tour_list_dichvu set tour_id='223',name='Thuê xe',type='1',price='2000000',number='4',total='8.000.000 vnđ',note='test' where id=5;
 update tour_list_dichvu set tour_id='223',name='Vé máy bay',type='1',price='1000000',number='1',total='1.000.000 vnđ',note='Test' where id=4;
+insert into tour_list_dichvu (tour_id,name,type,price,number,total,note) values ('11','test','1','123123123','1','123.123.123 vnđ','');
+update tour_list_dichvu set tour_id='11',name='Tiền vé máy bay',type='1',price='1000000',number='1',total='1.000.000 vnđ',note='Test nội dung' where id=3;
+insert into tour_list_dichvu (tour_id,name,type,price,number,total,note) values ('11','tesst','1','123','1','123 vnđ','123123123123');
+insert into tour_list_dichvu (tour_id,name,type,price,number,total,note) values ('245','tesst','1','1231','1','1.231 vnđ','qwwer');
+delete from tour_list_dichvu where id=4;
+insert into tour_list_dichvu (tour_id,name,type,price,number,total,note) values ('245','tesst','1','123123','1','123.123 vnđ','12312');
+delete from tour_list_dichvu where id=5;
+insert into tour_list_dichvu (tour_id,name,type,price,number,total,note) values ('245','123123','1','12312','1123','13.826.376 vnđ','123123');
+update tour_list_dichvu set tour_id='245',name='123123',type='1',price='12312123123123',number='1123',total='13.826.514.267.267.128 vnđ',note='123123' where id=6;
+insert into tour_list_dichvu (tour_id,name,type,price,number,total,note) values ('245','Vé máy bay','1','1000000','1','1.000.000 vnđ','Tiền vé máy bay');
