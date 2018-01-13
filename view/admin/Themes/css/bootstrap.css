@@ -1,0 +1,48 @@
+.col{
+  float: left;
+}
+.col_full{
+  width: 100%;
+  background: #d6f3f5;
+  padding: 10px;
+
+}
+.col-responsive{
+  width: 40%;
+  float:left;
+  padding-right: 20px;
+  margin-bottom: 10px;
+}
+.text-input-full{
+  width:100% ;
+}
+.price_format{
+  font-weight: bold;
+  color: red;
+}
+.width-input-150{
+  width: 150px;
+}
+.width-input-165{
+  width: 165px;
+}
+.item_dichvu{
+  margin-bottom: 10px;
+}
+.remove_item_dichvu_td{
+  padding: 3px 10px;
+}
+.remove_item_dichvu{
+  background: red;
+  color: #ffffff !important;
+  padding: 0px 10px;
+  padding-top: 0px;
+  padding-bottom: 7px;
+  font-size: 20px;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .col-responsive{
+    width:100%;
+  }
+}

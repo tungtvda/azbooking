@@ -20,3 +20,7 @@ delete from tour_list_dichvu where id=5;
 insert into tour_list_dichvu (tour_id,name,type,price,number,total,note) values ('245','123123','1','12312','1123','13.826.376 vnđ','123123');
 update tour_list_dichvu set tour_id='245',name='123123',type='1',price='12312123123123',number='1123',total='13.826.514.267.267.128 vnđ',note='123123' where id=6;
 insert into tour_list_dichvu (tour_id,name,type,price,number,total,note) values ('245','Vé máy bay','1','1000000','1','1.000.000 vnđ','Tiền vé máy bay');
+insert into tour_list_dichvu (tour_id,name,type,price,number,total,note) values ('77','Tiền vé máy bay','1','3000000','1','3.000.000 vnđ','');
+insert into tour_list_dichvu (tour_id,name,type,price,number,total,note) values ('77','Tiền khách sạn','2','2000000','1','2.000.000 vnđ','Tiền khách sạn');
+insert into tour_list_dichvu (tour_id,name,type,price,number,total,note) values ('77','Hoa hồng','3','400000','1','400.000 vnđ','Tiền hoa hồng cho thành viên giới thiệu');
+update tour_list_dichvu set tour_id='77',name='Hoa hồng',type='3',price='500000',number='1',total='500.000 vnđ',note='Tiền hoa hồng cho thành viên giới thiệu' where id=6;

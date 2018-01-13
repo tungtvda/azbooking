@@ -18230,3 +18230,198 @@ update tour set status='1',dieuhanh_id='0',code_az_mix='az_730366_2018-01-12_10:
 		Ph&iacute; quay phim, chụp ảnh tại điểm tham quan</li>
 </ul>
 ',updated='18-01-12 10:20:41' where id=245;
+update tour set status='1',dieuhanh_id='0',code_az_mix='az_3538888_2018-01-13_04:30:36am',tour_quoc_te='1',DanhMuc1Id='10',DanhMuc2Id='65',danhmuc_multi='',promotion='0',packages='0',name='Du Lịch Ai Cập 11 ngày 10 đêm',name_url='du-lich-ai-cap-11-ngay-10-dem',count_down='',code='',img='http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/Du%20L%E1%BB%8Bch%20Ai%20C%E1%BA%ADp%20(11N%2010%C4%90).jpg',price_tiep_thi='500000',price_sales='',price='5000000',price_2='',price_3='',price_4='',price_5='',price_6='',price_number='',price_number_2='',price_number_3='',price_number_4='',price_number_5='',price_number_6='',name_price='',name_price_2='',name_price_3='',name_price_4='',name_price_5='',name_price_6='',so_cho='',durations='11 Ngày 10 Đêm',departure='1',destination='Cairo, Sa mạc trắng, Aswan, Luxor, Hà Nội/TP Hồ Chí Minh',departure_time='Theo yêu cầu',vehicle='Ô tô, Máy bay, Du Thuyền, Tàu hỏa',hotel='3',summary='<p>
+	Du Lịch Ai Cập (11N 10Đ) sẽ khiến qu&yacute; kh&aacute;ch c&oacute; những trải nghiệm đặc biệt tại Ai Cập</p>
+',highlights='<p>
+	Du Lịch Ai Cập (11N 10Đ) sẽ khiến qu&yacute; kh&aacute;ch c&oacute; những trải nghiệm đặc biệt tại Ai Cập</p>
+<ul>
+	<li>
+		T&ograve;a th&aacute;p La M&atilde;</li>
+	<li>
+		Sa mạc trắng</li>
+	<li>
+		Tượng khổng lồ Menmon</li>
+</ul>
+',schedule='<h2 style=\"text-align: justify;\">
+	<span style=\"color:#ff0000;\"><span style=\"font-size:16px;\">NG&Agrave;Y 01: H&Agrave; NỘI/ T&Acirc;N SƠN NHẤT &ndash; CAIRO</span></span></h2>
+<p style=\"text-align: justify;\">
+	Xe v&agrave; hướng dẫn vi&ecirc;n Mixtourist đ&oacute;n qu&yacute; kh&aacute;ch tại điểm hẹn trong th&agrave;nh phố&nbsp; khởi h&agrave;nh đi s&acirc;n bay Nội B&agrave;i / T&acirc;n Sơn Nhất l&agrave;m thủ tục bay Cairo ( Qu&aacute; cảnh Bangkok, Doha&hellip;) Đến s&acirc;n bay Cairo, xe v&agrave; hướng dẫn vi&ecirc;n địa phương đ&oacute;n v&agrave; đưa qu&yacute; kh&aacute;ch về trung t&acirc;m th&agrave;nh phố nhận ph&ograve;ng kh&aacute;ch sạn nghỉ ngơi sau một h&agrave;nh tr&igrave;nh d&agrave;i</p>
+<h2 style=\"text-align: justify;\">
+	<span style=\"color:#ff0000;\"><span style=\"font-size:16px;\">NG&Agrave;Y 02: THAM QUAN KIM TỰ TH&Aacute;P ( Ăn s&aacute;ng, trưa, tối)</span></span></h2>
+<p style=\"text-align: justify;\">
+	<strong>S&aacute;ng:</strong>&nbsp;Sau bữa s&aacute;ng tại kh&aacute;ch sạn. Bắt đầu h&agrave;nh tr&igrave;nh tham quan trong ng&agrave;y Xe v&agrave; hướng dẫn vi&ecirc;n đưa qu&yacute; kh&aacute;ch đến&nbsp;Sakkara.</p>
+<p style=\"text-align: justify;\">
+	Đến Sakkara qu&yacute; kh&aacute;ch sẽ được chi&ecirc;m ngưỡng kim tự th&aacute;p&nbsp;Bước của Zoser. Kim tự th&aacute;p Bước l&agrave; kim tự th&aacute;p đầu ti&ecirc;n được x&acirc;y dựng với kết cấu từ những phiến đ&aacute; cổ nhất tr&ecirc;n thế giới.</p>
+<p style=\"text-align: justify;\">
+	Tiếp tục h&agrave;nh tr&igrave;nh xe đưa qu&yacute; kh&aacute;ch tới Memphis, thủ đ&ocirc; của Ai Cập cổ. L&agrave; th&agrave;nh phố quan trọng bậc nhất xuy&ecirc;n suốt qua tr&igrave;nh lịch sử Ai Cập cổ đại.&nbsp;Thăm quan bảo t&agrave;ng Memphis.</p>
+<p style=\"text-align: justify;\">
+	<strong>Chiều:</strong>&nbsp;Xe đưa qu&yacute; kh&aacute;ch đến&nbsp;Giza,&nbsp;Thăm Kim tự th&aacute;p Cheops, Chefren v&agrave; Mycerius. Kim tự th&aacute;p Cheops l&agrave; kim tự th&aacute;p lớn nhất trong 3 kim tự th&aacute;p, được x&acirc;y dựng c&aacute;ch đ&acirc;y tr&ecirc;n 5000 năm v&agrave; l&agrave; một trong 7 k&igrave; quan của thế giới cổ đại, do Unesco c&ocirc;ng nhận. Tổng diện t&iacute;ch kim tự th&aacute;p Choeps l&agrave; 5,3ha, Ch&acirc;n th&aacute;p l&agrave; h&igrave;nh vu&ocirc;ng&nbsp; mỗi chiều l&agrave; 227,5m. cao 146,6m. Được x&acirc;y dựng từ tr&ecirc;n 2,3 triệu tảng đ&aacute;, mỗi tảng nặng 2,5 tấn. Sau khi tham quan Kim tự th&aacute;p qu&yacute; kh&aacute;ch tham quan Tượng nh&acirc;n sư Sphinx, Tượng đầu người m&igrave;nh sư tử với m&igrave;nh sư tử d&agrave;i 45m, ch&acirc;n d&agrave;i 15m được tảng từ một tảng đ&aacute; nguy&ecirc;n khối. Thể hiện sức mạnh v&agrave; quyền lực th&aacute;nh thần của c&aacute;c vị Pharaol. Ăn tối</p>
+<p style=\"text-align: justify;\">
+	<strong>Tối:</strong>&nbsp;Về lại kh&aacute;ch sạn nghỉ ngơi</p>
+<h2 style=\"text-align: justify;\">
+	<span style=\"color:#ff0000;\"><span style=\"font-size:16px;\">NG&Agrave;Y 03: CAIRO CITY TOUR (Ăn s&aacute;ng, trưa, tối)</span></span></h2>
+<p style=\"text-align: justify;\">
+	<strong>S&aacute;ng</strong>:&nbsp;Sau bữa s&aacute;ng tại kh&aacute;ch sạn, qu&yacute; kh&aacute;ch đi thăm quan th&agrave;nh phố cổ Cairo, Chi&ecirc;m ngưỡng phần c&ograve;n lại của&nbsp;T&ograve;a th&aacute;p La M&atilde;, Thăm quan Nh&agrave; thờ Treo, Nh&agrave; thờ Abusirga v&agrave; Synagoge. Sau đ&oacute; tiếp tục đến th&aacute;nh đường hồi gi&aacute;o Cairo,&nbsp;Nh&agrave; thờ Hồi Gi&aacute;o Mohamed Ali Alabaster v&agrave; th&agrave;nh&nbsp; Salah El Din</p>
+<p style=\"text-align: justify;\">
+	<strong>Chiều</strong>:&nbsp;Qu&yacute; kh&aacute;ch tham quan&nbsp;Bảo t&agrave;ng Ai Cập. Bảo t&agrave;ng được x&acirc;y dựng v&agrave;o thời c&aacute;c Pharaol. Bảo t&agrave;ng trưng b&agrave;y những tạo t&aacute;c nghệ thuật rất c&oacute; gi&aacute; trị trải d&agrave;i suốt tr&ecirc;n 5000 năm lịch sử, nơi đ&acirc;y lưu giữ bộ sưu tập nghệ thuật Ai Cập lớn nhất thế giới với tr&ecirc;n 250.000 hiện vật được giới thiệ, trưng b&agrave;y. Bao gồm cả hiện vật trong lăng mộ&nbsp;vua Tuttakhamen. Bộ sưu tập kho b&aacute;u bằng v&agrave;ng, đồ trang sức.. được cất giữ trong mộ của vị vua n&agrave;y đến tận năm 1920. Đ&oacute; l&agrave; khi c&aacute;c nh&agrave; khảo cổ t&igrave;m thấy lăng mộ vua v&agrave; tiến h&agrave;nh khai qu&acirc;t. Tuy nhi&ecirc;n trong qu&aacute; tr&igrave;nh khai quật đ&atilde; c&oacute; rất nhiều điều k&igrave; b&iacute; xảy ra xung quanh việc khai quật lăng mộ của vị vua n&agrave;y.</p>
+<p style=\"text-align: justify;\">
+	<strong>Tối:</strong>&nbsp;Qu&yacute; kh&aacute;ch Ăn tối tại nh&agrave; h&agrave;ng. Sau đ&oacute; chuyển chuyến t&agrave;u đ&ecirc;m đến Aswan. Nghỉ đ&ecirc;m tr&ecirc;n t&agrave;u</p>
+<h2 style=\"text-align: justify;\">
+	<span style=\"color:#ff0000;\"><span style=\"font-size:16px;\">NG&Agrave;Y 04: CAIRO &ndash; SA MẠC TRẮNG ( Ăn s&aacute;ng, trưa, tối)</span></span></h2>
+<p style=\"text-align: justify;\">
+	<strong>S&aacute;ng:&nbsp;</strong>Xe v&agrave; hướng dẫn vi&ecirc;n đ&oacute;n kh&aacute;ch tại kh&aacute;ch sạn, khởi h&agrave;nh đi&nbsp;Bahatiya Oasis. Đến Hahatiya Oasis qu&yacute; kh&aacute;ch ăn trưa tại nh&agrave; h&agrave;ng địa phương.</p>
+<p style=\"text-align: justify;\">
+	<strong>Chiều</strong>:&nbsp;Qu&yacute; kh&aacute;ch bắt đầu chuyến du ngoạn Sa mạc trắng bằng xe Jeep. Tr&ecirc;n đường đi qu&yacute; kh&aacute;ch thăm quan&nbsp;Sa mạc đen, n&uacute;i c&aacute;t thủy tinh,&nbsp;Qua&nbsp;sa mạc Akabat,&nbsp;Đến suối nước n&oacute;ng, qu&yacute; kh&aacute;ch dừng ch&acirc;n nghỉ ngơi, thư gi&atilde;n.</p>
+<p style=\"text-align: justify;\">
+	<strong>Tối:</strong>&nbsp;Qu&yacute; kh&aacute;ch cắm trại tr&ecirc;n sa mạc, thưởng thức bữa tối ngo&agrave;i trời, đ&ecirc;m c&ugrave;ng nhau ngắm trăng sao. Nghỉ đ&ecirc;m tr&ecirc;n sa mạc</p>
+<h2 style=\"text-align: justify;\">
+	<span style=\"color:#ff0000;\"><span style=\"font-size:16px;\">NG&Agrave;Y 05: SA MẠC TRẮNG &ndash; ASWAN ( Ăn s&aacute;ng, trưa, tối)</span></span></h2>
+<p style=\"text-align: justify;\">
+	<strong>S&aacute;ng</strong>:&nbsp;Sau bữa s&aacute;ng qu&yacute; kh&aacute;ch quay lại Bahatiya Oasis. Ăn trưa.</p>
+<p style=\"text-align: justify;\">
+	<strong>Chiều:</strong>&nbsp;L&ecirc;n xe về lại Cairo. Đến Cairo qu&yacute; kh&aacute;ch ăn tối. Sau đ&oacute; l&ecirc;n t&agrave;u đi Aswan. Ngủ đ&ecirc;m tr&ecirc;n t&agrave;u</p>
+<h2 style=\"text-align: justify;\">
+	<span style=\"color:#ff0000;\"><span style=\"font-size:16px;\">NG&Agrave;Y 06: ASWAN ( Ăn s&aacute;ng, trưa, tối)</span></span></h2>
+<p style=\"text-align: justify;\">
+	<strong>S&aacute;ng:</strong>&nbsp;Đến Aswan, qu&yacute; kh&aacute;ch nhận ph&ograve;ng kh&aacute;ch sạn nghỉ ngơi. Ăn trưa</p>
+<p style=\"text-align: justify;\">
+	<strong>Chiều:</strong>&nbsp;Qu&yacute; kh&aacute;ch đi thăm đền&nbsp;Philae&nbsp;v&agrave; đập cao&nbsp;High Dam&nbsp;&ndash;</p>
+<p style=\"text-align: justify;\">
+	Đập cao High Dam l&agrave; c&ocirc;ng tr&igrave;nh của thế kỷ XX, một trong những th&agrave;nh tựu tuyệt vời của khoa học kỹ thuật được x&acirc;y dựng năm 1960, thay thế cho đập Aswan cổ đ&atilde; bị ph&aacute; hủy v&agrave; hư hỏng. Trong qu&aacute; tr&igrave;nh x&acirc;y dựng đập đ&atilde; nảy ra rất nhiều tranh c&atilde;i. Đập High Dam được x&acirc;y dựng sẽ giải quyết được vấn đề thủy lợi, nước sinh hoạt, thủy điện cung cấp cho to&agrave;n bộ Ai Cập, nhưng c&ugrave;ng với n&oacute; d&ograve;ng chảy s&ocirc;ng Nile bị thay đổi n&oacute; sẽ cuốn tr&ocirc;i, ch&ocirc;n v&ugrave;i mọi đền đ&agrave;i ven bờ s&ocirc;ng. Với sự nhiệt huyết v&agrave; nỗ lực hết m&igrave;nh. Tổ chức UNESCO đ&atilde; di dời được một số ng&ocirc;i đền tr&aacute;nh được t&igrave;nh trạng ph&aacute; hủy ho&agrave;n to&agrave;n, một trong số đ&oacute; l&agrave; đền Philae.</p>
+<p style=\"text-align: justify;\">
+	<strong>Tối:</strong>&nbsp;Qu&yacute; kh&aacute;ch ăn tối tại nh&agrave; h&agrave;ng, nghỉ đ&ecirc;m kh&aacute;ch sạn tại Aswan</p>
+<h2 style=\"text-align: justify;\">
+	<span style=\"color:#ff0000;\"><span style=\"font-size:16px;\">NG&Agrave;Y 07: ABU SIMBEL ( Ăn s&aacute;ng, trưa, tối)</span></span></h2>
+<p style=\"text-align: justify;\">
+	<strong>S&aacute;ng</strong>:&nbsp;Buổi s&aacute;ng sớm, hướng dẫn vi&ecirc;n đ&oacute;n qu&yacute; kh&aacute;ch đi thăm quan Abu Simbel. Đến Abu Simbel qu&yacute; kh&aacute;ch tham quan đền&nbsp;Ramses II. Được x&acirc;y dựng bởi ch&iacute;nh Ramses II. Mặt tiền ch&iacute;nh của ng&ocirc;i đền c&oacute; bốn bức tượng khổng lồ do Ramses II cho x&acirc;y dựng, nằm trấn ngay lối cửa v&agrave;o đền. Tr&ecirc;n đầu bức tượng của Ramses II đội vương miện k&eacute;p của Thượng v&agrave; Hạ Ai Cập. Thể hiện sự thống nhất quyền lực của Ai Cập.</p>
+<p style=\"text-align: justify;\">
+	Ng&ocirc;i đền được x&acirc;y dựng gi&agrave;nh cho việc thờ phụng thần mặt trời&nbsp;Ra Horakhti. Điều th&uacute; vị nhất l&agrave; tr&ecirc;n c&aacute;c bức tường của ng&ocirc;i đền l&agrave; những bức tranh ghi lại chiến thắng của &ocirc;ng trong cuộc chiến tr&ecirc;n chiến trường Qadesh. Ng&ocirc;i đền được x&acirc;y dựng theo hướng Đ&ocirc;ng&nbsp; - T&acirc;y , Đ&oacute;n &aacute;nh mặt trời buổi s&aacute;ng thể hiện sự t&ocirc;n nghi&ecirc;m &nbsp;nhất khi b&igrave;nh minh l&ecirc;n, C&aacute;c bức tượng của&nbsp;Ptah, Amon, Ramses II v&agrave; Ra &ndash; Horakhty&nbsp;được chiếu s&aacute;ng hai lần trong một năm nhờ t&agrave;i kiến tr&uacute;c t&agrave;i t&igrave;nh v&agrave; khả năng t&iacute;nh ch&iacute;nh x&aacute;c chu tr&igrave;nh quay quanh tr&aacute;i đất của mặt trời&nbsp; của c&aacute;c kiến tr&uacute;c sư t&agrave;i ba thời cổ đại.</p>
+<p style=\"text-align: justify;\">
+	Tiếp tục h&agrave;nh tr&igrave;nh qu&yacute; kh&aacute;ch thăm quan&nbsp;đền Hathor. Đến đền Hathor qu&yacute; kh&aacute;ch ph&oacute;ng tầm mắt nh&igrave;n ra xa hồ Nasser qu&yacute; kh&aacute;ch sẽ được chi&ecirc;m ngưỡng những ng&ocirc;i đền được tạo bởi c&aacute;c vết đ&aacute; cắt, những s&aacute;ng tạo tuyệt vời của thời đại Ai Cập cổ. Sau đ&oacute; xe đưa qu&yacute; kh&aacute;ch về lại Aswan. Ăn trưa</p>
+<p style=\"text-align: justify;\">
+	<strong>Chiều:</strong>&nbsp;Qu&yacute; kh&aacute;ch xuống thuyền, nghỉ đ&ecirc;m, ăn tối tr&ecirc;n thuyền</p>
+<h2 style=\"text-align: justify;\">
+	<span style=\"color:#ff0000;\"><span style=\"font-size:16px;\">NG&Agrave;Y 08: KOM OMBO, EDFU V&Agrave; Đ&Ocirc;NG LUXOR ( Ăn s&aacute;ng, trưa, tối)</span></span></h2>
+<p style=\"text-align: justify;\">
+	<strong>S&aacute;ng:</strong>&nbsp;Sau bữa s&aacute;ng, qu&yacute; kh&aacute;ch rời thuyền l&ecirc;n bờ,&nbsp; Xe đ&oacute;n qu&yacute; kh&aacute;ch di chuyển tới Kom Ombo.</p>
+<p style=\"text-align: justify;\">
+	Kom Ombo&nbsp;c&aacute;ch Aswan 45km về ph&iacute;a bắc. Đến Kom Ombo qu&yacute; kh&aacute;ch thăm quan&nbsp;đền Sobek, ng&ocirc;i đền được x&acirc;y dựng v&agrave;o thời La M&atilde;. Thờ thần Sobek v&agrave; Haroeris - thần c&aacute; sấu.</p>
+<p style=\"text-align: justify;\">
+	Tiếp tục h&agrave;nh tr&igrave;nh đến&nbsp;Edfu.&nbsp;Thăm quan đền Horus.&nbsp;Đền Horus&nbsp;c&aacute;ch Aswan 123km về ph&iacute;a Nam, v&agrave; nằm ở bơf T&acirc;y của s&ocirc;ng Nile. Được x&acirc;y dựng trước thời La M&atilde;. Được x&acirc;y gi&agrave;nh cho việc thờ phụng th&acirc;ng Horus . Đươc thiết kế lộng lẫy, với sự pha trộn giữa kiến tr&uacute;c Pharaonic v&agrave; Ai Cập. Đ&acirc;y l&agrave; một trong những ng&ocirc;i đền đẹp nhất Ai Cập. Lớn thứ 2 sau đền&nbsp; Karnak, được ph&aacute;t hiện v&agrave;o nă 1860 bởi nh&agrave; khảo cổ nổi tiếng Mariette. N&oacute; l&agrave; hiện th&acirc;n cho hiện thực, nghệ thuật, v&agrave; lịch sử thời Ptolemy&rsquo;s. Sau đ&oacute; qu&yacute; kh&aacute;ch về lại Luxor, nhận ph&ograve;ng kh&aacute;ch sạn, nghỉ ngơi. Ăn trưa</p>
+<p style=\"text-align: justify;\">
+	<strong>Chiều</strong>: Qu&yacute; kh&aacute;ch đi thăm&nbsp;đền Karnak. Nơi thờ phụng&nbsp;Vua Theban v&agrave; Thần Amon. Vị thần biểu tượng cho sự tăng trưởng v&agrave; sinh sản. Karnak l&agrave; một tổ hợp rộng lớn c&aacute;c ng&ocirc;i đền, nh&agrave; thờ, v&agrave; c&aacute;c t&ograve;a nh&agrave;. T&ecirc;n gọi Karnak bắt nguồn từ một ng&ocirc;i l&agrave;ng gần đ&oacute; c&oacute; t&ecirc;n l&agrave; EL &ndash; Karnak. Ở ph&iacute;a nam của Luxor th&igrave; gọi với c&aacute;i t&ecirc;n Isut-Ray. V&agrave; trong thời đại Ai Cập cổ Karnak c&oacute; t&ecirc;n l&agrave; Isut- Ipet.</p>
+<p style=\"text-align: justify;\">
+	V&agrave;o giữa thời kỳ của c&aacute;c vị vua, khi vua Theban v&agrave; thần Amon xuất hiện, từ thời điểm đ&oacute; trở đi c&aacute;c ng&ocirc;i đền ở Karnak li&ecirc;n tục được x&acirc;y dựng, mở rộng, ph&aacute; bỏ v&agrave; phục hồi trong suốt tr&ecirc;n 2000 năm cho đến thời đại La M&atilde;. Người Ai Cập cổ đại coi Isut &ndash; Ipet l&agrave; nơi c&aacute;c vị thần tạo ra tr&aacute;i đất, tạo ra vạn vật. Tại Karnak c&aacute;c linh mục tối cao được c&ocirc;ng nhận l&agrave; vua v&agrave; l&agrave; con của Amon &ndash; Vua của c&aacute;c vị thần. C&aacute;c lễ đăng quang v&agrave; c&aacute;c nghi thức tế lễ quan trọng đều được diễn ra tại đ&acirc;y. Sau khi tham quan đền Karnak , qu&yacute; kh&aacute;ch sẽ tiếp tục h&agrave;nh tr&igrave;nh đến với đền Luxor.</p>
+<p style=\"text-align: justify;\">
+	Đền Luxor&nbsp;được x&acirc;y dựng dưới thời&nbsp; Pharaoh Amenophis III, v&agrave; được mở rộng qua nhiều thế kỷ bởi c&aacute;c vị vua như Ramses II, Tit v&agrave; Alexander đại đế. Sau khi thăm quan đền Luxor qu&yacute; kh&aacute;ch về lại kh&aacute;ch sạn, nghỉ ngơi. Ăn tối.</p>
+<p style=\"text-align: justify;\">
+	<strong>Tối</strong>: Tự do dạo chơi, kh&aacute;m ph&aacute; Luxor về đ&ecirc;m</p>
+<h2 style=\"text-align: justify;\">
+	<span style=\"color:#ff0000;\"><span style=\"font-size:16px;\">NG&Agrave;Y 09: THĂM QUAN PH&Iacute;A T&Acirc;Y LUXOR ( Ăn s&aacute;ng, trưa, tối)</span></span></h2>
+<p style=\"text-align: justify;\">
+	<strong>S&aacute;ng</strong>:&nbsp;Sau bữa s&aacute;ng tại kh&aacute;ch sạn, Qu&yacute; kh&aacute;ch đi thăm quan&nbsp;tượng khổng lồ Menmon. Với hai bức tượng khổng lồ cao 18m của Mmenophis III, đ&aacute;nh dấu lối v&agrave;o ng&ocirc;i đền lớn nhất ở Thebes.&nbsp;Thăm quan Thung lũng c&aacute;c vị Vua v&agrave; Ho&agrave;ng Hậu.&nbsp;Ăn trưa</p>
+<p style=\"text-align: justify;\">
+	<strong>Chiều</strong>:&nbsp;Thăm quan đền thờ nữ ho&agrave;ng&nbsp;Hatshepsut, Nữ pharaoh quyền lực nh&acirc;t cai trị Ai Cập cổ đại trong một thời gian d&agrave;i, đền thờ của b&agrave; c&oacute; t&ecirc;n &ldquo; Djeser &ndash;Djeseru&rdquo; &ndash; c&oacute; nghĩa l&agrave; Huy ho&agrave;ng v&agrave; tr&aacute;ng lệ. Nơi ch&ocirc;n cất của Nữ ho&agrave;ng được đặt tại một nơi c&oacute; vị thế tối cao, do kiến tr&uacute;c sư của nữ ho&agrave;ng Sesenmut thiết kế.</p>
+<p style=\"text-align: justify;\">
+	Về lại nh&agrave; h&agrave;ng ăn tối. Tối qu&yacute; kh&aacute;ch chuyển t&agrave;u về lại Cairo, nghỉ đ&ecirc;m kh&aacute;ch sạn Cairo</p>
+<h2 style=\"text-align: justify;\">
+	<span style=\"color:#ff0000;\"><span style=\"font-size:16px;\">NG&Agrave;Y 10: CAIRO &ndash; H&Agrave; NỘI/ T&Acirc;N SƠN NHẤT ( Ăn s&aacute;ng, trưa, tối MB)</span></span></h2>
+<p style=\"text-align: justify;\">
+	<strong>S&aacute;ng:</strong>&nbsp;Sau bữa s&aacute;ng tại kh&aacute;ch sạn. qu&yacute; kh&aacute;ch tự do tham quan, mua sắm, kh&aacute;m ph&aacute; Cairo. Đến giờ khởi h&agrave;nh ra s&acirc;n bay xe v&agrave; hướng dẫn vi&ecirc;n Mixtourist đ&oacute;n qu&yacute; kh&aacute;ch tại kh&aacute;ch sạn, Di chuyển ra s&acirc;n bay Cairo, l&agrave;m thủ tục bay lại Việt Nam ( Qu&aacute; cảnh Doha/ Bangkok). Nghỉ đ&ecirc;m tr&ecirc;n m&aacute;y bay</p>
+<h2 style=\"text-align: justify;\">
+	<span style=\"color:#ff0000;\"><span style=\"font-size:16px;\">NG&Agrave;Y 11: H&Agrave; NỘI/ T&Acirc;N SƠN NHẤT ( Ăn trưa MB)</span></span></h2>
+<p style=\"text-align: justify;\">
+	<strong>Chiều</strong>&nbsp;:Qu&yacute; kh&aacute;ch về lại Việt Nam, đến s&acirc;n bay Nội B&agrave;i / T&acirc;n Sơn Nhất. Xe v&agrave; hướng dẫn vi&ecirc;n Mixtourist đ&oacute;n qu&yacute; kh&aacute;ch về lại điểm hẹn ban đầu. Kết th&uacute;c h&agrave;nh tr&igrave;nh tour. Cảm ơn qu&yacute; kh&aacute;ch đ&atilde; tham gia h&agrave;nh tr&igrave;nh c&ugrave;ng Mixtourist. Hẹn gặp lại qu&yacute; kh&aacute;ch trong c&aacute;c h&agrave;nh tr&igrave;nh tiếp theo</p>
+',price_list='<h2 style=\"text-align: center;\">
+	<span style=\"color:#ff0000;\"><span style=\"font-size:16px;\">GI&Aacute; TOUR TRỌN G&Oacute;I: LI&Ecirc;N HỆ</span></span></h2>
+<p>
+	&nbsp;</p>
+<table border=\"1\" cellpadding=\"0\" cellspacing=\"0\">
+	<tbody>
+		<tr>
+			<td>
+				<p style=\"text-align: center;\">
+					<strong>Nh&oacute;m kh&aacute;ch</strong></p>
+			</td>
+			<td>
+				<p style=\"text-align: center;\">
+					<strong>4-5 kh&aacute;ch</strong></p>
+			</td>
+			<td>
+				<p style=\"text-align: center;\">
+					<strong>7 &ndash; 12 kh&aacute;ch</strong></p>
+			</td>
+			<td>
+				<p style=\"text-align: center;\">
+					<strong>13- 15 kh&aacute;ch</strong></p>
+			</td>
+			<td>
+				<p style=\"text-align: center;\">
+					<strong>17 &ndash; 20 kh&aacute;ch</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p style=\"text-align: center;\">
+					Gi&aacute; (USD)</p>
+			</td>
+			<td>
+				<p style=\"text-align: center;\">
+					2925</p>
+			</td>
+			<td>
+				<p style=\"text-align: center;\">
+					2696</p>
+			</td>
+			<td>
+				<p style=\"text-align: center;\">
+					2556</p>
+			</td>
+			<td>
+				<p style=\"text-align: center;\">
+					2518</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+',content='',list_img='',title='Du Lịch Ai Cập (11N 10Đ)',keyword='du lịch ai cập, tour du lịch ai cập, tour đi cairo, tour đi aswan, tour đi luxor ',description='Du Lịch Ai Cập (11N 10Đ) sẽ khiến quý khách có những trải nghiệm đặc biệt tại Ai Cập',inclusion='<h2>
+	<span style=\"color:#ff0000;\"><span style=\"font-size:16px;\">GI&Aacute; TOUR BAO GỒM:</span></span></h2>
+<ul>
+	<li>
+		Xe đưa, đ&oacute;n theo chương tr&igrave;nh</li>
+	<li>
+		V&eacute; m&aacute;y bay khứ hồi H&agrave; Nội/ T&acirc;n Sơn Nhất &ndash; Cairo</li>
+	<li>
+		Thuế v&agrave; phụ ph&iacute; h&agrave;ng kh&ocirc;ng</li>
+	<li>
+		T&agrave;u Cairo &ndash; Aswan, Aswan - Luxor, Luxor &ndash; Cairo</li>
+	<li>
+		Hướng dẫn vi&ecirc;n kinh nghiệm, nhiệt t&igrave;nh</li>
+	<li>
+		Kh&aacute;ch sạn ti&ecirc;u chuẩn 3***, 2 kh&aacute;ch/ ph&ograve;ng. Lẻ Nam/ Nữ gh&eacute;p 3</li>
+	<li>
+		Visa Ai Cập</li>
+	<li>
+		V&eacute; thăm quan v&agrave;o cửa một lần</li>
+	<li>
+		Bảo hiểm du lịch Quốc tế</li>
+	<li>
+		v&nbsp; C&aacute;c bữa ăn theo chương tr&igrave;nh</li>
+</ul>
+',exclusion='<h2>
+	<span style=\"color:#ff0000;\"><span style=\"font-size:16px;\">GI&Aacute; TOUR KH&Ocirc;NG BAO GỒM</span></span></h2>
+<ul>
+	<li>
+		Visa t&aacute;i nhập Việt Nam cho người nước ngo&agrave;i</li>
+	<li>
+		Phụ ph&iacute; ph&ograve;ng đơn 250 USD/ kh&aacute;ch</li>
+	<li>
+		Thuế VAT</li>
+	<li>
+		C&aacute;c chi ph&iacute; c&aacute; nh&acirc;n kh&aacute;c ( Giặt l&agrave;, điện thoại, đồ uống&hellip;..)</li>
+	<li>
+		T&iacute;p cho l&aacute;i xe v&agrave; hướng dẫn vi&ecirc;n địa phương</li>
+</ul>
+',updated='18-01-13 04:30:36' where id=77;
