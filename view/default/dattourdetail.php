@@ -96,22 +96,29 @@ function show_dattourdetail($data = array())
     $asign['note_cus']=$data['booking_server']['note'];
 
     $asign['num_nguoi_lon']=$data['booking_server']['num_nguoi_lon'];
-    $asign['num_tre_em']=$data['booking_server']['num_tre_em'];
-    $asign['num_tre_em_5']=$data['booking_server']['num_tre_em_5'];
+    $asign['num_tre_em_m1']=$data['booking_server']['num_tre_em_m1'];
+    $asign['num_tre_em_m2']=$data['booking_server']['num_tre_em_m2'];
+    $asign['num_tre_em_m3']=$data['booking_server']['num_tre_em_m3'];
 
-    $asign['name_price']='người lớn';
-    $asign['name_price_2']='trẻ em 5-11 tuổi';
-    $asign['name_price_3']='trẻ em dưới 5 tuổi';
+    $asign['name_price']='';
+    $asign['name_price_2']='10-12 tuổi';
+    $asign['name_price_3']='2-10 tuổi';
+    $asign['name_price_4']='dưới 2 tuổi';
     if($data['booking_server']['name_price']!=''){
         $asign['name_price']=$data['booking_server']['name_price'];
     }
-    if($data['booking_server']['name_price_2']!=''){
-        $asign['name_price_2']=$data['booking_server']['name_price_2'];
+    if($data['booking_server']['name_price_m1']!=''){
+        $asign['name_price_2']=$data['booking_server']['name_price_m1'];
     }
-    if($data['booking_server']['name_price_3']!=''){
-        $asign['name_price_3']=$data['booking_server']['name_price_3'];
+    if($data['booking_server']['name_price_m2']!=''){
+        $asign['name_price_3']=$data['booking_server']['name_price_m2'];
     }
-    $asign['total_cus']=$data['booking_server']['num_nguoi_lon']+$data['booking_server']['num_tre_em']+$data['booking_server']['num_tre_em_5'];
+
+    if($data['booking_server']['name_price_m3']!=''){
+        $asign['name_price_4']=$data['booking_server']['name_price_m3'];
+    }
+
+    $asign['total_cus']=$data['booking_server']['num_nguoi_lon']+$data['booking_server']['num_tre_em_m1']+$data['booking_server']['num_tre_em_m2']+$data['booking_server']['num_tre_em_m3'];
     if(isset($data['booking_server']['data_cus_booking'])&&count($data['booking_server']['data_cus_booking'])>0){
         $data_cus_booking=$data['booking_server']['data_cus_booking'];
         $asign['name_cus']=$data_cus_booking[0]['name'];
@@ -126,24 +133,24 @@ function show_dattourdetail($data = array())
     $asign['price_number_4']= $data['detail'][0]->price_number_4;
     $asign['price_number_5']= $data['detail'][0]->price_number_5;
     $asign['price_number_6']= $data['detail'][0]->price_number_6;
-    $asign['name_price']='người lớn';
-    $asign['name_price_2']='trẻ em 5-11 tuổi';
-    $asign['name_price_3']='trẻ em dưới 5 tuổi';
-    if($data['detail'][0]->name_price!=''){
-        $asign['name_price']=$data['detail'][0]->name_price;
-    }
-    if($data['detail'][0]->name_price_2!=''){
-        $asign['name_price_2']=$data['detail'][0]->name_price_2;
-    }
-    if($data['detail'][0]->name_price_3!=''){
-        $asign['name_price_3']=$data['detail'][0]->name_price_3;
-    }
+//    $asign['name_price']='người lớn';
+//    $asign['name_price_2']='trẻ em 5-11 tuổi';
+//    $asign['name_price_3']='trẻ em dưới 5 tuổi';
+//    if($data['detail'][0]->name_price!=''){
+//        $asign['name_price']=$data['detail'][0]->name_price;
+//    }
+//    if($data['detail'][0]->name_price_2!=''){
+//        $asign['name_price_2']=$data['detail'][0]->name_price_2;
+//    }
+//    if($data['detail'][0]->name_price_3!=''){
+//        $asign['name_price_3']=$data['detail'][0]->name_price_3;
+//    }
 
 
 
-    $asign['name_price_4']=$data['detail'][0]->name_price_4;
-    $asign['name_price_5']=$data['detail'][0]->name_price_5;
-    $asign['name_price_6']=$data['detail'][0]->name_price_6;
+//    $asign['name_price_4']=$data['detail'][0]->name_price_4;
+//    $asign['name_price_5']=$data['detail'][0]->name_price_5;
+//    $asign['name_price_6']=$data['detail'][0]->name_price_6;
 
 
     $arr_check=explode(',',$data['detail'][0]->departure);
@@ -217,10 +224,11 @@ function show_dattourdetail($data = array())
                                                                 <span style="font-size: 11px">'.$row_sub['do_tuoi'].'</span>
                                                             </td>
 
-                                                            <td style="width: 130px">
-                                                                <span style="color: red; font-size: 12px">'.$price_item.'</span>
-                                                            </td>
+
                                                         </tr>';
+//                                                            <td style="width: 130px">
+//                                                                <span style="color: red; font-size: 12px">'.$price_item.'</span>
+//                                                            </td>
            $stt=$stt+1;
        }
     }

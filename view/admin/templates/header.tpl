@@ -7,6 +7,7 @@
     <title>MIXTOURIST ADMIN</title>
     <link rel="stylesheet" href="{SITE-NAME}/view/admin/Themes/css/style.default.css" type="text/css"/>
     <link rel="stylesheet" href="{SITE-NAME}/view/admin/Themes/css/prettify.css" type="text/css"/>
+    <link rel="stylesheet" href="{SITE-NAME}/view/admin/Themes/css/bootstrap.css" type="text/css"/>
     <link rel="stylesheet" href="{SITE-NAME}/view/admin/Themes/js/multi/multi.min.css" type="text/css"/>
     <script type="text/javascript" src="{SITE-NAME}/view/admin/Themes/js/prettify.js"></script>
     <script type="text/javascript" src="{SITE-NAME}/view/admin/Themes/js/jquery-1.9.1.min.js"></script>
