@@ -13,6 +13,7 @@
     <script type="text/javascript" src="{SITE-NAME}/view/admin/Themes/js/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="{SITE-NAME}/view/admin/Themes/js/jquery-migrate-1.1.1.min.js"></script>
     <script type="text/javascript" src="{SITE-NAME}/view/admin/Themes/js/jquery-ui-1.9.2.min.js"></script>
+    <script type="text/javascript" src="{SITE-NAME}/view/admin/Themes/js/my.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
             $("#DanhMuc1Id").change(function() {
@@ -151,7 +152,7 @@
                         <li><a href="{SITE-NAME}/controller/admin/danhmuc_1.php">Danh mục cấp 1</a></li>
                         <li><a href="{SITE-NAME}/controller/admin/danhmuc_2.php">Danh mục cấp 2</a></li>
                         <li><a href="{SITE-NAME}/controller/admin/tour.php">Danh sách tour</a></li>
-                        <li><a href="{SITE-NAME}/controller/admin/tour_list_dichvu.php">Bảng giá dịch vụ</a></li>
+
                         <li><a href="{SITE-NAME}/controller/admin/price_timkiem.php">Giá tìm kiếm tour</a></li>
                         <li><a href="{SITE-NAME}/controller/admin/departure.php">Điểm khởi hành</a></li>
                     </ul>

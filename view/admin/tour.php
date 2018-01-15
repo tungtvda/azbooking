@@ -35,7 +35,7 @@ function view_tour($data)
 //
 function showTableHeader()
 {
-    return '<th>id</th><th>Trạng thái</th><th>Điều hành</th><th>Quốc tế</th><th>DanhMuc1Id / DanhMuc2Id</th><th>Promotion/Packages</th><th>Bảng giá dv</th><th>name</th><th>code</th><th>img</th><th>Hoa hồng</th><th>price_sales</th><th>price</th>';
+    return '<th>id</th><th>Trạng thái</th><th>Điều hành</th><th>Quốc tế</th><th>DanhMuc1Id / DanhMuc2Id</th><th>Promotion/Packages</th><th>name</th><th>code</th><th>img</th><th>Hoa hồng</th><th>price_sales</th><th>price</th>';
 }
 
 //
@@ -58,13 +58,12 @@ function showTableBody($data)
         $TableBody .= "<td>" . $obj->tour_quoc_te . "</td>";
         $TableBody .= "<td>" . $obj->DanhMuc1Id . " / " . $obj->DanhMuc2Id . "</td>";
         $TableBody .= "<td>" . $obj->promotion . "/" . $obj->packages . "</td>";
-        $TableBody .= "<td><a href='tour_list_dichvu.php?tour_id=" . $obj->id . "'><span class=\"icon-align-justify\"></span></a></td>";
         $TableBody .= "<td>" . $obj->name . "</td>";
         $TableBody .= "<td>" . $obj->code . "</td>";
         $TableBody .= "<td><img src=\"" . $obj->img . "\" width=\"50px\" height=\"50px\"/> </td>";
-        $TableBody .= "<td>" . $obj->price_tiep_thi . "</td>";
-        $TableBody .= "<td>" . $obj->price_sales . "</td>";
-        $TableBody .= "<td>" . $obj->price . "</td>";
+        $TableBody .= "<td>" . number_format((float)$obj->price_tiep_thi, 0, ",", ".").' vnđ)' . "</td>";
+        $TableBody .= "<td>" . number_format((float)$obj->price_sales, 0, ",", ".").' vnđ)' . "</td>";
+        $TableBody .= "<td>" . number_format((float)$obj->price, 0, ",", ".").' vnđ)' . "</td>";
         $TableBody .= "<td><a href=\"?action=edit&id=" . $obj->id . $danhmuc_id_get . "\" title=\"Edit\"><img src=\"" . SITE_NAME . "/view/admin/Themes/images/pencil.png\" alt=\"Edit\"></a>";
         $TableBody .= "<a href=\"?action=delete&id=" . $obj->id . $danhmuc_id_get . "\" title=\"Delete\" onClick=\"return confirm('Bạn có chắc chắc muốn xóa?')\"><img src=\"" . SITE_NAME . "/view/admin/Themes/images/cross.png\" alt=\"Delete\"></a> ";
         $TableBody .= "</td>";
@@ -88,7 +87,7 @@ function showFrom($form, $ListKey = array())
     }
     $str_from .= '</select></p>';
     $str_from .= '<p><label>tour_quoc_te</label><input  type="checkbox"  name="tour_quoc_te" value="1" ' . (($form != false) ? (($form->tour_quoc_te == '1') ? 'checked' : '') : '') . ' /></p>';
-    $str_from .= '<p><label>Chọn danh mục cấp 1</label>';
+    $str_from .= '<p><label>Chọn danh mục cấp 1 <span style="color: red">*</span></label>';
     $str_from .= '<select name="DanhMuc1Id" id="DanhMuc1Id">';
     if ($form != false) {
         if (isset($ListKey['DanhMuc1Id'])) {
@@ -105,7 +104,7 @@ function showFrom($form, $ListKey = array())
         }
     }
     $str_from .= '</select></p>';
-    $str_from .= '<p><label>Chọn danh mục cấp 2</label>';
+    $str_from .= '<p><label>Chọn danh mục cấp 2 <span style="color: red">*</span></label>';
     $str_from .= '<select name="DanhMuc2Id" id="DanhMuc2Id">';
     if ($form != false) {
         $str_from .= '<option value="1">Chọn danh mục cấp 2</option>';
@@ -120,15 +119,22 @@ function showFrom($form, $ListKey = array())
     $str_from .= '</select></p>';
     $str_from .= '<p><label>promotion</label><input  type="checkbox"  name="promotion" value="1" ' . (($form != false) ? (($form->promotion == '1') ? 'checked' : '') : '') . ' /></p>';
     $str_from .= '<p><label>packages</label><input  type="checkbox"  name="packages" value="1" ' . (($form != false) ? (($form->packages == '1') ? 'checked' : '') : '') . ' /></p>';
-    $str_from .= '<p><label>name</label><input class="text-input small-input" type="text"  name="name" value="' . (($form != false) ? $form->name : '') . '" /></p>';
+    $str_from .= '<p><label>name <span style="color: red">*</span></label><input class="text-input small-input" type="text"  name="name" value="' . (($form != false) ? $form->name : '') . '" /></p>';
     $str_from .= '<p><label>name_url</label><input class="text-input small-input" type="text"  name="name_url" value="' . (($form != false) ? $form->name_url : '') . '" /></p>';
     $str_from .= '<p><label>Count down</label><input class="text-input small-input" type="text"  name="count_down" value="' . (($form != false) ? $form->count_down : '') . '" /></p>';
     $str_from .= '<p><label>code</label><input class="text-input small-input" type="text"  name="code" value="' . (($form != false) ? $form->code : '') . '" /></p>';
     $str_from .= '<p><label>img</label><input class="text-input small-input" type="text"  name="img" value="' . (($form != false) ? $form->img : '') . '"/><a class="button" onclick="openKcEditor(\'img\');">Upload ảnh</a></p>';
-    $str_from .= '<p><label>Hoa hồng tiếp thị liên kết (vnđ)</label><input class="text-input small-input" type="text" required  name="price_tiep_thi" value="' . (($form != false) ? $form->price_tiep_thi : '') . '" /></p>';
+    $str_from .= '<p><label>Hoa hồng tiếp thị liên kết <span  id="hoa_hong_format" class="price_format">' . (($form != false) ? '('.number_format((float)$form->price_tiep_thi, 0, ",", ".").' vnđ)' : '0 vnđ') . '</span> <span style="color: red">*</span></label><input class="text-input small-input" id="input_hoa_hong" type="text" required  name="price_tiep_thi" value="' . (($form != false) ? $form->price_tiep_thi : '') . '" /></p>';
     $str_from .= '<p><label>Giá sales</label><input class="text-input small-input" type="text"  name="price_sales" value="' . (($form != false) ? $form->price_sales : '') . '" /></p>';
     $str_from .= '<div class="col col_full">
 <label>Bảng giá dịch vụ</label>
+<style>
+th, td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+}
+</style>
 <table class="table_tour">
                                         <thead>
                                         <tr>
@@ -136,88 +142,72 @@ function showFrom($form, $ListKey = array())
                                             <th>Tên dịch vụ</th>
                                             <th>Loại dịch vụ</th>
                                              <th>Số lượng</th>
-                                            <th>Đơn giá</th>
+                                            <th>Đơn giá <span class="price_format" id="don_gia_th"></span></th>
                                             <th>Thành tiền</th>
                                             <th>Ghi chú</th>
                                             <th></th>
                                         </tr>
                                         </thead>
 
-                                        <tbody id="list_dichvu">
-                                        <tr id="item_dichvu_1" data-value="1" class="item_dichvu">
-                                            <td id="stt_dichvu_td_1" style="padding-right: 5px">1</td>
-                                        <td id="name_dichvu_td">
-                                            <input  value="" name="name_dichvu[]" id="input_name_dichvu_1" type="text" class="valid input_table width-input-150"></td>
-                                        <td>
-                                            <select class="width-input-165" name="type_dichvu[]" id="input_type_dichvu_1">
-                                                <option value="1">Vận chuyển</option>
-                                                <option value="2">Landtour</option>
-                                                <option value="3">CP DV khác</option>
-                                                <option value="4">CP quà tặng</option>
-                                            </select>
-                                         </td>
-                                         <td > <input style="width: 50px" data-value="1" value="1" name="soluong_dichvu[]" min="1" id="input_soluong_dichvu_1" type="number" class="valid input_table input_soluong_dichvu"></td>
-                                         <td><input  value="0" data-value="1" name="price_dichvu[]" id="input_price_dichvu_1" type="number" class="valid input_table input_price_dichvu width-input-150"></td>
-                                         <td> <input  readonly=""  value="" name="thanhtien_dichvu[]" id="input_thanhtien_dichvu_1" type="text" class="valid input_table width-input-150"></td>
-                                         <td> <input  value="" name="ghichu_dichvu[]" id="input_ghichu_dichvu_1" type="text" class="valid input_table width-input-150"></td>
-                                            <td>
-                                            <a  href="javascript:void(0)" id="remove_item_dichvu_1" data-remove="1" class=" remove_item_dichvu">x</a></td>
-                                            </tr>
-                                            </tbody>
-                                        <tbody>
+                                        <tbody id="list_dichvu">';
+                                       if ($form != false) {
+                                           $str_from .=$form->list_dich_vu;
+                                        }
+                                            $str_from .= '</tbody>
+                                        <tbody >
                                         <tr>
                                             <td></td>
-                                            <td><a href="javascript:void(0)" id="add_dichvu" class="btn btn-success"><i class="fa fa-plus"></i>Thêm dịch vụ</a></td>
+                                            <td><a style="margin-top: 10px; margin-bottom: 10px; width: 90px;" href="javascript:void(0)" id="add_dichvu" class="btn btn-success"><i class="fa fa-plus"></i>Thêm dịch vụ</a></td>
                                         </tr>
                                         <tr style="background:#EDF3F4; margin-top:20px">
                                             <td></td>
                                             <td><b>Người lớn</b></td>
                                             <td>Tổng <i class="fa fa-dollar"></i>:&nbsp;
-                                            <input readonly="" name="tong_tien_nguoi_lon" id="input_tong_tien_nguoi_lon"  value="0 vnđ" type="text" class="valid input_table width-input-150" >
+                                            <input readonly="" name="total_dichvu" id="input_tong_tien_nguoi_lon"  value="' . (($form != false) ? $form->total_dichvu : '0 vnđ') . '" type="text" class="valid input_table width-input-150" >
                                             </td>
-                                            <td >SL khách:</br><input style="width: 50px" readonly="" name="total_khach" id="input_total_khach"  value="1" type="text" class="valid input_table"></td>
-                                            <td>Giá NET/pax: <input  readonly="" name="don_gia_net" id="input_don_gia_net"  value="0 vnđ" type="text" class="valid input_table width-input-150"></td>
-                                            <td>Lợi nhuận <i title="0 vnđ" id="price_loinhuan_format" class="fa fa-dollar"></i>:
-                                            <input  name="loi_nhuan" min="0" id="input_loi_nhuan"  value="0" type="number" class="valid input_table width-input-150">
+                                            <td >SL khách:</br><input style="width: 50px" disabled name="total_khach" id="input_total_khach"  value="1" type="text" class="valid input_table"></td>
+                                            <td>Giá NET/pax: <input  readonly="" name="gia_net" id="input_don_gia_net"   value="' . (($form != false) ? $form->gia_net : '0 vnđ') . '" type="text" class="valid input_table width-input-150"></td>
+                                            <td>Lợi nhuận <span  id="price_loinhuan_format" class="price_format"></span>
+                                            <input  name="loi_nhuan" min="0" id="input_loi_nhuan"  value="' . (($form != false) ? $form->loi_nhuan : '0') . '" type="number" class="valid input_table width-input-150">
                                             </td>
-                                            <td>Giá bán: <input  readonly="" name="gia_ban" id="input_gia_ban"  value="0 vnđ" type="text" class="valid input_table width-input-150"></td>
+                                            <td>Giá bán: <input  disabled name="gia_ban" id="input_gia_ban"  value="' . (($form != false) ? number_format((float)$form->price, 0, ",", ".").' vnđ' : '0 vnđ') . '" type="text" class="valid input_table width-input-150"></td>
                                             <td></td>
                                         </tr>
 
                                         <tr style="background:#f2fbfd; margin-top:20px">
                                             <td></td>
                                             <td><b>Trẻ em m1</b></td>
-                                            <td>Tỷ lệ %: <input  name="tyle_m1" min="0" id="input_tyle_m1"  value="0" type="number" class="valid input_table width-input-150"></td>
-                                            <td >SL khách:</br><input style="width: 50px" readonly="" name="total_khach_m1" id="input_total_khach_m1"  value="1" type="text" class="valid input_table "></td>
-                                            <td>Giá NET/pax: <input  readonly="" name="don_gia_net_m1" id="input_don_gia_net_m1"  value="0 vnđ" type="text" class="valid input_table width-input-150"></td>
-                                            <td>Lợi nhuận <i title="0 vnđ" id="price_loinhuan_format_1" class="fa fa-dollar"></i>:
-                                            <input  name="loi_nhuan_m1" min="0" id="input_loi_nhuan_m1"  value="0" type="number" class="valid input_table width-input-150">
+                                            <td>Tỷ lệ %: <input  name="ty_le_m1" min="0" id="input_tyle_m1"  value="' . (($form != false) ? $form->ty_le_m1 : '0') . '" type="number" class="valid input_table width-input-150"></td>
+                                            <td >SL khách:</br><input style="width: 50px" disabled name="total_khach_m1" id="input_total_khach_m1"  value="1" type="text" class="valid input_table "></td>
+                                            <td>Giá NET/pax: <input  readonly="" name="gia_net_m1" id="input_don_gia_net_m1"  value="' . (($form != false) ? $form->gia_net_m1 : '0 vnđ') . '" type="text" class="valid input_table width-input-150"></td>
+                                            <td>Lợi nhuận <span  id="price_loinhuan_format_1" class="price_format"></span>
+                                            <input  name="loi_nhuan_m1" min="0" id="input_loi_nhuan_m1"  value="' . (($form != false) ? $form->loi_nhuan_m1 : '0') . '" type="number" class="valid input_table width-input-150">
                                             </td>
-                                            <td>Giá bán: <input  readonly="" name="gia_ban_m1" id="input_gia_ban_m1"  value="0 vnđ" type="text" class="valid input_table width-input-150"></td>
+                                            <td>Giá bán: <input disabled name="gia_ban_m1" id="input_gia_ban_m1"  value="' . (($form != false) ? number_format((float)$form->price_2, 0, ",", ".").' vnđ' : '0 vnđ') . '" type="text" class="valid input_table width-input-150"></td>
                                             <td></td>
                                         </tr>
                                         <tr style="background:#edf3f4; margin-top:20px">
                                             <td></td>
                                             <td><b>Trẻ em m2</b></td>
-                                            <td>Tỷ lệ %: <input  name="tyle_m2" min="0" id="input_tyle_m2"  value="0" type="number" class="valid input_table width-input-150"></td>
-                                            <td >SL khách:</br><input style="width: 50px" readonly="" name="total_khach_m2" id="input_total_khach_m2" value="1" type="text" class="valid input_table"></td>
-                                            <td>Giá NET/pax: <input  readonly="" name="don_gia_net_m2" id="input_don_gia_net_m2"  value="0 vnđ" type="text" class="valid input_table width-input-150"></td>
-                                            <td>Lợi nhuận <i title="0 vnđ" id="price_loinhuan_format_2" class="fa fa-dollar"></i>:
-                                            <input  min="0" name="loi_nhuan_m2" id="input_loi_nhuan_m2"  value="0" type="number" class="valid input_table width-input-150">
+                                            <td>Tỷ lệ %: <input  name="ty_le_m2" min="0" id="input_tyle_m2" value="' . (($form != false) ? $form->ty_le_m2 : '0') . '" type="number" class="valid input_table width-input-150"></td>
+                                            <td >SL khách:</br><input style="width: 50px" disabled name="total_khach_m2" id="input_total_khach_m2" value="1" type="text" class="valid input_table"></td>
+                                            <td>Giá NET/pax: <input  readonly="" name="gia_net_m2" id="input_don_gia_net_m2"  value="' . (($form != false) ? $form->gia_net_m2 : '0 vnđ') . '" type="text" class="valid input_table width-input-150"></td>
+                                            <td>Lợi nhuận <span  id="price_loinhuan_format_2" class="price_format"></span>
+                                            <input  min="0" name="loi_nhuan_m2" id="input_loi_nhuan_m2"  value="' . (($form != false) ? $form->loi_nhuan_m2 : '0') . '" type="number" class="valid input_table width-input-150">
                                             </td>
-                                            <td>Giá bán: <input  readonly="" name="gia_ban_m2" id="input_gia_ban_m2"  value="0 vnđ" type="text" class="valid input_table width-input-150"></td>
+                                            <td>Giá bán: <input  disabled name="gia_ban_m2" id="input_gia_ban_m2"  value="' . (($form != false) ? number_format((float)$form->price_3, 0, ",", ".").' vnđ' : '0 vnđ') . '" type="text" class="valid input_table width-input-150"></td>
                                             <td></td>
                                         </tr>
                                         <tr style="background:#f2fbfd; margin-top:20px">
                                             <td></td>
                                             <td><b>Trẻ em m3</b></td>
-                                            <td>Tỷ lệ %: <input  name="tyle_m3" min="0" id="input_tyle_m3" value="0" type="number" class="valid input_table width-input-150"></td>
-                                            <td >SL khách:</br><input style="width: 50px" readonly="" name="total_khach_m3" id="input_total_khach_m3" value="1" type="text" class="valid input_table "></td>
-                                            <td>Giá NET/pax: <input  readonly="" name="don_gia_net_m3" id="input_don_gia_net_m3"  value="0 vnđ" type="text" class="valid input_table width-input-150"></td>
-                                            <td>Lợi nhuận <i title="0 vnđ" id="price_loinhuan_format_3" class="fa fa-dollar"></i>:
-                                            <input min="0" name="loi_nhuan_m3" id="input_loi_nhuan_m3"  value="0" type="number" class="valid input_table width-input-150">
+                                            <td>Tỷ lệ %: <input  name="ty_le_m3" min="0" id="input_tyle_m3" value="' . (($form != false) ? $form->ty_le_m2 : '0') . '" type="number" class="valid input_table width-input-150"></td>
+                                            <td >SL khách:</br><input style="width: 50px" disabled name="total_khach_m3" id="input_total_khach_m3" value="1" type="text" class="valid input_table "></td>
+                                            <td>Giá NET/pax: <input  readonly="" name="gia_net_m3" id="input_don_gia_net_m3"  value="' . (($form != false) ? $form->gia_net_m3 : '0 vnđ') . '" type="text" class="valid input_table width-input-150"></td>
+                                            <td>Lợi nhuận <span  id="price_loinhuan_format_3" class="price_format"></span>
+                                            <input min="0" name="loi_nhuan_m3" id="input_loi_nhuan_m3"  value="' . (($form != false) ? $form->loi_nhuan_m3 : '0') . '" type="number" class="valid input_table width-input-150">
                                             </td>
-                                            <td>Giá bán: <input  readonly="" name="gia_ban_m3" id="input_gia_ban_m3"  value="0 vnđ" type="text" class="valid input_table width-input-150"></td>
+                                            <td>Giá bán: <input  disabled name="gia_ban_m3" id="input_gia_ban_m3"  value="' . (($form != false) ? number_format((float)$form->price_4, 0, ",", ".").' vnđ' : '0 vnđ') . '" type="text" class="valid input_table width-input-150"></td>
                                             <td></td>
                                         </tr>
                                         </tbody>
@@ -228,32 +218,32 @@ function showFrom($form, $ListKey = array())
     <label>Độ tuổi người lớn</label>
     <input placeholder="Độ tuổi người lớn"  class="text-input-full text-input small-input" type="text"  name="name_price" value="' . (($form != false) ? $form->name_price : '') . '" /></div>
     <div class="col-responsive">
-     <label>Đơn giá <span class="price_format" id="don_gia_price_format"></span></label>
-    <input class="text-input-full text-input small-input" type="text" id="input_price"  name="price" value="' . (($form != false) ? $form->price : '') . '" /></div>
+     <label>Đơn giá <span class="price_format" id="don_gia_price_format">' . (($form != false) ? '('.number_format((float)$form->price, 0, ",", ".").' vnđ)' : '') . '</span></label>
+    <input readonly class="text-input-full text-input small-input" type="text" id="input_price"  name="price" value="' . (($form != false) ? $form->price : '') . '" /></div>
     </div>';
     $str_from .= '<div class="col col_full">
     <div class="col-responsive">
     <label>Độ tuổi trẻ em mức 1</label>
     <input placeholder="Độ tuổi trẻ em mức 1"  class="text-input-full text-input small-input" type="text"  name="name_price_2" value="' . (($form != false) ? $form->name_price_2 : '') . '" /></div>
     <div class="col-responsive">
-     <label>Đơn giá <span class="price_format" id="don_gia_price_2_format"></span></label>
-    <input class="text-input-full text-input small-input" type="text" id="input_price_2"  name="price_2" value="' . (($form != false) ? $form->price_number_2 : '') . '" /></div>
+     <label>Đơn giá <span class="price_format" id="don_gia_price_2_format">' . (($form != false) ? '('.number_format((float)$form->price_2, 0, ",", ".").' vnđ)' : '') . '</span></label>
+    <input readonly class="text-input-full text-input small-input" type="text" id="input_price_2"  name="price_2" value="' . (($form != false) ? $form->price_2 : '') . '" /></div>
     </div>';
     $str_from .= '<div class="col col_full">
     <div class="col-responsive">
     <label>Độ tuổi trẻ em mức 2</label>
-    <input placeholder="Độ tuổi trẻ em mức 2"  class="text-input-full text-input small-input" type="text"  name="name_price_3" value="' . (($form != false) ? $form->name_price_3 : '') . '" /></div>
+    <input  placeholder="Độ tuổi trẻ em mức 2"  class="text-input-full text-input small-input" type="text"  name="name_price_3" value="' . (($form != false) ? $form->name_price_3 : '') . '" /></div>
     <div class="col-responsive">
-     <label>Đơn giá <span class="price_format" id="don_gia_price_3_format"></span></label>
-    <input class="text-input-full text-input small-input" type="text" id="input_price_3"  name="price_3" value="' . (($form != false) ? $form->price_number_3 : '') . '" /></div>
+     <label>Đơn giá <span class="price_format" id="don_gia_price_3_format">' . (($form != false) ? '('.number_format((float)$form->price_3, 0, ",", ".").' vnđ)' : '') . '</span></label>
+    <input readonly class="text-input-full text-input small-input" type="text" id="input_price_3"  name="price_3" value="' . (($form != false) ? $form->price_3 : '') . '" /></div>
     </div>';
     $str_from .= '<div class="col col_full" style="margin-bottom: 10px">
     <div class="col-responsive">
     <label>Độ tuổi trẻ em mức 3</label>
     <input placeholder="Độ tuổi trẻ em mức 3"  class="text-input-full text-input small-input" type="text"  name="name_price_4" value="' . (($form != false) ? $form->name_price_4 : '') . '" /></div>
     <div class="col-responsive">
-     <label>Đơn giá <span class="price_format" id="don_gia_price_3_format"></span></label>
-    <input class="text-input-full text-input small-input" type="text" id="input_price_4"  name="price_4" value="' . (($form != false) ? $form->price_number_4 : '') . '" /></div>
+     <label>Đơn giá <span class="price_format" id="don_gia_price_4_format">' . (($form != false) ? '('.number_format((float)$form->price_4, 0, ",", ".").' vnđ)' : '') . '</span></label>
+    <input readonly class="text-input-full text-input small-input" type="text" id="input_price_4"  name="price_4" value="' . (($form != false) ? $form->price_4 : '') . '" /></div>
     </div>';
 
     $str_from .= '<p hidden><label>Đơn giá theo số người(1)___Chú ý: định dạng theo  <span style="color: blue">songuoi1-gia1,songuoi2-gia2</span>___Ví dụ: <span style="color: red">1-1000000,2-2000000,3-3000000</span></label>
@@ -318,5 +308,6 @@ function showFrom($form, $ListKey = array())
     $str_from .= '<p><label>inclusion</label><textarea name="inclusion">' . (($form != false) ? $form->inclusion : '') . '</textarea><script type="text/javascript">CKEDITOR.replace(\'inclusion\'); </script></p>';
     $str_from .= '<p><label>exclusion</label><textarea name="exclusion">' . (($form != false) ? $form->exclusion : '') . '</textarea><script type="text/javascript">CKEDITOR.replace(\'exclusion\'); </script></p>';
     $str_from .= '<p hidden><label>updated</label><input class="text-input small-input" type="text"  name="updated" value="' . (($form != false) ? $form->updated : '') . '" /></p>';
+    $str_from.=' <div hidden id="danhmuc_dichvu_select">'.$ListKey['list_type_string'].'</div>';
     return $str_from;
 }
