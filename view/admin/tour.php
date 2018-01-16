@@ -201,7 +201,7 @@ th, td {
                                         <tr style="background:#f2fbfd; margin-top:20px">
                                             <td></td>
                                             <td><b>Trẻ em m3</b></td>
-                                            <td>Tỷ lệ %: <input  name="ty_le_m3" min="0" id="input_tyle_m3" value="' . (($form != false) ? $form->ty_le_m2 : '0') . '" type="number" class="valid input_table width-input-150"></td>
+                                            <td>Tỷ lệ %: <input  name="ty_le_m3" min="0" id="input_tyle_m3" value="' . (($form != false) ? $form->ty_le_m3 : '0') . '" type="number" class="valid input_table width-input-150"></td>
                                             <td >SL khách:</br><input style="width: 50px" disabled name="total_khach_m3" id="input_total_khach_m3" value="1" type="text" class="valid input_table "></td>
                                             <td>Giá NET/pax: <input  readonly="" name="gia_net_m3" id="input_don_gia_net_m3"  value="' . (($form != false) ? $form->gia_net_m3 : '0 vnđ') . '" type="text" class="valid input_table width-input-150"></td>
                                             <td>Lợi nhuận <span  id="price_loinhuan_format_3" class="price_format"></span>
