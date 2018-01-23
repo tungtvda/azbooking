@@ -109,7 +109,9 @@ RewriteRule ^tiep-thi-lien-ket/thong-bao$ tiepthi/manage/thongbao.php
 RewriteRule ^tiep-thi-lien-ket/ho-so/$ tiepthi/manage/hoso.php
 RewriteRule ^tiep-thi-lien-ket/rut-tien/$ tiepthi/manage/ruttien.php
 RewriteRule ^tiep-thi-lien-ket/update-avatar/$ tiepthi/manage/update_avatar.php
-RewriteRule ^tiep-thi-lien-ket-info/([a-zA-Z0-9_-]+).html$ controller/default/info_tiepthi.php?Id=$1
+RewriteRule ^tiep-thi-lien-ket-info/([a-zA-Z0-9_-]+).html$ controller/controller/info_tiepthi.php?Id=$1
 
 RewriteRule ^mail-content.html$ controller/default/content_email.php
 RewriteRule ^contact-tiep-thi-lien-ket.html$ controller/default/contact_tiepthi.php
+
+RewriteRule ^noi-dung-email/danh-sach-tour-giam-gia.html$ controller/default/ajax_tour_noi_bat.php

@@ -19001,3 +19001,182 @@ update tour set status='1',dieuhanh_id='0',code_az_mix='az_11266_2018-01-12_10:3
 		v&nbsp; C&aacute;c bữa ăn theo chương tr&igrave;nh</li>
 </ul>
 ',exclusion='0',updated='18-01-16 03:54:01' where id=77;
+update tour set status='1',dieuhanh_id='0',code_az_mix='az_62966_2018-01-12_10:33:00am',tour_quoc_te='1',DanhMuc1Id='10',DanhMuc2Id='58',danhmuc_multi='',promotion='1',packages='0',name='Tour du lịch Trung Quốc: Trương Gia Giới - Phượng Hoàng Cổ Trấn LÌ XÌ PHÁT LỘC',name_url='tour-du-lich-trung-quoc-truong-gia-gioi-phuong-hoang-co-tran-li-xi-phat-loc',count_down='',code='',img='/view/admin/Themes/kcfinder/upload/images/phct-azbooking.jpg',price_tiep_thi='400000',price_sales='7490000',price='6688000',price_2='0',price_3='0',price_4='0',price_5='',price_6='',price_number='',price_number_2='',price_number_3='',price_number_4='',price_number_5='',price_number_6='',name_price='',name_price_2='',name_price_3='',name_price_4='',name_price_5='',name_price_6='',total_dichvu='0 vnđ',gia_net='0 vnđ',gia_net_m1='0 vnđ',gia_net_m2='0 vnđ',gia_net_m3='0 vnđ',ty_le_m1='0',ty_le_m2='0',ty_le_m3='0',loi_nhuan='0',loi_nhuan_m1='0',loi_nhuan_m2='0',loi_nhuan_m3='0',so_cho='13',durations='6 ngày 5 đêm',departure='1',destination='Trương Gia Giới, Thiên Môn Sơn, Phượng hoàng cổ trấn',departure_time='24/02',vehicle='tàu hỏa, oto',hotel='4',summary='',highlights='<p background-color:=\"\" font-size:=\"\" open=\"\" style=\"box-sizing: border-box; margin: 0px 0px 10px 40px; line-height: 1.7em; color: rgb(51, 51, 51); text-align: center;\" text-align:=\"\">
+	<span style=\"box-sizing: border-box; color: rgb(255, 0, 0);\"><span style=\"box-sizing: border-box;\"><span style=\"box-sizing: border-box; font-weight: 700;\">DỊCH VỤ K&Egrave;M THEO HẤP DẪN C&Ugrave;NG CHƯƠNG TR&Igrave;NH</span></span></span></p>
+<table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"width: 891px;\">
+	<tbody>
+		<tr>
+			<td>
+				<p style=\"text-align: center;\">
+					<img alt=\"Bảo hiểm du lịch\" src=\"/view/admin/Themes/kcfinder/upload/images/icon/icon-bao-hiem.png\" style=\"color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px; box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; vertical-align: middle; width: 60px; height: 60px;\" /></p>
+				<p style=\"text-align: center;\">
+					<span style=\"color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px;\">Bảo hiểm du lịch</span></p>
+			</td>
+			<td>
+				<p style=\"text-align: center;\">
+					<img alt=\"Bữa ăn theo chương trình\" src=\"/view/admin/Themes/kcfinder/upload/images/icon/icon-bua-an.png\" style=\"color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px; box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; vertical-align: middle; width: 60px; height: 60px;\" /></p>
+				<p style=\"text-align: center;\">
+					<span style=\"color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px;\">Bữa ăn theo chương tr&igrave;nh</span></p>
+			</td>
+			<td style=\"text-align: center;\">
+				<p>
+					<img alt=\"Hướng dẫn viên suốt tuyến\" src=\"/view/admin/Themes/kcfinder/upload/images/icon/icon-hdv.png\" style=\"color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px; box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; vertical-align: middle; width: 60px; height: 60px;\" /></p>
+				<p>
+					<span style=\"color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px;\">Hướng dẫn vi&ecirc;n suốt tuyến</span></p>
+			</td>
+			<td style=\"text-align: center;\">
+				<p>
+					<img alt=\"Vé tham quan theo chương trình\" src=\"/view/admin/Themes/kcfinder/upload/images/icon/icon-ve-tham-quan.png\" style=\"color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px; box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; vertical-align: middle; width: 60px; height: 60px;\" /></p>
+				<p>
+					<span style=\"color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px;\">V&eacute; tham quan theo chương tr&igrave;nh</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style=\"text-align: center;\">
+				<p>
+					<img alt=\"Xe đưa đón theo chương trình\" src=\"/view/admin/Themes/kcfinder/upload/images/icon/icon-xe-dua-don.png\" style=\"color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px; box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; vertical-align: middle; width: 60px; height: 60px;\" /></p>
+				<p>
+					<span style=\"color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px;\">Xe đưa đ&oacute;n theo chương tr&igrave;nh</span></p>
+			</td>
+			<td style=\"text-align: center;\">
+				<p>
+					<img alt=\"Khách sạn tiêu chuẩn\" src=\"/view/admin/Themes/kcfinder/upload/images/icon/icon-hotel.png\" style=\"color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px; box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; vertical-align: middle; width: 60px; height: 60px;\" /></p>
+				<p>
+					<span style=\"color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px;\">Kh&aacute;ch sạn ti&ecirc;u chuẩn 4*</span></p>
+			</td>
+			<td style=\"text-align: center;\">
+				<p>
+					<img alt=\"Quà tặng kèm\" src=\"http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/icon-hop-qua.png\" style=\"color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px; box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; vertical-align: middle; width: 50px;\" /></p>
+				<p>
+					<span style=\"color: rgb(0, 0, 0); font-family: Roboto, sans-serif; font-size: 14px;\">Qu&agrave; tặng k&egrave;m 500K</span></p>
+			</td>
+			<td style=\"text-align: center;\">
+				<p>
+					&nbsp;</p>
+				<div>
+					&nbsp;</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style=\"text-align: center;\">
+	<strong style=\"color: rgb(255, 0, 0);\"><img alt=\"\" src=\"http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/hotline.png\" style=\"width: 300px; height: 90px;\" /></strong></p>
+<p style=\"text-align: center;\">
+	<span style=\"color: rgb(255, 0, 0);\"><strong>HOẶC</strong></span></p>
+<p style=\"text-align: center;\">
+	<span style=\"font-size: 16px;\"><span style=\"color: rgb(255, 0, 0);\"><strong><span style=\"background-color: rgb(255, 255, 0);\">CHAT ONLINE NGAY</span></strong></span></span></p>
+',schedule='<h2 style=\"text-align: justify;\">
+	<span style=\"color: rgb(255, 0, 0);\"><span style=\"font-size: 16px;\">Ng&agrave;y 01: H&Agrave; NỘI &ndash; NAM NINH &ndash; TRƯƠNG GIA GIỚI (Ăn trưa, tối)</span></span></h2>
+<p style=\"text-align: justify;\">
+	<strong>05h30:&nbsp;</strong>Xe v&agrave; hướng dẫn của<strong>&nbsp;AZBOOKING&nbsp;</strong>đ&oacute;n đo&agrave;n tại điểm hẹn khởi h&agrave;nh đi Lạng Sơn, đo&agrave;n dừng ch&acirc;n ăn s&aacute;ng tại<strong>&nbsp;Thị Trấn Mẹt&nbsp;</strong>(Chi ph&iacute; tự t&uacute;c) sau đ&oacute; đo&agrave;n khởi h&agrave;nh đi&nbsp;<strong>Cửa khẩu Hữu Nghị Quan</strong>&nbsp;l&agrave;m thủ tục xuất cảnh sang Trung Quốc.</p>
+<p style=\"text-align: center;\">
+	<span style=\"color: rgb(255, 0, 0);\"><span style=\"font-size: 16px;\"><strong><img alt=\"\" src=\"http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/TGG-azbooking.jpg\" style=\"width: 714.391px;\" /></strong></span></span></p>
+<p style=\"text-align: justify;\">
+	<strong>Trưa:&nbsp;</strong>Đo&agrave;n ăn trưa tại&nbsp;<strong>Bằng Tường.</strong>&nbsp;sau đ&oacute; đi&nbsp;<strong>Nam Ninh</strong>&nbsp;bằng đường cao tốc mới &ldquo;Trung Quốc &ndash; Asean&rdquo;.</p>
+<p style=\"text-align: justify;\">
+	<strong>17h50:&nbsp;</strong>Qu&yacute; kh&aacute;ch đ&aacute;p chuyến t&agrave;u khởi h&agrave;nh đi&nbsp;<strong>Trương Gia Giới.</strong>&nbsp;Qu&yacute; kh&aacute;ch ăn tối, v&agrave; nghỉ đ&ecirc;m tr&ecirc;n t&agrave;u.</p>
+<h2 style=\"text-align: justify;\">
+	<span style=\"color: rgb(255, 0, 0);\"><span style=\"font-size: 16px;\">Ng&agrave;y 02: THI&Ecirc;N M&Ocirc;N SƠN ( Ăn s&aacute;ng, trưa, tối)</span></span></h2>
+<p style=\"text-align: justify;\">
+	<strong>08h20&rsquo;:&nbsp;</strong>T&agrave;u đến&nbsp;<strong>Trương Gia Giới.&nbsp;</strong>Đo&agrave;n ăn s&aacute;ng sau đ&oacute; l&ecirc;n &ocirc; t&ocirc; đi tham quan&nbsp;<strong>Thi&ecirc;n M&ocirc;n Sơn</strong>&nbsp;&ndash; một kỳ quan nổi tiếng nhất của&nbsp;<strong>Trương Gia Giới</strong>&nbsp;&ndash; nơi đ&acirc;y cũng l&agrave; nơi biểu diễn nhiều lần m&aacute;y bay xuy&ecirc;n vượt động&nbsp;<strong>Thi&ecirc;n M&ocirc;n</strong>&nbsp;v&agrave; đua nhảy d&ugrave; quốc tế. Tham quan&nbsp;<strong>Sạn Đạo K&iacute;nh</strong>&nbsp;(Cầu k&iacute;nh &ndash; con đường g&aacute;c k&iacute;nh tr&ecirc;n v&aacute;ch đ&aacute;).</p>
+<p style=\"text-align: center;\">
+	<span style=\"color: rgb(255, 0, 0);\"><span style=\"font-size: 16px;\"><strong><img alt=\"\" src=\"http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/thien-mon-son-az-booking.jpg\" style=\"width: 714.391px;\" /></strong></span></span></p>
+<p style=\"text-align: justify;\">
+	<strong>Trưa:</strong>&nbsp;Đo&agrave;n ăn trưa tại nh&agrave; h&agrave;ng địa phương.</p>
+<p style=\"text-align: justify;\">
+	<strong>Chiều:</strong>&nbsp;Qu&yacute; kh&aacute;ch tham quan<strong>&nbsp;Họa Viện Qu&acirc;n Thanh&nbsp;</strong>thưởng thức tranh họa bằng c&aacute;t.</p>
+<p style=\"text-align: justify;\">
+	<strong>Tối:</strong>&nbsp;Đo&agrave;n ăn tối tại nh&agrave; h&agrave;ng. Sau bữa tối, Qu&yacute; kh&aacute;ch tự do tham quan, mua sắm hoặc xem chương tr&igrave;nh biểu diễn nghệ thuật đặc sắc<strong>&nbsp;&ldquo;Rạng rỡ Xương T&acirc;y&rdquo;&nbsp;</strong>&ndash; ( ph&iacute; tự t&uacute;c &ndash; 35 $). Nghỉ đ&ecirc;m tại kh&aacute;ch sạn ti&ecirc;u chuẩn 3***</p>
+<h2 style=\"text-align: justify;\">
+	<span style=\"color: rgb(255, 0, 0);\"><span style=\"font-size: 16px;\">Ng&agrave;y 03: TRƯƠNG GIA GIỚI&nbsp; - PHƯỢNG HO&Agrave;NG CỔ TRẤN (Ăn s&aacute;ng, trưa, tối)</span></span></h2>
+<p style=\"text-align: justify;\">
+	<strong>S&aacute;ng:&nbsp;</strong>Sau khi ăn s&aacute;ng, đo&agrave;n tham quan&nbsp;<strong>Hồ Bảo Phong</strong>&nbsp;- l&agrave; một hồ nước ngọt nằm trong khu thắng cảnh&nbsp;<strong>Vũ Lăng Nguy&ecirc;n</strong>&nbsp;gần&nbsp;<strong>Trương Gia Giới</strong>, tỉnh Hồ Nam, Trung Quốc.</p>
+<p style=\"text-align: center;\">
+	<span style=\"color: rgb(255, 0, 0);\"><span style=\"font-size: 16px;\"><strong><img alt=\"\" src=\"http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/phct-azbooking.jpg\" style=\"width: 714.391px;\" /></strong></span></span></p>
+<p style=\"text-align: justify;\">
+	<strong>Trưa:</strong>&nbsp;Đo&agrave;n ăn trưa tại nh&agrave; h&agrave;ng địa phương.</p>
+<p style=\"text-align: justify;\">
+	<strong>Chiều:&nbsp;</strong>Sau bữa trưa đo&agrave;n l&ecirc;n xe đi Phượng Ho&agrave;ng cổ trấn.</p>
+<p style=\"text-align: justify;\">
+	<strong>Tối:&nbsp;</strong>Đo&agrave;n ăn tối tại nh&agrave; h&agrave;ng. Sau bữa tối, qu&yacute; kh&aacute;ch tự do kh&aacute;m ph&aacute; thị trấn cổ về đ&ecirc;m. Kh&aacute;c hẳn với vẻ trầm mặc của thị trấn n&agrave;y v&agrave;o ban ng&agrave;y, buổi tối thị trấn cổ rất nhộn nhịp, vui vẻ với rất nhiều qu&aacute;n Bar, qu&aacute;n c&agrave; ph&ecirc; thơ mộng. Nghỉ đ&ecirc;m tại&nbsp;<strong>Phượng Ho&agrave;ng.&nbsp;</strong></p>
+<h2 style=\"text-align: justify;\">
+	<span style=\"color: rgb(255, 0, 0);\"><span style=\"font-size: 16px;\">Ng&agrave;y&nbsp; 04: PHƯỢNG HO&Agrave;NG CỔ TRẤN (Ăn s&aacute;ng, trưa, tối)</span></span></h2>
+<p style=\"text-align: justify;\">
+	<strong>S&aacute;ng:&nbsp;</strong>Đo&agrave;n ăn s&aacute;ng tại kh&aacute;ch sạn. Sau khi ăn s&aacute;ng, đo&agrave;n tham quan&nbsp;<strong>Phượng Ho&agrave;ng Cổ Trấn</strong>, với&nbsp;<strong>lầu Mi&ecirc;u Mi&ecirc;u, Bắc M&ocirc;n cổ th&agrave;nh.</strong></p>
+<p style=\"text-align: center;\">
+	<span style=\"color: rgb(255, 0, 0);\"><span style=\"font-size: 16px;\"><img alt=\"\" src=\"http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/phct_az-booking.jpg\" style=\"width: 714.391px;\" /></span></span></p>
+<p style=\"text-align: justify;\">
+	<strong>Trưa:&nbsp;</strong>Đo&agrave;n ăn trưa tại nh&agrave; h&agrave;ng.</p>
+<p style=\"text-align: justify;\">
+	<strong>Chiều:&nbsp;</strong>Đo&agrave;n tiếp tục thăm quan&nbsp;<strong>Lầu phong Th&uacute;y Hồng Kiều, Viện Bảo T&agrave;ng Cổ Th&agrave;nh&hellip;</strong>(tham quan b&ecirc;n ngo&agrave;i). Tự do thăm quan v&agrave; kh&aacute;m ph&aacute;&nbsp;<strong>Phượng Ho&agrave;ng Cổ Trấn&nbsp;</strong>với c&aacute;c m&oacute;n ăn địa phương, tự do chụp h&igrave;nh hoặc ngồi uống c&agrave; ph&ecirc;, nghe những bản nhạc trữ t&igrave;nh, ngắm cảnh thị trấn cổ dọc&nbsp;<strong>s&ocirc;ng Đ&agrave; Giang&nbsp;</strong>v&agrave; cảm nhận cuộc sống tại nơi đ&acirc;y. Bạn sẽ cảm gi&aacute;c như qu&ecirc;n hết mệt mỏi v&agrave; bỏ lại sau lưng những lo toan vất vả của cuộc sống</p>
+<p style=\"text-align: justify;\">
+	<strong>Tối :&nbsp;</strong>Tự do kh&aacute;m ph&aacute; vẻ đẹp huyền b&iacute; v&agrave; lung linh như Phong Hoa của&nbsp;<strong>Phượng Ho&agrave;ng</strong>&nbsp;về đ&ecirc;m. Nghỉ đ&ecirc;m tại kh&aacute;ch sạn ti&ecirc;u chuẩn 3 ***</p>
+<h2 style=\"text-align: justify;\">
+	<span style=\"color: rgb(255, 0, 0);\"><span style=\"font-size: 16px;\">Ng&agrave;y&nbsp; 05: PHƯỢNG HO&Agrave;NG &ndash; MI&Ecirc;U TRẠI - C&Aacute;T THỦ - NAM NINH (Ăn s&aacute;ng, trưa, tối)&nbsp;</span></span></h2>
+<p style=\"text-align: justify;\">
+	<strong>S&aacute;ng:&nbsp;</strong>Sau bữa s&aacute;ng đo&agrave;n trả ph&ograve;ng kh&aacute;ch sạn. Xe đưa đo&agrave;n đến 1 điểm tham quan hết sức th&uacute; vị trong chương tr&igrave;nh:&nbsp;<strong>Mi&ecirc;u Trại&nbsp;</strong>&ndash; Đ&acirc;y l&agrave; một bản, l&agrave;ng của người&nbsp;<strong>Mi&ecirc;u (H&rsquo;Mong, M&egrave;o)</strong>&nbsp;theo c&aacute;ch gọi của người Trung Quốc.</p>
+<p style=\"text-align: justify;\">
+	Đ&atilde; tới<strong>&nbsp;cổ trấn Phượng Ho&agrave;ng</strong>&nbsp;của tỉnh Hồ Nam, kh&ocirc;ng thể kh&ocirc;ng gh&eacute; qua&nbsp;<strong>Mi&ecirc;u Trại.</strong>&nbsp;Tại đ&acirc;y Qu&yacute; kh&aacute;ch được xem show văn nghệ của c&aacute;c nghệ sĩ người bản xứ, tham quan nh&agrave; bảo t&agrave;ng văn h&oacute;a của người Mi&ecirc;u, thăm&nbsp;<strong>l&agrave;ng cổ Mi&ecirc;u Trại&nbsp;</strong>b&ecirc;n bờ hồ thơ mộng, đi chợ truyền thống, dừng ch&acirc;n tr&ecirc;n<strong>&nbsp;T&igrave;nh Nh&acirc;n Kiều&nbsp;</strong>v&agrave; thưởng thức một bữa ăn trưa theo phong c&aacute;ch ẩm thực của người d&acirc;n nơi đ&acirc;y.</p>
+<p style=\"text-align: center;\">
+	<strong style=\"color: rgb(255, 0, 0); font-size: 16px; text-align: justify;\"><img alt=\"\" src=\"http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tran-co-phuong-hoang-az-booking.jpg\" style=\"width: 714.391px;\" /></strong></p>
+<p style=\"text-align: justify;\">
+	<strong>&ldquo;Bảo t&agrave;ng của người Mi&ecirc;u&rdquo;</strong>, trước đ&acirc;y ch&iacute;nh l&agrave; nh&agrave; của một &ocirc;ng vua M&egrave;o, với Kiến tr&uacute;c nh&agrave; đặc sắc theo phong c&aacute;ch cổ, tường bằng gỗ được&nbsp; trạm trổ cầu kỳ, kh&eacute;o l&eacute;o, bắp ng&ocirc; v&agrave; ớt kh&ocirc; treo l&uacute;c lỉu trước hi&ecirc;n nh&agrave;. Kh&ocirc;ng gian xa h v&agrave; c&oacute; ch&uacute;t r&ecirc;u phong, gợi nhớ đến một thời ph&ugrave; hoa vương giả xưa.</p>
+<p style=\"text-align: justify;\">
+	<strong>Chiều :</strong>&nbsp;Sau bữa trưa, đo&agrave;n l&ecirc;n xe đi về&nbsp;<strong>C&aacute;t Thủ.</strong>&nbsp;Đến&nbsp;<strong>C&aacute;t Thủ</strong>, Qu&yacute; kh&aacute;ch ăn tối tại nh&agrave; h&agrave;ng. Sau bữa tối, xe đưa đo&agrave;n ra ga, l&ecirc;n t&agrave;u l&uacute;c 19h40 về&nbsp;<strong>Nam Ninh</strong>&nbsp;( t&agrave;u chỉ dừng 7 ph&uacute;t ). Nghỉ đ&ecirc;m tr&ecirc;n t&agrave;u.</p>
+<h2 style=\"text-align: justify;\">
+	<span style=\"color: rgb(255, 0, 0);\"><span style=\"font-size: 16px;\">Ng&agrave;y&nbsp; 06: NAM NINH &ndash; H&Agrave; NỘI (Ăn s&aacute;ng, trưa)&nbsp;</span></span></h2>
+<p style=\"text-align: justify;\">
+	<strong>08h30:</strong>&nbsp;Đến&nbsp;<strong>Nam Ninh</strong>, xe đưa Qu&yacute; kh&aacute;ch về cửa khẩu&nbsp;<strong>Hữu Nghị Quan</strong>, l&agrave;m thủ tục về VN. Ăn trưa tại nh&agrave; h&agrave;ng.</p>
+<p style=\"text-align: justify;\">
+	<strong>Chiều:</strong>&nbsp;Xe đưa Qu&yacute; kh&aacute;ch về đến&nbsp;<strong>Hữu Nghị Quan</strong>, l&agrave;m thủ tục nhập cảnh về Việt Nam. Xe đ&oacute;n Qu&yacute; kh&aacute;ch về H&agrave; Nội, tr&ecirc;n đường về xe dừng ch&acirc;n ở<strong>&nbsp;chợ Đ&ocirc;ng Kinh</strong>&nbsp;(TP.Lạng Sơn) mua sắm (nếu c&ograve;n thời gian cho ph&eacute;p).</p>
+<p style=\"text-align: justify;\">
+	<b>19h00:&nbsp;</b>Về đến H&agrave; Nội, xe đưa Qu&yacute; kh&aacute;ch về điểm hẹn ban đầu. Kết th&uacute;c chương tr&igrave;nh&nbsp;<strong>Du Lịch Trung Quố</strong><strong>c: Nam Ninh - Trương Gia Giới - Phượng Ho&agrave;ng Cổ Trấn</strong>. Chia tay v&agrave; hẹn gặp lại Qu&yacute; kh&aacute;ch.</p>
+<p style=\"text-align: center;\">
+	<strong style=\"color: rgb(255, 0, 0);\"><img alt=\"\" src=\"http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/tour/anh-tour/hotline.png\" style=\"width: 300px; height: 90px;\" /></strong></p>
+<p style=\"text-align: center;\">
+	<span style=\"color: rgb(255, 0, 0);\"><strong>HOẶC</strong></span></p>
+<p style=\"text-align: center;\">
+	<span style=\"font-size: 16px;\"><span style=\"color: rgb(255, 0, 0);\"><strong><span style=\"background-color: rgb(255, 255, 0);\">CHAT ONLINE NGAY</span></strong></span></span></p>
+',price_list='<h2 style=\"text-align: center;\">
+	<span style=\"font-size: 16px;\"><span style=\"color: rgb(255, 0, 0);\">Gi&aacute; trọn g&oacute;i/kh&aacute;ch: 6.688.000VND</span></span></h2>
+<p style=\"text-align: center;\">
+	(&aacute;p dụng cho đo&agrave;n gh&eacute;p kh&aacute;ch)</p>
+<h3>
+	<span style=\"font-size: 14px;\">LƯU &Yacute;:&nbsp;</span></h3>
+<p>
+	- Thủ tục đăng k&yacute; đi tour:&nbsp; Qu&yacute; kh&aacute;ch vui l&ograve;ng chuẩn bị đầy đủ :</p>
+<p>
+	+ Hộ chiếu phổ th&ocirc;ng c&ograve;n hạn &iacute;t nhất 06 th&aacute;ng (so với ng&agrave;y khởi h&agrave;nh)</p>
+<p>
+	+ Nếu c&oacute; trẻ em đi c&ugrave;ng phải c&oacute; giấy khai sinh bản sao c&ocirc;ng chứng hoặc giấy uỷ quyền nếu kh&ocirc;ng đi c&ugrave;ng bố mẹ.</p>
+<p>
+	- Kinh ph&iacute; tr&ecirc;n &aacute;p dụng cho kh&aacute;ch h&agrave;ng mang quốc tịch Việt nam. Kh&aacute;ch mang hộ chiếu nước ngo&agrave;i, vui l&ograve;ng kiểm tra lại.</p>
+<p>
+	-Chương tr&igrave;nh tr&ecirc;n c&oacute; thể thay đổi về thời gian v&agrave; lịch tr&igrave;nh, nhưng vẫn đảm bảo c&aacute;c điểm thăm quan như tr&ecirc;n.</p>
+<p>
+	-V&eacute; t&agrave;u theo lịch tr&igrave;nh cả đo&agrave;n, nếu c&oacute; sự thay đổi sau khi xuất v&eacute;, v&eacute; sẽ kh&ocirc;ng c&ograve;n gi&aacute; trị. Giờ giấc v&eacute; t&agrave;u cuối c&ugrave;ng phụ thuộc v&agrave;o ng&agrave;nh đường sắt.</p>
+<p>
+	-C&aacute;c phần dịch vụ kh&ocirc;ng sử dụng đến m&agrave; kh&ocirc;ng b&aacute;o trước khi đăng k&yacute; sẽ kh&ocirc;ng được ho&agrave;n lại.</p>
+<p>
+	&nbsp;-Chương tr&igrave;nh tr&ecirc;n l&agrave; chương tr&igrave;nh du lịch thuần tu&yacute;, Qu&yacute; kh&aacute;ch c&oacute; nhu cầu kết hợp l&agrave;m việc, đề nghị th&ocirc;ng b&aacute;o r&otilde; khi l&agrave;m thủ tục đăng k&yacute;.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+',content='',list_img='',title='tour du lịch Phượng hoàng cổ trấn 6 ngày',keyword='phượng hoàng cổ trấn giá tốt, phượng hoàng cố trấn giá rẻ, nên đi phượng hoàng cố trấn hay không, đi sạn đạo kính, đi cầu kính trung quốc',description='',inclusion='<ul>
+	<li>
+		Ng&agrave;y ăn 3 bữa theo chương tr&igrave;nh.(mức 30 NDT/ bữa ch&iacute;nh)</li>
+	<li>
+		Visa nhập cảnh TQ</li>
+	<li>
+		Nghỉ tại kh&aacute;ch sạn đạt ti&ecirc;u chuẩn 4 sao.(2 người/ph&ograve;ng đ&ocirc;i)</li>
+	<li>
+		Xe đưa đ&oacute;n điều ho&agrave;:10-15 người sắp xếp 19 -26 chỗ, 16-20 người sắp xếp 26-35 chỗ</li>
+	<li>
+		Chi ph&iacute; thăm quan cửa thứ nhất</li>
+	<li>
+		Chi ph&iacute; xe sinh th&aacute;i trong c&ocirc;ng vi&ecirc;n+&nbsp; c&aacute;p treo trong chương tr&igrave;nh</li>
+	<li>
+		Hướng dẫn tiếng Việt nhiệt t&igrave;nh, gi&agrave;u kinh nghiệm đi suốt tuyến.</li>
+	<li>
+		V&eacute; t&agrave;u giường năm điều ho&agrave; khoang 6 Nam Ninh-Trương Gia Giới,C&aacute;t Thủ - Nam Ninh</li>
+	<li>
+		Bảo hiểm rui ro mức bồi thường 300.000 NDT. Qu&yacute; kh&aacute;ch 75 tuổi trở l&ecirc;n kh&ocirc;ng tham gia bảo hiểm n&agrave;y</li>
+</ul>
+',exclusion='0',updated='18-01-23 05:05:08' where id=248;

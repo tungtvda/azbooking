@@ -296,7 +296,7 @@ if (isset($_SESSION["Admin"])) {
         if (!isset($array['inclusion']))
             $array['inclusion'] = '0';
         if (!isset($array['exclusion']))
-
+            $array['exclusion'] = '0';
             if ($_POST['price'] == '') {
                 $_POST['price']=0;
             }
@@ -309,7 +309,7 @@ if (isset($_SESSION["Admin"])) {
         if ($_POST['price_4'] == '') {
             $_POST['price_4']=0;
         }
-        $array['exclusion'] = '0';
+
         $array['updated'] = date(DATETIME_FORMAT);
         $array_send_manage = $array;
         $array_send_manage['summary'] = '';
