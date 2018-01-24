@@ -21,7 +21,7 @@ foreach ($data_tour_sales as $row){
     }
 
     $string_re.=' <div class="col-lg-4 col-md-6"
-                                                 style="margin-bottom: 30px;padding-right: 15px; padding-left: 15px;width: 29.7%;float: left">
+                                                 style="margin-bottom: 30px;padding-right: 15px; padding-left: 15px;width: 33.3333333%;float: left">
                                                 <div class="card h-100"
                                                      style="height: 100% !important;position: relative;display: flex;-webkit-box-orient: vertical;    -webkit-box-direction: normal;flex-direction: column;border-radius: 0.25rem;background: transparent;background: transparent;">
                                                     <div class="single-post post-style-1"
@@ -60,11 +60,11 @@ foreach ($data_tour_sales as $row){
                                                     </div><!-- single-post -->
                                                 </div><!-- card -->
                                             </div>';
-    if($count_check%3==0)
+    if($count%3==0)
     {
         $string_re.=' </div>';
     }
-
+    $count++;
 }
 
 echo $string_re;
