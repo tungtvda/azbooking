@@ -73,7 +73,17 @@
                 </div>
             </div>
         </div>
-        <div class="copyright"><p>©2016 . <a href="{SITE-NAME}">Azbooking.vn</a></p></div>
+        <div class="copyright">
+            <div class="col-md-6" style="float: left; width: 50%">
+                <p>
+                    &copy; 2016
+                    Created by <a href="http://azbooking.vn">AZBOOKING.VN</a>.
+                </p>
+            </div>
+            <div class="col-md-6" style="float: left; width: 50%; color: #ffffff">
+                Mã số thuế 0105801085. Số giấy phép: 01-728/2015/ TCDL - GPLHQT
+            </div>
+        </div>
     </div>
     <div hidden class="row-footer">
 
