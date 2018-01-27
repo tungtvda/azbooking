@@ -225,6 +225,7 @@ function show_chitiet_tour($data = array())
     $asign['code_user']='';
     if(isset($_GET['key'])){
         $_SESSION['id_tour_'.$data['detail'][0]->id]=_returnGetParamSecurity('key');
+        $_SESSION['link_tiep_thi']=_returnGetParamSecurity('key');
     }
     if(isset($_SESSION['id_tour_'.$data['detail'][0]->id])){
         $asign['id_user']='&key='.$_SESSION['id_tour_'.$data['detail'][0]->id];
