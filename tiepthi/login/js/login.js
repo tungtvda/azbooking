@@ -239,6 +239,7 @@ jQuery(function ($) {
                     url: link,
                     data: $("#signup-form").serialize(),
                     success: function (response) {
+                        console.log(response);
                         try {
                             var response = $.parseJSON(response);
                             //
