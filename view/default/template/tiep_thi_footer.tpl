@@ -43,7 +43,9 @@
 </footer>
 </div>
 </div>
-
+<div class="fabs">
+<a id="prime" class="fab"><img class="img_chat" src="{SITE-NAME}/view/default/themes/assets/img/chat.png"></a>
+</div>
 <div hidden class="fixed-plugin">
     <div class="dropdown show-dropdown">
         TIỀN HOA HỒNG
