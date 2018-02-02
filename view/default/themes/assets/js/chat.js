@@ -53,11 +53,12 @@ $('#chat_fullscreen_loader').click(function(e) {
 function hideChat(hide) {
     switch (hide) {
         case 0:
-            $('#chat_converse').css('display', 'none');
+            $('#chat_converse').css('display', 'block');
+            // $('#chat_converse').css('display', 'none');
             $('#chat_body').css('display', 'none');
             $('#chat_form').css('display', 'none');
             $('.chat_login').css('display', 'block');
-            $('.chat_fullscreen_loader').css('display', 'none');
+            $('.chat_fullscreen_loader').css('display', 'block');
             $('#chat_fullscreen').css('display', 'none');
             break;
         case 1:
@@ -65,7 +66,7 @@ function hideChat(hide) {
             $('#chat_body').css('display', 'none');
             $('#chat_form').css('display', 'none');
             $('.chat_login').css('display', 'none');
-            $('.chat_fullscreen_loader').css('display', 'block');
+
             break;
         case 2:
             $('#chat_converse').css('display', 'none');

@@ -54,14 +54,12 @@
                         class="online">(Online)</span>
                 <span id="chat_fullscreen_loader" class="chat_fullscreen_loader"><i
                             class="fullscreen zmdi zmdi-window-maximize"></i></span>
-
             </div>
-
         </div>
-        <div class="chat_body chat_login">
+        <!--<div class="chat_body chat_login">
             <a id="chat_first_screen" class="fab"><i class="zmdi zmdi-arrow-right"></i></a>
             <p>We make it simple and seamless for businesses and people to talk to each other. Ask us anything</p>
-        </div>
+        </div>-->
         <div id="chat_converse" class="chat_conversion chat_converse">
             <a id="chat_second_screen" class="fab"><i class="zmdi zmdi-arrow-right"></i></a>
             <span class="chat_msg_item chat_msg_item_admin">
@@ -79,7 +77,7 @@
             Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
             <span class="status2">Just now. Not seen yet</span>
         </div>
-        <div id="chat_body" class="chat_body">
+       <!--<div id="chat_body" class="chat_body">
             <div class="chat_category">
                 <a id="chat_third_screen" class="fab"><i class="zmdi zmdi-arrow-right"></i></a>
                 <p>What would you like to talk about?</p>
@@ -162,7 +160,7 @@
             <li>Pants</li>
           </ul>
       </span>
-        </div>
+        </div>-->
         <div class="fab_field">
             <a id="fab_camera" class="fab"><i class="zmdi zmdi-camera"></i></a>
             <a id="fab_send" class="fab"><i class="zmdi zmdi-mail-send"></i></a>
