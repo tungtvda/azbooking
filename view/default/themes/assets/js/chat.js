@@ -1,9 +1,32 @@
 hideChat(0);
 
 $('#prime').click(function() {
+    scrollBottom();
     toggleFab();
 });
+$('body').on("input", '#chatSend', function () {
+    var value=$('#chatSend').val();
+    if(value!=''){
+        if(value.length>=160){
+            $('#chatSend').css('height', 90);
+            $('#chatSend').attr('height', 90);
+        }else{
+            var height = parseInt($(this).attr('height'));
+            var elem = document.getElementById('chatSend');
+            if (elem.clientHeight < elem.scrollHeight) {
+                if (height < 100) {
+                    height = height + 30;
+                    $('#chatSend').css('height', height);
+                    $('#chatSend').attr('height', height);
+                }
+            }
+        }
 
+    }else{
+        $('#chatSend').css('height', 30);
+        $('#chatSend').attr('height', 30);
+    }
+});
 
 //Toggle chat and links
 function toggleFab() {
@@ -50,7 +73,12 @@ $('#chat_fullscreen_loader').click(function(e) {
     // $('#chat_fullscreen').css('display', 'block');
 });
 
+function scrollBottom(){
+    $('.chat_converse').scrollTop($('.chat_converse')[0].scrollHeight);
+}
+
 function hideChat(hide) {
+    scrollBottom()
     switch (hide) {
         case 0:
             $('#chat_converse').css('display', 'block');
