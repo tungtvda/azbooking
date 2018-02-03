@@ -28,11 +28,12 @@
     <link href="{SITE-NAME}/view/default/themes/assets/css/bootstrap.min.css" rel="stylesheet"/>
 
     <!--  Material Dashboard CSS    -->
+    <link href="{SITE-NAME}/view/default/themes/assets/css/chat_tiepthi.css" rel="stylesheet"/>
     <link href="{SITE-NAME}/view/default/themes/assets/css/material-dashboard.css" rel="stylesheet"/>
 
     <!--  CSS for Demo Purpose, don't include it in your project     -->
     <link href="{SITE-NAME}/view/default/themes/assets/css/demo.css" rel="stylesheet"/>
-    <link href="{SITE-NAME}/view/default/themes/assets/css/chat_tiepthi.css" rel="stylesheet"/>
+
 
     <!--     Fonts and icons     -->
     <link href="{SITE-NAME}/view/default/themes/assets/css/font-awesome.min.css" rel="stylesheet">
