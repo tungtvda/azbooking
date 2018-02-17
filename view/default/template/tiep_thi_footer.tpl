@@ -43,7 +43,7 @@
 </footer>
 </div>
 </div>
-<div class="fabs">
+<div style="display: none" class="fabs">
     <div class="chat">
         <div class="chat_header">
             <div class="chat_option">
