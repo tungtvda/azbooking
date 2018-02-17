@@ -531,17 +531,20 @@ Không thể liên kết thẻ tiếp thị lại với thông tin nhận dạng
         <div class="copyrights">
             <div class="container">
                 <div class="column one">
-
-                    <div class="col-md-6" style="float: left; width: 50%">
+                    <div class="col-md-3" style="float: left; width: 30%;     padding-top: 20px;">
                         <p>
                             &copy; 2016
                             Created by <a href="http://azbooking.vn">AZBOOKING.VN</a>.
                         </p>
                     </div>
-                    <div class="col-md-6" style="float: left; width: 50%; color: #ffffff">
-                        Mã số thuế 0105801085. Số giấy phép: 01-728/2015/ TCDL - GPLHQT
+                    <div class="col-md-6" style="float: left; width: 70%; color: #ffffff">
+                        <div style="float: left; width: 70%;     padding-top: 20px;">
+                            Mã số thuế 0105801085. Số giấy phép: 01-728/2015/ TCDL - GPLHQT
+                        </div>
+                        <div style="float: left; width: 30%;     text-align: left;">
+                            <a href="http://online.gov.vn/HomePage/CustomWebsiteDisplay.aspx?DocId=36900" target="_blank"><img src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/cauhinh/da-thong-bao-bo-cong-thuong-azbooking.png" style="width:150px"></a>
+                        </div>
                     </div>
-
                 </div>
             </div>
         </div>
