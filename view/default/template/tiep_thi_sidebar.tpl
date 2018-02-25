@@ -51,6 +51,13 @@
                     </a>
                 </li>
 
+                <li class="{tour_user_mn}">
+                    <a href="{SITE-NAME}/tiep-thi-lien-ket/tour-yeu-cau">
+                        <i class="fa fa-plane"></i>
+                        <p>Danh sách tour yêu cầu</p>
+                    </a>
+                </li>
+
                 <li class="{thongbao_mn}">
                     <a href="{SITE-NAME}/tiep-thi-lien-ket/thong-bao">
                         <i class="material-icons text-gray">notifications</i>
