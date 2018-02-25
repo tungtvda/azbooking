@@ -176,7 +176,73 @@ jQuery(document).ready(function(){
     $('body').on('blur', '#input_hoa_hong', function (e) {
         input_hoa_hong();
     });
+    $('body').on('input', '#input_total_khach', function (e) {
+        input_so_luong_nl();
+    });
+    $('body').on('click', '#input_total_khach', function () {
+        $(this).select();
+    });
+
+    $('body').on('input', '#input_total_khach_m1', function (e) {
+        input_so_luong_m1();
+    });
+    $('body').on('click', '#input_total_khach_m1', function () {
+        $(this).select();
+    });
+    $('body').on('input', '#input_total_khach_m2', function (e) {
+        input_so_luong_m2();
+    });
+    $('body').on('click', '#input_total_khach_m2', function () {
+        $(this).select();
+    });
+    $('body').on('input', '#input_total_khach_m3', function (e) {
+        input_so_luong_m3();
+    });
+    $('body').on('click', '#input_total_khach_m3', function () {
+        $(this).select();
+    });
+
 });
+function input_so_luong_m3() {
+    var value = $('#input_total_khach_m3').val();
+    if (!$.isNumeric(value)) {
+        $('#input_total_khach_m3').val(0);
+    }
+    if(value<=0){
+        $('#input_total_khach_m3').val(0);
+    }
+    total_price_dich_vu(0, 0, 0);
+}
+function input_so_luong_m2() {
+    var value = $('#input_total_khach_m2').val();
+    if (!$.isNumeric(value)) {
+        $('#input_total_khach_m2').val(0);
+    }
+    if(value<=0){
+        $('#input_total_khach_m2').val(0);
+    }
+    total_price_dich_vu(0, 0, 0);
+}
+function input_so_luong_m1() {
+    var value = $('#input_total_khach_m1').val();
+    if (!$.isNumeric(value)) {
+        $('#input_total_khach_m1').val(0);
+    }
+    if(value<=0){
+        $('#input_total_khach_m1').val(0);
+    }
+    total_price_dich_vu(0, 0, 0);
+}
+function input_so_luong_nl() {
+    var value = $('#input_total_khach').val();
+    if (!$.isNumeric(value)) {
+        $('#input_total_khach').val(1);
+    }
+    if(value<=0){
+        $('#input_total_khach').val(1);
+    }
+    total_price_dich_vu(0, 0, 0);
+}
 function input_hoa_hong() {
     var value = $('#input_hoa_hong').val();
     var numberRegex = /^[+-]?\d+(\.\d+)?([eE][+-]?\d+)?$/;
@@ -312,7 +378,10 @@ function total_price_dich_vu(price, item, soluong_dichvu) {
 }
 
 function price_nguoi_lon(total) {
-   var soluong_nguoi_lon = 1;
+   var soluong_nguoi_lon = $('#input_total_khach').val();
+    if(!soluong_nguoi_lon){
+        soluong_nguoi_lon=1;
+    }
     var price_pax = total / soluong_nguoi_lon;
     var price_pax = parseFloat(price_pax);
     price_pax = Math.round(price_pax * 1000) / 1000;
@@ -353,7 +422,10 @@ function price_tre_em_m1(total) {
         var total_price_m1 = parseFloat(total_price_m1);
         total_price_m1 = Math.round(total_price_m1 * 1000) / 1000;
     }
-    var soluong_khach_1=1;
+    var soluong_khach_1=$('#input_total_khach_m1').val();
+    if(!soluong_khach_1){
+        soluong_khach_1=0;
+    }
     var price_pax_m1 = 0;
     if (soluong_khach_1 > 0) {
         price_pax_m1 = total_price_m1 / soluong_khach_1;
@@ -397,7 +469,10 @@ function price_tre_em_m2(total) {
         var total_price_m2 = parseFloat(total_price_m2);
         total_price_m2 = Math.round(total_price_m2 * 1000) / 1000;
     }
-   var soluong_khach_2 = 1;
+    var soluong_khach_2=$('#input_total_khach_m2').val();
+    if(!soluong_khach_2){
+        soluong_khach_2=0;
+    }
     var price_pax_m2 = 0;
     if (soluong_khach_2 > 0) {
         price_pax_m2 = total_price_m2 / soluong_khach_2;
@@ -442,7 +517,10 @@ function price_tre_em_m3(total) {
         var total_price_m3 = parseFloat(total_price_m3);
         total_price_m3 = Math.round(total_price_m3 * 1000) / 1000;
     }
-    var soluong_khach_3 = 1;
+    var soluong_khach_3=$('#input_total_khach_m3').val();
+    if(!soluong_khach_3){
+        soluong_khach_3=0;
+    }
     var price_pax_m3 = 0;
     if (soluong_khach_3 > 0) {
         price_pax_m3 = total_price_m3 / soluong_khach_3;

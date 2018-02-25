@@ -73,3 +73,7 @@ insert into tour_list_dichvu (tour_id,name,type,price,number,total,note) values 
 insert into tour_list_dichvu (tour_id,name,type,price,number,total,note) values ('77','Vé máy bay','1','1000000','1','1.000.000 vnđ','Tiền vé máy bay');
 insert into tour_list_dichvu (tour_id,name,type,price,number,total,note) values ('77','Tiền khách sạn','2','2000000','1','2.000.000 vnđ','Tiền khách sạn');
 insert into tour_list_dichvu (tour_id,name,type,price,number,total,note) values ('77','Hoa hồng','4','500000','1','500.000 vnđ','Tiền hoa hồng');
+insert into tour_list_dichvu (tour_id,name,type,price,number,total,note) values ('249','234234','1','1000000','1','1.000.000 vnđ','');
+insert into tour_list_dichvu (tour_id,name,type,price,number,total,note) values ('249','234234','1','1000000','1','1.000.000 vnđ','');
+insert into tour_list_dichvu (tour_id,name,type,price,number,total,note) values ('249','234234','1','1000000','1','1.000.000 vnđ','');
+insert into tour_list_dichvu (tour_id,name,type,price,number,total,note) values ('249','234234','1','1000000','1','1.000.000 vnđ','');

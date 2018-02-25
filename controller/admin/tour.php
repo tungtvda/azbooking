@@ -327,7 +327,6 @@ if (isset($_SESSION["Admin"])) {
         $array_send_manage['ghichu_dichvu'] = json_encode($ghichu_dichvu);
         $array_send_manage['code_check_send_email'] = _return_mc_encrypt('tungtv_az_mix_12345');
         $code_az_mix = _randomBooking('az', 'tour_count', 'code_az_mix');
-
         $new_obj = new tour($array);
         if ($insert) {
             $new_obj->code_az_mix = $code_az_mix;

@@ -10,7 +10,7 @@
 
 <div class="footer">
     <div class="footerleft"></div>
-    <div class="footerright">&copy; Hệ thống quản trị được thiết kết bởi <a href="http://vifonic.com/"> Vifonic.com</a></div>
+    <div class="footerright">&copy; Hệ thống quản trị được thiết kết bởi <a href="http://mixmedia.vn/">mixmedia.vn</a></div>
 </div>
 <!--footer-->
 
