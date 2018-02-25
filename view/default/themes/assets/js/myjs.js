@@ -244,25 +244,31 @@ $('body').on("input", '.valid-input', function () {
                 var re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
                 var is_email = re.test(value);
                 if (is_email) {
-                    var link = $('#site_name_manage_all').val() + '/check-login.html';
+                    if($(this.attr('data-check-unique'))==1){
+                        var link = $('#site_name_manage_all').val() + '/check-login.html';
+                        var key = "user_email";
+                        $.ajax({
+                            method: "GET",
+                            url: link,
+                            data: "value=" + value + '&key=' + key,
+                            success: function (response) {
+                                if (response == 1) {
+                                    $('#input_' + name).addClass('valid');
+                                    $('#input_' + name).removeClass('input-error');
+                                    $('#error_' + name).hide().html('Bạn vui lòng nhập email');
+                                }
+                                else {
+                                    $('#error_' + name).show().html('Email đã tồn tại trong hệ thống');
+                                    $('#input_' + name).removeClass('valid').addClass('input-error');
+                                }
+                            }
+                        });
+                    }else{
+                        $('#input_' + name).addClass('valid');
+                        $('#input_' + name).removeClass('input-error');
+                        $('#error_' + name).hide().html('Bạn vui lòng nhập email');
+                    }
 
-                    var key = "user_email";
-                    $.ajax({
-                        method: "GET",
-                        url: link,
-                        data: "value=" + value + '&key=' + key,
-                        success: function (response) {
-                            if (response == 1) {
-                                $('#input_' + name).addClass('valid');
-                                $('#input_' + name).removeClass('input-error');
-                                $('#error_' + name).hide().html('Bạn vui lòng nhập email');
-                            }
-                            else {
-                                $('#error_' + name).show().html('Email đã tồn tại trong hệ thống');
-                                $('#input_' + name).removeClass('valid').addClass('input-error');
-                            }
-                        }
-                    });
                 }
                 else {
                     $('#error_' + name).show().html('Email không đúng định dạng');
@@ -293,6 +299,36 @@ function returnDefail(){
     $('#loading_save').hide();
 }
 
+$('body').on("click", '#create_tour', function () {
+    returnCreateTour()
+});
+
+function returnCreateTour(){
+    $('#input_name').val('').removeClass('input-error').removeClass('valid');
+    $('#input_email').val('').removeClass('input-error').removeClass('valid');
+    $('#input_phone').val('').removeClass('input-error').removeClass('valid');
+    //$('#input_address').val('').removeClass('input-error').removeClass('valid');
+    // tour
+    $('#input_name_tour').val('').removeClass('input-error').removeClass('valid');
+    $('#input_time_tour').val('').removeClass('input-error').removeClass('valid');
+    $('#input_khoi_hanh_address').val('').removeClass('input-error').removeClass('valid');
+    $('#input_khoi_hanh_date').val('').removeClass('input-error').removeClass('valid');
+
+    $('#error_name').hide().html('Bạn vui lòng nhập tên khách hàng');
+    $('#error_email').hide().html('Bạn vui lòng nhập email khách hàng');
+    $('#error_phone').hide().html('Bạn vui lòng nhập số điện thoại khách hàng');
+    //$('#error_address').hide().html('Bạn vui lòng nhập địa chỉ khách hàng');
+    // tour
+    $('#error_name_tour').hide().html('Bạn vui lòng nhập tên tour - điểm đến');
+    $('#error_time_tour').hide().html('Bạn vui lòng nhập thời gian');
+    $('#error_khoi_hanh_address').hide().html('Bạn vui lòng nhập điểm khởi hành');
+    $('#error_khoi_hanh_date').hide().html('Bạn vui lòng nhập ngày khởi hành');
+
+    $('#error_submit').hide().html('Tạo tour thất bại, bạn vui lòng nhấn Ctrl+f5 và thử lại');
+    $("#input_name").select();
+    $('.save_create_tour').show();
+    $('#loading_save').hide();
+}
 $('body').on("click", '.save_dangky', function () {
     var close=$(this).attr('data-value');
     var form_data = $("#signup-form").serializeArray();
@@ -371,7 +407,88 @@ $('body').on("click", '.save_dangky', function () {
     }
 
 });
+$('body').on("click", '.save_create_tour', function () {
+    showNotification('top', 'right', 4, 'Tạo tour thất bại, bạn vui lòng Ctrl+F5 và thử lại');
+    var close=$(this).attr('data-value');
+    var form_data = $("#create-tour-form").serializeArray();
+    var error_free = true;
+    for (var input in form_data) {
+        var name_input = form_data[input]['name'];
+        var element = $("#input_" + name_input);
+        var error = $("#error_" + name_input);
+        var valid = element.hasClass("valid");
+        if (valid === false) {
+            element.addClass("input-error").removeClass("valid");
+            error.show();
+            error_free = false;
+        }
 
+    }
+    if (error_free != false) {
+        var name=$('#input_name').val();
+        var email=$('#input_email').val();
+        var phone=$('#input_phone').val();
+        var address=$('#input_address').val();
+
+        var name_tour=$('#input_name_tour').val();
+        var time_tour=$('#input_time_tour').val();
+        var khoi_hanh_date=$('#input_khoi_hanh_date').val();
+        var khoi_hanh_address=$('#input_khoi_hanh_address').val();
+        var note=$('#note').val();
+        var user_tiep_thi=$('#user_tiep_thi').val();
+        var link=$('#site_name_manage_all').val() + '/azbooking-dang-ky.html';
+
+        if(name && email && phone && name_tour && time_tour && khoi_hanh_date && khoi_hanh_address){
+            $('#loading_save').show();
+            $('.save_dangky').hide();
+            $.ajax({
+                method: "POST",
+                url: link,
+                data:{
+                    email_dangky:email_dangky,
+                    username_dangky:username_dangky,
+                    phone:phone,
+                    address:address,
+                    password_dangky:password_dangky,
+                    confirm_password_dangky:confirm_password_dangky,
+                    type:1,
+                    user_tiep_thi:user_tiep_thi,
+                    confirm_res:1,
+                    mail_create:mail_create
+                },
+                success: function (response) {
+                    try {
+                        var response = $.parseJSON(response);
+                        //
+                        if (response.success == 1) {
+                            if(response.danhsach){
+                                $('#list-user').prepend(response.danhsach);
+                            }
+                            if(close==0){
+                                $('#myModal').modal('hide');
+                            }
+                            returnDefail()
+                        }
+                        else {
+                            $('#error_submit').show().html(response.mess);
+                            $('.save_dangky').show();
+                            $('#loading_save').hide();
+                        }
+                    }
+                    catch (err) {
+                        $('#error_submit').show().html('Tạo tài khoản thất bại, bạn vui lòng nhấn Ctrl+f5 và thử lại');
+                        $('.save_dangky').show();
+                        $('#loading_save').hide();
+                    }
+                }
+            });
+        }else{
+            showNotification('top', 'right', 4, 'Tạo tour thất bại, bạn vui lòng Ctrl+F5 và thử lại');
+        }
+
+    }
+
+});
 
 function showNotification(from, align, color, mess) {
 //        color = Math.floor((Math.random() * 4) + 1);

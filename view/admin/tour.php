@@ -163,9 +163,9 @@ th, td {
                                             <td></td>
                                             <td><b>Người lớn</b></td>
                                             <td>Tổng <i class="fa fa-dollar"></i>:&nbsp;
-                                            <input readonly="" name="total_dichvu" id="input_tong_tien_nguoi_lon"  value="' . (($form != false) ? $form->total_dichvu : '0 vnđ') . '" type="text" class="valid input_table width-input-150" >
+                                            <input readonly="" name="total_dichvu" id="input_tong_tien_nguoi_lon"  value="' . (($form != false) ? $form->total_dichvu : '0') . '" type="text" class="valid input_table width-input-150" >
                                             </td>
-                                            <td >SL khách:</br><input style="width: 50px" disabled name="total_khach" id="input_total_khach"  value="1" type="text" class="valid input_table"></td>
+                                            <td >SL khách:</br><input style="width: 50px"  name="num_nguoi_lon" id="input_total_khach"  value="' . (($form != false) ? $form->num_nguoi_lon : '1') . '" type="text" class="valid input_table"></td>
                                             <td>Giá NET/pax: <input  readonly="" name="gia_net" id="input_don_gia_net"   value="' . (($form != false) ? $form->gia_net : '0 vnđ') . '" type="text" class="valid input_table width-input-150"></td>
                                             <td>Lợi nhuận <span  id="price_loinhuan_format" class="price_format"></span>
                                             <input  name="loi_nhuan" min="0" id="input_loi_nhuan"  value="' . (($form != false) ? $form->loi_nhuan : '0') . '" type="number" class="valid input_table width-input-150">
@@ -178,7 +178,7 @@ th, td {
                                             <td></td>
                                             <td><b>Trẻ em m1</b></td>
                                             <td>Tỷ lệ %: <input  name="ty_le_m1" min="0" id="input_tyle_m1"  value="' . (($form != false) ? $form->ty_le_m1 : '0') . '" type="number" class="valid input_table width-input-150"></td>
-                                            <td >SL khách:</br><input style="width: 50px" disabled name="total_khach_m1" id="input_total_khach_m1"  value="1" type="text" class="valid input_table "></td>
+                                            <td >SL khách:</br><input style="width: 50px"  name="num_tre_em_m1" id="input_total_khach_m1"  value="' . (($form != false) ? $form->num_tre_em_m1 : '1') . '" type="text" class="valid input_table "></td>
                                             <td>Giá NET/pax: <input  readonly="" name="gia_net_m1" id="input_don_gia_net_m1"  value="' . (($form != false) ? $form->gia_net_m1 : '0 vnđ') . '" type="text" class="valid input_table width-input-150"></td>
                                             <td>Lợi nhuận <span  id="price_loinhuan_format_1" class="price_format"></span>
                                             <input  name="loi_nhuan_m1" min="0" id="input_loi_nhuan_m1"  value="' . (($form != false) ? $form->loi_nhuan_m1 : '0') . '" type="number" class="valid input_table width-input-150">
@@ -190,7 +190,7 @@ th, td {
                                             <td></td>
                                             <td><b>Trẻ em m2</b></td>
                                             <td>Tỷ lệ %: <input  name="ty_le_m2" min="0" id="input_tyle_m2" value="' . (($form != false) ? $form->ty_le_m2 : '0') . '" type="number" class="valid input_table width-input-150"></td>
-                                            <td >SL khách:</br><input style="width: 50px" disabled name="total_khach_m2" id="input_total_khach_m2" value="1" type="text" class="valid input_table"></td>
+                                            <td >SL khách:</br><input style="width: 50px"  name="num_tre_em_m2" id="input_total_khach_m2" value="' . (($form != false) ? $form->num_tre_em_m2 : '1') . '" type="text" class="valid input_table"></td>
                                             <td>Giá NET/pax: <input  readonly="" name="gia_net_m2" id="input_don_gia_net_m2"  value="' . (($form != false) ? $form->gia_net_m2 : '0 vnđ') . '" type="text" class="valid input_table width-input-150"></td>
                                             <td>Lợi nhuận <span  id="price_loinhuan_format_2" class="price_format"></span>
                                             <input  min="0" name="loi_nhuan_m2" id="input_loi_nhuan_m2"  value="' . (($form != false) ? $form->loi_nhuan_m2 : '0') . '" type="number" class="valid input_table width-input-150">
@@ -202,7 +202,7 @@ th, td {
                                             <td></td>
                                             <td><b>Trẻ em m3</b></td>
                                             <td>Tỷ lệ %: <input  name="ty_le_m3" min="0" id="input_tyle_m3" value="' . (($form != false) ? $form->ty_le_m3 : '0') . '" type="number" class="valid input_table width-input-150"></td>
-                                            <td >SL khách:</br><input style="width: 50px" disabled name="total_khach_m3" id="input_total_khach_m3" value="1" type="text" class="valid input_table "></td>
+                                            <td >SL khách:</br><input style="width: 50px"  name="num_tre_em_m3" id="input_total_khach_m3" value="' . (($form != false) ? $form->num_tre_em_m3 : '1') . '" type="text" class="valid input_table "></td>
                                             <td>Giá NET/pax: <input  readonly="" name="gia_net_m3" id="input_don_gia_net_m3"  value="' . (($form != false) ? $form->gia_net_m3 : '0 vnđ') . '" type="text" class="valid input_table width-input-150"></td>
                                             <td>Lợi nhuận <span  id="price_loinhuan_format_3" class="price_format"></span>
                                             <input min="0" name="loi_nhuan_m3" id="input_loi_nhuan_m3"  value="' . (($form != false) ? $form->loi_nhuan_m3 : '0') . '" type="number" class="valid input_table width-input-150">

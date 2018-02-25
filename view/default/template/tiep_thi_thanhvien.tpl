@@ -88,7 +88,7 @@
                         <div class="col-xs-12 col-sm-6 col-md-6 item_form_create">
                             <div class="form-group">
                                 <label>Email <span class="red_color">*</span></label>
-                                <input type="email" class="form-control valid-input" name="email" id="input_email" data-valid="required"  placeholder="Địa chỉ email...">
+                                <input type="email" class="form-control valid-input" name="email" data-check-unique="1" id="input_email" data-valid="required"  placeholder="Địa chỉ email...">
                                 <small id="error_email" class="hidden_error form-text text-muted red_color">Bạn vui lòng nhập email</small>
                             </div>
                         </div>
