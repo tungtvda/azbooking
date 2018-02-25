@@ -13,7 +13,8 @@
         </style>
         <div id="myModal" class="modal fade" role="dialog">
             <div class="modal-dialog" style="    margin-top: 20px;">
-                <input type="password" hidden  id="user_tiep_thi" name="user_tiep_thi" value="{user_tiep_thi}>">
+                <input hidden  id="user_tiep_thi" name="user_tiep_thi" value="{user_tiep_thi}>">
+                <input hidden  id="id_edit_tour_user" name="id_edit" value=">">
                 <!-- Modal content-->
                 <div class="modal-content">
                     <div class="modal-header">
@@ -28,8 +29,8 @@
                                     <div class="col-xs-12 col-sm-6 col-md-6 item_form_create">
                                         <div class="form-group">
                                             <label>Họ tên <span class="red_color">*</span></label>
-                                            <input type="text" class="form-control valid-input" name="name" id="input_name" data-valid="required"  placeholder="Tên khách hàng...">
-                                            <small id="error_name" class="hidden_error form-text text-muted red_color">Bạn vui lòng nhập tên khách hàng</small>
+                                            <input type="text" class="form-control valid-input" name="name_cus" id="input_name_cus" data-valid="required"  placeholder="Tên khách hàng...">
+                                            <small id="error_name_cus" class="hidden_error form-text text-muted red_color">Bạn vui lòng nhập tên khách hàng</small>
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-6 col-md-6 item_form_create">
@@ -44,14 +45,14 @@
                                     <div class="col-xs-12 col-sm-6 col-md-6 item_form_create" style="margin-bottom: 0px">
                                         <div class="form-group">
                                             <label>Điện thoại <span class="red_color">*</span></label>
-                                            <input type="text" class="form-control valid-input" name="phone" id="input_phone" data-valid="required" placeholder="Số điện thoại khách hàng...">
-                                            <small id="error_phone" class="hidden_error form-text text-muted red_color">Bạn vui lòng nhập số điện thoại khách hàng</small>
+                                            <input type="text" class="form-control valid-input" name="phone_cus" id="input_phone_cus" data-valid="required" placeholder="Số điện thoại khách hàng...">
+                                            <small id="error_phone_cus" class="hidden_error form-text text-muted red_color">Bạn vui lòng nhập số điện thoại khách hàng</small>
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-6 col-md-6 item_form_create" style="margin-bottom: 0px">
                                         <div class="form-group">
                                             <label for="">Địa chỉ </label>
-                                            <input type="text" class="form-control valid" name="address" id="input_address"  data-valid="required" placeholder="Địa chỉ khách hàng...">
+                                            <input type="text" class="form-control valid" name="address_cus" id="input_address_cus"  data-valid="required" placeholder="Địa chỉ khách hàng...">
                                             <!--<small id="error_address" class="hidden_error form-text text-muted red_color">Bạn vui lòng nhập địa chỉ</small>-->
                                         </div>
                                     </div>
@@ -97,8 +98,8 @@
                                         <div class="form-group">
                                             <label for="">Chương trình + phương tiện + khách sạn + ghi chú khác</label>
                                             <div class="form-group label-floating ">
-                                                    <textarea placeholder="Thông tin chi tiết chương trình tour, phương tiện, khách sạn, ghi chú khác..." class="form-control valid" rows="2" name="note"
-                                                              id="input_note"></textarea>
+                                                    <textarea placeholder="Thông tin chi tiết chương trình tour, phương tiện, khách sạn, ghi chú khác..." class="form-control valid" rows="2" name="note_tour"
+                                                              id="input_note_tour"></textarea>
                                                 <span class="material-input"></span></div>
                                         </div>
                                     </div>

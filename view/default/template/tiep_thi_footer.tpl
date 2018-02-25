@@ -392,10 +392,11 @@
     }
     show_date_tour_format();
     function show_date_tour_format() {
+        var currentDate = new Date();
         $('.datepicker_tour').datepicker({
-            format: 'dd/mm/yyyy',
-//            maxDate: '-1',
-            minDate: '+0'
+            format: 'dd-mm-yyyy',
+            setDate:'today',
+            minDate: '+0',
         });
     }
 

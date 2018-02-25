@@ -244,7 +244,7 @@ $('body').on("input", '.valid-input', function () {
                 var re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
                 var is_email = re.test(value);
                 if (is_email) {
-                    if($(this.attr('data-check-unique'))==1){
+                    if($(this).attr('data-check-unique')==1){
                         var link = $('#site_name_manage_all').val() + '/check-login.html';
                         var key = "user_email";
                         $.ajax({
@@ -279,6 +279,29 @@ $('body').on("input", '.valid-input', function () {
     }
 
 });
+
+// valid date
+$('body').on("change", '#input_khoi_hanh_date', function () {
+    returnDateValid('#input_khoi_hanh_date')
+});
+$('body').on("input", '#input_khoi_hanh_date', function () {
+    returnDateValid('#input_khoi_hanh_date')
+});
+function returnDateValid(attr_id){
+    var name = $(attr_id).attr('name');
+    var valid = $('#input_' + name).attr('data-valid');
+    if (valid == 'required') {
+        var value = $('#input_' + name).val();
+        if (value && name) {
+            $('#error_' + name).hide();
+            $('#input_' + name).addClass('valid');
+            $('#input_' + name).removeClass('input-error');
+        } else {
+            $('#error_' + name).show();
+            $('#input_' + name).removeClass('valid').addClass('input-error');
+        }
+    }
+}
 $('body').on("click", '#create_user', function () {
     returnDefail()
 });
@@ -304,6 +327,7 @@ $('body').on("click", '#create_tour', function () {
 });
 
 function returnCreateTour(){
+    $('#id_edit').val('');
     $('#input_name').val('').removeClass('input-error').removeClass('valid');
     $('#input_email').val('').removeClass('input-error').removeClass('valid');
     $('#input_phone').val('').removeClass('input-error').removeClass('valid');
@@ -408,7 +432,7 @@ $('body').on("click", '.save_dangky', function () {
 
 });
 $('body').on("click", '.save_create_tour', function () {
-    showNotification('top', 'right', 4, 'Tạo tour thất bại, bạn vui lòng Ctrl+F5 và thử lại');
+
     var close=$(this).attr('data-value');
     var form_data = $("#create-tour-form").serializeArray();
     var error_free = true;
@@ -425,59 +449,62 @@ $('body').on("click", '.save_create_tour', function () {
 
     }
     if (error_free != false) {
-        var name=$('#input_name').val();
+        var id_edit=$('#id_edit').val();
+        var name=$('#input_name_cus').val();
         var email=$('#input_email').val();
-        var phone=$('#input_phone').val();
-        var address=$('#input_address').val();
+        var phone=$('#input_phone_cus').val();
+        var address=$('#input_address_cus').val();
 
         var name_tour=$('#input_name_tour').val();
         var time_tour=$('#input_time_tour').val();
         var khoi_hanh_date=$('#input_khoi_hanh_date').val();
         var khoi_hanh_address=$('#input_khoi_hanh_address').val();
-        var note=$('#note').val();
+        var note=$('#input_note_tour').val();
         var user_tiep_thi=$('#user_tiep_thi').val();
-        var link=$('#site_name_manage_all').val() + '/azbooking-dang-ky.html';
+        var link=$('#site_name_manage_all').val() + '/azbooking-create-tour.html';
 
         if(name && email && phone && name_tour && time_tour && khoi_hanh_date && khoi_hanh_address){
             $('#loading_save').show();
-            $('.save_dangky').hide();
+            $('.save_create_tour').hide();
             $.ajax({
                 method: "POST",
                 url: link,
                 data:{
-                    email_dangky:email_dangky,
-                    username_dangky:username_dangky,
+                    name:name,
+                    id_edit:id_edit,
+                    email:email,
                     phone:phone,
                     address:address,
-                    password_dangky:password_dangky,
-                    confirm_password_dangky:confirm_password_dangky,
-                    type:1,
+                    name_tour:name_tour,
+                    time_tour:time_tour,
+                    khoi_hanh_date:khoi_hanh_date,
+                    khoi_hanh_address:khoi_hanh_address,
                     user_tiep_thi:user_tiep_thi,
-                    confirm_res:1,
-                    mail_create:mail_create
+                    note:note,
+                    status:0,
                 },
                 success: function (response) {
                     try {
                         var response = $.parseJSON(response);
-                        //
                         if (response.success == 1) {
+                            returnCreateTour();
+                            showNotification('top', 'right', 2, response.mess);
                             if(response.danhsach){
-                                $('#list-user').prepend(response.danhsach);
+                                $('#list-tour-user').prepend(response.danhsach);
                             }
                             if(close==0){
                                 $('#myModal').modal('hide');
                             }
-                            returnDefail()
                         }
                         else {
-                            $('#error_submit').show().html(response.mess);
-                            $('.save_dangky').show();
+                            showNotification('top', 'right', 4, response.mess);
+                            $('.save_create_tour').show();
                             $('#loading_save').hide();
                         }
                     }
                     catch (err) {
-                        $('#error_submit').show().html('Tạo tài khoản thất bại, bạn vui lòng nhấn Ctrl+f5 và thử lại');
-                        $('.save_dangky').show();
+                        showNotification('top', 'right', 4, 'Tạo tour thất bại, bạn vui lòng Ctrl+F5 và thử lại');
+                        $('.save_create_tour').show();
                         $('#loading_save').hide();
                     }
                 }
@@ -485,9 +512,33 @@ $('body').on("click", '.save_create_tour', function () {
         }else{
             showNotification('top', 'right', 4, 'Tạo tour thất bại, bạn vui lòng Ctrl+F5 và thử lại');
         }
-
+    }else{
+        showNotification('top', 'right', 4, 'Bạn vui lòng điền đầy đủ thông tin tạo tour');
     }
 
+});
+
+$('body').on("click", '.view-tour-user', function () {
+    $('#id_edit').val('');
+    $('#myModal').modal('hide');
+   var id=$(this).attr('data-id');
+   var name=$(this).attr('data-name');
+   if(id && name){
+       $('#id_edit').val(id);
+       $('#input_name_cus').val($('#name_cus_hidden_'+id).val());
+        $('#input_email').val($('#email_cus_hidden_'+id).val());
+       $('#input_phone_cus').val($('#phone_cus_hidden_'+id).val());
+       $('#input_address_cus').val($('#address_cus_hidden_'+id).val());
+
+       $('#input_name_tour').val($('#name_tour_hidden_'+id).val());
+       $('#input_time_tour').val($('#time_tour_hidden_'+id).val());
+       $('#input_khoi_hanh_date').val($('#date_tour_hidden_'+id).val());
+       $('#input_khoi_hanh_address').val($('#address_tour_hidden_'+id).val());
+       $('#input_note_tour').val($('#note_tour_hidden_'+id).val());
+       $('#myModal').modal('show');
+   }else{
+       showNotification('top', 'right', 4, 'Bạn không thể xem chi tiết tour, vui lòng Ctrl+F5 và thử lại');
+   }
 });
 
 function showNotification(from, align, color, mess) {
@@ -614,6 +665,10 @@ $('body').on("keyup", '#input_password_confirm', function () {
     checkUserPasswordConfirm();
 });
 
+// check pass
+$('body').on("input", '#input_password', function () {
+    checkUserPassword();
+});
 // check password
 function checkUserPassword() {
     var error_password_confirm = $("#error_password_confirm");
