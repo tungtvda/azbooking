@@ -114,7 +114,8 @@
                         </form>
 
                     </div>
-                    <div class="modal-footer" >
+                    <div class="modal-footer" id="btn_create_add_edit">
+                        <button class="btn btn-primary" id="complexConfirm">Click me</button>
                         <button style="background-color: #337ab7;border-color: #2e6da4;" type="button" class="btn btn-info save_create_tour" data-value="0">Lưu</button>
                         <button style="background-color: #337ab7;border-color: #2e6da4;" type="button" class="btn btn-info save_create_tour" data-value="1">Lưu & tạo mới</button>
                         <button style="background-color: #337ab7;border-color: #2e6da4;display: none" type="button" class="btn btn-info" id="loading_save">Đang gửi ...</button>

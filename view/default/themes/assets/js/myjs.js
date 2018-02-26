@@ -327,20 +327,22 @@ $('body').on("click", '#create_tour', function () {
 });
 
 function returnCreateTour(){
-    $('#id_edit').val('');
-    $('#input_name').val('').removeClass('input-error').removeClass('valid');
+    $('#btn_create_add_edit').show();
+    $('#id_edit_tour_user').val('');
+    $('#input_name_cus').val('').removeClass('input-error').removeClass('valid');
     $('#input_email').val('').removeClass('input-error').removeClass('valid');
-    $('#input_phone').val('').removeClass('input-error').removeClass('valid');
-    //$('#input_address').val('').removeClass('input-error').removeClass('valid');
+    $('#input_phone_cus').val('').removeClass('input-error').removeClass('valid');
+    $('#input_address_cus').val('');
     // tour
     $('#input_name_tour').val('').removeClass('input-error').removeClass('valid');
     $('#input_time_tour').val('').removeClass('input-error').removeClass('valid');
     $('#input_khoi_hanh_address').val('').removeClass('input-error').removeClass('valid');
     $('#input_khoi_hanh_date').val('').removeClass('input-error').removeClass('valid');
+    $('#input_note_tour').val('');
 
-    $('#error_name').hide().html('Bạn vui lòng nhập tên khách hàng');
+    $('#error_name_cus').hide().html('Bạn vui lòng nhập tên khách hàng');
     $('#error_email').hide().html('Bạn vui lòng nhập email khách hàng');
-    $('#error_phone').hide().html('Bạn vui lòng nhập số điện thoại khách hàng');
+    $('#error_phone_cus').hide().html('Bạn vui lòng nhập số điện thoại khách hàng');
     //$('#error_address').hide().html('Bạn vui lòng nhập địa chỉ khách hàng');
     // tour
     $('#error_name_tour').hide().html('Bạn vui lòng nhập tên tour - điểm đến');
@@ -432,7 +434,7 @@ $('body').on("click", '.save_dangky', function () {
 
 });
 $('body').on("click", '.save_create_tour', function () {
-
+    var id_edit=$('#id_edit_tour_user').val();
     var close=$(this).attr('data-value');
     var form_data = $("#create-tour-form").serializeArray();
     var error_free = true;
@@ -449,7 +451,6 @@ $('body').on("click", '.save_create_tour', function () {
 
     }
     if (error_free != false) {
-        var id_edit=$('#id_edit').val();
         var name=$('#input_name_cus').val();
         var email=$('#input_email').val();
         var phone=$('#input_phone_cus').val();
@@ -490,6 +491,9 @@ $('body').on("click", '.save_create_tour', function () {
                             returnCreateTour();
                             showNotification('top', 'right', 2, response.mess);
                             if(response.danhsach){
+                                if(id_edit){
+                                    $('#tr-tour-'+id_edit).remove();
+                                }
                                 $('#list-tour-user').prepend(response.danhsach);
                             }
                             if(close==0){
@@ -503,44 +507,74 @@ $('body').on("click", '.save_create_tour', function () {
                         }
                     }
                     catch (err) {
-                        showNotification('top', 'right', 4, 'Tạo tour thất bại, bạn vui lòng Ctrl+F5 và thử lại');
+                        if(id_edit){
+                            showNotification('top', 'right', 4, 'Sửa tour thất bại, bạn vui lòng Ctrl+F5 và thử lại');
+                        }else{
+                            showNotification('top', 'right', 4, 'Tạo tour thất bại, bạn vui lòng Ctrl+F5 và thử lại');
+                        }
+
                         $('.save_create_tour').show();
                         $('#loading_save').hide();
                     }
                 }
             });
         }else{
-            showNotification('top', 'right', 4, 'Tạo tour thất bại, bạn vui lòng Ctrl+F5 và thử lại');
+            if(id_edit){
+                showNotification('top', 'right', 4, 'Sửa tour thất bại, bạn vui lòng Ctrl+F5 và thử lại');
+            }else{
+                showNotification('top', 'right', 4, 'Tạo tour thất bại, bạn vui lòng Ctrl+F5 và thử lại');
+            }
+
         }
     }else{
-        showNotification('top', 'right', 4, 'Bạn vui lòng điền đầy đủ thông tin tạo tour');
+        if(id_edit){
+            showNotification('top', 'right', 4, 'Bạn vui lòng điền đầy đủ thông tin sửa tour');
+        }else{
+            showNotification('top', 'right', 4, 'Bạn vui lòng điền đầy đủ thông tin tạo tour');
+        }
     }
 
 });
 
 $('body').on("click", '.view-tour-user', function () {
-    $('#id_edit').val('');
+    returnCreateTour();
+    $('#id_edit_tour_user').val('');
     $('#myModal').modal('hide');
    var id=$(this).attr('data-id');
    var name=$(this).attr('data-name');
    if(id && name){
-       $('#id_edit').val(id);
-       $('#input_name_cus').val($('#name_cus_hidden_'+id).val());
-        $('#input_email').val($('#email_cus_hidden_'+id).val());
-       $('#input_phone_cus').val($('#phone_cus_hidden_'+id).val());
+       $('#id_edit_tour_user').val(id);
+       $('#input_name_cus').val($('#name_cus_hidden_'+id).val()).addClass('valid');
+        $('#input_email').val($('#email_cus_hidden_'+id).val()).addClass('valid');
+       $('#input_phone_cus').val($('#phone_cus_hidden_'+id).val()).addClass('valid');
        $('#input_address_cus').val($('#address_cus_hidden_'+id).val());
 
-       $('#input_name_tour').val($('#name_tour_hidden_'+id).val());
-       $('#input_time_tour').val($('#time_tour_hidden_'+id).val());
-       $('#input_khoi_hanh_date').val($('#date_tour_hidden_'+id).val());
-       $('#input_khoi_hanh_address').val($('#address_tour_hidden_'+id).val());
+       $('#input_name_tour').val($('#name_tour_hidden_'+id).val()).addClass('valid');
+       $('#input_time_tour').val($('#time_tour_hidden_'+id).val()).addClass('valid');
+       $('#input_khoi_hanh_date').val($('#date_tour_hidden_'+id).val()).addClass('valid');
+       $('#input_khoi_hanh_address').val($('#address_tour_hidden_'+id).val()).addClass('valid');
        $('#input_note_tour').val($('#note_tour_hidden_'+id).val());
+       if($('#status_update_hidden_'+id).val()!=0){
+           $('#btn_create_add_edit').hide();
+       }
        $('#myModal').modal('show');
    }else{
        showNotification('top', 'right', 4, 'Bạn không thể xem chi tiết tour, vui lòng Ctrl+F5 và thử lại');
    }
 });
 
+// remove tour
+$(".delete-tour-user").confirm({
+    title:"Xác nhận xóa",
+    text:'Bạn có chắc chắn muốn xóa tour "'+$(this).attr('data-name')+'"',
+    confirm: function(button) {
+        console.log()
+    },
+    cancel: function(button) {
+    },
+    confirmButton: "Xác nhận",
+    cancelButton: "Hủy"
+});
 function showNotification(from, align, color, mess) {
 //        color = Math.floor((Math.random() * 4) + 1);
     $.notify({

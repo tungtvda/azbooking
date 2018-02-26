@@ -46,6 +46,7 @@ function show_tiepthi_tour_user($data = array())
             $lien_he.=' <input hidden value="'.$row['name_cus'].'" id="name_cus_hidden_'.$row['id'].'">';
             $lien_he.=' <input hidden value="'.$row['phone_cus'].'" id="phone_cus_hidden_'.$row['id'].'">';
             $lien_he.=' <input hidden value="'.$row['address_cus'].'" id="address_cus_hidden_'.$row['id'].'">';
+            $lien_he.=' <input hidden value="'.$row['status'].'" id="status_update_hidden_'.$row['id'].'">';
 
             $tour='';
             if($row['name_tour']!=''){
@@ -68,7 +69,7 @@ function show_tiepthi_tour_user($data = array())
             $tour.='<input hidden value="'.$date.'" id="date_tour_hidden_'.$row['id'].'">';
             $tour.='<input hidden value="'.$row['note_tour'].'" id="note_tour_hidden_'.$row['id'].'">';
 
-            $asign['danhsach'] .= '<tr>
+            $asign['danhsach'] .= '<tr id="tr-tour-'.$row['id'].'">
             <td >'.$dem.'</td>
              <td class="lienhe_thanhvien">'.$tour.'</td>
             <td class="lienhe_thanhvien">'.$lien_he.'</td>
@@ -76,8 +77,8 @@ function show_tiepthi_tour_user($data = array())
             <td>'.$status.'</td>
             <td>
             <a data-name="'.$row['name_tour'].'" data-id="'.$row['id'].'" rel="tooltip" data-original-title="Xem chi tiết"  style="margin-right: 5px; padding: 10px 9px; background-color: #337ab7;border-color: #2e6da4;" class="btn btn-primary view-tour-user">
-            <i data-name="'.$row['name_tour'].'" data-id="'.$row['id'].'" style="background:none" class="fa fa-eye"></i></a>
-            <a rel="tooltip" data-original-title="Xóa" href="javascript:void(0)" class="btn btn-danger">
+            <i style="background:none" class="fa fa-eye"></i></a>
+            <a data-name="'.$row['name_tour'].'" data-id="'.$row['id'].'"  rel="tooltip" data-original-title="Xóa" href="javascript:void(0)" class="btn btn-danger delete-tour-user">
                 <i style="background:none" class="fa fa-trash"></i>
             </a>
             </td>

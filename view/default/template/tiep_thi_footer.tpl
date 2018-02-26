@@ -210,13 +210,14 @@
 <!-- Material Dashboard DEMO methods, don't include it in your project! -->
 <script src="{SITE-NAME}/view/default/themes/assets/js/demo.js"></script>
 <script src="{SITE-NAME}/view/default/themes/assets/js/fileinput.min.js"></script>
-
+<script src="{SITE-NAME}/view/default/themes/assets/js/jquery.confirm.js"></script>
 <script src="{SITE-NAME}/view/default/themes/assets/js/myjs.js"></script>
 <script src="{SITE-NAME}/view/default/themes/calendar/dist/moment.min.js"></script>
 <script type="text/javascript"
         src="{SITE-NAME}/view/default/themes/js/jquery.timeago.js"></script>
 <script type="text/javascript"
         src="{SITE-NAME}/view/default/themes/assets/js/chat.js"></script>
+
 <script>
     $contentLoadTriggered = false;
 
