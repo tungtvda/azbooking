@@ -10,8 +10,8 @@
         @session_start();
         $UserName=$_POST["UserName"];
         $Pass=hash_pass($_POST["Pass"]);
-        $_SESSION["Admin"]='admin';
-        header('Location: '.SITE_NAME.'/controller/admin/index.php');
+//        $_SESSION["Admin"]='admin';
+//        header('Location: '.SITE_NAME.'/controller/admin/index.php');
         if(checkLogin($UserName)&&checkLogin($Pass))
         {
             $result=admin_Get("select * from admin where TenDangNhap='".$UserName."' and MatKhau='".$Pass."'");
