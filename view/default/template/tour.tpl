@@ -93,7 +93,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="awe-services"><h2>Tin tức</h2>
+                <div class="awe-services"><h2><a href="{SITE-NAME}/cam-nang/">Tin tức</a> </h2>
                     <ul class="awe-services__list">
                         {tintuc_index}
                     </ul>

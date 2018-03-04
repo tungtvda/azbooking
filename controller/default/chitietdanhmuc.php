@@ -70,8 +70,6 @@ if(isset($_GET['Id_sub'])&&$_GET['Id_sub']!=''){
             $data['danhsach']=$arr_push_rest;
 //            print_r($arr_push_rest);
 //            exit;
-
-
             $data['PAGING'] = showPagingAtLink($data['count'], $data['pagesize'], $data['current'], '' . SITE_NAME . $link.$danhmuc_1[0]->name_url.'/'.$danhmuc2[0]->name_url.'/');
             $name=$danhmuc2[0]->name;
             $data['banner']=array(
@@ -171,9 +169,6 @@ else{
             $data['tour_PROMOTIONS']=tour_getByTop(9,'promotion=1 and DanhMuc1Id='.$danhmuc[0]->id,'id desc');
             $data['tour_sales']=tour_getByTop(9,'price_sales!="" and DanhMuc1Id='.$danhmuc[0]->id,'id desc');
         }
-
-
-
     }
     else{
         $link_action=$_SERVER['REQUEST_URI'];

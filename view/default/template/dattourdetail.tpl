@@ -316,9 +316,13 @@
                                                         <td class="with_td_left"><i class="fa fa-pencil-square-o"></i>
                                                             Tổng số khách:
                                                         </td>
-                                                        <td style="font-weight: bold"><a>{total_cus}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {name_price}
-                                                            : {num_nguoi_lon} -  {name_price_2}: {num_tre_em}
-                                                            - {name_price_3}: {num_tre_em_5}</td>
+                                                        <td style="font-weight: bold">
+                                                            <p><a>Số người: {total_cus}</a></p>
+                                                            <p>Người lớn {name_price}: {num_nguoi_lon}</p>
+                                                            <p>Trẻ em {name_price_2}: {num_tre_em_m1}</p>
+                                                            <p>Trẻ em {name_price_3}: {num_tre_em_m2}</p>
+                                                            <p>Trẻ em {name_price_4}: {num_tre_em_m3}</p>
+                                                        </td>
                                                     </tr>
 
                                                 </table>
@@ -341,7 +345,7 @@
                                                             <th>Độ tuổi</th>
                                                             <!--<th>Số Passport</th>
                                                             <th>Ngày hết hạn</th>-->
-                                                            <th>Đơn giá <i class="fa fa-sort-amount-desc "></i></th>
+                                                            <!--<th>Đơn giá <i class="fa fa-sort-amount-desc "></i></th>-->
                                                         </tr>
                                                         </thead>
                                                         <tbody class="show_hide_table">

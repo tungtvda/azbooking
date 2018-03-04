@@ -20,6 +20,13 @@ RewriteRule ^tour/$ controller/default/tour.php
 #RewriteRule ^tour/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ controller/default/chitiettour.php?Id=$1&Id_sub=$2&name_url=$3
 #
 
+RewriteRule ^tour-theo-chu-de/$ controller/default/danhmucchude.php
+RewriteRule ^tour-theo-chu-de/page-([0-9]+)$ controller/default/danhmucchude.php?page=$1
+
+RewriteRule ^tour-theo-chu-de/([a-zA-Z0-9_-]+)/$ controller/default/danhmucchude.php?Id=$1
+RewriteRule ^tour-theo-chu-de/([a-zA-Z0-9_-]+)/page-([0-9]+)$ controller/default/danhmucchude.php?Id=$1&page=$2
+
+
 RewriteRule ^tour-du-lich-trong-nuoc/$ controller/default/chitietdanhmuc.php
 RewriteRule ^tour-du-lich-trong-nuoc/page-([0-9]+)$ controller/default/chitietdanhmuc.php?page=$1
 RewriteRule ^tour-du-lich-trong-nuoc/([a-zA-Z0-9_-]+)/$ controller/default/chitietdanhmuc.php?Id=$1

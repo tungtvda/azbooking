@@ -488,25 +488,63 @@ Không thể liên kết thẻ tiếp thị lại với thông tin nhận dạng
                             </div>
 
                         </div>
+
                     </div>
                 </div>
 
+                <div class="section " style="padding:0px 0 0px; background-color:#F6F6F6">
+                    <div class="section_wrapper clearfix">
+                        <div style="float: left; width: 100%; padding: 10px;" class="list_chinhsach">
+                            <div style="float: left; width: 33.3%">
+                                <p><a href="{SITE-NAME}/info/chinh-sach-quy-dinh-chung.html">- {quydinh}</a></p>
+                                <p><a href="{SITE-NAME}/info/chinh-sach-bao-mat-thong-tin.html">- {baomat}</a></p>
+                            </div>
+                            <div style="float: left; width: 33.3%">
+                                <p><a href="{SITE-NAME}/info/hinh-thuc-thanh-toan.html">- {thanhtoan}</p>
+                                <p><a href="{SITE-NAME}/info/quy-dinh-doi-tra.html">- {doitra}</a></p>
+                            </div>
+                            <div style="float: left; width: 33.3%">
+                                <p><a href="{SITE-NAME}/info/chinh-sach-quy-trinh-xu-ly-khieu-nai.html">- {khieunai}</a></p>
+                                <p><a href="{SITE-NAME}/info/chinh-sach-van-chuyen-giao-nhan.html">- {giaonhan}</a></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <style>
+                    .list_chinhsach p{
+                        margin: 0px;
+                        padding: 10px;
+                    }
+                </style>
 
             </div>
             <!-- .four-columns - sidebar -->
         </div>
+
     </div>
 
 
     <!-- #Footer -->
+
     <footer id="Footer" class="clearfix">
         <div class="copyrights">
             <div class="container">
                 <div class="column one">
-                    <p>
-                        &copy; 2016
-                        Created by <a href="http://azbooking.vn">AZBOOKING.VN</a>.
-                    </p>
+                    <div class="col-md-3" style="float: left; width: 30%;     padding-top: 20px;">
+                        <p>
+                            &copy; 2016
+                            Created by <a href="http://azbooking.vn">AZBOOKING.VN</a>.
+                        </p>
+                    </div>
+                    <div class="col-md-6" style="float: left; width: 70%; color: #ffffff">
+                        <div style="float: left; width: 70%;     padding-top: 20px;">
+                            Mã số thuế 0105801085. Số giấy phép: 01-728/2015/ TCDL - GPLHQT
+                        </div>
+                        <div style="float: left; width: 30%;     text-align: left;">
+                            <a href="http://online.gov.vn/HomePage/CustomWebsiteDisplay.aspx?DocId=36900" target="_blank"><img src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/cauhinh/da-thong-bao-bo-cong-thuong-azbooking.png" style="width:150px"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -2,7 +2,7 @@
 
 class tour
 {
-    public $id,$dieuhanh_id, $tour_quoc_te, $DanhMuc1Id, $DanhMuc2Id, $danhmuc_multi, $promotion, $packages, $name, $name_url, $count_down, $code, $img,$price_tiep_thi, $price_sales, $price, $price_2, $price_3, $price_4, $price_5, $price_6, $price_number, $price_number_2, $price_number_3, $price_number_4, $price_number_5, $price_number_6, $name_price, $name_price_2, $name_price_3, $name_price_4, $name_price_5, $name_price_6, $so_cho, $durations, $departure, $departure_time, $destination, $vehicle, $hotel, $summary, $highlights, $schedule, $price_list, $content, $list_img, $title, $keyword, $description, $inclusion, $exclusion, $updated;
+    public $id,$dieuhanh_id, $tour_quoc_te, $DanhMuc1Id, $DanhMuc2Id, $danhmuc_chude_id,$danhmuc_multi, $promotion, $packages, $name, $name_url, $count_down, $code, $img,$price_tiep_thi, $price_sales, $price, $price_2, $price_3, $price_4, $price_5, $price_6, $price_number, $price_number_2, $price_number_3, $price_number_4, $price_number_5, $price_number_6, $name_price, $name_price_2, $name_price_3, $name_price_4, $name_price_5, $name_price_6, $so_cho, $durations, $departure, $departure_time, $destination, $vehicle, $hotel, $summary, $highlights, $schedule, $price_list, $content, $list_img, $title, $keyword, $description, $inclusion, $exclusion, $updated;
 
     public function tour($data = array())
     {
@@ -11,6 +11,7 @@ class tour
         $this->tour_quoc_te = isset($data['tour_quoc_te']) ? $data['tour_quoc_te'] : '';
         $this->DanhMuc1Id = isset($data['DanhMuc1Id']) ? $data['DanhMuc1Id'] : '';
         $this->DanhMuc2Id = isset($data['DanhMuc2Id']) ? $data['DanhMuc2Id'] : '';
+        $this->danhmuc_chude_id = isset($data['danhmuc_chude_id']) ? $data['danhmuc_chude_id'] : '';
         $this->danhmuc_multi = isset($data['danhmuc_multi']) ? $data['danhmuc_multi'] : '';
         $this->promotion = isset($data['promotion']) ? $data['promotion'] : '';
         $this->packages = isset($data['packages']) ? $data['packages'] : '';
@@ -68,6 +69,7 @@ class tour
         $this->tour_quoc_te = addslashes($this->tour_quoc_te);
         $this->DanhMuc1Id = addslashes($this->DanhMuc1Id);
         $this->DanhMuc2Id = addslashes($this->DanhMuc2Id);
+        $this->danhmuc_chude_id = addslashes($this->danhmuc_chude_id);
         $this->danhmuc_multi = addslashes($this->danhmuc_multi);
         $this->promotion = addslashes($this->promotion);
         $this->packages = addslashes($this->packages);
@@ -124,6 +126,7 @@ class tour
         $this->tour_quoc_te = stripslashes($this->tour_quoc_te);
         $this->DanhMuc1Id = stripslashes($this->DanhMuc1Id);
         $this->DanhMuc2Id = stripslashes($this->DanhMuc2Id);
+        $this->danhmuc_chude_id = addslashes($this->danhmuc_chude_id);
         $this->danhmuc_multi = stripslashes($this->danhmuc_multi);
         $this->promotion = stripslashes($this->promotion);
         $this->packages = stripslashes($this->packages);

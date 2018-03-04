@@ -448,6 +448,14 @@ function link_dm_tour1($app)
     }
     return SITE_NAME.$link.$app->name_url.'/';
 }
+
+function link_dm_chude($app)
+{
+
+    $link='/tour-theo-chu-de/';
+
+    return SITE_NAME.$link.$app->name_url.'/';
+}
 function link_dm_tour2($app, $name_url, $tour_quoc_te=0)
 {
     if($tour_quoc_te==0){

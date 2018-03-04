@@ -115,6 +115,7 @@ function show_menu($data1=array(),$active='trangchu')
     $data['active']=$active;
     $data['menu']=$data1['menu'];
     $data['danhmuc_menu']=danhmuc_1_getByTop('','id!=1','position asc');
+    $data['danhmuc_chude']=danhmuc_chude_getByTop('','id!=1','position asc');
     $data['danhmuc_khachsan']=danhmuc_khachsan_getByTop('','id!=1','position asc');
     $data['danhmuc_tintuc']=danhmuc_tintuc_getByTop('','','position asc');
     $data['danhmuc_menu']=danhmuc_1_getByTop('','id!=1 and tour_quoc_te=0','position asc');

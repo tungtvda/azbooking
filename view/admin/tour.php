@@ -34,7 +34,7 @@ function view_tour($data)
 //
 function showTableHeader()
 {
-    return '<th>id</th><th>Điều hành</th><th>Quốc tế</th><th>DanhMuc1Id</th><th>DanhMuc2Id</th><th>promotion</th><th>packages</th><th>name</th><th>code</th><th>img</th><th>Hoa hồng</th><th>price_sales</th><th>price</th>';
+    return '<th>id</th><th>Điều hành</th><th>Quốc tế</th><th>DanhMuc1Id</th><th>DanhMuc2Id</th><th>name</th><th>code</th><th>img</th><th>Hoa hồng</th><th>price_sales</th><th>price</th>';
 }
 //
 function showTableBody($data)
@@ -57,8 +57,6 @@ function showTableBody($data)
         $TableBody.="<td>".$obj->tour_quoc_te."</td>";
         $TableBody.="<td>".$obj->DanhMuc1Id."</td>";
         $TableBody.="<td>".$obj->DanhMuc2Id."</td>";
-        $TableBody.="<td>".$obj->promotion."</td>";
-        $TableBody.="<td>".$obj->packages."</td>";
         $TableBody.="<td>".$obj->name."</td>";
         $TableBody.="<td>".$obj->code."</td>";
         $TableBody.="<td><img src=\"".$obj->img."\" width=\"50px\" height=\"50px\"/> </td>";
@@ -128,6 +126,31 @@ function showFrom($form,$ListKey=array())
     else
     {
         $str_from .= '<option value="1">Chọn danh mục cấp 2</option>';
+    }
+    $str_from.='</select></p>';
+    $str_from.='<p><label>Chọn danh mục theo chủ đề</label>';
+    $str_from.='<select name="danhmuc_chude_id" id="danhmuc_chude_id">';
+    if($form!=false)
+    {
+        if(isset($ListKey['danhmuc_chude_id']))
+        {
+//            print_r($form);exit;
+            foreach($ListKey['danhmuc_chude_id'] as $key)
+            {
+                $str_from.='<option value="'.$key->id.'" '.(($form!=false)?(($form->danhmuc_chude_id==$key->id)?'selected':''):'').'>'.$key->name.'</option>';
+            }
+        }
+    }
+    else
+    {
+
+        if(isset($ListKey['danhmuc_chude_id']))
+        {
+            foreach($ListKey['danhmuc_chude_id'] as $key)
+            {
+                $str_from.='<option value="'.$key->id.'" '.(($form!=false)?(($form->danhmuc_chude_id==$key->id)?'selected':''):'').'>'.$key->name.'</option>';
+            }
+        }
     }
     $str_from.='</select></p>';
     $str_from.='<p><label>promotion</label><input  type="checkbox"  name="promotion" value="1" '.(($form!=false)?(($form->promotion=='1')?'checked':''):'').' /></p>';

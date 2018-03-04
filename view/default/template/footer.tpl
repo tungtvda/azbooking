@@ -73,7 +73,22 @@
                 </div>
             </div>
         </div>
-        <div class="copyright"><p>©2016 . <a href="{SITE-NAME}">Azbooking.vn</a></p></div>
+        <div class="copyright">
+            <div class="col-md-3" style="float: left; width: 30%;     padding-top: 20px;">
+                <p>
+                    &copy; 2016
+                    Created by <a href="http://azbooking.vn">AZBOOKING.VN</a>.
+                </p>
+            </div>
+            <div class="col-md-6" style="float: left; width: 70%; color: #ffffff">
+                <div style="float: left; width: 70%;     padding-top: 20px;">
+                    Mã số thuế 0105801085. Số giấy phép: 01-728/2015/ TCDL - GPLHQT
+                </div>
+                <div style="float: left; width: 30%;     text-align: left;">
+                    <a href="http://online.gov.vn/HomePage/CustomWebsiteDisplay.aspx?DocId=36900" target="_blank"><img src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/cauhinh/da-thong-bao-bo-cong-thuong-azbooking.png" style="width:150px"></a>
+                </div>
+            </div>
+        </div>
     </div>
     <div hidden class="row-footer">
 
@@ -908,11 +923,14 @@
     $('body').on("blur", '#input_num_nguoi_lon', function () {
         returnDanhSachDoan('#input_num_nguoi_lon');
     });
-    $('body').on("blur", '#input_num_tre_em', function () {
-        returnDanhSachDoan('#input_num_tre_em');
+    $('body').on("blur", '#input_num_tre_em_m1', function () {
+        returnDanhSachDoan('#input_num_tre_em_m1');
     });
-    $('body').on("blur", '#input_num_tre_em_5', function () {
-        returnDanhSachDoan('#input_num_tre_em_5');
+    $('body').on("blur", '#input_num_tre_em_m2', function () {
+        returnDanhSachDoan('#input_num_tre_em_m2');
+    });
+    $('body').on("blur", '#input_num_tre_em_m3', function () {
+        returnDanhSachDoan('#input_num_tre_em_m3');
     });
     $('body').on("click", '.httt_check', function () {
         var class_name = $(this).attr('name_value');
@@ -1006,8 +1024,12 @@
         var value = $(id_field).val();
         var id = $(id_field).attr('id_title');
         var name_1 = $('#input_num_nguoi_lon').attr('name_title');
-        var name_2 = $('#input_num_tre_em').attr('name_title');
-        var name_3 = $('#input_num_tre_em_5').attr('name_title');
+        if(name_1==''){
+            name_1='Người lớn';
+        }
+        var name_2 ='Trẻ em '+ $('#input_num_tre_em_m1').attr('name_title');
+        var name_3 ='Trẻ em '+ $('#input_num_tre_em_m2').attr('name_title');
+        var name_4 ='Trẻ em '+ $('#input_num_tre_em_m3').attr('name_title');
         if (value == '') {
             if (id == 1) {
                 $(id_field).val(1);
@@ -1020,11 +1042,12 @@
             $(id_field).val(1);
         }
         var numbe_1 = parseInt($('#input_num_nguoi_lon').val());
-        var numbe_2 = parseInt($('#input_num_tre_em').val());
-        var numbe_3 = parseInt($('#input_num_tre_em_5').val());
+        var numbe_2 = parseInt($('#input_num_tre_em_m1').val());
+        var numbe_3 = parseInt($('#input_num_tre_em_m2').val());
+        var numbe_4 = parseInt($('#input_num_tre_em_m3').val());
         var so_cho = $('#input_so_cho').val();
         var check_show_table = true;
-        var total = numbe_1 + numbe_2 + numbe_3;
+        var total = numbe_1 + numbe_2 + numbe_3+numbe_4;
         $('#input_total_num').val(total);
         if (so_cho != undefined) {
             so_cho = parseInt(so_cho);
@@ -1052,6 +1075,10 @@
         if (price_3 === '' || price_3 === 0) {
             price_3 == price
         }
+        var price_4 = $('#input_price_4').val();
+        if (price_4 === '' || price_4 === 0) {
+            price_4 == price
+        }
         var total_nguoi_lon = 0;
         var ti_le_nguoi_lon = '';
         if (check_show_table == true) {
@@ -1064,48 +1091,48 @@
                     var price_item = price.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.") + ' vnđ';
                     total_nguoi_lon = price * numbe_1;
                 }
-                if (numbe_1 > 1) {
-                    var price_in_array = $('#input_price_nguoi_lon_' + numbe_1).val();
-                    if (price_in_array != undefined) {
-                        if (price_in_array === 'Liên hệ') {
-                            total_nguoi_lon = 'Liên hệ'
-                        } else {
-                            price_item = price_in_array.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.") + ' vnđ';
-                            total_nguoi_lon = (price_in_array * numbe_1);
-
-                            ti_le_nguoi_lon = ((price - price_in_array) / price) * 100;
-                            ti_le_nguoi_lon = Math.round(ti_le_nguoi_lon);
-                            if (ti_le_nguoi_lon != 0) {
-                                ti_le_nguoi_lon = '(<i class="fa fa-long-arrow-down"></i>' + ti_le_nguoi_lon + '%)';
-                            } else {
-                                ti_le_nguoi_lon = '';
-                            }
-
-
-                        }
-                    } else {
-                        var price_tu = $('#input_price_nguoi_lon_tu').val();
-                        if (price_tu != undefined) {
-                            if (parseInt(numbe_1) >= parseInt(price_tu)) {
-                                var price_in_array = $('#input_price_nguoi_lon_lon_hon_' + price_tu).val();
-                                if (price_in_array === 'Liên hệ') {
-                                    total_nguoi_lon = 'Liên hệ'
-                                } else {
-                                    price_item = price_in_array.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.") + ' vnđ';
-                                    total_nguoi_lon = (price_in_array * numbe_1);
-
-                                    ti_le_nguoi_lon = ((price - price_in_array) / price) * 100;
-                                    ti_le_nguoi_lon = Math.round(ti_le_nguoi_lon);
-                                    if (ti_le_nguoi_lon != 0) {
-                                        ti_le_nguoi_lon = '(<i class="fa fa-long-arrow-down"></i>' + ti_le_nguoi_lon + '%)';
-                                    } else {
-                                        ti_le_nguoi_lon = '';
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+                //if (numbe_1 > 1) {
+//    var price_in_array = $('#input_price_nguoi_lon_' + numbe_1).val();
+//    if (price_in_array != undefined) {
+//        if (price_in_array === 'Liên hệ') {
+//            total_nguoi_lon = 'Liên hệ'
+//                        } else {
+//            price_item = price_in_array.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.") + ' vnđ';
+//                            total_nguoi_lon = (price_in_array * numbe_1);
+//
+//                            ti_le_nguoi_lon = ((price - price_in_array) / price) * 100;
+//                            ti_le_nguoi_lon = Math.round(ti_le_nguoi_lon);
+//                            if (ti_le_nguoi_lon != 0) {
+//                                ti_le_nguoi_lon = '(<i class="fa fa-long-arrow-down"></i>' + ti_le_nguoi_lon + '%)';
+//                            } else {
+//                                ti_le_nguoi_lon = '';
+//                            }
+//
+//
+//                        }
+//    } else {
+//        var price_tu = $('#input_price_nguoi_lon_tu').val();
+//        if (price_tu != undefined) {
+//            if (parseInt(numbe_1) >= parseInt(price_tu)) {
+//                var price_in_array = $('#input_price_nguoi_lon_lon_hon_' + price_tu).val();
+//                if (price_in_array === 'Liên hệ') {
+//                    total_nguoi_lon = 'Liên hệ'
+//                                } else {
+//                    price_item = price_in_array.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.") + ' vnđ';
+//                                    total_nguoi_lon = (price_in_array * numbe_1);
+//
+//                                    ti_le_nguoi_lon = ((price - price_in_array) / price) * 100;
+//                                    ti_le_nguoi_lon = Math.round(ti_le_nguoi_lon);
+//                                    if (ti_le_nguoi_lon != 0) {
+//                                        ti_le_nguoi_lon = '(<i class="fa fa-long-arrow-down"></i>' + ti_le_nguoi_lon + '%)';
+//                                    } else {
+//                                        ti_le_nguoi_lon = '';
+//                                    }
+//                                }
+//            }
+//        }
+//    }
+//}
                 for (var i = 1; i <= numbe_1; i++) {
                     row = row + '<tr id="row_customer_' + stt + '"><td class="center stt_cus">' + stt + '</td>' +
                             '<td><input style="height: 30px" name="name_customer_sub[]" id="input_name_customer_sub_' + stt + '" type="text"class="valid input_table"></td>' +
@@ -1118,7 +1145,7 @@
                             '<input hidden value="' + name_1 + '"  style="height: 30px" name="tuoi_customer[]" id="input_tuoi_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;">' + name_1 + '</span></td>' +
 //                            '<td><input style="height: 30px" name="passport_customer[]" id="input_passport_customer_' + stt + '" type="text" class="valid input_table "></td>' +
 //                            '<td><input style="height: 30px" name="date_passport_customer[]" id="input_date_passport_customer_' + stt + '" type="date" class="valid input_table datepicker"></td>' +
-                            '<td style="width: 130px"><input hidden value=""  style="height: 30px" name="dongia_customer[]" id="input_dongia_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;color: red">' + price_item + ' ' + ti_le_nguoi_lon + '</span></td>' +
+//                            '<td style="width: 130px"><input hidden value=""  style="height: 30px" name="dongia_customer[]" id="input_dongia_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;color: red">' + price_item + ' ' + ti_le_nguoi_lon + '</span></td>' +
                             '</tr>';
                     stt = stt + 1;
                 }
@@ -1133,46 +1160,46 @@
                     var price_item = price_2.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.") + ' vnđ';
                     total_tre_em_511 = price_2 * numbe_2;
                 }
-                if (numbe_2 > 1) {
-                    var price_in_array = $('#input_price_tre_em_511_' + numbe_2).val();
-                    if (price_in_array != undefined) {
-                        if (price_in_array === 'Liên hệ') {
-                            total_tre_em_511 = 'Liên hệ'
-                        } else {
-                            price_item = price_in_array.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.") + ' vnđ';
-                            total_tre_em_511 = (price_in_array * numbe_2);
-
-                            ti_le_tre_em_511 = ((price_2 - price_in_array) / price_2) * 100;
-                            ti_le_tre_em_511 = Math.round(ti_le_tre_em_511);
-                            if (ti_le_tre_em_511 != 0) {
-                                ti_le_tre_em_511 = '(<i class="fa fa-long-arrow-down"></i>' + ti_le_tre_em_511 + '%)';
-                            } else {
-                                ti_le_tre_em_511 = '';
-                            }
-                        }
-                    } else {
-                        var price_tu = $('#input_price_tre_em_511_tu').val();
-                        if (price_tu != undefined) {
-                            if (parseInt(numbe_2) >= parseInt(price_tu)) {
-                                var price_in_array = $('#input_price_tre_em_511_lon_hon_' + price_tu).val();
-                                if (price_in_array === 'Liên hệ') {
-                                    total_tre_em_511 = 'Liên hệ'
-                                } else {
-                                    price_item = price_in_array.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.") + ' vnđ';
-                                    total_tre_em_511 = (price_in_array * numbe_2);
-
-                                    ti_le_tre_em_511 = ((price_2 - price_in_array) / price_2) * 100;
-                                    ti_le_tre_em_511 = Math.round(ti_le_tre_em_511);
-                                    if (ti_le_tre_em_511 != 0) {
-                                        ti_le_tre_em_511 = '(<i class="fa fa-long-arrow-down"></i>' + ti_le_tre_em_511 + '%)';
-                                    } else {
-                                        ti_le_tre_em_511 = '';
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+                //if (numbe_2 > 1) {
+//    var price_in_array = $('#input_price_tre_em_511_' + numbe_2).val();
+//    if (price_in_array != undefined) {
+//        if (price_in_array === 'Liên hệ') {
+//            total_tre_em_511 = 'Liên hệ'
+//                        } else {
+//            price_item = price_in_array.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.") + ' vnđ';
+//                            total_tre_em_511 = (price_in_array * numbe_2);
+//
+//                            ti_le_tre_em_511 = ((price_2 - price_in_array) / price_2) * 100;
+//                            ti_le_tre_em_511 = Math.round(ti_le_tre_em_511);
+//                            if (ti_le_tre_em_511 != 0) {
+//                                ti_le_tre_em_511 = '(<i class="fa fa-long-arrow-down"></i>' + ti_le_tre_em_511 + '%)';
+//                            } else {
+//                                ti_le_tre_em_511 = '';
+//                            }
+//                        }
+//    } else {
+//        var price_tu = $('#input_price_tre_em_511_tu').val();
+//        if (price_tu != undefined) {
+//            if (parseInt(numbe_2) >= parseInt(price_tu)) {
+//                var price_in_array = $('#input_price_tre_em_511_lon_hon_' + price_tu).val();
+//                if (price_in_array === 'Liên hệ') {
+//                    total_tre_em_511 = 'Liên hệ'
+//                                } else {
+//                    price_item = price_in_array.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.") + ' vnđ';
+//                                    total_tre_em_511 = (price_in_array * numbe_2);
+//
+//                                    ti_le_tre_em_511 = ((price_2 - price_in_array) / price_2) * 100;
+//                                    ti_le_tre_em_511 = Math.round(ti_le_tre_em_511);
+//                                    if (ti_le_tre_em_511 != 0) {
+//                                        ti_le_tre_em_511 = '(<i class="fa fa-long-arrow-down"></i>' + ti_le_tre_em_511 + '%)';
+//                                    } else {
+//                                        ti_le_tre_em_511 = '';
+//                                    }
+//                                }
+//            }
+//        }
+//    }
+//}
 
                 for (var j = 1; j <= numbe_2; j++) {
                     row = row + '<tr id="row_customer_' + stt + '"><td class="center stt_cus">' + stt + '</td>' +
@@ -1186,7 +1213,7 @@
                             '<input hidden value="' + name_2 + '"  style="height: 30px" name="tuoi_customer[]" id="input_tuoi_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;">' + name_2 + '</span></td>' +
 //                            '<td><input style="height: 30px" name="passport_customer[]" id="input_passport_customer_' + stt + '" type="text"class="valid input_table "></td>' +
 //                            '<td><input style="height: 30px" name="date_passport_customer[]" id="input_date_passport_customer_' + stt + '" type="date"class="valid input_table datepicker"></td>' +
-                            '<td><input hidden value=""  style="height: 30px" name="dongia_customer[]" id="input_dongia_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;color: red">' + price_item + ' ' + ti_le_tre_em_511 + '</span></td>' +
+//                            '<td><input hidden value=""  style="height: 30px" name="dongia_customer[]" id="input_dongia_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;color: red">' + price_item + ' ' + ti_le_tre_em_511 + '</span></td>' +
                             '</tr>';
                     stt = stt + 1;
                 }
@@ -1201,46 +1228,46 @@
                     var price_item = price_3.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.") + ' vnđ';
                     total_tre_em_5 = price_3 * numbe_3;
                 }
-                if (numbe_3 > 1) {
-                    var price_in_array = $('#input_price_tre_em_5_' + numbe_3).val();
-                    if (price_in_array != undefined) {
-                        if (price_in_array === 'Liên hệ') {
-                            total_tre_em_5 = 'Liên hệ'
-                        } else {
-                            price_item = price_in_array.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.") + ' vnđ';
-                            total_tre_em_5 = (price_in_array * numbe_3);
-
-                            ti_le_tre_em_5 = ((price_3 - price_in_array) / price_3) * 100;
-                            ti_le_tre_em_5 = Math.round(ti_le_tre_em_5);
-                            if (ti_le_tre_em_5 != 0) {
-                                ti_le_tre_em_5 = '(<i class="fa fa-long-arrow-down"></i>' + ti_le_tre_em_5 + '%)';
-                            } else {
-                                ti_le_tre_em_5 = '';
-                            }
-                        }
-                    } else {
-                        var price_tu = $('#input_price_tre_em_5_tu').val();
-                        if (price_tu != undefined) {
-                            if (parseInt(numbe_3) >= parseInt(price_tu)) {
-                                var price_in_array = $('#input_price_tre_em_5_lon_hon_' + price_tu).val();
-                                if (price_in_array === 'Liên hệ') {
-                                    total_tre_em_5 = 'Liên hệ'
-                                } else {
-                                    price_item = price_in_array.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.") + ' vnđ';
-                                    total_tre_em_5 = (price_in_array * numbe_3);
-
-                                    ti_le_tre_em_5 = ((price_3 - price_in_array) / price_3) * 100;
-                                    ti_le_tre_em_5 = Math.round(ti_le_tre_em_5);
-                                    if (ti_le_tre_em_5 != 0) {
-                                        ti_le_tre_em_5 = '(<i class="fa fa-long-arrow-down"></i>' + ti_le_tre_em_5 + '%)';
-                                    } else {
-                                        ti_le_tre_em_5 = '';
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+                //if (numbe_3 > 1) {
+//    var price_in_array = $('#input_price_tre_em_5_' + numbe_3).val();
+//    if (price_in_array != undefined) {
+//        if (price_in_array === 'Liên hệ') {
+//            total_tre_em_5 = 'Liên hệ'
+//                        } else {
+//            price_item = price_in_array.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.") + ' vnđ';
+//                            total_tre_em_5 = (price_in_array * numbe_3);
+//
+//                            ti_le_tre_em_5 = ((price_3 - price_in_array) / price_3) * 100;
+//                            ti_le_tre_em_5 = Math.round(ti_le_tre_em_5);
+//                            if (ti_le_tre_em_5 != 0) {
+//                                ti_le_tre_em_5 = '(<i class="fa fa-long-arrow-down"></i>' + ti_le_tre_em_5 + '%)';
+//                            } else {
+//                                ti_le_tre_em_5 = '';
+//                            }
+//                        }
+//    } else {
+//        var price_tu = $('#input_price_tre_em_5_tu').val();
+//        if (price_tu != undefined) {
+//            if (parseInt(numbe_3) >= parseInt(price_tu)) {
+//                var price_in_array = $('#input_price_tre_em_5_lon_hon_' + price_tu).val();
+//                if (price_in_array === 'Liên hệ') {
+//                    total_tre_em_5 = 'Liên hệ'
+//                                } else {
+//                    price_item = price_in_array.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.") + ' vnđ';
+//                                    total_tre_em_5 = (price_in_array * numbe_3);
+//
+//                                    ti_le_tre_em_5 = ((price_3 - price_in_array) / price_3) * 100;
+//                                    ti_le_tre_em_5 = Math.round(ti_le_tre_em_5);
+//                                    if (ti_le_tre_em_5 != 0) {
+//                                        ti_le_tre_em_5 = '(<i class="fa fa-long-arrow-down"></i>' + ti_le_tre_em_5 + '%)';
+//                                    } else {
+//                                        ti_le_tre_em_5 = '';
+//                                    }
+//                                }
+//            }
+//        }
+//    }
+//}
                 for (var k = 1; k <= numbe_3; k++) {
                     row = row + '<tr id="row_customer_' + stt + '"><td class="center stt_cus">' + stt + '</td>' +
                             '<td><input style="height: 30px" name="name_customer_sub[]" id="input_name_customer_sub_' + stt + '" type="text"class="valid input_table"></td>' +
@@ -1253,18 +1280,45 @@
                             '<input hidden value="' + name_3 + '"  style="height: 30px" name="tuoi_customer[]" id="input_tuoi_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;">' + name_3 + '</span></td>' +
 //                            '<td><input style="height: 30px" name="passport_customer[]" id="input_passport_customer_' + stt + '" type="text"class="valid input_table "></td>' +
 //                            '<td><input style="height: 30px" name="date_passport_customer[]" id="input_date_passport_customer_' + stt + '" type="date"class="valid input_table datepicker"></td>' +
-                            '<td><input hidden value=""  style="height: 30px" name="dongia_customer[]" id="input_dongia_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;color: red">' + price_item + ' ' + ti_le_tre_em_5 + '</span></td>' +
+ //                           '<td><input hidden value=""  style="height: 30px" name="dongia_customer[]" id="input_dongia_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;color: red">' + price_item + ' ' + ti_le_tre_em_5 + '</span></td>' +
                             '</tr>';
                     stt = stt + 1;
                 }
             }
+            var ti_le_tre_em_0 = '';
+            var total_tre_em_0 = 0;
 
+            if (numbe_4 > 0) {
+                if (price_4 === 'Liên hệ') {
+                    total_tre_em_0 = 'Liên hệ';
+                    var price_item = 'Liên hệ';
+                } else {
+                    var price_item = price_4.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.") + ' vnđ';
+                    total_tre_em_0 = price_4 * numbe_4;
+                }
+                for (var i = 1; i <= numbe_4; i++) {
+                    row = row + '<tr id="row_customer_' + stt + '"><td class="center stt_cus">' + stt + '</td>' +
+                        '<td><input style="height: 30px" name="name_customer_sub[]" id="input_name_customer_sub_' + stt + '" type="text"class="valid input_table"></td>' +
+                        '<td><input style="height: 30px" name="birthday_customer[]" id="input_birthday_customer_sub_' + stt + '" type="date" placeholder="dd/MM/yyyy" class="valid input_table datepicker"></td>' +
+                        '<td><input style="height: 30px" name="email_customer[]" id="input_email_customer_' + stt + '" type="text" class="valid input_table"></td>' +
+                        '<td><input style="height: 30px" name="phone_customer[]" id="input_phone_customer_' + stt + '" type="text" class="valid input_table"></td>' +
+                        '<td><input  style="height: 30px" name="address_customer[]" id="input_address_customer_' + stt + '" type="text" class="valid input_table"></td>' +
+                        '<td>' +
+                        '<input hidden style="height: 30px" name="tuoi_number_customer[]" value="1"  id="input_tuoi_number_customer_' + stt + '" type="text"  class="valid input_table">' +
+                        '<input hidden value="' + name_4 + '"  style="height: 30px" name="tuoi_customer[]" id="input_tuoi_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;">' + name_4 + '</span></td>' +
+                        //                            '<td><input style="height: 30px" name="passport_customer[]" id="input_passport_customer_' + stt + '" type="text" class="valid input_table "></td>' +
+                        //                            '<td><input style="height: 30px" name="date_passport_customer[]" id="input_date_passport_customer_' + stt + '" type="date" class="valid input_table datepicker"></td>' +
+                        //                            '<td style="width: 130px"><input hidden value=""  style="height: 30px" name="dongia_customer[]" id="input_dongia_customer_' + stt + '" type="text" class="valid input_table"><span style="font-size: 12px;color: red">' + price_item + ' ' + ti_le_nguoi_lon + '</span></td>' +
+                        '</tr>';
+                    stt = stt + 1;
+                }
+            }
             $(".show_hide_table").html(row);
 
-            if (total_nguoi_lon === "Liên hệ" || total_tre_em_511 === "Liên hệ" || total_tre_em_5 === "Liên hệ") {
+            if (total_nguoi_lon === "Liên hệ" || total_tre_em_511 === "Liên hệ" || total_tre_em_5 === "Liên hệ" || total_tre_em_0==='Liên hệ') {
                 $('#amount_total').html('Liên hệ');
             } else {
-                var total_price = total_nguoi_lon + total_tre_em_511 + total_tre_em_5;
+                var total_price = total_nguoi_lon + total_tre_em_511 + total_tre_em_5 + total_tre_em_0;
                 total_price = total_price.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.") + ' vnđ';
                 $('#amount_total').html(total_price);
             }

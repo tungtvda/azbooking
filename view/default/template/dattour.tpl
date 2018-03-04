@@ -211,19 +211,24 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td class=""><span>Giá {name_price}</span></td>
+                                                        <td class=""><span>Người lớn {name_price}</span></td>
                                                         <td class=""><span style="color: red"
                                                                            class="amount">{price_format}</span></td>
                                                     </tr>
                                                     <tr>
-                                                        <td class=""><span>Giá {name_price_2}</span></td>
+                                                        <td class=""><span>Trẻ em {name_price_2}</span></td>
                                                         <td class=""><span style="color: red"
                                                                            class="amount">{price_2_format}</span></td>
                                                     </tr>
                                                     <tr>
-                                                        <td class=""><span>Giá {name_price_3}</span></td>
+                                                        <td class=""><span>Trẻ em {name_price_3}</span></td>
                                                         <td class=""><span style="color: red"
                                                                            class="amount">{price_3_format}</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class=""><span>Trẻ em {name_price_4}</span></td>
+                                                        <td class=""><span style="color: red"
+                                                                           class="amount">{price_4_format}</span></td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
@@ -285,26 +290,31 @@
                                                     </div>
                                                     <div style="width: 100%;float: left;">
                                                         <div class="form-item so_nguoi">
-                                                            <label class="gia_tour">Số {name_price} <span
+                                                            <label class="gia_tour">Người lớn {name_price} <span
                                                                         style="color: red">*</span></label>
                                                             <input id_title="1" name_title="{name_price}" required=""
                                                                    value="1" min="1" type="number" class="valid"
                                                                    id="input_num_nguoi_lon" name="num_nguoi_lon">
                                                         </div>
                                                         <div class="form-item so_nguoi">
-                                                            <label class="gia_tour">Số {name_price_2} </label>
+                                                            <label class="gia_tour">Trẻ em {name_price_2} </label>
                                                             <input id_title="2" name_title="{name_price_2}" required=""
                                                                    value="0" min="0" type="number" class="valid"
-                                                                   id="input_num_tre_em" name="num_tre_em">
+                                                                   id="input_num_tre_em_m1" name="num_tre_em_m1">
                                                         </div>
                                                         <div class="form-item so_nguoi">
-                                                            <label class="gia_tour">Số  {name_price_3}</label>
+                                                            <label class="gia_tour">Trẻ em  {name_price_3}</label>
                                                             <input id_title="3" name_title="{name_price_3}" required=""
                                                                    value="0" min="0" type="number" class="valid"
-                                                                   id="input_num_tre_em_5" name="num_tre_em_5">
+                                                                   id="input_num_tre_em_m2" name="num_tre_em_m2">
+                                                        </div>
+                                                        <div class="form-item so_nguoi">
+                                                            <label class="gia_tour">Trẻ em  {name_price_4}</label>
+                                                            <input id_title="4" name_title="{name_price_4}" required=""
+                                                                   value="0" min="0" type="number" class="valid"
+                                                                   id="input_num_tre_em_m3" name="num_tre_em_m3">
                                                             {so_cho_input}
                                                         </div>
-
                                                         <div class="form-item so_nguoi">
                                                             <label>Tổng số người</label>
                                                             <input style="background-color: #eee;" disabled required=""
@@ -344,8 +354,8 @@
                                                             <th>Địa chỉ</th>
                                                             <th>Độ tuổi</th>
                                                             <!--<th>Số Passport</th>
-                                                            <th>Ngày hết hạn</th>-->
-                                                            <th>Đơn giá <i class="fa fa-sort-amount-desc "></i></th>
+                                                            <th>Ngày hết hạn</th>
+                                                            <th>Đơn giá <i class="fa fa-sort-amount-desc "></i></th>-->
                                                         </tr>
                                                         </thead>
                                                         <tbody class="show_hide_table">
@@ -379,7 +389,7 @@
                                                             <td>
                                                                 <input hidden style="height: 30px" name="tuoi_number_customer[]" value="1"  id="input_tuoi_number_customer_1" type="text"  class="valid input_table">
                                                                 <input hidden style="height: 30px" name="tuoi_customer[]" value="{name_price}"  id="input_tuoi_customer_1" type="text"  class="valid input_table"><span
-                                                                        style="font-size: 12px">{name_price}</span>
+                                                                        style="font-size: 12px">Người lớn {name_price}</span>
                                                             </td>
                                                             <!--<td>
                                                                 <input  style="height: 30px" name="passport_customer[]"
@@ -391,10 +401,10 @@
                                                                 <input style="height: 30px" name="date_passport_customer[]" data-date-format="dd/mm/yyyy"
                                                                        id="input_date_passport_customer_1" type="text"
                                                                        class="valid input_table datepicker">
-                                                            </td>-->
+                                                            </td>
                                                             <td style="width: 130px">
                                                               <span  style="color: red; font-size: 12px">{price_format}</span>
-                                                            </td>
+                                                            </td>-->
                                                         </tr>
                                                         </tbody>
                                                     </table>
@@ -438,7 +448,7 @@
                                                         <div class="widget widget_has_radio_checkbox">
 
                                                             <div class="text"
-                                                                 style="height: 150px;width: auto;overflow: scroll;margin-bottom: 20px">
+                                                                 style="height: 300px;width: auto;overflow: scroll;margin-bottom: 20px">
                                                                 <p>
                                                                     {content_dk}
                                                                 </p>
