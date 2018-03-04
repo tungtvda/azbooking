@@ -21,7 +21,7 @@ if(isset($_GET['type'])){
 }
 $data['current']=isset($_GET['page'])?$_GET['page']:'1';
 $data['pagesize']=10;
-$dk='price_tiep_thi!=""';
+$dk='price_tiep_thi!="" and status=1 ';
 $name_module='Danh sách tour';
 $data['active_tab']='all';
 switch($type){

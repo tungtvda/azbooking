@@ -244,25 +244,31 @@ $('body').on("input", '.valid-input', function () {
                 var re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
                 var is_email = re.test(value);
                 if (is_email) {
-                    var link = $('#site_name_manage_all').val() + '/check-login.html';
+                    if($(this).attr('data-check-unique')==1){
+                        var link = $('#site_name_manage_all').val() + '/check-login.html';
+                        var key = "user_email";
+                        $.ajax({
+                            method: "GET",
+                            url: link,
+                            data: "value=" + value + '&key=' + key,
+                            success: function (response) {
+                                if (response == 1) {
+                                    $('#input_' + name).addClass('valid');
+                                    $('#input_' + name).removeClass('input-error');
+                                    $('#error_' + name).hide().html('Bạn vui lòng nhập email');
+                                }
+                                else {
+                                    $('#error_' + name).show().html('Email đã tồn tại trong hệ thống');
+                                    $('#input_' + name).removeClass('valid').addClass('input-error');
+                                }
+                            }
+                        });
+                    }else{
+                        $('#input_' + name).addClass('valid');
+                        $('#input_' + name).removeClass('input-error');
+                        $('#error_' + name).hide().html('Bạn vui lòng nhập email');
+                    }
 
-                    var key = "user_email";
-                    $.ajax({
-                        method: "GET",
-                        url: link,
-                        data: "value=" + value + '&key=' + key,
-                        success: function (response) {
-                            if (response == 1) {
-                                $('#input_' + name).addClass('valid');
-                                $('#input_' + name).removeClass('input-error');
-                                $('#error_' + name).hide().html('Bạn vui lòng nhập email');
-                            }
-                            else {
-                                $('#error_' + name).show().html('Email đã tồn tại trong hệ thống');
-                                $('#input_' + name).removeClass('valid').addClass('input-error');
-                            }
-                        }
-                    });
                 }
                 else {
                     $('#error_' + name).show().html('Email không đúng định dạng');
@@ -273,6 +279,29 @@ $('body').on("input", '.valid-input', function () {
     }
 
 });
+
+// valid date
+$('body').on("change", '#input_khoi_hanh_date', function () {
+    returnDateValid('#input_khoi_hanh_date')
+});
+$('body').on("input", '#input_khoi_hanh_date', function () {
+    returnDateValid('#input_khoi_hanh_date')
+});
+function returnDateValid(attr_id){
+    var name = $(attr_id).attr('name');
+    var valid = $('#input_' + name).attr('data-valid');
+    if (valid == 'required') {
+        var value = $('#input_' + name).val();
+        if (value && name) {
+            $('#error_' + name).hide();
+            $('#input_' + name).addClass('valid');
+            $('#input_' + name).removeClass('input-error');
+        } else {
+            $('#error_' + name).show();
+            $('#input_' + name).removeClass('valid').addClass('input-error');
+        }
+    }
+}
 $('body').on("click", '#create_user', function () {
     returnDefail()
 });
@@ -293,6 +322,39 @@ function returnDefail(){
     $('#loading_save').hide();
 }
 
+$('body').on("click", '#create_tour', function () {
+    returnCreateTour()
+});
+
+function returnCreateTour(){
+    $('#btn_create_add_edit').show();
+    $('#id_edit_tour_user').val('');
+    $('#input_name_cus').val('').removeClass('input-error').removeClass('valid');
+    $('#input_email').val('').removeClass('input-error').removeClass('valid');
+    $('#input_phone_cus').val('').removeClass('input-error').removeClass('valid');
+    $('#input_address_cus').val('');
+    // tour
+    $('#input_name_tour').val('').removeClass('input-error').removeClass('valid');
+    $('#input_time_tour').val('').removeClass('input-error').removeClass('valid');
+    $('#input_khoi_hanh_address').val('').removeClass('input-error').removeClass('valid');
+    $('#input_khoi_hanh_date').val('').removeClass('input-error').removeClass('valid');
+    $('#input_note_tour').val('');
+
+    $('#error_name_cus').hide().html('Bạn vui lòng nhập tên khách hàng');
+    $('#error_email').hide().html('Bạn vui lòng nhập email khách hàng');
+    $('#error_phone_cus').hide().html('Bạn vui lòng nhập số điện thoại khách hàng');
+    //$('#error_address').hide().html('Bạn vui lòng nhập địa chỉ khách hàng');
+    // tour
+    $('#error_name_tour').hide().html('Bạn vui lòng nhập tên tour - điểm đến');
+    $('#error_time_tour').hide().html('Bạn vui lòng nhập thời gian');
+    $('#error_khoi_hanh_address').hide().html('Bạn vui lòng nhập điểm khởi hành');
+    $('#error_khoi_hanh_date').hide().html('Bạn vui lòng nhập ngày khởi hành');
+
+    $('#error_submit').hide().html('Tạo tour thất bại, bạn vui lòng nhấn Ctrl+f5 và thử lại');
+    $("#input_name").select();
+    $('.save_create_tour').show();
+    $('#loading_save').hide();
+}
 $('body').on("click", '.save_dangky', function () {
     var close=$(this).attr('data-value');
     var form_data = $("#signup-form").serializeArray();
@@ -371,8 +433,148 @@ $('body').on("click", '.save_dangky', function () {
     }
 
 });
+$('body').on("click", '.save_create_tour', function () {
+    var id_edit=$('#id_edit_tour_user').val();
+    var close=$(this).attr('data-value');
+    var form_data = $("#create-tour-form").serializeArray();
+    var error_free = true;
+    for (var input in form_data) {
+        var name_input = form_data[input]['name'];
+        var element = $("#input_" + name_input);
+        var error = $("#error_" + name_input);
+        var valid = element.hasClass("valid");
+        if (valid === false) {
+            element.addClass("input-error").removeClass("valid");
+            error.show();
+            error_free = false;
+        }
 
+    }
+    if (error_free != false) {
+        var name=$('#input_name_cus').val();
+        var email=$('#input_email').val();
+        var phone=$('#input_phone_cus').val();
+        var address=$('#input_address_cus').val();
 
+        var name_tour=$('#input_name_tour').val();
+        var time_tour=$('#input_time_tour').val();
+        var khoi_hanh_date=$('#input_khoi_hanh_date').val();
+        var khoi_hanh_address=$('#input_khoi_hanh_address').val();
+        var note=$('#input_note_tour').val();
+        var user_tiep_thi=$('#user_tiep_thi').val();
+        var link=$('#site_name_manage_all').val() + '/azbooking-create-tour.html';
+
+        if(name && email && phone && name_tour && time_tour && khoi_hanh_date && khoi_hanh_address){
+            $('#loading_save').show();
+            $('.save_create_tour').hide();
+            $.ajax({
+                method: "POST",
+                url: link,
+                data:{
+                    name:name,
+                    id_edit:id_edit,
+                    email:email,
+                    phone:phone,
+                    address:address,
+                    name_tour:name_tour,
+                    time_tour:time_tour,
+                    khoi_hanh_date:khoi_hanh_date,
+                    khoi_hanh_address:khoi_hanh_address,
+                    user_tiep_thi:user_tiep_thi,
+                    note:note,
+                    status:0,
+                },
+                success: function (response) {
+                    try {
+                        var response = $.parseJSON(response);
+                        if (response.success == 1) {
+                            returnCreateTour();
+                            showNotification('top', 'right', 2, response.mess);
+                            if(response.danhsach){
+                                if(id_edit){
+                                    $('#tr-tour-'+id_edit).remove();
+                                }
+                                $('#list-tour-user').prepend(response.danhsach);
+                            }
+                            if(close==0){
+                                $('#myModal').modal('hide');
+                            }
+                        }
+                        else {
+                            showNotification('top', 'right', 4, response.mess);
+                            $('.save_create_tour').show();
+                            $('#loading_save').hide();
+                        }
+                    }
+                    catch (err) {
+                        if(id_edit){
+                            showNotification('top', 'right', 4, 'Sửa tour thất bại, bạn vui lòng Ctrl+F5 và thử lại');
+                        }else{
+                            showNotification('top', 'right', 4, 'Tạo tour thất bại, bạn vui lòng Ctrl+F5 và thử lại');
+                        }
+
+                        $('.save_create_tour').show();
+                        $('#loading_save').hide();
+                    }
+                }
+            });
+        }else{
+            if(id_edit){
+                showNotification('top', 'right', 4, 'Sửa tour thất bại, bạn vui lòng Ctrl+F5 và thử lại');
+            }else{
+                showNotification('top', 'right', 4, 'Tạo tour thất bại, bạn vui lòng Ctrl+F5 và thử lại');
+            }
+
+        }
+    }else{
+        if(id_edit){
+            showNotification('top', 'right', 4, 'Bạn vui lòng điền đầy đủ thông tin sửa tour');
+        }else{
+            showNotification('top', 'right', 4, 'Bạn vui lòng điền đầy đủ thông tin tạo tour');
+        }
+    }
+
+});
+
+$('body').on("click", '.view-tour-user', function () {
+    returnCreateTour();
+    $('#id_edit_tour_user').val('');
+    $('#myModal').modal('hide');
+   var id=$(this).attr('data-id');
+   var name=$(this).attr('data-name');
+   if(id && name){
+       $('#id_edit_tour_user').val(id);
+       $('#input_name_cus').val($('#name_cus_hidden_'+id).val()).addClass('valid');
+        $('#input_email').val($('#email_cus_hidden_'+id).val()).addClass('valid');
+       $('#input_phone_cus').val($('#phone_cus_hidden_'+id).val()).addClass('valid');
+       $('#input_address_cus').val($('#address_cus_hidden_'+id).val());
+
+       $('#input_name_tour').val($('#name_tour_hidden_'+id).val()).addClass('valid');
+       $('#input_time_tour').val($('#time_tour_hidden_'+id).val()).addClass('valid');
+       $('#input_khoi_hanh_date').val($('#date_tour_hidden_'+id).val()).addClass('valid');
+       $('#input_khoi_hanh_address').val($('#address_tour_hidden_'+id).val()).addClass('valid');
+       $('#input_note_tour').val($('#note_tour_hidden_'+id).val());
+       if($('#status_update_hidden_'+id).val()!=0){
+           $('#btn_create_add_edit').hide();
+       }
+       $('#myModal').modal('show');
+   }else{
+       showNotification('top', 'right', 4, 'Bạn không thể xem chi tiết tour, vui lòng Ctrl+F5 và thử lại');
+   }
+});
+
+// remove tour
+$(".delete-tour-user").confirm({
+    title:"Xác nhận xóa",
+    text:'Bạn có chắc chắn muốn xóa tour "'+$(this).attr('data-name')+'"',
+    confirm: function(button) {
+        console.log()
+    },
+    cancel: function(button) {
+    },
+    confirmButton: "Xác nhận",
+    cancelButton: "Hủy"
+});
 function showNotification(from, align, color, mess) {
 //        color = Math.floor((Math.random() * 4) + 1);
     $.notify({
@@ -497,6 +699,10 @@ $('body').on("keyup", '#input_password_confirm', function () {
     checkUserPasswordConfirm();
 });
 
+// check pass
+$('body').on("input", '#input_password', function () {
+    checkUserPassword();
+});
 // check password
 function checkUserPassword() {
     var error_password_confirm = $("#error_password_confirm");

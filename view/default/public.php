@@ -468,6 +468,10 @@ function link_dm_tour2($app, $name_url, $tour_quoc_te=0)
 }
 function link_tourdetail($app,$name_url='',$name2_url='')
 {
+    $link_tiep_thi='';
+    if(isset($_SESSION['link_tiep_thi']) && $app->price_tiep_thi!=''){
+        $link_tiep_thi='/'.$_SESSION['link_tiep_thi'];
+    }
     if($app->tour_quoc_te==0){
 
         $link='/tour-du-lich-trong-nuoc/';
@@ -475,10 +479,10 @@ function link_tourdetail($app,$name_url='',$name2_url='')
         $link='/tour-du-lich-quoc-te/';
     }
     if($name2_url==''){
-        return SITE_NAME.$link.$name_url.'/'.$app->name_url.'.html';
+        return SITE_NAME.$link.$name_url.'/'.$app->name_url.'.html'.$link_tiep_thi;
     }
     else{
-        return SITE_NAME.$link.$name_url.'/'.$name2_url.'/'.$app->name_url.'.html';
+        return SITE_NAME.$link.$name_url.'/'.$name2_url.'/'.$app->name_url.'.html'.$link_tiep_thi;
     }
 
 }

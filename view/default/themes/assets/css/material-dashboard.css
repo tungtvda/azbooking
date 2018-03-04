@@ -5538,3 +5538,16 @@ img.editable-click {
 .input-error{
   background-image: linear-gradient(red, red), linear-gradient(red, red) !important;
 }
+.support_open{
+  background: url('../img/support.gif') !important;
+  background-size: 100% !important;
+}
+.support_close{
+  background: url('../img/support_close.png') !important;
+  background-size: 100% !important;
+}
+fieldset {
+  border: 1px dotted #007e00;
+  padding: 10px;
+  border-radius: 4px;
+}

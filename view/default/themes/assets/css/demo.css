@@ -309,6 +309,38 @@
 .fixed-plugin{
     top: 120px;
 }
+.fab:nth-last-child(1) {
+    -webkit-transition-delay: 25ms;
+    transition-delay: 25ms;
+}
+.fab {
+    display: block;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    text-align: center;
+    color: #f0f0f0;
+    margin: 25px auto 0;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+    cursor: pointer;
+    -webkit-transition: all .1s ease-out;
+    transition: all .1s ease-out;
+    position: relative;
+    z-index: 998;
+    overflow: hidden;
+    background: #42a5f5;
+}
+.fabs {
+    bottom: 0;
+    position: fixed;
+    margin: 1em;
+    right: 0;
+    z-index: 998;
+}
+.img_chat{
+    width: 35px;
+    padding-top: 12px;
+}
 
 @media (min-width: 992px){
 

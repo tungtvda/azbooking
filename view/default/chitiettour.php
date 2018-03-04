@@ -133,8 +133,8 @@ function show_chitiet_tour($data = array())
     $asign['hidden_date_select']='hidden';
     $asign['date_select']='';
     $now = getdate();
-//    $year_current=$now["year"];
-    $year_current='2018';
+    $year_current=$now["year"];
+//    $year_current='2018';
     $string_departure_time='';
     $full_date=date("d-m-Y");
     if($data['detail'][0]->departure_time!=''){
@@ -145,7 +145,7 @@ function show_chitiet_tour($data = array())
                 if(isset($array_check_year[1])&&$array_check_year[1]==12){
                     $year_current=date("Y");
                 }else{
-                    $year_current='2018';
+                    $year_current=$now["year"];
                 }
                 $value=$value.'-'.$year_current;
                 $value=str_replace('/','-',$value);
@@ -225,6 +225,7 @@ function show_chitiet_tour($data = array())
     $asign['code_user']='';
     if(isset($_GET['key'])){
         $_SESSION['id_tour_'.$data['detail'][0]->id]=_returnGetParamSecurity('key');
+        $_SESSION['link_tiep_thi']=_returnGetParamSecurity('key');
     }
     if(isset($_SESSION['id_tour_'.$data['detail'][0]->id])){
         $asign['id_user']='&key='.$_SESSION['id_tour_'.$data['detail'][0]->id];

@@ -7,11 +7,13 @@
     <title>MIXTOURIST ADMIN</title>
     <link rel="stylesheet" href="{SITE-NAME}/view/admin/Themes/css/style.default.css" type="text/css"/>
     <link rel="stylesheet" href="{SITE-NAME}/view/admin/Themes/css/prettify.css" type="text/css"/>
+    <link rel="stylesheet" href="{SITE-NAME}/view/admin/Themes/css/bootstrap.css" type="text/css"/>
     <link rel="stylesheet" href="{SITE-NAME}/view/admin/Themes/js/multi/multi.min.css" type="text/css"/>
     <script type="text/javascript" src="{SITE-NAME}/view/admin/Themes/js/prettify.js"></script>
     <script type="text/javascript" src="{SITE-NAME}/view/admin/Themes/js/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="{SITE-NAME}/view/admin/Themes/js/jquery-migrate-1.1.1.min.js"></script>
     <script type="text/javascript" src="{SITE-NAME}/view/admin/Themes/js/jquery-ui-1.9.2.min.js"></script>
+    <script type="text/javascript" src="{SITE-NAME}/view/admin/Themes/js/my.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
             $("#DanhMuc1Id").change(function() {
@@ -47,6 +49,37 @@
                 $(".table_hidden").hide();
                 $(field).slideDown();
             });
+
+            $('body').on('input', '#price_dichvu', function () {
+                tinh_tien();
+            });
+            $('body').on('input', '#number_dichvu', function () {
+                tinh_tien();
+            });
+
+            function tinh_tien() {
+                var price = $('#price_dichvu').val();
+                var numberRegex = /^[+-]?\d+(\.\d+)?([eE][+-]?\d+)?$/;
+                if (numberRegex.test(price)) {
+                    var price_format = price.replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.') + ' vnđ';
+                } else {
+                    var price_format ='0 vnđ';
+                    $('#price_dichvu').val(0);
+                    price=0;
+                }
+                if(price<=0)
+                {
+                    $('#price_dichvu').val(0);
+                }
+                $('#price_dv_format').html('('+price_format+')');
+                var number=$('#number_dichvu').val();
+                if(number<=0){
+                    number=1;
+                }
+                var total=number*price;
+                var total_format = total.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.') + ' vnđ';
+                $('#total_dv').val(total_format);
+            }
 
         });
 
@@ -120,6 +153,7 @@
                         <li><a href="{SITE-NAME}/controller/admin/danhmuc_2.php">Danh mục cấp 2</a></li>
                         <li><a href="{SITE-NAME}/controller/admin/danhmuc_chude.php">Danh mục theo chủ đề</a></li>
                         <li><a href="{SITE-NAME}/controller/admin/tour.php">Danh sách tour</a></li>
+
                         <li><a href="{SITE-NAME}/controller/admin/price_timkiem.php">Giá tìm kiếm tour</a></li>
                         <li><a href="{SITE-NAME}/controller/admin/departure.php">Điểm khởi hành</a></li>
                     </ul>

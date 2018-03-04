@@ -31,8 +31,26 @@ function show_index($data = array())
     $asign['Fax_hcm'] = $data['config'][0]->fax_hcm;
     $asign['Email_hcm'] = $data['config'][0]->Email_hcm;
 
+
     $asign['map_hn'] = $data['config'][0]->Map;
     $asign['map_hcm'] = $data['config'][0]->Map_hcm;
+
+    $asign['quydinh'] = 'Chính sách và quy định chung';
+    $asign['baomat'] = 'Chính sách bảo mật thông tin';
+    $asign['thanhtoan'] = 'Hình thức thanh toán';
+    $asign['doitra'] = 'Quy định đổi trả - hoàn tiền';
+    $asign['khieunai'] = 'Chính sách quy trình xử lý khiếu nại';
+    $asign['giaonhan'] = 'Chính sách vận chuyển và giao nhận';
+    $data['info']=info_mix_getByTop('','','id asc');
+    if($data['info']){
+        $asign['quydinh'] = $data['info'][0]->name;
+        $asign['baomat'] = $data['info'][1]->name;
+        $asign['thanhtoan'] = $data['info'][2]->name;
+        $asign['doitra'] = $data['info'][3]->name;
+        $asign['khieunai'] = $data['info'][4]->name;
+        $asign['giaonhan'] = $data['info'][5]->name;
+    }
+
 
     $data['link_anh']=SITE_NAME.$data['config'][0]->Logo;
     if(strstr($data['link_anh'],SITE_NAME)!=''){
