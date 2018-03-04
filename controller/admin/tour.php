@@ -1,18 +1,7 @@
 <?php
 require_once '../../config.php';
-<<<<<<< HEAD
-require_once DIR.'/model/tourService.php';
-require_once DIR.'/model/danhmuc_1Service.php';
-require_once DIR.'/model/danhmuc_2Service.php';
-require_once DIR.'/model/danhmuc_chudeService.php';
-require_once DIR.'/model/departureService.php';
-require_once DIR.'/view/admin/tour.php';
-require_once DIR.'/common/messenger.php';
-require_once DIR.'/common/locdautiengviet.php';
-$data=array();
-$insert=true;
-=======
 require_once DIR . '/model/tourService.php';
+require_once DIR.'/model/danhmuc_chudeService.php';
 require_once DIR . '/model/tour_list_dichvuService.php';
 require_once DIR . '/model/danhmuc_1Service.php';
 require_once DIR . '/model/danhmuc_2Service.php';
@@ -22,7 +11,6 @@ require_once DIR . '/common/messenger.php';
 require_once DIR . '/common/locdautiengviet.php';
 $data = array();
 $insert = true;
->>>>>>> e3df72d2d51a8b69103472bb2751d11d054f9f0d
 returnCountData();
 $array_check_noti = array(
     'id' => _return_mc_encrypt($_SESSION["Admin"]),
@@ -53,7 +41,6 @@ if (isset($_SESSION["Admin"])) {
             if($data_detail) {
                 $new_obj = new tour();
                 $new_obj->id = $_GET["id"];
-
                 $array_send_manage['code_check_send_email'] = _return_mc_encrypt('tungtv_az_mix_12345');
                 $array_send_manage['action'] = "delete";
                 $array_send_manage['id'] =$data_detail[0]->code_az_mix;
@@ -63,7 +50,6 @@ if (isset($_SESSION["Admin"])) {
                     tour_delete($new_obj);
                 }
             }
-
             header('Location: ' . SITE_NAME . '/controller/admin/tour.php' . $danhmuc_id_get);
         } else if ($_GET["action"] == "edit") {
             $new_obj = tour_getById($_GET["id"]);
@@ -175,43 +161,10 @@ if (isset($_SESSION["Admin"])) {
     } else {
         $data['tab1_class'] = 'default-tab current';
     }
-<<<<<<< HEAD
-    else
-    {
-        $data['tab1_class']='default-tab current';
-    }
-    $data['listfkey']['DanhMuc1Id']=danhmuc_1_getByAll();
-    $data['listfkey']['DanhMuc2Id']=danhmuc_2_getByAll();
-    $data['listfkey']['danhmuc_chude_id']=danhmuc_chude_getByAll();
-    $data['listfkey']['departure']=departure_getByTop('','','position asc');
-    $array_check_noti = array(
-        'id'=>_return_mc_encrypt($_SESSION["Admin"]),
-        'user_email'=>_return_mc_encrypt('tungtv.soict@gmail.com'),
-        'main'=>_return_mc_encrypt('azbooking.vn'),
-        'module'=>_return_mc_encrypt('tour'),
-    );
-
-    $list_user= returnCURL($array_check_noti, SITE_NAME_MANAGE.'/azbooking-list-dieu-hanh.html');
-    $data['listfkey']['list_user']=json_decode($list_user,true);
-    if(isset($_GET["action_all"]))
-    {
-        if($_GET["action_all"]=="ThemMoi")
-        {
-            $data['tab2_class']='default-tab current';
-            $data['tab1_class']=' ';
-        }
-        else
-        {
-            $List_tour=tour_getByAll();
-            foreach($List_tour as $tour)
-            {
-                if(isset($_GET["check_".$tour->id])) tour_delete($tour);
-=======
     $data['listfkey']['DanhMuc1Id'] = danhmuc_1_getByAll();
     $data['listfkey']['DanhMuc2Id'] = danhmuc_2_getByAll();
+    $data['listfkey']['danhmuc_chude_id']=danhmuc_chude_getByAll();
     $data['listfkey']['departure'] = departure_getByTop('', '', 'position asc');
-
-
     $list_user = returnCURL($array_check_noti, SITE_NAME_MANAGE . '/azbooking-list-dieu-hanh.html');
     $data['listfkey']['list_user'] = json_decode($list_user, true);
     if (isset($_GET["action_all"])) {
@@ -222,7 +175,6 @@ if (isset($_SESSION["Admin"])) {
             $List_tour = tour_getByAll();
             foreach ($List_tour as $tour) {
 //                if(isset($_GET["check_".$tour->id])) tour_delete($tour);
->>>>>>> e3df72d2d51a8b69103472bb2751d11d054f9f0d
             }
 //            $array_send_manage['code_check_send_email']=_return_mc_encrypt('tungtv_az_mix_12345');
 //            $array_send_manage['action']="delete";
@@ -231,121 +183,6 @@ if (isset($_SESSION["Admin"])) {
             header('Location: ' . SITE_NAME . '/controller/admin/tour.php');
         }
     }
-<<<<<<< HEAD
-    $array_send_manage=array();
-    if(isset($_POST["DanhMuc1Id"])&&isset($_POST["DanhMuc2Id"])&&isset($_POST["danhmuc_chude_id"])&&isset($_POST["name"])&&isset($_POST["name_url"])&&isset($_POST["count_down"])&&isset($_POST["code"])&&isset($_POST["img"])&&isset($_POST["price_tiep_thi"])&&isset($_POST["price_sales"])&&isset($_POST["price"])&&isset($_POST["price_2"])&&isset($_POST["price_3"])&&isset($_POST["price_4"])&&isset($_POST["price_5"])&&isset($_POST["price_6"])&&isset($_POST["durations"])&&isset($_POST["departure"])&&isset($_POST["departure_time"])&&isset($_POST["destination"])&&isset($_POST["vehicle"])&&isset($_POST["hotel"])&&isset($_POST["summary"])&&isset($_POST["highlights"])&&isset($_POST["schedule"])&&isset($_POST["price_list"])&&isset($_POST["content"])&&isset($_POST["list_img"])&&isset($_POST["title"])&&isset($_POST["keyword"])&&isset($_POST["description"])&&isset($_POST["inclusion"])&&isset($_POST["exclusion"]))
-    {
-
-       $array=$_POST;
-       if(!isset($array['id']))
-       $array['id']='0';
-       if(!isset($array['DanhMuc1Id']))
-       $array['DanhMuc1Id']='0';
-       if(!isset($array['DanhMuc2Id']))
-       $array['DanhMuc2Id']='0';
-       if(!isset($array['danhmuc_chude_id']))
-       $array['danhmuc_chude_id']='0';
-       if(!isset($array['promotion']))
-       $array['promotion']='0';
-       if(!isset($array['packages']))
-       $array['packages']='0';
-       if(!isset($array['name']))
-       $array['name']='0';
-       if(!isset($array['name_url']))
-       $array['name_url']='0';
-        $array['name_url']=LocDau($array['name']);
-        if(!isset($array['count_down']))
-            $array['count_down']='';
-       if(!isset($array['code']))
-       $array['code']='0';
-       if(!isset($array['img']))
-       $array['img']='0';
-        if(!isset($array['price_tiep_thi']))
-       $array['price_tiep_thi']='';
-       if(!isset($array['price_sales']))
-       $array['price_sales']='0';
-       if(!isset($array['price']))
-       $array['price']='0';
-       if(!isset($array['price_2']))
-       $array['price_2']='0';
-       if(!isset($array['price_3']))
-       $array['price_3']='0';
-       if(!isset($array['price_4']))
-       $array['price_4']='0';
-       if(!isset($array['price_5']))
-       $array['price_5']='0';
-       if(!isset($array['price_6']))
-       $array['price_6']='0';
-       if(!isset($array['durations']))
-       $array['durations']='0';
-       if(!isset($array['departure']))
-       $array['departure']='0';
-        $departure='';
-        if(isset($_POST["departure"])&&$_POST["departure"]!=''){
-            $departure=implode(',',$_POST["departure"]);
-            $array['departure']=$departure;
-        }
-        if(!isset($array['departure_time']))
-            $array['departure_time']='0';
-       if(!isset($array['destination']))
-       $array['destination']='0';
-       if(!isset($array['vehicle']))
-       $array['vehicle']='0';
-       if(!isset($array['hotel']))
-       $array['hotel']='0';
-       if(!isset($array['summary']))
-       $array['summary']='0';
-       if(!isset($array['highlights']))
-       $array['highlights']='0';
-       if(!isset($array['schedule']))
-       $array['schedule']='0';
-       if(!isset($array['price_list']))
-       $array['price_list']='0';
-       if(!isset($array['content']))
-       $array['content']='0';
-       if(!isset($array['list_img']))
-       $array['list_img']='0';
-       if(!isset($array['title']))
-       $array['title']='0';
-       if(!isset($array['keyword']))
-       $array['keyword']='0';
-       if(!isset($array['description']))
-       $array['description']='0';
-       if(!isset($array['inclusion']))
-       $array['inclusion']='0';
-       if(!isset($array['exclusion']))
-       $array['exclusion']='0';
-        $array['updated']=date(DATETIME_FORMAT);
-        $array_send_manage=$array;
-        $array_send_manage['summary']='';
-        $array_send_manage['highlights']='';
-        $array_send_manage['schedule']='';
-        $array_send_manage['price_list']='';
-        $array_send_manage['content']='';
-        $array_send_manage['inclusion']='';
-        $array_send_manage['exclusion']='';
-        $array_send_manage['code_check_send_email']=_return_mc_encrypt('tungtv_az_mix_12345');
-      $new_obj=new tour($array);
-        if($insert)
-        {
-
-            tour_insert($new_obj);
-            $list_noti= returnCURL($array_send_manage, SITE_NAME_MANAGE.'/controller/admin/tour_az.php');
-            header('Location: '.SITE_NAME.'/controller/admin/tour.php'.$danhmuc_id_get);
-        }
-        else
-        {
-            $array_send_manage['id']=$_GET["id"];
-
-            $list_noti= returnCURL($array_send_manage, SITE_NAME_MANAGE.'/controller/admin/tour_az.php');
-            $new_obj->id=$_GET["id"];
-//            print_r($new_obj);exit;
-            tour_update($new_obj);
-            $insert=false;
-            header('Location: '.SITE_NAME.'/controller/admin/tour.php'.$danhmuc_id_get);
-=======
-
-
     $data['listfkey']['list_type_string'] = $list_danhmuc_dichvu;
     $array_send_manage = array();
     if (isset($_POST["DanhMuc1Id"]) && isset($_POST["DanhMuc2Id"]) && isset($_POST["name"]) && isset($_POST["name_url"]) && isset($_POST["count_down"]) && isset($_POST["code"]) && isset($_POST["img"]) && isset($_POST["price_tiep_thi"]) && isset($_POST["price_sales"]) && isset($_POST["price"]) && isset($_POST["price_2"]) && isset($_POST["price_3"]) && isset($_POST["price_4"]) && isset($_POST["price_5"]) && isset($_POST["price_6"]) && isset($_POST["durations"]) && isset($_POST["departure"]) && isset($_POST["departure_time"]) && isset($_POST["destination"]) && isset($_POST["vehicle"]) && isset($_POST["hotel"]) && isset($_POST["summary"]) && isset($_POST["highlights"]) && isset($_POST["schedule"]) && isset($_POST["price_list"]) && isset($_POST["content"]) && isset($_POST["list_img"]) && isset($_POST["title"]) && isset($_POST["keyword"]) && isset($_POST["description"]) && isset($_POST["inclusion"]) && isset($_POST["exclusion"])) {
@@ -394,6 +231,8 @@ if (isset($_SESSION["Admin"])) {
             $array['name'] = '0';
         if (!isset($array['name_url']))
             $array['name_url'] = '0';
+        if(!isset($array['danhmuc_chude_id']))
+            $array['danhmuc_chude_id']='0';
         $array['name_url'] = LocDau($array['name']);
         if (!isset($array['count_down']))
             $array['count_down'] = '';
@@ -456,9 +295,9 @@ if (isset($_SESSION["Admin"])) {
             $array['inclusion'] = '0';
         if (!isset($array['exclusion']))
             $array['exclusion'] = '0';
-            if ($_POST['price'] == '') {
-                $_POST['price']=0;
-            }
+        if ($_POST['price'] == '') {
+            $_POST['price']=0;
+        }
         if ($_POST['price_2'] == '') {
             $_POST['price_2']=0;
         }
@@ -468,7 +307,6 @@ if (isset($_SESSION["Admin"])) {
         if ($_POST['price_4'] == '') {
             $_POST['price_4']=0;
         }
-
         $array['updated'] = date(DATETIME_FORMAT);
         $array_send_manage = $array;
         $array_send_manage['summary'] = '';
@@ -493,7 +331,6 @@ if (isset($_SESSION["Admin"])) {
             $list_noti = returnCURL($array_send_manage, SITE_NAME_MANAGE . '/controller/admin/tour_az.php');
             if ($list_noti) {
                 tour_insert($new_obj);
-
                 $data_detail=tour_getByTop('1','code_az_mix="'.$code_az_mix.'"',1);
                 if($data_detail){
                     _updateDanhSachBangGia($name_dichvu,$type_dichvu,$price_dichvu,$soluong_dichvu,$thanhtien_dichvu,$ghichu_dichvu, $data_detail[0]->id);
@@ -517,13 +354,10 @@ if (isset($_SESSION["Admin"])) {
                     tour_update($new_obj);
                     list_bang_gia_tour_delete($_GET["id"]);
                     _updateDanhSachBangGia($name_dichvu,$type_dichvu,$price_dichvu,$soluong_dichvu,$thanhtien_dichvu,$ghichu_dichvu, $data_detail[0]->id);
-
                 }
             }
-
             $insert = false;
             header('Location: ' . SITE_NAME . '/controller/admin/tour.php' . $danhmuc_id_get);
->>>>>>> e3df72d2d51a8b69103472bb2751d11d054f9f0d
         }
     }
     $dk = '';
@@ -542,7 +376,6 @@ if (isset($_SESSION["Admin"])) {
             $dk .= '  tour.DanhMuc1Id=' . $danhmuc_id . '';
             $dk_count .= '  DanhMuc1Id=' . $danhmuc_id;
         }
-
     } else {
         if (isset($_GET['DanhMuc2Id']) && $_GET['DanhMuc2Id'] != '') {
             $danhmuc_id = mb_strtolower(addslashes(strip_tags($_GET['DanhMuc2Id'])));
@@ -553,7 +386,6 @@ if (isset($_SESSION["Admin"])) {
                 $dk .= '  tour.DanhMuc2Id=' . $danhmuc_id . '';
                 $dk_count .= '  DanhMuc2Id=' . $danhmuc_id;
             }
-
         }
     }
     $data['username'] = isset($_SESSION["UserName"]) ? $_SESSION["UserName"] : 'quản trị viên';
@@ -565,8 +397,6 @@ if (isset($_SESSION["Admin"])) {
 } else {
     header('location: ' . SITE_NAME);
 }
-
-
 function _randomBooking($code_module, $function_count, $field = 'code_booking')
 {
     $rand_number = rand(1, 5);
@@ -593,9 +423,7 @@ function _randomBooking($code_module, $function_count, $field = 'code_booking')
     } else {
         return $rand;
     }
-
 }
-
 function _getRandomNumbers($min, $max, $count)
 {
     if ($count > (($max - $min) + 1)) {
@@ -605,7 +433,6 @@ function _getRandomNumbers($min, $max, $count)
     shuffle($values);
     return array_slice($values, 0, $count);
 }
-
 function _updateDanhSachBangGia($name_dichvu, $type_dichvu, $price_dichvu, $soluong_dichvu, $thanhtien_dichvu, $ghichu_dichvu, $id_tour)
 {
     if ($name_dichvu && $type_dichvu && $price_dichvu && $soluong_dichvu && $thanhtien_dichvu && $ghichu_dichvu && $id_tour) {
@@ -631,7 +458,6 @@ function _updateDanhSachBangGia($name_dichvu, $type_dichvu, $price_dichvu, $solu
             if (isset($ghichu_dichvu[$key])) {
                 $note = $ghichu_dichvu[$key];
             }
-
             $dichvu = new tour_list_dichvu();
             $dichvu->name = $name;
             $dichvu->type = $type;
