@@ -495,6 +495,7 @@ $('body').on("click", '.save_create_tour', function () {
                                     $('#tr-tour-'+id_edit).remove();
                                 }
                                 $('#list-tour-user').prepend(response.danhsach);
+                                orderTr();
                             }
                             if(close==0){
                                 $('#myModal').modal('hide');
@@ -564,17 +565,67 @@ $('body').on("click", '.view-tour-user', function () {
 });
 
 // remove tour
-$(".delete-tour-user").confirm({
-    title:"Xác nhận xóa",
-    text:'Bạn có chắc chắn muốn xóa tour "'+$(this).attr('data-name')+'"',
-    confirm: function(button) {
-        console.log()
-    },
-    cancel: function(button) {
-    },
-    confirmButton: "Xác nhận",
-    cancelButton: "Hủy"
+$('body').on("click", '.delete-tour-user', function () {
+    var id=$(this).attr('data-id');
+    var name=$(this).attr('data-name');
+    $('#submit_delete').show().attr('data-id','').attr('data-name','');
+    if(id && name){
+        $('#mess_delete_tour').html('Bạn chắc chắn muốn xóa tour <b>"'+name+'"</b> ?');
+        $('#submit_delete').show().attr('data-id',id).attr('data-name',name);
+        $('#confirm-delete').modal('show');
+    }else{
+        showNotification('top', 'right', 4, 'Bạn không thể xóa tour, vui lòng Ctrl+F5 và thử lại');
+        $('#mess_delete_tour').html('Xóa tour lỗi, bạn vui lòng thử lại ');
+        $('#submit_delete').hide().attr('data-id','').attr('data-name','');
+    }
+
 });
+$('body').on("click", '#submit_delete', function () {
+    var id=$(this).attr('data-id');
+    var name=$(this).attr('data-name');
+    $('#submit_delete').show().attr('data-id','');
+    if(id && name){
+        var link=$('#site_name_manage_all').val() + '/azbooking-delete-tour-yeu-cau.html';
+        var user_tiep_thi=$('#user_tiep_thi').val();
+        if(link && user_tiep_thi){
+            $.ajax({
+                method: "POST",
+                url: link,
+                data:{
+                    id:id,
+                    user_tiep_thi:user_tiep_thi,
+                },
+                success: function (response) {
+                    try {
+                        var response = $.parseJSON(response);
+                        //
+                        if (response.success == 1) {
+                            showNotification('top', 'right', 2, response.mess);
+                            $('#tr-tour-'+id).remove();
+                            orderTr();
+                            $('#confirm-delete').modal('hide');
+                        }
+                        else {
+                            showNotification('top', 'right', 4, 'Bạn không thể xóa tour, vui lòng Ctrl+F5 và thử lại');
+                        }
+                    }
+                    catch (err) {
+                        showNotification('top', 'right', 4, 'Bạn không thể xóa tour, vui lòng Ctrl+F5 và thử lại');
+                    }
+                }
+            });
+        }else{
+            showNotification('top', 'right', 4, 'Bạn không thể xóa tour, vui lòng Ctrl+F5 và thử lại');
+        }
+    }else{
+        showNotification('top', 'right', 4, 'Bạn không thể xóa tour, vui lòng Ctrl+F5 và thử lại');
+    }
+});
+function orderTr(){
+    $( ".td_stt" ).each(function( index ) {
+       $(this).text(index+1)
+    });
+}
 function showNotification(from, align, color, mess) {
 //        color = Math.floor((Math.random() * 4) + 1);
     $.notify({

@@ -118,6 +118,7 @@ function view_sidebar_tiep_thi($data = array())
     $asign['hoso_mn'] = ($data['active'] == 'hoso') ? 'active' : '';
     $asign['donhang_mn'] = ($data['active'] == 'donhang') ? 'active' : '';
     $asign['tour_mn'] = ($data['active'] == 'tour') ? 'active' : '';
+    $asign['tour_user_mn'] = ($data['active'] == 'tour_user') ? 'active' : '';
     $asign['thongbao_mn'] = ($data['active'] == 'thongbao') ? 'active' : '';
     $asign['thanhvien_mn'] = ($data['active'] == 'thanhvien') ? 'active' : '';
     $asign['lienhe_mn'] = ($data['active'] == 'lienhe') ? 'active' : '';

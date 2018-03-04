@@ -5,3 +5,5 @@ insert into danhmuc_chude (name,name_url,img,position,title,description,keyword)
 update danhmuc_chude set name='tour tết',name_url='tour-tet',img='',position='0',title='',description='',keyword='' where id=3;
 update danhmuc_chude set name='Tour 30-4',name_url='tour-30-4',img='/azbooking/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/848166.jpg',position='0',title='',description='',keyword='' where id=2;
 update danhmuc_chude set name='tour tết',name_url='tour-tet',img='/azbooking/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/848166.jpg',position='0',title='',description='',keyword='' where id=3;
+insert into danhmuc_chude (name,name_url,img,position,title,description,keyword) values ('sdf','sdf','/azbooking/view/admin/Themes/kcfinder/upload/images/Recycle_Bin_Full.png','','','','');
+delete from danhmuc_chude where id=4;

@@ -70,7 +70,7 @@ function show_tiepthi_tour_user($data = array())
             $tour.='<input hidden value="'.$row['note_tour'].'" id="note_tour_hidden_'.$row['id'].'">';
 
             $asign['danhsach'] .= '<tr id="tr-tour-'.$row['id'].'">
-            <td >'.$dem.'</td>
+            <td class="td_stt">'.$dem.'</td>
              <td class="lienhe_thanhvien">'.$tour.'</td>
             <td class="lienhe_thanhvien">'.$lien_he.'</td>
             <td>'._returnDateFormatConvert($row['created']).'</td>
