@@ -151,13 +151,13 @@ $message_dangky = '<!DOCTYPE html>
 </html>';
 $message_dangky=_return_mc_encrypt($message_dangky,'','');
 
-require_once 'Facebook/autoload.php';
+require_once 'Facebook_old/autoload.php';
 $fb = new Facebook\Facebook ([
   'app_id' => '487430091415856',
   'app_secret' => '5d707964e534538158ab366a3d7e7883',
   'default_graph_version' => 'v2.2',
   ]);
-
+exit;
 $helper = $fb->getRedirectLoginHelper();
 
 try {
