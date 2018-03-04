@@ -115,7 +115,6 @@
 
                     </div>
                     <div class="modal-footer" id="btn_create_add_edit">
-                        <button class="btn btn-primary" id="complexConfirm">Click me</button>
                         <button style="background-color: #337ab7;border-color: #2e6da4;" type="button" class="btn btn-info save_create_tour" data-value="0">Lưu</button>
                         <button style="background-color: #337ab7;border-color: #2e6da4;" type="button" class="btn btn-info save_create_tour" data-value="1">Lưu & tạo mới</button>
                         <button style="background-color: #337ab7;border-color: #2e6da4;display: none" type="button" class="btn btn-info" id="loading_save">Đang gửi ...</button>
@@ -123,5 +122,26 @@
                     </div>
                 </div>
 
+            </div>
+        </div>
+
+        <div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">Xác nhận quá tour theo yêu cầu</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <p id="mess_delete_tour">You are about to delete one track, this procedure is irreversible.</p>
+                    </div>
+
+                    <div class="modal-footer" >
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Hủy</button>
+                        <button type="button" id="submit_delete" class="btn btn-danger btn-ok" data-url="">Xóa</button>
+                    </div>
+                </div>
             </div>
         </div>

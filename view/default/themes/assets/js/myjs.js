@@ -564,16 +564,17 @@ $('body').on("click", '.view-tour-user', function () {
 });
 
 // remove tour
-$(".delete-tour-user").confirm({
-    title:"Xác nhận xóa",
-    text:'Bạn có chắc chắn muốn xóa tour "'+$(this).attr('data-name')+'"',
-    confirm: function(button) {
-        console.log()
-    },
-    cancel: function(button) {
-    },
-    confirmButton: "Xác nhận",
-    cancelButton: "Hủy"
+$('body').on("click", '.delete-tour-user', function () {
+    var id=$(this).attr('data-id');
+    var name=$(this).attr('data-name');
+    $('#submit_delete').show().attr('data-id','');
+    if(id && name){
+        $('#mess_delete_tour').html('Bạn chắc chắn muốn xóa tour <b>"'+name+'"</b> ?');
+    }else{
+        $('#mess_delete_tour').html('Xóa tour lỗi, bạn vui lòng thử lại ');
+        $('#submit_delete').hide().attr('data-id','');
+    }
+    $('#confirm-delete').modal('show');
 });
 function showNotification(from, align, color, mess) {
 //        color = Math.floor((Math.random() * 4) + 1);
