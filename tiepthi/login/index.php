@@ -489,7 +489,7 @@ $message_dangky=_return_mc_encrypt($message_dangky,'','');
                 <span class="separator-text-bottom">Hoặc đăng nhập bằng</span>
             </div>
             <div class="socmed-login">
-                <a href="<?php echo SITE_NAME?>/tiep-thi-lien-ket/facebook/" class="socmed-btn facebook-btn">
+                <a href="javascript:void(0)" onClick="fblogin();" class="socmed-btn facebook-btn">
                     <i class="fa fa-facebook"></i>
                     <span> Facebook</span>
                 </a>
@@ -606,7 +606,7 @@ $message_dangky=_return_mc_encrypt($message_dangky,'','');
                 <span class="separator-text-bottom">Hoặc đăng ký</span>
             </div>
             <div class="socmed-login">
-                <a href="<?php echo SITE_NAME?>/tiep-thi-lien-ket/facebook/<?php echo $key_id?>" class="socmed-btn facebook-btn">
+                <a href="javascript:void(0)" onClick="fblogin();" class="socmed-btn facebook-btn">
                     <i class="fa fa-facebook"></i>
                     <span> Facebook</span>
                 </a>
@@ -623,6 +623,31 @@ $message_dangky=_return_mc_encrypt($message_dangky,'','');
 
     </div>
 </div>
+<div id="fb-root" style="float:left; width:1px;"></div>
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId: '487430091415856',
+            cookie: true,
+            xfbml: true,
+            oauth: true
+        });
+    };
+    (function() {
+        var e = document.createElement('script'); e.async = true;
+        e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+        document.getElementById('fb-root').appendChild(e);
+    }());
+
+    function fblogin(){
+        FB.login(function(response){
+            if (response.authResponse) {
+                $('.socmed-login').hide();
+                window.location='<?php echo SITE_NAME ?>/tiep-thi-lien-ket/facebook/<?php echo $key_id?>';
+            }
+        },{scope: 'publish_actions'});
+    }
+</script>
 </body>
 <script src="<?php echo SITE_NAME ?>/tiepthi/login/js/login.js"></script>
 <script src="<?php echo SITE_NAME ?>/tiepthi/login/js/dialog.js"></script>
@@ -630,6 +655,7 @@ $message_dangky=_return_mc_encrypt($message_dangky,'','');
     <script src="<?php echo SITE_NAME ?>/tiepthi/login/js/confirm_email.js"></script>
 <?php }?>
 </html>
+
 <?php
 function link_tourdetail_ajax($app, $name_url = '', $name2_url = '')
 {
