@@ -21,6 +21,7 @@ function view_menu($data = array())
     $asign['trangchu_mn'] = ($data['active'] == 'trangchu') ? 'current-menu-parent' : '';
     $asign['tour_trong_nuoc_mn'] = ($data['active'] == 'tour_trong_nuoc') ? 'current-menu-parent' : '';
     $asign['tour_nuoc_ngoai_mn'] = ($data['active'] == 'tour_nuoc_ngoai') ? 'current-menu-parent' : '';
+    $asign['tour_chu_de_mn'] = ($data['active'] == 'tour_chu_de') ? 'current-menu-parent' : '';
 //    $asign['tour_mn'] = ($data['active'] == 'tour') ? 'current-menu-parent' : '';
     $asign['khachsan_mn'] = ($data['active'] == 'khachsan') ? 'current-menu-parent' : '';
     $asign['tintuc_mn'] = ($data['active'] == 'tintuc') ? 'current-menu-parent' : '';
@@ -44,6 +45,16 @@ function view_menu($data = array())
             $asign['danhmuc_menu'] .='</li>';
         }
         $asign['danhmuc_menu'] .='</ul>';
+    }
+    $asign['danhmuc_chude'] ='';
+    if(count($data['danhmuc_chude'])>0){
+        $asign['danhmuc_chude'] .='<ul class="sub-menu">';
+        foreach($data['danhmuc_chude'] as $row){
+            $link_dm1=link_dm_chude($row);
+            $asign['danhmuc_chude'] .='<li class="menu-item-has-children"><a href="'.$link_dm1.'">'.$row->name.'</a>';
+            $asign['danhmuc_chude'] .='</li>';
+        }
+        $asign['danhmuc_chude'] .='</ul>';
     }
 
     $asign['danhmuc_menu_quocte'] ='';

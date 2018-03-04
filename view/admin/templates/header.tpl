@@ -151,6 +151,7 @@
                     <ul style="{kichhoat_tour_hienthi}">
                         <li><a href="{SITE-NAME}/controller/admin/danhmuc_1.php">Danh mục cấp 1</a></li>
                         <li><a href="{SITE-NAME}/controller/admin/danhmuc_2.php">Danh mục cấp 2</a></li>
+                        <li><a href="{SITE-NAME}/controller/admin/danhmuc_chude.php">Danh mục theo chủ đề</a></li>
                         <li><a href="{SITE-NAME}/controller/admin/tour.php">Danh sách tour</a></li>
 
                         <li><a href="{SITE-NAME}/controller/admin/price_timkiem.php">Giá tìm kiếm tour</a></li>

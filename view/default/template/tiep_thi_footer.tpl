@@ -43,27 +43,7 @@
 </footer>
 </div>
 </div>
-<div  class="fabs">
-    <div class="chat">
-        <div class="chat_header">
-            <div class="chat_option">
-                <div class="header_img">
-                    <img src="http://azbooking.vn/view/admin/Themes/kcfinder/upload/images/cauhinh/favicon.png"/>
-                </div>
-                <span id="chat_head">Hỗ trợ trực tuyến</span> <br> <span class="agent">Giải đáp mọi thắc mắc</span>
-                <span id="chat_fullscreen_loader" class="chat_fullscreen_loader"><i
-                            class="fullscreen zmdi zmdi-window-maximize"></i></span>
-            </div>
-        </div>
-        <div id="chat_converse" class="chat_conversion chat_converse" style="height: 340px">
-            <div style="position:fixed; z-index:9999999; right:110px; bottom:40px;" class="fb-page" data-tabs="messages"
-                 data-href="https://www.facebook.com/azbooking.vietnam/" data-width="250" data-height="300"
-                 data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"></div>
-        </div>
-    </div>
-    <a  title="Hỗ trợ trực tuyến"  id="prime" class="fab support_open" data-id="1"><i class="prime zmdi zmdi-comment-outline"></i></a>
-</div>
-<!--<div  class="fabs">
+<div style="display: none" class="fabs">
     <div class="chat">
         <div class="chat_header">
             <div class="chat_option">
@@ -75,10 +55,10 @@
                             class="fullscreen zmdi zmdi-window-maximize"></i></span>
             </div>
         </div>
-        <div class="chat_body chat_login">
+        <!--<div class="chat_body chat_login">
             <a id="chat_first_screen" class="fab"><i class="zmdi zmdi-arrow-right"></i></a>
             <p>We make it simple and seamless for businesses and people to talk to each other. Ask us anything</p>
-        </div>
+        </div>-->
         <div id="chat_converse" class="chat_conversion chat_converse">
             <span class="chat_msg_item chat_msg_item_admin">
                 <div class="chat_avatar">
@@ -174,13 +154,14 @@
             <span class="status2">Just now. Not seen yet <span>| đã xem</span></span>
         </div>
         <div class="fab_field">
+            <!--<a id="fab_camera" class="fab"><i class="zmdi zmdi-camera"></i></a>-->
             <a id="fab_send" class="fab"><i class="zmdi zmdi-mail-send"></i></a>
             <textarea height="30" id="chatSend" name="chat_message" placeholder="Send a message"
                       class="chat_field chat_message"></textarea>
         </div>
     </div>
     <a id="prime" class="fab"><i class="prime zmdi zmdi-comment-outline"></i></a>
-</div>-->
+</div>
 <div hidden class="fixed-plugin">
     <div class="dropdown show-dropdown">
         TIỀN HOA HỒNG
@@ -216,7 +197,6 @@
         src="{SITE-NAME}/view/default/themes/js/jquery.timeago.js"></script>
 <script type="text/javascript"
         src="{SITE-NAME}/view/default/themes/assets/js/chat.js"></script>
-
 <script>
     $contentLoadTriggered = false;
 
@@ -305,14 +285,6 @@
         copyToClipboard(document.getElementById('value_key_' + id));
         showNotification('top', 'right', 2, 'Link tiếp thị liên kết đã được copy');
     });
-    $('body').on('click', '#prime', function () {
-       var id=$(this).attr('data-id');
-        if(id==1){
-            $(this).removeClass('support_open').addClass('support_close').attr('data-id',0);
-        }else{
-            $(this).removeClass('support_close').addClass('support_open').attr('data-id',1);
-        }
-    });
 
     function copyToClipboard(elem) {
         // create hidden text element, if it doesn't already exist
@@ -388,15 +360,6 @@
             format: 'dd/mm/yyyy',
             maxDate: '-1',
 //            startDate: '-3d'
-        });
-    }
-    show_date_tour_format();
-    function show_date_tour_format() {
-        var currentDate = new Date();
-        $('.datepicker_tour').datepicker({
-            format: 'dd-mm-yyyy',
-            setDate:'today',
-            minDate: '+0',
         });
     }
 

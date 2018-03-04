@@ -9,3 +9,5 @@ update menu set img='/azbooking/view/admin/Themes/kcfinder/upload/images/danhmuc
 update menu set img='/azbooking/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/848166.jpg',name='Tìm kiếm khách sạn',title='Tìm kiếm khách sạn',keyword='Tìm kiếm khách sạn',description='Tìm kiếm khách sạn' where id=7;
 update menu set img='/azbooking/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/848166.jpg',name='Tìm kiếm khách sạn',title='Tìm kiếm khách sạn',keyword='Tìm kiếm khách sạn',description='Tìm kiếm khách sạn' where id=8;
 update menu set img='/azbooking/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/848166.jpg',name='Tìm kiếm',title='Tìm kiếm',keyword='Tìm kiếm',description='Tìm kiếm' where id=9;
+insert into menu (img,name,title,keyword,description) values ('','Tour theo yêu cầu','Tour theo yêu cầu','Tour theo yêu cầu','Tour theo yêu cầu');
+update menu set img='/azbooking/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/848166.jpg',name='Tour theo yêu cầu',title='Tour theo yêu cầu',keyword='Tour theo yêu cầu',description='Tour theo yêu cầu' where id=21;
