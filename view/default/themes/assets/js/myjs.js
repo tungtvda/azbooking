@@ -1,3 +1,10 @@
+var socket=io($("#server_socket").val());
+var dataSocket=[
+    parseInt($("#user_id_socket").val()),
+    2,
+    $("#user_name_socket").val()
+];
+socket.emit('registerAdmin',dataSocket);
 // check name
 $('body').on("input", '#input_full_name', function () {
     checkNameUser();
@@ -500,6 +507,10 @@ $('body').on("click", '.save_create_tour', function () {
                             if(close==0){
                                 $('#myModal').modal('hide');
                             }
+
+                            // send socket
+                            var dataNoti = {domain:"az", modul:"tour_user", action:"create", admin:1};
+                            socket.emit('sendNotification',dataNoti);
                         }
                         else {
                             showNotification('top', 'right', 4, response.mess);
