@@ -182,13 +182,15 @@
     <a id="prime" class="fab"><i class="prime zmdi zmdi-comment-outline"></i></a>
 </div>-->
 <div hidden class="fixed-plugin">
-    <div class="dropdown show-dropdown">
+    <!--<div class="dropdown show-dropdown">
         TIỀN HOA HỒNG
-    </div>
+    </div>-->
+    <input hidden id="server_socket" value="{server_socket}">
+    <input hidden id="user_id_socket" value="{user_id}">
+    <input hidden id="user_name_socket" value="{user_name}">
 </div>
 
 </body>
-
 <!--   Core JS Files   -->
 <script src="{SITE-NAME}/view/default/themes/assets/js/jquery-3.1.0.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="{SITE-NAME}/view/default/themes/js/jquery-ui.min.js"></script>
@@ -208,6 +210,7 @@
 <script src="{SITE-NAME}/view/default/themes/assets/js/jquery.sharrre.js"></script>
 
 <!-- Material Dashboard DEMO methods, don't include it in your project! -->
+<script src="{site_name_manage}/view/default/themes/admin/js/socket.io.js"></script>
 <script src="{SITE-NAME}/view/default/themes/assets/js/demo.js"></script>
 <script src="{SITE-NAME}/view/default/themes/assets/js/fileinput.min.js"></script>
 <script src="{SITE-NAME}/view/default/themes/assets/js/myjs.js"></script>
@@ -216,6 +219,7 @@
         src="{SITE-NAME}/view/default/themes/js/jquery.timeago.js"></script>
 <script type="text/javascript"
         src="{SITE-NAME}/view/default/themes/assets/js/chat.js"></script>
+
 
 <script>
     $contentLoadTriggered = false;

@@ -203,11 +203,21 @@ function view_footer($data = array())
 
 function view_footer_tiep_thi($data = array())
 {
+    $data_session=checkSession('', 1);
+    $array_check_noti = array(
+        'id'=>$data_session['id'],
+        'name'=>$data_session['name'],
+
+    );
     $asign = array();
     $asign['site_name_manage'] = SITE_NAME_MANAGE;
+    $asign['server_socket'] = SERVER_SOCKET;
     $asign['hoa_hong_check'] = 0;
     if (isset($data['hoa_hong'])) {
         $asign['hoa_hong_check'] = $data['hoa_hong'];
     }
+    $asign['user_id'] = $array_check_noti['id'];
+    $asign['user_name'] = $array_check_noti['name'];
+    $asign['site_name_manage'] = SITE_NAME_MANAGE;
     print_template($asign, 'tiep_thi_footer');
 }
