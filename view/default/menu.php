@@ -196,9 +196,13 @@ function view_navbar_tiep_thi($data = array())
             }
             $count_noti_string='<span class="notification">'.$data_list_noti['count_active'].'</span>';
             $asign['coutn_mes_noti']='<span class="notification" id="count_notification">'.$data_list_noti['count_active'].'</span>';
+            echo '   <script>
+                            var title= document.title;
+                            document.title="('.$data_list_noti['count_active'].') "+title;
+                        </script>';
         }else{
             $count_noti_string='<span hidden class="notification" id="count_notification"></span>';
-            $asign['coutn_mes_noti']='';
+            $asign['coutn_mes_noti']='<span hidden class="notification" id="count_notification"></span>';
         }
         if(isset($data_list_noti['count_un_read'])&& $data_list_noti['count_un_read']>0){
             $count_un_read=' <i class="ace-icon fa fa-exclamation-triangle"></i> <span id="count_un_read"> '.$data_list_noti['count_un_read'].' Thông báo chưa đọc</span> ';
