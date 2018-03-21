@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kurento Group Call Node</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="wrapper">
+            <div id="join" class="animate join">
+                <h1>Join a Room</h1>
+                <form onsubmit="register(); return false;" accept-charset="UTF-8">
+                    <p>
+                        <input type="text" name="name" value="" id="name" placeholder="Call To" required />
+                    </p>
+                    <p>
+                        <input type="text" name="friend_id" value="" id="friend_id" placeholder="friend_id" />
+                    </p>
+                    <p>
+                        <input type="text" name="creator" value="" id="creator" placeholder="creator" />
+                    </p>
+                    <p>
+                        <input type="text" name="creator_id" value="" id="creator_id" placeholder="creator_id" />
+                    </p>
+                    <p>
+                        <input type="text" name="chat" value="" id="chat" placeholder="Type a message here" />
+                    </p>
+                    <p>
+                        <input type="text" name="conversationId" value="" id="conversationId" placeholder="Conversation id" />
+                    </p>
+                    <p>
+                        <input type="text" name="userId" value="" id="userId" placeholder="userId" />
+                    </p>
+                    <p>
+                        <input type="text" name="messageId" value="" id="messageId" placeholder="Message ID" />
+                    </p>
+                    <p>
+                        <input type="text" name="chatRoom" value="" id="chatRoom" placeholder="Content" />notification:
+                        <b id="noti">1</b>
+                    </p>
+                    <div class="chat-area">
+
+                    </div>
+
+                    <!-- <p>
+						<input type="text" name="room" value="" id="roomName" placeholder="Room" required>
+					</p> -->
+                    <!-- <p>
+						<input type="text" name="callTo" value="" id="callTo" placeholder="Call To" required>
+					</p> -->
+                    <p class="submit">
+                        <!-- <input type="submit" name="commit" value="Join!"> -->
+                        <input class="register" type="button" value="Register" />
+                        <input class="joinRoom" type="button" value="Join Room" />
+                        <input class="call" type="button" value="Call" style="display: none;" />
+                    </p>
+                </form>
+            </div>
+            <div id="" class="animate join">
+                <h1>Register connect room</h1>
+                <form>
+
+                    <p>
+                        <input type="text" name="user_id" value="" id="userIdRegis" placeholder="user_id" />
+                    </p>
+                    <p>
+                        <input type="text" name="token" value="" id="token" placeholder="token" />
+                    </p>
+
+                    <p class="submit">
+                        <!-- <input type="submit" name="commit" value="Join!"> -->
+                        <input class="registerConnet" type="button" value="registerConnet" />
+                    </p>
+                </form>
+            </div>
+            <div id="room" style="display: none;">
+                <h2 id="room-header"></h2>
+                <div id="participants"></div>
+
+                <!-- <input type="button" id="button-leave" onmouseup="leaveRoom();" value="Leave room"> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
