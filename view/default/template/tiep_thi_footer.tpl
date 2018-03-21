@@ -219,7 +219,7 @@
         src="{SITE-NAME}/view/default/themes/js/jquery.timeago.js"></script>
 <script type="text/javascript"
         src="{SITE-NAME}/view/default/themes/assets/js/chat.js"></script>
-
+<script src="{SITE-NAME}/view/default/themes/assets/js/read_socket_all.js"></script>
 
 <script>
     $contentLoadTriggered = false;
@@ -279,30 +279,32 @@
     );
 
     $(".notification_menu").click(function () {
-        link = '{site_name_manage}/update-notification.html';
-        var count_noti = $('#count_notification').html();
-        if (count_noti != '') {
-            $.ajax({
-                method: "POST",
-                url: link,
-                data: $("#form_noti").serialize(),
-                success: function (response) {
-                    response = $.parseJSON(response);
-                    if (response.success == 1) {
-                        $('#count_notification').hide();
-                        $('#count_notification').html('');
-//                        $('#count_mes_noti').hide();
-//                        $('#count_mes_noti').html('');
-//                        if(response.count_un_read>0){
-//                            $('#count_un_read').html(response.count_un_read+' Thông báo chưa đọc');
-//                        }else{
-//                            $('#count_un_read').html('Tất cả thông báo đã được đọc');
-//                        }
 
-                    }
-                }
-            });
+
+        var count = $('#count_notification').text();
+        var title = document.title;
+        var count_update='';
+        if (count) {
+            var strfind = "(" + count + ")";
+            title = title.slice(strfind.length);
+            count_update="&count=1";
         }
+        document.title = title;
+        $('#count_notification').text('').hide();
+        var link =  '{site_name_manage}/notification/list-notification-ajax.html';
+        $.ajax({
+            method: "POST",
+            url: link,
+            data: $('#form_noti').serializeArray()
+            success: function (response) {
+                response = $.parseJSON(response);
+                if(response.success==1){
+                    console.log(response.string_noti);
+//                    $('.list-notification-nav').html(response.string_noti);
+                    $('#countUnread').text()
+                }
+            }
+        });
     });
     $('body').on('click', '.copy_link_list', function () {
         var id = $(this).attr('countId');

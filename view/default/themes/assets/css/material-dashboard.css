@@ -2925,7 +2925,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
   text-align: center;
   line-height: 19px;
   vertical-align: middle;
-  display: block;
+  /*display: block;*/
 }
 .navbar .navbar-text {
   color: inherit;
