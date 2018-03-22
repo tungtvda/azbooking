@@ -26,7 +26,7 @@
                                     <p class="dropdown-header">{count_un_read}</p>
                                     <div {hidden_noti} class="content_ul_li scroll_noti">
                                         <ul style="background:#ffffff" class="sub-menu sub-menu-noti ul_noti">
-                                            {list_notifications}
+                                            <!--{list_notifications}-->
                                         </ul>
                                     </div>
                                     {view_all}
