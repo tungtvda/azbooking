@@ -21,6 +21,16 @@ if(isset($_GET['type'])){
 }else{
     $type='';
 }
+$id_detail='';
+$update_noti='';
+if(isset($_GET['noti']) && isset($_GET['id'])&& isset($_GET['id_noti'])){
+    $id=_return_mc_decrypt(_returnGetParamSecurity('id'));
+    $id_noti=_return_mc_decrypt(_returnGetParamSecurity('id_noti'));
+    if($id && $id_noti){
+        $id_detail=$id;
+        $update_noti=$id_noti;
+    }
+}
 $array_check_noti = array(
     'id'=>_return_mc_encrypt($data_session['id']),
     'name'=>_return_mc_encrypt($data_session['name']),
@@ -33,11 +43,12 @@ $array_check_noti = array(
     'page'=>$current,
     'pagesize'=>10,
     'type'=>$type,
+    'id_detail'=>$id_detail,
+    'update_noti'=>$update_noti,
     'site_name'=>SITE_NAME,
 );
 
 
-$dk='';
 $name_module='Danh sách tour theo yêu cầu';
 $data['active_tab']='all';
 switch($type){
@@ -58,6 +69,9 @@ $data['danhsach']=array();
 $data['PAGING'] ='';
 $list_noti= returnCURL($array_check_noti, SITE_NAME_MANAGE.'/azbooking-get-list-tour-yeu-cau.html');
 $data_list_noti=json_decode($list_noti,true);
+if(isset($data_list_noti['detailTour'])){
+    $data['detailTour']=$data_list_noti['detailTour'];
+}
 if(isset($data_list_noti['danhsach'])){
     $data['danhsach']=$data_list_noti['danhsach'];
 }

@@ -243,7 +243,7 @@ function view_navbar_tiep_thi($data = array())
                                             </li>';
             }
             if($count_noti>=1){
-                $asign['view_all'].=' <p class="dropdown-footer" style="margin-bottom: 0px; padding: 10px; text-align: center;"><a style="color: #0091ea;" class="view_all_noti"
+                $asign['view_all'].=' <p class="dropdown-footer view_all_notification" style="margin-bottom: 0px; padding: 10px; text-align: center;"><a style="color: #0091ea;" class="view_all_noti"
                                                 href="'.SITE_NAME.'/tiep-thi-lien-ket/thong-bao"> Xem tất cả <i class="ace-icon fa fa-arrow-right"></i></a></p>';
             }
         }else{
