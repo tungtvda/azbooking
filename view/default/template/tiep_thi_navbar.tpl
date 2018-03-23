@@ -22,14 +22,18 @@
                         </a>
                         <ul class="dropdown-menu" style="padding-top: 0px;">
                             <li class="menu-item menu-item-has-children dropdown-noti submenu hover">
-                                <div class="dropdown-content-noti" >
+                                <div class="dropdown-content-noti">
                                     <p class="dropdown-header">{count_un_read}</p>
                                     <div {hidden_noti} class="content_ul_li scroll_noti">
                                         <ul style="background:#ffffff" class="sub-menu sub-menu-noti ul_noti">
                                             <!--{list_notifications}-->
                                         </ul>
                                     </div>
-                                    {view_all}
+                                    <p class="dropdown-footer view_all_notification"
+                                       style="margin-bottom: 0px; padding: 10px; text-align: center;"><a
+                                                style="color: #0091ea;" class="view_all_noti"
+                                                href="{SITE-NAME}/tiep-thi-lien-ket/thong-bao"> Xem tất cả <i
+                                                    class="ace-icon fa fa-arrow-right"></i></a></p>
                                 </div>
                                 <span class="menu-toggle"></span><span class="menu-arr-bottom"></span><span
                                         class="menu-arr-top"></span></li>

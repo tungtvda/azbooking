@@ -334,6 +334,8 @@ $('body').on("click", '#create_tour', function () {
 });
 
 function returnCreateTour(){
+    $('#show_note_confirm').hide();
+    $('#input_note_confirm').val();
     $('#btn_create_add_edit').show();
     $('#id_edit_tour_user').val('');
     $('#input_name_cus').val('').removeClass('input-error').removeClass('valid');
@@ -551,7 +553,8 @@ $('body').on("click", '.save_create_tour', function () {
 $('body').on("click", '.view-tour-user', function () {
     returnCreateTour();
     $('#id_edit_tour_user').val('');
-    $('#myModal').modal('hide');
+    $('#myModalCreateTour').modal('hide');
+    $('#show_note_confirm').hide();
    var id=$(this).attr('data-id');
    var name=$(this).attr('data-name');
    if(id && name){
@@ -561,20 +564,54 @@ $('body').on("click", '.view-tour-user', function () {
        $('#input_phone_cus').val($('#phone_cus_hidden_'+id).val()).addClass('valid');
        $('#input_address_cus').val($('#address_cus_hidden_'+id).val());
 
-       $('#input_name_tour').val($('#name_tour_hidden_'+id).val()).addClass('valid');
+       $('#input_name_tour').val($('#name_tour_hidden_'+id).val()).addClass('valid').attr('data-original-title',$('#name_tour_hidden_'+id).val());
        $('#input_time_tour').val($('#time_tour_hidden_'+id).val()).addClass('valid');
        $('#input_khoi_hanh_date').val($('#date_tour_hidden_'+id).val()).addClass('valid');
        $('#input_khoi_hanh_address').val($('#address_tour_hidden_'+id).val()).addClass('valid');
-       $('#input_note_tour').val($('#note_tour_hidden_'+id).val());
-       if($('#status_update_hidden_'+id).val()!=0){
-           $('#btn_create_add_edit').hide();
+       $('#input_note_tour').val($('#note_tour_hidden_'+id).val()).attr('data-original-title',$('#note_tour_hidden_'+id).val());
+       if($('#note_confirm_hidden_'+id).val()!=''){
+           $('#show_note_confirm').show();
+           $('#input_note_confirm').val($('#note_confirm_hidden_'+id).val()).attr('data-original-title',$('#note_confirm_hidden_'+id).val());
        }
-       $('#myModal').modal('show');
+       if($('#status_update_hidden_'+id).val()!=0){
+           $('.save_create_tour').hide();
+       }
+       $('#myModalCreateTour').modal('show');
    }else{
        showNotification('top', 'right', 4, 'Bạn không thể xem chi tiết tour, vui lòng Ctrl+F5 và thử lại');
    }
 });
+function setDataFormCreateTourUser(id,name){
+    $('#id_edit_tour_user').val(id);
+    $('#input_name_cus').val($('#name_cus_hidden_'+id).val()).addClass('valid');
+    $('#input_email').val($('#email_cus_hidden_'+id).val()).addClass('valid');
+    $('#input_phone_cus').val($('#phone_cus_hidden_'+id).val()).addClass('valid');
+    $('#input_address_cus').val($('#address_cus_hidden_'+id).val());
 
+    $('#input_name_tour').val($('#name_tour_hidden_'+id).val()).addClass('valid').attr('data-original-title',$('#name_tour_hidden_'+id).val());
+    $('#input_time_tour').val($('#time_tour_hidden_'+id).val()).addClass('valid');
+    $('#input_khoi_hanh_date').val($('#date_tour_hidden_'+id).val()).addClass('valid');
+    $('#input_khoi_hanh_address').val($('#address_tour_hidden_'+id).val()).addClass('valid');
+    $('#input_note_tour').val($('#note_tour_hidden_'+id).val()).attr('data-original-title',$('#note_tour_hidden_'+id).val());
+    if($('#note_confirm_hidden_'+id).val()!=''){
+        $('#show_note_confirm').show();
+        $('#input_note_confirm').val($('#note_confirm_hidden_'+id).val()).attr('data-original-title',$('#note_confirm_hidden_'+id).val());
+    }
+    if($('#status_update_hidden_'+id).val()!=0){
+        $('.save_create_tour').hide();
+    }
+    $('#myModalCreateTour').modal('show');
+}
+// show popup
+    showPopupTourUser();
+    function showPopupTourUser(){
+        var id=$('#tour_id_show_popup').val();
+        var name=$('#tour_name_show_popup').val();
+        if(id&&name){
+            setDataFormCreateTourUser(id,name)
+        }
+
+    }
 // remove tour
 $('body').on("click", '.delete-tour-user', function () {
     var id=$(this).attr('data-id');
@@ -591,6 +628,7 @@ $('body').on("click", '.delete-tour-user', function () {
     }
 
 });
+
 $('body').on("click", '#submit_delete', function () {
     var id=$(this).attr('data-id');
     var name=$(this).attr('data-name');

@@ -279,18 +279,20 @@
     );
 
     $('body').on('click', '.notification_menu', function () {
+        $contentLoadTriggered=false;
+        $('#page_noti').val(1);
+        $('.ul_noti').html('');
         var count = $('#count_notification').text();
-        console.log(count);
         var title = document.title;
         var count_update='';
         if (count) {
             var strfind = "(" + count + ")";
             title = title.slice(strfind.length);
-            count_update="&count=1";
+            count_update="&update=1";
         }
         document.title = title;
         $('#count_notification').text('').hide();
-        var link =  '{site_name_manage}/return-list-notification.html?html=1';
+        var link =  '{site_name_manage}/return-list-notification.html?html=1'+count_update;
         $.ajax({
             method: "POST",
             url: link,
@@ -298,14 +300,25 @@
             success: function (response) {
                 response = $.parseJSON(response);
                 if(response.success==1){
-                    console.log(response.list_notifications);
-                    $('.ul_noti').html(response.list_notifications);
-//                    $('#countUnread').text()
+                    if(response.count_all_active>0){
+                        $('.ul_noti').html(response.list_notifications);
+                        $('.content_ul_li').show();
+                        $('.view_all_notification').show();
+                        if(response.count_un_read>0){
+                            $('#count_un_read').html(response.count_un_read +' Thông báo chưa đọc');
+                        }else{
+                            $('#count_un_read').html('Tất cả thông báo đã được đọc');
+                        }
+                    }else{
+                        $('.ul_noti').html('');
+                        $('#count_un_read').html('Bạn không có thông báo nào');
+                        $('.view_all_notification').hide();
+                        $('.content_ul_li').hide();
+                    }
                 }
             }
         });
     });
-
     $('body').on('click', '.copy_link_list', function () {
         var id = $(this).attr('countId');
         copyToClipboard(document.getElementById('value_key_' + id));

@@ -27,7 +27,7 @@
                                         <a  href="{SITE-NAME}/tiep-thi-lien-ket/tour?type=4" >Tour trong nước</a>
                                     </li>
                                     <li class="active" style="float: right; ">
-                                        <a id="create_tour"  data-toggle="modal" data-target="#myModal" style="background: green; cursor: pointer;">
+                                        <a id="create_tour"  data-toggle="modal" data-target="#myModalCreateTour" style="background: green; cursor: pointer;">
                                             <label style="font-size: 16px;color: #ffffff" class="fa fa-plane "></label> Tạo tour theo yêu cầu
                                         </a>
                                     </li>

@@ -31,12 +31,17 @@ function show_tiepthi_thongbao($data = array())
             }
             $date_show = date("d-m-Y H:i:s", strtotime($row['created']));
             $date_noti =timeAgo($row['created']);
+            if(strstr($row['link'],SITE_NAME)!=''){
+                $link=$row['link'];
+            }else{
+                $link=SITE_NAME.'/'.$row['link'];
+            }
             $asign['danhsach'] .= '<tr>
             <td >'.$dem.'</td>
-            <td ><a target="_blank" href="'.SITE_NAME.''.$row['link'].'&id_noti='._return_mc_encrypt($row['id'], ENCRYPTION_KEY).'">'.$row['name'].'</a></td>
+            <td ><a target="_blank" href="'.$link.'&id_noti='._return_mc_encrypt($row['id'], ENCRYPTION_KEY).'">'.$row['name'].'</a></td>
             <td ><a href="javascript:void(0)" rel="tooltip" data-original-title="'.$date_show.'">'.$date_noti.'</a></td>
             <td>'.$status.'</td>
-            <td><a target="_blank" href="'.SITE_NAME.''.$row['link'].'&id_noti='._return_mc_encrypt($row['id'], ENCRYPTION_KEY).'"><i class="fa fa-eye"></i></a></td>
+            <td><a target="_blank" href="'.$link.'&id_noti='._return_mc_encrypt($row['id'], ENCRYPTION_KEY).'"><i class="fa fa-eye"></i></a></td>
 
         </tr>
         ';
