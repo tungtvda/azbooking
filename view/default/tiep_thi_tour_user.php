@@ -27,7 +27,6 @@ function show_tiepthi_tour_user($data = array())
             $listDanhsach.=returnHtmlListTourUser($row,$dem);
             $dem++;
         }
-        $asign['danhsach']=$listDanhsach;
     } else {
         $asign['mess_null'] = 'Bạn không có tour theo yêu cầu nào';
         switch($data['active_tab']){
@@ -42,6 +41,7 @@ function show_tiepthi_tour_user($data = array())
                 break;
         }
     }
+    $asign['danhsach']=$listDanhsach;
     $asign['PAGING'] = $data['PAGING'];
     $asign['all'] = ($data['active_tab'] == 'all') ? 'active' : '';
     $asign['type_0'] = ($data['active_tab'] == 'type_0') ? 'active' : '';
