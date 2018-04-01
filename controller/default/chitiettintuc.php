@@ -70,5 +70,5 @@ show_header($title,$description,$keywords,$data);
 show_menu($data,'tintuc');
 show_banner($data);
 show_chitiet_tintuc($data);
-show_left_danhmuc($data);
+show_left_danhmuc($data,'show',$data['detail'][0]->danhmuc_id2);
 show_footer($data);

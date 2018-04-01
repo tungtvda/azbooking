@@ -54,6 +54,11 @@ function view_left_danhmuc($data = array())
     $asign['tab_tour_title']=$data['tab_tour_title'];
     $asign['tab_khachsan_title']=$data['tab_khachsan_title'];
     $asign['tab_tintuc_title']=$data['tab_tintuc_title'];
+    $asign['classShow']=$data['classShow'];
+    $asign['tour_lienquan'] ='';
+    if(count($data['tour_lienquan'])>0) {
+        $asign['tour_lienquan'] = print_item('tour_new_left', $data['tour_lienquan']);
+    }
 
     $asign['tab_tour']=$data['tab_tour'];
     $asign['tab_khachsan']=$data['tab_khachsan'];

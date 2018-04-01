@@ -158,7 +158,7 @@ function show_footer_tiep_thi($data1=array())
     $data=$data1;
     view_footer_tiep_thi($data);
 }
-function  show_left_danhmuc($data1=array())
+function  show_left_danhmuc($data1=array(),$classShow='hidden',$id=1)
 {
     $data=$data1;
     $data['tintuc_left']=news_getByTop('10','','id desc');
@@ -169,7 +169,8 @@ function  show_left_danhmuc($data1=array())
     $data['danhmuc_tintuc_timkiem']=danhmuc_tintuc_getByTop('','','position asc');
     $data['departure_timkiem']=departure_getByTop('','','position asc');
     $data['tag_left']=tag_getByTop('','','id desc');
-
+    $data['classShow']=$classShow;
+    $data['tour_lienquan']=tour_getByTop(6,'DanhMuc2Id='.$id,'id desc');
     view_left_danhmuc($data);
 }
 function returnTourSales(){

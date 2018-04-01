@@ -169,5 +169,6 @@ function  show_left_danhmuc($data1=array())
     $data['departure_timkiem']=departure_getByTop('','','position asc');
     $data['tag_left']=tag_getByTop('','','id desc');
 
+
     view_left_danhmuc($data);
 }

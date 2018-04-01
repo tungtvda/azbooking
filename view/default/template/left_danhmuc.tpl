@@ -144,6 +144,14 @@
         <div class="widget widget_product_tag_cloud"><h3>Tags</h3>
             <div class="tagcloud">{tag_left}</div>
         </div>
+        <div class="widget widget_has_radio_checkbox {classShow}">
+            <h3>Tour liên quan</h3>
+            <div class="row" style="margin: 0px">
+             {tour_lienquan}
+
+            </div>
+
+        </div>
     </div>
 </div>
 </div>
