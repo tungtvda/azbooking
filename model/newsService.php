@@ -67,12 +67,12 @@ function news_getByPagingReplace($CurrentPage, $PageSize,$Order,$where)
 //
 function news_insert($obj)
 {
-    return exe_query("insert into news (danhmuc_id,name,name_url,img,view,content,title,keyword,description,created) values ('$obj->danhmuc_id','$obj->name','$obj->name_url','$obj->img','$obj->view','$obj->content','$obj->title','$obj->keyword','$obj->description','$obj->created')",'news');
+    return exe_query("insert into news (danhmuc_id2,danhmuc_id,name,name_url,img,view,content,title,keyword,description,created) values ('$obj->danhmuc_id2','$obj->danhmuc_id','$obj->name','$obj->name_url','$obj->img','$obj->view','$obj->content','$obj->title','$obj->keyword','$obj->description','$obj->created')",'news');
 }
 //
 function news_update($obj)
 {
-    return exe_query("update news set danhmuc_id='$obj->danhmuc_id',name='$obj->name',name_url='$obj->name_url',img='$obj->img',view='$obj->view',content='$obj->content',title='$obj->title',keyword='$obj->keyword',description='$obj->description',created='$obj->created' where id=$obj->id",'news');
+    return exe_query("update news set danhmuc_id2='$obj->danhmuc_id2',danhmuc_id='$obj->danhmuc_id',name='$obj->name',name_url='$obj->name_url',img='$obj->img',view='$obj->view',content='$obj->content',title='$obj->title',keyword='$obj->keyword',description='$obj->description',created='$obj->created' where id=$obj->id",'news');
 }
 //
 function news_delete($obj)

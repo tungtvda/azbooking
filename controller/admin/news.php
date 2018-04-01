@@ -2,6 +2,7 @@
 require_once '../../config.php';
 require_once DIR.'/model/newsService.php';
 require_once DIR.'/model/danhmuc_tintucService.php';
+require_once DIR.'/model/danhmuc_2Service.php';
 require_once DIR.'/view/admin/news.php';
 require_once DIR.'/common/messenger.php';
 require_once DIR.'/common/locdautiengviet.php';
@@ -41,6 +42,7 @@ if(isset($_SESSION["Admin"]))
         $data['tab1_class']='default-tab current';
     }
     $data['listfkey']['danhmuc_id']=danhmuc_tintuc_getByAll();
+    $data['listfkey']['danhmuc_id2']=danhmuc_2_getByAll();
     if(isset($_GET["action_all"]))
     {
         if($_GET["action_all"]=="ThemMoi")
@@ -58,13 +60,15 @@ if(isset($_SESSION["Admin"]))
             header('Location: '.SITE_NAME.'/controller/admin/news.php');
         }
     }
-    if(isset($_POST["danhmuc_id"])&&isset($_POST["name"])&&isset($_POST["name_url"])&&isset($_POST["img"])&&isset($_POST["view"])&&isset($_POST["content"])&&isset($_POST["title"])&&isset($_POST["keyword"])&&isset($_POST["description"])&&isset($_POST["created"]))
+    if(isset($_POST["danhmuc_id2"])&& isset($_POST["danhmuc_id"])&&isset($_POST["name"])&&isset($_POST["name_url"])&&isset($_POST["img"])&&isset($_POST["view"])&&isset($_POST["content"])&&isset($_POST["title"])&&isset($_POST["keyword"])&&isset($_POST["description"])&&isset($_POST["created"]))
     {
        $array=$_POST;
        if(!isset($array['id']))
        $array['id']='0';
        if(!isset($array['danhmuc_id']))
        $array['danhmuc_id']='0';
+        if(!isset($array['danhmuc_id2']))
+        $array['danhmuc_id2']='0';
        if(!isset($array['name']))
        $array['name']='0';
        if(!isset($array['name_url']))

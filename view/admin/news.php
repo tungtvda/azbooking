@@ -70,6 +70,16 @@ function showFrom($form,$ListKey=array())
         }
     }
     $str_from.='</select></p>';
+    $str_from.='<p><label>danhmuc_khu vực</label>';
+    $str_from.='<select name="danhmuc_id2">';
+    if(isset($ListKey['danhmuc_id2']))
+    {
+        foreach($ListKey['danhmuc_id2'] as $key)
+        {
+            $str_from.='<option value="'.$key->id.'" '.(($form!=false)?(($form->danhmuc_id2==$key->id)?'selected':''):'').'>'.$key->name.'</option>';
+        }
+    }
+    $str_from.='</select></p>';
     $str_from.='<p><label>name</label><input class="text-input small-input" type="text"  name="name" value="'.(($form!=false)?$form->name:'').'" /></p>';
     $str_from.='<p><label>name_url</label><input class="text-input small-input" type="text"  name="name_url" value="'.(($form!=false)?$form->name_url:'').'" /></p>';
     $str_from.='<p><label>img</label><input class="text-input small-input" type="text"  name="img" value="'.(($form!=false)?$form->img:'').'"/><a class="button" onclick="openKcEditor(\'img\');">Upload ảnh</a></p>';

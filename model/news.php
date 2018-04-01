@@ -15,7 +15,8 @@ class news
     $this->keyword=isset($data['keyword'])?$data['keyword']:'';
     $this->description=isset($data['description'])?$data['description']:'';
     $this->created=isset($data['created'])?$data['created']:'';
-          $this->encode();
+    $this->danhmuc_id2=isset($data['danhmuc_id2'])?$data['danhmuc_id2']:'';
+    $this->encode();
     }
     public function encode()
         {
@@ -30,6 +31,7 @@ class news
             $this->keyword=addslashes($this->keyword);
             $this->description=addslashes($this->description);
             $this->created=addslashes($this->created);
+            $this->danhmuc_id2=addslashes($this->danhmuc_id2);
         }
     public function decode()
         {
@@ -44,5 +46,6 @@ class news
             $this->keyword=stripslashes($this->keyword);
             $this->description=stripslashes($this->description);
             $this->created=stripslashes($this->created);
+            $this->danhmuc_id2=addslashes($this->danhmuc_id2);
         }
 }
