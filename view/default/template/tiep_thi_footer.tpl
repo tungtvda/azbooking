@@ -222,6 +222,8 @@
 <script src="{SITE-NAME}/view/default/themes/assets/js/read_socket_all.js"></script>
 
 <script>
+
+
     $contentLoadTriggered = false;
 
     $(".content_ul_li").scroll(
