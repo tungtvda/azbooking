@@ -153,6 +153,37 @@ Rất tốt
                         </div>
                     </div>
                     <div data-et-view="adUAVGHCcZbFDEOIGO:1"></div>
+                    <div class="form_review">
+                        <div class="review_list_score_breakdown_right">
+                            <ul class="review_score_breakdown_list list_tighten clearfix">
+                                <li class="clearfix" data-question="hotel_value">
+                                    <p class="review_score_name">Khách sạn</p>
+                                    <div class="score_bar">
+                                        <div class="score_bar_value" data-score="81" style="width: 81%;"></div>
+                                    </div>
+                                    <p class="review_score_value">8.1</p>
+                                </li>
+                                <li class="clearfix" data-question="hotel_wifi">
+                                    <p class="review_score_name">Nhà hàng</p>
+                                    <div class="score_bar">
+                                        <div class="score_bar_value" data-score="81" style="width: 81%;"></div>
+                                    </div>
+                                    <p class="review_score_value">8.1</p>
+                                </li>
+                                <li class="clearfix" data-question="hotel_location">
+                                    <p class="review_score_name">Phương tiện vận chuyển</p>
+                                    <div class="score_bar">
+                                        <div class="score_bar_value" data-score="78" style="width: 78%;"></div>
+                                    </div>
+                                    <p class="review_score_value">7.8</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="slidecontainer">
+                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                        </div>
+                        ádf<span id="f" style="font-weight:bold;color:red">100</span>
+                    </div>
                     <div class="review_list_container review-list--clean">
 
                         <div id="review_list_page_container" style="display: block;">
@@ -213,7 +244,7 @@ Rất tốt
                                     <div class="featured_review_item__header_block featured_review-scout_review"
                                          data-et-view="adUAVGZaeaPDERXSEJCLfeKe:1 adUAVGZaeaPDERXSEJCLfeKe:2">
                                         <div class="featured_review_item__icon_container"><img
-                                                    src="./Sunland Hotel, Ho Chi Minh City – Updated 2018 Prices_files/04ffbb1883a9aaa70bf2ef642b336af431abe595.png"
+                                                    src="{SITE-NAME}/view/default/themes/images/review/icon_review.png"
                                                     alt="Property Scout Review"></div>
                                         <div class="featured_review_item__header featured_review_item__no_votes">
                                             Danh sách đánh giá
