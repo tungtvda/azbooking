@@ -84,7 +84,7 @@
                         <h3 {hidden_summary} class="title">Nổi bật</h3>
                         <p>{highlights}
                         </p>
-                        {quocgia}
+                        <!--{quocgia}-->
                     </div>
                 </div>
                 <div class="product-tabs tabs col-md-12" style="border-bottom: 1px solid #D4D4D4;
