@@ -21,6 +21,9 @@
                     if($result[0]->MatKhau==$Pass)
                     {
                         if($result[0]->status==1){
+                            $_SESSION['KCFINDER'] = array(
+                                'disabled' => false
+                            );
                             $_SESSION["username"]=$UserName;
                             $_SESSION["UserName"]=$result[0]->Full_name;
                             $_SESSION["UserId"]=$result[0]->Id;
@@ -39,25 +42,40 @@
                         }
                         else{
                             echo "<script type=\"text/javascript\">alert(\"Tài khoản của bạn chưa được kích hoạt\")</script>";
+                            $_SESSION['KCFINDER'] = array(
+                                'disabled' => true
+                            );
                         }
                     }
                     else
                     {
                         echo "<script type=\"text/javascript\">alert(\"Bạn vui lòng kiểm tra lại thông tin đăng nhập\")</script>";
+                        $_SESSION['KCFINDER'] = array(
+                            'disabled' => true
+                        );
                     }
                 }else{
                     echo "<script type=\"text/javascript\">alert(\"Bạn không có quyền truy cập hệ thống\")</script>";
+                    $_SESSION['KCFINDER'] = array(
+                        'disabled' => true
+                    );
                 }
 
             }
             else
             {
                 echo "<script type=\"text/javascript\">alert(\"Bạn vui lòng kiểm tra lại thông tin đăng nhập\")</script>";
+                $_SESSION['KCFINDER'] = array(
+                    'disabled' => true
+                );
             }
         }
         else
         {
             echo "<script type=\"text/javascript\">alert(\"Bạn vui lòng kiểm tra lại thông tin đăng nhập\")</script>";
+            $_SESSION['KCFINDER'] = array(
+                'disabled' => true
+            );
         }
 
 

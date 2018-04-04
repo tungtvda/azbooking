@@ -361,3 +361,6 @@ update news set view='91' where id=56;
 update news set view='1102' where id=53;
 update news set view='126' where id=57;
 update news set view='127' where id=57;
+update news set view='303' where id=50;
+update news set view='304' where id=50;
+update news set view='128' where id=57;
