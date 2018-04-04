@@ -17,6 +17,7 @@ $data['menu']=menu_getByTop('','','');
 $data['config']=config_getByTop(1,'','');
 $active='';
 $date_now=_returnGetDateTime();
+
 if(isset($_GET['Id_sub'])&&$_GET['Id_sub']!=''){
     if(isset($_GET['Id'])&&$_GET['Id']!=''){
         $id=addslashes(strip_tags($_GET['Id']));
@@ -154,7 +155,7 @@ else{
             $data['pagesize']=9;
             $data['count']=tour_count($dk);
             $data['danhsach']=tour_getByPaging($data['current'],$data['pagesize'],'id desc',$dk);
-            $data['PAGING'] = showPagingAtLink($data['count'], $data['pagesize'], $data['current'], '' . SITE_NAME . '/tour/'.$danhmuc[0]->name_url.'/');
+            $data['PAGING'] = showPagingAtLink($data['count'], $data['pagesize'], $data['current'], '' . SITE_NAME .$link.$danhmuc[0]->name_url.'/');
             $name=$danhmuc[0]->name;
             $data['banner']=array(
                 'banner_img'=>$danhmuc[0]->img,

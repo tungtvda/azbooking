@@ -311,6 +311,7 @@ function show_chitiet_tour($data = array())
         }
     }
     print_template($asign, 'chitiettour');
+//    print_template($asign, 'chitiettourreview');
 }
 
 function validateDate($date, $format = 'd-m-Y')
