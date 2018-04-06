@@ -180,9 +180,9 @@ Rất tốt
                             </ul>
                         </div>
                         <div class="slidecontainer">
-                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                            <input type="range" min="1" max="10" value="5" class="slider" id="myRange">
                         </div>
-                        ádf<span id="f" style="font-weight:bold;color:red">100</span>
+                        ádf<span id="demo_slide" style="font-weight:bold;color:red">100</span>
                     </div>
                     <div class="review_list_container review-list--clean">
 
