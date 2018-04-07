@@ -24,34 +24,27 @@
                 <div id="review_list_score_container" class="review_list_outer_container clearfix">
                     <div id="review_list_score" class=" review_list_score_container lang_ltr scores_full_layout">
                         <div class="reviews_panel_header_score">
-<span class=" review-score-widget review-score-widget__very_good  review-score-widget__inline   review-score-widget__20      ">
+<span class=" review-score-widget review-score-widget__very_good  review-score-widget__inline   review-score-widget__20 " style="font-size: 18px; ">
 <span class="review-score-badge" role="link" aria-label="Scored 8.2 ">
 8.2
 </span>
-<span class="review-score-widget__text" role="link" aria-label="Rated very good">
+<span style="margin-left: 10px" class="review-score-widget__text" role="link" aria-label="Rated very good">
 Rất tốt
 </span>
-<span class="review-score-widget__subtext" role="link" aria-label=" from 3,824 reviews">
+<span style="margin-left: 10px" class="review-score-widget__subtext" role="link" aria-label=" from 3,824 reviews">
   3,824 đánh giá
 </span>
 </span>
-<span class="reviews_panel_header_score--arrow js-fly-content-tooltip" aria-hidden="true"
-      data-content-tooltip-element="#tooltip_score_distribution"
-      data-extra-class-tooltip="fly-content-tooltip fly-content-tooltip--review-distribution"
-      data-require-tooltip-class="js-fly-content-tooltip">
-<svg class="bk-icon -fonticon-triangledown" height="5" width="12" viewBox="0 0 65 32">
-    <path d="M0 0l32.32 32L64.64 0z"></path>
-</svg>
-</span>
+<a href="javascript:void(0)" style="font-style: italic;margin-left: 10px; color:#ed1c24">(Xem chi tiết thống kê)</a>
                         </div>
-                        <div id="tooltip_score_distribution" style="display: none">
+                        <div id="tooltip_score_distribution" >
                             <div class="review_list_block one_col">
-                                <div class="scores_full_layout">
+                                <div class="scores_full_layout border-review-score">
                                     <ul id="review_list_score_distribution"
                                         class="review_score_breakdown_list list_tighten clearfix">
                                         <li class="clearfix" data-question="review_adj_superb">
                                             <p class="review_score_name">
-                                                Wonderful: 9+
+                                                Tuyệt vời: 9+
                                             </p>
                                             <div class="score_bar">
                                                 <div class="score_bar_value" data-score="36" style="width: 36%;"></div>
@@ -60,7 +53,7 @@ Rất tốt
                                         </li>
                                         <li class="clearfix" data-question="review_adj_good">
                                             <p class="review_score_name">
-                                                Good: 7 – 9
+                                                Tốt : 7 – 9
                                             </p>
                                             <div class="score_bar">
                                                 <div class="score_bar_value" data-score="49" style="width: 49%;"></div>
@@ -69,7 +62,7 @@ Rất tốt
                                         </li>
                                         <li class="clearfix" data-question="review_adj_average_okay">
                                             <p class="review_score_name">
-                                                Okay: 5 – 7
+                                                Trung bình: 5 – 7
                                             </p>
                                             <div class="score_bar">
                                                 <div class="score_bar_value" data-score="12" style="width: 12%;"></div>
@@ -78,7 +71,7 @@ Rất tốt
                                         </li>
                                         <li class="clearfix" data-question="review_adj_poor">
                                             <p class="review_score_name">
-                                                Poor: 3 – 5
+                                                Kém: 3 – 5
                                             </p>
                                             <div class="score_bar">
                                                 <div class="score_bar_value" data-score="2" style="width: 2%;"></div>
@@ -87,7 +80,7 @@ Rất tốt
                                         </li>
                                         <li class="clearfix" data-question="review_adj_very_poor">
                                             <p class="review_score_name">
-                                                Very Poor: 1 – 3
+                                                Rất kém: 1 – 3
                                             </p>
                                             <div class="score_bar">
                                                 <div class="score_bar_value" data-score="1" style="width: 1%;"></div>
@@ -135,7 +128,7 @@ Rất tốt
                                         <p class="review_score_value">8.1</p>
                                     </li>
                                     <li class="clearfix" data-question="hotel_wifi">
-                                        <p class="review_score_name">Nhà hàng</p>
+                                        <p class="review_score_name">Ăn uống</p>
                                         <div class="score_bar">
                                             <div class="score_bar_value" data-score="81" style="width: 81%;"></div>
                                         </div>
@@ -153,41 +146,181 @@ Rất tốt
                         </div>
                     </div>
                     <div data-et-view="adUAVGHCcZbFDEOIGO:1"></div>
-                    <div class="form_review">
-                        <div class="review_list_score_breakdown_right">
-                            <ul class="review_score_breakdown_list list_tighten clearfix">
-                                <li class="clearfix" data-question="hotel_value">
-                                    <p class="review_score_name">Khách sạn</p>
-                                    <div class="score_bar">
-                                        <div class="score_bar_value" data-score="81" style="width: 81%;"></div>
+                    <div class="review_list_container review-list--clean">
+                        <div id="review_list_page_container" style="display: block;">
+                            <div data-et-view="adUAVGZaZfLLIMLaUJeaILYJO:1"></div>
+                            <ul class="review_list" style="margin-bottom: 0px">
+                                <li class="review_item clearfix featured_review_item ">
+                                    <div class="featured_review_item__header_block featured_review-scout_review"
+                                         data-et-view="adUAVGZaeaPDERXSEJCLfeKe:1 adUAVGZaeaPDERXSEJCLfeKe:2">
+                                        <div class="featured_review_item__icon_container"><img
+                                                    src="{SITE-NAME}/view/default/themes/images/review/icon_review.png"
+                                                    alt="Property Scout Review"></div>
+                                        <div class="featured_review_item__header featured_review_item__no_votes">
+                                            Form Đánh giá
+                                        </div>
                                     </div>
-                                    <p class="review_score_value">8.1</p>
-                                </li>
-                                <li class="clearfix" data-question="hotel_wifi">
-                                    <p class="review_score_name">Nhà hàng</p>
-                                    <div class="score_bar">
-                                        <div class="score_bar_value" data-score="81" style="width: 81%;"></div>
+                                    <div class="featured_review-scout_review-subheader widget_has_radio_checkbox_text">
+                                        <div class="form_review widget_content" style="margin-bottom: 0px">
+                                            <fieldset style="margin-bottom: 15px">
+                                                <legend><i class="fa fa-sliders"></i> Điểm dịch vụ</legend>
+                                                <div class="row_slide">
+                                                    <p class="review_score_name">Chương trình tour</p>
+                                                    <div class="slidecontainer">
+                                                        <input type="range" min="0" max="10" value="5" class="slider"
+                                                               id="program_slide">
+                                                    </div>
+                                                    <div class="point_slide">
+                                                        <span id="program_point" class="review_score_value">0</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row_slide">
+                                                    <p class="review_score_name">Hướng dẫn viên suốt tuyến</p>
+                                                    <div class="slidecontainer">
+                                                        <input type="range" min="0" max="10" value="5" class="slider"
+                                                               id="tour_guide_full_slide">
+                                                    </div>
+                                                    <div class="point_slide">
+                                                        <span id="tour_guide_full_point"
+                                                              class="review_score_value">5</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row_slide">
+                                                    <p class="review_score_name">Hướng dẫn viên địa phương</p>
+                                                    <div class="slidecontainer">
+                                                        <input type="range" min="0" max="10" value="5" class="slider"
+                                                               id="tour_guide_local_slide">
+                                                    </div>
+                                                    <div class="point_slide">
+                                                        <span id="tour_guide_local_point"
+                                                              class="review_score_value">5</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row_slide">
+                                                    <p class="review_score_name">Khách sạn</p>
+                                                    <div class="slidecontainer">
+                                                        <input type="range" min="0" max="10" value="5" class="slider"
+                                                               id="hotel_slide">
+                                                    </div>
+                                                    <div class="point_slide">
+                                                        <span id="hotel_point" class="review_score_value">5</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row_slide">
+                                                    <p class="review_score_name">Ăn uống</p>
+                                                    <div class="slidecontainer">
+                                                        <input type="range" min="0" max="10" value="5" class="slider"
+                                                               id="restaurant_slide">
+                                                    </div>
+                                                    <div class="point_slide">
+                                                        <span id="restaurant_point" class="review_score_value">5</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row_slide">
+                                                    <p class="review_score_name">Phương tiện vận chuyển</p>
+                                                    <div class="slidecontainer">
+                                                        <input type="range" min="0" max="10" value="5" class="slider"
+                                                               id="transportation_slide">
+                                                    </div>
+                                                    <div class="point_slide">
+                                                        <span id="transportation_point"
+                                                              class="review_score_value">5</span>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-6 col-sm-12">
+                                                    <p class="review_score_name">Họ tên <span
+                                                                style="color: red">*</span></p>
+                                                    <label class="from" style="margin-top: 0px; padding-top: 0px">
+                                                <span class="form-item db" style="margin-top: 0px">
+                                                    <i class="awe-icon  fa fa-user"></i>
+                                                    <input type="text" name="name_cus_review"
+                                                           placeholder="Họ tên khách hàng...">
+                                                </span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-xs-12 col-md-6 col-sm-12">
+                                                    <p class="review_score_name">Email <span style="color: red">*</span>
+                                                    </p>
+                                                    <label class="from" style="margin-top: 0px; padding-top: 0px">
+                                                <span class="form-item db" style="margin-top: 0px">
+                                                    <i class="awe-icon fa fa-envelope"></i>
+                                                    <input type="text" name="email_cus_review"
+                                                           placeholder="Email khách hàng...">
+                                                </span>
+                                                    </label>
+                                                </div>
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-6 col-sm-12">
+                                                    <p class="review_score_name">Điện thoại</p>
+                                                    <label class="from" style="margin-top: 0px; padding-top: 0px">
+                                                <span class="form-item db" style="margin-top: 0px">
+                                                    <i class="awe-icon fa fa-phone"></i>
+                                                    <input type="text" name="phone_cus_review"
+                                                           placeholder="Điện thoại...">
+                                                </span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-xs-12 col-md-6 col-sm-12">
+                                                    <p class="review_score_name">Ngày khởi hành<span
+                                                                style="color: red">*</span></p>
+                                                    <label class="from" style="margin-top: 0px; padding-top: 0px">
+                                                <span class="form-item db" style="margin-top: 0px">
+                                                    <i class="awe-icon fa fa-mobile"></i>
+                                                    <input type="text" id="input_ngay_khoi_hanh" class="datepicker hasDatepicker" name="mobi_cus_review" placeholder="Di động...">
+                                                </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-12 col-sm-12">
+                                                    <p class="review_score_name">Ý kiến khác / Đề xuất khác</p>
+                                                    <label class="from" style="margin-top: 0px; padding-top: 0px">
+                                                <span class="form-item db" style="margin-top: 0px">
+                                                    <textarea rows="2" name="comment_review" class="text-area-review"
+                                                              placeholder="Ý kiến..."></textarea>
+                                                </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-12 col-sm-12">
+                                                    <p class="review_score_name">Quý khách có dự định đu du lịch trong
+                                                        thời gian sắp tới không? </p>
+                                                    <label class="from" style="margin-top: 0px; padding-top: 0px">
+                                                <span class="form-item db" style="margin-top: 0px">
+                                                   <textarea rows="2" name="comment_upcoming" class="text-area-review"
+                                                             placeholder="Dự định..."></textarea>
+                                                </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-12 col-sm-12">
+                                                <div class="form-actions">
+                                                    <div class="add-to-cart">
+                                                        <button class="submit_review" type="submit">
+                                                            <i class="awe-icon fa fa-check-square-o"></i>  Đánh giá
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
                                     </div>
-                                    <p class="review_score_value">8.1</p>
-                                </li>
-                                <li class="clearfix" data-question="hotel_location">
-                                    <p class="review_score_name">Phương tiện vận chuyển</p>
-                                    <div class="score_bar">
-                                        <div class="score_bar_value" data-score="78" style="width: 78%;"></div>
-                                    </div>
-                                    <p class="review_score_value">7.8</p>
                                 </li>
                             </ul>
                         </div>
-                        <div class="slidecontainer">
-                            <input type="range" min="1" max="10" value="5" class="slider" id="myRange">
-                        </div>
-                        ádf<span id="demo_slide" style="font-weight:bold;color:red">100</span>
                     </div>
+
+
                     <div class="review_list_container review-list--clean">
-
                         <div id="review_list_page_container" style="display: block;">
-
                             <div data-et-view="adUAVGZaZfLLIMLaUJeaILYJO:1"></div>
                             <div class="review-list-topic-filter">
                                 <p class="review-list-topic-filter__heading">

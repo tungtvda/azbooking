@@ -168,6 +168,7 @@
 <script type='text/javascript' src='{SITE-NAME}/view/default/themes/js/jquery.event.move.js?ver=4.6.1'></script>
 <script type='text/javascript' src='{SITE-NAME}/view/default/themes/js/rebound.min.js?ver=4.6.1'></script>
 <script type='text/javascript' src='{SITE-NAME}/view/default/themes/js/index.js?ver=4.6.1'></script>
+<script type='text/javascript' src='{SITE-NAME}/view/default/themes/js/review.js'></script>
 <script type="text/javascript"
         src="{SITE-NAME}/view/default/themes/js/jquery.timeago.js"></script>
 <script type="text/javascript">if ($('#slider-revolution').length) {
@@ -250,14 +251,7 @@
 <script type="text/javascript">
     $(document).ready(function () {
 
-        var slider = document.getElementById("myRange");
-        var output = document.getElementById("demo_slide");
-        output.innerHTML = slider.value; // Display the default slider value
 
-// Update the current slider value (each time you drag the slider handle)
-        slider.oninput = function() {
-            output.innerHTML = this.value;
-        }
 
         $("#forgot_url").click(function () {
             $('.login_page').hide();
