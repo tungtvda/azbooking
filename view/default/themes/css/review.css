@@ -20719,7 +20719,17 @@ legend {
     height: 0;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    border-bottom:15px solid  #dad8d8;
+    border-bottom:12px solid  #dad8d8;
     clear: both;
-
+}
+.icon_show_hide_form_review{
+    float: right;
+    padding-top: 3px;
+    color: #ffffff !important;
+}
+.error_submit_review{
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+    display: none;
 }
