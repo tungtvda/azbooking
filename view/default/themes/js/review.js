@@ -30,8 +30,20 @@
         minDate: '0',
         startDate: '-3d',
     });
-    $('body').on("input",'.valid_input',function(){
 
+    $( "#show_hide_statis" ).hover(
+        function() {
+            $('#tooltip_score_distribution').show();
+        }, function() {
+            $('#tooltip_score_distribution').hide();
+        }
+    );
+
+    $('body').on("input",'.valid_input',function(){
+        var name=$(this).attr('name');
+        if($(this).val()!=''){
+            $('')
+        }
     });
 }());
 
