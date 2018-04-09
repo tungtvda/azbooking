@@ -310,8 +310,9 @@ function show_chitiet_tour($data = array())
                         </div>';
         }
     }
+    $asign['SITE_NAME_MANAGE']=SITE_NAME_MANAGE;
     print_template($asign, 'chitiettour');
-    print_template($asign, 'chitiettourreview');
+//    print_template($asign, 'chitiettourreview');
 }
 
 function validateDate($date, $format = 'd-m-Y')

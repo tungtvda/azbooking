@@ -1,6 +1,6 @@
 <link rel="stylesheet"
       href="{SITE-NAME}/view/default/themes/css/review.css"/>
-
+<input value="{SITE_NAME_MANAGE}" id="site_name_manage" hidden>
 <div id="blockdisplay4" data-tab="reviews" class="pagination_scroll_top">
     <div data-component="core/sliding-panel-core-a11y" data-id="hp-reviews-sliding" id="hp-reviews-sliding"
          aria-hidden="false" class="sliding-panel-widget is-shown" tabindex="0" style="">
@@ -231,16 +231,19 @@ Rất tốt
                                             </fieldset>
                                                 <div class="row">
                                                     <div class="col-xs-12 col-md-12 col-sm-12">
-                                                        <p class="review_score_name">Đánh giá tổng quan</p>
+                                                        <p class="review_score_name">Đánh giá tổng quan <span
+                                                                    style="color: red">*</span></p>
                                                         <label class="from" style="margin-top: 0px; padding-top: 0px">
                                                 <span class="form-item db" style="margin-top: 0px">
+                                                    <i class="awe-icon  fa fa-comment"></i>
                                                     <input required="required"  class="valid_input" type="text" name="content_review" id="input_content_review"
                                                            placeholder="Đánh giá ngắn gọn về chuyến đi của bạn...">
                                                 </span>
                                                         </label>
-                                                        <p class="error_submit_review" id="error_content_review">Bạn vui lòng nhập họ tên</p>
+                                                        <p class="error_submit_review" id="error_content_review">Bạn vui lòng nhập đánh giá tổng quan</p>
                                                     </div>
                                                 </div>
+
                                             <div class="row">
                                                 <div class="col-xs-12 col-md-6 col-sm-12">
                                                     <p class="review_score_name">Họ tên <span
@@ -286,7 +289,7 @@ Rất tốt
                                                     <label class="from" style="margin-top: 0px; padding-top: 0px">
                                                 <span class="form-item db" style="margin-top: 0px">
                                                     <i class="awe-icon fa fa-calendar"></i>
-                                                    <input type="text" id="input_ngay_khoi_hanh"  class="datepicker_review valid" name="mobi_cus_review" placeholder="Ngày khởi hành...">
+                                                    <input type="text" id="input_ngay_khoi_hanh"  class="datepicker_review valid" name="ngay_khoi_hanh_review" placeholder="Ngày khởi hành...">
                                                 </span>
                                                     </label>
                                                 </div>
@@ -318,9 +321,10 @@ Rất tốt
                                                 <div class="col-xs-12 col-md-12 col-sm-12">
                                                 <div class="form-actions">
                                                     <div class="add-to-cart">
-                                                        <button class="submit_review" type="submit">
+                                                        <button class="submit_review" type="button">
                                                             <i class="awe-icon fa fa-check-square-o"></i>  Đánh giá
                                                         </button>
+                                                        <p id="show_mess" class="message_success_review"></p>
                                                     </div>
                                                 </div>
                                                 </div>

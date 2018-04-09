@@ -20668,7 +20668,7 @@ legend {
 .submit_review {
     font-size: 14px;
     color: #FCF2E5;
-    background-color: #ed1c24;
+    background-color: #003580;
     border: 0;
     cursor: pointer;
     line-height: 41px;
@@ -20732,4 +20732,17 @@ legend {
     font-style: italic;
     color: red;
     display: none;
+}
+#show_mess{
+    color: #ffffff !important;
+    padding: 7px 17px;
+    border-radius: 23px;
+    margin-left: 10px;
+    display: none;
+}
+.message_success_review{
+    background: green;
+}
+.message_false_review{
+    background: red;
 }
