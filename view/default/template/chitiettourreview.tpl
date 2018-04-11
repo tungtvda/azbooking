@@ -1,7 +1,8 @@
 <link rel="stylesheet"
       href="{SITE-NAME}/view/default/themes/css/review.css"/>
 <input value="{SITE_NAME_MANAGE}" id="site_name_manage" hidden>
-<div id="blockdisplay4" data-tab="reviews" class="pagination_scroll_top">
+<input value="" id="url_tab_review" hidden>
+<div id="tab_review" data-tab="reviews" class="pagination_scroll_top">
     <div data-component="core/sliding-panel-core-a11y" data-id="hp-reviews-sliding" id="hp-reviews-sliding"
          aria-hidden="false" class="sliding-panel-widget is-shown" tabindex="0" style="">
         <div data-component="core/et-scroll-observer" data-scrollable="" class="sliding-panel-widget-scrollable ">
@@ -163,12 +164,17 @@ Rất tốt
                                     <div id="form_review_show_hide" class="featured_review-scout_review-subheader widget_has_radio_checkbox_text">
                                         <div class="form_review widget_content" style="margin-bottom: 0px">
                                             <form id="form_submit_review">
+                                                <input type="text" value="{code_check_send_email}" id="input_code_check_send_email" name="code_check_send_email" hidden class="valid">
+                                                <input type="text" value="{tour_id}" id="input_tour_id" name="tour_id" hidden class="valid">
+                                                <input type="text" value="{name}" id="input_tour_name" name="tour_name" hidden class="valid">
+                                                <input type="text" value="{code}" id="input_tour_code" name="tour_code" hidden class="valid">
+                                                <input type="text" value="azbooking.vn" id="input_domain" name="domain" hidden class="valid">
                                             <fieldset style="margin-bottom: 15px">
                                                 <legend><i class="fa fa-sliders"></i> Điểm dịch vụ</legend>
                                                 <div class="row_slide">
                                                     <p class="review_score_name">Chương trình tour</p>
                                                     <div class="slidecontainer">
-                                                        <input type="range" min="0" max="10" value="5" class="slider"
+                                                        <input type="range" min="0" max="10" value="5" class="slider valid" name="program"
                                                                id="program_slide">
                                                     </div>
                                                     <div class="point_slide">
@@ -178,7 +184,7 @@ Rất tốt
                                                 <div class="row_slide">
                                                     <p class="review_score_name">Hướng dẫn viên suốt tuyến</p>
                                                     <div class="slidecontainer">
-                                                        <input type="range" min="0" max="10" value="5" class="slider"
+                                                        <input type="range" min="0" max="10" value="5" class="slider valid" name="tour_guide_full"
                                                                id="tour_guide_full_slide">
                                                     </div>
                                                     <div class="point_slide">
@@ -189,7 +195,7 @@ Rất tốt
                                                 <div class="row_slide">
                                                     <p class="review_score_name">Hướng dẫn viên địa phương</p>
                                                     <div class="slidecontainer">
-                                                        <input type="range" min="0" max="10" value="5" class="slider"
+                                                        <input type="range" min="0" max="10" value="5" class="slider valid" name="tour_guide_local"
                                                                id="tour_guide_local_slide">
                                                     </div>
                                                     <div class="point_slide">
@@ -200,7 +206,7 @@ Rất tốt
                                                 <div class="row_slide">
                                                     <p class="review_score_name">Khách sạn</p>
                                                     <div class="slidecontainer">
-                                                        <input type="range" min="0" max="10" value="5" class="slider"
+                                                        <input type="range" min="0" max="10" value="5" class="slider valid" name="hotel"
                                                                id="hotel_slide">
                                                     </div>
                                                     <div class="point_slide">
@@ -210,7 +216,7 @@ Rất tốt
                                                 <div class="row_slide">
                                                     <p class="review_score_name">Ăn uống</p>
                                                     <div class="slidecontainer">
-                                                        <input type="range" min="0" max="10" value="5" class="slider"
+                                                        <input type="range" min="0" max="10" value="5" class="slider valid" name="restaurant"
                                                                id="restaurant_slide">
                                                     </div>
                                                     <div class="point_slide">
@@ -220,7 +226,7 @@ Rất tốt
                                                 <div class="row_slide">
                                                     <p class="review_score_name">Phương tiện vận chuyển</p>
                                                     <div class="slidecontainer">
-                                                        <input type="range" min="0" max="10" value="5" class="slider"
+                                                        <input type="range" min="0" max="10" value="5" class="slider valid"  name="transportation"
                                                                id="transportation_slide">
                                                     </div>
                                                     <div class="point_slide">
@@ -299,7 +305,7 @@ Rất tốt
                                                     <p class="review_score_name">Ý kiến khác / Đề xuất khác</p>
                                                     <label class="from" style="margin-top: 0px; padding-top: 0px">
                                                 <span class="form-item db" style="margin-top: 0px">
-                                                    <textarea rows="2" name="comment_review" class="text-area-review valid"
+                                                    <textarea rows="2" id="input_comment_review" name="comment_review" class="text-area-review valid"
                                                               placeholder="Ý kiến..."></textarea>
                                                 </span>
                                                     </label>
@@ -311,7 +317,7 @@ Rất tốt
                                                         thời gian sắp tới không? </p>
                                                     <label class="from" style="margin-top: 0px; padding-top: 0px">
                                                 <span class="form-item db" style="margin-top: 0px">
-                                                   <textarea rows="2" name="comment_upcoming" class="text-area-review valid"
+                                                   <textarea rows="2" id="input_comment_upcoming" name="comment_upcoming" class="text-area-review valid"
                                                              placeholder="Quý khách có dự định đi du lịch trong thời gian sắp tới không?..."></textarea>
                                                 </span>
                                                     </label>
@@ -324,7 +330,10 @@ Rất tốt
                                                         <button class="submit_review" type="button">
                                                             <i class="awe-icon fa fa-check-square-o"></i>  Đánh giá
                                                         </button>
-                                                        <p id="show_mess" class="message_success_review"></p>
+                                                        <div id="show_mess" class="alert  fade in alert-dismissible">
+                                                            <a href="javascript:void(0)" id="hidden_mess_review" class="close"  title="Tắt thông báo">×</a>
+                                                            <strong id="show_mess_content">Danger!</strong>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 </div>

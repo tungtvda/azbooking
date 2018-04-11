@@ -75,7 +75,7 @@
             var error = $("#error_" + form_data[input]['name']);
             var valid = element.hasClass("valid");
             if (valid == false) {
-                if(name_input!='ngay_khoi_hanh_review' && name_input!='comment_review' && name_input!='comment_upcoming'){
+                if(name_input!='ngay_khoi_hanh_review' && name_input!='comment_review' && name_input!='comment_upcoming'&& name_input!='program'&& name_input!='tour_guide_full'&& name_input!='tour_guide_local'&& name_input!='hotel'&& name_input!='restaurant'&& name_input!='transportation'){
                     console.log(name_input);
                     error.show();
                     error_free = false
@@ -84,19 +84,68 @@
         }
         if (error_free != false) {
             var link = url + '/add-review.html';
-            console.log(link);
+           var loading_form=0;
             $.ajax({
                 method: 'POST',
                 url: link,
                 data:  $('#form_submit_review').serialize(),
                 success: function (response) {
-                    console.log(response);
-                    $('#show_mess').slideDown().text('Đánh giá thành công').removeClass().addClass('message_success_review');
+                    try {
+                        response = $.parseJSON(response);
+                        if(response.success==1){
+                            $('#show_mess').slideDown().removeClass('alert-danger').addClass('alert-success');
+                            $('#show_mess strong').text(response.mess);
+                        }else{
+                            $('#show_mess').slideDown().removeClass('alert-success').addClass('alert-danger');
+                            $('#show_mess strong').text(response.mess)
+                        }
+                        loading_form=1;
+                    }
+                    catch(err) {
+                        $('#show_mess').slideDown().removeClass('alert-success').addClass('alert-danger');
+                        $('#show_mess strong').text('Đánh giá lỗi, bạn vui lòng thử thại')
+                    }
+                    if(loading_form==1){
+                        $('#input_content_review').val('').removeClass('valid');
+                        $('#input_name_cus_review').val('').removeClass('valid');
+                        $('#input_email_cus_review').val('').removeClass('valid');
+                        $('#input_phone_cus_review').val('').removeClass('valid');
+                        $('#input_ngay_khoi_hanh').val('');
+                        $('#input_comment_review').val('');
+                        $('#input_comment_upcoming').val('');
+                        $('.slider').val(5);
+                        $('.review_score_value').text(5);
+                        $('#tab_review').hide();
+                    }
+                    setTimeout(function(){
+                        $('#show_mess').slideToggle();
+                        $('#show_mess strong').text('')
+
+                    }, 5000);
                 }
             });
         }else{
-            $('#show_mess').slideDown().text('Bạn vui lòng điền đẩy đủ thông tin đánh giá').removeClass().addClass('message_false_review');
+            $('#show_mess').slideDown().removeClass('alert-success').addClass('alert-danger');
+            $('#show_mess strong').text('Bạn vui lòng điền đẩy đủ thông tin đánh giá')
         }
     });
+    $('body').on("click", '#hidden_mess_review', function () {
+        $('#show_mess').hide();
+    });
+    $('body').on("click", '.sliding-panel-widget-close-button', function () {
+        hideTabRevie()
+    });
+    function hideTabRevie(){
+        //$('#tab_review').slideToggle();
+        //var url =  window.location.href;
+        var url =  $('#url_tab_review').val();
+        if(!url){
+            url=window.location.href;
+        }
+        url=url.replace("#tab-reviews", "");
+        window.history.replaceState({}, "", url);
+        $('#url_tab_review').val(url);
+    }
+    $('#url_tab_review').val(window.location.href);
 }());
 
