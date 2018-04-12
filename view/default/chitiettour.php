@@ -18,7 +18,7 @@ function show_chitiet_tour($data = array())
     $asign['start']=sao($data['detail'][0]->hotel);
     $asign['name_url']=$data['detail'][0]->name_url;
     $asign['id']= $data['detail'][0]->id;
-    $asign['tour_id']= _return_mc_encrypt($data['detail'][0]->id);
+
     $asign['title']= $data['detail'][0]->title;
     $asign['description']= $data['detail'][0]->description;
     $asign['price_tiep_thi']= $data['detail'][0]->price_tiep_thi;
@@ -311,6 +311,7 @@ function show_chitiet_tour($data = array())
                         </div>';
         }
     }
+    $asign['tour_id']= _return_mc_encrypt($data['detail'][0]->id);
     $asign['SITE_NAME_MANAGE']=SITE_NAME_MANAGE;
     $asign['code_check_send_email']=_return_mc_encrypt('azmix_'.rand(1000,1000000).'_tungtv.soict@gmail.com');
     print_template($asign, 'chitiettour');

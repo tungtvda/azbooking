@@ -1,10 +1,10 @@
 <link rel="stylesheet"
       href="{SITE-NAME}/view/default/themes/css/review.css"/>
 <input value="{SITE_NAME_MANAGE}" id="site_name_manage" hidden>
-<input value="" id="url_tab_review" hidden>
+<input value="" id="url_tab_review" >
 <div id="tab_review" data-tab="reviews" class="pagination_scroll_top">
     <div data-component="core/sliding-panel-core-a11y" data-id="hp-reviews-sliding" id="hp-reviews-sliding"
-         aria-hidden="false" class="sliding-panel-widget is-shown" tabindex="0" style="">
+         aria-hidden="false" class="sliding-panel-widget " tabindex="0" style="">
         <div data-component="core/et-scroll-observer" data-scrollable="" class="sliding-panel-widget-scrollable ">
             <div class="sliding-panel-widget-close-button" data-close-button="" role="button" tabindex="0"
                  aria-label="Close">
@@ -418,92 +418,80 @@ Rất tốt
                                         Reviewed: April 30, 2017
                                     </p>
                                     <div data-et-view="aRDPNZJKSXe:2"></div>
-                                    <div class="review_item_reviewer">
+                                    <div class="review_item_reviewer" style="text-align: center">
                                         <div>
-                                            <img class="avatar-mask ava-pad-bottom ava-default"
-                                                 src=""
-                                                 alt="">
+                                            <img data-toggle="tooltip" data-placement="top" title=" Trần Văn Tùng" style="display: initial;" class="avatar-mask ava-pad-bottom ava-default" src="https://cdn.iconscout.com/public/images/icon/free/png-512/avatar-user-teacher-312a499a08079a12-512x512.png" alt="">
                                         </div>
-                                        <h4>
-                                            Bronwyn
-                                        </h4>
-<span class="reviewer_country">
-<span class="reviewer_country_flag sflag slang-nz  ">
-</span>
-New Zealand
-</span>
-                                        <div class="user_age_group">
-                                        </div>
-                                        <div class="user_badge_list">
-                                            <img width="
-20
-" src="./Sunland Hotel, Ho Chi Minh City – Updated 2018 Prices_files/4822f6159864de18c772c164f31f32245e03af23.png"
-                                                 class="js-fly-content-tooltip "
-                                                 data-content-tooltip="<p><strong>Status: Wordsmith Level 2</strong><br><br>Wordsmiths love to write about their trips and keep coming back to tell us more!</p>"
-                                                 data-extra-class-tooltip="fly-content-tooltip r-badge-tooltip"
-                                                 alt="">
-                                            <img width="
-20
-" src="./Sunland Hotel, Ho Chi Minh City – Updated 2018 Prices_files/07e68b71cb9ff9d7520e8df11e9e3429dd77073b.png"
-                                                 class="js-fly-content-tooltip "
-                                                 data-content-tooltip="<p><strong>Status: Photo Enthusiast Level 3</strong><br><br>Photo Enthusiasts are photo fanatics who share lots of pictures with their reviews.</p>"
-                                                 data-extra-class-tooltip="fly-content-tooltip r-badge-tooltip"
-                                                 alt="Status: Photo Enthusiast Level 3">
-                                        </div>
-                                        <div class="review_item_user_review_count">
-                                            25 Reviews
-                                        </div>
-                                        <div class="review_item_user_helpful_count">
-                                            1 helpful vote
-                                        </div>
+                                        <a  href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title=" Trần Văn Tùng" class="reviewer_country name_cus_list">
+                                        Trần Văn Tùng df fsd sd dfa dfs sdf dsf
+                                        </a>
                                     </div><!-- .review_item_reviewer -->
                                     <div class="review_item_review">
                                         <div class="review_item_review_container lang_ltr">
                                             <div class="review_item_review_header">
-                                                <div class="
-review_item_header_score_container
-">
-
-<span class=" review-score-widget review-score-widget__superb review-score-widget__score-only      review-score-widget__no-subtext    ">
-<span class="review-score-badge" role="link" aria-label="Scored 9.2 ">
-9.2
-</span>
-</span>
+                                                <div class="review_item_header_score_container">
+                                                    <span class=" review-score-widget review-score-widget__superb review-score-widget__score-only  review-score-widget__no-subtext    ">
+                                                        <span class="review-score-badge" role="link" aria-label="Scored 9.2 ">
+                                                            9.2
+                                                         </span>
+                                                    </span>
                                                 </div>
                                                 <div class="review_item_header_content_container">
-                                                    <div class="review_item_header_content
- review_item_header_scoreword
-">
-                                                        Wonderful
+                                                    <div class="review_item_header_content review_item_header_scoreword">
+                                                       Một chuyến đi tuyệt vời
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="review_item_review_content">
-                                                <p class="review_neg "><i class="review_item_icon"
-                                                                          data-et-click="customGoal:HDDHQDSJPXaFWDaXe:1">눉</i>wifi
+                                                <p class="review_neg">
+                                                    <a href=""><i class="review_item_icon review_item_icon_default fa fa-plus-square" ></i></a>
                                                     was unreliable. pool ohotos make it look bigger
                                                     than it is. they charge laundry by the piece
                                                     rather than weight which was super expensive.
                                                 </p>
-                                                <p class="review_pos "><i class="review_item_icon"
-                                                                          data-et-click="customGoal:HDDHQDSJPXaFWDaXe:2">눇</i>location
-                                                    is a wee but away from the hub but nice being on
-                                                    the river and possibly a little quieter for
-                                                    this. staff were great and great breakfast.</p>
-                                                <div class="ABbDSFbDdPOdCYO_view_tracking_div"
-                                                     data-room-id="71978203"></div>
                                                 <p class="review_staydate  reviews-no-room-stayed-71978203">
                                                     Stayed in April 2017
                                                 </p>
-                                                <p class="review_staydate reviews-room-stayed-71978203 g-hidden ">
-                                                    Stayed in
-                                                    <a href="https://www.booking.com/hotel/vn/sunland.html?label=gen173nr-1FCAEoggJCAlhYSDNYBGj0AYgBAZgBMcIBCndpbmRvd3MgMTDIAQzYAQHoAQH4AQKSAgF5qAID;sid=6dd10b3e0aa84c24063f161f676684c6;dest_id=-3730078;dest_type=city;dist=0;hapos=1;hpos=1;room1=A%2CA;sb_price_type=total;srepoch=1522467934;srfid=5f6d57ef4fb9d43024d06a3f9d548ae7b1e9115fX1;srpvid=4c6c1a6f19d5021d;type=total;ucfs=1&amp;#RD71978203"
-                                                       style="color: #0077CC; text-decoration: underline;"
-                                                       data-title="View availability for Two-Bedroom Suite with Living Room">
-                                                        Two-Bedroom Suite with Living Room
-                                                    </a>
-                                                    (April 2017)
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="review_item_reviewer" style="text-align: center">
+                                        <div>
+                                            <img data-toggle="tooltip" data-placement="top" title=" Trần Văn Tùng" style="display: initial;" class="avatar-mask ava-pad-bottom ava-default" src="https://cdn.iconscout.com/public/images/icon/free/png-512/avatar-user-teacher-312a499a08079a12-512x512.png" alt="">
+                                        </div>
+                                        <a  href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title=" Trần Văn Tùng" class="reviewer_country name_cus_list">
+                                            Trần Văn Tùng df fsd sd dfa dfs sdf dsf
+                                        </a>
+                                    </div><!-- .review_item_reviewer -->
+                                    <div class="review_item_review">
+                                        <div class="review_item_review_container lang_ltr">
+                                            <div class="review_item_review_header">
+                                                <div class="review_item_header_score_container">
+                                                    <span class=" review-score-widget review-score-widget__superb review-score-widget__score-only  review-score-widget__no-subtext    ">
+                                                        <span class="review-score-badge" role="link" aria-label="Scored 9.2 ">
+                                                            9.2
+                                                         </span>
+                                                    </span>
+                                                </div>
+                                                <div class="review_item_header_content_container">
+                                                    <div class="review_item_header_content review_item_header_scoreword">
+                                                        Một chuyến đi tuyệt vời
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="review_item_review_content">
+                                                <p class="review_neg">
+                                                    <a href=""><i class="review_item_icon review_item_icon_view fa fa-plus-square" ></i></a>
+                                                    was unreliable. pool ohotos make it look bigger
+                                                    than it is. they charge laundry by the piece
+                                                    rather than weight which was super expensive.
                                                 </p>
+                                                <p class="review_staydate  reviews-no-room-stayed-71978203">
+                                                    Stayed in April 2017
+                                                </p>
+
                                             </div>
                                         </div>
                                     </div>
@@ -526,159 +514,7 @@ review_item_header_score_container
                                 </p>
                             </div>
                         </div>
-                        <div class="review-tab-other-properties " style="display: block;">
-                            <h4>More properties recommended for you:</h4>
-                            <div class="prev-property" style="display: none;"><i class="bicon-">낞</i></div>
-                            <div class="review-tab-slider-container">
-                                <div class="slider-track">
-                                    <ul style="width: 1024px; left: 0px;">
-                                        <li>
-                                            <a href="https://www.booking.com/hotel/vn/alagon-saigon.html?label=gen173nr-1FCAEoggJCAlhYSDNYBGj0AYgBAZgBMcIBCndpbmRvd3MgMTDIAQzYAQHoAQH4AQKSAgF5qAID;sid=6dd10b3e0aa84c24063f161f676684c6;fs=1;shid=719782&amp;"
-                                               target="_blank" data-et-click="customGoal:ZOOTdCMPXKIHYTJXceZVCRT:1">
-                                                <img src="./Sunland Hotel, Ho Chi Minh City – Updated 2018 Prices_files/108122755.jpg"
-                                                     alt="Alagon Saigon Hotel &amp; Spa">
-                                                <div class="review-tab-other-property-name">Alagon
-                                                    Saigon Hotel &amp; Spa
-                                                </div>
-                                                <i class="
-bk-icon-wrapper
-bk-icon-stars
-star_track
-" title="3-star hotel">
-                                                    <svg class="bk-icon -sprite-ratings_stars_3" height="12" width="39"
-                                                         viewBox="0 0 39 12">
-                                                        <path fill="#FEBA02"
-                                                              d="M13 4.6c0-.1-.1-.2-.2-.2l-4.5-.3-1.5-4c-.1-.1-.5-.1-.5 0l-1.5 4-4.6.3c-.1 0-.2.1-.2.2s0 .2.1.3l3.5 2.5-1.2 4.3c0 .1 0 .2.1.3h.3l3.7-2.6 3.7 2.6H10.5c.1-.1.1-.2.1-.3L9.4 7.3l3.5-2.5c.1 0 .1-.1.1-.2zM26 4.6c0-.1-.1-.2-.2-.2l-4.5-.3-1.5-4c-.1-.2-.4-.2-.5 0l-1.5 4-4.5.3c-.1 0-.2.1-.2.2s0 .2.1.3l3.5 2.5-1.2 4.3c0 .1 0 .2.1.3.1.1.2.1.3 0l3.7-2.6 3.7 2.6H23.6c.1-.1.1-.2.1-.3l-1.2-4.3L26 4.9v-.3zM39 4.6c0-.1-.1-.2-.2-.2l-4.5-.3-1.5-4c-.1-.2-.4-.2-.5 0l-1.5 4-4.5.3c-.1 0-.2.1-.2.2s0 .2.1.3l3.5 2.5-1.2 4.3c0 .1 0 .2.1.3.1.1.2.1.3 0l3.7-2.6 3.7 2.6H36.6c.1-.1.1-.2.1-.3l-1.2-4.3L39 4.9v-.3z"></path>
-                                                    </svg>
-                                                    <span class="invisible_spoken">3-star hotel</span></i>
-
-<span class=" review-score-widget review-score-widget__very_good    review-score-widget__12      ">
-<span class="review-score-badge" role="link" aria-label="Scored 8.3 ">
-8.3
-</span>
-<span class="review-score-widget__body">
-<span class="review-score-widget__text" role="link" aria-label="Rated very good">
-Very Good
-</span>
-<span class="review-score-widget__subtext" role="link" aria-label=" from 2,584 reviews">
-2,584 reviews
-</span>
-</span>
-</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.booking.com/hotel/vn/eden-saigon.html?label=gen173nr-1FCAEoggJCAlhYSDNYBGj0AYgBAZgBMcIBCndpbmRvd3MgMTDIAQzYAQHoAQH4AQKSAgF5qAID;sid=6dd10b3e0aa84c24063f161f676684c6;fs=2;shid=719782&amp;"
-                                               target="_blank" data-et-click="customGoal:ZOOTdCMPXKIHYTJXceZVCRT:1">
-                                                <img src="./Sunland Hotel, Ho Chi Minh City – Updated 2018 Prices_files/74943412.jpg"
-                                                     alt="EdenStar Saigon Hotel &amp; Spa">
-                                                <div class="review-tab-other-property-name">EdenStar
-                                                    Saigon Hotel &amp; Spa
-                                                </div>
-                                                <i class="
-bk-icon-wrapper
-bk-icon-stars
-star_track
-" title="4-star hotel">
-                                                    <svg class="bk-icon -sprite-ratings_stars_4" height="12" width="52"
-                                                         viewBox="0 0 52 12">
-                                                        <path fill="#FEBA02"
-                                                              d="M13 4.6c0-.1-.1-.2-.2-.2l-4.5-.3-1.5-4c-.1-.1-.5-.1-.5 0l-1.5 4-4.6.3c-.1 0-.2.1-.2.2s0 .2.1.3l3.5 2.5-1.2 4.3c0 .1 0 .2.1.3h.3l3.7-2.6 3.7 2.6H10.5c.1-.1.1-.2.1-.3L9.4 7.3l3.5-2.5c.1 0 .1-.1.1-.2zM26 4.6c0-.1-.1-.2-.2-.2l-4.5-.3-1.5-4c-.1-.2-.4-.2-.5 0l-1.5 4-4.5.3c-.1 0-.2.1-.2.2s0 .2.1.3l3.5 2.5-1.2 4.3c0 .1 0 .2.1.3.1.1.2.1.3 0l3.7-2.6 3.7 2.6H23.6c.1-.1.1-.2.1-.3l-1.2-4.3L26 4.9v-.3zM39 4.6c0-.1-.1-.2-.2-.2l-4.5-.3-1.5-4c-.1-.2-.4-.2-.5 0l-1.5 4-4.5.3c-.1 0-.2.1-.2.2s0 .2.1.3l3.5 2.5-1.2 4.3c0 .1 0 .2.1.3.1.1.2.1.3 0l3.7-2.6 3.7 2.6H36.6c.1-.1.1-.2.1-.3l-1.2-4.3L39 4.9v-.3zM52 4.6c0-.1-.1-.2-.2-.2l-4.5-.3-1.5-4c-.1-.2-.4-.2-.5 0l-1.5 4-4.5.3c-.1 0-.2.1-.2.2s0 .2.1.3l3.5 2.5-1.2 4.3c0 .1 0 .2.1.3.1.1.2.1.3 0l3.7-2.6 3.7 2.6H49.6c.1-.1.1-.2.1-.3l-1.2-4.3L52 4.9v-.3z"></path>
-                                                    </svg>
-                                                    <span class="invisible_spoken">4-star hotel</span></i>
-
-<span class=" review-score-widget review-score-widget__very_good    review-score-widget__12      ">
-<span class="review-score-badge" role="link" aria-label="Scored 8.3 ">
-8.3
-</span>
-<span class="review-score-widget__body">
-<span class="review-score-widget__text" role="link" aria-label="Rated very good">
-Very Good
-</span>
-<span class="review-score-widget__subtext" role="link" aria-label=" from 1,680 reviews">
-1,680 reviews
-</span>
-</span>
-</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.booking.com/hotel/vn/alagon-central-hotel-and-spa.html?label=gen173nr-1FCAEoggJCAlhYSDNYBGj0AYgBAZgBMcIBCndpbmRvd3MgMTDIAQzYAQHoAQH4AQKSAgF5qAID;sid=6dd10b3e0aa84c24063f161f676684c6;fs=3;shid=719782&amp;"
-                                               target="_blank" data-et-click="customGoal:ZOOTdCMPXKIHYTJXceZVCRT:1">
-                                                <img src="./Sunland Hotel, Ho Chi Minh City – Updated 2018 Prices_files/118289410.jpg"
-                                                     alt="Alagon Central Hotel &amp; Spa">
-                                                <div class="review-tab-other-property-name">Alagon
-                                                    Central Hotel &amp; Spa
-                                                </div>
-                                                <i class="
-bk-icon-wrapper
-bk-icon-stars
-star_track
-" title="3-star hotel">
-                                                    <svg class="bk-icon -sprite-ratings_stars_3" height="12" width="39"
-                                                         viewBox="0 0 39 12">
-                                                        <path fill="#FEBA02"
-                                                              d="M13 4.6c0-.1-.1-.2-.2-.2l-4.5-.3-1.5-4c-.1-.1-.5-.1-.5 0l-1.5 4-4.6.3c-.1 0-.2.1-.2.2s0 .2.1.3l3.5 2.5-1.2 4.3c0 .1 0 .2.1.3h.3l3.7-2.6 3.7 2.6H10.5c.1-.1.1-.2.1-.3L9.4 7.3l3.5-2.5c.1 0 .1-.1.1-.2zM26 4.6c0-.1-.1-.2-.2-.2l-4.5-.3-1.5-4c-.1-.2-.4-.2-.5 0l-1.5 4-4.5.3c-.1 0-.2.1-.2.2s0 .2.1.3l3.5 2.5-1.2 4.3c0 .1 0 .2.1.3.1.1.2.1.3 0l3.7-2.6 3.7 2.6H23.6c.1-.1.1-.2.1-.3l-1.2-4.3L26 4.9v-.3zM39 4.6c0-.1-.1-.2-.2-.2l-4.5-.3-1.5-4c-.1-.2-.4-.2-.5 0l-1.5 4-4.5.3c-.1 0-.2.1-.2.2s0 .2.1.3l3.5 2.5-1.2 4.3c0 .1 0 .2.1.3.1.1.2.1.3 0l3.7-2.6 3.7 2.6H36.6c.1-.1.1-.2.1-.3l-1.2-4.3L39 4.9v-.3z"></path>
-                                                    </svg>
-                                                    <span class="invisible_spoken">3-star hotel</span></i>
-
-<span class=" review-score-widget review-score-widget__good    review-score-widget__12      ">
-<span class="review-score-badge" role="link" aria-label="Scored 7.8 ">
-7.8
-</span>
-<span class="review-score-widget__body">
-<span class="review-score-widget__text" role="link" aria-label="Rated good">
-Good
-</span>
-<span class="review-score-widget__subtext" role="link" aria-label=" from 1,145 reviews">
-1,145 reviews
-</span>
-</span>
-</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.booking.com/hotel/vn/somerset-ho-chi-minh-city.html?label=gen173nr-1FCAEoggJCAlhYSDNYBGj0AYgBAZgBMcIBCndpbmRvd3MgMTDIAQzYAQHoAQH4AQKSAgF5qAID;sid=6dd10b3e0aa84c24063f161f676684c6;fs=4;shid=719782&amp;"
-                                               target="_blank" data-et-click="customGoal:ZOOTdCMPXKIHYTJXceZVCRT:1">
-                                                <img src="./Sunland Hotel, Ho Chi Minh City – Updated 2018 Prices_files/63297322.jpg"
-                                                     alt="Somerset Ho Chi Minh City">
-                                                <div class="review-tab-other-property-name">Somerset
-                                                    Ho Chi Minh City
-                                                </div>
-                                                <i class="
-bk-icon-wrapper
-bk-icon-stars
-star_track
-" title="5 stars">
-                                                    <svg class="bk-icon -sprite-ratings_stars_5" height="12" width="65"
-                                                         viewBox="0 0 65 12">
-                                                        <path fill="#FEBA02"
-                                                              d="M13 4.6c0-.1-.1-.2-.2-.2l-4.5-.3-1.5-4c-.1-.1-.5-.1-.5 0l-1.5 4-4.6.3c-.1 0-.2.1-.2.2s0 .2.1.3l3.5 2.5-1.2 4.3c0 .1 0 .2.1.3h.3l3.7-2.6 3.7 2.6H10.5c.1-.1.1-.2.1-.3L9.4 7.3l3.5-2.5c.1 0 .1-.1.1-.2zM26 4.6c0-.1-.1-.2-.2-.2l-4.5-.3-1.5-4c-.1-.2-.4-.2-.5 0l-1.5 4-4.5.3c-.1 0-.2.1-.2.2s0 .2.1.3l3.5 2.5-1.2 4.3c0 .1 0 .2.1.3.1.1.2.1.3 0l3.7-2.6 3.7 2.6H23.6c.1-.1.1-.2.1-.3l-1.2-4.3L26 4.9v-.3zM39 4.6c0-.1-.1-.2-.2-.2l-4.5-.3-1.5-4c-.1-.2-.4-.2-.5 0l-1.5 4-4.5.3c-.1 0-.2.1-.2.2s0 .2.1.3l3.5 2.5-1.2 4.3c0 .1 0 .2.1.3.1.1.2.1.3 0l3.7-2.6 3.7 2.6H36.6c.1-.1.1-.2.1-.3l-1.2-4.3L39 4.9v-.3zM52 4.6c0-.1-.1-.2-.2-.2l-4.5-.3-1.5-4c-.1-.2-.4-.2-.5 0l-1.5 4-4.5.3c-.1 0-.2.1-.2.2s0 .2.1.3l3.5 2.5-1.2 4.3c0 .1 0 .2.1.3.1.1.2.1.3 0l3.7-2.6 3.7 2.6H49.6c.1-.1.1-.2.1-.3l-1.2-4.3L52 4.9v-.3zM65 4.6c0-.1-.1-.2-.2-.2l-4.5-.3-1.5-4c-.1-.2-.4-.2-.5 0l-1.5 4-4.5.3c-.1 0-.2.1-.2.2s0 .2.1.3l3.5 2.5-1.2 4.3c0 .1 0 .2.1.3.1.1.2.1.3 0l3.7-2.6 3.7 2.6H62.6c.1-.1.1-.2.1-.3l-1.2-4.3L65 4.9v-.3z"></path>
-                                                    </svg>
-                                                    <span class="invisible_spoken">5 stars</span></i>
-
-<span class=" review-score-widget review-score-widget__fabulous    review-score-widget__12      ">
-<span class="review-score-badge" role="link" aria-label="Scored 8.8 ">
-8.8
-</span>
-<span class="review-score-widget__body">
-<span class="review-score-widget__text" role="link" aria-label="Rated excellent">
-Excellent
-</span>
-<span class="review-score-widget__subtext" role="link" aria-label=" from 828 reviews">
-828 reviews
-</span>
-</span>
-</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="next-property" style="display: block;"><i class="bicon-">낝</i></div>
-                        </div>
                     </div>
-                    <div style="clear: both;" data-et-view="customGoal:HDDPKSHLWbOTCGVTbXNbBMPMKdSODAAC:2"></div>
                 </div><!-- /#review_list_score_container -->
                 <span data-js-uhrcpo="3," style="position:absolute;width:1px;height:1px;opacity:0;"></span>
             </div><!-- /.sliding-panel-widget-content -->

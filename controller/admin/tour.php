@@ -360,14 +360,17 @@ if (isset($_SESSION["Admin"])) {
             header('Location: ' . SITE_NAME . '/controller/admin/tour.php' . $danhmuc_id_get);
         }
     }
+    $dk_url='';
     $dk = '';
     $dk_count = '';
     if (isset($_GET['giatri']) && $_GET['giatri'] != '') {
+        $dk_url.='&giatri='.$_GET['giatri'];
         $key_timkiem = mb_strtolower(addslashes(strip_tags($_GET['giatri'])));
         $dk_count = 'name LIKE "%' . $key_timkiem . '%" or name_url LIKE "%' . $key_timkiem . '%" or code LIKE "%' . $key_timkiem . '%" or price_sales LIKE "%' . $key_timkiem . '%" or price LIKE "%' . $key_timkiem . '%" or durations LIKE "%' . $key_timkiem . '%"  or departure LIKE "%' . $key_timkiem . '%" or departure_time LIKE "%' . $key_timkiem . '%" or destination LIKE "%' . $key_timkiem . '%" or destination LIKE "%' . $key_timkiem . '%"';
         $dk = '(tour.name LIKE "%' . $key_timkiem . '%" or tour.name_url LIKE "%' . $key_timkiem . '%" or tour.code LIKE "%' . $key_timkiem . '%" or tour.price_sales LIKE "%' . $key_timkiem . '%" or tour.price LIKE "%' . $key_timkiem . '%" or tour.durations LIKE "%' . $key_timkiem . '%"  or tour.departure LIKE "%' . $key_timkiem . '%" or tour.departure_time LIKE "%' . $key_timkiem . '%" or tour.destination LIKE "%' . $key_timkiem . '%" or tour.destination LIKE "%' . $key_timkiem . '%")';
     }
     if (isset($_GET['DanhMuc1Id']) && $_GET['DanhMuc1Id'] != '') {
+        $dk_url.='&DanhMuc1Id='.$_GET['DanhMuc1Id'];
         $danhmuc_id = mb_strtolower(addslashes(strip_tags($_GET['DanhMuc1Id'])));
         if ($dk != '') {
             $dk .= ' (and tour.DanhMuc1Id=' . $danhmuc_id . ')';
@@ -378,6 +381,7 @@ if (isset($_SESSION["Admin"])) {
         }
     } else {
         if (isset($_GET['DanhMuc2Id']) && $_GET['DanhMuc2Id'] != '') {
+            $dk_url.='&DanhMuc2Id='.$_GET['DanhMuc2Id'];
             $danhmuc_id = mb_strtolower(addslashes(strip_tags($_GET['DanhMuc2Id'])));
             if ($dk != '') {
                 $dk .= ' (and tour.DanhMuc2Id=' . $danhmuc_id . ')';
@@ -388,6 +392,7 @@ if (isset($_SESSION["Admin"])) {
             }
         }
     }
+    $data['dk_url']=$dk_url;
     $data['username'] = isset($_SESSION["UserName"]) ? $_SESSION["UserName"] : 'quản trị viên';
     $data['count_paging'] = tour_count($dk_count);
     $data['page'] = isset($_GET['page']) ? $_GET['page'] : '1';

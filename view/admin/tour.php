@@ -16,7 +16,7 @@ function view_tour($data)
     $ft->assign('USER-NAME', isset($data['username']) ? $data['username'] : '');
     $ft->assign('NOTIFICATION-CONTENT', isset($data['notififation_content']) ? $data['notififation_content'] : '');
     $ft->assign('TABLE-HEADER', showTableHeader());
-    $ft->assign('PAGING', showPaging($data['count_paging'], 20, $data['page']));
+    $ft->assign('PAGING', showPaging($data['count_paging'], 20, $data['page'],$data['dk_url']));
     $ft->assign('TABLE-BODY', showTableBody($data['table_body']));
     $ft->assign('TABLE-NAME', 'tour');
     $ft->assign('CONTENT-BOX-LEFT', isset($data['content_box_left']) ? $data['content_box_left'] : '');
