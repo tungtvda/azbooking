@@ -5,26 +5,26 @@
  * @copyright 2013
  */
 
-function showPaging($countRecord,$PageSize,$currentPage)
+function showPaging($countRecord,$PageSize,$currentPage, $url='')
 {
     $result="";
     if($PageSize>=$countRecord) return $result;
     if($currentPage!=1)
     {
-        $result=$result."<a class=\"phantrang\" href=\"?page=1\" title=\"First Page\"> First</a><a class=\"phantrang\" href=\"?page=".($currentPage-1)."\" title=\"Previous Page\"> Previous</a>";
+        $result=$result."<a class=\"phantrang\" href=\"?page=1".$url."\" title=\"First Page\"> First</a><a class=\"phantrang\" href=\"?page=".($currentPage-1).$url."\" title=\"Previous Page\"> Previous</a>";
     }
     for($i=1;$i<=($countRecord/$PageSize+1);$i++)
     {
-		if($i==$currentPage) $result=$result."<a href=\"?page=".$i."\" class=\"phantrang number kichhoat\" title=\"".$i."\">".$i."</a>";
+		if($i==$currentPage) $result=$result."<a href=\"?page=".$i.$url."\" class=\"phantrang number kichhoat\" title=\"".$i."\">".$i."</a>";
         else
         {
-            $result=$result."<a class=\"phantrang\" href=\"?page=".$i."\" class=\"number \" title=\"".$i."\">".$i."</a>";
+            $result=$result."<a class=\"phantrang\" href=\"?page=".$i.$url."\" class=\"number \" title=\"".$i."\">".$i."</a>";
         }
         
     }
     if($currentPage!=intval($countRecord/$PageSize+1))
     {
-        $result=$result."<a class=\"phantrang\" href=\"?page=".($currentPage+1)."\" title=\"Next Page\">Next </a><a class=\"phantrang\" href=\"?page=".intval($countRecord/$PageSize+1)."\" title=\"Last Page\">Last </a>";
+        $result=$result."<a class=\"phantrang\" href=\"?page=".($currentPage+1).$url."\" title=\"Next Page\">Next </a><a class=\"phantrang\" href=\"?page=".intval($countRecord/$PageSize+1).$url."\" title=\"Last Page\">Last </a>";
     }
     return $result;
 }

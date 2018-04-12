@@ -115,12 +115,13 @@
                         $('#input_comment_upcoming').val('');
                         $('.slider').val(5);
                         $('.review_score_value').text(5);
-                        $('#tab_review').hide();
                     }
                     setTimeout(function(){
                         $('#show_mess').slideToggle();
                         $('#show_mess strong').text('')
-
+                        if(loading_form==1){
+                            hideTabRevie()
+                        }
                     }, 5000);
                 }
             });
@@ -135,8 +136,28 @@
     $('body').on("click", '.sliding-panel-widget-close-button', function () {
         hideTabRevie()
     });
+    //$('body').on("click", '.sliding-panel-widget-scrollable', function () {
+    //    hideTabRevie()
+    //});
+    $('body').on("click", '#tab-review-click', function () {
+        $('.tab-tour').removeClass('active');
+        $('#tab-review-li').addClass('active');
+        var  url=window.location.href;
+        $('#url_tab_review').val(url+'#tab-reviews');
+        //if(url.indexOf("#tab-reviews")>-1){
+        //
+        //}else{
+        //    url=url.replace("#tab-reviews", "");
+        //    window.history.replaceState({}, "", url);
+        //    $('#url_tab_review').val(url);
+        //}
+        $('#hp-reviews-sliding').addClass('is-shown');
+        copyToClipboard(document.getElementById('url_tab_review'));
+    });
     function hideTabRevie(){
-        //$('#tab_review').slideToggle();
+        $('.tab-tour').removeClass('active');
+        $('#tab-tour-li').addClass('active');
+        $('#hp-reviews-sliding').removeClass('is-shown');
         //var url =  window.location.href;
         var url =  $('#url_tab_review').val();
         if(!url){
@@ -146,6 +167,68 @@
         window.history.replaceState({}, "", url);
         $('#url_tab_review').val(url);
     }
-    $('#url_tab_review').val(window.location.href);
+
+    showTabReview();
+    function  showTabReview(){
+        var  url=window.location.href;
+        if(url.indexOf("#tab-reviews")>-1){
+            $('#hp-reviews-sliding').addClass('is-shown');
+            $('.tab-tour').removeClass('active');
+            $('#tab-review-li').addClass('active');
+        }
+        $('#url_tab_review').val(url);
+    }
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+    function copyToClipboard(elem) {
+        // create hidden text element, if it doesn't already exist
+        var targetId = "_hiddenCopyText_";
+        var isInput = elem.tagName === "INPUT" || elem.tagName === "TEXTAREA";
+        var origSelectionStart, origSelectionEnd;
+        if (isInput) {
+            // can just use the original source element for the selection and copy
+            target = elem;
+            origSelectionStart = elem.selectionStart;
+            origSelectionEnd = elem.selectionEnd;
+        } else {
+            // must use a temporary form element for the selection and copy
+            target = document.getElementById(targetId);
+            if (!target) {
+                var target = document.createElement("textarea");
+                target.style.position = "absolute";
+                target.style.left = "-9999px";
+                target.style.top = "0";
+                target.id = targetId;
+                document.body.appendChild(target);
+            }
+            target.textContent = elem.textContent;
+        }
+        // select the content
+        var currentFocus = document.activeElement;
+        target.focus();
+        target.setSelectionRange(0, target.value.length);
+
+        // copy the selection
+        var succeed;
+        try {
+            succeed = document.execCommand("copy");
+        } catch (e) {
+            succeed = false;
+        }
+        // restore original focus
+        if (currentFocus && typeof currentFocus.focus === "function") {
+            currentFocus.focus();
+        }
+
+        if (isInput) {
+            // restore prior selection
+            elem.setSelectionRange(origSelectionStart, origSelectionEnd);
+        } else {
+            // clear temporary content
+            target.textContent = "";
+        }
+        return succeed;
+    }
 }());
 

@@ -4487,7 +4487,7 @@ a:hover .show_map_icon.map_icon__update {
 
 .review_item_header_content {
     color: #666;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: bold;
     text-align: left;
     text-decoration: none
@@ -4521,7 +4521,7 @@ a:hover .show_map_icon.map_icon__update {
 }
 
 .review_item_icon {
-    font-family: 'booking-iconset';
+    /*font-family: 'booking-iconset';*/
     font-style: normal;
     position: absolute;
     left: 0
@@ -4539,8 +4539,14 @@ a:hover .show_map_icon.map_icon__update {
     right: 0
 }
 
-.review_neg .review_item_icon {
+/*.review_neg .review_item_icon {*/
+    /*color: #d7d7d7*/
+/*}*/
+.review_item_icon_default{
     color: #d7d7d7
+}
+.review_item_icon_view{
+    color: #0ab21b
 }
 
 .review_neg .red_review_item_icon {
@@ -20746,4 +20752,11 @@ legend {
 }
 .message_false_review{
     background: red;
+}
+.name_cus_list{
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 12px;
 }
