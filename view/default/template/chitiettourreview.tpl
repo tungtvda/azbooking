@@ -17,9 +17,8 @@
                     <img class="review-policy__icon" src="{SITE-NAME}/view/default/themes/images/review/checklist.png">
                     <div class="review-policy__header-group">
                         <h2 class="review-policy__header">
-                            100% đánh giá đã được xác minh
+                        {percent_access}
                         </h2>
-
                     </div>
                 </div>
                 <div id="review_list_score_container" class="review_list_outer_container clearfix">
@@ -400,20 +399,17 @@ Rất tốt
 
                                 </ul>
                             </div>
+                            <div class="featured_review_item__header_block featured_review-scout_review title_list_review">
+                                <div class="featured_review_item__icon_container"><img
+                                            src="{SITE-NAME}/view/default/themes/images/review/icon_review.png"
+                                            alt="Property Scout Review"></div>
+                                <div class="featured_review_item__header featured_review_item__no_votes">
+                                    Danh sách đánh giá
+                                </div>
+                            </div>
                             <ul class="review_list" >
-                                <li class="review_item clearfix featured_review_item ">
-                                    <div class="featured_review_item__header_block featured_review-scout_review">
-                                        <div class="featured_review_item__icon_container"><img
-                                                    src="{SITE-NAME}/view/default/themes/images/review/icon_review.png"
-                                                    alt="Property Scout Review"></div>
-                                        <div class="featured_review_item__header featured_review_item__no_votes">
-                                            Danh sách đánh giá
-                                        </div>
-                                    </div>
-                                    <div class="featured_review-scout_review-subheader">
-                                        Property Scouts are guests just like you. They're dedicated
-                                        to reporting back the full story with detailed reviews.
-                                    </div>
+                                {list_reivew}
+                              <!--  <li class="review_item clearfix review_featured  ">
                                     <p class="review_item_date">
                                         Reviewed: April 30, 2017
                                     </p>
@@ -425,7 +421,7 @@ Rất tốt
                                         <a  href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title=" Trần Văn Tùng" class="reviewer_country name_cus_list">
                                         Trần Văn Tùng df fsd sd dfa dfs sdf dsf
                                         </a>
-                                    </div><!-- .review_item_reviewer -->
+                                    </div>
                                     <div class="review_item_review">
                                         <div class="review_item_review_container lang_ltr">
                                             <div class="review_item_review_header">
@@ -448,57 +444,25 @@ Rất tốt
                                                     was unreliable. pool ohotos make it look bigger
                                                     than it is. they charge laundry by the piece
                                                     rather than weight which was super expensive.
+                                                <b class="icon_review_list">
+                                                    <a data-toggle="tooltip" data-placement="left" title="Chương trình tour: 10" href="javascript:void(0)"><i class="fa fa-plane "></i></a>
+                                                    <a data-toggle="tooltip" data-placement="left" title="Hướng dẫn viên suốt tuyến: 10" href="javascript:void(0)"><i class="fa fa-users"></i></a>
+                                                    <a data-toggle="tooltip" data-placement="left" title="Hướng dẫn viên địa phương: 10" href="javascript:void(0)"><i class="fa fa-user "></i></a>
+                                                    <a data-toggle="tooltip" data-placement="left" title="Khách sạn: 10" href="javascript:void(0)"><i class="fa fa-building"></i></a>
+                                                    <a data-toggle="tooltip" data-placement="left" title="Ăn uống: 10" href="javascript:void(0)"><i class="fa fa-cutlery  "></i></a>
+                                                    <a data-toggle="tooltip" data-placement="left" title="Vận chuyển: 10" href="javascript:void(0)"><i class="fa fa-car  "></i></a>
+                                                </b>
                                                 </p>
-                                                <p class="review_staydate  reviews-no-room-stayed-71978203">
-                                                    Stayed in April 2017
-                                                </p>
+
 
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div class="review_item_reviewer" style="text-align: center">
-                                        <div>
-                                            <img data-toggle="tooltip" data-placement="top" title=" Trần Văn Tùng" style="display: initial;" class="avatar-mask ava-pad-bottom ava-default" src="https://cdn.iconscout.com/public/images/icon/free/png-512/avatar-user-teacher-312a499a08079a12-512x512.png" alt="">
-                                        </div>
-                                        <a  href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title=" Trần Văn Tùng" class="reviewer_country name_cus_list">
-                                            Trần Văn Tùng df fsd sd dfa dfs sdf dsf
-                                        </a>
-                                    </div><!-- .review_item_reviewer -->
-                                    <div class="review_item_review">
-                                        <div class="review_item_review_container lang_ltr">
-                                            <div class="review_item_review_header">
-                                                <div class="review_item_header_score_container">
-                                                    <span class=" review-score-widget review-score-widget__superb review-score-widget__score-only  review-score-widget__no-subtext    ">
-                                                        <span class="review-score-badge" role="link" aria-label="Scored 9.2 ">
-                                                            9.2
-                                                         </span>
-                                                    </span>
-                                                </div>
-                                                <div class="review_item_header_content_container">
-                                                    <div class="review_item_header_content review_item_header_scoreword">
-                                                        Một chuyến đi tuyệt vời
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="review_item_review_content">
-                                                <p class="review_neg">
-                                                    <a href=""><i class="review_item_icon review_item_icon_view fa fa-plus-square" ></i></a>
-                                                    was unreliable. pool ohotos make it look bigger
-                                                    than it is. they charge laundry by the piece
-                                                    rather than weight which was super expensive.
-                                                </p>
-                                                <p class="review_staydate  reviews-no-room-stayed-71978203">
-                                                    Stayed in April 2017
-                                                </p>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
+                                </li>-->
                             </ul>
+
                             <div id="review_photo_lightbox"></div>
-                            <div class="review_list_pagination">
+                            <div hidden class="review_list_pagination">
                                 <p class="page_link review_previous_page">
                                     Previous page
                                 </p>
