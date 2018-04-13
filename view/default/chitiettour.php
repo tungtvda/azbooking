@@ -313,8 +313,31 @@ function show_chitiet_tour($data = array())
     }
     $asign['tour_id']= _return_mc_encrypt($data['detail'][0]->id);
     $asign['SITE_NAME_MANAGE']=SITE_NAME_MANAGE;
-    $asign['code_check_send_email']=_return_mc_encrypt('azmix_'.rand(1000,1000000).'_tungtv.soict@gmail.com');
+    $code_check_send_email=_return_mc_encrypt('azmix_'.rand(1000,1000000).'_tungtv.soict@gmail.com');
+    $asign['code_check_send_email']=$code_check_send_email;
     print_template($asign, 'chitiettour');
+    $array_check_noti = array(
+        'id_tour'=> _return_mc_encrypt($data['detail'][0]->id),
+        'domain'=>'azbooking.vn',
+        'code_check_send_email'=>$code_check_send_email,
+    );
+    $list_review= returnCURL($array_check_noti, SITE_NAME_MANAGE.'/list-review.html');
+    $data_list_noti=json_decode($list_review,true);
+    $asign['list_reivew']='';
+    $asign['percent_access']='Tour chưa có đánh giá';
+    $asign['total_review']=0;
+    if(isset($data_list_noti['listReview'])){
+        $asign['list_reivew']=$data_list_noti['listReview'];
+    }
+
+    if(isset($data_list_noti['totalReview'])&& $data_list_noti['totalReview']>0){
+        if(isset($data_list_noti['percentAccess'])){
+            $asign['percent_access']='
+                            '.$data_list_noti['percentAccess'].'% đánh giá đã được xác minh';
+        }
+        $asign['total_review']=$data_list_noti['totalReview'];
+    }
+
     print_template($asign, 'chitiettourreview');
 
 }
