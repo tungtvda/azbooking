@@ -325,7 +325,7 @@ function show_chitiet_tour($data = array())
     $data_list_noti=json_decode($list_review,true);
 
     $asign['list_reivew']='<p style="margin-top: 30px">Tour '. $asign['name'].' chưa có đánh giá</p>';
-    $asign['percent_access']='Tour chưa có đánh giá';
+    $asign['percent_access']='Tour chưa có bất kỳ đánh giá nào';
     $asign['total_review']=0;
     $asign['hidden_review']='hidden';
     if(isset($data_list_noti['listReview']) &&$data_list_noti['listReview']!=''){
@@ -381,6 +381,65 @@ function show_chitiet_tour($data = array())
     $asign['totalPoint']=0;
     if(isset($data_list_noti['totalPoint'])){
         $asign['totalPoint']=$data_list_noti['totalPoint'];
+    }
+    $asign['textPoint']='Tuyệt vời';
+    if($asign['totalPoint']>=1 && $asign['totalPoint']<=2.9){
+        $asign['textPoint']='Rất kém';
+    }
+    if($asign['totalPoint']>=3 && $asign['totalPoint']<=4.9){
+        $asign['textPoint']='Kém';
+    }
+    if($asign['totalPoint']>=5 && $asign['totalPoint']<=6.9){
+        $asign['textPoint']='Trung bình';
+    }
+    if($asign['totalPoint']>=7 && $asign['totalPoint']<=8.9){
+        $asign['textPoint']='Tốt';
+    }
+
+    $asign['totalPoint']=0;
+    if(isset($data_list_noti['totalPoint'])){
+        $asign['totalPoint']=$data_list_noti['totalPoint'];
+    }
+    $asign['count13']='0';
+    if(isset($data_list_noti['count13'])){
+        $asign['count13']=$data_list_noti['count13'];
+    }
+    $asign['count35']='0';
+    if(isset($data_list_noti['count35'])){
+        $asign['count35']=$data_list_noti['count35'];
+    }
+    $asign['count57']='0';
+    if(isset($data_list_noti['count57'])){
+        $asign['count57']=$data_list_noti['count57'];
+    }
+    $asign['count79']='0';
+    if(isset($data_list_noti['count57'])){
+        $asign['count79']=$data_list_noti['count79'];
+    }
+    $asign['count910']='0';
+    if(isset($data_list_noti['count910'])){
+        $asign['count910']=$data_list_noti['count910'];
+    }
+
+    $asign['countPercent13']='0';
+    if(isset($data_list_noti['countPercent13'])){
+        $asign['countPercent13']=$data_list_noti['countPercent13'];
+    }
+    $asign['countPercent35']='0';
+    if(isset($data_list_noti['countPercent35'])){
+        $asign['countPercent35']=$data_list_noti['countPercent35'];
+    }
+    $asign['countPercent57']='0';
+    if(isset($data_list_noti['countPercent57'])){
+        $asign['countPercent57']=$data_list_noti['countPercent57'];
+    }
+    $asign['countPercent79']='0';
+    if(isset($data_list_noti['countPercent79'])){
+        $asign['countPercent79']=$data_list_noti['countPercent79'];
+    }
+    $asign['countPercent910']='0';
+    if(isset($data_list_noti['countPercent910'])){
+        $asign['countPercent910']=$data_list_noti['countPercent910'];
     }
     print_template($asign, 'chitiettourreview');
 
