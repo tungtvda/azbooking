@@ -323,21 +323,65 @@ function show_chitiet_tour($data = array())
     );
     $list_review= returnCURL($array_check_noti, SITE_NAME_MANAGE.'/list-review.html');
     $data_list_noti=json_decode($list_review,true);
-    $asign['list_reivew']='';
+
+    $asign['list_reivew']='<p style="margin-top: 30px">Tour '. $asign['name'].' chưa có đánh giá</p>';
     $asign['percent_access']='Tour chưa có đánh giá';
     $asign['total_review']=0;
-    if(isset($data_list_noti['listReview'])){
+    $asign['hidden_review']='hidden';
+    if(isset($data_list_noti['listReview']) &&$data_list_noti['listReview']!=''){
         $asign['list_reivew']=$data_list_noti['listReview'];
     }
 
     if(isset($data_list_noti['totalReview'])&& $data_list_noti['totalReview']>0){
-        if(isset($data_list_noti['percentAccess'])){
-            $asign['percent_access']='
-                            '.$data_list_noti['percentAccess'].'% đánh giá đã được xác minh';
+        if(isset($data_list_noti['percentAccess']) && $data_list_noti['percentAccess']>0){
+            $asign['hidden_review']='';
+            $asign['percent_access']=$data_list_noti['percentAccess'].'% đánh giá đã được xác minh';
+        }else{
+            $asign['percent_access']='Có '.$data_list_noti['totalNoAccess'].' đánh giá đang đợi được xác minh';
         }
         $asign['total_review']=$data_list_noti['totalReview'];
     }
 
+    $asign['programPoint']=0;
+    $asign['programPointPercent']=0;
+    if(isset($data_list_noti['programPoint'])){
+        $asign['programPoint']=$data_list_noti['programPoint'];
+        $asign['programPointPercent']=$data_list_noti['programPoint']*10;
+    }
+    $asign['tourGuideFullPoint']=0;
+    $asign['tourGuideFullPointPercent']=0;
+    if(isset($data_list_noti['tourGuideFullPoint'])){
+        $asign['tourGuideFullPoint']=$data_list_noti['tourGuideFullPoint'];
+        $asign['tourGuideFullPointPercent']=$data_list_noti['tourGuideFullPoint']*10;
+    }
+    $asign['tourGuideLocalPoint']=0;
+    $asign['tourGuideLocalPointPercent']=0;
+    if(isset($data_list_noti['tourGuideLocalPoint'])){
+        $asign['tourGuideLocalPoint']=$data_list_noti['tourGuideLocalPoint'];
+        $asign['tourGuideLocalPointPercent']=$data_list_noti['tourGuideLocalPoint']*10;
+    }
+    $asign['hotelPoint']=0;
+    $asign['hotelPointPercent']=0;
+    if(isset($data_list_noti['hotelPoint'])){
+        $asign['hotelPoint']=$data_list_noti['hotelPoint'];
+        $asign['hotelPointPercent']=$data_list_noti['hotelPoint']*10;
+    }
+    $asign['restaurantPoint']=0;
+    $asign['restaurantPointPercent']=0;
+    if(isset($data_list_noti['restaurantPoint'])){
+        $asign['restaurantPoint']=$data_list_noti['restaurantPoint'];
+        $asign['restaurantPointPercent']=$data_list_noti['restaurantPoint']*10;
+    }
+    $asign['transportationPoint']=0;
+    $asign['transportationPointPercent']=0;
+    if(isset($data_list_noti['transportationPoint'])){
+        $asign['transportationPoint']=$data_list_noti['transportationPoint'];
+        $asign['transportationPointPercent']=$data_list_noti['transportationPoint']*10;
+    }
+    $asign['totalPoint']=0;
+    if(isset($data_list_noti['totalPoint'])){
+        $asign['totalPoint']=$data_list_noti['totalPoint'];
+    }
     print_template($asign, 'chitiettourreview');
 
 }

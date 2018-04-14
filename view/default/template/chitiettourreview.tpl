@@ -23,21 +23,21 @@
                 </div>
                 <div id="review_list_score_container" class="review_list_outer_container clearfix">
                     <div id="review_list_score" class=" review_list_score_container lang_ltr scores_full_layout">
-                        <div class="reviews_panel_header_score">
-<span class=" review-score-widget review-score-widget__very_good  review-score-widget__inline   review-score-widget__20 " style="font-size: 18px; ">
-<span class="review-score-badge" role="link" aria-label="Scored 8.2 ">
-8.2
-</span>
-<span style="margin-left: 10px" class="review-score-widget__text" role="link" aria-label="Rated very good">
-Rất tốt
-</span>
-<span style="margin-left: 10px" class="review-score-widget__subtext" role="link" aria-label=" from 3,824 reviews">
-  3,824 đánh giá
-</span>
-</span>
-<a id="show_hide_statis" href="javascript:void(0)" style="font-style: italic;margin-left: 10px; color:#ed1c24">(Xem chi tiết thống kê)</a>
+                        <div {hidden_review} class="reviews_panel_header_score">
+                            <span class=" review-score-widget review-score-widget__very_good  review-score-widget__inline   review-score-widget__20 " style="font-size: 18px; ">
+                                    <span class="review-score-badge" role="link" aria-label="Scored 8.2 ">
+                                    {totalPoint}
+                                    </span>
+                                    <span style="margin-left: 10px" class="review-score-widget__text" role="link" aria-label="Rated very good">
+                                    Rất tốt
+                                    </span>
+                                    <span style="margin-left: 10px" class="review-score-widget__subtext" role="link" aria-label=" from 3,824 reviews">
+                                      {total_review} đánh giá
+                                    </span>
+                            </span>
+                            <a id="show_hide_statis" href="javascript:void(0)" style="font-style: italic;margin-left: 10px; color:#ed1c24">(Xem chi tiết thống kê)</a>
                         </div>
-                        <div id="tooltip_score_distribution" style="display: none" >
+                        <div  id="tooltip_score_distribution" style="display: none" >
                             <div class="review_list_block one_col">
                                 <div class="scores_full_layout border-review-score">
                                     <ul id="review_list_score_distribution"
@@ -91,29 +91,29 @@ Rất tốt
                                 </div>
                             </div>
                         </div>
-                        <div id="review_list_score_breakdown">
+                        <div {hidden_review} id="review_list_score_breakdown">
                             <div class="review_list_score_breakdown_left">
                                 <ul class="review_score_breakdown_list list_tighten clearfix">
                                     <li class="clearfix" data-question="hotel_clean">
                                         <p class="review_score_name">Chương trình</p>
                                         <div class="score_bar">
-                                            <div class="score_bar_value" data-score="83" style="width: 83%;"></div>
+                                            <div class="score_bar_value" data-score="{programPointPercent}" style="width: {programPointPercent}%;"></div>
                                         </div>
-                                        <p class="review_score_value">8.3</p>
+                                        <p class="review_score_value">{programPoint}</p>
                                     </li>
                                     <li class="clearfix" data-question="hotel_comfort">
                                         <p class="review_score_name">Hướng dẫn viên suốt tuyến</p>
                                         <div class="score_bar">
-                                            <div class="score_bar_value" data-score="82" style="width: 82%;"></div>
+                                            <div class="score_bar_value" data-score="{tourGuideFullPointPercent}" style="width: {tourGuideFullPointPercent}%;"></div>
                                         </div>
-                                        <p class="review_score_value">8.2</p>
+                                        <p class="review_score_value">{tourGuideFullPoint}</p>
                                     </li>
                                     <li class="clearfix" data-question="hotel_services">
                                         <p class="review_score_name">Hướng dẫn viên địa phương</p>
                                         <div class="score_bar">
-                                            <div class="score_bar_value" data-score="82" style="width: 82%;"></div>
+                                            <div class="score_bar_value" data-score="{tourGuideLocalPointPercent}" style="width: {tourGuideLocalPointPercent}%;"></div>
                                         </div>
-                                        <p class="review_score_value">8.2</p>
+                                        <p class="review_score_value">{tourGuideLocalPoint}</p>
                                     </li>
 
                                 </ul>
@@ -123,23 +123,23 @@ Rất tốt
                                     <li class="clearfix" data-question="hotel_value">
                                         <p class="review_score_name">Khách sạn</p>
                                         <div class="score_bar">
-                                            <div class="score_bar_value" data-score="81" style="width: 81%;"></div>
+                                            <div class="score_bar_value" data-score="{hotelPointPercent}" style="width: {hotelPointPercent}%;"></div>
                                         </div>
-                                        <p class="review_score_value">8.1</p>
+                                        <p class="review_score_value">{hotelPoint}</p>
                                     </li>
                                     <li class="clearfix" data-question="hotel_wifi">
                                         <p class="review_score_name">Ăn uống</p>
                                         <div class="score_bar">
-                                            <div class="score_bar_value" data-score="81" style="width: 81%;"></div>
+                                            <div class="score_bar_value" data-score="{restaurantPointPercent}" style="width: {restaurantPointPercent}%;"></div>
                                         </div>
-                                        <p class="review_score_value">8.1</p>
+                                        <p class="review_score_value">{restaurantPoint}</p>
                                     </li>
                                     <li class="clearfix" data-question="hotel_location">
                                         <p class="review_score_name">Phương tiện vận chuyển</p>
                                         <div class="score_bar">
-                                            <div class="score_bar_value" data-score="78" style="width: 78%;"></div>
+                                            <div class="score_bar_value" data-score="{transportationPointPercent}" style="width: {transportationPointPercent}%;"></div>
                                         </div>
-                                        <p class="review_score_value">7.8</p>
+                                        <p class="review_score_value">{transportationPoint}</p>
                                     </li>
                                 </ul>
                             </div>
@@ -173,17 +173,17 @@ Rất tốt
                                                 <div class="row_slide">
                                                     <p class="review_score_name">Chương trình tour</p>
                                                     <div class="slidecontainer">
-                                                        <input type="range" min="0" max="10" value="5" class="slider valid" name="program"
+                                                        <input type="range" min="1" max="10" value="5" class="slider valid" name="program"
                                                                id="program_slide">
                                                     </div>
                                                     <div class="point_slide">
-                                                        <span id="program_point" class="review_score_value">0</span>
+                                                        <span id="program_point" class="review_score_value">5</span>
                                                     </div>
                                                 </div>
                                                 <div class="row_slide">
                                                     <p class="review_score_name">Hướng dẫn viên suốt tuyến</p>
                                                     <div class="slidecontainer">
-                                                        <input type="range" min="0" max="10" value="5" class="slider valid" name="tour_guide_full"
+                                                        <input type="range" min="1" max="10" value="5" class="slider valid" name="tour_guide_full"
                                                                id="tour_guide_full_slide">
                                                     </div>
                                                     <div class="point_slide">
@@ -194,7 +194,7 @@ Rất tốt
                                                 <div class="row_slide">
                                                     <p class="review_score_name">Hướng dẫn viên địa phương</p>
                                                     <div class="slidecontainer">
-                                                        <input type="range" min="0" max="10" value="5" class="slider valid" name="tour_guide_local"
+                                                        <input type="range" min="1" max="10" value="5" class="slider valid" name="tour_guide_local"
                                                                id="tour_guide_local_slide">
                                                     </div>
                                                     <div class="point_slide">
@@ -205,7 +205,7 @@ Rất tốt
                                                 <div class="row_slide">
                                                     <p class="review_score_name">Khách sạn</p>
                                                     <div class="slidecontainer">
-                                                        <input type="range" min="0" max="10" value="5" class="slider valid" name="hotel"
+                                                        <input type="range" min="1" max="10" value="5" class="slider valid" name="hotel"
                                                                id="hotel_slide">
                                                     </div>
                                                     <div class="point_slide">
@@ -215,7 +215,7 @@ Rất tốt
                                                 <div class="row_slide">
                                                     <p class="review_score_name">Ăn uống</p>
                                                     <div class="slidecontainer">
-                                                        <input type="range" min="0" max="10" value="5" class="slider valid" name="restaurant"
+                                                        <input type="range" min="1" max="10" value="5" class="slider valid" name="restaurant"
                                                                id="restaurant_slide">
                                                     </div>
                                                     <div class="point_slide">
@@ -225,7 +225,7 @@ Rất tốt
                                                 <div class="row_slide">
                                                     <p class="review_score_name">Phương tiện vận chuyển</p>
                                                     <div class="slidecontainer">
-                                                        <input type="range" min="0" max="10" value="5" class="slider valid"  name="transportation"
+                                                        <input type="range" min="1" max="10" value="5" class="slider valid"  name="transportation"
                                                                id="transportation_slide">
                                                     </div>
                                                     <div class="point_slide">
