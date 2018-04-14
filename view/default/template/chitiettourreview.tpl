@@ -29,7 +29,7 @@
                                     {totalPoint}
                                     </span>
                                     <span style="margin-left: 10px" class="review-score-widget__text" role="link" aria-label="Rated very good">
-                                    Rất tốt
+                                   {textPoint}
                                     </span>
                                     <span style="margin-left: 10px" class="review-score-widget__subtext" role="link" aria-label=" from 3,824 reviews">
                                       {total_review} đánh giá
@@ -47,45 +47,45 @@
                                                 Tuyệt vời: 9+
                                             </p>
                                             <div class="score_bar">
-                                                <div class="score_bar_value" data-score="36" style="width: 36%;"></div>
+                                                <div class="score_bar_value" data-score="{countPercent910}" style="width: {countPercent910}%;"></div>
                                             </div>
-                                            <p class="review_score_value">1372</p>
+                                            <p class="review_score_value">{count910}</p>
                                         </li>
                                         <li class="clearfix" data-question="review_adj_good">
                                             <p class="review_score_name">
                                                 Tốt : 7 – 9
                                             </p>
                                             <div class="score_bar">
-                                                <div class="score_bar_value" data-score="49" style="width: 49%;"></div>
+                                                <div class="score_bar_value" data-score="{countPercent79}" style="width: {countPercent79}%;"></div>
                                             </div>
-                                            <p class="review_score_value">1871</p>
+                                            <p class="review_score_value">{count79}</p>
                                         </li>
                                         <li class="clearfix" data-question="review_adj_average_okay">
                                             <p class="review_score_name">
                                                 Trung bình: 5 – 7
                                             </p>
                                             <div class="score_bar">
-                                                <div class="score_bar_value" data-score="12" style="width: 12%;"></div>
+                                                <div class="score_bar_value" data-score="{countPercent57}" style="width: {countPercent57}%;"></div>
                                             </div>
-                                            <p class="review_score_value">451</p>
+                                            <p class="review_score_value">{count57}</p>
                                         </li>
                                         <li class="clearfix" data-question="review_adj_poor">
                                             <p class="review_score_name">
                                                 Kém: 3 – 5
                                             </p>
                                             <div class="score_bar">
-                                                <div class="score_bar_value" data-score="2" style="width: 2%;"></div>
+                                                <div class="score_bar_value" data-score="{countPercent35}" style="width: {countPercent35}%;"></div>
                                             </div>
-                                            <p class="review_score_value">88</p>
+                                            <p class="review_score_value">{count35}</p>
                                         </li>
                                         <li class="clearfix" data-question="review_adj_very_poor">
                                             <p class="review_score_name">
                                                 Rất kém: 1 – 3
                                             </p>
                                             <div class="score_bar">
-                                                <div class="score_bar_value" data-score="1" style="width: 1%;"></div>
+                                                <div class="score_bar_value" data-score="{countPercent13}" style="width: {countPercent13}%;"></div>
                                             </div>
-                                            <p class="review_score_value">41</p>
+                                            <p class="review_score_value">{count13}</p>
                                         </li>
                                     </ul>
                                 </div>
