@@ -381,6 +381,19 @@
                                 </div>
 
                             </div>
+                            <input id="current_page" value="1">
+                            <div  class="review_list_pagination">
+                                <p class="page_link review_previous_page">
+                                    Trang trước
+                                </p>
+                                <p class="page_link review_next_page">
+                                   {nex_page}
+                                </p>
+                                <p class="page_showing_review">
+                                    Hiển thị
+                                    1 - {count_list}
+                                </p>
+                            </div>
                             <ul class="review_list" id="review_filter">
                                 {list_reivew}
                             </ul>

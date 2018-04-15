@@ -318,6 +318,7 @@ function show_chitiet_tour($data = array())
     $asign['code_check_send_email']=$code_check_send_email;
     $asign['code_tour_review']=$stringRandom;
     print_template($asign, 'chitiettour');
+
     $array_check_noti = array(
         'id_tour'=> _return_mc_encrypt($data['detail'][0]->id),
         'code_tour_review'=>$stringRandom,
@@ -333,6 +334,11 @@ function show_chitiet_tour($data = array())
     if(isset($data_list_noti['listReview']) &&$data_list_noti['listReview']!=''){
         $asign['list_reivew']=$data_list_noti['listReview'];
     }
+    $asign['count_list']=0;
+    if(isset($data_list_noti['countList']) &&$data_list_noti['countList']!=''){
+        $asign['count_list']=$data_list_noti['countList'];
+    }
+
 
     if(isset($data_list_noti['totalReview'])&& $data_list_noti['totalReview']>0){
         if(isset($data_list_noti['percentAccess']) && $data_list_noti['percentAccess']>0){
@@ -342,7 +348,17 @@ function show_chitiet_tour($data = array())
             $asign['percent_access']='Có '.$data_list_noti['totalNoAccess'].' đánh giá đang đợi được xác minh';
         }
         $asign['total_review']=$data_list_noti['totalReview'];
+
     }
+
+    $asign['nex_page']='Trang sau';
+    if(isset($data_list_noti['totalAccess']) && $data_list_noti['totalAccess']>10){
+        $asign['nex_page']=' <a href="javascript:void(0)" data-current="2" data-max-page="'.$asign['count_list'].'"
+                                       class="next_pre_review review_next_page_link">
+                                        Trang sau
+                                    </a>';
+    }
+
 
     $asign['programPoint']=0;
     $asign['programPointPercent']=0;
