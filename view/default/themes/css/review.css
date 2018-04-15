@@ -3972,7 +3972,9 @@ a:hover .show_map_icon.map_icon__update {
 .review_sort_container {
     border-top: 1px dotted #cdcdcd;
     margin-top: 6px;
-    padding-top: 8px
+    padding-top: 8px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .review_sort_container select {
@@ -6683,7 +6685,7 @@ a .review-score {
     box-shadow: none;
     border-radius: 4px 4px 0 0;
     border: 1px solid #ededed;
-    border-bottom: 0
+    /*border-bottom: 0*/
 }
 
 .review-list--clean .review_list {
