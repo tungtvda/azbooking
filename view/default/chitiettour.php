@@ -313,11 +313,14 @@ function show_chitiet_tour($data = array())
     }
     $asign['tour_id']= _return_mc_encrypt($data['detail'][0]->id);
     $asign['SITE_NAME_MANAGE']=SITE_NAME_MANAGE;
-    $code_check_send_email=_return_mc_encrypt('azmix_'.rand(1000,1000000).'_tungtv.soict@gmail.com');
+    $stringRandom=rand(1000,1000000);
+    $code_check_send_email=_return_mc_encrypt('azmix_'.$stringRandom.'_tungtv.soict@gmail.com');
     $asign['code_check_send_email']=$code_check_send_email;
+    $asign['code_tour_review']=$stringRandom;
     print_template($asign, 'chitiettour');
     $array_check_noti = array(
         'id_tour'=> _return_mc_encrypt($data['detail'][0]->id),
+        'code_tour_review'=>$stringRandom,
         'domain'=>'azbooking.vn',
         'code_check_send_email'=>$code_check_send_email,
     );
@@ -354,12 +357,12 @@ function show_chitiet_tour($data = array())
         $asign['tourGuideFullPoint']=$data_list_noti['tourGuideFullPoint'];
         $asign['tourGuideFullPointPercent']=$data_list_noti['tourGuideFullPoint']*10;
     }
-    $asign['tourGuideLocalPoint']=0;
-    $asign['tourGuideLocalPointPercent']=0;
-    if(isset($data_list_noti['tourGuideLocalPoint'])){
-        $asign['tourGuideLocalPoint']=$data_list_noti['tourGuideLocalPoint'];
-        $asign['tourGuideLocalPointPercent']=$data_list_noti['tourGuideLocalPoint']*10;
-    }
+//    $asign['tourGuideLocalPoint']=0;
+//    $asign['tourGuideLocalPointPercent']=0;
+//    if(isset($data_list_noti['tourGuideLocalPoint'])){
+//        $asign['tourGuideLocalPoint']=$data_list_noti['tourGuideLocalPoint'];
+//        $asign['tourGuideLocalPointPercent']=$data_list_noti['tourGuideLocalPoint']*10;
+//    }
     $asign['hotelPoint']=0;
     $asign['hotelPointPercent']=0;
     if(isset($data_list_noti['hotelPoint'])){

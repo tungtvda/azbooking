@@ -5,7 +5,7 @@
     if($('#program_slide').length){
         sliderPoint('program_slide','program_point');
         sliderPoint('tour_guide_full_slide','tour_guide_full_point');
-        sliderPoint('tour_guide_local_slide','tour_guide_local_point');
+        //sliderPoint('tour_guide_local_slide','tour_guide_local_point');
         sliderPoint('hotel_slide','hotel_point');
         sliderPoint('restaurant_slide','restaurant_point');
         sliderPoint('transportation_slide','transportation_point');
@@ -180,6 +180,26 @@
     }
     $(document).ready(function(){
         $('[data-toggle="tooltip"]').tooltip();
+    });
+
+    $('body').on("click", '.show_full_comment', function () {
+       var value=$(this).attr('data-value');
+       var id=$(this).attr('data-id');
+        if(value && id){
+            if(value=='short'){
+                $('#long_comment_'+id).show();
+                $('#short_comment_'+id).hide();
+                $(this).attr('data-value','long');
+                $(this).attr('title','Thu gọn');
+                $('#icon_show_hide_review_'+id).removeClass('fa-plus-circle').addClass('fa-minus-circle');
+            }else{
+                $('#long_comment_'+id).hide();
+                $('#short_comment_'+id).show();
+                $(this).attr('data-value','short');
+                $(this).attr('title','Xem thêm');
+                $('#icon_show_hide_review_'+id).removeClass('fa-minus-circle').addClass('fa-plus-circle');
+            }
+        }
     });
     function copyToClipboard(elem) {
         // create hidden text element, if it doesn't already exist

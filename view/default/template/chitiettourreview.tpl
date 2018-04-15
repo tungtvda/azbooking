@@ -102,24 +102,12 @@
                                         <p class="review_score_value">{programPoint}</p>
                                     </li>
                                     <li class="clearfix" data-question="hotel_comfort">
-                                        <p class="review_score_name">Hướng dẫn viên suốt tuyến</p>
+                                        <p class="review_score_name">Hướng dẫn viên</p>
                                         <div class="score_bar">
                                             <div class="score_bar_value" data-score="{tourGuideFullPointPercent}" style="width: {tourGuideFullPointPercent}%;"></div>
                                         </div>
                                         <p class="review_score_value">{tourGuideFullPoint}</p>
                                     </li>
-                                    <li class="clearfix" data-question="hotel_services">
-                                        <p class="review_score_name">Hướng dẫn viên địa phương</p>
-                                        <div class="score_bar">
-                                            <div class="score_bar_value" data-score="{tourGuideLocalPointPercent}" style="width: {tourGuideLocalPointPercent}%;"></div>
-                                        </div>
-                                        <p class="review_score_value">{tourGuideLocalPoint}</p>
-                                    </li>
-
-                                </ul>
-                            </div>
-                            <div class="review_list_score_breakdown_right">
-                                <ul class="review_score_breakdown_list list_tighten clearfix">
                                     <li class="clearfix" data-question="hotel_value">
                                         <p class="review_score_name">Khách sạn</p>
                                         <div class="score_bar">
@@ -127,6 +115,11 @@
                                         </div>
                                         <p class="review_score_value">{hotelPoint}</p>
                                     </li>
+                                </ul>
+                            </div>
+                            <div class="review_list_score_breakdown_right">
+                                <ul class="review_score_breakdown_list list_tighten clearfix">
+
                                     <li class="clearfix" data-question="hotel_wifi">
                                         <p class="review_score_name">Ăn uống</p>
                                         <div class="score_bar">
@@ -164,6 +157,7 @@
                                         <div class="form_review widget_content" style="margin-bottom: 0px">
                                             <form id="form_submit_review">
                                                 <input type="text" value="{code_check_send_email}" id="input_code_check_send_email" name="code_check_send_email" hidden class="valid">
+                                                <input type="text" value="{code_tour_review}" id="input_code_tour_review" name="code_tour_review" hidden class="valid">
                                                 <input type="text" value="{tour_id}" id="input_tour_id" name="tour_id" hidden class="valid">
                                                 <input type="text" value="{name}" id="input_tour_name" name="tour_name" hidden class="valid">
                                                 <input type="text" value="{code}" id="input_tour_code" name="tour_code" hidden class="valid">
@@ -181,24 +175,13 @@
                                                     </div>
                                                 </div>
                                                 <div class="row_slide">
-                                                    <p class="review_score_name">Hướng dẫn viên suốt tuyến</p>
+                                                    <p class="review_score_name">Hướng dẫn viên</p>
                                                     <div class="slidecontainer">
                                                         <input type="range" min="1" max="10" value="5" class="slider valid" name="tour_guide_full"
                                                                id="tour_guide_full_slide">
                                                     </div>
                                                     <div class="point_slide">
                                                         <span id="tour_guide_full_point"
-                                                              class="review_score_value">5</span>
-                                                    </div>
-                                                </div>
-                                                <div class="row_slide">
-                                                    <p class="review_score_name">Hướng dẫn viên địa phương</p>
-                                                    <div class="slidecontainer">
-                                                        <input type="range" min="1" max="10" value="5" class="slider valid" name="tour_guide_local"
-                                                               id="tour_guide_local_slide">
-                                                    </div>
-                                                    <div class="point_slide">
-                                                        <span id="tour_guide_local_point"
                                                               class="review_score_value">5</span>
                                                     </div>
                                                 </div>
@@ -312,12 +295,11 @@
                                             </div>
                                             <div class="row">
                                                 <div class="col-xs-12 col-md-12 col-sm-12">
-                                                    <p class="review_score_name">Quý khách có dự định đi du lịch trong
-                                                        thời gian sắp tới không? </p>
+                                                    <p class="review_score_name">Sắp tới quý khách có dự định đi du lịch ở đâu? </p>
                                                     <label class="from" style="margin-top: 0px; padding-top: 0px">
                                                 <span class="form-item db" style="margin-top: 0px">
                                                    <textarea rows="2" id="input_comment_upcoming" name="comment_upcoming" class="text-area-review valid"
-                                                             placeholder="Quý khách có dự định đi du lịch trong thời gian sắp tới không?..."></textarea>
+                                                             placeholder="Sắp tới quý khách có dự định đi du lịch ở đâu?..."></textarea>
                                                 </span>
                                                     </label>
                                                 </div>
@@ -409,71 +391,24 @@
                             </div>
                             <ul class="review_list" >
                                 {list_reivew}
-                              <!--  <li class="review_item clearfix review_featured  ">
-                                    <p class="review_item_date">
-                                        Reviewed: April 30, 2017
-                                    </p>
-                                    <div data-et-view="aRDPNZJKSXe:2"></div>
-                                    <div class="review_item_reviewer" style="text-align: center">
-                                        <div>
-                                            <img data-toggle="tooltip" data-placement="top" title=" Trần Văn Tùng" style="display: initial;" class="avatar-mask ava-pad-bottom ava-default" src="https://cdn.iconscout.com/public/images/icon/free/png-512/avatar-user-teacher-312a499a08079a12-512x512.png" alt="">
-                                        </div>
-                                        <a  href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title=" Trần Văn Tùng" class="reviewer_country name_cus_list">
-                                        Trần Văn Tùng df fsd sd dfa dfs sdf dsf
-                                        </a>
-                                    </div>
-                                    <div class="review_item_review">
-                                        <div class="review_item_review_container lang_ltr">
-                                            <div class="review_item_review_header">
-                                                <div class="review_item_header_score_container">
-                                                    <span class=" review-score-widget review-score-widget__superb review-score-widget__score-only  review-score-widget__no-subtext    ">
-                                                        <span class="review-score-badge" role="link" aria-label="Scored 9.2 ">
-                                                            9.2
-                                                         </span>
-                                                    </span>
-                                                </div>
-                                                <div class="review_item_header_content_container">
-                                                    <div class="review_item_header_content review_item_header_scoreword">
-                                                       Một chuyến đi tuyệt vời
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="review_item_review_content">
-                                                <p class="review_neg">
-                                                    <a href=""><i class="review_item_icon review_item_icon_default fa fa-plus-square" ></i></a>
-                                                    was unreliable. pool ohotos make it look bigger
-                                                    than it is. they charge laundry by the piece
-                                                    rather than weight which was super expensive.
-                                                <b class="icon_review_list">
-                                                    <a data-toggle="tooltip" data-placement="left" title="Chương trình tour: 10" href="javascript:void(0)"><i class="fa fa-plane "></i></a>
-                                                    <a data-toggle="tooltip" data-placement="left" title="Hướng dẫn viên suốt tuyến: 10" href="javascript:void(0)"><i class="fa fa-users"></i></a>
-                                                    <a data-toggle="tooltip" data-placement="left" title="Hướng dẫn viên địa phương: 10" href="javascript:void(0)"><i class="fa fa-user "></i></a>
-                                                    <a data-toggle="tooltip" data-placement="left" title="Khách sạn: 10" href="javascript:void(0)"><i class="fa fa-building"></i></a>
-                                                    <a data-toggle="tooltip" data-placement="left" title="Ăn uống: 10" href="javascript:void(0)"><i class="fa fa-cutlery  "></i></a>
-                                                    <a data-toggle="tooltip" data-placement="left" title="Vận chuyển: 10" href="javascript:void(0)"><i class="fa fa-car  "></i></a>
-                                                </b>
-                                                </p>
-
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>-->
                             </ul>
 
                             <div id="review_photo_lightbox"></div>
-                            <div hidden class="review_list_pagination">
+                            <div  class="review_list_pagination">
                                 <p class="page_link review_previous_page">
-                                    Previous page
-                                </p>
-                                <p class="page_link review_next_page">
-                                    <a href="https://www.booking.com/reviewlist.html?aid=304142;label=gen173nr-1FCAEoggJCAlhYSDNYBGj0AYgBAZgBMcIBCndpbmRvd3MgMTDIAQzYAQHoAQH4AQKSAgF5qAID;sid=6dd10b3e0aa84c24063f161f676684c6;cc1=vn;dist=1;pagename=sunland;r_lang=en;roomtype=-1;type=total;upsort_photo=0&amp;;offset=10;rows=10"
-                                       id="review_next_page_link">
-                                        Next page
+                                    <a href="javascript:void()" data-start="1"
+                                       class="review_previous_page_link">
+                                        Trang trước
                                     </a>
                                 </p>
-                                <p class="page_showing">
-                                    Showing
+                                <p class="page_link review_next_page">
+                                    <a href="javascript:void()" data-start="2"
+                                       class="review_next_page_link">
+                                       Trang sau
+                                    </a>
+                                </p>
+                                <p class="page_showing_review">
+                                    Hiển thị
                                     1 - 10
                                 </p>
                             </div>
