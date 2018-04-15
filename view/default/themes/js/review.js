@@ -201,9 +201,7 @@
             }
         }
     });
-    $('body').on("click", '.next_pre_review', function () {
-       //console.log('fsdfa');
-    });
+
     $('body').on("change", '#review_total', function () {
         filterReview();
     });
@@ -213,7 +211,10 @@
     $('body').on("change", '#review_limit', function () {
         filterReview();
     });
-    function filterReview(){
+    $('body').on("click", '.next_pre_review', function () {
+        filterReview(1);
+    });
+    function filterReview(next_pre){
         var review_total=$('#review_total').val();
         var review_sort=$('#review_sort').val();
         var review_limit=$('#review_limit').val();
@@ -221,22 +222,34 @@
         var code_tour_review=$('#input_code_tour_review').val();
         var code_check_send_email=$('#input_code_check_send_email').val();
         var link = url + '/list-review.html';
-        console.log(tour_id);
-        console.log(code_tour_review);
-        console.log(code_check_send_email);
+
         if(tour_id && code_tour_review && code_check_send_email){
+            var data={
+                id_tour:tour_id,
+                domain:'azbooking.vn',
+                code_check_send_email:code_check_send_email,
+                code_tour_review:code_tour_review,
+                review_total:review_total,
+                review_sort:review_sort,
+                review_limit:review_limit
+            }
+            if(next_pre){
+                var current_page=$('#current_page').val();
+                if(!current_page){
+                    current_page=1;
+                }
+
+                if(next_pre==1){
+                    data.start=parseInt(current_page)+1
+                }else{
+                    data.start=parseInt(current_page)-1
+                }
+
+            }
             $.ajax({
                 method: 'POST',
                 url: link,
-                data:  {
-                    id_tour:tour_id,
-                    domain:'azbooking.vn',
-                    code_check_send_email:code_check_send_email,
-                    code_tour_review:code_tour_review,
-                    review_total:review_total,
-                    review_sort:review_sort,
-                    review_limit:review_limit,
-                },
+                data:data,
                 success: function (response) {
                     try {
                         response = $.parseJSON(response);
