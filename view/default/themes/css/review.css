@@ -4517,7 +4517,7 @@ a:hover .show_map_icon.map_icon__update {
     position: relative;
     *white-space: pre;
     word-wrap: break-word;
-    white-space: pre-wrap
+    /*white-space: pre-wrap*/
 }
 
 .review_item_icon {
@@ -4548,15 +4548,34 @@ a:hover .show_map_icon.map_icon__update {
 .review_item_icon_view{
     color: #0ab21b
 }
+.long_comment, .short_comment{
+    text-align: justify;
+}
+.noavatart{
+
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    font-weight: 500;
+    font-size: 24px;
+    border-radius: 100%;
+    color: #ffffff;
+    padding: 9px 14px;
+}
+#url_tab_review{
+    position: absolute;
+    background: #ffffff;
+    z-index: -1111;
+}
 .title_list_review{
     left: 0px !important;
     margin-bottom: 20px;
     margin-top: 20px;
 }
 .icon_review_list{
-    float: left;
-    width: 100%;
-    margin-top: 10px;
+    /*float: left;*/
+    /*width: 100%;*/
+    /*margin-top: 10px;*/
 }
 .icon_review_list a{
     padding-right:20px;
