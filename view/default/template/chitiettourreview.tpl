@@ -25,10 +25,10 @@
                     <div id="review_list_score" class=" review_list_score_container lang_ltr scores_full_layout">
                         <div {hidden_review} class="reviews_panel_header_score">
                             <span class=" review-score-widget review-score-widget__very_good  review-score-widget__inline   review-score-widget__20 " style="font-size: 18px; ">
-                                    <span class="review-score-badge" role="link" aria-label="Scored 8.2 ">
+                                    <span class="review-score-badge" role="link">
                                     {totalPoint}
                                     </span>
-                                    <span style="margin-left: 10px" class="review-score-widget__text" role="link" aria-label="Rated very good">
+                                    <span style="margin-left: 10px" class="review-score-widget__text" role="link">
                                    {textPoint}
                                     </span>
                                     <span style="margin-left: 10px" class="review-score-widget__subtext" role="link" aria-label=" from 3,824 reviews">
@@ -330,80 +330,72 @@
 
                     <div class="review_list_container review-list--clean">
                         <div id="review_list_page_container" style="display: block;">
-                            <div data-et-view="adUAVGZaZfLLIMLaUJeaILYJO:1"></div>
-                            <div class="review-list-topic-filter">
-                                <p class="review-list-topic-filter__heading">
-                                    Lọc đánh giá theo các chủ đề
-                                </p>
-                                <ul class="review-list-topic-filter__list clearfix">
-                                    <li class="review-list-topic-filter__list-item"><a
-                                                href="javascript:void(0)"
-                                                class="review-list-topic-filter__item-link js-review-list-topic-filter__item-link"
-                                                data-category-id="4" data-category-name="food_beverage">
-                                            Chương trình
-                                        </a>
-                                    </li>
-                                    <li class="review-list-topic-filter__list-item"><a
-                                                href="javascript:void(0)"
-                                                class="review-list-topic-filter__item-link js-review-list-topic-filter__item-link"
-                                                data-category-id="3" data-category-name="staff">
-                                            Hướng dẫn viên suốt tuyến
-                                        </a>
-                                    </li>
-                                    <li class="review-list-topic-filter__list-item"><a
-                                                href="javascript:void(0)"
-                                                class="review-list-topic-filter__item-link js-review-list-topic-filter__item-link"
-                                                data-category-id="6" data-category-name="location">
-                                            Hướng dẫn viên địa phương
-                                        </a>
-                                    </li>
-                                    <li class="review-list-topic-filter__list-item"><a
-                                                href="javascript:void(0)"
-                                                class="review-list-topic-filter__item-link js-review-list-topic-filter__item-link"
-                                                data-category-id="5" data-category-name="breakfast">
-                                            Khách sạn
-                                        </a>
-                                    </li>
-                                    <li class="review-list-topic-filter__list-item"><a
-                                                href="javascript:void(0)"
-                                                class="review-list-topic-filter__item-link js-review-list-topic-filter__item-link"
-                                                data-category-id="13" data-category-name="spa_gym">
-                                            Nhà hàng
-                                        </a>
-                                    </li>
-                                    <li class="review-list-topic-filter__list-item"><a
-                                                href="javascript:void(0)"
-                                                class="review-list-topic-filter__item-link js-review-list-topic-filter__item-link"
-                                                data-category-id="19" data-category-name="views_surroundings">
-                                            Phương tiện vận chuyển
-                                        </a>
-                                    </li>
+                            <div class="review_list_nav language_filter_on_reviews clearfix">
+                                <div style="border-top:0px " class="col-xs-12 review_sort_container">
+                                    <div class="col-sm-6 col-xs-12">
+                                        <label for="review_sort" class="review_label ">Sắp xếp:</label>
+                                        <select class="review_sort " id="review_sort">
+                                            <option value="id_desc">Đánh giá mới nhất</option>
+                                            <option value="id_asc">Đánh giá cũ</option>
+                                            <option value="total_desc">Điểm cao nhất</option>
+                                            <option value="total_asc">Điểm thấp nhất</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12">
+                                        <label for="review_sort" class="review_label ">Hiển thị:</label>
+                                        <select class="review_sort " id="review_limit">
+                                            <option value="10">10 bản ghi</option>
+                                            <option value="20">20 bản ghi</option>
+                                            <option value="30">30 bản ghi</option>
+                                            <option value="40">40 bản ghi</option>
+                                            <option value="50">50 bản ghi</option>
+                                        </select>
+                                    </div>
 
-                                </ul>
+                                </div>
+                                <div data-et-view="ZOOTdCNBLQFVRZaHLSGDIXaO:1"></div>
+                                <div class="col-xs-12 review_sort_container">
+                                    <div class="col-sm-12 col-xs-12">
+                                        <label for="review_sort" class="review_label ">Lọc đánh giá:</label>
+                                        <select class="review_sort " id="review_total">
+                                            <option value="">-- Điểm đánhg giá --</option>
+                                            <option value="9">Tuyệt vời +9</option>
+                                            <option value="7">Tốt 7-9</option>
+                                            <option value="5">Trung bình 5-7</option>
+                                            <option value="3">Kém 3-5</option>
+                                            <option value="1">Rất kém 1-3</option>
+                                        </select>
+                                    </div>
+
+
+                                </div>
                             </div>
-                            <div class="featured_review_item__header_block featured_review-scout_review title_list_review">
+                            <div data-et-view="adUAVGZaZfLLIMLaUJeaILYJO:1"></div>
+
+                            <div  class="featured_review_item__header_block featured_review-scout_review title_list_review">
                                 <div class="featured_review_item__icon_container"><img
                                             src="{SITE-NAME}/view/default/themes/images/review/icon_review.png"
                                             alt="Property Scout Review"></div>
                                 <div class="featured_review_item__header featured_review_item__no_votes">
                                     Danh sách đánh giá
                                 </div>
+
                             </div>
-                            <ul class="review_list" >
+                            <ul class="review_list" id="review_filter">
                                 {list_reivew}
                             </ul>
 
                             <div id="review_photo_lightbox"></div>
                             <div  class="review_list_pagination">
                                 <p class="page_link review_previous_page">
-                                    <a href="javascript:void()" data-start="1"
-                                       class="review_previous_page_link">
+                                    <a href="javascript:void(0)" data-start="1"
+                                       class="next_pre_review review_previous_page_link">
                                         Trang trước
                                     </a>
                                 </p>
                                 <p class="page_link review_next_page">
-                                    <a href="javascript:void()" data-start="2"
-                                       class="review_next_page_link">
+                                    <a href="javascript:void(0)" data-start="2"
+                                       class="next_pre_review review_next_page_link">
                                        Trang sau
                                     </a>
                                 </p>

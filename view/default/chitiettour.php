@@ -326,7 +326,6 @@ function show_chitiet_tour($data = array())
     );
     $list_review= returnCURL($array_check_noti, SITE_NAME_MANAGE.'/list-review.html');
     $data_list_noti=json_decode($list_review,true);
-
     $asign['list_reivew']='<p style="margin-top: 30px">Tour '. $asign['name'].' chưa có đánh giá</p>';
     $asign['percent_access']='Tour chưa có bất kỳ đánh giá nào';
     $asign['total_review']=0;
@@ -399,10 +398,9 @@ function show_chitiet_tour($data = array())
         $asign['textPoint']='Tốt';
     }
 
-    $asign['totalPoint']=0;
-    if(isset($data_list_noti['totalPoint'])){
-        $asign['totalPoint']=$data_list_noti['totalPoint'];
-    }
+       if($asign['totalPoint']<7){
+           $asign['hidden_review']='hidden';
+       }
     $asign['count13']='0';
     if(isset($data_list_noti['count13'])){
         $asign['count13']=$data_list_noti['count13'];
