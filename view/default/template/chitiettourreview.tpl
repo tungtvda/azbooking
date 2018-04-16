@@ -381,8 +381,8 @@
                                 </div>
 
                             </div>
-                            <input id="current_page" value="1">
-                            <div  class="review_list_pagination">
+                            <input hidden id="current_page" value="1">
+                            <div hidden  class="review_list_pagination">
                                 <p class="page_link review_previous_page">
                                     Trang trước
                                 </p>
@@ -399,7 +399,7 @@
                             </ul>
 
                             <div id="review_photo_lightbox"></div>
-                            <div  class="review_list_pagination">
+                            <div hidden class="review_list_pagination">
                                 <p class="page_link review_previous_page">
                                     <a href="javascript:void(0)" data-start="1"
                                        class="next_pre_review review_previous_page_link">
