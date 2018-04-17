@@ -32,7 +32,7 @@
                                    {textPoint}
                                     </span>
                                     <span style="margin-left: 10px" class="review-score-widget__subtext" role="link" aria-label=" from 3,824 reviews">
-                                      {total_review} đánh giá
+                                      {total_access} đánh giá
                                     </span>
                             </span>
                             <a id="show_hide_statis" href="javascript:void(0)" style="font-style: italic;margin-left: 10px; color:#ed1c24">(Xem chi tiết thống kê)</a>
@@ -308,8 +308,11 @@
                                                 <div class="col-xs-12 col-md-12 col-sm-12">
                                                 <div class="form-actions">
                                                     <div class="add-to-cart">
-                                                        <button class="submit_review" type="button">
+                                                        <button class="submit_review" id="submit_form_review" type="button">
                                                             <i class="awe-icon fa fa-check-square-o"></i>  Đánh giá
+                                                        </button>
+                                                        <button hidden class="submit_review" id="loading_form_review" type="button">
+                                                            <i class="awe-icon fa fa-check-square-o"></i>  Đang thực hiện ...
                                                         </button>
                                                         <div id="show_mess" class="alert  fade in alert-dismissible">
                                                             <a href="javascript:void(0)" id="hidden_mess_review" class="close"  title="Tắt thông báo">×</a>
@@ -344,11 +347,11 @@
                                     <div class="col-sm-6 col-xs-12">
                                         <label for="review_sort" class="review_label ">Hiển thị:</label>
                                         <select class="review_sort " id="review_limit">
-                                            <option value="10">10 bản ghi</option>
-                                            <option value="20">20 bản ghi</option>
-                                            <option value="30">30 bản ghi</option>
-                                            <option value="40">40 bản ghi</option>
-                                            <option value="50">50 bản ghi</option>
+                                            <option value="10">10 đánh giá</option>
+                                            <option value="20">20 đánh giá</option>
+                                            <option value="30">30 đánh giá</option>
+                                            <option value="40">40 đánh giá</option>
+                                            <option value="50">50 đánh giá</option>
                                         </select>
                                     </div>
 
@@ -382,7 +385,7 @@
 
                             </div>
                             <input hidden id="current_page" value="1">
-                            <div hidden  class="review_list_pagination">
+                            <div   class="review_list_pagination">
                                 <p class="page_link review_previous_page">
                                     Trang trước
                                 </p>
@@ -399,22 +402,16 @@
                             </ul>
 
                             <div id="review_photo_lightbox"></div>
-                            <div hidden class="review_list_pagination">
+                            <div   class="review_list_pagination">
                                 <p class="page_link review_previous_page">
-                                    <a href="javascript:void(0)" data-start="1"
-                                       class="next_pre_review review_previous_page_link">
-                                        Trang trước
-                                    </a>
+                                    Trang trước
                                 </p>
                                 <p class="page_link review_next_page">
-                                    <a href="javascript:void(0)" data-start="2"
-                                       class="next_pre_review review_next_page_link">
-                                       Trang sau
-                                    </a>
+                                    {nex_page}
                                 </p>
                                 <p class="page_showing_review">
                                     Hiển thị
-                                    1 - 10
+                                    1 - {count_list}
                                 </p>
                             </div>
                         </div>

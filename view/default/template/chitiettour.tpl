@@ -5,7 +5,7 @@
                 <div style="margin-top: 60px;" class="col-xs-12">
                     <ul class="nav nav-tabs package-nav-tab" role="tablist" style="margin-bottom: 20px; ">
                         <li class="active tab-tour" id="tab-tour-li"><a href="#tourinfo" role="tab" data-toggle="tab" aria-expanded="false">Thông tin tour</a></li>
-                        <li class="tab-tour"><a href="#news" role="tab" data-toggle="tab" aria-expanded="false">Tin tức</a></li>
+                        <li style="    display: none;" hidden class="tab-tour"><a href="#news" role="tab" data-toggle="tab" aria-expanded="false">Tin tức</a></li>
                         <li class="tab-tour" id="tab-review-li"><a id="tab-review-click"  href="#tab-reviews" role="tab" data-toggle="tab" aria-expanded="true">Đánh giá</a></li>
                     </ul>
                     <div class="product-tabs__content">

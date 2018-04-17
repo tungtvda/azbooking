@@ -66,7 +66,7 @@
             }
         }
     });
-    $('body').on("click", '.submit_review', function () {
+    $('body').on("click", '#submit_form_review', function () {
         var form_data = $("#form_submit_review").serializeArray();
         var error_free = true;
         for (var input in form_data) {
@@ -83,6 +83,8 @@
             }
         }
         if (error_free != false) {
+            $('#submit_form_review').hide();
+            $('#loading_form_review').show();
             var link = url + '/add-review.html';
            var loading_form=0;
             $.ajax({
@@ -95,13 +97,18 @@
                         if(response.success==1){
                             $('#show_mess').slideDown().removeClass('alert-danger').addClass('alert-success');
                             $('#show_mess strong').text(response.mess);
+                            $('#loading_form_review').hide();
                         }else{
                             $('#show_mess').slideDown().removeClass('alert-success').addClass('alert-danger');
                             $('#show_mess strong').text(response.mess)
+                            $('#submit_form_review').show();
+                            $('#loading_form_review').hide();
                         }
                         loading_form=1;
                     }
                     catch(err) {
+                        $('#submit_form_review').show();
+                        $('#loading_form_review').hide();
                         $('#show_mess').slideDown().removeClass('alert-success').addClass('alert-danger');
                         $('#show_mess strong').text('Đánh giá lỗi, bạn vui lòng thử thại')
                     }
@@ -121,6 +128,8 @@
                         $('#show_mess strong').text('')
                         if(loading_form==1){
                             hideTabRevie()
+                            $('#submit_form_review').show();
+                            $('#loading_form_review').hide();
                         }
                     }, 5000);
                 }
@@ -211,8 +220,11 @@
     $('body').on("change", '#review_limit', function () {
         filterReview();
     });
-    $('body').on("click", '.next_pre_review', function () {
-        filterReview(1);
+    $('body').on("click", '.review_next_page_link', function () {
+        filterReview('next');
+    });
+    $('body').on("click", '.review_previous_page_link', function () {
+        filterReview('pre');
     });
     function filterReview(next_pre){
         var review_total=$('#review_total').val();
@@ -239,12 +251,18 @@
                     current_page=1;
                 }
 
-                if(next_pre==1){
-                    data.start=parseInt(current_page)+1
+                if(next_pre=='next'){
+                    var next=parseInt(current_page)+1;
+                    $('#current_page').val(next);
+                    data.start=next
                 }else{
-                    data.start=parseInt(current_page)-1
+                    var pre=parseInt(current_page)-1;
+                    $('#current_page').val(pre);
+                    data.start=pre
                 }
-
+            }else{
+                $('#current_page').val(1);
+                data.start=1;
             }
             $.ajax({
                 method: 'POST',
@@ -279,8 +297,24 @@
                             }else{
                                 $('#review_filter').html('<p style="padding: 20px;">Không có đánh giá</p>')
                             }
-
                         }
+
+                            // kiểm tra phân trang
+                            if(response.showNext==0){
+                                $('.review_next_page').html('Trang sau');
+                            }else{
+                                $('.review_next_page').html('<a href="javascript:void(0)"  class="next_pre_review review_next_page_link">Trang sau</a>');
+                            }
+                            if(response.showPre==0){
+                                $('.review_previous_page').html('Trang trước');
+                            }else{
+                                $('.review_previous_page').html('<a href="javascript:void(0)" class="next_pre_review review_previous_page_link">Trang trước</a>');
+                            }
+
+                        if(response.showPageText){
+                            $('.page_showing_review').text(response.showPageText);
+                        }
+
                     }
                     catch(err) {
                         $('#review_filter').html('<p style="padding: 20px;">Lỗi, bạn vui lòng thử thại</p>')
