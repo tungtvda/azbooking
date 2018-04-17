@@ -4562,7 +4562,8 @@ a:hover .show_map_icon.map_icon__update {
     font-size: 24px;
     border-radius: 100%;
     color: #ffffff;
-    padding: 6px 15px;
+    /*padding: 6px 15px;*/
+    margin-bottom: 15px;
 }
 #url_tab_review{
     position: absolute;
@@ -6604,7 +6605,7 @@ a .review-score {
 
 .review-list--clean .review_item {
     margin-bottom: 16px;
-    padding: 0 16px 22px;
+    padding: 0 0px 22px;
     border-bottom: 3px solid #f7f7f7
 }
 

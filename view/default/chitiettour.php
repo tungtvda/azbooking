@@ -339,7 +339,6 @@ function show_chitiet_tour($data = array())
         $asign['count_list']=$data_list_noti['countList'];
     }
 
-
     if(isset($data_list_noti['totalReview'])&& $data_list_noti['totalReview']>0){
         if(isset($data_list_noti['percentAccess']) && $data_list_noti['percentAccess']>0){
             $asign['hidden_review']='';
@@ -350,13 +349,14 @@ function show_chitiet_tour($data = array())
         $asign['total_review']=$data_list_noti['totalReview'];
 
     }
-
+    $asign['total_access']=0;
     $asign['nex_page']='Trang sau';
     if(isset($data_list_noti['totalAccess']) && $data_list_noti['totalAccess']>10){
         $asign['nex_page']=' <a href="javascript:void(0)" data-current="2" data-max-page="'.$asign['count_list'].'"
                                        class="next_pre_review review_next_page_link">
                                         Trang sau
                                     </a>';
+        $asign['total_access']=$data_list_noti['totalAccess'];
     }
 
 
