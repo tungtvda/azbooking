@@ -226,6 +226,12 @@
     $('body').on("click", '.review_previous_page_link', function () {
         filterReview('pre');
     });
+    $('body').on("click", '#removeFilterReview', function () {
+        $("#review_sort").val("id_desc").change();
+        $("#review_limit").val("10").change();
+        $("#review_total").val("").change();
+        filterReview();
+    });
     function filterReview(next_pre){
         var review_total=$('#review_total').val();
         var review_sort=$('#review_sort').val();
@@ -272,8 +278,10 @@
                     try {
                         response = $.parseJSON(response);
                         if(response.listReview){
-                            $('#review_filter').html(response.listReview)
+                            $('#review_filter').html(response.listReview);
+                            $('.review_list_pagination').show();
                         }else{
+                            $('.review_list_pagination').hide();
                             if(review_total){
                                 var pointText='';
                                 switch(review_total){
@@ -322,7 +330,7 @@
                 }
             });
         }
-
+        $('[data-toggle="tooltip"]').tooltip()
     }
     function copyToClipboard(elem) {
         // create hidden text element, if it doesn't already exist

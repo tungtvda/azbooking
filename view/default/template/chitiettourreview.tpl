@@ -358,7 +358,7 @@
                                 </div>
                                 <div data-et-view="ZOOTdCNBLQFVRZaHLSGDIXaO:1"></div>
                                 <div class="col-xs-12 review_sort_container">
-                                    <div class="col-sm-12 col-xs-12">
+                                    <div class="col-sm-6 col-xs-12">
                                         <label for="review_sort" class="review_label ">Lọc đánh giá:</label>
                                         <select class="review_sort " id="review_total">
                                             <option value="">-- Điểm đánhg giá --</option>
@@ -369,8 +369,10 @@
                                             <option value="1">Rất kém 1-3</option>
                                         </select>
                                     </div>
-
-
+                                    <div class="col-sm-6 col-xs-12">
+                                        <label style="display: block;">&nbsp;</label>
+                                        <a class=" btn btn-danger" href="javascript:void(0)" id="removeFilterReview">Xóa lọc</a>
+                                    </div>
                                 </div>
                             </div>
                             <div data-et-view="adUAVGZaZfLLIMLaUJeaILYJO:1"></div>
@@ -385,7 +387,7 @@
 
                             </div>
                             <input hidden id="current_page" value="1">
-                            <div   class="review_list_pagination">
+                            <div {hidden_page}  class="review_list_pagination">
                                 <p class="page_link review_previous_page">
                                     Trang trước
                                 </p>
@@ -402,14 +404,14 @@
                             </ul>
 
                             <div id="review_photo_lightbox"></div>
-                            <div   class="review_list_pagination">
+                            <div  {hidden_page} class="review_list_pagination">
                                 <p class="page_link review_previous_page">
                                     Trang trước
                                 </p>
                                 <p class="page_link review_next_page">
                                     {nex_page}
                                 </p>
-                                <p class="page_showing_review">
+                                <p  class="page_showing_review">
                                     Hiển thị
                                     1 - {count_list}
                                 </p>
