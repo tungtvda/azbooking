@@ -331,8 +331,10 @@ function show_chitiet_tour($data = array())
     $asign['percent_access']='Tour chưa có bất kỳ đánh giá nào';
     $asign['total_review']=0;
     $asign['hidden_review']='hidden';
-    if(isset($data_list_noti['listReview']) &&$data_list_noti['listReview']!=''){
+    $asign['hidden_page']='hidden';
+    if(isset($data_list_noti['listReview']) && $data_list_noti['listReview']!=''){
         $asign['list_reivew']=$data_list_noti['listReview'];
+        $asign['hidden_page']='';
     }
     $asign['count_list']=0;
     if(isset($data_list_noti['countList']) &&$data_list_noti['countList']!=''){
