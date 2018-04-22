@@ -4554,7 +4554,6 @@ a:hover .show_map_icon.map_icon__update {
     text-align: justify;
 }
 .noavatart{
-
     width: 48px;
     height: 48px;
     line-height: 48px;
@@ -6109,8 +6108,8 @@ a .review-score {
 .sliding-panel-widget-content {
     background: #fff;
     padding: 15px 25px 0 25px;
-    -webkit-box-shadow: 0 0 14px #444;
-    box-shadow: 0 0 14px #444;
+    /*-webkit-box-shadow: 0 0 14px #444;*/
+    /*box-shadow: 0 0 14px #444;*/
     overflow: auto;
     width: 585px;
     z-index: 100;
@@ -6160,20 +6159,20 @@ a .review-score {
 }
 
 .sliding-panel-widget-close-button {
-    padding: 10px 30px 10px 20px;
-    background: #07c;
+    padding: 10px 30px 10px 17px;
+    background: #ffffff;
     width: 20px;
     border-radius: 5px 0 0 5px;
     display: inline-block;
-    color: #fff;
+    color: #ff0909;
     cursor: pointer;
     text-align: center;
-    font-size: 16px;
+    font-size: 23px;
     line-height: 16px;
     -webkit-box-shadow: 0 0 14px #444;
     box-shadow: 0 0 14px #444;
     position: fixed;
-    right: 603px;
+    right: 602px;
     top: 84px;
     -webkit-transform: translateX(0) translateZ(0);
     transform: translateX(0) translateZ(0);
@@ -6186,7 +6185,7 @@ a .review-score {
 }
 
 .sliding-panel-widget-close-button:hover {
-    background: #003580
+    /*background: #003580*/
 }
 
 .lang_is_rtl .sliding-panel-widget:not(.is-mirrored) .sliding-panel-widget-close-button, .lang_is_ltr .sliding-panel-widget.is-mirrored .sliding-panel-widget-close-button {
@@ -20795,4 +20794,24 @@ legend {
     overflow: hidden;
     white-space: nowrap;
     font-size: 12px;
+}
+.show_length_review{
+    display: none;
+    font-style: italic;
+    color:#ed991c
+}
+#ul_tab_review{
+    margin-bottom: 20px;
+    border-bottom: 4px solid #3498db;
+}
+#ul_tab_review  li.active>a {
+    background: #3498db;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: 1px solid #3498db;
+}
+#ul_tab_review  li a {
+    text-transform: uppercase;
+    border: none;
+    font-weight: bold;
 }

@@ -6,9 +6,9 @@
     <div data-component="core/sliding-panel-core-a11y" data-id="hp-reviews-sliding" id="hp-reviews-sliding"
          aria-hidden="false" class="sliding-panel-widget " tabindex="0" style="">
         <div data-component="core/et-scroll-observer" data-scrollable="" class="sliding-panel-widget-scrollable ">
-            <div class="sliding-panel-widget-close-button" data-close-button="" role="button" tabindex="0"
+            <div data-toggle="tooltip" data-placement="top" title="Tắt đánh giá" class="sliding-panel-widget-close-button" data-close-button="" role="button" tabindex="0"
                  aria-label="Close">
-                <i class="bicon-aclose fa fa-angle-double-right fa-2x" aria-hidden="true"></i>
+                <i class="bicon-aclose fa fa-times " aria-hidden="true"></i>
             </div>
             <div class="sliding-panel-widget-content review_list_block one_col" data-content="">
                 <div>
@@ -219,8 +219,8 @@
                                             </fieldset>
                                                 <div class="row">
                                                     <div class="col-xs-12 col-md-12 col-sm-12">
-                                                        <p class="review_score_name">Đánh giá tổng quan <span
-                                                                    style="color: red">*</span></p>
+                                                        <p class="review_score_name">Cảm xúc của bạn (<span id="count_length_review">80</span> ký tự)<span
+                                                                    style="color: red">*</span> <span style="font-style: italic;margin-left: 10px; color:#ed991c">    (Ví dụ: Chuyến đi thật tuyệt vời)</span></p>
                                                         <label class="from" style="margin-top: 0px; padding-top: 0px">
                                                 <span class="form-item db" style="margin-top: 0px">
                                                     <i class="awe-icon  fa fa-comment"></i>
@@ -229,6 +229,7 @@
                                                 </span>
                                                         </label>
                                                         <p class="error_submit_review" id="error_content_review">Bạn vui lòng nhập đánh giá tổng quan</p>
+                                                        <p class="show_length_review">Số ký tự đã vượt quá giới hạn, nếu có thêm ý kiến bình luận, bạn vui lòng điền vào ô đánh giá chuyến đi</p>
                                                     </div>
                                                 </div>
 
@@ -284,7 +285,7 @@
                                             </div>
                                             <div class="row">
                                                 <div class="col-xs-12 col-md-12 col-sm-12">
-                                                    <p class="review_score_name">Ý kiến khác / Đề xuất khác</p>
+                                                    <p class="review_score_name">Đánh giá chuyến đi</p>
                                                     <label class="from" style="margin-top: 0px; padding-top: 0px">
                                                 <span class="form-item db" style="margin-top: 0px">
                                                     <textarea rows="2" id="input_comment_review" name="comment_review" class="text-area-review valid"

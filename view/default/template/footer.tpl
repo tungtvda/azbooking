@@ -15,19 +15,19 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <div class="widget widget_contact_info">
+                <div class="widget widget_contact_info" style="padding: 0px 30px 30px 30px;">
                     <div class="widget_background">
-                        <div class="widget_background__half">
+                        <div style="height: 105%" class="widget_background__half">
                             <div class="bg"></div>
                         </div>
-                        <div class="widget_background__half">
+                        <div style="height: 105%" class="widget_background__half">
                             <div class="bg"></div>
                         </div>
                     </div>
                     <div class="logo" style="padding-top: 10px"><img src="{Logo}" alt="{Name}"></div>
-                    <div class="widget_content hotline_left" style="text-align: center">
-                        <p><a href="tel:{Hotline}"> <span class="phone">{Hotline}</span></a></p>
-                        <p><a href="tel:{Hotline_hcm}"> <span class="phone">{Hotline_hcm}</span></a></p>
+                    <div class="widget_content hotline_left" style="text-align: center; margin-top: 35px">
+                        <img  src="{SITE-NAME}/view/default/themes/images/logomixgroup1.png">
+                        <p style="margin-top: 20px"><b>A member of <a style=" font-size: 17px;" target="_blank" href="http://mixgroup.com.vn/"> MIXGROUP</a></b></p>
                         <div class="awe-social">
                             <a target="_blank" href="{twitter}"><i class="fa fa-twitter"></i></a>
                             <a target="_blank" href="{google}"><i class="fa fa-google-plus"></i></a>
@@ -144,9 +144,10 @@
         </div>
     </div>
     {form_}
-
+    <input hidden id="server_socket" value="{server_socket}">
 </footer>
 </div>
+
 <!--<script type="text/javascript" src="{SITE-NAME}/view/default/themes/js/lib/jquery-1.11.2.min.js"></script>-->
 <script type="text/javascript" src="{SITE-NAME}/view/default/themes/js/jquery-ui.min.js"></script>
 <script type="text/javascript" src="{SITE-NAME}/view/default/themes/js/lib/masonry.pkgd.min.js"></script>
@@ -168,10 +169,20 @@
 <script type='text/javascript' src='{SITE-NAME}/view/default/themes/js/jquery.event.move.js?ver=4.6.1'></script>
 <script type='text/javascript' src='{SITE-NAME}/view/default/themes/js/rebound.min.js?ver=4.6.1'></script>
 <script type='text/javascript' src='{SITE-NAME}/view/default/themes/js/index.js?ver=4.6.1'></script>
+<script src="{site_name_manage}/view/default/themes/admin/js/socket.io.js"></script>
+<script>
+    var socket=io($('#server_socket').val());
+</script>
 <script type='text/javascript' src='{SITE-NAME}/view/default/themes/js/review.js'></script>
 <script type="text/javascript"
         src="{SITE-NAME}/view/default/themes/js/jquery.timeago.js"></script>
-<script type="text/javascript">if ($('#slider-revolution').length) {
+
+
+
+<script type="text/javascript">
+
+    if ($('#slider-revolution').length) {
+
         $('#slider-revolution').show().revolution({
             ottedOverlay: "none",
             delay: 10000,
