@@ -197,7 +197,7 @@ function view_footer($data = array())
 //                     <p><a href="' . SITE_NAME . '/tiep-thi-lien-ket-info/hoi-dap.html">Hỏi và đáp</a></p>
 //                     <p><a href="' . SITE_NAME . '/tiep-thi-lien-ket-info/dieu-khoan-chinh-sach.html">Điều khoản và chính sách</a></p>
 //                     <p><a href="' . SITE_NAME . '/tiep-thi-lien-ket-info/hop-dong-cong-tac-vien.html">Hợp đồng với CTV</a></p>
-
+    $asign['server_socket'] = SERVER_SOCKET;
     print_template($asign, 'footer');
 }
 

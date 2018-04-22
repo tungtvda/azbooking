@@ -514,14 +514,16 @@ Không thể liên kết thẻ tiếp thị lại với thông tin nhận dạng
                             <div style="float: left; width: 33.3%">
                                 <p><a href="{SITE-NAME}/info/chinh-sach-quy-dinh-chung.html">- {quydinh}</a></p>
                                 <p><a href="{SITE-NAME}/info/chinh-sach-bao-mat-thong-tin.html">- {baomat}</a></p>
+                                <p><a href="{SITE-NAME}/info/chinh-sach-quy-trinh-xu-ly-khieu-nai.html">- {khieunai}</a></p>
                             </div>
                             <div style="float: left; width: 33.3%">
                                 <p><a href="{SITE-NAME}/info/hinh-thuc-thanh-toan.html">- {thanhtoan}</p>
                                 <p><a href="{SITE-NAME}/info/quy-dinh-doi-tra.html">- {doitra}</a></p>
-                            </div>
-                            <div style="float: left; width: 33.3%">
-                                <p><a href="{SITE-NAME}/info/chinh-sach-quy-trinh-xu-ly-khieu-nai.html">- {khieunai}</a></p>
                                 <p><a href="{SITE-NAME}/info/chinh-sach-van-chuyen-giao-nhan.html">- {giaonhan}</a></p>
+                            </div>
+                            <div style="float: left; width: 33.3%; text-align: center">
+                                <img style="width: 70%;" src="{SITE-NAME}/view/default/themes/images/logomixgroup.png">
+                                <p><b>A member of <a target="_blank"href="http://mixgroup.com.vn/"> MIXGROUP</a></b></p>
                             </div>
 
                         </div>

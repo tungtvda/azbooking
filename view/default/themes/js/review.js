@@ -65,7 +65,30 @@
                 }
             }
         }
+        if(name=='content_review'){
+            countLenghtReview()
+        }
     });
+    $('body').on("change",'#input_content_review',function(){
+        countLenghtReview()
+    });
+    function countLenghtReview(){
+        var value=$('#input_content_review').val();
+        if(value.length<=80){
+            var length=80-value.length;
+            $('#count_length_review').text(length);
+            $('.show_length_review').hide();
+            if(length<=20){
+                $('#count_length_review').css("color","#ed991c");
+            }
+            if(length<=10){
+                $('#count_length_review').css("color","red");
+            }
+        }else{
+            $('#input_content_review').val(value.substr(0, 100))
+            $('.show_length_review').show();
+        }
+    }
     $('body').on("click", '#submit_form_review', function () {
         var form_data = $("#form_submit_review").serializeArray();
         var error_free = true;
@@ -83,6 +106,7 @@
             }
         }
         if (error_free != false) {
+
             $('#submit_form_review').hide();
             $('#loading_form_review').show();
             var link = url + '/add-review.html';
@@ -98,6 +122,8 @@
                             $('#show_mess').slideDown().removeClass('alert-danger').addClass('alert-success');
                             $('#show_mess strong').text(response.mess);
                             $('#loading_form_review').hide();
+                            var dataNoti = {domain:"az", modul:"review_tour", action:"create", admin:1};
+                            socket.emit('sendNotification',dataNoti);
                         }else{
                             $('#show_mess').slideDown().removeClass('alert-success').addClass('alert-danger');
                             $('#show_mess strong').text(response.mess)
@@ -127,7 +153,7 @@
                         $('#show_mess').slideToggle();
                         $('#show_mess strong').text('')
                         if(loading_form==1){
-                            hideTabRevie()
+                            hideTabRevie(1)
                             $('#submit_form_review').show();
                             $('#loading_form_review').hide();
                         }
@@ -138,6 +164,9 @@
             $('#show_mess').slideDown().removeClass('alert-success').addClass('alert-danger');
             $('#show_mess strong').text('Bạn vui lòng điền đẩy đủ thông tin đánh giá')
         }
+    });
+    $(document).ajaxSuccess(function () {
+        $("[data-toggle=tooltip]").tooltip();
     });
     $('body').on("click", '#hidden_mess_review', function () {
         $('#show_mess').hide();
@@ -163,10 +192,16 @@
         $('#hp-reviews-sliding').addClass('is-shown');
         copyToClipboard(document.getElementById('url_tab_review'));
     });
-    function hideTabRevie(){
+    function hideTabRevie(hide){
         $('.tab-tour').removeClass('active');
         $('#tab-tour-li').addClass('active');
-        $('#hp-reviews-sliding').removeClass('is-shown');
+        $('#form_review_show_hide').slideToggle();
+        //if(hide){
+        //    $('#form_review_show_hide').hide();
+        //}else{
+        //    $('#hp-reviews-sliding').removeClass('is-shown');
+        //}
+
         //var url =  window.location.href;
         var url =  $('#url_tab_review').val();
         if(!url){
