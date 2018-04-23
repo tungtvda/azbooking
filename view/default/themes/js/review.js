@@ -195,12 +195,11 @@
     function hideTabRevie(hide){
         $('.tab-tour').removeClass('active');
         $('#tab-tour-li').addClass('active');
-        $('#form_review_show_hide').slideToggle();
-        //if(hide){
-        //    $('#form_review_show_hide').hide();
-        //}else{
-        //    $('#hp-reviews-sliding').removeClass('is-shown');
-        //}
+        if(hide){
+            $('#form_review_show_hide').slideToggle();
+        }else{
+           $('#hp-reviews-sliding').removeClass('is-shown');
+        }
 
         //var url =  window.location.href;
         var url =  $('#url_tab_review').val();
