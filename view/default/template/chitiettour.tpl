@@ -203,16 +203,17 @@
 
             <div class="col-md-3">
                 <div id="booking" class="detail-sidebar">
-                    <div class="call-to-book"><i class="awe-icon awe-icon-phone"></i> <em>Gọi ngay cho chúng tôi</em>
-                        <span><a href="tel:{Hotline}">{Hotline}</a></span>
-                        <span><a href="tel:{Hotline_hcm}">
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{Hotline_hcm}</a></span>
-                    </div>
+
                     <div class="booking-info"><h3>Chương trình tour</h3>
                         <p style="font-size: 12px">
                             {hanh_trinh}
                         </p>
                         <div style="text-align: center" class="price">
+                            <div class="call-to-book" style="text-align: left"><i class="awe-icon awe-icon-phone"></i> <em>Liên hệ tư vấn ngay</em>
+                                <span><a href="tel:{Hotline}">{Hotline}</a></span>
+                                <span><a href="tel:{Hotline_hcm}">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{Hotline_hcm}</a></span>
+                            </div>
                             <a href="{link_booking}{id_user}" class=" btn btn-danger">ĐẶT
                                 NGAY </a>
                         </div>
